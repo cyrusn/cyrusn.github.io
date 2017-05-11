@@ -18,7 +18,37 @@
       <pubDate>Thu, 01 Oct 2015 13:32:12 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/settings-of-my-osx/</guid>
-      <description>Custom OSX  Remove shift key augmentation for Mission Control animation Enable the three finger drag in Accessibility  Terminal  Autocomplete echo &amp;quot;set completion-ignore-case On&amp;quot; &amp;gt;&amp;gt; ~/.inputrc install command line tools in XCode xcode-select --install  zsh  install .oh-my-zsh symlink for setting zsh  ## for installation of zsh ln -s Dropbox/MacSetting/Terminal/cyrusn ./.cyrusn ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zshrc ~/ ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom ~/ ## for installation of coreutil/.dir_colors ln -s ~/Dropbox/MacSetting/Terminal/coreutil/.</description>
+      <description>&lt;h1 id=&#34;custom-osx&#34;&gt;Custom OSX&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://apple.stackexchange.com/questions/66433/remove-shift-key-augmentation-for-mission-control-animation#answer-115698&#34;&gt;Remove shift key augmentation for Mission Control animation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Enable the three finger drag in &lt;em&gt;Accessibility&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;terminal&#34;&gt;Terminal&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Autocomplete &lt;code&gt;echo &amp;quot;set completion-ignore-case On&amp;quot; &amp;gt;&amp;gt; ~/.inputrc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;install command line tools in XCode &lt;code&gt;xcode-select --install&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;zsh&#34;&gt;zsh&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/robbyrussell/oh-my-zsh&#34;&gt;install .oh-my-zsh&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;symlink for setting zsh&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;    ## for installation of zsh
+    ln -s Dropbox/MacSetting/Terminal/cyrusn ./.cyrusn
+    ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zshrc ~/
+    ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom ~/
+
+    ## for installation of coreutil/.dir_colors
+    ln -s ~/Dropbox/MacSetting/Terminal/coreutil/.dir_colors ~/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -36,9 +66,34 @@
       <pubDate>Sun, 10 May 2015 00:47:48 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/swift-notes/</guid>
-      <description>Start Developing iOS / OSX Apps The Swift Programming Language (Swift 2.2): About Swift Start Developing iOS Apps (Swift): Jump Right In
-ICON for iOS Development 23,500 Icons - Free Download | Icons8
-Basic Keywords Control Flow  where (A switch case can use a where clause to check for additional conditions.)  Computed Properties  lazy get set willSet didSet  Instance Methods  self static mutating  Subscript  subscript  ##Inheritance - override - super</description>
+      <description>&lt;h1 id=&#34;start-developing-ios-osx-apps&#34;&gt;Start Developing iOS / OSX Apps&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/&#34;&gt;The Swift Programming Language (Swift 2.2): About Swift&lt;/a&gt;
+&lt;a href=&#34;https://developer.apple.com/library/ios/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html#//apple_ref/doc/uid/TP40015214-CH2-SW1&#34;&gt;Start Developing iOS Apps (Swift): Jump Right In&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;icon-for-ios-development&#34;&gt;ICON for iOS Development&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://icons8.com/web-app/new-icons/all&#34;&gt;23,500 Icons - Free Download | Icons8&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;basic-keywords&#34;&gt;Basic Keywords&lt;/h1&gt;
+
+&lt;h2 id=&#34;control-flow-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-controlflow-html-apple-ref-doc-uid-tp40014097-ch9-xid-191&#34;&gt;&lt;a href=&#34;https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/ControlFlow.html#//apple_ref/doc/uid/TP40014097-CH9-XID_191&#34;&gt;Control Flow&lt;/a&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;where (A &lt;code&gt;switch&lt;/code&gt; case can use a &lt;code&gt;where&lt;/code&gt; clause to check for additional conditions.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;computed-properties-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-properties-html&#34;&gt;&lt;a href=&#34;https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Properties.html#//&#34;&gt;Computed Properties&lt;/a&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;lazy&lt;/li&gt;
+&lt;li&gt;get&lt;/li&gt;
+&lt;li&gt;set&lt;/li&gt;
+&lt;li&gt;willSet&lt;/li&gt;
+&lt;li&gt;didSet&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

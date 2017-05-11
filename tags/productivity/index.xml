@@ -18,9 +18,10 @@
       <pubDate>Mon, 26 Sep 2016 07:46:28 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/imagemagick/</guid>
-      <description> Convert Command imagemagick
-convert rose.jpg -resize 50% rose.png  convert pngs to gif with 2 second per frame
-convert -delay 200 *.png converted.gif  </description>
+      <description>&lt;h2 id=&#34;convert-command&#34;&gt;Convert Command&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.imagemagick.org/&#34;&gt;imagemagick&lt;/a&gt;
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -29,7 +30,15 @@ convert -delay 200 *.png converted.gif  </description>
       <pubDate>Fri, 24 Jul 2015 23:02:19 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/alfred-notes/</guid>
-      <description> Use node on alfred workflow node&amp;lt;&amp;lt;-&amp;quot;code&amp;quot; // your code here // e.g. console.log(&amp;quot;hello world&amp;quot;); code  iTerm2 Integration curl --silent &#39;https://raw.githubusercontent.com/stuartcryan/custom-iterm-applescripts-for-alfred/master/custom_iterm_script_iterm_2.9.applescript&#39; | pbcopy   stuartcryan/custom-iterm-applescripts-for-alfred: Custom iTerm Applescripts for Alfred  </description>
+      <description>&lt;h2 id=&#34;how-to-use-node-on-alfred-workflow&#34;&gt;How to use node on alfred workflow&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;node&amp;lt;&amp;lt;-&amp;quot;code&amp;quot;
+// your code here
+// e.g. console.log(&amp;quot;hello world&amp;quot;);
+code
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

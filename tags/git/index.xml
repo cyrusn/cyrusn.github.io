@@ -18,8 +18,7 @@
       <pubDate>Sun, 10 May 2015 00:52:39 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/git-notes/</guid>
-      <description>Tutorial Setting up a repository | Atlassian Git Tutorial
-GitHub Badges  shields.io  best practice # on latest commit $ git checkout -b &amp;lt;branch_name&amp;gt; # create new branch # do you work $ git commit -a # edit the commit log as details as possible $ git checkout master $ git merge &amp;lt;branch_name&amp;gt; # double check everything, if ok then push. $ git push # else $ git checkout &amp;lt;branch_name&amp;gt; # amendment $ git commit -a --amend $ git checkout master $ git merge &amp;lt;branch_name&amp;gt; $ git push  add Repository $ git remote add origin https://github.</description>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

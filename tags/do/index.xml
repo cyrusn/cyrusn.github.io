@@ -18,7 +18,21 @@
       <pubDate>Sat, 26 Mar 2016 12:31:11 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/note-to-ocean-digital/</guid>
-      <description>connect to console # prepare ssh keys first # login droplet ssh root@ip.of.the.droplet # to copy a file from B to A while logged into B scp /path/to/file username@a:/path/to/destination # to copy a file from B to A while logged into A scp username@b:/path/to/file /path/to/destination  perpare ssh key  How To Use SSH Keys with DigitalOcean Droplets | DigitalOcean  achieve  Save a snapshot and delete droplet restore droplet by the snapshot  using tmux # list all session tmux ls # attach to session tmux attach -t sessionName # create new session tmux new -s sessionName # kill session tmux kill-session -t sessionName  navigate in tmux  Ctrl-b then [ then you can use your normal navigation keys to scroll around (eg.</description>
+      <description>&lt;h1 id=&#34;connect-to-console&#34;&gt;connect to console&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;# prepare ssh keys first
+
+# login droplet
+ssh root@ip.of.the.droplet
+
+# to copy a file from B to A while logged into B
+scp /path/to/file username@a:/path/to/destination
+
+# to copy a file from B to A while logged into A
+scp username@b:/path/to/file /path/to/destination
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

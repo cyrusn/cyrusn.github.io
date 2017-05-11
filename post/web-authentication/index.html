@@ -8,23 +8,31 @@
   <title>Web Authentication</title>
   <meta property="og:title" content="Web Authentication" />
   <meta name="twitter:title" content="Web Authentication" />
-  <meta name="description" content="Notes From CyrusN Authentication in Golang with JWTs Cookies vs Tokens: The Definitive Guide The Ins and Outs of Token Based Authentication | Scotch
-Notes From Leesei Enterprise APIs and OAuth: Have it All
-Secure your users&rsquo; passwords from the browser on
-Authentication Protocols Basic access authentication - Wikiwand Digest access authentication - Wikiwand Secure Remote Password protocol - Wikiwand
-Anatomy of a zero-knowledge web application - Clipperz, register your creations on the blockchain">
-  <meta property="og:description" content="Notes From CyrusN Authentication in Golang with JWTs Cookies vs Tokens: The Definitive Guide The Ins and Outs of Token Based Authentication | Scotch
-Notes From Leesei Enterprise APIs and OAuth: Have it All
-Secure your users&rsquo; passwords from the browser on
-Authentication Protocols Basic access authentication - Wikiwand Digest access authentication - Wikiwand Secure Remote Password protocol - Wikiwand
-Anatomy of a zero-knowledge web application - Clipperz, register your creations on the blockchain">
-  <meta name="twitter:description" content="Notes From CyrusN Authentication in Golang with JWTs Cookies vs Tokens: The Definitive Guide The Ins and Outs of Token Based Authentication | Scotch
-Notes From Leesei Enterprise APIs and OAuth: Have …">
+  <meta name="description" content="Notes
+
+
+Authentication in Golang with JWTs
+Cookies vs Tokens: The Definitive Guide
+The Ins and Outs of Token Based Authentication | Scotch">
+  <meta property="og:description" content="Notes
+
+
+Authentication in Golang with JWTs
+Cookies vs Tokens: The Definitive Guide
+The Ins and Outs of Token Based Authentication | Scotch">
+  <meta name="twitter:description" content="Notes
+
+
+Authentication in Golang with JWTs
+Cookies vs Tokens: The Definitive Guide
+The Ins and Outs of Token Based Authentication | Scotch">
   <meta name="author" content="CyrusN"/>
   <link href='https://cyrusn.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://cyrusn.github.io/img/avatar.png" />
   <meta name="twitter:image" content="https://cyrusn.github.io/img/avatar.png" />
   <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@cyrusncy" />
+  <meta name="twitter:creator" content="@cyrusncy" />
   <meta property="og:url" content="https://cyrusn.github.io/post/web-authentication/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="CyrusN" />
@@ -67,7 +75,7 @@ Notes From Leesei Enterprise APIs and OAuth: Have …">
         
           
             <li>
-              <a title="Post" href="/post/">Post</a>
+              <a title="Posts" href="/post/">Posts</a>
             </li>
           
         
@@ -138,7 +146,6 @@ Notes From Leesei Enterprise APIs and OAuth: Have …">
   
 </span>
 
-
                 
             </div>
           </div>
@@ -153,15 +160,14 @@ Notes From Leesei Enterprise APIs and OAuth: Have …">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        
+        <h1 id="notes">Notes</h1>
 
-<h1 id="notes-from-cyrusn">Notes From CyrusN</h1>
-
-<p><a href="https://auth0.com/blog/authentication-in-golang/">Authentication in Golang with JWTs</a>
-<a href="https://auth0.com/blog/cookies-vs-tokens-definitive-guide/">Cookies vs Tokens: The Definitive Guide</a>
-<a href="https://scotch.io/tutorials/the-ins-and-outs-of-token-based-authentication">The Ins and Outs of Token Based Authentication | Scotch</a></p>
-
-<h1 id="notes-from-leesei">Notes From Leesei</h1>
+<ul>
+<li><a href="https://auth0.com/blog/authentication-in-golang/">Authentication in Golang with JWTs</a></li>
+<li><a href="https://auth0.com/blog/cookies-vs-tokens-definitive-guide/">Cookies vs Tokens: The Definitive Guide</a></li>
+<li><a href="https://scotch.io/tutorials/the-ins-and-outs-of-token-based-authentication">The Ins and Outs of Token Based Authentication | Scotch</a>
+</li>
+</ul>
 
 <p><a href="http://news.sys-con.com/node/2275857/print">Enterprise APIs and OAuth: Have it All</a></p>
 
@@ -176,8 +182,6 @@ Notes From Leesei Enterprise APIs and OAuth: Have …">
 <p><a href="https://clipperz.is/blog/2007/08/24/anatomy_zero_knowledge_web_application/">Anatomy of a zero-knowledge web application - Clipperz, register your creations on the blockchain</a></p>
 
 <p><code>Access-Control-Allow-Origin: *</code> does not allow requests to supply credentials like HTTP authentication, client-side SSL certificates, or cookies. ?</p>
-
-<hr />
 
 <h2 id="server-based">Server Based</h2>
 
@@ -392,7 +396,6 @@ var encodedJWT = payload + &quot;.&quot; + signature;
 
 <p><a href="https://github.com/geek/OAuth">geek/OAuth</a>
 <a href="https://github.com/geek/oz">geek/oz: Web Authorization Protocol</a></p>
-
       </article>
 
       <ul class="pager blog-pager">
@@ -449,10 +452,26 @@ var encodedJWT = payload + &quot;.&quot; + signature;
                 </a>
               </li>
               <li>
+                <a href="https://www.facebook.com/cyrusncy" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
                 <a href="https://github.com/cyrusn" title="GitHub">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/cyrusncy" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>

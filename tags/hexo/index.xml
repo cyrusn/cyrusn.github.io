@@ -18,9 +18,25 @@
       <pubDate>Fri, 22 May 2015 12:10:48 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/hexo-notes/</guid>
-      <description>How to Enable TOC Create toc.ejs add following content at yourTheme/layout/widget/toc.ejs
-&amp;lt;% var content = page.content; if (is_post() &amp;amp;&amp;amp; content) { %&amp;gt; &amp;lt;div class=&amp;quot;widget-wrap&amp;quot;&amp;gt; &amp;lt;h3 class=&amp;quot;widget-title&amp;quot;&amp;gt;Table of Contents&amp;lt;/h3&amp;gt; &amp;lt;div class=&amp;quot;widget&amp;quot;&amp;gt; &amp;lt;%- toc(content) %&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;% } %&amp;gt;  Create toc.styl add following content at yourTheme/source/css/_partial/toc.styl then add @import &amp;quot;_partial/toc&amp;quot; to yourTheme/source/css/style.styl
-.toc li list-style: none  finally # Sidebar widgets: - toc  Add recent_update to sidebar add following content at yourTheme/layout/widget/recent_update.</description>
+      <description>&lt;h1 id=&#34;how-to-enable-toc&#34;&gt;How to Enable TOC&lt;/h1&gt;
+
+&lt;h2 id=&#34;create-toc-ejs&#34;&gt;Create &lt;code&gt;toc.ejs&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;add following content at &lt;code&gt;yourTheme/layout/widget/toc.ejs&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;% var content = page.content;
+if (is_post() &amp;amp;&amp;amp; content) { %&amp;gt;
+
+    &amp;lt;div class=&amp;quot;widget-wrap&amp;quot;&amp;gt;
+        &amp;lt;h3 class=&amp;quot;widget-title&amp;quot;&amp;gt;Table of Contents&amp;lt;/h3&amp;gt;
+        &amp;lt;div class=&amp;quot;widget&amp;quot;&amp;gt;
+            &amp;lt;%- toc(content) %&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;% } %&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

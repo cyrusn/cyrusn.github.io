@@ -8,16 +8,38 @@
   <title>ReactJS-and-Redux</title>
   <meta property="og:title" content="ReactJS-and-Redux" />
   <meta name="twitter:title" content="ReactJS-and-Redux" />
-  <meta name="description" content="Function Components  Stateless Functional Components in React 0.14 – Josh Black – Medium  Since react 14.0, you can now use the new stateless function component instead of the instead of ES6 class method to define a component
-// stateless functional components function Welcome(props) { return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;; }  // using class to define a component class Welcome extends React.Component { render() { return &lt;h1&gt;Hello, {this.props.name}&lt;/h1&gt;; } }  or even cleaner">
-  <meta property="og:description" content="Function Components  Stateless Functional Components in React 0.14 – Josh Black – Medium  Since react 14.0, you can now use the new stateless function component instead of the instead of ES6 class method to define a component
-// stateless functional components function Welcome(props) { return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;; }  // using class to define a component class Welcome extends React.Component { render() { return &lt;h1&gt;Hello, {this.props.name}&lt;/h1&gt;; } }  or even cleaner">
-  <meta name="twitter:description" content="Function Components  Stateless Functional Components in React 0.14 – Josh Black – Medium  Since react 14.0, you can now use the new stateless function component instead of the instead of ES6 class …">
+  <meta name="description" content="Function Components
+
+
+Stateless Functional Components in React 0.14 – Josh Black – Medium
+
+
+Since react 14.0, you can now use the new stateless function component instead of the instead of ES6 class method to define a component
+
+">
+  <meta property="og:description" content="Function Components
+
+
+Stateless Functional Components in React 0.14 – Josh Black – Medium
+
+
+Since react 14.0, you can now use the new stateless function component instead of the instead of ES6 class method to define a component
+
+">
+  <meta name="twitter:description" content="Function Components
+
+
+Stateless Functional Components in React 0.14 – Josh Black – Medium
+
+
+Since react 14.0, you can now use the new stateless function component instead of the instead of ES6 class …">
   <meta name="author" content="CyrusN"/>
   <link href='https://cyrusn.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://cyrusn.github.io/img/avatar.png" />
   <meta name="twitter:image" content="https://cyrusn.github.io/img/avatar.png" />
   <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@cyrusncy" />
+  <meta name="twitter:creator" content="@cyrusncy" />
   <meta property="og:url" content="https://cyrusn.github.io/post/reactjs-and-redux/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="CyrusN" />
@@ -60,7 +82,7 @@
         
           
             <li>
-              <a title="Post" href="/post/">Post</a>
+              <a title="Posts" href="/post/">Posts</a>
             </li>
           
         
@@ -131,7 +153,6 @@
   
 </span>
 
-
                 
             </div>
           </div>
@@ -146,15 +167,15 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        
-
-<h1 id="function-components-id1"><a href="https://facebook.github.io/react/docs/components-and-props.html">Function Components</a></h1>
+        <h1 id="function-components-id1"><a href="https://facebook.github.io/react/docs/components-and-props.html">Function Components</a></h1>
 
 <ul>
 <li><a href="https://medium.com/@joshblack/stateless-components-in-react-0-14-f9798f8b992d">Stateless Functional Components in React 0.14 – Josh Black – Medium</a></li>
 </ul>
 
 <p>Since react 14.0, you can now use the new stateless function component instead of the instead of ES6 class method to define a component</p>
+
+<p></p>
 
 <pre><code class="language-js">// stateless functional components
 function Welcome(props) {
@@ -176,7 +197,7 @@ class Welcome extends React.Component {
 const Welcome = ({name}) =&gt; &lt;h1&gt;Hello, {name}&lt;/h1&gt;
 </code></pre>
 
-<h1 id="proptypes">PropTypes</h1>
+<h2 id="proptypes">PropTypes</h2>
 
 <ul>
 <li><a href="https://facebook.github.io/react/docs/typechecking-with-proptypes.html">Typechecking With PropTypes - React</a></li>
@@ -198,12 +219,11 @@ Greeting.propTypes = {
 };
 </code></pre>
 
-<h1 id="redux">Redux</h1>
+<h2 id="redux">Redux</h2>
 
 <ul>
 <li><a href="http://redux.js.org/">Read Me · Redux</a></li>
 </ul>
-
       </article>
 
       <ul class="pager blog-pager">
@@ -256,10 +276,26 @@ Greeting.propTypes = {
                 </a>
               </li>
               <li>
+                <a href="https://www.facebook.com/cyrusncy" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
                 <a href="https://github.com/cyrusn" title="GitHub">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/cyrusncy" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>

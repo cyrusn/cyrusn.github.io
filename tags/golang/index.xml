@@ -18,9 +18,7 @@
       <pubDate>Sun, 10 May 2015 00:46:38 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/golang-notes/</guid>
-      <description>Understanding Goroutine  Is golang goroutine a coroutine? Coroutine vs Continuation vs Generator Comparison with generators  MongoDB  mgo Painless Data Storage with MongoDB and Go Connecting to MongoDB with mgo and golang  Router  mux - Gorilla, the golang web toolkit
-Middleware justinas/alice: Painless middleware chaining for Go
-  SQL Database  Go database/sql tutorial  Authentication  dgrijalva/jwt-go: Golang implementation of JSON Web Tokens (JWT) Golang Authentication Using JSON Web Tokens  Useful Package  PuerkitoBio/goquery: A little like that j-thing, only in Go.</description>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

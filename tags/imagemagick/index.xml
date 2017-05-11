@@ -18,9 +18,10 @@
       <pubDate>Mon, 26 Sep 2016 07:46:28 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/imagemagick/</guid>
-      <description> Convert Command imagemagick
-convert rose.jpg -resize 50% rose.png  convert pngs to gif with 2 second per frame
-convert -delay 200 *.png converted.gif  </description>
+      <description>&lt;h2 id=&#34;convert-command&#34;&gt;Convert Command&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.imagemagick.org/&#34;&gt;imagemagick&lt;/a&gt;
+&lt;/p&gt;</description>
     </item>
     
   </channel>

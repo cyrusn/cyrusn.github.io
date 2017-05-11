@@ -18,10 +18,17 @@
       <pubDate>Thu, 28 May 2015 15:21:07 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/uml-notes/</guid>
-      <description>Usecase Include and Extend uml - What&amp;rsquo;s is the difference between include and extend in use case diagram? - Stack Overflow
-Example Amazon Application Use Case Diagram
-Creole in notes notes in plantuml support Creole language Creole (markup) - Wikiwand
-Links UML 2.0 Tutorial - YouTube Unified Modeling Language (UML) description, UML diagram examples, tutorials and reference for all types of UML diagrams - use case diagrams, class, package, component, composite structure diagrams, deployments, activities, interactions, profiles, etc.</description>
+      <description>&lt;h1 id=&#34;usecase&#34;&gt;Usecase&lt;/h1&gt;
+
+&lt;h2 id=&#34;include-and-extend&#34;&gt;Include and Extend&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/1696927/whats-is-the-difference-between-include-and-extend-in-use-case-diagram/4472770#4472770&#34;&gt;uml - What&amp;rsquo;s is the difference between include and extend in use case diagram? - Stack Overflow&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://domainengineering.haifa.ac.il/seminar/Works/2006_Customizable%20Profile%20Domain/WebFiles/221.htm&#34;&gt;Amazon Application Use Case Diagram&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -30,10 +37,23 @@ Links UML 2.0 Tutorial - YouTube Unified Modeling Language (UML) description, UM
       <pubDate>Sun, 10 May 2015 01:29:03 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/draw-more-work-less/</guid>
-      <description>Some Links UML | leesei&amp;rsquo;s notebook Draw More, Work Less | [self employed] Draw More, Work Less PlantUML Mermaid
-from leesei Unified Modeling Language (UML) Business Process Model and Notation (BPMN) is very similar to activity diagram. YANG Central
-Allen Holub&amp;rsquo;s UML Quick Reference
-Text based tools I used to use the GUI tool Dia. But it was very buggy and no longer updated. I then went on to look for alternatives.</description>
+      <description>&lt;h1 id=&#34;some-links&#34;&gt;Some Links&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://leesei.github.io/uml/&#34;&gt;UML | leesei&amp;rsquo;s notebook&lt;/a&gt;
+&lt;a href=&#34;http://www.mbarsinai.com/blog/2014/01/12/draw-more-work-less/&#34;&gt;Draw More, Work Less | [self employed]&lt;/a&gt;
+&lt;a href=&#34;http://www.slideshare.net/MichaelBarSinai/generated-siagramspublic&#34;&gt;Draw More, Work Less&lt;/a&gt;
+&lt;a href=&#34;http://plantuml.sourceforge.net/sitemap.html&#34;&gt;PlantUML&lt;/a&gt;
+&lt;a href=&#34;http://knsv.github.io/mermaid/&#34;&gt;Mermaid&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;from-leesei&#34;&gt;from leesei&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Unified_Modeling_Language&#34;&gt;Unified Modeling Language (UML)&lt;/a&gt;
+&lt;a href=&#34;http://en.wikipedia.org/wiki/Business_Process_Model_and_Notation&#34;&gt;Business Process Model and Notation (BPMN)&lt;/a&gt; is very similar to activity diagram.
+&lt;a href=&#34;http://www.yang-central.org/twiki/bin/view/Main/WebHome&#34;&gt;YANG Central&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.holub.com/goodies/uml/&#34;&gt;Allen Holub&amp;rsquo;s UML Quick Reference&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

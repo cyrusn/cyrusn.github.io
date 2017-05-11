@@ -18,7 +18,24 @@
       <pubDate>Sun, 10 May 2015 00:47:16 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/mongoose.js-and-mongodb/</guid>
-      <description>Custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的 可以令 _id 有意思,  e.g. studentSchema, use regno as custom _id e.g. teacherSchema, use teacherInitial as custom _id  use uuid if you need to have id before add new stuff  e.g. attachmentSchema, need the id to rename the attachment before saving to database.   Schema.ObjectId  if no need to use custom _id then use Schema.</description>
+      <description>&lt;h1 id=&#34;custom-id&#34;&gt;Custom &lt;code&gt;_id&lt;/code&gt;&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;你schema 有 &lt;code&gt;_id&lt;/code&gt; mongo 就唔同你gen, 亦唔可以用 &lt;code&gt;Schema.ObjectId&lt;/code&gt; 做ref, 會認唔到type 的&lt;/li&gt;
+&lt;li&gt;可以令 &lt;code&gt;_id&lt;/code&gt; 有意思,
+
+&lt;ul&gt;
+&lt;li&gt;e.g. studentSchema, use &lt;code&gt;regno&lt;/code&gt; as custom &lt;code&gt;_id&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;e.g. teacherSchema, use &lt;code&gt;teacherInitial&lt;/code&gt; as custom &lt;code&gt;_id&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;use &lt;code&gt;uuid&lt;/code&gt; if you need to have &lt;code&gt;id&lt;/code&gt; before &lt;em&gt;add new stuff&lt;/em&gt;
+
+&lt;ul&gt;
+&lt;li&gt;e.g. attachmentSchema, need the &lt;code&gt;id&lt;/code&gt; to rename the attachment before saving to database.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -18,11 +18,12 @@
       <pubDate>Wed, 05 Oct 2016 00:23:42 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/web-authentication/</guid>
-      <description>Notes From CyrusN Authentication in Golang with JWTs Cookies vs Tokens: The Definitive Guide The Ins and Outs of Token Based Authentication | Scotch
-Notes From Leesei Enterprise APIs and OAuth: Have it All
-Secure your users&amp;rsquo; passwords from the browser on
-Authentication Protocols Basic access authentication - Wikiwand Digest access authentication - Wikiwand Secure Remote Password protocol - Wikiwand
-Anatomy of a zero-knowledge web application - Clipperz, register your creations on the blockchain</description>
+      <description>&lt;h1 id=&#34;notes&#34;&gt;Notes&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://auth0.com/blog/authentication-in-golang/&#34;&gt;Authentication in Golang with JWTs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://auth0.com/blog/cookies-vs-tokens-definitive-guide/&#34;&gt;Cookies vs Tokens: The Definitive Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://scotch.io/tutorials/the-ins-and-outs-of-token-based-authentication&#34;&gt;The Ins and Outs of Token Based Authentication | Scotch&lt;/a&gt;</description>
     </item>
     
     <item>

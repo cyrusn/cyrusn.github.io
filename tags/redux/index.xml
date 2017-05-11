@@ -18,8 +18,15 @@
       <pubDate>Mon, 17 Apr 2017 14:38:47 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/reactjs-and-redux/</guid>
-      <description>Function Components  Stateless Functional Components in React 0.14 – Josh Black – Medium  Since react 14.0, you can now use the new stateless function component instead of the instead of ES6 class method to define a component
-// stateless functional components function Welcome(props) { return &amp;lt;h1&amp;gt;Hello, {props.name}&amp;lt;/h1&amp;gt;; }  // using class to define a component class Welcome extends React.Component { render() { return &amp;lt;h1&amp;gt;Hello, {this.props.name}&amp;lt;/h1&amp;gt;; } }  or even cleaner</description>
+      <description>&lt;h1 id=&#34;function-components-id1&#34;&gt;&lt;a href=&#34;https://facebook.github.io/react/docs/components-and-props.html&#34;&gt;Function Components&lt;/a&gt;&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@joshblack/stateless-components-in-react-0-14-f9798f8b992d&#34;&gt;Stateless Functional Components in React 0.14 – Josh Black – Medium&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Since react 14.0, you can now use the new stateless function component instead of the instead of ES6 class method to define a component&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -13,6 +13,8 @@
   <meta property="og:image" content="https://cyrusn.github.io/img/avatar.png" />
   <meta name="twitter:image" content="https://cyrusn.github.io/img/avatar.png" />
   <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@cyrusncy" />
+  <meta name="twitter:creator" content="@cyrusncy" />
   <meta property="og:url" content="https://cyrusn.github.io/tags/google-script/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="CyrusN" />
@@ -55,7 +57,7 @@
         
           
             <li>
-              <a title="Post" href="/post/">Post</a>
+              <a title="Posts" href="/post/">Posts</a>
             </li>
           
         
@@ -126,20 +128,23 @@
             <article class="post-preview">
               <a href="https://cyrusn.github.io/post/how-to-use-googlescript/">
                 <h2 class="post-title">How to use GoogleScript</h2>
-    
+
                 
               </a>
-    
-              <p class="post-meta">
-                Posted on 2015-05-22
-              </p>
-              <div class="post-entry">
+
+              <span class="post-meta">
+  Posted on 2015-05-22
+  
+</span>
+
+              
+
+              
                 
-                  Useful Examples Send email from spreadsheet data function sendMailByRowNo(rowNo){ // rowString e.g. 1:1 var rowString = Utilities.formatString(&quot;%s:%s&quot;, rowNo, rowNo) var values = spreadsheet.getRange(rowString).getValues()[0] sendMailByValues(values) } function convertValuesToObject(values) { var obj = {}; obj.timestamp = values[0] obj.email = values[1] obj.title = values[2] return obj } function sendMailByValues(values) { var obj = convertValuesToObject(values) Logger.log(obj) var htmlBody = setEmailBody(obj) var mailAppObject = { to: obj.email, subject: obj.title, htmlBody: htmlBody } // an example to attach a pdf file in google drive // var attachements = DriveApp.
-                  <a href="https://cyrusn.github.io/post/how-to-use-googlescript/" class="post-read-more">[Read More]</a>
+                  
                 
-              </div>
-    
+              
+
               
                 <span class="post-meta">
                   
@@ -147,7 +152,7 @@
                   
                 </span>
               
-    
+
             </article>
           
         </div>
@@ -171,10 +176,26 @@
                 </a>
               </li>
               <li>
+                <a href="https://www.facebook.com/cyrusncy" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
                 <a href="https://github.com/cyrusn" title="GitHub">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/cyrusncy" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>

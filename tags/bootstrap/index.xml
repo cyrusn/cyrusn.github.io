@@ -14,10 +14,10 @@
     
     <item>
       <title>Note when making alumniHTML</title>
-      <link>https://cyrusn.github.io/post/note-when-making-alumnihtml/</link>
+      <link>https://cyrusn.github.io/note/note-when-making-alumnihtml/</link>
       <pubDate>Sun, 10 May 2015 00:47:23 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/note-when-making-alumnihtml/</guid>
+      <guid>https://cyrusn.github.io/note/note-when-making-alumnihtml/</guid>
       <description> Referece － Sticky Footer － responsive-utilities
 Reminder  Don&amp;rsquo;t use bootstrap.js, use ui-bootstrap.js instead. jQuery is no longer useful ui-bootstrap.collapse  beware the crash between collapse=&amp;quot;isCollapsed&amp;quot; and class=&amp;quot;visible-xs&amp;quot; use ui-bootstrap.dropdown   Leesei Suggestion  每次test isHide 唔好 響tagNames 加個`active field (boolean) 可以navbarTag onclick (jqlite 嘢) update active state  </description>
     </item>

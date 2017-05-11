@@ -13,6 +13,8 @@
   <meta property="og:image" content="https://cyrusn.github.io/img/avatar.png" />
   <meta name="twitter:image" content="https://cyrusn.github.io/img/avatar.png" />
   <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@cyrusncy" />
+  <meta name="twitter:creator" content="@cyrusncy" />
   <meta property="og:url" content="https://cyrusn.github.io/tags/linux/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="CyrusN" />
@@ -55,7 +57,7 @@
         
           
             <li>
-              <a title="Post" href="/post/">Post</a>
+              <a title="Posts" href="/post/">Posts</a>
             </li>
           
         
@@ -126,39 +128,23 @@
             <article class="post-preview">
               <a href="https://cyrusn.github.io/post/create-startup-script-in-linux/">
                 <h2 class="post-title">Create Startup Script in Linux</h2>
-    
+
                 
               </a>
-    
-              <p class="post-meta">
-                Posted on 2016-10-21
-              </p>
-              <div class="post-entry">
+
+              <span class="post-meta">
+  Posted on 2016-10-21
+  
+</span>
+
+              
+
+              
                 
-                  <p>Create a new script in /etc/init.d/myscript.</p>
-
-<pre><code class="language-sh">vi /etc/init.d/myscript
-</code></pre>
-
-<p>(Obviously it doesn&rsquo;t have to be called &ldquo;myscript&rdquo;.) In this script, do whatever you want to do. Perhaps just run the script you mentioned.</p>
-
-<pre><code class="language-sh">#!/bin/sh
-/path/to/my/script.sh
-</code></pre>
-
-<p>Make it executable.</p>
-
-<pre><code class="language-sh">chmod 755 /etc/init.d/myscript
-</code></pre>
-
-<p>Configure the init system to run this script at startup.</p>
-
-<pre><code class="language-sh">update-rc.d myscript defaults
-</code></pre>
-
+                  
                 
-              </div>
-    
+              
+
               
                 <span class="post-meta">
                   
@@ -168,7 +154,7 @@
                   
                 </span>
               
-    
+
             </article>
           
         </div>
@@ -192,10 +178,26 @@
                 </a>
               </li>
               <li>
+                <a href="https://www.facebook.com/cyrusncy" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
                 <a href="https://github.com/cyrusn" title="GitHub">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/cyrusncy" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>

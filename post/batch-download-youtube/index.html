@@ -8,14 +8,16 @@
   <title>Batch Download YouTube</title>
   <meta property="og:title" content="Batch Download YouTube" />
   <meta name="twitter:title" content="Batch Download YouTube" />
-  <meta name="description" content=" Using youtube-dl to batch download YouTube to mp3 #!/bin/bash lists=( # list of YouTube ID ) youtube-dl --extract-audio --audio-format mp3 https://www.youtube.com/watch?v=${lists[@]}  ">
-  <meta property="og:description" content=" Using youtube-dl to batch download YouTube to mp3 #!/bin/bash lists=( # list of YouTube ID ) youtube-dl --extract-audio --audio-format mp3 https://www.youtube.com/watch?v=${lists[@]}  ">
-  <meta name="twitter:description" content=" Using youtube-dl to batch download YouTube to mp3 #!/bin/bash lists=( # list of YouTube ID ) youtube-dl --extract-audio --audio-format mp3 https://www.youtube.com/watch?v=${lists[@]}  ">
+  <meta name="description" content=" Using youtube-dl and xargs cat &lt;&lt; EOF | xargs -I@ youtube-dl https://www.youtube.com/watch?v=@ YouTubeVideoID-1 YouTubeVideoID-2 YouTubeVideoID-3 EOF  Useful options  --extract-audio for download audio only --audio-format mp3 choose the audio format --audio-quality 2 set the audio quality, 0(best)-9(worst), (default 5)  ">
+  <meta property="og:description" content=" Using youtube-dl and xargs cat &lt;&lt; EOF | xargs -I@ youtube-dl https://www.youtube.com/watch?v=@ YouTubeVideoID-1 YouTubeVideoID-2 YouTubeVideoID-3 EOF  Useful options  --extract-audio for download audio only --audio-format mp3 choose the audio format --audio-quality 2 set the audio quality, 0(best)-9(worst), (default 5)  ">
+  <meta name="twitter:description" content=" Using youtube-dl and xargs cat &lt;&lt; EOF | xargs -I@ youtube-dl https://www.youtube.com/watch?v=@ YouTubeVideoID-1 YouTubeVideoID-2 YouTubeVideoID-3 EOF  Useful options  --extract-audio for …">
   <meta name="author" content="CyrusN"/>
   <link href='https://cyrusn.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://cyrusn.github.io/img/avatar.png" />
   <meta name="twitter:image" content="https://cyrusn.github.io/img/avatar.png" />
   <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@cyrusncy" />
+  <meta name="twitter:creator" content="@cyrusncy" />
   <meta property="og:url" content="https://cyrusn.github.io/post/batch-download-youtube/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="CyrusN" />
@@ -58,7 +60,7 @@
         
           
             <li>
-              <a title="Post" href="/post/">Post</a>
+              <a title="Posts" href="/post/">Posts</a>
             </li>
           
         
@@ -129,7 +131,6 @@
   
 </span>
 
-
                 
             </div>
           </div>
@@ -146,16 +147,22 @@
       <article role="main" class="blog-post">
         
 
-<h1 id="using-youtube-dl-to-batch-download-youtube-to-mp3">Using <code>youtube-dl</code> to batch download YouTube to mp3</h1>
+<h2 id="using-youtube-dl-and-xargs">Using <code>youtube-dl</code> and  <code>xargs</code></h2>
 
-<pre><code class="language-sh">#!/bin/bash
-
-lists=(
-  # list of YouTube ID
-)
-
-youtube-dl --extract-audio --audio-format mp3 https://www.youtube.com/watch?v=${lists[@]}
+<pre><code class="language-sh">cat &lt;&lt; EOF | xargs -I@ youtube-dl https://www.youtube.com/watch?v=@
+YouTubeVideoID-1
+YouTubeVideoID-2
+YouTubeVideoID-3
+EOF
 </code></pre>
+
+<h2 id="useful-options">Useful options</h2>
+
+<ul>
+<li><code>--extract-audio</code> for download audio only</li>
+<li><code>--audio-format mp3</code> choose the audio format</li>
+<li><code>--audio-quality 2</code> set the audio quality, 0(best)-9(worst), (default 5)</li>
+</ul>
 
       </article>
 
@@ -213,10 +220,26 @@ youtube-dl --extract-audio --audio-format mp3 https://www.youtube.com/watch?v=${
                 </a>
               </li>
               <li>
+                <a href="https://www.facebook.com/cyrusncy" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
                 <a href="https://github.com/cyrusn" title="GitHub">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/cyrusncy" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>

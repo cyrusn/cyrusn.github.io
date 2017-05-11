@@ -18,11 +18,10 @@
       <pubDate>Fri, 21 Oct 2016 12:43:34 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/create-startup-script-in-linux/</guid>
-      <description>Create a new script in /etc/init.d/myscript.
-vi /etc/init.d/myscript  (Obviously it doesn&amp;rsquo;t have to be called &amp;ldquo;myscript&amp;rdquo;.) In this script, do whatever you want to do. Perhaps just run the script you mentioned.
-#!/bin/sh /path/to/my/script.sh  Make it executable.
-chmod 755 /etc/init.d/myscript  Configure the init system to run this script at startup.
-update-rc.d myscript defaults  </description>
+      <description>&lt;p&gt;Create a new script in /etc/init.d/myscript.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;vi /etc/init.d/myscript
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>

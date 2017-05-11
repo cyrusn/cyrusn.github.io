@@ -18,8 +18,10 @@
       <pubDate>Tue, 11 Oct 2016 21:24:17 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/update-digital-ocean-kernel/</guid>
-      <description>Check Which Kernel is Currently in Use To display both the kernel version and your system&amp;rsquo;s architecture (32-bit or 64-bit), type:
-uname -ir  Upgrading All Packages and Using the Newest Kernel sudo apt-get update sudo apt-get dist-upgrade sudo reboot sudo apt-get install update-manager-core sudo do-release-upgrade  Reference How To Upgrade to Ubuntu 16.04 LTS | DigitalOcean How To Update a DigitalOcean Server&amp;rsquo;s Kernel | DigitalOcean</description>
+      <description>&lt;p&gt;Check Which Kernel is Currently in Use&lt;/p&gt;
+
+&lt;p&gt;To display both the kernel version and your system&amp;rsquo;s architecture (32-bit or 64-bit), type:
+&lt;/p&gt;</description>
     </item>
     
   </channel>

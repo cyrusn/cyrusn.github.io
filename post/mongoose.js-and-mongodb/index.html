@@ -8,14 +8,60 @@
   <title>Mongoose.js and MongoDB</title>
   <meta property="og:title" content="Mongoose.js and MongoDB" />
   <meta name="twitter:title" content="Mongoose.js and MongoDB" />
-  <meta name="description" content="Custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的 可以令 _id 有意思,  e.g. studentSchema, use regno as custom _id e.g. teacherSchema, use teacherInitial as custom _id  use uuid if you need to have id before add new stuff  e.g. attachmentSchema, need the id to rename the attachment before saving to database.   Schema.ObjectId  if no need to use custom _id then use Schema.">
-  <meta property="og:description" content="Custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的 可以令 _id 有意思,  e.g. studentSchema, use regno as custom _id e.g. teacherSchema, use teacherInitial as custom _id  use uuid if you need to have id before add new stuff  e.g. attachmentSchema, need the id to rename the attachment before saving to database.   Schema.ObjectId  if no need to use custom _id then use Schema.">
-  <meta name="twitter:description" content="Custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的 可以令 _id 有意思,  e.g. studentSchema, use regno as custom _id e.g. teacherSchema, use teacherInitial as custom _id  use uuid …">
+  <meta name="description" content="Custom _id
+
+
+你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的
+可以令 _id 有意思,
+
+
+e.g. studentSchema, use regno as custom _id
+e.g. teacherSchema, use teacherInitial as custom _id
+
+use uuid if you need to have id before add new stuff
+
+
+e.g. attachmentSchema, need the id to rename the attachment before saving to database.
+
+
+
+">
+  <meta property="og:description" content="Custom _id
+
+
+你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的
+可以令 _id 有意思,
+
+
+e.g. studentSchema, use regno as custom _id
+e.g. teacherSchema, use teacherInitial as custom _id
+
+use uuid if you need to have id before add new stuff
+
+
+e.g. attachmentSchema, need the id to rename the attachment before saving to database.
+
+
+
+">
+  <meta name="twitter:description" content="Custom _id
+
+
+你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的
+可以令 _id 有意思,
+
+
+e.g. studentSchema, use regno as custom _id
+e.g. teacherSchema, use teacherInitial as custom _id
+
+use …">
   <meta name="author" content="CyrusN"/>
   <link href='https://cyrusn.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://cyrusn.github.io/img/avatar.png" />
   <meta name="twitter:image" content="https://cyrusn.github.io/img/avatar.png" />
   <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@cyrusncy" />
+  <meta name="twitter:creator" content="@cyrusncy" />
   <meta property="og:url" content="https://cyrusn.github.io/post/mongoose.js-and-mongodb/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="CyrusN" />
@@ -58,7 +104,7 @@
         
           
             <li>
-              <a title="Post" href="/post/">Post</a>
+              <a title="Posts" href="/post/">Posts</a>
             </li>
           
         
@@ -129,7 +175,6 @@
   
 </span>
 
-
                 
             </div>
           </div>
@@ -144,9 +189,7 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        
-
-<h1 id="custom-id">Custom <code>_id</code></h1>
+        <h1 id="custom-id">Custom <code>_id</code></h1>
 
 <ul>
 <li>你schema 有 <code>_id</code> mongo 就唔同你gen, 亦唔可以用 <code>Schema.ObjectId</code> 做ref, 會認唔到type 的</li>
@@ -163,7 +206,7 @@
 </ul></li>
 </ul>
 
-<!-- more -->
+<p></p>
 
 <h1 id="schema-objectid">Schema.ObjectId</h1>
 
@@ -196,7 +239,6 @@ var Previleged = 6
 role: { type: Int, min: Teacher, max: Previleged}
 
 </code></pre>
-
       </article>
 
       <ul class="pager blog-pager">
@@ -253,10 +295,26 @@ role: { type: Int, min: Teacher, max: Previleged}
                 </a>
               </li>
               <li>
+                <a href="https://www.facebook.com/cyrusncy" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
                 <a href="https://github.com/cyrusn" title="GitHub">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/cyrusncy" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>

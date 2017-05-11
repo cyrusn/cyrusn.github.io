@@ -13,6 +13,8 @@
   <meta property="og:image" content="https://cyrusn.github.io/img/avatar.png" />
   <meta name="twitter:image" content="https://cyrusn.github.io/img/avatar.png" />
   <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@cyrusncy" />
+  <meta name="twitter:creator" content="@cyrusncy" />
   <meta property="og:url" content="https://cyrusn.github.io/tags/gulp/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="CyrusN" />
@@ -55,7 +57,7 @@
         
           
             <li>
-              <a title="Post" href="/post/">Post</a>
+              <a title="Posts" href="/post/">Posts</a>
             </li>
           
         
@@ -126,21 +128,23 @@
             <article class="post-preview">
               <a href="https://cyrusn.github.io/post/gulp/">
                 <h2 class="post-title">Gulp</h2>
-    
+
                 
               </a>
-    
-              <p class="post-meta">
-                Posted on 2015-05-10
-              </p>
-              <div class="post-entry">
+
+              <span class="post-meta">
+  Posted on 2015-05-10
+  
+</span>
+
+              
+
+              
                 
-                  Automate and enhance your workflow Example watch jsx change and compile
-// http://travismaynard.com/writing/getting-started-with-gulp var gulp = require('gulp'); var logger = require('cyrusn-logger'); var react = require('gulp-react'); gulp.task('default', function() { console.log(&quot;hello world&quot;); }); var sourcePath = './src/Client-React/source/*.jsx'; gulp.task('react', function(){ return gulp .src(sourcePath) .pipe(react()) // to prevent break when meet error .on('error', function(err){ logger.debug(err.message); this.emit('end'); }) .pipe(gulp.dest('./src/Client-React/dist')); }); gulp.task('watch', function() { gulp.watch(sourcePath, ['react']); }); gulp.task('default', ['react', 'watch']);  links gulp Introduction to Gulp.
-                  <a href="https://cyrusn.github.io/post/gulp/" class="post-read-more">[Read More]</a>
+                  
                 
-              </div>
-    
+              
+
               
                 <span class="post-meta">
                   
@@ -150,7 +154,7 @@
                   
                 </span>
               
-    
+
             </article>
           
         </div>
@@ -174,10 +178,26 @@
                 </a>
               </li>
               <li>
+                <a href="https://www.facebook.com/cyrusncy" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
                 <a href="https://github.com/cyrusn" title="GitHub">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/cyrusncy" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>

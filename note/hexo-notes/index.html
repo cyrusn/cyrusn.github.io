@@ -8,19 +8,61 @@
   <title>Hexo Notes</title>
   <meta property="og:title" content="Hexo Notes" />
   <meta name="twitter:title" content="Hexo Notes" />
-  <meta name="description" content="How to Enable TOC Create toc.ejs add following content at yourTheme/layout/widget/toc.ejs
-&lt;% var content = page.content; if (is_post() &amp;&amp; content) { %&gt; &lt;div class=&quot;widget-wrap&quot;&gt; &lt;h3 class=&quot;widget-title&quot;&gt;Table of Contents&lt;/h3&gt; &lt;div class=&quot;widget&quot;&gt; &lt;%- toc(content) %&gt; &lt;/div&gt; &lt;/div&gt; &lt;% } %&gt;  Create toc.styl add following content at yourTheme/source/css/_partial/toc.styl then add @import &quot;_partial/toc&quot; to yourTheme/source/css/style.styl
-.toc li list-style: none  finally # Sidebar widgets: - toc  Add recent_update to sidebar add following content at yourTheme/layout/widget/recent_update.">
-  <meta property="og:description" content="How to Enable TOC Create toc.ejs add following content at yourTheme/layout/widget/toc.ejs
-&lt;% var content = page.content; if (is_post() &amp;&amp; content) { %&gt; &lt;div class=&quot;widget-wrap&quot;&gt; &lt;h3 class=&quot;widget-title&quot;&gt;Table of Contents&lt;/h3&gt; &lt;div class=&quot;widget&quot;&gt; &lt;%- toc(content) %&gt; &lt;/div&gt; &lt;/div&gt; &lt;% } %&gt;  Create toc.styl add following content at yourTheme/source/css/_partial/toc.styl then add @import &quot;_partial/toc&quot; to yourTheme/source/css/style.styl
-.toc li list-style: none  finally # Sidebar widgets: - toc  Add recent_update to sidebar add following content at yourTheme/layout/widget/recent_update.">
-  <meta name="twitter:description" content="How to Enable TOC Create toc.ejs add following content at yourTheme/layout/widget/toc.ejs
-&lt;% var content = page.content; if (is_post() &amp;&amp; content) { %&gt; &lt;div …">
+  <meta name="description" content="How to Enable TOC
+
+Create toc.ejs
+
+add following content at yourTheme/layout/widget/toc.ejs
+
+&lt;% var content = page.content;
+if (is_post() &amp;&amp; content) { %&gt;
+
+    &lt;div class=&quot;widget-wrap&quot;&gt;
+        &lt;h3 class=&quot;widget-title&quot;&gt;Table of Contents&lt;/h3&gt;
+        &lt;div class=&quot;widget&quot;&gt;
+            &lt;%- toc(content) %&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;% } %&gt;
+
+
+">
+  <meta property="og:description" content="How to Enable TOC
+
+Create toc.ejs
+
+add following content at yourTheme/layout/widget/toc.ejs
+
+&lt;% var content = page.content;
+if (is_post() &amp;&amp; content) { %&gt;
+
+    &lt;div class=&quot;widget-wrap&quot;&gt;
+        &lt;h3 class=&quot;widget-title&quot;&gt;Table of Contents&lt;/h3&gt;
+        &lt;div class=&quot;widget&quot;&gt;
+            &lt;%- toc(content) %&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;% } %&gt;
+
+
+">
+  <meta name="twitter:description" content="How to Enable TOC
+
+Create toc.ejs
+
+add following content at yourTheme/layout/widget/toc.ejs
+
+&lt;% var content = page.content;
+if (is_post() &amp;&amp; content) { %&gt;
+
+    &lt;div …">
   <meta name="author" content="CyrusN"/>
   <link href='https://cyrusn.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://cyrusn.github.io/img/avatar.png" />
   <meta name="twitter:image" content="https://cyrusn.github.io/img/avatar.png" />
   <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@cyrusncy" />
+  <meta name="twitter:creator" content="@cyrusncy" />
   <meta property="og:url" content="https://cyrusn.github.io/note/hexo-notes/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="CyrusN" />
@@ -63,7 +105,7 @@
         
           
             <li>
-              <a title="Post" href="/post/">Post</a>
+              <a title="Posts" href="/post/">Posts</a>
             </li>
           
         
@@ -142,9 +184,7 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        
-
-<h1 id="how-to-enable-toc">How to Enable TOC</h1>
+        <h1 id="how-to-enable-toc">How to Enable TOC</h1>
 
 <h2 id="create-toc-ejs">Create <code>toc.ejs</code></h2>
 
@@ -162,7 +202,7 @@ if (is_post() &amp;&amp; content) { %&gt;
 &lt;% } %&gt;
 </code></pre>
 
-<!-- more -->
+<p></p>
 
 <h2 id="create-toc-styl">Create <code>toc.styl</code></h2>
 
@@ -228,7 +268,6 @@ deploy:
 </code></pre>
 
 <p>then all post link will become <code>http://&lt;user&gt;.github.io/blog/name_of_your_post</code> and the pathname of your site is still <code>http://&lt;user&gt;.github.io</code></p>
-
       </article>
 
       <ul class="pager blog-pager">
@@ -285,10 +324,26 @@ deploy:
                 </a>
               </li>
               <li>
+                <a href="https://www.facebook.com/cyrusncy" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
                 <a href="https://github.com/cyrusn" title="GitHub">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/cyrusncy" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>

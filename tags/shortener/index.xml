@@ -18,8 +18,14 @@
       <pubDate>Sun, 10 May 2015 00:46:40 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/url-shortener-and-qr-code-generator/</guid>
-      <description>Installation npm install -g goo.gl
-Google API OAuth for shortening a batch of links, create project for URL Shortener API. you will get 1,000,000 requests/day for FREE QR Code to a link  reference https://chart.googleapis.com/chart?chs=200x200&amp;amp;cht=qr&amp;amp;chl= + the link you need  Google Form Prefill https://docs.google.com/forms/d/Form_ID/viewform?entry.Q1_ID=Q1_ANS&amp;amp;entry.Q2_ID=Q2_ANS... 2_ID=Q2_ANS&amp;hellip; 2_ID=Q2_ANS...\ ID=Q2_ANS&amp;hellip;` ID=Q2_ANS&amp;hellip;`</description>
+      <description>&lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;
+
+&lt;p&gt;&lt;code&gt;npm install -g goo.gl&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;google-api-oauth&#34;&gt;Google API OAuth&lt;/h1&gt;
+
+&lt;p&gt;for shortening a batch of links, &lt;a href=&#34;https://console.developers.google.com/project&#34;&gt;create&lt;/a&gt; project for &lt;code&gt;URL Shortener API&lt;/code&gt;. you will get 1,000,000 requests/day for &lt;em&gt;FREE&lt;/em&gt;
+&lt;/p&gt;</description>
     </item>
     
   </channel>
