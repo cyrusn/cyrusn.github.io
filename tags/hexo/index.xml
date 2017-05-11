@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hexo on CyrusN</title>
+    <link>http://cyrusn.github.io/tags/hexo/</link>
+    <description>Recent content in Hexo on CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice).</copyright>
+    <lastBuildDate>Fri, 22 May 2015 12:10:48 +0000</lastBuildDate>
+    
+	<atom:link href="http://cyrusn.github.io/tags/hexo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hexo Notes</title>
+      <link>http://cyrusn.github.io/2015/05/22/hexo-notes/</link>
+      <pubDate>Fri, 22 May 2015 12:10:48 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/22/hexo-notes/</guid>
+      <description>How to Enable TOC Create toc.ejs add following content at yourTheme/layout/widget/toc.ejs
+&amp;lt;% var content = page.content; if (is_post() &amp;amp;&amp;amp; content) { %&amp;gt; &amp;lt;div class=&amp;quot;widget-wrap&amp;quot;&amp;gt; &amp;lt;h3 class=&amp;quot;widget-title&amp;quot;&amp;gt;Table of Contents&amp;lt;/h3&amp;gt; &amp;lt;div class=&amp;quot;widget&amp;quot;&amp;gt; &amp;lt;%- toc(content) %&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;% } %&amp;gt;  Create toc.styl add following content at yourTheme/source/css/_partial/toc.styl then add @import &amp;quot;_partial/toc&amp;quot; to yourTheme/source/css/style.styl
+.toc li list-style: none  finally # Sidebar widgets: - toc  Add recent_update to sidebar add following content at yourTheme/layout/widget/recent_update.</description>
+    </item>
+    
+  </channel>
+</rss>

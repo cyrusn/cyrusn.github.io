@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Setting on CyrusN</title>
+    <link>http://cyrusn.github.io/tags/setting/</link>
+    <description>Recent content in Setting on CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice).</copyright>
+    <lastBuildDate>Thu, 01 Oct 2015 13:32:12 +0000</lastBuildDate>
+    
+	<atom:link href="http://cyrusn.github.io/tags/setting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Settings of My OSX</title>
+      <link>http://cyrusn.github.io/2015/10/01/settings-of-my-osx/</link>
+      <pubDate>Thu, 01 Oct 2015 13:32:12 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/10/01/settings-of-my-osx/</guid>
+      <description>Custom OSX  Remove shift key augmentation for Mission Control animation Enable the three finger drag in Accessibility  Terminal  Autocomplete echo &amp;quot;set completion-ignore-case On&amp;quot; &amp;gt;&amp;gt; ~/.inputrc install command line tools in XCode xcode-select --install  zsh  install .oh-my-zsh symlink for setting zsh  ## for installation of zsh ln -s Dropbox/MacSetting/Terminal/cyrusn ./.cyrusn ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zshrc ~/ ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom ~/ ## for installation of coreutil/.dir_colors ln -s ~/Dropbox/MacSetting/Terminal/coreutil/.</description>
+    </item>
+    
+  </channel>
+</rss>

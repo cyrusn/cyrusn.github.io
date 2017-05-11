@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CyrusN</title>
+    <link>http://cyrusn.github.io/</link>
+    <description>Recent content on CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice).</copyright>
+    <lastBuildDate>Mon, 17 Apr 2017 14:38:47 +0000</lastBuildDate>
+    
+	<atom:link href="http://cyrusn.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ReactJS-and-Redux</title>
+      <link>http://cyrusn.github.io/2017/04/17/reactjs-and-redux/</link>
+      <pubDate>Mon, 17 Apr 2017 14:38:47 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2017/04/17/reactjs-and-redux/</guid>
+      <description>Function Components  Stateless Functional Components in React 0.14 – Josh Black – Medium  Since react 14.0, you can now use the new stateless function component instead of the instead of ES6 class method to define a component
+// stateless functional components function Welcome(props) { return &amp;lt;h1&amp;gt;Hello, {props.name}&amp;lt;/h1&amp;gt;; }  // using class to define a component class Welcome extends React.Component { render() { return &amp;lt;h1&amp;gt;Hello, {this.props.name}&amp;lt;/h1&amp;gt;; } }  or even cleaner</description>
+    </item>
+    
+    <item>
+      <title>Create Startup Script in Linux</title>
+      <link>http://cyrusn.github.io/2016/10/21/create-startup-script-in-linux/</link>
+      <pubDate>Fri, 21 Oct 2016 12:43:34 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2016/10/21/create-startup-script-in-linux/</guid>
+      <description>Create a new script in /etc/init.d/myscript.
+vi /etc/init.d/myscript  (Obviously it doesn&amp;rsquo;t have to be called &amp;ldquo;myscript&amp;rdquo;.) In this script, do whatever you want to do. Perhaps just run the script you mentioned.
+#!/bin/sh /path/to/my/script.sh  Make it executable.
+chmod 755 /etc/init.d/myscript  Configure the init system to run this script at startup.
+update-rc.d myscript defaults  </description>
+    </item>
+    
+    <item>
+      <title>MySQL Notes</title>
+      <link>http://cyrusn.github.io/2016/10/18/mysql-notes/</link>
+      <pubDate>Tue, 18 Oct 2016 10:39:13 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2016/10/18/mysql-notes/</guid>
+      <description> Start SQL in MacOS # Start SQL Server mysql.server start  mysql -u root -p  </description>
+    </item>
+    
+    <item>
+      <title>Update Digital Ocean Kernel</title>
+      <link>http://cyrusn.github.io/2016/10/11/update-digital-ocean-kernel/</link>
+      <pubDate>Tue, 11 Oct 2016 21:24:17 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2016/10/11/update-digital-ocean-kernel/</guid>
+      <description>Check Which Kernel is Currently in Use To display both the kernel version and your system&amp;rsquo;s architecture (32-bit or 64-bit), type:
+uname -ir  Upgrading All Packages and Using the Newest Kernel sudo apt-get update sudo apt-get dist-upgrade sudo reboot sudo apt-get install update-manager-core sudo do-release-upgrade  Reference How To Upgrade to Ubuntu 16.04 LTS | DigitalOcean How To Update a DigitalOcean Server&amp;rsquo;s Kernel | DigitalOcean</description>
+    </item>
+    
+    <item>
+      <title>Caddy Notes</title>
+      <link>http://cyrusn.github.io/2016/10/09/caddy-notes/</link>
+      <pubDate>Sun, 09 Oct 2016 07:41:27 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2016/10/09/caddy-notes/</guid>
+      <description> Installation # install caddy in linux commandline curl -fsSL https://getcaddy.com | bash -s search  Settng of Caddyfile for microservice TODO Make Caddy to serve https  </description>
+    </item>
+    
+    <item>
+      <title>HTTPS and JWT</title>
+      <link>http://cyrusn.github.io/2016/10/07/https-and-jwt/</link>
+      <pubDate>Fri, 07 Oct 2016 23:35:46 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2016/10/07/https-and-jwt/</guid>
+      <description> Links  Self-signed certificate - Wikiwand Let&amp;rsquo;s Encrypt - Free SSL/TLS Certificates JWT, JWS and JWE for Not So Dummies! JSON Web Token Series - YouTube  </description>
+    </item>
+    
+    <item>
+      <title>Batch Download YouTube</title>
+      <link>http://cyrusn.github.io/2016/10/07/batch-download-youtube/</link>
+      <pubDate>Fri, 07 Oct 2016 23:14:04 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2016/10/07/batch-download-youtube/</guid>
+      <description> Using youtube-dl to batch download YouTube to mp3 #!/bin/bash lists=( # list of YouTube ID ) youtube-dl --extract-audio --audio-format mp3 https://www.youtube.com/watch?v=${lists[@]}  </description>
+    </item>
+    
+    <item>
+      <title>Web Authentication</title>
+      <link>http://cyrusn.github.io/2016/10/05/web-authentication/</link>
+      <pubDate>Wed, 05 Oct 2016 00:23:42 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2016/10/05/web-authentication/</guid>
+      <description>Notes From CyrusN Authentication in Golang with JWTs Cookies vs Tokens: The Definitive Guide The Ins and Outs of Token Based Authentication | Scotch
+Notes From Leesei Enterprise APIs and OAuth: Have it All
+Secure your users&amp;rsquo; passwords from the browser on
+Authentication Protocols Basic access authentication - Wikiwand Digest access authentication - Wikiwand Secure Remote Password protocol - Wikiwand
+Anatomy of a zero-knowledge web application - Clipperz, register your creations on the blockchain</description>
+    </item>
+    
+    <item>
+      <title>VIM</title>
+      <link>http://cyrusn.github.io/2016/10/04/vim/</link>
+      <pubDate>Tue, 04 Oct 2016 11:56:18 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2016/10/04/vim/</guid>
+      <description>VIM Basic  Vim Cheat Sheet - English VimGenius vimgifs  Some useful skills Insert across multi-lines Select the lines you want to modify using Ctrl-v. Press: I: Insert before what&amp;rsquo;s selected. A: Append after what&amp;rsquo;s selected. c: Replace what&amp;rsquo;s selected. Type the new text. Press Esc to apply the changes to all selected lines.
+Search and replace :s/foo/bar/g Change each &amp;lsquo;foo&amp;rsquo; to &amp;lsquo;bar&amp;rsquo; in the current line. :%s/foo/bar/g Change each &amp;lsquo;foo&amp;rsquo; to &amp;lsquo;bar&amp;rsquo; in all the lines.</description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>http://cyrusn.github.io/2016/09/30/docker/</link>
+      <pubDate>Fri, 30 Sep 2016 23:06:22 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2016/09/30/docker/</guid>
+      <description>Docker - Build, Ship, and Run Any App, Anywhere</description>
+    </item>
+    
+    <item>
+      <title>NVAlt Setting</title>
+      <link>http://cyrusn.github.io/2016/09/29/nvalt-setting/</link>
+      <pubDate>Thu, 29 Sep 2016 16:23:18 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2016/09/29/nvalt-setting/</guid>
+      <description> Custom Preview Theme  Notational Velocity (nvALT) Custom Stylesheet and Markup HTML  </description>
+    </item>
+    
+    <item>
+      <title>Config Digtal Ocean Droplet as Microservice</title>
+      <link>http://cyrusn.github.io/2016/09/29/config-digtal-ocean-droplet-as-microservice/</link>
+      <pubDate>Thu, 29 Sep 2016 08:31:57 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2016/09/29/config-digtal-ocean-droplet-as-microservice/</guid>
+      <description>Objective This page is a notes for setting apache server for my digital ocean droplet
+Setting Apache2  in file /etc/hosts  change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS  change Port  in file /etc/apache2/port.conf add ServerName localhost change the line listen *:80 to listen 127.0.0.1:4000 disable other modules &amp;lt;IfModule ssl_module&amp;gt; and &amp;lt;IfModule mod_gnutls.c&amp;gt; in file /etc/apache2/site-enabled/000-default.conf change the line &amp;lt;VirtualHost *:80&amp;gt; to &amp;lt;VirtualHost localhost:4000&amp;gt;  restart apache2  run sudo /etc/init.</description>
+    </item>
+    
+    <item>
+      <title>Imagemagick</title>
+      <link>http://cyrusn.github.io/2016/09/26/imagemagick/</link>
+      <pubDate>Mon, 26 Sep 2016 07:46:28 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2016/09/26/imagemagick/</guid>
+      <description> Convert Command imagemagick
+convert rose.jpg -resize 50% rose.png  convert pngs to gif with 2 second per frame
+convert -delay 200 *.png converted.gif  </description>
+    </item>
+    
+    <item>
+      <title>Open SSL</title>
+      <link>http://cyrusn.github.io/2016/09/25/open-ssl/</link>
+      <pubDate>Sun, 25 Sep 2016 21:27:54 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2016/09/25/open-ssl/</guid>
+      <description>OpenSSL is a toolkit for the TLS and SSL. The Most Common OpenSSL Commands
+key/cert types X.509 - Wikiwand DER vs. CRT vs. CER vs. PEM Certificates and How To Convert Them .pem == .crt == X.509? probably .key == .csr == DER? probably not, .csr can be converted to .crt .pfx/.p12 == PKCS#12
+key: no meta data, just the prime numbers and moduluses cert: with meta data
+cert generation How to create a .</description>
+    </item>
+    
+    <item>
+      <title>SSL TLS</title>
+      <link>http://cyrusn.github.io/2016/09/25/ssl-tls/</link>
+      <pubDate>Sun, 25 Sep 2016 21:27:54 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2016/09/25/ssl-tls/</guid>
+      <description>Transport Layer Security (TLS) and its predecessor, Secure Sockets Layer (SSL), are cryptographic protocols designed to provide communications security over a computer network.
+The authentication relied on Certificate Authorities (CA) and a public key infrastructure using X.509 certificates. The server register with a CA and sign its public key with the key of CA for a fee. The client, after receiving the public key from server, verifies it with the CA.</description>
+    </item>
+    
+    <item>
+      <title>Note to Ocean Digital</title>
+      <link>http://cyrusn.github.io/2016/03/26/note-to-ocean-digital/</link>
+      <pubDate>Sat, 26 Mar 2016 12:31:11 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2016/03/26/note-to-ocean-digital/</guid>
+      <description>connect to console # prepare ssh keys first # login droplet ssh root@ip.of.the.droplet # to copy a file from B to A while logged into B scp /path/to/file username@a:/path/to/destination # to copy a file from B to A while logged into A scp username@b:/path/to/file /path/to/destination  perpare ssh key  How To Use SSH Keys with DigitalOcean Droplets | DigitalOcean  achieve  Save a snapshot and delete droplet restore droplet by the snapshot  using tmux # list all session tmux ls # attach to session tmux attach -t sessionName # create new session tmux new -s sessionName # kill session tmux kill-session -t sessionName   just quit terminal for exit the session  Update Server&amp;rsquo;s Kernel How To Update a DigitalOcean Server&amp;rsquo;s Kernel | DigitalOcean</description>
+    </item>
+    
+    <item>
+      <title>LevelDB</title>
+      <link>http://cyrusn.github.io/2015/12/08/leveldb/</link>
+      <pubDate>Tue, 08 Dec 2015 08:35:55 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/12/08/leveldb/</guid>
+      <description>Links Main Page YouTube Introduction</description>
+    </item>
+    
+    <item>
+      <title>Settings of My OSX</title>
+      <link>http://cyrusn.github.io/2015/10/01/settings-of-my-osx/</link>
+      <pubDate>Thu, 01 Oct 2015 13:32:12 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/10/01/settings-of-my-osx/</guid>
+      <description>Custom OSX  Remove shift key augmentation for Mission Control animation Enable the three finger drag in Accessibility  Terminal  Autocomplete echo &amp;quot;set completion-ignore-case On&amp;quot; &amp;gt;&amp;gt; ~/.inputrc install command line tools in XCode xcode-select --install  zsh  install .oh-my-zsh symlink for setting zsh  ## for installation of zsh ln -s Dropbox/MacSetting/Terminal/cyrusn ./.cyrusn ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zshrc ~/ ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom ~/ ## for installation of coreutil/.dir_colors ln -s ~/Dropbox/MacSetting/Terminal/coreutil/.</description>
+    </item>
+    
+    <item>
+      <title>Alfred Notes</title>
+      <link>http://cyrusn.github.io/2015/07/24/alfred-notes/</link>
+      <pubDate>Fri, 24 Jul 2015 23:02:19 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/07/24/alfred-notes/</guid>
+      <description> Use node on alfred workflow node&amp;lt;&amp;lt;-&amp;quot;code&amp;quot; // your code here // e.g. console.log(&amp;quot;hello world&amp;quot;); code  iTerm2 Integration curl --silent &#39;https://raw.githubusercontent.com/stuartcryan/custom-iterm-applescripts-for-alfred/master/custom_iterm_script_iterm_2.9.applescript&#39; | pbcopy   stuartcryan/custom-iterm-applescripts-for-alfred: Custom iTerm Applescripts for Alfred  </description>
+    </item>
+    
+    <item>
+      <title>Google Chrome App</title>
+      <link>http://cyrusn.github.io/2015/06/29/google-chrome-app/</link>
+      <pubDate>Mon, 29 Jun 2015 07:58:25 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/06/29/google-chrome-app/</guid>
+      <description> Links  Adblock Plus - Chrome Web Store Tampermonkey - Chrome Web Store Wikiwand: Wikipedia Modernized - Chrome Web Store Markdown Preview Plus - Chrome Web Store Postman - REST Client - Chrome Web Store  </description>
+    </item>
+    
+    <item>
+      <title>Programming Concept</title>
+      <link>http://cyrusn.github.io/2015/06/05/programming-concept/</link>
+      <pubDate>Fri, 05 Jun 2015 08:53:37 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/06/05/programming-concept/</guid>
+      <description>Links How to make your code self-documenting? | CodeUtopia Separation of concerns - Wikipedia Garbage in, garbage out - Wikiwand
+leesei&amp;rsquo;s choice Naming  寫出黎就要俾名，俾名啲concept 就清楚，code 亦自然清楚 leesei
+ What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?  That programming is about solving problems, not writing code. Here are the four basic tasks that an individual programmer must perform.</description>
+    </item>
+    
+    <item>
+      <title>UML Notes</title>
+      <link>http://cyrusn.github.io/2015/05/28/uml-notes/</link>
+      <pubDate>Thu, 28 May 2015 15:21:07 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/28/uml-notes/</guid>
+      <description>Usecase Include and Extend uml - What&amp;rsquo;s is the difference between include and extend in use case diagram? - Stack Overflow
+Example Amazon Application Use Case Diagram
+Creole in notes notes in plantuml support Creole language Creole (markup) - Wikiwand
+Links UML 2.0 Tutorial - YouTube Unified Modeling Language (UML) description, UML diagram examples, tutorials and reference for all types of UML diagrams - use case diagrams, class, package, component, composite structure diagrams, deployments, activities, interactions, profiles, etc.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript on OSAScript</title>
+      <link>http://cyrusn.github.io/2015/05/27/javascript-on-osascript/</link>
+      <pubDate>Wed, 27 May 2015 12:45:16 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/27/javascript-on-osascript/</guid>
+      <description>Example  JXA-Cookbook Apple Release Notes JavaScript for OS X Automation by Example  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle = &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[0].activeTab; var result = &#39;[&#39; + activeTab.</description>
+    </item>
+    
+    <item>
+      <title>Reading List</title>
+      <link>http://cyrusn.github.io/2015/05/26/reading-list/</link>
+      <pubDate>Tue, 26 May 2015 23:41:04 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/26/reading-list/</guid>
+      <description>Reading List  Ben Alman » Immediately-Invoked Function Expression (IIFE) This section demos loading different config depending on NODE_ENV. protecting-your-keys-from-github Papyros - Arch Linux. reSRC · RESTful Web Services Hub Demystifying Regular Expressions- YouTube  Foundation of Apps TimeLine JS 淺談https Leesei&amp;rsquo;s shell notes Command Line Basic dotfile angular-strap-scrollspy.js at master · mgcrea-angular-strap · GitHub javascript - Properly Handing Anchors in AngularStrap&amp;rsquo;s ScrollSpy - Stack Overflow ngScrollSpy by mg twitter bootstrap - How to implement a scrollspy in angular.</description>
+    </item>
+    
+    <item>
+      <title>Wordpress Notes</title>
+      <link>http://cyrusn.github.io/2015/05/26/wordpress-notes/</link>
+      <pubDate>Tue, 26 May 2015 11:19:29 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/26/wordpress-notes/</guid>
+      <description>theme Child Themes « WordPress Codex
+migrate Moving WordPress « WordPress Codex</description>
+    </item>
+    
+    <item>
+      <title>useful command line tools</title>
+      <link>http://cyrusn.github.io/2015/05/24/useful-command-line-tools/</link>
+      <pubDate>Sun, 24 May 2015 22:36:53 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/24/useful-command-line-tools/</guid>
+      <description>Basic Redirect operators # pipe echo &amp;quot;hello world&amp;quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &amp;quot;hello world&amp;quot; &amp;gt; test.txt # redirect the standard output result to file (append) echo &amp;quot;hello world&amp;quot; &amp;gt;&amp;gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed &#39;s/ /_/g&#39; &amp;lt; test.txt &amp;gt; test_1.txt # line input cat &amp;lt;&amp;lt; end heredoc&amp;gt; hello heredoc&amp;gt; world heredoc&amp;gt; end  Useful Commands Cheatsheet  d to show directory history  type cd -number or directly type the number to go to directory  !</description>
+    </item>
+    
+    <item>
+      <title>Hardware Architecture</title>
+      <link>http://cyrusn.github.io/2015/05/22/hardware-architecture/</link>
+      <pubDate>Fri, 22 May 2015 17:20:27 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/22/hardware-architecture/</guid>
+      <description>Basic  Hardware Basics - YouTube  what is legacy FGA: &amp;ldquo;legacy&amp;rdquo; is not a pejorative. Do not use it as such.
+BIOS POST -&amp;gt; BIOS -&amp;gt; MBR of boot partition -&amp;gt; Bootloader -&amp;gt; Kernel -&amp;gt; init/systemd -&amp;gt; shell/display manager -&amp;gt; startx/xinit
+UEFI Unified Extensible Firmware Interface - ArchWiki</description>
+    </item>
+    
+    <item>
+      <title>Hexo Notes</title>
+      <link>http://cyrusn.github.io/2015/05/22/hexo-notes/</link>
+      <pubDate>Fri, 22 May 2015 12:10:48 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/22/hexo-notes/</guid>
+      <description>How to Enable TOC Create toc.ejs add following content at yourTheme/layout/widget/toc.ejs
+&amp;lt;% var content = page.content; if (is_post() &amp;amp;&amp;amp; content) { %&amp;gt; &amp;lt;div class=&amp;quot;widget-wrap&amp;quot;&amp;gt; &amp;lt;h3 class=&amp;quot;widget-title&amp;quot;&amp;gt;Table of Contents&amp;lt;/h3&amp;gt; &amp;lt;div class=&amp;quot;widget&amp;quot;&amp;gt; &amp;lt;%- toc(content) %&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;% } %&amp;gt;  Create toc.styl add following content at yourTheme/source/css/_partial/toc.styl then add @import &amp;quot;_partial/toc&amp;quot; to yourTheme/source/css/style.styl
+.toc li list-style: none  finally # Sidebar widgets: - toc  Add recent_update to sidebar add following content at yourTheme/layout/widget/recent_update.</description>
+    </item>
+    
+    <item>
+      <title>How to use GoogleScript</title>
+      <link>http://cyrusn.github.io/2015/05/22/how-to-use-googlescript/</link>
+      <pubDate>Fri, 22 May 2015 11:50:04 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/22/how-to-use-googlescript/</guid>
+      <description>Useful Examples Send email from spreadsheet data function sendMailByRowNo(rowNo){ // rowString e.g. 1:1 var rowString = Utilities.formatString(&amp;quot;%s:%s&amp;quot;, rowNo, rowNo) var values = spreadsheet.getRange(rowString).getValues()[0] sendMailByValues(values) } function convertValuesToObject(values) { var obj = {}; obj.timestamp = values[0] obj.email = values[1] obj.title = values[2] return obj } function sendMailByValues(values) { var obj = convertValuesToObject(values) Logger.log(obj) var htmlBody = setEmailBody(obj) var mailAppObject = { to: obj.email, subject: obj.title, htmlBody: htmlBody } // an example to attach a pdf file in google drive // var attachements = DriveApp.</description>
+    </item>
+    
+    <item>
+      <title>Hashbang</title>
+      <link>http://cyrusn.github.io/2015/05/21/hashbang/</link>
+      <pubDate>Thu, 21 May 2015 12:47:20 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/21/hashbang/</guid>
+      <description> Hashbang line NodeJS #! /usr/local/bin/node  JS osascript #! /usr/bin/osascript -l javascript  zsh or bash #! /usr/bin/zsh #! /usr/bin/bash  </description>
+    </item>
+    
+    <item>
+      <title>Draw More Work Less</title>
+      <link>http://cyrusn.github.io/2015/05/10/draw-more-work-less/</link>
+      <pubDate>Sun, 10 May 2015 01:29:03 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/draw-more-work-less/</guid>
+      <description>Some Links UML | leesei&amp;rsquo;s notebook Draw More, Work Less | [self employed] Draw More, Work Less PlantUML Mermaid
+from leesei Unified Modeling Language (UML) Business Process Model and Notation (BPMN) is very similar to activity diagram. YANG Central
+Allen Holub&amp;rsquo;s UML Quick Reference
+Text based tools I used to use the GUI tool Dia. But it was very buggy and no longer updated. I then went on to look for alternatives.</description>
+    </item>
+    
+    <item>
+      <title>Tools on Programming</title>
+      <link>http://cyrusn.github.io/2015/05/10/tools-on-programming/</link>
+      <pubDate>Sun, 10 May 2015 01:28:02 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/tools-on-programming/</guid>
+      <description>Can I use&amp;hellip; Support tables for HTML5, CSS3, etc
+PersistJS is a JavaScript client-side persistent storage library jeremydurham/persist-js
+slidedown/slidedown</description>
+    </item>
+    
+    <item>
+      <title>ReactJS Notes</title>
+      <link>http://cyrusn.github.io/2015/05/10/reactjs-notes/</link>
+      <pubDate>Sun, 10 May 2015 01:26:51 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/reactjs-notes/</guid>
+      <description>API notes and example Top-Level API React.foo({ ... }) React.bar({ ... })  Component API // use within the function in Top-Level API this.foo  Component Specs and Lifecycle React.createClass({ // system function foo: function(){ ... }, // or define your own customMethod: function(){ ... }, ... })  Tags and Attributes HTML Elements a abbr address area article aside audio b base bdi bdo big blockquote body br button canvas caption cite code col colgroup data datalist dd del details dfn dialog div dl dt em embed fieldset figcaption figure footer form h1 h2 h3 h4 h5 h6 head header hr html i iframe img input ins kbd keygen label legend li link main map mark menu menuitem meta meter nav noscript object ol optgroup option output p param picture pre progress q rp rt ruby s samp script section select small source span strong style sub summary sup table tbody td textarea tfoot th thead time title tr track u ul var video wbr  HTML Attributes accept acceptCharset accessKey action allowFullScreen allowTransparency alt async autoComplete autoFocus autoPlay cellPadding cellSpacing charSet checked classID className cols colSpan content contentEditable contextMenu controls coords crossOrigin data dateTime defer dir disabled download draggable encType form formAction formEncType formMethod formNoValidate formTarget frameBorder height hidden href hrefLang htmlFor httpEquiv icon id label lang list loop manifest marginHeight marginWidth max maxLength media mediaGroup method min multiple muted name noValidate open pattern placeholder poster preload radioGroup readOnly rel required role rows rowSpan sandbox scope scrolling seamless selected shape size sizes span spellCheck src srcDoc srcSet start step style tabIndex target title type useMap value width wmode  Event System SyntheticEvent boolean bubbles boolean cancelable DOMEventTarget currentTarget boolean defaultPrevented number eventPhase boolean isTrusted DOMEvent nativeEvent void preventDefault() void stopPropagation() DOMEventTarget target number timeStamp string type  React.</description>
+    </item>
+    
+    <item>
+      <title>Basic CS Knowledge</title>
+      <link>http://cyrusn.github.io/2015/05/10/basic-cs-knowledge/</link>
+      <pubDate>Sun, 10 May 2015 01:22:16 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/basic-cs-knowledge/</guid>
+      <description>打底班  Programming Languages - YouTube Hardware Basics - YouTube Operating System Basics - YouTube  Free Courses http://codeschool.org/ Coursera - Free Online Courses From Top Universities
+JavaScript JavaScript Not Working? Here are 10 Common JavaScript Problems | Toptal Learn All The Nodes Node Tuts // leesei: 我兩年前都係睇 Pedro，佢最近拍過晒 JSConf - YouTube // leesei: 好很多，太舊唔洗睇
+property, protoypal inheritance JavaScript: proto Object properties in JavaScript Properties in JavaScript: definition versus assignment JavaScript terminology: the two prototypes JavaScript properties: inheritance and enumerability JavaScript inheritance by example JavaScript inheritance: beyond the basics (video) Property assignment and the prototype chain A closer look at _.</description>
+    </item>
+    
+    <item>
+      <title>HapiJS</title>
+      <link>http://cyrusn.github.io/2015/05/10/hapijs/</link>
+      <pubDate>Sun, 10 May 2015 00:58:17 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/hapijs/</guid>
+      <description> HapiJS  hapi.js Tutorials Example: Hapi Mongoose Angular  Plugin  Plugin hapi-auth-basic hapi-session-mongo hapi-auth-cookie Best Practice Project Structure · Issue #2479 · hapijs/hapi  Reference  hapi-playground  My Notes  How to set CORS  // set CORS enable for all routes server.connection({ routes: { cors: { headers: [true], credentials: true } } });  </description>
+    </item>
+    
+    <item>
+      <title>Git Notes</title>
+      <link>http://cyrusn.github.io/2015/05/10/git-notes/</link>
+      <pubDate>Sun, 10 May 2015 00:52:39 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/git-notes/</guid>
+      <description>Tutorial Setting up a repository | Atlassian Git Tutorial
+GitHub Badges  shields.io  best practice # on latest commit $ git checkout -b &amp;lt;branch_name&amp;gt; # create new branch # do you work $ git commit -a # edit the commit log as details as possible $ git checkout master $ git merge &amp;lt;branch_name&amp;gt; # double check everything, if ok then push. $ git push # else $ git checkout &amp;lt;branch_name&amp;gt; # amendment $ git commit -a --amend $ git checkout master $ git merge &amp;lt;branch_name&amp;gt; $ git push  add Repository $ git remote add origin https://github.</description>
+    </item>
+    
+    <item>
+      <title>Using Timeline JS in History Lesson</title>
+      <link>http://cyrusn.github.io/2015/05/10/using-timeline-js-in-history-lesson/</link>
+      <pubDate>Sun, 10 May 2015 00:47:53 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/using-timeline-js-in-history-lesson/</guid>
+      <description>TimelineJS is easy to use for making a timeline with google spreadsheet
+Example  Youtube Video Tutorial  How it Work Use Google Spreadsheet Description
+Use HTML Code and Javascript TimelineJS</description>
+    </item>
+    
+    <item>
+      <title>Swift Notes</title>
+      <link>http://cyrusn.github.io/2015/05/10/swift-notes/</link>
+      <pubDate>Sun, 10 May 2015 00:47:48 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/swift-notes/</guid>
+      <description>Start Developing iOS / OSX Apps The Swift Programming Language (Swift 2.2): About Swift Start Developing iOS Apps (Swift): Jump Right In
+ICON for iOS Development 23,500 Icons - Free Download | Icons8
+Basic Keywords Control Flow  where (A switch case can use a where clause to check for additional conditions.)  Computed Properties  lazy get set willSet didSet  Instance Methods  self static mutating  Subscript  subscript  ##Inheritance - override - super</description>
+    </item>
+    
+    <item>
+      <title>Slidedown HTML presentation</title>
+      <link>http://cyrusn.github.io/2015/05/10/slidedownhtml-presentation/</link>
+      <pubDate>Sun, 10 May 2015 00:47:45 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/slidedownhtml-presentation/</guid>
+      <description> Slide Down example github
+RevealJS RevealJS Pandoc
+# pandoc convert md to RevealJS html pandoc -s --mathjax -i -t revealjs SLIDES.md -o example.html  </description>
+    </item>
+    
+    <item>
+      <title>Project and TODO</title>
+      <link>http://cyrusn.github.io/2015/05/10/project-and-todo/</link>
+      <pubDate>Sun, 10 May 2015 00:47:40 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/project-and-todo/</guid>
+      <description> Install Script for My Mac  咁就寫做install script 放埋響個Terminal repo度啦 再加埋repo 條link 響個post 咁就同人地寫啲technical blog 一樣了 pull and 行install script 寫個script git pull oh-my-zsh同setup symlink  Google Analytics &amp;amp; Webmaster  reference post 個sitemap.xml 俾google 做index reference  Learn Basic Python Scripting counsellingSystem  nodejs golang  assembly code － MIPS  睇下去到低層個電腦做緊乜就可 Instruction set MIPS assembly language  </description>
+    </item>
+    
+    <item>
+      <title>Note when making alumniHTML</title>
+      <link>http://cyrusn.github.io/2015/05/10/note-when-making-alumnihtml/</link>
+      <pubDate>Sun, 10 May 2015 00:47:23 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/note-when-making-alumnihtml/</guid>
+      <description> Referece － Sticky Footer － responsive-utilities
+Reminder  Don&amp;rsquo;t use bootstrap.js, use ui-bootstrap.js instead. jQuery is no longer useful ui-bootstrap.collapse  beware the crash between collapse=&amp;quot;isCollapsed&amp;quot; and class=&amp;quot;visible-xs&amp;quot; use ui-bootstrap.dropdown   Leesei Suggestion  每次test isHide 唔好 響tagNames 加個`active field (boolean) 可以navbarTag onclick (jqlite 嘢) update active state  </description>
+    </item>
+    
+    <item>
+      <title>Monokai Color Code</title>
+      <link>http://cyrusn.github.io/2015/05/10/monokai-color-code/</link>
+      <pubDate>Sun, 10 May 2015 00:47:19 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/monokai-color-code/</guid>
+      <description>Cg Red - #DC322F  Razzmatazz - #F92672  Faded Red #FF7F7C  Free Speech Magenta - #E654CE  Lavender Indigo - #935FFA  Dull Lavender - #AE81FF  Conifer - #A6E22E  Snow Flurry - #E0FDCE  Picton Blue - #3BC0F0  Turquoise Blue - #66D9EF  Tree Poppy - #FD971F  Sun - #F6AA11  Paris Daisy - #FEE555  Straw - #E6DB74  Stonewall - #7C7865  Harp - #CFCFC2  Iron - #C8CECC  </description>
+    </item>
+    
+    <item>
+      <title>Mongoose.js and MongoDB</title>
+      <link>http://cyrusn.github.io/2015/05/10/mongoose.js-and-mongodb/</link>
+      <pubDate>Sun, 10 May 2015 00:47:16 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/mongoose.js-and-mongodb/</guid>
+      <description>Custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的 可以令 _id 有意思,  e.g. studentSchema, use regno as custom _id e.g. teacherSchema, use teacherInitial as custom _id  use uuid if you need to have id before add new stuff  e.g. attachmentSchema, need the id to rename the attachment before saving to database.   Schema.ObjectId  if no need to use custom _id then use Schema.</description>
+    </item>
+    
+    <item>
+      <title>Polymer notes</title>
+      <link>http://cyrusn.github.io/2015/05/10/polymer-notes/</link>
+      <pubDate>Sun, 10 May 2015 00:47:15 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/polymer-notes/</guid>
+      <description>Bower - Search Custom Elements - A Web Components Gallery for Modern Web Apps Google Web Components PolymerLabs · GitHub Web Components Catalog - Component Kitchen
+ 寫響htm 叫declarative style, 用C/javascript 嗰啲叫imperative style
+ declarative 易睇易明，但唔應該放logic
+ angular 個template system 都有少少logic的 ng-if, ng-style, ng-show 都係做switching
+ 放個route definition 我個人接受唔到
+ 不過如果個route table 係獨立一個html define 我又okay 喎，咁佢就同一個json 等效
+ 我應該係接受唔到route definition 同view element inline
+  Copy By Value Vs By reference     By value By reference     Copy The value is actually copied; there are two distinct, independent copies.</description>
+    </item>
+    
+    <item>
+      <title>Learning Progress</title>
+      <link>http://cyrusn.github.io/2015/05/10/learning-progress/</link>
+      <pubDate>Sun, 10 May 2015 00:47:13 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/learning-progress/</guid>
+      <description>Computer Science Knowledge  big O Codecademy  Javascript  RPS exercise jsbooks Effective JavaScript 68 Specific Ways to Harness the Power of JavaScript  Learning about iife, closure, lazy evaluation, iife reference  The Art of readable Coding Eloquent Javascript  phantom.js for automate login the webpage
+ leesei CTF example casperjs phantomjs  AngularJS  Understanding AngularJS – Simple Example AngularJS Fundamentals In 60-ish Minutes A Better Way to Learn AngularJS  Node.</description>
+    </item>
+    
+    <item>
+      <title>Gulp</title>
+      <link>http://cyrusn.github.io/2015/05/10/gulp/</link>
+      <pubDate>Sun, 10 May 2015 00:46:47 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/gulp/</guid>
+      <description>Automate and enhance your workflow Example watch jsx change and compile
+// http://travismaynard.com/writing/getting-started-with-gulp var gulp = require(&#39;gulp&#39;); var logger = require(&#39;cyrusn-logger&#39;); var react = require(&#39;gulp-react&#39;); gulp.task(&#39;default&#39;, function() { console.log(&amp;quot;hello world&amp;quot;); }); var sourcePath = &#39;./src/Client-React/source/*.jsx&#39;; gulp.task(&#39;react&#39;, function(){ return gulp .src(sourcePath) .pipe(react()) // to prevent break when meet error .on(&#39;error&#39;, function(err){ logger.debug(err.message); this.emit(&#39;end&#39;); }) .pipe(gulp.dest(&#39;./src/Client-React/dist&#39;)); }); gulp.task(&#39;watch&#39;, function() { gulp.watch(sourcePath, [&#39;react&#39;]); }); gulp.task(&#39;default&#39;, [&#39;react&#39;, &#39;watch&#39;]);  links gulp Introduction to Gulp.</description>
+    </item>
+    
+    <item>
+      <title>URL shortener and QR code Generator</title>
+      <link>http://cyrusn.github.io/2015/05/10/url-shortener-and-qr-code-generator/</link>
+      <pubDate>Sun, 10 May 2015 00:46:40 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/url-shortener-and-qr-code-generator/</guid>
+      <description>Installation npm install -g goo.gl
+Google API OAuth for shortening a batch of links, create project for URL Shortener API. you will get 1,000,000 requests/day for FREE QR Code to a link  reference https://chart.googleapis.com/chart?chs=200x200&amp;amp;cht=qr&amp;amp;chl= + the link you need  Google Form Prefill https://docs.google.com/forms/d/Form_ID/viewform?entry.Q1_ID=Q1_ANS&amp;amp;entry.Q2_ID=Q2_ANS... 2_ID=Q2_ANS&amp;hellip; 2_ID=Q2_ANS...\ ID=Q2_ANS&amp;hellip;` ID=Q2_ANS&amp;hellip;`</description>
+    </item>
+    
+    <item>
+      <title>Golang Notes</title>
+      <link>http://cyrusn.github.io/2015/05/10/golang-notes/</link>
+      <pubDate>Sun, 10 May 2015 00:46:38 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/golang-notes/</guid>
+      <description>Understanding Goroutine  Is golang goroutine a coroutine? Coroutine vs Continuation vs Generator Comparison with generators  MongoDB  mgo Painless Data Storage with MongoDB and Go Connecting to MongoDB with mgo and golang  Router  mux - Gorilla, the golang web toolkit
+Middleware justinas/alice: Painless middleware chaining for Go
+  SQL Database  Go database/sql tutorial  Authentication  dgrijalva/jwt-go: Golang implementation of JSON Web Tokens (JWT) Golang Authentication Using JSON Web Tokens  Useful Package  PuerkitoBio/goquery: A little like that j-thing, only in Go.</description>
+    </item>
+    
+    <item>
+      <title>Gitbook</title>
+      <link>http://cyrusn.github.io/2015/05/10/gitbook/</link>
+      <pubDate>Sun, 10 May 2015 00:46:36 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/gitbook/</guid>
+      <description> Gitbook Modern book format and toolchain using Git and Markdown  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://cyrusn.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/about/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

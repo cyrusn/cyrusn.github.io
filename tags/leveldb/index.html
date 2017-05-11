@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Leveldb &middot; CyrusN</title>
+    <meta name="generator" content="Hugo 0.20.7" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="CyrusN">
+    
+      <meta name="description" content="">
+    
+    
+      <link href="http://cyrusn.github.io/tags/leveldb/index.xml" rel="alternate" type="application/rss+xml" title="CyrusN" />
+      <link href="http://cyrusn.github.io/tags/leveldb/index.xml" rel="feed" type="application/rss+xml" title="CyrusN" />
+    
+    <link rel="canonical" href="http://cyrusn.github.io/tags/leveldb/"/>
+    <link rel="icon" href="http://cyrusn.github.io/favicon.ico">
+    <link rel="apple-touch-icon" href="http://cyrusn.github.io/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="http://cyrusn.github.io/css/style.css">
+    <link rel="stylesheet" href="http://cyrusn.github.io/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://cyrusn.github.io/css/monokai.css">
+    <link rel="stylesheet" href="http://cyrusn.github.io/fancybox/jquery.fancybox.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="Leveldb" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://cyrusn.github.io/tags/leveldb/" />
+
+
+
+<meta property="og:updated_time" content="2015-12-08T08:35:55&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+    
+    
+<meta itemprop="name" content="Leveldb">
+<meta itemprop="description" content="">
+
+
+    
+    <link rel="stylesheet" href="/css/github.css" type="text/css" />
+<link rel="stylesheet" href="/css/custom.css" type="text/css" />
+
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+
+<div id="container">
+    <header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="http://cyrusn.github.io/" id="logo">
+          
+          <span class="site-title">CyrusN</span>
+      </a>
+      <nav id="main-nav">
+          
+          
+          <a class="main-nav-link" href="http://cyrusn.github.io/">Home</a>
+          
+          
+          
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+          <a class="main-nav-link" href="http://cyrusn.github.io/tags/">Tags</a>
+          
+          
+          
+          <a class="main-nav-link" href="http://cyrusn.github.io/categories/">Categories</a>
+          
+          
+      </nav>
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="http://cyrusn.github.io/img/avatar.png"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+              <input type="search" name="q" class="search-form-input" placeholder="Search">
+              <button type="submit" class="search-form-submit">
+              </button>
+              <input type="hidden" name="sitesearch" value="http://cyrusn.github.io/" />
+         </form>
+        </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tbody>
+          <tr>
+          
+          
+          <td><a class="main-nav-link" href="http://cyrusn.github.io/">Home</a></td>
+          
+          
+          
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+          <td><a class="main-nav-link" href="http://cyrusn.github.io/tags/">Tags</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="http://cyrusn.github.io/categories/">Categories</a></td>
+          
+          
+          <td>
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" class="search-form-input" placeholder="Search">
+          <input type="hidden" name="sitesearch" value="http://cyrusn.github.io/" />
+          </form>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</header>
+
+    <div class="outer">
+        <aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      <img id="avatar" src="http://cyrusn.github.io/img/avatar.png">
+      <h2 id="name">CyrusN</h2>
+      <h3 id="title">CyrusN is a math teacher in Hong Kong, eager to learn more in programming</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Hong Kong</span>
+      
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        49
+        <span>Posts</span>
+      </div>
+      <div class="article-info-block">
+        
+          56
+        
+        <span>
+            Tags
+        </span>
+      </div>
+    </div>
+    <div class="profile-block social-links">
+      <table>
+        <tr>
+          
+<td><a href="//github.com/cyrusn" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <td><a href="http://cyrusn.github.io/index.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>
+
+        <section id="main">
+            <section class="archives-wrap">
+                <div class="archive-category-wrap">
+                    <span class="archive-category">Leveldb</span>
+                </div>
+                <div class="archives">
+                    
+                    
+                        <article class="archive-article archive-type-post">
+    <div class="archive-article-inner">
+        <div class="archive-article-thumbnail">
+            
+            <a href="http://cyrusn.github.io/2015/12/08/leveldb/" class="thumbnail">
+                <span class="thumbnail-image thumbnail-none"></span>
+            </a>
+            
+        </div>
+        <header class="archive-article-header">
+            <h1 itemprop="name">
+            <a class="archive-article-title" href="http://cyrusn.github.io/2015/12/08/leveldb/">LevelDB</a>
+            </h1>
+            <div class="archive-article-date">
+                <i class="fa fa-calendar"></i>
+                <time datetime="2015-12-08 08:35:55 &#43;0000 UTC" itemprop="datePublished">2015-12-08</time>
+            </div>
+        </header>
+    </div>
+</article>
+ 
+                    
+                </div>
+            </section>
+            <nav id="page-nav">
+
+</nav>
+
+        </section>
+        <aside id="sidebar">
+    
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="http://cyrusn.github.io/categories/javascript">
+                    javascript
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="http://cyrusn.github.io/categories/react">
+                    react
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="http://cyrusn.github.io/categories/redux">
+                    redux
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tag cloud
+    </h3>
+    <div class="widget tagcloud">
+        
+        
+        <a href="http://cyrusn.github.io/tags/angularjs" style="font-size: 12px;">angularjs</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/apache" style="font-size: 12px;">apache</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/app" style="font-size: 12px;">app</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/authentication" style="font-size: 12px;">authentication</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/bootstrap" style="font-size: 12px;">bootstrap</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/chrome" style="font-size: 12px;">chrome</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/commandline" style="font-size: 12px;">commandline</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/database" style="font-size: 12px;">database</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/digitalocean" style="font-size: 12px;">digitalocean</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/do" style="font-size: 12px;">do</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/docker" style="font-size: 12px;">docker</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/editor" style="font-size: 12px;">editor</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/git" style="font-size: 12px;">git</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/gitbook" style="font-size: 12px;">gitbook</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/github" style="font-size: 12px;">github</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/golang" style="font-size: 12px;">golang</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/google" style="font-size: 12px;">google</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/google-script" style="font-size: 12px;">google-script</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/gulp" style="font-size: 12px;">gulp</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/hapijs" style="font-size: 12px;">hapijs</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/hashbang" style="font-size: 12px;">hashbang</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/hexo" style="font-size: 12px;">hexo</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/https" style="font-size: 12px;">https</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/imagemagick" style="font-size: 12px;">imagemagick</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/javascript" style="font-size: 12px;">javascript</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/jwt" style="font-size: 12px;">jwt</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/leveldb" style="font-size: 12px;">leveldb</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/linux" style="font-size: 12px;">linux</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/macos" style="font-size: 12px;">macos</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/mongodb" style="font-size: 12px;">mongodb</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/mongoose" style="font-size: 12px;">mongoose</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/mysql" style="font-size: 12px;">mysql</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/note-taking" style="font-size: 12px;">note-taking</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/osascript" style="font-size: 12px;">osascript</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/plantuml" style="font-size: 12px;">plantuml</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/polymer" style="font-size: 12px;">polymer</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/productivity" style="font-size: 12px;">productivity</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/react" style="font-size: 12px;">react</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/reactjs" style="font-size: 12px;">reactjs</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/redux" style="font-size: 12px;">redux</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/security" style="font-size: 12px;">security</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/setting" style="font-size: 12px;">setting</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/shortener" style="font-size: 12px;">shortener</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/slidedown" style="font-size: 12px;">slidedown</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/sql" style="font-size: 12px;">sql</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/ssl" style="font-size: 12px;">ssl</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/startup" style="font-size: 12px;">startup</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/swift" style="font-size: 12px;">swift</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/terminal" style="font-size: 12px;">terminal</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/timelinejs" style="font-size: 12px;">timelinejs</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/tls" style="font-size: 12px;">tls</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/uml" style="font-size: 12px;">uml</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/vim" style="font-size: 12px;">vim</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/web-token" style="font-size: 12px;">web-token</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/wordpress" style="font-size: 12px;">wordpress</a>
+        
+        
+        <a href="http://cyrusn.github.io/tags/zsh" style="font-size: 12px;">zsh</a>
+        
+    </div>
+</div>
+
+
+
+
+
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+    </div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017
+      Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>.
+    </div>
+  </div>
+</footer>
+
+
+<script src="http://cyrusn.github.io/fancybox/jquery.fancybox.pack.js"></script>
+<script src="http://cyrusn.github.io/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+</body>
+</html>

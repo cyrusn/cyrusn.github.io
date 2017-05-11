@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Startup on CyrusN</title>
+    <link>http://cyrusn.github.io/tags/startup/</link>
+    <description>Recent content in Startup on CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice).</copyright>
+    <lastBuildDate>Fri, 21 Oct 2016 12:43:34 +0000</lastBuildDate>
+    
+	<atom:link href="http://cyrusn.github.io/tags/startup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Create Startup Script in Linux</title>
+      <link>http://cyrusn.github.io/2016/10/21/create-startup-script-in-linux/</link>
+      <pubDate>Fri, 21 Oct 2016 12:43:34 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2016/10/21/create-startup-script-in-linux/</guid>
+      <description>Create a new script in /etc/init.d/myscript.
+vi /etc/init.d/myscript  (Obviously it doesn&amp;rsquo;t have to be called &amp;ldquo;myscript&amp;rdquo;.) In this script, do whatever you want to do. Perhaps just run the script you mentioned.
+#!/bin/sh /path/to/my/script.sh  Make it executable.
+chmod 755 /etc/init.d/myscript  Configure the init system to run this script at startup.
+update-rc.d myscript defaults  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Database on CyrusN</title>
+    <link>http://cyrusn.github.io/tags/database/</link>
+    <description>Recent content in Database on CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice).</copyright>
+    <lastBuildDate>Tue, 08 Dec 2015 08:35:55 +0000</lastBuildDate>
+    
+	<atom:link href="http://cyrusn.github.io/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LevelDB</title>
+      <link>http://cyrusn.github.io/2015/12/08/leveldb/</link>
+      <pubDate>Tue, 08 Dec 2015 08:35:55 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/12/08/leveldb/</guid>
+      <description>Links Main Page YouTube Introduction</description>
+    </item>
+    
+    <item>
+      <title>Mongoose.js and MongoDB</title>
+      <link>http://cyrusn.github.io/2015/05/10/mongoose.js-and-mongodb/</link>
+      <pubDate>Sun, 10 May 2015 00:47:16 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/mongoose.js-and-mongodb/</guid>
+      <description>Custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的 可以令 _id 有意思,  e.g. studentSchema, use regno as custom _id e.g. teacherSchema, use teacherInitial as custom _id  use uuid if you need to have id before add new stuff  e.g. attachmentSchema, need the id to rename the attachment before saving to database.   Schema.ObjectId  if no need to use custom _id then use Schema.</description>
+    </item>
+    
+  </channel>
+</rss>

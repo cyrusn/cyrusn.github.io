@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slidedown on CyrusN</title>
+    <link>http://cyrusn.github.io/tags/slidedown/</link>
+    <description>Recent content in Slidedown on CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice).</copyright>
+    <lastBuildDate>Sun, 10 May 2015 00:47:45 +0000</lastBuildDate>
+    
+	<atom:link href="http://cyrusn.github.io/tags/slidedown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Slidedown HTML presentation</title>
+      <link>http://cyrusn.github.io/2015/05/10/slidedownhtml-presentation/</link>
+      <pubDate>Sun, 10 May 2015 00:47:45 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/slidedownhtml-presentation/</guid>
+      <description> Slide Down example github
+RevealJS RevealJS Pandoc
+# pandoc convert md to RevealJS html pandoc -s --mathjax -i -t revealjs SLIDES.md -o example.html  </description>
+    </item>
+    
+  </channel>
+</rss>

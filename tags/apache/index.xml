@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apache on CyrusN</title>
+    <link>http://cyrusn.github.io/tags/apache/</link>
+    <description>Recent content in Apache on CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice).</copyright>
+    <lastBuildDate>Thu, 29 Sep 2016 08:31:57 +0000</lastBuildDate>
+    
+	<atom:link href="http://cyrusn.github.io/tags/apache/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Config Digtal Ocean Droplet as Microservice</title>
+      <link>http://cyrusn.github.io/2016/09/29/config-digtal-ocean-droplet-as-microservice/</link>
+      <pubDate>Thu, 29 Sep 2016 08:31:57 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2016/09/29/config-digtal-ocean-droplet-as-microservice/</guid>
+      <description>Objective This page is a notes for setting apache server for my digital ocean droplet
+Setting Apache2  in file /etc/hosts  change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS  change Port  in file /etc/apache2/port.conf add ServerName localhost change the line listen *:80 to listen 127.0.0.1:4000 disable other modules &amp;lt;IfModule ssl_module&amp;gt; and &amp;lt;IfModule mod_gnutls.c&amp;gt; in file /etc/apache2/site-enabled/000-default.conf change the line &amp;lt;VirtualHost *:80&amp;gt; to &amp;lt;VirtualHost localhost:4000&amp;gt;  restart apache2  run sudo /etc/init.</description>
+    </item>
+    
+  </channel>
+</rss>

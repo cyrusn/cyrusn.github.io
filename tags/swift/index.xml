@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Swift on CyrusN</title>
+    <link>http://cyrusn.github.io/tags/swift/</link>
+    <description>Recent content in Swift on CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice).</copyright>
+    <lastBuildDate>Sun, 10 May 2015 00:47:48 +0000</lastBuildDate>
+    
+	<atom:link href="http://cyrusn.github.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Swift Notes</title>
+      <link>http://cyrusn.github.io/2015/05/10/swift-notes/</link>
+      <pubDate>Sun, 10 May 2015 00:47:48 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/swift-notes/</guid>
+      <description>Start Developing iOS / OSX Apps The Swift Programming Language (Swift 2.2): About Swift Start Developing iOS Apps (Swift): Jump Right In
+ICON for iOS Development 23,500 Icons - Free Download | Icons8
+Basic Keywords Control Flow  where (A switch case can use a where clause to check for additional conditions.)  Computed Properties  lazy get set willSet didSet  Instance Methods  self static mutating  Subscript  subscript  ##Inheritance - override - super</description>
+    </item>
+    
+  </channel>
+</rss>

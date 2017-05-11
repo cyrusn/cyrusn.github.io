@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terminal on CyrusN</title>
+    <link>http://cyrusn.github.io/tags/terminal/</link>
+    <description>Recent content in Terminal on CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice).</copyright>
+    <lastBuildDate>Sun, 24 May 2015 22:36:53 +0000</lastBuildDate>
+    
+	<atom:link href="http://cyrusn.github.io/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>useful command line tools</title>
+      <link>http://cyrusn.github.io/2015/05/24/useful-command-line-tools/</link>
+      <pubDate>Sun, 24 May 2015 22:36:53 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/24/useful-command-line-tools/</guid>
+      <description>Basic Redirect operators # pipe echo &amp;quot;hello world&amp;quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &amp;quot;hello world&amp;quot; &amp;gt; test.txt # redirect the standard output result to file (append) echo &amp;quot;hello world&amp;quot; &amp;gt;&amp;gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed &#39;s/ /_/g&#39; &amp;lt; test.txt &amp;gt; test_1.txt # line input cat &amp;lt;&amp;lt; end heredoc&amp;gt; hello heredoc&amp;gt; world heredoc&amp;gt; end  Useful Commands Cheatsheet  d to show directory history  type cd -number or directly type the number to go to directory  !</description>
+    </item>
+    
+  </channel>
+</rss>

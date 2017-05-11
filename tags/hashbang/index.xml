@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hashbang on CyrusN</title>
+    <link>http://cyrusn.github.io/tags/hashbang/</link>
+    <description>Recent content in Hashbang on CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice).</copyright>
+    <lastBuildDate>Thu, 21 May 2015 12:47:20 +0000</lastBuildDate>
+    
+	<atom:link href="http://cyrusn.github.io/tags/hashbang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hashbang</title>
+      <link>http://cyrusn.github.io/2015/05/21/hashbang/</link>
+      <pubDate>Thu, 21 May 2015 12:47:20 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/21/hashbang/</guid>
+      <description> Hashbang line NodeJS #! /usr/local/bin/node  JS osascript #! /usr/bin/osascript -l javascript  zsh or bash #! /usr/bin/zsh #! /usr/bin/bash  </description>
+    </item>
+    
+  </channel>
+</rss>

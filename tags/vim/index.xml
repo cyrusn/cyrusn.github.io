@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on CyrusN</title>
+    <link>http://cyrusn.github.io/tags/vim/</link>
+    <description>Recent content in Vim on CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice).</copyright>
+    <lastBuildDate>Tue, 04 Oct 2016 11:56:18 +0000</lastBuildDate>
+    
+	<atom:link href="http://cyrusn.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VIM</title>
+      <link>http://cyrusn.github.io/2016/10/04/vim/</link>
+      <pubDate>Tue, 04 Oct 2016 11:56:18 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2016/10/04/vim/</guid>
+      <description>VIM Basic  Vim Cheat Sheet - English VimGenius vimgifs  Some useful skills Insert across multi-lines Select the lines you want to modify using Ctrl-v. Press: I: Insert before what&amp;rsquo;s selected. A: Append after what&amp;rsquo;s selected. c: Replace what&amp;rsquo;s selected. Type the new text. Press Esc to apply the changes to all selected lines.
+Search and replace :s/foo/bar/g Change each &amp;lsquo;foo&amp;rsquo; to &amp;lsquo;bar&amp;rsquo; in the current line. :%s/foo/bar/g Change each &amp;lsquo;foo&amp;rsquo; to &amp;lsquo;bar&amp;rsquo; in all the lines.</description>
+    </item>
+    
+  </channel>
+</rss>

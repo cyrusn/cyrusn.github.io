@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Plantuml on CyrusN</title>
+    <link>http://cyrusn.github.io/tags/plantuml/</link>
+    <description>Recent content in Plantuml on CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice).</copyright>
+    <lastBuildDate>Sun, 10 May 2015 01:29:03 +0000</lastBuildDate>
+    
+	<atom:link href="http://cyrusn.github.io/tags/plantuml/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Draw More Work Less</title>
+      <link>http://cyrusn.github.io/2015/05/10/draw-more-work-less/</link>
+      <pubDate>Sun, 10 May 2015 01:29:03 +0000</pubDate>
+      
+      <guid>http://cyrusn.github.io/2015/05/10/draw-more-work-less/</guid>
+      <description>Some Links UML | leesei&amp;rsquo;s notebook Draw More, Work Less | [self employed] Draw More, Work Less PlantUML Mermaid
+from leesei Unified Modeling Language (UML) Business Process Model and Notation (BPMN) is very similar to activity diagram. YANG Central
+Allen Holub&amp;rsquo;s UML Quick Reference
+Text based tools I used to use the GUI tool Dia. But it was very buggy and no longer updated. I then went on to look for alternatives.</description>
+    </item>
+    
+  </channel>
+</rss>
