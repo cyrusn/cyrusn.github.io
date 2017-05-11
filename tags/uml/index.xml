@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Uml on CyrusN</title>
-    <link>http://cyrusn.github.io/tags/uml/</link>
+    <link>https://cyrusn.github.io/tags/uml/</link>
     <description>Recent content in Uml on CyrusN</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice).</copyright>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
     <lastBuildDate>Thu, 28 May 2015 15:21:07 +0000</lastBuildDate>
     
-	<atom:link href="http://cyrusn.github.io/tags/uml/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cyrusn.github.io/tags/uml/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>UML Notes</title>
-      <link>http://cyrusn.github.io/2015/05/28/uml-notes/</link>
+      <link>https://cyrusn.github.io/note/uml-notes/</link>
       <pubDate>Thu, 28 May 2015 15:21:07 +0000</pubDate>
-      
-      <guid>http://cyrusn.github.io/2015/05/28/uml-notes/</guid>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/uml-notes/</guid>
       <description>Usecase Include and Extend uml - What&amp;rsquo;s is the difference between include and extend in use case diagram? - Stack Overflow
 Example Amazon Application Use Case Diagram
 Creole in notes notes in plantuml support Creole language Creole (markup) - Wikiwand
@@ -26,10 +26,10 @@ Links UML 2.0 Tutorial - YouTube Unified Modeling Language (UML) description, UM
     
     <item>
       <title>Draw More Work Less</title>
-      <link>http://cyrusn.github.io/2015/05/10/draw-more-work-less/</link>
+      <link>https://cyrusn.github.io/post/draw-more-work-less/</link>
       <pubDate>Sun, 10 May 2015 01:29:03 +0000</pubDate>
-      
-      <guid>http://cyrusn.github.io/2015/05/10/draw-more-work-less/</guid>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/post/draw-more-work-less/</guid>
       <description>Some Links UML | leesei&amp;rsquo;s notebook Draw More, Work Less | [self employed] Draw More, Work Less PlantUML Mermaid
 from leesei Unified Modeling Language (UML) Business Process Model and Notation (BPMN) is very similar to activity diagram. YANG Central
 Allen Holub&amp;rsquo;s UML Quick Reference

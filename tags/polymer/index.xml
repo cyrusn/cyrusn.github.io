@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Polymer on CyrusN</title>
-    <link>http://cyrusn.github.io/tags/polymer/</link>
+    <link>https://cyrusn.github.io/tags/polymer/</link>
     <description>Recent content in Polymer on CyrusN</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice).</copyright>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
     <lastBuildDate>Sun, 10 May 2015 00:47:15 +0000</lastBuildDate>
     
-	<atom:link href="http://cyrusn.github.io/tags/polymer/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cyrusn.github.io/tags/polymer/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Polymer notes</title>
-      <link>http://cyrusn.github.io/2015/05/10/polymer-notes/</link>
+      <link>https://cyrusn.github.io/note/polymer-notes/</link>
       <pubDate>Sun, 10 May 2015 00:47:15 +0000</pubDate>
-      
-      <guid>http://cyrusn.github.io/2015/05/10/polymer-notes/</guid>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/polymer-notes/</guid>
       <description>Bower - Search Custom Elements - A Web Components Gallery for Modern Web Apps Google Web Components PolymerLabs · GitHub Web Components Catalog - Component Kitchen
  寫響htm 叫declarative style, 用C/javascript 嗰啲叫imperative style
  declarative 易睇易明，但唔應該放logic

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>useful command line tools</title>
+  <meta property="og:title" content="useful command line tools" />
+  <meta name="twitter:title" content="useful command line tools" />
+  <meta name="description" content="Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.txt # redirect the standard output result to file (append) echo &quot;hello world&quot; &gt;&gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed &#39;s/ /_/g&#39; &lt; test.txt &gt; test_1.txt # line input cat &lt;&lt; end heredoc&gt; hello heredoc&gt; world heredoc&gt; end  Useful Commands Cheatsheet  d to show directory history  type cd -number or directly type the number to go to directory  !">
+  <meta property="og:description" content="Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.txt # redirect the standard output result to file (append) echo &quot;hello world&quot; &gt;&gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed &#39;s/ /_/g&#39; &lt; test.txt &gt; test_1.txt # line input cat &lt;&lt; end heredoc&gt; hello heredoc&gt; world heredoc&gt; end  Useful Commands Cheatsheet  d to show directory history  type cd -number or directly type the number to go to directory  !">
+  <meta name="twitter:description" content="Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.txt # redirect the standard …">
+  <meta name="author" content="CyrusN"/>
+  <link href='https://cyrusn.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://cyrusn.github.io/img/avatar.png" />
+  <meta name="twitter:image" content="https://cyrusn.github.io/img/avatar.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://cyrusn.github.io/post/useful-command-line-tools/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CyrusN" />
+
+  <meta name="generator" content="Hugo 0.20.7" />
+  <link rel="canonical" href="https://cyrusn.github.io/post/useful-command-line-tools/" />
+  <link rel="alternate" href="https://cyrusn.github.io/index.xml" type="application/rss+xml" title="CyrusN">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cyrusn.github.io/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://cyrusn.github.io/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://cyrusn.github.io/css/highlight.min.css" />
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://cyrusn.github.io">CyrusN</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Home" href="/">Home</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Post" href="/post/">Post</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Notes" href="/note/">Notes</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="CyrusN" href="https://cyrusn.github.io">
+            <img class="avatar-img" src="https://cyrusn.github.io/img/avatar.png" alt="CyrusN" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>useful command line tools</h1>
+                
+                
+                  <span class="post-meta">
+  Posted on 2015-05-24
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<h1 id="basic">Basic</h1>
+
+<h2 id="redirect-operators">Redirect operators</h2>
+
+<pre><code class="language-sh"># pipe
+echo &quot;hello world&quot; | sed 's/ /_/'
+
+# redirect the standard output result to file (replace)
+echo &quot;hello world&quot; &gt; test.txt
+
+# redirect the standard output result to file (append)
+echo &quot;hello world&quot; &gt;&gt; test.txt
+
+# redirect file to standard input
+# e.g. replace all space to _ in text.txt and save to a new file
+sed 's/ /_/g' &lt; test.txt &gt; test_1.txt
+
+# line input
+cat &lt;&lt; end
+heredoc&gt; hello
+heredoc&gt; world
+heredoc&gt; end
+</code></pre>
+
+<h1 id="useful-commands">Useful Commands</h1>
+
+<h2 id="cheatsheet-http-floss-zoomquiet-io-data-20120129165222-index-html"><a href="http://floss.zoomquiet.io/data/20120129165222/index.html">Cheatsheet</a></h2>
+
+<ul>
+<li><code>d</code> to show directory history
+
+<ul>
+<li>type <code>cd -number</code> or directly type the <code>number</code> to go to directory</li>
+</ul></li>
+<li><code>!:n-m</code> get the attribute from n to m of last command</li>
+<li><code>!!</code> to get the last command</li>
+<li><code>!*</code> to get the argz of last command</li>
+<li><a href="http://www.zzapper.co.uk/zshtips.html">zsh tip</a></li>
+</ul>
+
+<h2 id="links">Links</h2>
+
+<p><a href="http://www.cs.elte.hu/zsh-manual/zsh_toc.html">zsh - Table of Contents</a></p>
+
+<h2 id="copydir">copydir</h2>
+
+<pre><code class="language-sh">function copydir {
+  pwd | tr -d &quot;\r\n&quot; | pbcopy
+}
+</code></pre>
+
+<ul>
+<li><code>copydir</code> to copy current directory to clipboard</li>
+</ul>
+
+<h2 id="qlmanage">qlmanage</h2>
+
+<pre><code class="language-sh"># Quick-look a file from the command line
+alias ql='qlmanage -p'`
+</code></pre>
+
+<h2 id="airport">airport</h2>
+
+<pre><code class="language-sh">    sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/sbin/airport`
+</code></pre>
+
+<p>Scan your local wireless environment from the command line</p>
+
+<h2 id="pgrep-and-pkill">pgrep and pkill</h2>
+
+<p>Find or signal a program or process by name</p>
+
+<h2 id="shutdown">shutdown</h2>
+
+<p>Restart the Mac</p>
+
+<pre><code class="language-sh">    shutdown -r now
+</code></pre>
+
+<h2 id="textutil">textutil</h2>
+
+<p>Convert between various text file formats</p>
+
+<h2 id="xargs">Xargs</h2>
+
+<p>Granted, I often <code>xargs</code>  at CLI to do the looping (KYLee):</p>
+
+<pre><code class="language-sh"># simple use case
+echo &quot;U R L&quot; | xargs -n1 echo
+
+# -I may be needed for more complex use case (`mv @ @.bak`)
+# however -I implies -L (takes input as line)
+# so split before call
+echo &quot;U R L&quot; | sed 's/ /\n/g' | xargs -I@ echo @
+
+# or do with temp file
+echo &quot;U\nR\nL&quot; &gt; file
+cat file | xargs -I@ echo @
+</code></pre>
+
+<h2 id="find-files-and-delete-them">Find files and delete them</h2>
+
+<h1 id="can-use-as-wild-card">can use * as wild card</h1>
+
+<pre><code>find . -name “FILE-TO-FIND&quot; -exec rm -rf {} \;
+</code></pre>
+
+<h1 id="powerful-tools">Powerful tools</h1>
+
+<h2 id="imagemagick-convert">ImageMagick (convert)</h2>
+
+<p><a href="http://www.imagemagick.org/script/command-line-processing.php">ImageMagick</a></p>
+
+<blockquote>
+<p>Use ImageMagick to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.</p>
+</blockquote>
+
+<pre><code class="language-sh">convert image.jpg image.png
+</code></pre>
+
+<pre><code class="language-sh"># It is sometimes convenient to resize an image as they are read. Suppose you have hundreds of large JPEG images you want to convert to a sequence of PNG thumbails:
+convert '*.jpg' -resize 120x120 thumbnail%03d.png
+# rename file batchly
+`rename 's/\.html$/\.php/' *.html`
+
+# create gif
+convert -delay 50 *.png result.gif
+mkdir resize
+for IMG in *.png
+do
+    convert -resize 10% ${IMG} ./resize/${IMG/%.png/_small.png}
+done
+</code></pre>
+
+<h2 id="ffmpeg">ffmpeg</h2>
+
+<p><a href="https://www.ffmpeg.org/">ffmpeg</a>
+A complete, cross-platform solution to record, convert and stream audio and video.</p>
+
+<pre><code class="language-sh"># -i mean input_file
+$ ffmpeg -i input.mp4 output.avi
+</code></pre>
+
+<h2 id="http-server-https-www-npmjs-com-package-http-server"><a href="https://www.npmjs.com/package/http-server">http-server</a></h2>
+
+<blockquote>
+<p>http-server is a simple, zero-configuration command-line http server. It is powerful enough for production usage, but it&rsquo;s simple and hackable enough to be used for testing, local development, and learning.</p>
+</blockquote>
+
+<h2 id="youtube-dl-http-rg3-github-io-youtube-dl"><a href="http://rg3.github.io/youtube-dl/">youtube-dl</a></h2>
+
+<ul>
+<li>youtube-dl is a small command-line program to download videos from YouTube.com and a few more sites.</li>
+</ul>
+
+<h2 id="platinum-searcher-https-github-com-monochromegane-the-platinum-searcher"><a href="https://github.com/monochromegane/the_platinum_searcher">Platinum Searcher</a></h2>
+
+<ul>
+<li>A code search tool similar to ack and the_silver_searcher(ag). It supports multi platforms and multi encodings.</li>
+</ul>
+
+<h2 id="pandoc-http-johnmacfarlane-net-pandoc-index-html"><a href="http://johnmacfarlane.net/pandoc/index.html">Pandoc</a></h2>
+
+<ul>
+<li><a href="http://johnmacfarlane.net/pandoc/demos.html">examples</a></li>
+<li>a universal document converter</li>
+</ul>
+
+<h2 id="osx-metadata">osx metadata</h2>
+
+<p><a href="http://real-world-systems.com/docs/mdfind.1.html">mac OS X mdfind, mdutil, mdls, mdimport. file metadata utilities</a></p>
+
+<h2 id="httpie-command-line-http-client-https-httpie-org"><a href="https://httpie.org/">HTTPie – command line HTTP client</a></h2>
+
+<pre><code class="language-sh"># install
+brew install httpie
+</code></pre>
+
+<h2 id="jq-https-stedolan-github-io-jq"><a href="https://stedolan.github.io/jq/">jq</a></h2>
+
+<ul>
+<li><code>http -b url | jq .name</code></li>
+<li>jq 可以響cli 做到lodash 嘅嘢</li>
+</ul>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://cyrusn.github.io/post/hardware-architecture/" data-toggle="tooltip" data-placement="top" title="Hardware Architecture">&larr; Previous Post</a>
+          </li>
+        
+        
+          <li class="next">
+            <a href="https://cyrusn.github.io/post/reading-list/" data-toggle="tooltip" data-placement="top" title="Reading List">Next Post &rarr;</a>
+          </li>
+        
+      </ul>
+
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'cyrusngithubio';
+    var disqus_identifier = 'https:\/\/cyrusn.github.io\/post\/useful-command-line-tools\/';
+    var disqus_title = 'useful command line tools';
+    var disqus_url = 'https:\/\/cyrusn.github.io\/post\/useful-command-line-tools\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:cyrusncy@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/cyrusn" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://cyrusn.github.io/index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          CyrusN
+          &nbsp;&bull;&nbsp;
+          2017
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://cyrusn.github.io">CyrusN</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.20.7</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cyrusn.github.io/js/main.js"></script>
+<script src="https://cyrusn.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+
+
+
+
+
+  </body>
+</html>
+

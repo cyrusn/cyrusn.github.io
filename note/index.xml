@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on CyrusN</title>
+    <link>https://cyrusn.github.io/note/</link>
+    <description>Recent content in Notes on CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Tue, 18 Oct 2016 10:39:13 +0000</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/note/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MySQL Notes</title>
+      <link>https://cyrusn.github.io/note/mysql-notes/</link>
+      <pubDate>Tue, 18 Oct 2016 10:39:13 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/mysql-notes/</guid>
+      <description> Start SQL in MacOS # Start SQL Server mysql.server start  mysql -u root -p  </description>
+    </item>
+    
+    <item>
+      <title>Caddy Notes</title>
+      <link>https://cyrusn.github.io/note/caddy-notes/</link>
+      <pubDate>Sun, 09 Oct 2016 07:41:27 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/caddy-notes/</guid>
+      <description> Installation # install caddy in linux commandline curl -fsSL https://getcaddy.com | bash -s search  Settng of Caddyfile for microservice TODO Make Caddy to serve https  </description>
+    </item>
+    
+    <item>
+      <title>VIM</title>
+      <link>https://cyrusn.github.io/note/vim/</link>
+      <pubDate>Tue, 04 Oct 2016 11:56:18 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/vim/</guid>
+      <description>VIM Basic  Vim Cheat Sheet - English VimGenius vimgifs  Some useful skills Insert across multi-lines Select the lines you want to modify using Ctrl-v. Press: I: Insert before what&amp;rsquo;s selected. A: Append after what&amp;rsquo;s selected. c: Replace what&amp;rsquo;s selected. Type the new text. Press Esc to apply the changes to all selected lines.
+Search and replace :s/foo/bar/g Change each &amp;lsquo;foo&amp;rsquo; to &amp;lsquo;bar&amp;rsquo; in the current line. :%s/foo/bar/g Change each &amp;lsquo;foo&amp;rsquo; to &amp;lsquo;bar&amp;rsquo; in all the lines.</description>
+    </item>
+    
+    <item>
+      <title>Note to Ocean Digital</title>
+      <link>https://cyrusn.github.io/note/note-to-ocean-digital/</link>
+      <pubDate>Sat, 26 Mar 2016 12:31:11 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/note-to-ocean-digital/</guid>
+      <description>connect to console # prepare ssh keys first # login droplet ssh root@ip.of.the.droplet # to copy a file from B to A while logged into B scp /path/to/file username@a:/path/to/destination # to copy a file from B to A while logged into A scp username@b:/path/to/file /path/to/destination  perpare ssh key  How To Use SSH Keys with DigitalOcean Droplets | DigitalOcean  achieve  Save a snapshot and delete droplet restore droplet by the snapshot  using tmux # list all session tmux ls # attach to session tmux attach -t sessionName # create new session tmux new -s sessionName # kill session tmux kill-session -t sessionName  navigate in tmux  Ctrl-b then [ then you can use your normal navigation keys to scroll around (eg.</description>
+    </item>
+    
+    <item>
+      <title>Alfred Notes</title>
+      <link>https://cyrusn.github.io/note/alfred-notes/</link>
+      <pubDate>Fri, 24 Jul 2015 23:02:19 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/alfred-notes/</guid>
+      <description> Use node on alfred workflow node&amp;lt;&amp;lt;-&amp;quot;code&amp;quot; // your code here // e.g. console.log(&amp;quot;hello world&amp;quot;); code  iTerm2 Integration curl --silent &#39;https://raw.githubusercontent.com/stuartcryan/custom-iterm-applescripts-for-alfred/master/custom_iterm_script_iterm_2.9.applescript&#39; | pbcopy   stuartcryan/custom-iterm-applescripts-for-alfred: Custom iTerm Applescripts for Alfred  </description>
+    </item>
+    
+    <item>
+      <title>UML Notes</title>
+      <link>https://cyrusn.github.io/note/uml-notes/</link>
+      <pubDate>Thu, 28 May 2015 15:21:07 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/uml-notes/</guid>
+      <description>Usecase Include and Extend uml - What&amp;rsquo;s is the difference between include and extend in use case diagram? - Stack Overflow
+Example Amazon Application Use Case Diagram
+Creole in notes notes in plantuml support Creole language Creole (markup) - Wikiwand
+Links UML 2.0 Tutorial - YouTube Unified Modeling Language (UML) description, UML diagram examples, tutorials and reference for all types of UML diagrams - use case diagrams, class, package, component, composite structure diagrams, deployments, activities, interactions, profiles, etc.</description>
+    </item>
+    
+    <item>
+      <title>Wordpress Notes</title>
+      <link>https://cyrusn.github.io/note/wordpress-notes/</link>
+      <pubDate>Tue, 26 May 2015 11:19:29 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/wordpress-notes/</guid>
+      <description>theme Child Themes « WordPress Codex
+migrate Moving WordPress « WordPress Codex</description>
+    </item>
+    
+    <item>
+      <title>Hexo Notes</title>
+      <link>https://cyrusn.github.io/note/hexo-notes/</link>
+      <pubDate>Fri, 22 May 2015 12:10:48 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/hexo-notes/</guid>
+      <description>How to Enable TOC Create toc.ejs add following content at yourTheme/layout/widget/toc.ejs
+&amp;lt;% var content = page.content; if (is_post() &amp;amp;&amp;amp; content) { %&amp;gt; &amp;lt;div class=&amp;quot;widget-wrap&amp;quot;&amp;gt; &amp;lt;h3 class=&amp;quot;widget-title&amp;quot;&amp;gt;Table of Contents&amp;lt;/h3&amp;gt; &amp;lt;div class=&amp;quot;widget&amp;quot;&amp;gt; &amp;lt;%- toc(content) %&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;% } %&amp;gt;  Create toc.styl add following content at yourTheme/source/css/_partial/toc.styl then add @import &amp;quot;_partial/toc&amp;quot; to yourTheme/source/css/style.styl
+.toc li list-style: none  finally # Sidebar widgets: - toc  Add recent_update to sidebar add following content at yourTheme/layout/widget/recent_update.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS Notes</title>
+      <link>https://cyrusn.github.io/note/reactjs-notes/</link>
+      <pubDate>Sun, 10 May 2015 01:26:51 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/reactjs-notes/</guid>
+      <description>API notes and example Top-Level API React.foo({ ... }) React.bar({ ... })  Component API // use within the function in Top-Level API this.foo  Component Specs and Lifecycle React.createClass({ // system function foo: function(){ ... }, // or define your own customMethod: function(){ ... }, ... })  Tags and Attributes HTML Elements a abbr address area article aside audio b base bdi bdo big blockquote body br button canvas caption cite code col colgroup data datalist dd del details dfn dialog div dl dt em embed fieldset figcaption figure footer form h1 h2 h3 h4 h5 h6 head header hr html i iframe img input ins kbd keygen label legend li link main map mark menu menuitem meta meter nav noscript object ol optgroup option output p param picture pre progress q rp rt ruby s samp script section select small source span strong style sub summary sup table tbody td textarea tfoot th thead time title tr track u ul var video wbr  HTML Attributes accept acceptCharset accessKey action allowFullScreen allowTransparency alt async autoComplete autoFocus autoPlay cellPadding cellSpacing charSet checked classID className cols colSpan content contentEditable contextMenu controls coords crossOrigin data dateTime defer dir disabled download draggable encType form formAction formEncType formMethod formNoValidate formTarget frameBorder height hidden href hrefLang htmlFor httpEquiv icon id label lang list loop manifest marginHeight marginWidth max maxLength media mediaGroup method min multiple muted name noValidate open pattern placeholder poster preload radioGroup readOnly rel required role rows rowSpan sandbox scope scrolling seamless selected shape size sizes span spellCheck src srcDoc srcSet start step style tabIndex target title type useMap value width wmode  Event System SyntheticEvent boolean bubbles boolean cancelable DOMEventTarget currentTarget boolean defaultPrevented number eventPhase boolean isTrusted DOMEvent nativeEvent void preventDefault() void stopPropagation() DOMEventTarget target number timeStamp string type  React.</description>
+    </item>
+    
+    <item>
+      <title>Git Notes</title>
+      <link>https://cyrusn.github.io/note/git-notes/</link>
+      <pubDate>Sun, 10 May 2015 00:52:39 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/git-notes/</guid>
+      <description>Tutorial Setting up a repository | Atlassian Git Tutorial
+GitHub Badges  shields.io  best practice # on latest commit $ git checkout -b &amp;lt;branch_name&amp;gt; # create new branch # do you work $ git commit -a # edit the commit log as details as possible $ git checkout master $ git merge &amp;lt;branch_name&amp;gt; # double check everything, if ok then push. $ git push # else $ git checkout &amp;lt;branch_name&amp;gt; # amendment $ git commit -a --amend $ git checkout master $ git merge &amp;lt;branch_name&amp;gt; $ git push  add Repository $ git remote add origin https://github.</description>
+    </item>
+    
+    <item>
+      <title>Swift Notes</title>
+      <link>https://cyrusn.github.io/note/swift-notes/</link>
+      <pubDate>Sun, 10 May 2015 00:47:48 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/swift-notes/</guid>
+      <description>Start Developing iOS / OSX Apps The Swift Programming Language (Swift 2.2): About Swift Start Developing iOS Apps (Swift): Jump Right In
+ICON for iOS Development 23,500 Icons - Free Download | Icons8
+Basic Keywords Control Flow  where (A switch case can use a where clause to check for additional conditions.)  Computed Properties  lazy get set willSet didSet  Instance Methods  self static mutating  Subscript  subscript  ##Inheritance - override - super</description>
+    </item>
+    
+    <item>
+      <title>Polymer notes</title>
+      <link>https://cyrusn.github.io/note/polymer-notes/</link>
+      <pubDate>Sun, 10 May 2015 00:47:15 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/polymer-notes/</guid>
+      <description>Bower - Search Custom Elements - A Web Components Gallery for Modern Web Apps Google Web Components PolymerLabs · GitHub Web Components Catalog - Component Kitchen
+ 寫響htm 叫declarative style, 用C/javascript 嗰啲叫imperative style
+ declarative 易睇易明，但唔應該放logic
+ angular 個template system 都有少少logic的 ng-if, ng-style, ng-show 都係做switching
+ 放個route definition 我個人接受唔到
+ 不過如果個route table 係獨立一個html define 我又okay 喎，咁佢就同一個json 等效
+ 我應該係接受唔到route definition 同view element inline
+  Copy By Value Vs By reference     By value By reference     Copy The value is actually copied; there are two distinct, independent copies.</description>
+    </item>
+    
+    <item>
+      <title>Golang Notes</title>
+      <link>https://cyrusn.github.io/note/golang-notes/</link>
+      <pubDate>Sun, 10 May 2015 00:46:38 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/golang-notes/</guid>
+      <description>Understanding Goroutine  Is golang goroutine a coroutine? Coroutine vs Continuation vs Generator Comparison with generators  MongoDB  mgo Painless Data Storage with MongoDB and Go Connecting to MongoDB with mgo and golang  Router  mux - Gorilla, the golang web toolkit
+Middleware justinas/alice: Painless middleware chaining for Go
+  SQL Database  Go database/sql tutorial  Authentication  dgrijalva/jwt-go: Golang implementation of JSON Web Tokens (JWT) Golang Authentication Using JSON Web Tokens  Useful Package  PuerkitoBio/goquery: A little like that j-thing, only in Go.</description>
+    </item>
+    
+  </channel>
+</rss>

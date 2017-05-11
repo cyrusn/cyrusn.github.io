@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jwt on CyrusN</title>
-    <link>http://cyrusn.github.io/tags/jwt/</link>
+    <link>https://cyrusn.github.io/tags/jwt/</link>
     <description>Recent content in Jwt on CyrusN</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice).</copyright>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
     <lastBuildDate>Wed, 05 Oct 2016 00:23:42 +0000</lastBuildDate>
     
-	<atom:link href="http://cyrusn.github.io/tags/jwt/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cyrusn.github.io/tags/jwt/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Web Authentication</title>
-      <link>http://cyrusn.github.io/2016/10/05/web-authentication/</link>
+      <link>https://cyrusn.github.io/post/web-authentication/</link>
       <pubDate>Wed, 05 Oct 2016 00:23:42 +0000</pubDate>
-      
-      <guid>http://cyrusn.github.io/2016/10/05/web-authentication/</guid>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/post/web-authentication/</guid>
       <description>Notes From CyrusN Authentication in Golang with JWTs Cookies vs Tokens: The Definitive Guide The Ins and Outs of Token Based Authentication | Scotch
 Notes From Leesei Enterprise APIs and OAuth: Have it All
 Secure your users&amp;rsquo; passwords from the browser on

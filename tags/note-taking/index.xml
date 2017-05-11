@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Note Taking on CyrusN</title>
-    <link>http://cyrusn.github.io/tags/note-taking/</link>
+    <link>https://cyrusn.github.io/tags/note-taking/</link>
     <description>Recent content in Note Taking on CyrusN</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice).</copyright>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
     <lastBuildDate>Thu, 29 Sep 2016 16:23:18 +0000</lastBuildDate>
     
-	<atom:link href="http://cyrusn.github.io/tags/note-taking/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cyrusn.github.io/tags/note-taking/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>NVAlt Setting</title>
-      <link>http://cyrusn.github.io/2016/09/29/nvalt-setting/</link>
+      <link>https://cyrusn.github.io/post/nvalt-setting/</link>
       <pubDate>Thu, 29 Sep 2016 16:23:18 +0000</pubDate>
-      
-      <guid>http://cyrusn.github.io/2016/09/29/nvalt-setting/</guid>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/post/nvalt-setting/</guid>
       <description> Custom Preview Theme  Notational Velocity (nvALT) Custom Stylesheet and Markup HTML  </description>
     </item>
     

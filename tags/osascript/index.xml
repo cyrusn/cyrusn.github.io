@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Osascript on CyrusN</title>
-    <link>http://cyrusn.github.io/tags/osascript/</link>
+    <link>https://cyrusn.github.io/tags/osascript/</link>
     <description>Recent content in Osascript on CyrusN</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice).</copyright>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
     <lastBuildDate>Wed, 27 May 2015 12:45:16 +0000</lastBuildDate>
     
-	<atom:link href="http://cyrusn.github.io/tags/osascript/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cyrusn.github.io/tags/osascript/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>JavaScript on OSAScript</title>
-      <link>http://cyrusn.github.io/2015/05/27/javascript-on-osascript/</link>
+      <link>https://cyrusn.github.io/post/javascript-on-osascript/</link>
       <pubDate>Wed, 27 May 2015 12:45:16 +0000</pubDate>
-      
-      <guid>http://cyrusn.github.io/2015/05/27/javascript-on-osascript/</guid>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/post/javascript-on-osascript/</guid>
       <description>Example  JXA-Cookbook Apple Release Notes JavaScript for OS X Automation by Example  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle = &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[0].activeTab; var result = &#39;[&#39; + activeTab.</description>
     </item>
     

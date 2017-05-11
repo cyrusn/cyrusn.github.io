@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Config Digtal Ocean Droplet as Microservice</title>
+  <meta property="og:title" content="Config Digtal Ocean Droplet as Microservice" />
+  <meta name="twitter:title" content="Config Digtal Ocean Droplet as Microservice" />
+  <meta name="description" content="Objective This page is a notes for setting apache server for my digital ocean droplet
+Setting Apache2  in file /etc/hosts  change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS  change Port  in file /etc/apache2/port.conf add ServerName localhost change the line listen *:80 to listen 127.0.0.1:4000 disable other modules &lt;IfModule ssl_module&gt; and &lt;IfModule mod_gnutls.c&gt; in file /etc/apache2/site-enabled/000-default.conf change the line &lt;VirtualHost *:80&gt; to &lt;VirtualHost localhost:4000&gt;  restart apache2  run sudo /etc/init.">
+  <meta property="og:description" content="Objective This page is a notes for setting apache server for my digital ocean droplet
+Setting Apache2  in file /etc/hosts  change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS  change Port  in file /etc/apache2/port.conf add ServerName localhost change the line listen *:80 to listen 127.0.0.1:4000 disable other modules &lt;IfModule ssl_module&gt; and &lt;IfModule mod_gnutls.c&gt; in file /etc/apache2/site-enabled/000-default.conf change the line &lt;VirtualHost *:80&gt; to &lt;VirtualHost localhost:4000&gt;  restart apache2  run sudo /etc/init.">
+  <meta name="twitter:description" content="Objective This page is a notes for setting apache server for my digital ocean droplet
+Setting Apache2  in file /etc/hosts  change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS  change …">
+  <meta name="author" content="CyrusN"/>
+  <link href='https://cyrusn.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://cyrusn.github.io/img/avatar.png" />
+  <meta name="twitter:image" content="https://cyrusn.github.io/img/avatar.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://cyrusn.github.io/post/config-digtal-ocean-droplet-as-microservice/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CyrusN" />
+
+  <meta name="generator" content="Hugo 0.20.7" />
+  <link rel="canonical" href="https://cyrusn.github.io/post/config-digtal-ocean-droplet-as-microservice/" />
+  <link rel="alternate" href="https://cyrusn.github.io/index.xml" type="application/rss+xml" title="CyrusN">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cyrusn.github.io/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://cyrusn.github.io/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://cyrusn.github.io/css/highlight.min.css" />
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://cyrusn.github.io">CyrusN</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Home" href="/">Home</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Post" href="/post/">Post</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Notes" href="/note/">Notes</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="CyrusN" href="https://cyrusn.github.io">
+            <img class="avatar-img" src="https://cyrusn.github.io/img/avatar.png" alt="CyrusN" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Config Digtal Ocean Droplet as Microservice</h1>
+                
+                
+                  <span class="post-meta">
+  Posted on 2016-09-29
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<h1 id="objective">Objective</h1>
+
+<p>This page is a notes for setting apache server for my digital ocean droplet</p>
+
+<h1 id="setting">Setting</h1>
+
+<h2 id="apache2">Apache2</h2>
+
+<ul>
+<li>in file <code>/etc/hosts</code>
+
+<ul>
+<li>change <code>127.0.0.1   localhost</code> to <code>127.0.1.1   localhost WordPress-CaLP-LPSS</code></li>
+</ul></li>
+<li>change Port
+
+<ul>
+<li>in file <code>/etc/apache2/port.conf</code></li>
+<li>add <code>ServerName localhost</code></li>
+<li>change the line <code>listen *:80</code> to <code>listen 127.0.0.1:4000</code></li>
+<li>disable other modules <code>&lt;IfModule ssl_module&gt;</code> and <code>&lt;IfModule mod_gnutls.c&gt;</code></li>
+<li>in file <code>/etc/apache2/site-enabled/000-default.conf</code></li>
+<li>change the line <code>&lt;VirtualHost *:80&gt;</code> to <code>&lt;VirtualHost localhost:4000&gt;</code></li>
+</ul></li>
+<li>restart apache2
+
+<ul>
+<li>run <code>sudo /etc/init.d/apache2 restart</code></li>
+</ul></li>
+</ul>
+
+<h2 id="wordpress">Wordpress</h2>
+
+<p>config WordPress to use proxy
+- add the following lines in <code>/var/www/html/wp-config.php</code></p>
+
+<pre><code class="language-sh">define(‘WP_PROXY_HOST’, ‘careers.liping.edu.hk’);
+define(‘WP_PROXY_PORT’, ’80’);`
+define('WP_PROXY_BYPASS_HOSTS', 'localhost, careers.liping.edu.hk');
+define('FORCE_SSL_ADMIN', true);
+
+</code></pre>
+
+<ul>
+<li>add the following lines in `/var/www/html/wp-content/themes/yourTheme/function.php</li>
+</ul>
+
+<pre><code class="language-sh">update_option( 'siteurl', 'http://careers.liping.edu.hk' );
+update_option( 'home', 'http://careers.liping.edu.hk' );
+</code></pre>
+
+<h2 id="caddy-server">Caddy Server</h2>
+
+<p><a href="quiver-note-url/0A359168-5F3B-43C3-903B-3049F7446AD2">Caddy Notes</a></p>
+
+<pre><code class="language-sh">careers.liping.edu.hk
+
+proxy / localhost:4000 {
+  header_upstream Host {host}
+}
+</code></pre>
+
+<p>using <code>caddy</code> to run the server through <code>tmux</code></p>
+
+<h1 id="todo">TODO</h1>
+
+<ul class="task-list">
+<li><input type="checkbox" checked disabled class="task-list-item"> set <code>apache</code> only serve for <code>localhost</code></li>
+<li><input type="checkbox" checked disabled class="task-list-item"> use <code>caddy</code> to create a proxy server with <code>https</code></li>
+<li><input type="checkbox" disabled class="task-list-item"> fix all Mixed Content problem</li>
+<li><input type="checkbox" disabled class="task-list-item"> use Goggle <code>oauth2</code> login instead</li>
+<li><input type="checkbox" disabled class="task-list-item"> set autostart and run in daemon with <code>upstart</code></li>
+</ul>
+
+<h1 id="reference">Reference</h1>
+
+<ul>
+<li><a href="https://denbeke.be/blog/servers/running-caddy-server-as-a-service/">DenBeke – Running Caddy Server as a service with Upstart</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-configure-the-apache-web-server-on-an-ubuntu-or-debian-vps">How To Configure the Apache Web Server on an Ubuntu or Debian VPS | DigitalOcean</a></li>
+<li><a href="https://istlsfastyet.com/">Is TLS Fast Yet?</a></li>
+<li><a href="https://www.wikiwand.com/en/Proxy_server#/Web_proxy_servers">Proxy server - Wikiwand</a></li>
+<li><a href="https://www.wikiwand.com/en/Webmaster">Webmaster - Wikiwand</a></li>
+</ul>
+
+<h1 id="key-word">Key Word</h1>
+
+<ul>
+<li>reverse proxy</li>
+<li>Microservice</li>
+<li>load balancing</li>
+</ul>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://cyrusn.github.io/post/imagemagick/" data-toggle="tooltip" data-placement="top" title="Imagemagick">&larr; Previous Post</a>
+          </li>
+        
+        
+          <li class="next">
+            <a href="https://cyrusn.github.io/post/nvalt-setting/" data-toggle="tooltip" data-placement="top" title="NVAlt Setting">Next Post &rarr;</a>
+          </li>
+        
+      </ul>
+
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'cyrusngithubio';
+    var disqus_identifier = 'https:\/\/cyrusn.github.io\/post\/config-digtal-ocean-droplet-as-microservice\/';
+    var disqus_title = 'Config Digtal Ocean Droplet as Microservice';
+    var disqus_url = 'https:\/\/cyrusn.github.io\/post\/config-digtal-ocean-droplet-as-microservice\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:cyrusncy@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/cyrusn" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://cyrusn.github.io/index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          CyrusN
+          &nbsp;&bull;&nbsp;
+          2017
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://cyrusn.github.io">CyrusN</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.20.7</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cyrusn.github.io/js/main.js"></script>
+<script src="https://cyrusn.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+
+
+
+
+
+  </body>
+</html>
+

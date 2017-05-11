@@ -2,627 +2,638 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://cyrusn.github.io/2017/04/17/reactjs-and-redux/</loc>
+    <loc>https://cyrusn.github.io/post/reactjs-and-redux/</loc>
     <lastmod>2017-04-17T14:38:47+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2016/10/21/create-startup-script-in-linux/</loc>
+    <loc>https://cyrusn.github.io/post/create-startup-script-in-linux/</loc>
     <lastmod>2016-10-21T12:43:34+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2016/10/18/mysql-notes/</loc>
+    <loc>https://cyrusn.github.io/note/mysql-notes/</loc>
     <lastmod>2016-10-18T10:39:13+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2016/10/11/update-digital-ocean-kernel/</loc>
+    <loc>https://cyrusn.github.io/post/update-digital-ocean-kernel/</loc>
     <lastmod>2016-10-11T21:24:17+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2016/10/09/caddy-notes/</loc>
+    <loc>https://cyrusn.github.io/note/caddy-notes/</loc>
     <lastmod>2016-10-09T07:41:27+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2016/10/07/https-and-jwt/</loc>
+    <loc>https://cyrusn.github.io/post/https-and-jwt/</loc>
     <lastmod>2016-10-07T23:35:46+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2016/10/07/batch-download-youtube/</loc>
+    <loc>https://cyrusn.github.io/post/batch-download-youtube/</loc>
     <lastmod>2016-10-07T23:14:04+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2016/10/05/web-authentication/</loc>
+    <loc>https://cyrusn.github.io/post/web-authentication/</loc>
     <lastmod>2016-10-05T00:23:42+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2016/10/04/vim/</loc>
+    <loc>https://cyrusn.github.io/note/vim/</loc>
     <lastmod>2016-10-04T11:56:18+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2016/09/30/docker/</loc>
+    <loc>https://cyrusn.github.io/post/docker/</loc>
     <lastmod>2016-09-30T23:06:22+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2016/09/29/nvalt-setting/</loc>
+    <loc>https://cyrusn.github.io/post/nvalt-setting/</loc>
     <lastmod>2016-09-29T16:23:18+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2016/09/29/config-digtal-ocean-droplet-as-microservice/</loc>
+    <loc>https://cyrusn.github.io/post/config-digtal-ocean-droplet-as-microservice/</loc>
     <lastmod>2016-09-29T08:31:57+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2016/09/26/imagemagick/</loc>
+    <loc>https://cyrusn.github.io/post/imagemagick/</loc>
     <lastmod>2016-09-26T07:46:28+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2016/09/25/open-ssl/</loc>
+    <loc>https://cyrusn.github.io/post/open-ssl/</loc>
     <lastmod>2016-09-25T21:27:54+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2016/09/25/ssl-tls/</loc>
+    <loc>https://cyrusn.github.io/post/ssl-tls/</loc>
     <lastmod>2016-09-25T21:27:54+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2016/03/26/note-to-ocean-digital/</loc>
+    <loc>https://cyrusn.github.io/note/note-to-ocean-digital/</loc>
     <lastmod>2016-03-26T12:31:11+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/12/08/leveldb/</loc>
+    <loc>https://cyrusn.github.io/post/leveldb/</loc>
     <lastmod>2015-12-08T08:35:55+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/10/01/settings-of-my-osx/</loc>
+    <loc>https://cyrusn.github.io/post/settings-of-my-osx/</loc>
     <lastmod>2015-10-01T13:32:12+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/07/24/alfred-notes/</loc>
+    <loc>https://cyrusn.github.io/note/alfred-notes/</loc>
     <lastmod>2015-07-24T23:02:19+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/06/29/google-chrome-app/</loc>
+    <loc>https://cyrusn.github.io/post/google-chrome-app/</loc>
     <lastmod>2015-06-29T07:58:25+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/06/05/programming-concept/</loc>
+    <loc>https://cyrusn.github.io/post/programming-concept/</loc>
     <lastmod>2015-06-05T08:53:37+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/28/uml-notes/</loc>
+    <loc>https://cyrusn.github.io/note/uml-notes/</loc>
     <lastmod>2015-05-28T15:21:07+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/27/javascript-on-osascript/</loc>
+    <loc>https://cyrusn.github.io/post/javascript-on-osascript/</loc>
     <lastmod>2015-05-27T12:45:16+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/26/reading-list/</loc>
+    <loc>https://cyrusn.github.io/post/reading-list/</loc>
     <lastmod>2015-05-26T23:41:04+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/26/wordpress-notes/</loc>
+    <loc>https://cyrusn.github.io/note/wordpress-notes/</loc>
     <lastmod>2015-05-26T11:19:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/24/useful-command-line-tools/</loc>
+    <loc>https://cyrusn.github.io/post/useful-command-line-tools/</loc>
     <lastmod>2015-05-24T22:36:53+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/22/hardware-architecture/</loc>
+    <loc>https://cyrusn.github.io/post/hardware-architecture/</loc>
     <lastmod>2015-05-22T17:20:27+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/22/hexo-notes/</loc>
+    <loc>https://cyrusn.github.io/note/hexo-notes/</loc>
     <lastmod>2015-05-22T12:10:48+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/22/how-to-use-googlescript/</loc>
+    <loc>https://cyrusn.github.io/post/how-to-use-googlescript/</loc>
     <lastmod>2015-05-22T11:50:04+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/21/hashbang/</loc>
+    <loc>https://cyrusn.github.io/post/hashbang/</loc>
     <lastmod>2015-05-21T12:47:20+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/10/draw-more-work-less/</loc>
+    <loc>https://cyrusn.github.io/post/draw-more-work-less/</loc>
     <lastmod>2015-05-10T01:29:03+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/10/tools-on-programming/</loc>
+    <loc>https://cyrusn.github.io/post/tools-on-programming/</loc>
     <lastmod>2015-05-10T01:28:02+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/10/reactjs-notes/</loc>
+    <loc>https://cyrusn.github.io/note/reactjs-notes/</loc>
     <lastmod>2015-05-10T01:26:51+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/10/basic-cs-knowledge/</loc>
+    <loc>https://cyrusn.github.io/post/basic-cs-knowledge/</loc>
     <lastmod>2015-05-10T01:22:16+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/10/hapijs/</loc>
+    <loc>https://cyrusn.github.io/post/hapijs/</loc>
     <lastmod>2015-05-10T00:58:17+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/10/git-notes/</loc>
+    <loc>https://cyrusn.github.io/note/git-notes/</loc>
     <lastmod>2015-05-10T00:52:39+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/10/using-timeline-js-in-history-lesson/</loc>
+    <loc>https://cyrusn.github.io/post/using-timeline-js-in-history-lesson/</loc>
     <lastmod>2015-05-10T00:47:53+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/10/swift-notes/</loc>
+    <loc>https://cyrusn.github.io/note/swift-notes/</loc>
     <lastmod>2015-05-10T00:47:48+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/10/slidedownhtml-presentation/</loc>
+    <loc>https://cyrusn.github.io/post/slidedownhtml-presentation/</loc>
     <lastmod>2015-05-10T00:47:45+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/10/project-and-todo/</loc>
+    <loc>https://cyrusn.github.io/post/project-and-todo/</loc>
     <lastmod>2015-05-10T00:47:40+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/10/note-when-making-alumnihtml/</loc>
+    <loc>https://cyrusn.github.io/post/note-when-making-alumnihtml/</loc>
     <lastmod>2015-05-10T00:47:23+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/10/monokai-color-code/</loc>
+    <loc>https://cyrusn.github.io/post/monokai-color-code/</loc>
     <lastmod>2015-05-10T00:47:19+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/10/mongoose.js-and-mongodb/</loc>
+    <loc>https://cyrusn.github.io/post/mongoose.js-and-mongodb/</loc>
     <lastmod>2015-05-10T00:47:16+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/10/polymer-notes/</loc>
+    <loc>https://cyrusn.github.io/note/polymer-notes/</loc>
     <lastmod>2015-05-10T00:47:15+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/10/learning-progress/</loc>
+    <loc>https://cyrusn.github.io/post/learning-progress/</loc>
     <lastmod>2015-05-10T00:47:13+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/10/gulp/</loc>
+    <loc>https://cyrusn.github.io/post/gulp/</loc>
     <lastmod>2015-05-10T00:46:47+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/10/url-shortener-and-qr-code-generator/</loc>
+    <loc>https://cyrusn.github.io/post/url-shortener-and-qr-code-generator/</loc>
     <lastmod>2015-05-10T00:46:40+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/10/golang-notes/</loc>
+    <loc>https://cyrusn.github.io/note/golang-notes/</loc>
     <lastmod>2015-05-10T00:46:38+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/2015/05/10/gitbook/</loc>
+    <loc>https://cyrusn.github.io/post/gitbook/</loc>
     <lastmod>2015-05-10T00:46:36+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/about/</loc>
+    <loc>https://cyrusn.github.io/page/about/</loc>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/angularjs/</loc>
+    <loc>https://cyrusn.github.io/tags/angularjs/</loc>
     <lastmod>2015-05-10T00:47:23+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/apache/</loc>
+    <loc>https://cyrusn.github.io/tags/apache/</loc>
     <lastmod>2016-09-29T08:31:57+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/app/</loc>
+    <loc>https://cyrusn.github.io/tags/app/</loc>
     <lastmod>2015-06-29T07:58:25+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/authentication/</loc>
+    <loc>https://cyrusn.github.io/tags/authentication/</loc>
     <lastmod>2016-10-05T00:23:42+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/bootstrap/</loc>
+    <loc>https://cyrusn.github.io/tags/bootstrap/</loc>
     <lastmod>2015-05-10T00:47:23+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/categories/</loc>
+    <loc>https://cyrusn.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/chrome/</loc>
+    <loc>https://cyrusn.github.io/tags/chrome/</loc>
     <lastmod>2015-06-29T07:58:25+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/commandline/</loc>
+    <loc>https://cyrusn.github.io/tags/commandline/</loc>
     <lastmod>2015-05-24T22:36:53+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/</loc>
+    <loc>https://cyrusn.github.io/</loc>
     <lastmod>2017-04-17T14:38:47+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/database/</loc>
+    <loc>https://cyrusn.github.io/tags/database/</loc>
     <lastmod>2015-12-08T08:35:55+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/digitalocean/</loc>
+    <loc>https://cyrusn.github.io/tags/digitalocean/</loc>
     <lastmod>2016-10-11T21:24:17+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/do/</loc>
+    <loc>https://cyrusn.github.io/tags/do/</loc>
     <lastmod>2016-03-26T12:31:11+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/docker/</loc>
+    <loc>https://cyrusn.github.io/tags/docker/</loc>
     <lastmod>2016-09-30T23:06:22+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/editor/</loc>
+    <loc>https://cyrusn.github.io/tags/editor/</loc>
     <lastmod>2016-10-04T11:56:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/git/</loc>
+    <loc>https://cyrusn.github.io/tags/git/</loc>
     <lastmod>2015-05-10T00:52:39+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/gitbook/</loc>
+    <loc>https://cyrusn.github.io/tags/gitbook/</loc>
     <lastmod>2015-05-10T00:46:36+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/github/</loc>
+    <loc>https://cyrusn.github.io/tags/github/</loc>
     <lastmod>2015-05-10T00:52:39+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/golang/</loc>
+    <loc>https://cyrusn.github.io/tags/golang/</loc>
     <lastmod>2015-05-10T00:46:38+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/google/</loc>
+    <loc>https://cyrusn.github.io/tags/google/</loc>
     <lastmod>2015-06-29T07:58:25+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/google-script/</loc>
+    <loc>https://cyrusn.github.io/tags/google-script/</loc>
     <lastmod>2015-05-22T11:50:04+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/gulp/</loc>
+    <loc>https://cyrusn.github.io/tags/gulp/</loc>
     <lastmod>2015-05-10T00:46:47+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/hapijs/</loc>
+    <loc>https://cyrusn.github.io/tags/hapijs/</loc>
     <lastmod>2015-05-10T00:58:17+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/hashbang/</loc>
+    <loc>https://cyrusn.github.io/tags/hashbang/</loc>
     <lastmod>2015-05-21T12:47:20+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/hexo/</loc>
+    <loc>https://cyrusn.github.io/tags/hexo/</loc>
     <lastmod>2015-05-22T12:10:48+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/https/</loc>
+    <loc>https://cyrusn.github.io/tags/https/</loc>
     <lastmod>2016-10-07T23:35:46+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/imagemagick/</loc>
+    <loc>https://cyrusn.github.io/tags/imagemagick/</loc>
     <lastmod>2016-09-26T07:46:28+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/javascript/</loc>
+    <loc>https://cyrusn.github.io/tags/javascript/</loc>
     <lastmod>2015-12-08T08:35:55+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/categories/javascript/</loc>
+    <loc>https://cyrusn.github.io/categories/javascript/</loc>
     <lastmod>2017-04-17T14:38:47+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/jwt/</loc>
+    <loc>https://cyrusn.github.io/tags/jwt/</loc>
     <lastmod>2016-10-05T00:23:42+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/leveldb/</loc>
+    <loc>https://cyrusn.github.io/tags/leveldb/</loc>
     <lastmod>2015-12-08T08:35:55+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/linux/</loc>
+    <loc>https://cyrusn.github.io/tags/linux/</loc>
     <lastmod>2016-10-21T12:43:34+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/macos/</loc>
+    <loc>https://cyrusn.github.io/tags/macos/</loc>
     <lastmod>2015-10-01T13:32:12+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/mongodb/</loc>
+    <loc>https://cyrusn.github.io/tags/mongodb/</loc>
     <lastmod>2015-05-10T00:47:16+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/mongoose/</loc>
+    <loc>https://cyrusn.github.io/tags/mongoose/</loc>
     <lastmod>2015-05-10T00:47:16+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/mysql/</loc>
+    <loc>https://cyrusn.github.io/tags/mysql/</loc>
     <lastmod>2016-10-18T10:39:13+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/note-taking/</loc>
+    <loc>https://cyrusn.github.io/tags/note-taking/</loc>
     <lastmod>2016-09-29T16:23:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/osascript/</loc>
-    <lastmod>2015-05-27T12:45:16+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://cyrusn.github.io/tags/plantuml/</loc>
-    <lastmod>2015-05-10T01:29:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://cyrusn.github.io/tags/polymer/</loc>
-    <lastmod>2015-05-10T00:47:15+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://cyrusn.github.io/post/</loc>
-    <lastmod>2017-04-17T14:38:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://cyrusn.github.io/tags/productivity/</loc>
-    <lastmod>2016-09-26T07:46:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://cyrusn.github.io/tags/react/</loc>
-    <lastmod>2017-04-17T14:38:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://cyrusn.github.io/categories/react/</loc>
-    <lastmod>2017-04-17T14:38:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://cyrusn.github.io/tags/reactjs/</loc>
-    <lastmod>2015-05-10T01:26:51+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://cyrusn.github.io/tags/redux/</loc>
-    <lastmod>2017-04-17T14:38:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://cyrusn.github.io/categories/redux/</loc>
-    <lastmod>2017-04-17T14:38:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://cyrusn.github.io/tags/security/</loc>
-    <lastmod>2016-10-05T00:23:42+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://cyrusn.github.io/tags/setting/</loc>
-    <lastmod>2015-10-01T13:32:12+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://cyrusn.github.io/tags/shortener/</loc>
-    <lastmod>2015-05-10T00:46:40+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://cyrusn.github.io/tags/slidedown/</loc>
-    <lastmod>2015-05-10T00:47:45+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://cyrusn.github.io/tags/sql/</loc>
+    <loc>https://cyrusn.github.io/note/</loc>
     <lastmod>2016-10-18T10:39:13+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/ssl/</loc>
-    <lastmod>2016-09-29T08:31:57+00:00</lastmod>
+    <loc>https://cyrusn.github.io/tags/osascript/</loc>
+    <lastmod>2015-05-27T12:45:16+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/startup/</loc>
-    <lastmod>2016-10-21T12:43:34+00:00</lastmod>
+    <loc>https://cyrusn.github.io/page/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/swift/</loc>
-    <lastmod>2015-05-10T00:47:48+00:00</lastmod>
+    <loc>https://cyrusn.github.io/tags/plantuml/</loc>
+    <lastmod>2015-05-10T01:29:03+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/</loc>
-    <lastmod>2015-05-10T00:47:23+00:00</lastmod>
+    <loc>https://cyrusn.github.io/tags/polymer/</loc>
+    <lastmod>2015-05-10T00:47:15+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/terminal/</loc>
-    <lastmod>2015-05-24T22:36:53+00:00</lastmod>
+    <loc>https://cyrusn.github.io/post/</loc>
+    <lastmod>2017-04-17T14:38:47+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/timelinejs/</loc>
-    <lastmod>2015-05-10T00:47:53+00:00</lastmod>
+    <loc>https://cyrusn.github.io/tags/productivity/</loc>
+    <lastmod>2016-09-26T07:46:28+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/tls/</loc>
-    <lastmod>2016-09-29T08:31:57+00:00</lastmod>
+    <loc>https://cyrusn.github.io/tags/react/</loc>
+    <lastmod>2017-04-17T14:38:47+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/uml/</loc>
-    <lastmod>2015-05-28T15:21:07+00:00</lastmod>
+    <loc>https://cyrusn.github.io/categories/react/</loc>
+    <lastmod>2017-04-17T14:38:47+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/vim/</loc>
-    <lastmod>2016-10-04T11:56:18+00:00</lastmod>
+    <loc>https://cyrusn.github.io/tags/reactjs/</loc>
+    <lastmod>2015-05-10T01:26:51+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/web-token/</loc>
+    <loc>https://cyrusn.github.io/tags/redux/</loc>
+    <lastmod>2017-04-17T14:38:47+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/categories/redux/</loc>
+    <lastmod>2017-04-17T14:38:47+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/security/</loc>
     <lastmod>2016-10-05T00:23:42+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/wordpress/</loc>
+    <loc>https://cyrusn.github.io/tags/setting/</loc>
+    <lastmod>2015-10-01T13:32:12+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/shortener/</loc>
+    <lastmod>2015-05-10T00:46:40+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/slidedown/</loc>
+    <lastmod>2015-05-10T00:47:45+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/sql/</loc>
+    <lastmod>2016-10-18T10:39:13+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/ssl/</loc>
+    <lastmod>2016-09-29T08:31:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/startup/</loc>
+    <lastmod>2016-10-21T12:43:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/swift/</loc>
+    <lastmod>2015-05-10T00:47:48+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/</loc>
+    <lastmod>2015-05-10T00:47:23+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/terminal/</loc>
+    <lastmod>2015-05-24T22:36:53+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/timelinejs/</loc>
+    <lastmod>2015-05-10T00:47:53+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/tls/</loc>
+    <lastmod>2016-09-29T08:31:57+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/uml/</loc>
+    <lastmod>2015-05-28T15:21:07+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/vim/</loc>
+    <lastmod>2016-10-04T11:56:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/web-token/</loc>
+    <lastmod>2016-10-05T00:23:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/wordpress/</loc>
     <lastmod>2015-05-26T11:19:29+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cyrusn.github.io/tags/zsh/</loc>
+    <loc>https://cyrusn.github.io/tags/zsh/</loc>
     <lastmod>2015-05-24T22:36:53+00:00</lastmod>
     <priority>0</priority>
   </url>

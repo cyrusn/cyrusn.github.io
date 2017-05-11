@@ -1,1896 +1,605 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
-    <title>CyrusN</title>
-    <meta name="generator" content="Hugo 0.20.7" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="CyrusN">
-    
-      <meta name="description" content="">
-    
-    
-      <link href="http://cyrusn.github.io/index.xml" rel="alternate" type="application/rss+xml" title="CyrusN" />
-      <link href="http://cyrusn.github.io/index.xml" rel="feed" type="application/rss+xml" title="CyrusN" />
-    
-    <link rel="canonical" href="http://cyrusn.github.io/"/>
-    <link rel="icon" href="http://cyrusn.github.io/favicon.ico">
-    <link rel="apple-touch-icon" href="http://cyrusn.github.io/apple-touch-icon.png"/>
-    <link rel="stylesheet" href="http://cyrusn.github.io/css/style.css">
-    <link rel="stylesheet" href="http://cyrusn.github.io/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://cyrusn.github.io/css/monokai.css">
-    <link rel="stylesheet" href="http://cyrusn.github.io/fancybox/jquery.fancybox.css">
-    
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-    <meta property="og:title" content="CyrusN" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://cyrusn.github.io/" />
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
+  <title>CyrusN</title>
+  <meta property="og:title" content="CyrusN" />
+  <meta name="twitter:title" content="CyrusN" />
+  <meta name="author" content="CyrusN"/>
+  <link href='https://cyrusn.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://cyrusn.github.io/img/avatar.png" />
+  <meta name="twitter:image" content="https://cyrusn.github.io/img/avatar.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://cyrusn.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CyrusN" />
 
+  <meta name="generator" content="Hugo 0.20.7" />
+  <link rel="canonical" href="https://cyrusn.github.io/" />
+  <link rel="alternate" href="https://cyrusn.github.io/index.xml" type="application/rss+xml" title="CyrusN">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cyrusn.github.io/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://cyrusn.github.io/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://cyrusn.github.io/css/highlight.min.css" />
 
-<meta property="og:updated_time" content="2017-04-17T14:38:47&#43;00:00"/>
-
-
-
-
-
-
-
-
-
-
-    
-    
-<meta itemprop="name" content="CyrusN">
-<meta itemprop="description" content="">
-
-
-    
-    <link rel="stylesheet" href="/css/github.css" type="text/css" />
-<link rel="stylesheet" href="/css/custom.css" type="text/css" />
-
-
-    
-
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
-<body>
-<div class="container">
 
-
-<div id="container">
-    <header id="header">
-  <div id="header-main" class="header-inner">
-    <div class="outer">
-      <a href="http://cyrusn.github.io/" id="logo">
-          
-          <span class="site-title">CyrusN</span>
-      </a>
-      <nav id="main-nav">
-          
-          
-          <a class="main-nav-link" href="http://cyrusn.github.io/">Home</a>
-          
-          
-          
-          
-          
-          
-
-          
-
-          
-          
-          
-          
-          <a class="main-nav-link" href="http://cyrusn.github.io/tags/">Tags</a>
-          
-          
-          
-          <a class="main-nav-link" href="http://cyrusn.github.io/categories/">Categories</a>
-          
-          
-      </nav>
-        <nav id="sub-nav">
-          <div class="profile" id="profile-nav">
-            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="http://cyrusn.github.io/img/avatar.png"><i class="fa fa-caret-down"></i></a>
-          </div>
-        </nav>
-        <div id="search-form-wrap">
-          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
-              <input type="search" name="q" class="search-form-input" placeholder="Search">
-              <button type="submit" class="search-form-submit">
-              </button>
-              <input type="hidden" name="sitesearch" value="http://cyrusn.github.io/" />
-         </form>
-        </div>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://cyrusn.github.io">CyrusN</a>
     </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Home" href="/">Home</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Post" href="/post/">Post</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Notes" href="/note/">Notes</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="CyrusN" href="https://cyrusn.github.io">
+            <img class="avatar-img" src="https://cyrusn.github.io/img/avatar.png" alt="CyrusN" />
+          </a>
+        
+      </div>
+    </div>
+
   </div>
-  <div id="main-nav-mobile" class="header-sub header-inner">
-    <table class="menu outer">
-      <tbody>
-          <tr>
-          
-          
-          <td><a class="main-nav-link" href="http://cyrusn.github.io/">Home</a></td>
-          
-          
-          
-          
-          
-          
-
-          
-
-          
-          
-          
-          
-          <td><a class="main-nav-link" href="http://cyrusn.github.io/tags/">Tags</a></td>
-          
-          
-          
-          <td><a class="main-nav-link" href="http://cyrusn.github.io/categories/">Categories</a></td>
-          
-          
-          <td>
-          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
-          <input type="search" name="q" class="search-form-input" placeholder="Search">
-          <input type="hidden" name="sitesearch" value="http://cyrusn.github.io/" />
-          </form>
-        </td>
-      </tr>
-      </tbody>
-    </table>
-  </div>
-</header>
+</nav>
 
 
-    <div class="outer">
-    <aside id="profile">
-  <div class="inner profile-inner">
-    <div class="base-info profile-block">
-      <img id="avatar" src="http://cyrusn.github.io/img/avatar.png">
-      <h2 id="name">CyrusN</h2>
-      <h3 id="title">CyrusN is a math teacher in Hong Kong, eager to learn more in programming</h3>
-      <span id="location"><i class="fa fa-map-marker"></i>Hong Kong</span>
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
       
-    </div>
-    <div class="article-info profile-block">
-      <div class="article-info-block">
-        49
-        <span>Posts</span>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="page-heading">
+              <h1>CyrusN</h1>
+                
+                  
+                    <hr class="small">
+                    <span class="page-subheading">My Programming Notes</span>
+                  
+                
+                
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="article-info-block">
-        
-          56
-        
-        <span>
-            Tags
-        </span>
-      </div>
     </div>
-    <div class="profile-block social-links">
-      <table>
-        <tr>
+  </header>
+
+
+    
+  <div role="main" class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+
+        <div class="posts-list">
           
-<td><a href="//github.com/cyrusn" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></td>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <td><a href="http://cyrusn.github.io/index.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
-        </tr>
-      </table>
-    </div>
-  </div>
-</aside>
-
-    <section id="main">
-    
-    
-    <article class="article article-type-post" itemscope="" itemprop="blogPost">
-        <div class="article-inner">
-            
-            </a>
-
-            <header class="article-header">
-    <a href="http://cyrusn.github.io/2017/04/17/reactjs-and-redux/">
-    <h1 class="article-title" itemprop="name">
-        ReactJS-and-Redux
-    </h1>
-    </a>
-    <div class="article-meta">
-
-        
-        <div class="article-date">
-            <i class="fa fa-calendar"></i>
-            <time datetime="2017-04-17 14:38:47 &#43;0000 UTC" itemprop="datePublished">2017-04-17</time>
-            &middot;
-            134
-            words
-            &middot;
-            1
-            minute read
-        </div>
-        
-        
-            
-            
-            <div class="article-category">
-                <i class="fa fa-folder"></i>
+          
+            <article class="post-preview">
+              <a href="https://cyrusn.github.io/post/reactjs-and-redux/">
+                <h2 class="post-title">ReactJS-and-Redux</h2>
                 
-                
-                <a class="article-category-link" href="http://cyrusn.github.io/categories/javascript">javascript</a>
-                &middot;
-                
-                
-                <a class="article-category-link" href="http://cyrusn.github.io/categories/react">react</a>
-                &middot;
-                
-                
-                <a class="article-category-link" href="http://cyrusn.github.io/categories/redux">redux</a>
-                
-                
-            </div>
-            
-        
+              </a>
 
-        
-            
-            
-            <div class="article-category">
-                <i class="fa fa-tags"></i>
-                
-                
-                <a class="article-category-link" href="http://cyrusn.github.io/tags/react">react</a>
-                &middot;
-                
-                
-                <a class="article-category-link" href="http://cyrusn.github.io/tags/redux">redux</a>
-                
-                
-            </div>
-            
-        
-    </div>
-</header>
+              <span class="post-meta">
+  Posted on 2017-04-17
+  
+</span>
 
-            <div class="article-entry" itemprop="articleBody">
-                <p>
-                    Function Components  Stateless Functional Components in React 0.14 – Josh Black – Medium  Since react 14.0, you can now use the new stateless function component instead of the instead of ES6 class method to define a component
+
+              <div class="post-entry">
+                
+                  Function Components  Stateless Functional Components in React 0.14 – Josh Black – Medium  Since react 14.0, you can now use the new stateless function component instead of the instead of ES6 class method to define a component
 // stateless functional components function Welcome(props) { return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;; }  // using class to define a component class Welcome extends React.Component { render() { return &lt;h1&gt;Hello, {this.props.name}&lt;/h1&gt;; } }  or even cleaner
-                    <br>
-                </p>
-                <p class="article-more-link">
-                    <a href="http://cyrusn.github.io/2017/04/17/reactjs-and-redux/">
-                        Read more
-                    </a>
-                </p>
-            </div>
-            <footer class="article-footer">
-    <a data-url="http://cyrusn.github.io/2017/04/17/reactjs-and-redux/" data-id="99ff310e30edd4bb9c538b35810c678e" class="article-share-link">
-        <i class="fa fa-share"></i>
-        Share
-    </a>
-    
-    <a href="http://cyrusn.github.io/2017/04/17/reactjs-and-redux/#disqus_thread" class="article-comment-link">
-        Comments
-    </a>
-    
-
-    <script>
-    (function ($) {
-        
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-    </script>
-</footer>
-
-        </div>
-    </article>
-    
-    <article class="article article-type-post" itemscope="" itemprop="blogPost">
-        <div class="article-inner">
-            
-            </a>
-
-            <header class="article-header">
-    <a href="http://cyrusn.github.io/2016/10/21/create-startup-script-in-linux/">
-    <h1 class="article-title" itemprop="name">
-        Create Startup Script in Linux
-    </h1>
-    </a>
-    <div class="article-meta">
-
-        
-        <div class="article-date">
-            <i class="fa fa-calendar"></i>
-            <time datetime="2016-10-21 12:43:34 &#43;0000 UTC" itemprop="datePublished">2016-10-21</time>
-            &middot;
-            53
-            words
-            &middot;
-            1
-            minute read
-        </div>
-        
-        
-
-        
-            
-            
-            <div class="article-category">
-                <i class="fa fa-tags"></i>
+                  <a href="https://cyrusn.github.io/post/reactjs-and-redux/" class="post-read-more">[Read More]</a>
                 
+              </div>
+
+              
+                <span class="post-meta">
                 
-                <a class="article-category-link" href="http://cyrusn.github.io/tags/linux">linux</a>
-                &middot;
+                  #<a href="/tags/react">react</a>&nbsp;
                 
+                  #<a href="/tags/redux">redux</a>&nbsp;
                 
-                <a class="article-category-link" href="http://cyrusn.github.io/tags/startup">startup</a>
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://cyrusn.github.io/post/create-startup-script-in-linux/">
+                <h2 class="post-title">Create Startup Script in Linux</h2>
                 
+              </a>
+
+              <span class="post-meta">
+  Posted on 2016-10-21
+  
+</span>
+
+
+              <div class="post-entry">
                 
-            </div>
-            
-        
-    </div>
-</header>
+                  <p>Create a new script in /etc/init.d/myscript.</p>
 
-            <div class="article-entry" itemprop="articleBody">
-                <p>
-                    Create a new script in /etc/init.d/myscript.
-vi /etc/init.d/myscript  (Obviously it doesn&rsquo;t have to be called &ldquo;myscript&rdquo;.) In this script, do whatever you want to do. Perhaps just run the script you mentioned.
-#!/bin/sh /path/to/my/script.sh  Make it executable.
-chmod 755 /etc/init.d/myscript  Configure the init system to run this script at startup.
-update-rc.d myscript defaults
-                    <br>
-                </p>
-                <p class="article-more-link">
-                    <a href="http://cyrusn.github.io/2016/10/21/create-startup-script-in-linux/">
-                        Read more
-                    </a>
-                </p>
-            </div>
-            <footer class="article-footer">
-    <a data-url="http://cyrusn.github.io/2016/10/21/create-startup-script-in-linux/" data-id="1100f48391fe0b63356f362bba9636eb" class="article-share-link">
-        <i class="fa fa-share"></i>
-        Share
-    </a>
-    
-    <a href="http://cyrusn.github.io/2016/10/21/create-startup-script-in-linux/#disqus_thread" class="article-comment-link">
-        Comments
-    </a>
-    
+<pre><code class="language-sh">vi /etc/init.d/myscript
+</code></pre>
 
-    <script>
-    (function ($) {
-        
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
+<p>(Obviously it doesn&rsquo;t have to be called &ldquo;myscript&rdquo;.) In this script, do whatever you want to do. Perhaps just run the script you mentioned.</p>
 
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
+<pre><code class="language-sh">#!/bin/sh
+/path/to/my/script.sh
+</code></pre>
 
-            if ($('#' + id).length) {
-                box = $('#' + id);
+<p>Make it executable.</p>
 
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
+<pre><code class="language-sh">chmod 755 /etc/init.d/myscript
+</code></pre>
 
-              box = $(html);
+<p>Configure the init system to run this script at startup.</p>
 
-              $('body').append(box);
-            }
+<pre><code class="language-sh">update-rc.d myscript defaults
+</code></pre>
 
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-    </script>
-</footer>
-
-        </div>
-    </article>
-    
-    <article class="article article-type-post" itemscope="" itemprop="blogPost">
-        <div class="article-inner">
-            
-            </a>
-
-            <header class="article-header">
-    <a href="http://cyrusn.github.io/2016/10/18/mysql-notes/">
-    <h1 class="article-title" itemprop="name">
-        MySQL Notes
-    </h1>
-    </a>
-    <div class="article-meta">
-
-        
-        <div class="article-date">
-            <i class="fa fa-calendar"></i>
-            <time datetime="2016-10-18 10:39:13 &#43;0000 UTC" itemprop="datePublished">2016-10-18</time>
-            &middot;
-            14
-            words
-            &middot;
-            1
-            minute read
-        </div>
-        
-        
-
-        
-            
-            
-            <div class="article-category">
-                <i class="fa fa-tags"></i>
                 
+              </div>
+
+              
+                <span class="post-meta">
                 
-                <a class="article-category-link" href="http://cyrusn.github.io/tags/mysql">mysql</a>
-                &middot;
+                  #<a href="/tags/linux">linux</a>&nbsp;
                 
+                  #<a href="/tags/startup">startup</a>&nbsp;
                 
-                <a class="article-category-link" href="http://cyrusn.github.io/tags/sql">sql</a>
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://cyrusn.github.io/post/update-digital-ocean-kernel/">
+                <h2 class="post-title">Update Digital Ocean Kernel</h2>
                 
+              </a>
+
+              <span class="post-meta">
+  Posted on 2016-10-11
+  
+</span>
+
+
+              <div class="post-entry">
                 
-            </div>
-            
-        
-    </div>
-</header>
+                  
 
-            <div class="article-entry" itemprop="articleBody">
-                <p>
-                    Start SQL in MacOS # Start SQL Server mysql.server start  mysql -u root -p
-                    <br>
-                </p>
-                <p class="article-more-link">
-                    <a href="http://cyrusn.github.io/2016/10/18/mysql-notes/">
-                        Read more
-                    </a>
-                </p>
-            </div>
-            <footer class="article-footer">
-    <a data-url="http://cyrusn.github.io/2016/10/18/mysql-notes/" data-id="6b37c4a8d9bc05ae043afc7763f8a6e5" class="article-share-link">
-        <i class="fa fa-share"></i>
-        Share
-    </a>
-    
-    <a href="http://cyrusn.github.io/2016/10/18/mysql-notes/#disqus_thread" class="article-comment-link">
-        Comments
-    </a>
-    
+<h1 id="check-which-kernel-is-currently-in-use">Check Which Kernel is Currently in Use</h1>
 
-    <script>
-    (function ($) {
-        
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
+<p>To display both the kernel version and your system&rsquo;s architecture (32-bit or 64-bit), type:</p>
 
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
+<pre><code class="language-sh">uname -ir
+</code></pre>
 
-            if ($('#' + id).length) {
-                box = $('#' + id);
+<h1 id="upgrading-all-packages-and-using-the-newest-kernel">Upgrading All Packages and Using the Newest Kernel</h1>
 
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
+<pre><code class="language-sh">sudo apt-get update
+sudo apt-get dist-upgrade
+sudo reboot
 
-              box = $(html);
+sudo apt-get install update-manager-core
+sudo do-release-upgrade
+</code></pre>
 
-              $('body').append(box);
-            }
+<h1 id="reference">Reference</h1>
 
-            $('.article-share-box.on').hide();
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-upgrade-to-ubuntu-16-04-lts">How To Upgrade to Ubuntu 16.04 LTS | DigitalOcean</a>
+<a href="https://www.digitalocean.com/community/tutorials/how-to-update-a-digitalocean-server-s-kernel">How To Update a DigitalOcean Server&rsquo;s Kernel | DigitalOcean</a></p>
 
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-    </script>
-</footer>
-
-        </div>
-    </article>
-    
-    <article class="article article-type-post" itemscope="" itemprop="blogPost">
-        <div class="article-inner">
-            
-            </a>
-
-            <header class="article-header">
-    <a href="http://cyrusn.github.io/2016/10/11/update-digital-ocean-kernel/">
-    <h1 class="article-title" itemprop="name">
-        Update Digital Ocean Kernel
-    </h1>
-    </a>
-    <div class="article-meta">
-
-        
-        <div class="article-date">
-            <i class="fa fa-calendar"></i>
-            <time datetime="2016-10-11 21:24:17 &#43;0000 UTC" itemprop="datePublished">2016-10-11</time>
-            &middot;
-            64
-            words
-            &middot;
-            1
-            minute read
-        </div>
-        
-        
-
-        
-            
-            
-            <div class="article-category">
-                <i class="fa fa-tags"></i>
                 
+              </div>
+
+              
+                <span class="post-meta">
                 
-                <a class="article-category-link" href="http://cyrusn.github.io/tags/digitalocean">digitalocean</a>
+                  #<a href="/tags/digitalocean">digitalocean</a>&nbsp;
                 
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://cyrusn.github.io/post/https-and-jwt/">
+                <h2 class="post-title">HTTPS and JWT</h2>
                 
-            </div>
-            
-        
-    </div>
-</header>
+              </a>
 
-            <div class="article-entry" itemprop="articleBody">
-                <p>
-                    Check Which Kernel is Currently in Use To display both the kernel version and your system&rsquo;s architecture (32-bit or 64-bit), type:
-uname -ir  Upgrading All Packages and Using the Newest Kernel sudo apt-get update sudo apt-get dist-upgrade sudo reboot sudo apt-get install update-manager-core sudo do-release-upgrade  Reference How To Upgrade to Ubuntu 16.04 LTS | DigitalOcean How To Update a DigitalOcean Server&rsquo;s Kernel | DigitalOcean
-                    <br>
-                </p>
-                <p class="article-more-link">
-                    <a href="http://cyrusn.github.io/2016/10/11/update-digital-ocean-kernel/">
-                        Read more
-                    </a>
-                </p>
-            </div>
-            <footer class="article-footer">
-    <a data-url="http://cyrusn.github.io/2016/10/11/update-digital-ocean-kernel/" data-id="24becbff17640f871f5407bf5d08d1ae" class="article-share-link">
-        <i class="fa fa-share"></i>
-        Share
-    </a>
-    
-    <a href="http://cyrusn.github.io/2016/10/11/update-digital-ocean-kernel/#disqus_thread" class="article-comment-link">
-        Comments
-    </a>
-    
+              <span class="post-meta">
+  Posted on 2016-10-07
+  
+</span>
 
-    <script>
-    (function ($) {
-        
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
 
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-    </script>
-</footer>
-
-        </div>
-    </article>
-    
-    <article class="article article-type-post" itemscope="" itemprop="blogPost">
-        <div class="article-inner">
-            
-            </a>
-
-            <header class="article-header">
-    <a href="http://cyrusn.github.io/2016/10/09/caddy-notes/">
-    <h1 class="article-title" itemprop="name">
-        Caddy Notes
-    </h1>
-    </a>
-    <div class="article-meta">
-
-        
-        <div class="article-date">
-            <i class="fa fa-calendar"></i>
-            <time datetime="2016-10-09 07:41:27 &#43;0000 UTC" itemprop="datePublished">2016-10-09</time>
-            &middot;
-            25
-            words
-            &middot;
-            1
-            minute read
-        </div>
-        
-        
-
-        
-    </div>
-</header>
-
-            <div class="article-entry" itemprop="articleBody">
-                <p>
-                    Installation # install caddy in linux commandline curl -fsSL <a href="https://getcaddy.com">https://getcaddy.com</a> | bash -s search  Settng of Caddyfile for microservice TODO Make Caddy to serve https
-                    <br>
-                </p>
-                <p class="article-more-link">
-                    <a href="http://cyrusn.github.io/2016/10/09/caddy-notes/">
-                        Read more
-                    </a>
-                </p>
-            </div>
-            <footer class="article-footer">
-    <a data-url="http://cyrusn.github.io/2016/10/09/caddy-notes/" data-id="eb4fedb0ce29799362646e9bb6bc529a" class="article-share-link">
-        <i class="fa fa-share"></i>
-        Share
-    </a>
-    
-    <a href="http://cyrusn.github.io/2016/10/09/caddy-notes/#disqus_thread" class="article-comment-link">
-        Comments
-    </a>
-    
-
-    <script>
-    (function ($) {
-        
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-    </script>
-</footer>
-
-        </div>
-    </article>
-    
-    <article class="article article-type-post" itemscope="" itemprop="blogPost">
-        <div class="article-inner">
-            
-            </a>
-
-            <header class="article-header">
-    <a href="http://cyrusn.github.io/2016/10/07/https-and-jwt/">
-    <h1 class="article-title" itemprop="name">
-        HTTPS and JWT
-    </h1>
-    </a>
-    <div class="article-meta">
-
-        
-        <div class="article-date">
-            <i class="fa fa-calendar"></i>
-            <time datetime="2016-10-07 23:35:46 &#43;0000 UTC" itemprop="datePublished">2016-10-07</time>
-            &middot;
-            25
-            words
-            &middot;
-            1
-            minute read
-        </div>
-        
-        
-
-        
-            
-            
-            <div class="article-category">
-                <i class="fa fa-tags"></i>
+              <div class="post-entry">
                 
+                  
+
+<h1 id="links">Links</h1>
+
+<ul>
+<li><a href="https://www.wikiwand.com/en/Self-signed_certificate">Self-signed certificate - Wikiwand</a></li>
+<li><a href="https://letsencrypt.org/">Let&rsquo;s Encrypt - Free SSL/TLS Certificates</a></li>
+<li><a href="https://medium.facilelogin.com/jwt-jws-and-jwe-for-not-so-dummies-b63310d201a3#.8p8742z35">JWT, JWS and JWE for Not So Dummies!</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL8PwA1AFXwLmicLd1JZn6WI3tpQVz3h8t">JSON Web Token Series - YouTube</a></li>
+</ul>
+
                 
-                <a class="article-category-link" href="http://cyrusn.github.io/tags/https">https</a>
+              </div>
+
+              
+                <span class="post-meta">
                 
+                  #<a href="/tags/https">https</a>&nbsp;
                 
-            </div>
-            
-        
-    </div>
-</header>
-
-            <div class="article-entry" itemprop="articleBody">
-                <p>
-                    Links  Self-signed certificate - Wikiwand Let&rsquo;s Encrypt - Free SSL/TLS Certificates JWT, JWS and JWE for Not So Dummies! JSON Web Token Series - YouTube
-                    <br>
-                </p>
-                <p class="article-more-link">
-                    <a href="http://cyrusn.github.io/2016/10/07/https-and-jwt/">
-                        Read more
-                    </a>
-                </p>
-            </div>
-            <footer class="article-footer">
-    <a data-url="http://cyrusn.github.io/2016/10/07/https-and-jwt/" data-id="bcc86d8b0ef4a3b781cad1a4c874ed71" class="article-share-link">
-        <i class="fa fa-share"></i>
-        Share
-    </a>
-    
-    <a href="http://cyrusn.github.io/2016/10/07/https-and-jwt/#disqus_thread" class="article-comment-link">
-        Comments
-    </a>
-    
-
-    <script>
-    (function ($) {
-        
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-    </script>
-</footer>
-
-        </div>
-    </article>
-    
-    <article class="article article-type-post" itemscope="" itemprop="blogPost">
-        <div class="article-inner">
-            
-            </a>
-
-            <header class="article-header">
-    <a href="http://cyrusn.github.io/2016/10/07/batch-download-youtube/">
-    <h1 class="article-title" itemprop="name">
-        Batch Download YouTube
-    </h1>
-    </a>
-    <div class="article-meta">
-
-        
-        <div class="article-date">
-            <i class="fa fa-calendar"></i>
-            <time datetime="2016-10-07 23:14:04 &#43;0000 UTC" itemprop="datePublished">2016-10-07</time>
-            &middot;
-            21
-            words
-            &middot;
-            1
-            minute read
-        </div>
-        
-        
-
-        
-    </div>
-</header>
-
-            <div class="article-entry" itemprop="articleBody">
-                <p>
-                    Using youtube-dl to batch download YouTube to mp3 #!/bin/bash lists=( # list of YouTube ID ) youtube-dl &ndash;extract-audio &ndash;audio-format mp3 <a href="https://www.youtube.com/watch?v=${lists[@]">https://www.youtube.com/watch?v=${lists[@]</a>}
-                    <br>
-                </p>
-                <p class="article-more-link">
-                    <a href="http://cyrusn.github.io/2016/10/07/batch-download-youtube/">
-                        Read more
-                    </a>
-                </p>
-            </div>
-            <footer class="article-footer">
-    <a data-url="http://cyrusn.github.io/2016/10/07/batch-download-youtube/" data-id="f9bf5966826e5dd05bd019112370fa2c" class="article-share-link">
-        <i class="fa fa-share"></i>
-        Share
-    </a>
-    
-    <a href="http://cyrusn.github.io/2016/10/07/batch-download-youtube/#disqus_thread" class="article-comment-link">
-        Comments
-    </a>
-    
-
-    <script>
-    (function ($) {
-        
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-    </script>
-</footer>
-
-        </div>
-    </article>
-    
-    <article class="article article-type-post" itemscope="" itemprop="blogPost">
-        <div class="article-inner">
-            
-            </a>
-
-            <header class="article-header">
-    <a href="http://cyrusn.github.io/2016/10/05/web-authentication/">
-    <h1 class="article-title" itemprop="name">
-        Web Authentication
-    </h1>
-    </a>
-    <div class="article-meta">
-
-        
-        <div class="article-date">
-            <i class="fa fa-calendar"></i>
-            <time datetime="2016-10-05 00:23:42 &#43;0000 UTC" itemprop="datePublished">2016-10-05</time>
-            &middot;
-            1166
-            words
-            &middot;
-            6
-            minute read
-        </div>
-        
-        
-
-        
-            
-            
-            <div class="article-category">
-                <i class="fa fa-tags"></i>
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://cyrusn.github.io/post/batch-download-youtube/">
+                <h2 class="post-title">Batch Download YouTube</h2>
                 
-                
-                <a class="article-category-link" href="http://cyrusn.github.io/tags/authentication">authentication</a>
-                &middot;
-                
-                
-                <a class="article-category-link" href="http://cyrusn.github.io/tags/jwt">jwt</a>
-                &middot;
-                
-                
-                <a class="article-category-link" href="http://cyrusn.github.io/tags/security">security</a>
-                &middot;
-                
-                
-                <a class="article-category-link" href="http://cyrusn.github.io/tags/web-token">web-token</a>
-                
-                
-            </div>
-            
-        
-    </div>
-</header>
+              </a>
 
-            <div class="article-entry" itemprop="articleBody">
-                <p>
-                    Notes From CyrusN Authentication in Golang with JWTs Cookies vs Tokens: The Definitive Guide The Ins and Outs of Token Based Authentication | Scotch
+              <span class="post-meta">
+  Posted on 2016-10-07
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  
+
+<h1 id="using-youtube-dl-to-batch-download-youtube-to-mp3">Using <code>youtube-dl</code> to batch download YouTube to mp3</h1>
+
+<pre><code class="language-sh">#!/bin/bash
+
+lists=(
+  # list of YouTube ID
+)
+
+youtube-dl --extract-audio --audio-format mp3 https://www.youtube.com/watch?v=${lists[@]}
+</code></pre>
+
+                
+              </div>
+
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://cyrusn.github.io/post/web-authentication/">
+                <h2 class="post-title">Web Authentication</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  Posted on 2016-10-05
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  Notes From CyrusN Authentication in Golang with JWTs Cookies vs Tokens: The Definitive Guide The Ins and Outs of Token Based Authentication | Scotch
 Notes From Leesei Enterprise APIs and OAuth: Have it All
 Secure your users&rsquo; passwords from the browser on
 Authentication Protocols Basic access authentication - Wikiwand Digest access authentication - Wikiwand Secure Remote Password protocol - Wikiwand
 Anatomy of a zero-knowledge web application - Clipperz, register your creations on the blockchain
-                    <br>
-                </p>
-                <p class="article-more-link">
-                    <a href="http://cyrusn.github.io/2016/10/05/web-authentication/">
-                        Read more
-                    </a>
-                </p>
-            </div>
-            <footer class="article-footer">
-    <a data-url="http://cyrusn.github.io/2016/10/05/web-authentication/" data-id="e69b4c3bf4def5d3fca1d332e2a0a0de" class="article-share-link">
-        <i class="fa fa-share"></i>
-        Share
-    </a>
-    
-    <a href="http://cyrusn.github.io/2016/10/05/web-authentication/#disqus_thread" class="article-comment-link">
-        Comments
-    </a>
-    
+                  <a href="https://cyrusn.github.io/post/web-authentication/" class="post-read-more">[Read More]</a>
+                
+              </div>
 
-    <script>
-    (function ($) {
-        
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
+              
+                <span class="post-meta">
+                
+                  #<a href="/tags/authentication">authentication</a>&nbsp;
+                
+                  #<a href="/tags/jwt">jwt</a>&nbsp;
+                
+                  #<a href="/tags/security">security</a>&nbsp;
+                
+                  #<a href="/tags/web-token">web-token</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://cyrusn.github.io/post/docker/">
+                <h2 class="post-title">Docker</h2>
+                
+              </a>
 
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
+              <span class="post-meta">
+  Posted on 2016-09-30
+  
+</span>
 
-            if ($('#' + id).length) {
-                box = $('#' + id);
 
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
+              <div class="post-entry">
+                
+                  <p><a href="https://www.docker.com/">Docker - Build, Ship, and Run Any App, Anywhere</a></p>
 
-              box = $(html);
+                
+              </div>
 
-              $('body').append(box);
-            }
+              
+                <span class="post-meta">
+                
+                  #<a href="/tags/docker">docker</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://cyrusn.github.io/post/nvalt-setting/">
+                <h2 class="post-title">NVAlt Setting</h2>
+                
+              </a>
 
-            $('.article-share-box.on').hide();
+              <span class="post-meta">
+  Posted on 2016-09-29
+  
+</span>
 
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
 
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
+              <div class="post-entry">
+                
+                  
 
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-    </script>
-</footer>
+<h1 id="custom-preview-theme">Custom Preview Theme</h1>
 
+<ul>
+<li><a href="https://gist.github.com/goblindegook/1919496">Notational Velocity (nvALT) Custom Stylesheet and Markup HTML</a></li>
+</ul>
+
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="/tags/note-taking">note-taking</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://cyrusn.github.io/post/config-digtal-ocean-droplet-as-microservice/">
+                <h2 class="post-title">Config Digtal Ocean Droplet as Microservice</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  Posted on 2016-09-29
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  Objective This page is a notes for setting apache server for my digital ocean droplet
+Setting Apache2  in file /etc/hosts  change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS  change Port  in file /etc/apache2/port.conf add ServerName localhost change the line listen *:80 to listen 127.0.0.1:4000 disable other modules &lt;IfModule ssl_module&gt; and &lt;IfModule mod_gnutls.c&gt; in file /etc/apache2/site-enabled/000-default.conf change the line &lt;VirtualHost *:80&gt; to &lt;VirtualHost localhost:4000&gt;  restart apache2  run sudo /etc/init.
+                  <a href="https://cyrusn.github.io/post/config-digtal-ocean-droplet-as-microservice/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="/tags/apache">apache</a>&nbsp;
+                
+                  #<a href="/tags/ssl">SSL</a>&nbsp;
+                
+                  #<a href="/tags/tls">TLS</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://cyrusn.github.io/post/imagemagick/">
+                <h2 class="post-title">Imagemagick</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  Posted on 2016-09-26
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  
+
+<h1 id="convert-command">Convert Command</h1>
+
+<p><a href="http://www.imagemagick.org/">imagemagick</a></p>
+
+<pre><code class="language-sh">convert rose.jpg -resize 50% rose.png
+</code></pre>
+
+<p>convert pngs to gif with 2 second per frame</p>
+
+<pre><code class="language-sh">convert -delay 200 *.png converted.gif
+</code></pre>
+
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="/tags/imagemagick">imagemagick</a>&nbsp;
+                
+                  #<a href="/tags/productivity">productivity</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
         </div>
-    </article>
-    
-    <article class="article article-type-post" itemscope="" itemprop="blogPost">
-        <div class="article-inner">
-            
-            </a>
-
-            <header class="article-header">
-    <a href="http://cyrusn.github.io/2016/10/04/vim/">
-    <h1 class="article-title" itemprop="name">
-        VIM
-    </h1>
-    </a>
-    <div class="article-meta">
 
         
-        <div class="article-date">
-            <i class="fa fa-calendar"></i>
-            <time datetime="2016-10-04 11:56:18 &#43;0000 UTC" itemprop="datePublished">2016-10-04</time>
-            &middot;
-            94
-            words
-            &middot;
-            1
-            minute read
-        </div>
-        
-        
-
-        
+          <ul class="pager main-pager">
             
             
-            <div class="article-category">
-                <i class="fa fa-tags"></i>
-                
-                
-                <a class="article-category-link" href="http://cyrusn.github.io/tags/editor">editor</a>
-                &middot;
-                
-                
-                <a class="article-category-link" href="http://cyrusn.github.io/tags/vim">vim</a>
-                
-                
-            </div>
+              <li class="next">
+                <a href="/page/2">Older Posts &rarr;</a>
+              </li>
             
+          </ul>
         
+      </div>
     </div>
-</header>
+  </div>
 
-            <div class="article-entry" itemprop="articleBody">
-                <p>
-                    VIM Basic  Vim Cheat Sheet - English VimGenius vimgifs  Some useful skills Insert across multi-lines Select the lines you want to modify using Ctrl-v. Press: I: Insert before what&rsquo;s selected. A: Append after what&rsquo;s selected. c: Replace what&rsquo;s selected. Type the new text. Press Esc to apply the changes to all selected lines.
-Search and replace :s/foo/bar/g Change each &lsquo;foo&rsquo; to &lsquo;bar&rsquo; in the current line. :%s/foo/bar/g Change each &lsquo;foo&rsquo; to &lsquo;bar&rsquo; in all the lines.
-                    <br>
-                </p>
-                <p class="article-more-link">
-                    <a href="http://cyrusn.github.io/2016/10/04/vim/">
-                        Read more
-                    </a>
-                </p>
-            </div>
-            <footer class="article-footer">
-    <a data-url="http://cyrusn.github.io/2016/10/04/vim/" data-id="0f22cc0149eb1b1ffc46d6863519b975" class="article-share-link">
-        <i class="fa fa-share"></i>
-        Share
-    </a>
-    
-    <a href="http://cyrusn.github.io/2016/10/04/vim/#disqus_thread" class="article-comment-link">
-        Comments
-    </a>
-    
-
-    <script>
-    (function ($) {
-        
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-    </script>
-</footer>
-
-        </div>
-    </article>
-    
-    <article class="article article-type-post" itemscope="" itemprop="blogPost">
-        <div class="article-inner">
-            
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:cyrusncy@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/cyrusn" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://cyrusn.github.io/index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
             </a>
-
-            <header class="article-header">
-    <a href="http://cyrusn.github.io/2016/09/30/docker/">
-    <h1 class="article-title" itemprop="name">
-        Docker
-    </h1>
-    </a>
-    <div class="article-meta">
-
-        
-        <div class="article-date">
-            <i class="fa fa-calendar"></i>
-            <time datetime="2016-09-30 23:06:22 &#43;0000 UTC" itemprop="datePublished">2016-09-30</time>
-            &middot;
-            9
-            words
-            &middot;
-            1
-            minute read
-        </div>
-        
-        
-
-        
-            
-            
-            <div class="article-category">
-                <i class="fa fa-tags"></i>
-                
-                
-                <a class="article-category-link" href="http://cyrusn.github.io/tags/docker">docker</a>
-                
-                
-            </div>
-            
-        
-    </div>
-</header>
-
-            <div class="article-entry" itemprop="articleBody">
-                <p>
-                    Docker - Build, Ship, and Run Any App, Anywhere
-                    <br>
-                </p>
-                <p class="article-more-link">
-                    <a href="http://cyrusn.github.io/2016/09/30/docker/">
-                        Read more
-                    </a>
-                </p>
-            </div>
-            <footer class="article-footer">
-    <a data-url="http://cyrusn.github.io/2016/09/30/docker/" data-id="7d487d367f25b9974c804c02b2c77870" class="article-share-link">
-        <i class="fa fa-share"></i>
-        Share
-    </a>
-    
-    <a href="http://cyrusn.github.io/2016/09/30/docker/#disqus_thread" class="article-comment-link">
-        Comments
-    </a>
-    
-
-    <script>
-    (function ($) {
-        
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-    </script>
-</footer>
-
-        </div>
-    </article>
-    
-
-    <nav id="page-nav">
-
-    
-    
-        <a class="extend next" rel="next" href="http://cyrusn.github.io/page/2/">
-            Next »
-        </a>
-    
-
-</nav>
-
-</section>
-
-
-    <aside id="sidebar">
-    
-
-    
-
-
-<div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-        <ul class="category-list">
-            
-            <li class="category-list-item">
-                
-                <a class="category-list-link" href="http://cyrusn.github.io/categories/javascript">
-                    javascript
-                </a>
-                <span class="category-list-count">1</span>
-            </li>
-            
-            <li class="category-list-item">
-                
-                <a class="category-list-link" href="http://cyrusn.github.io/categories/react">
-                    react
-                </a>
-                <span class="category-list-count">1</span>
-            </li>
-            
-            <li class="category-list-item">
-                
-                <a class="category-list-link" href="http://cyrusn.github.io/categories/redux">
-                    redux
-                </a>
-                <span class="category-list-count">1</span>
-            </li>
-            
+          </li>
+          
         </ul>
-    </div>
-</div>
+        <p class="credits copyright text-muted">
+          CyrusN
+          &nbsp;&bull;&nbsp;
+          2017
 
-
-
-
-    
-
-    
-
-
-<div class="widget-wrap">
-    <h3 class="widget-title">
-        Tag cloud
-    </h3>
-    <div class="widget tagcloud">
-        
-        
-        <a href="http://cyrusn.github.io/tags/angularjs" style="font-size: 12px;">angularjs</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/apache" style="font-size: 12px;">apache</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/app" style="font-size: 12px;">app</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/authentication" style="font-size: 12px;">authentication</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/bootstrap" style="font-size: 12px;">bootstrap</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/chrome" style="font-size: 12px;">chrome</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/commandline" style="font-size: 12px;">commandline</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/database" style="font-size: 12px;">database</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/digitalocean" style="font-size: 12px;">digitalocean</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/do" style="font-size: 12px;">do</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/docker" style="font-size: 12px;">docker</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/editor" style="font-size: 12px;">editor</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/git" style="font-size: 12px;">git</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/gitbook" style="font-size: 12px;">gitbook</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/github" style="font-size: 12px;">github</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/golang" style="font-size: 12px;">golang</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/google" style="font-size: 12px;">google</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/google-script" style="font-size: 12px;">google-script</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/gulp" style="font-size: 12px;">gulp</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/hapijs" style="font-size: 12px;">hapijs</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/hashbang" style="font-size: 12px;">hashbang</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/hexo" style="font-size: 12px;">hexo</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/https" style="font-size: 12px;">https</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/imagemagick" style="font-size: 12px;">imagemagick</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/javascript" style="font-size: 12px;">javascript</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/jwt" style="font-size: 12px;">jwt</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/leveldb" style="font-size: 12px;">leveldb</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/linux" style="font-size: 12px;">linux</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/macos" style="font-size: 12px;">macos</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/mongodb" style="font-size: 12px;">mongodb</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/mongoose" style="font-size: 12px;">mongoose</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/mysql" style="font-size: 12px;">mysql</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/note-taking" style="font-size: 12px;">note-taking</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/osascript" style="font-size: 12px;">osascript</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/plantuml" style="font-size: 12px;">plantuml</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/polymer" style="font-size: 12px;">polymer</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/productivity" style="font-size: 12px;">productivity</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/react" style="font-size: 12px;">react</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/reactjs" style="font-size: 12px;">reactjs</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/redux" style="font-size: 12px;">redux</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/security" style="font-size: 12px;">security</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/setting" style="font-size: 12px;">setting</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/shortener" style="font-size: 12px;">shortener</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/slidedown" style="font-size: 12px;">slidedown</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/sql" style="font-size: 12px;">sql</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/ssl" style="font-size: 12px;">ssl</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/startup" style="font-size: 12px;">startup</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/swift" style="font-size: 12px;">swift</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/terminal" style="font-size: 12px;">terminal</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/timelinejs" style="font-size: 12px;">timelinejs</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/tls" style="font-size: 12px;">tls</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/uml" style="font-size: 12px;">uml</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/vim" style="font-size: 12px;">vim</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/web-token" style="font-size: 12px;">web-token</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/wordpress" style="font-size: 12px;">wordpress</a>
-        
-        
-        <a href="http://cyrusn.github.io/tags/zsh" style="font-size: 12px;">zsh</a>
-        
-    </div>
-</div>
-
-
-
-
-
-    <div id="toTop" class="fa fa-angle-up"></div>
-</aside>
-
-    </div>
-</div>
-
-<footer id="footer">
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017
-      Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>.
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://cyrusn.github.io">CyrusN</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.20.7</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
     </div>
   </div>
 </footer>
 
-
-<script src="http://cyrusn.github.io/fancybox/jquery.fancybox.pack.js"></script>
-<script src="http://cyrusn.github.io/js/script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-
-
-<script>hljs.initHighlightingOnLoad();</script>
-
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']]}
-  });
-</script>
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cyrusn.github.io/js/main.js"></script>
+<script src="https://cyrusn.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
 
 
 
-</body>
+
+
+  </body>
 </html>
+

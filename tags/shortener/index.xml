@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shortener on CyrusN</title>
-    <link>http://cyrusn.github.io/tags/shortener/</link>
+    <link>https://cyrusn.github.io/tags/shortener/</link>
     <description>Recent content in Shortener on CyrusN</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice).</copyright>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
     <lastBuildDate>Sun, 10 May 2015 00:46:40 +0000</lastBuildDate>
     
-	<atom:link href="http://cyrusn.github.io/tags/shortener/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cyrusn.github.io/tags/shortener/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>URL shortener and QR code Generator</title>
-      <link>http://cyrusn.github.io/2015/05/10/url-shortener-and-qr-code-generator/</link>
+      <link>https://cyrusn.github.io/post/url-shortener-and-qr-code-generator/</link>
       <pubDate>Sun, 10 May 2015 00:46:40 +0000</pubDate>
-      
-      <guid>http://cyrusn.github.io/2015/05/10/url-shortener-and-qr-code-generator/</guid>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/post/url-shortener-and-qr-code-generator/</guid>
       <description>Installation npm install -g goo.gl
 Google API OAuth for shortening a batch of links, create project for URL Shortener API. you will get 1,000,000 requests/day for FREE QR Code to a link  reference https://chart.googleapis.com/chart?chs=200x200&amp;amp;cht=qr&amp;amp;chl= + the link you need  Google Form Prefill https://docs.google.com/forms/d/Form_ID/viewform?entry.Q1_ID=Q1_ANS&amp;amp;entry.Q2_ID=Q2_ANS... 2_ID=Q2_ANS&amp;hellip; 2_ID=Q2_ANS...\ ID=Q2_ANS&amp;hellip;` ID=Q2_ANS&amp;hellip;`</description>
     </item>
