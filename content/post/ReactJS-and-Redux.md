@@ -1,7 +1,6 @@
 +++
 title = "ReactJS-and-Redux"
 tags = ["react", "redux"]
-categories = ["javascript", "react", "redux"]
 date = "2017-04-17 14:38:47"
 +++
 

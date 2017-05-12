@@ -1,7 +1,7 @@
 +++
 title = "ReactJS Notes"
 date = "2015-05-10 01:26:51"
-tags = ["reactjs"]
+tags = ["react"]
 +++
 # API notes and example
 
