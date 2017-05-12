@@ -1,10 +1,11 @@
 .searchbox {
-  color:#000;
+    color:#000;
     margin-top: 1rem;
     position: relative;
     border: 1px solid  #eee;
-    /*background: #183f81;*/
+    background: #fff;
     border-radius: 4px;
+    min-height: inherit;
 }
 .searchbox label {
     /*color: rgba(255, 255, 255, 0.8);*/

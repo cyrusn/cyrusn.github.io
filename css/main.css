@@ -8,6 +8,7 @@ body {
   color: #404040;
   position: relative;
   background: #FFF;
+  height: 100%;
 }
 p {
   line-height: 1.5;
@@ -258,11 +259,14 @@ img {
 /* --- Footer --- */
 
 footer {
-  padding: 30px 0;
+  padding: 1em 0;
   background: #F5F5F5;
   border-top: 1px #EAEAEA solid;
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 14px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 footer a {
@@ -284,9 +288,9 @@ footer .theme-by {
 }
 
 @media only screen and (min-width: 768px) {
-  footer {
+  /*footer {
     padding: 50px 0;
-  }
+  }*/
   footer .footer-links {
     font-size: 18px;
   }
