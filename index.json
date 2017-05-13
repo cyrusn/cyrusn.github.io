@@ -1,7 +1,19 @@
 [
 {
-	"uri": "https://cyrusn.github.io/post/reactjs-and-redux/",
-	"title": "ReactJS-and-Redux",
+	"uri": "https://cyrusn.github.io/note/tmux/",
+	"title": "tmux Notes",
+	"tags": ["tmux"],
+	"description": ""
+},
+{
+	"uri": "https://cyrusn.github.io/note/linux-arch/",
+	"title": "Linux Arch Notes",
+	"tags": ["linux", "arch"],
+	"description": ""
+},
+{
+	"uri": "https://cyrusn.github.io/post/react-and-redux/",
+	"title": "React-and-Redux",
 	"tags": ["react", "redux"],
 	"description": ""
 },
@@ -12,7 +24,7 @@
 	"description": ""
 },
 {
-	"uri": "https://cyrusn.github.io/note/mysql-notes/",
+	"uri": "https://cyrusn.github.io/note/mysql/",
 	"title": "MySQL Notes",
 	"tags": ["mysql", "sql"],
 	"description": ""
@@ -24,7 +36,7 @@
 	"description": ""
 },
 {
-	"uri": "https://cyrusn.github.io/note/caddy-notes/",
+	"uri": "https://cyrusn.github.io/note/caddy/",
 	"title": "Caddy Notes",
 	"tags": [],
 	"description": ""
@@ -49,7 +61,7 @@
 },
 {
 	"uri": "https://cyrusn.github.io/note/vim/",
-	"title": "VIM",
+	"title": "VIM Notes",
 	"tags": ["editor", "vim"],
 	"description": ""
 },
@@ -67,14 +79,14 @@
 },
 {
 	"uri": "https://cyrusn.github.io/post/config-digtal-ocean-droplet-as-microservice/",
-	"title": "Config Digtal Ocean Droplet as Microservice",
+	"title": "Config Digital Ocean Droplet as Microservice",
 	"tags": ["apache", "SSL", "TLS"],
 	"description": ""
 },
 {
-	"uri": "https://cyrusn.github.io/post/imagemagick/",
-	"title": "Imagemagick",
-	"tags": ["imagemagick", "productivity"],
+	"uri": "https://cyrusn.github.io/post/how-to-convert-pngs-to-gif/",
+	"title": "How to convert images to gif",
+	"tags": ["imagemagick", "productivity", "gif", "convert"],
 	"description": ""
 },
 {
@@ -90,31 +102,31 @@
 	"description": ""
 },
 {
-	"uri": "https://cyrusn.github.io/note/note-to-ocean-digital/",
-	"title": "Note to Ocean Digital",
+	"uri": "https://cyrusn.github.io/note/digital-ocean/",
+	"title": "Digital Ocean Notes",
 	"tags": ["do"],
 	"description": ""
 },
 {
-	"uri": "https://cyrusn.github.io/post/leveldb/",
-	"title": "LevelDB",
+	"uri": "https://cyrusn.github.io/note/leveldb/",
+	"title": "LevelDB Notes",
 	"tags": ["database", "javascript", "leveldb"],
 	"description": ""
 },
 {
-	"uri": "https://cyrusn.github.io/post/settings-of-my-osx/",
-	"title": "Settings of My OSX",
+	"uri": "https://cyrusn.github.io/note/macos-setting/",
+	"title": "macos Setting Notes",
 	"tags": ["macos", "setting"],
 	"description": ""
 },
 {
-	"uri": "https://cyrusn.github.io/note/alfred-notes/",
+	"uri": "https://cyrusn.github.io/note/alfred/",
 	"title": "Alfred Notes",
-	"tags": ["productivity"],
+	"tags": ["productivity", "alfred"],
 	"description": ""
 },
 {
-	"uri": "https://cyrusn.github.io/post/google-chrome-app/",
+	"uri": "https://cyrusn.github.io/note/google-chrome-app/",
 	"title": "Google Chrome App",
 	"tags": ["google", "chrome", "app"],
 	"description": ""
@@ -126,7 +138,7 @@
 	"description": ""
 },
 {
-	"uri": "https://cyrusn.github.io/note/uml-notes/",
+	"uri": "https://cyrusn.github.io/note/uml/",
 	"title": "UML Notes",
 	"tags": ["uml"],
 	"description": ""
@@ -144,7 +156,7 @@
 	"description": ""
 },
 {
-	"uri": "https://cyrusn.github.io/note/wordpress-notes/",
+	"uri": "https://cyrusn.github.io/note/wordpress/",
 	"title": "Wordpress Notes",
 	"tags": ["wordpress"],
 	"description": ""
@@ -162,7 +174,7 @@
 	"description": ""
 },
 {
-	"uri": "https://cyrusn.github.io/note/hexo-notes/",
+	"uri": "https://cyrusn.github.io/note/hexo/",
 	"title": "Hexo Notes",
 	"tags": ["hexo"],
 	"description": ""
@@ -192,9 +204,9 @@
 	"description": ""
 },
 {
-	"uri": "https://cyrusn.github.io/note/reactjs-notes/",
+	"uri": "https://cyrusn.github.io/note/react/",
 	"title": "ReactJS Notes",
-	"tags": ["reactjs"],
+	"tags": ["react"],
 	"description": ""
 },
 {
@@ -210,7 +222,7 @@
 	"description": ""
 },
 {
-	"uri": "https://cyrusn.github.io/note/git-notes/",
+	"uri": "https://cyrusn.github.io/note/git/",
 	"title": "Git Notes",
 	"tags": ["git", "github"],
 	"description": ""
@@ -222,14 +234,14 @@
 	"description": ""
 },
 {
-	"uri": "https://cyrusn.github.io/note/swift-notes/",
+	"uri": "https://cyrusn.github.io/note/swift/",
 	"title": "Swift Notes",
 	"tags": ["macos", "swift"],
 	"description": ""
 },
 {
 	"uri": "https://cyrusn.github.io/post/slidedownhtml-presentation/",
-	"title": "Slidedown HTML presentation",
+	"title": "Slidedown HTML presentation",
 	"tags": ["slidedown"],
 	"description": ""
 },
@@ -240,8 +252,8 @@
 	"description": ""
 },
 {
-	"uri": "https://cyrusn.github.io/note/note-when-making-alumnihtml/",
-	"title": "Note when making alumniHTML",
+	"uri": "https://cyrusn.github.io/note/alumni-webpage/",
+	"title": "Alumni Webpage Notes",
 	"tags": ["angularjs", "bootstrap"],
 	"description": ""
 },
@@ -258,7 +270,7 @@
 	"description": ""
 },
 {
-	"uri": "https://cyrusn.github.io/note/polymer-notes/",
+	"uri": "https://cyrusn.github.io/note/polymer/",
 	"title": "Polymer notes",
 	"tags": ["polymer"],
 	"description": ""
@@ -282,20 +294,26 @@
 	"description": ""
 },
 {
-	"uri": "https://cyrusn.github.io/note/golang-notes/",
+	"uri": "https://cyrusn.github.io/note/golang/",
 	"title": "Golang Notes",
 	"tags": ["golang"],
 	"description": ""
 },
 {
-	"uri": "https://cyrusn.github.io/post/gitbook/",
-	"title": "Gitbook",
+	"uri": "https://cyrusn.github.io/note/gitbook/",
+	"title": "Gitbook Notes",
 	"tags": ["gitbook"],
 	"description": ""
 },
 {
 	"uri": "https://cyrusn.github.io/page/about/",
 	"title": "About me",
+	"tags": [],
+	"description": ""
+},
+{
+	"uri": "https://cyrusn.github.io/tags/alfred/",
+	"title": "Alfred",
 	"tags": [],
 	"description": ""
 },
@@ -314,6 +332,12 @@
 {
 	"uri": "https://cyrusn.github.io/tags/app/",
 	"title": "App",
+	"tags": [],
+	"description": ""
+},
+{
+	"uri": "https://cyrusn.github.io/tags/arch/",
+	"title": "Arch",
 	"tags": [],
 	"description": ""
 },
@@ -344,6 +368,12 @@
 {
 	"uri": "https://cyrusn.github.io/tags/commandline/",
 	"title": "Commandline",
+	"tags": [],
+	"description": ""
+},
+{
+	"uri": "https://cyrusn.github.io/tags/convert/",
+	"title": "Convert",
 	"tags": [],
 	"description": ""
 },
@@ -380,6 +410,12 @@
 {
 	"uri": "https://cyrusn.github.io/tags/editor/",
 	"title": "Editor",
+	"tags": [],
+	"description": ""
+},
+{
+	"uri": "https://cyrusn.github.io/tags/gif/",
+	"title": "Gif",
 	"tags": [],
 	"description": ""
 },
@@ -457,12 +493,6 @@
 },
 {
 	"uri": "https://cyrusn.github.io/tags/javascript/",
-	"title": "Javascript",
-	"tags": [],
-	"description": ""
-},
-{
-	"uri": "https://cyrusn.github.io/categories/javascript/",
 	"title": "Javascript",
 	"tags": [],
 	"description": ""
@@ -564,25 +594,7 @@
 	"description": ""
 },
 {
-	"uri": "https://cyrusn.github.io/categories/react/",
-	"title": "React",
-	"tags": [],
-	"description": ""
-},
-{
-	"uri": "https://cyrusn.github.io/tags/reactjs/",
-	"title": "Reactjs",
-	"tags": [],
-	"description": ""
-},
-{
 	"uri": "https://cyrusn.github.io/tags/redux/",
-	"title": "Redux",
-	"tags": [],
-	"description": ""
-},
-{
-	"uri": "https://cyrusn.github.io/categories/redux/",
 	"title": "Redux",
 	"tags": [],
 	"description": ""
@@ -656,6 +668,12 @@
 {
 	"uri": "https://cyrusn.github.io/tags/tls/",
 	"title": "Tls",
+	"tags": [],
+	"description": ""
+},
+{
+	"uri": "https://cyrusn.github.io/tags/tmux/",
+	"title": "Tmux",
 	"tags": [],
 	"description": ""
 },

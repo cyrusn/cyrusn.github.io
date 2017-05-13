@@ -9,17 +9,19 @@
   <meta property="og:title" content="Create Startup Script in Linux" />
   <meta name="twitter:title" content="Create Startup Script in Linux" />
   <meta name="description" content="Create a new script in /etc/init.d/myscript.
-
-vi /etc/init.d/myscript
-">
+vi /etc/init.d/myscript  (Obviously it doesn&rsquo;t have to be called &ldquo;myscript&rdquo;.) In this script, do whatever you want to do. Perhaps just run the script you mentioned.
+#!/bin/sh /path/to/my/script.sh  Make it executable.
+chmod 755 /etc/init.d/myscript  Configure the init system to run this script at startup.
+update-rc.d myscript defaults  ystem to run this script at startup.
+update-rc.d myscript defaults  ">
   <meta property="og:description" content="Create a new script in /etc/init.d/myscript.
-
-vi /etc/init.d/myscript
-">
+vi /etc/init.d/myscript  (Obviously it doesn&rsquo;t have to be called &ldquo;myscript&rdquo;.) In this script, do whatever you want to do. Perhaps just run the script you mentioned.
+#!/bin/sh /path/to/my/script.sh  Make it executable.
+chmod 755 /etc/init.d/myscript  Configure the init system to run this script at startup.
+update-rc.d myscript defaults  ystem to run this script at startup.
+update-rc.d myscript defaults  ">
   <meta name="twitter:description" content="Create a new script in /etc/init.d/myscript.
-
-vi /etc/init.d/myscript
-">
+vi /etc/init.d/myscript  (Obviously it doesn&rsquo;t have to be called &ldquo;myscript&rdquo;.) In this script, do whatever you want to do. Perhaps just …">
   <meta name="author" content="CyrusN"/>
   <link href='https://cyrusn.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://cyrusn.github.io/img/avatar.png" />
@@ -170,12 +172,19 @@ vi /etc/init.d/myscript
             <div class="post-heading">
               <h1>Create Startup Script in Linux</h1>
                 
-                
+                  <h2 class="post-subheading"></h2>
                   <span class="post-meta">
   Posted on 2016-10-21
   
 </span>
-
+<br>
+<span class="post-meta meta-tags">
+  
+  #<a href="/tags/linux">linux</a>&nbsp;
+  
+  #<a href="/tags/startup">startup</a>&nbsp;
+  
+</span>
 
                 
             </div>
@@ -190,14 +199,15 @@ vi /etc/init.d/myscript
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
       <article role="main" class="blog-post">
         <p>Create a new script in /etc/init.d/myscript.</p>
 
 <pre><code class="language-sh">vi /etc/init.d/myscript
 </code></pre>
 
-<p>
-(Obviously it doesn&rsquo;t have to be called &ldquo;myscript&rdquo;.) In this script, do whatever you want to do. Perhaps just run the script you mentioned.</p>
+<p><!-- more --> (Obviously it doesn&rsquo;t have to be called &ldquo;myscript&rdquo;.) In this script, do whatever you want to do. Perhaps just run the script you mentioned.</p>
 
 <pre><code class="language-sh">#!/bin/sh
 /path/to/my/script.sh
@@ -212,6 +222,12 @@ vi /etc/init.d/myscript
 
 <pre><code class="language-sh">update-rc.d myscript defaults
 </code></pre>
+
+<p>ystem to run this script at startup.</p>
+
+<pre><code class="language-sh">update-rc.d myscript defaults
+</code></pre>
+
       </article>
 
       
@@ -246,6 +262,7 @@ vi /etc/init.d/myscript
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://cyrusn.github.io/js/main.js"></script>
 <script src="https://cyrusn.github.io/js/highlight.min.js"></script>
+<script src="/js/keypress.js"></script>
 <script> hljs.initHighlightingOnLoad(); </script>
 <script> renderMathInElement(document.body); </script>
 

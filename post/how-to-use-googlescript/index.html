@@ -8,8 +8,8 @@
   <title>How to use GoogleScript</title>
   <meta property="og:title" content="How to use GoogleScript" />
   <meta name="twitter:title" content="How to use GoogleScript" />
-  <meta name="description" content="Useful Examples Send email from spreadsheet data function sendMailByRowNo(rowNo){ // rowString e.g. 1:1 var rowString = Utilities.formatString(&quot;%s:%s&quot;, rowNo, rowNo) var values = spreadsheet.getRange(rowString).getValues()[0] sendMailByValues(values) } function convertValuesToObject(values) { var obj = {}; obj.timestamp = values[0] obj.email = values[1] obj.title = values[2] return obj } function sendMailByValues(values) { var obj = convertValuesToObject(values) Logger.log(obj) var htmlBody = setEmailBody(obj) var mailAppObject = { to: obj.email, subject: obj.title, htmlBody: htmlBody } // an example to attach a pdf file in google drive // var attachements = DriveApp.">
-  <meta property="og:description" content="Useful Examples Send email from spreadsheet data function sendMailByRowNo(rowNo){ // rowString e.g. 1:1 var rowString = Utilities.formatString(&quot;%s:%s&quot;, rowNo, rowNo) var values = spreadsheet.getRange(rowString).getValues()[0] sendMailByValues(values) } function convertValuesToObject(values) { var obj = {}; obj.timestamp = values[0] obj.email = values[1] obj.title = values[2] return obj } function sendMailByValues(values) { var obj = convertValuesToObject(values) Logger.log(obj) var htmlBody = setEmailBody(obj) var mailAppObject = { to: obj.email, subject: obj.title, htmlBody: htmlBody } // an example to attach a pdf file in google drive // var attachements = DriveApp.">
+  <meta name="description" content="Useful Examples Send email from spreadsheet data function sendMailByRowNo(rowNo){ // rowString e.g. 1:1 var rowString = Utilities.formatString(&quot;%s:%s&quot;, rowNo, rowNo) var values = spreadsheet.getRange(rowString).getValues()[0] sendMailByValues(values) } function convertValuesToObject(values) { var obj = {}; obj.timestamp = values[0] obj.email = values[1] obj.title: values[2] return obj } function sendMailByValues(values) { var obj = convertValuesToObject(values) Logger.log(obj) var htmlBody = setEmailBody(obj) var mailAppObject = { to: obj.email, subject: obj.title, htmlBody: htmlBody } // an example to attach a pdf file in google drive // var attachements = DriveApp.">
+  <meta property="og:description" content="Useful Examples Send email from spreadsheet data function sendMailByRowNo(rowNo){ // rowString e.g. 1:1 var rowString = Utilities.formatString(&quot;%s:%s&quot;, rowNo, rowNo) var values = spreadsheet.getRange(rowString).getValues()[0] sendMailByValues(values) } function convertValuesToObject(values) { var obj = {}; obj.timestamp = values[0] obj.email = values[1] obj.title: values[2] return obj } function sendMailByValues(values) { var obj = convertValuesToObject(values) Logger.log(obj) var htmlBody = setEmailBody(obj) var mailAppObject = { to: obj.email, subject: obj.title, htmlBody: htmlBody } // an example to attach a pdf file in google drive // var attachements = DriveApp.">
   <meta name="twitter:description" content="Useful Examples Send email from spreadsheet data function sendMailByRowNo(rowNo){ // rowString e.g. 1:1 var rowString = Utilities.formatString(&quot;%s:%s&quot;, rowNo, rowNo) var values = …">
   <meta name="author" content="CyrusN"/>
   <link href='https://cyrusn.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -161,12 +161,17 @@
             <div class="post-heading">
               <h1>How to use GoogleScript</h1>
                 
-                
+                  <h2 class="post-subheading"></h2>
                   <span class="post-meta">
   Posted on 2015-05-22
   
 </span>
-
+<br>
+<span class="post-meta meta-tags">
+  
+  #<a href="/tags/google-script">google script</a>&nbsp;
+  
+</span>
 
                 
             </div>
@@ -181,6 +186,8 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
       <article role="main" class="blog-post">
         
 
@@ -200,7 +207,7 @@ function convertValuesToObject(values) {
   var obj = {};
   obj.timestamp = values[0]
   obj.email = values[1]
-  obj.title = values[2]
+  obj.title: values[2]
 
   return obj
 }
@@ -229,7 +236,6 @@ function setEmailBody(obj) {
   var htmlBody = Utilities.formatString(&quot;&lt;h1&gt;%s&lt;/h1&gt;&quot;, obj.title)
   return htmlBody
 }
-
 </code></pre>
 
 <h2 id="set-trigger-on-form-submit">Set Trigger on form submit</h2>
@@ -257,7 +263,7 @@ function initializeTrigger() {
 
 <pre><code class="language-javascript">function createQuestion (obj) {
   var type = obj.type;
-  var title = obj.title;
+  var title: obj.title;
   var lists = obj.lists;
   var isRequired = obj.isRequired || false;
   var desc = obj.desc || false;
@@ -391,6 +397,7 @@ Utilities.formatDate(new Date(), &quot;GMT+8:00&quot;, &quot;yyyy-MM-dd&quot;)
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://cyrusn.github.io/js/main.js"></script>
 <script src="https://cyrusn.github.io/js/highlight.min.js"></script>
+<script src="/js/keypress.js"></script>
 <script> hljs.initHighlightingOnLoad(); </script>
 <script> renderMathInElement(document.body); </script>
 

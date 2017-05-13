@@ -8,8 +8,8 @@
   <title>JavaScript on OSAScript</title>
   <meta property="og:title" content="JavaScript on OSAScript" />
   <meta name="twitter:title" content="JavaScript on OSAScript" />
-  <meta name="description" content="Example  JXA-Cookbook Apple Release Notes JavaScript for OS X Automation by Example  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle = &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[0].activeTab; var result = &#39;[&#39; &#43; activeTab.">
-  <meta property="og:description" content="Example  JXA-Cookbook Apple Release Notes JavaScript for OS X Automation by Example  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle = &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[0].activeTab; var result = &#39;[&#39; &#43; activeTab.">
+  <meta name="description" content="Example  JXA-Cookbook Apple Release Notes JavaScript for OS X Automation by Example  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle: &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[0].activeTab; var result = &#39;[&#39; &#43; activeTab.title() &#43; &#39;](&#39; &#43; activeTab.">
+  <meta property="og:description" content="Example  JXA-Cookbook Apple Release Notes JavaScript for OS X Automation by Example  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle: &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[0].activeTab; var result = &#39;[&#39; &#43; activeTab.title() &#43; &#39;](&#39; &#43; activeTab.">
   <meta name="twitter:description" content="Example  JXA-Cookbook Apple Release Notes JavaScript for OS X Automation by Example  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); …">
   <meta name="author" content="CyrusN"/>
   <link href='https://cyrusn.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -161,12 +161,19 @@
             <div class="post-heading">
               <h1>JavaScript on OSAScript</h1>
                 
-                
+                  <h2 class="post-subheading"></h2>
                   <span class="post-meta">
   Posted on 2015-05-27
   
 </span>
-
+<br>
+<span class="post-meta meta-tags">
+  
+  #<a href="/tags/macos">macos</a>&nbsp;
+  
+  #<a href="/tags/osascript">osascript</a>&nbsp;
+  
+</span>
 
                 
             </div>
@@ -181,6 +188,8 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
       <article role="main" class="blog-post">
         
 
@@ -197,7 +206,7 @@
 <pre><code class="language-sh">#! /usr/bin/osascript -l JavaScript
 app = Application.currentApplication();
 app.includeStandardAdditions = true;
-app.displayNotification('Hello, world', {withtitle = 'Title'})
+app.displayNotification('Hello, world', {withtitle: 'Title'})
 </code></pre>
 
 <h2 id="example-1">example</h2>
@@ -221,7 +230,7 @@ function run(argz){
   var Chrome = Application('Google Chrome');
   var activeTab = Chrome.windows[0].activeTab;
 
-  var title = activeTab.title();
+  var title: activeTab.title();
   var url = activeTab.url();
   var mdl = '[' + title + '](' + url + ')';
 
@@ -275,6 +284,7 @@ function run(argz){
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://cyrusn.github.io/js/main.js"></script>
 <script src="https://cyrusn.github.io/js/highlight.min.js"></script>
+<script src="/js/keypress.js"></script>
 <script> hljs.initHighlightingOnLoad(); </script>
 <script> renderMathInElement(document.body); </script>
 

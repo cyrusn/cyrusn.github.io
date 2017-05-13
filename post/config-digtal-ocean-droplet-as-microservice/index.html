@@ -5,15 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Config Digtal Ocean Droplet as Microservice</title>
-  <meta property="og:title" content="Config Digtal Ocean Droplet as Microservice" />
-  <meta name="twitter:title" content="Config Digtal Ocean Droplet as Microservice" />
+  <title>Config Digital Ocean Droplet as Microservice</title>
+  <meta property="og:title" content="Config Digital Ocean Droplet as Microservice" />
+  <meta name="twitter:title" content="Config Digital Ocean Droplet as Microservice" />
   <meta name="description" content="Objective This page is a notes for setting apache server for my digital ocean droplet
-Setting Apache2  in file /etc/hosts  change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS  change Port  in file /etc/apache2/port.conf add ServerName localhost change the line listen *:80 to listen 127.0.0.1:4000 disable other modules &lt;IfModule ssl_module&gt; and &lt;IfModule mod_gnutls.c&gt; in file /etc/apache2/site-enabled/000-default.conf change the line &lt;VirtualHost *:80&gt; to &lt;VirtualHost localhost:4000&gt;  restart apache2  run sudo /etc/init.">
+Setting Apache2  in file /etc/hosts
+ change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS  change Port
+ in file /etc/apache2/port.conf
+ add ServerName localhost
+ change the line listen *:80 to listen 127.0.0.1:4000
+ disable other modules &lt;IfModule ssl_module&gt; and &lt;IfModule mod_gnutls.c&gt;
+ in file /etc/apache2/site-enabled/000-default.conf
+ change the line &lt;VirtualHost *:80&gt; to &lt;VirtualHost localhost:4000&gt;">
   <meta property="og:description" content="Objective This page is a notes for setting apache server for my digital ocean droplet
-Setting Apache2  in file /etc/hosts  change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS  change Port  in file /etc/apache2/port.conf add ServerName localhost change the line listen *:80 to listen 127.0.0.1:4000 disable other modules &lt;IfModule ssl_module&gt; and &lt;IfModule mod_gnutls.c&gt; in file /etc/apache2/site-enabled/000-default.conf change the line &lt;VirtualHost *:80&gt; to &lt;VirtualHost localhost:4000&gt;  restart apache2  run sudo /etc/init.">
+Setting Apache2  in file /etc/hosts
+ change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS  change Port
+ in file /etc/apache2/port.conf
+ add ServerName localhost
+ change the line listen *:80 to listen 127.0.0.1:4000
+ disable other modules &lt;IfModule ssl_module&gt; and &lt;IfModule mod_gnutls.c&gt;
+ in file /etc/apache2/site-enabled/000-default.conf
+ change the line &lt;VirtualHost *:80&gt; to &lt;VirtualHost localhost:4000&gt;">
   <meta name="twitter:description" content="Objective This page is a notes for setting apache server for my digital ocean droplet
-Setting Apache2  in file /etc/hosts  change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS  change …">
+Setting Apache2  in file /etc/hosts
+ change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS  change …">
   <meta name="author" content="CyrusN"/>
   <link href='https://cyrusn.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://cyrusn.github.io/img/avatar.png" />
@@ -162,14 +177,23 @@ Setting Apache2  in file /etc/hosts  change 127.0.0.1 localhost to 127.0.1.1 loc
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>Config Digtal Ocean Droplet as Microservice</h1>
+              <h1>Config Digital Ocean Droplet as Microservice</h1>
                 
-                
+                  <h2 class="post-subheading"></h2>
                   <span class="post-meta">
   Posted on 2016-09-29
   
 </span>
-
+<br>
+<span class="post-meta meta-tags">
+  
+  #<a href="/tags/apache">apache</a>&nbsp;
+  
+  #<a href="/tags/ssl">SSL</a>&nbsp;
+  
+  #<a href="/tags/tls">TLS</a>&nbsp;
+  
+</span>
 
                 
             </div>
@@ -184,6 +208,8 @@ Setting Apache2  in file /etc/hosts  change 127.0.0.1 localhost to 127.0.1.1 loc
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
       <article role="main" class="blog-post">
         
 
@@ -196,22 +222,29 @@ Setting Apache2  in file /etc/hosts  change 127.0.0.1 localhost to 127.0.1.1 loc
 <h2 id="apache2">Apache2</h2>
 
 <ul>
-<li>in file <code>/etc/hosts</code>
+<li><p>in file <code>/etc/hosts</code></p>
 
 <ul>
-<li>change <code>127.0.0.1   localhost</code> to <code>127.0.1.1   localhost WordPress-CaLP-LPSS</code></li>
+<li>change <code>127.0.0.1 localhost</code> to <code>127.0.1.1 localhost WordPress-CaLP-LPSS</code></li>
 </ul></li>
-<li>change Port
+
+<li><p>change Port</p>
 
 <ul>
-<li>in file <code>/etc/apache2/port.conf</code></li>
-<li>add <code>ServerName localhost</code></li>
-<li>change the line <code>listen *:80</code> to <code>listen 127.0.0.1:4000</code></li>
-<li>disable other modules <code>&lt;IfModule ssl_module&gt;</code> and <code>&lt;IfModule mod_gnutls.c&gt;</code></li>
-<li>in file <code>/etc/apache2/site-enabled/000-default.conf</code></li>
-<li>change the line <code>&lt;VirtualHost *:80&gt;</code> to <code>&lt;VirtualHost localhost:4000&gt;</code></li>
+<li><p>in file <code>/etc/apache2/port.conf</code></p></li>
+
+<li><p>add <code>ServerName localhost</code></p></li>
+
+<li><p>change the line <code>listen *:80</code> to <code>listen 127.0.0.1:4000</code></p></li>
+
+<li><p>disable other modules <code>&lt;IfModule ssl_module&gt;</code> and <code>&lt;IfModule mod_gnutls.c&gt;</code></p></li>
+
+<li><p>in file <code>/etc/apache2/site-enabled/000-default.conf</code></p></li>
+
+<li><p>change the line <code>&lt;VirtualHost *:80&gt;</code> to <code>&lt;VirtualHost localhost:4000&gt;</code></p></li>
 </ul></li>
-<li>restart apache2
+
+<li><p>restart apache2</p>
 
 <ul>
 <li>run <code>sudo /etc/init.d/apache2 restart</code></li>
@@ -220,14 +253,16 @@ Setting Apache2  in file /etc/hosts  change 127.0.0.1 localhost to 127.0.1.1 loc
 
 <h2 id="wordpress">Wordpress</h2>
 
-<p>config WordPress to use proxy
-- add the following lines in <code>/var/www/html/wp-config.php</code></p>
+<p>config WordPress to use proxy</p>
+
+<ul>
+<li>add the following lines in <code>/var/www/html/wp-config.php</code></li>
+</ul>
 
 <pre><code class="language-sh">define(‘WP_PROXY_HOST’, ‘careers.liping.edu.hk’);
 define(‘WP_PROXY_PORT’, ’80’);`
 define('WP_PROXY_BYPASS_HOSTS', 'localhost, careers.liping.edu.hk');
 define('FORCE_SSL_ADMIN', true);
-
 </code></pre>
 
 <ul>
@@ -288,7 +323,7 @@ proxy / localhost:4000 {
 <script type="text/javascript">
     var disqus_shortname = 'cyrusngithubio';
     var disqus_identifier = 'https:\/\/cyrusn.github.io\/post\/config-digtal-ocean-droplet-as-microservice\/';
-    var disqus_title = 'Config Digtal Ocean Droplet as Microservice';
+    var disqus_title = 'Config Digital Ocean Droplet as Microservice';
     var disqus_url = 'https:\/\/cyrusn.github.io\/post\/config-digtal-ocean-droplet-as-microservice\/';
 
     (function() {
@@ -313,6 +348,7 @@ proxy / localhost:4000 {
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://cyrusn.github.io/js/main.js"></script>
 <script src="https://cyrusn.github.io/js/highlight.min.js"></script>
+<script src="/js/keypress.js"></script>
 <script> hljs.initHighlightingOnLoad(); </script>
 <script> renderMathInElement(document.body); </script>
 

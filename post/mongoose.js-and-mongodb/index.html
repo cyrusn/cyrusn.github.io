@@ -8,53 +8,14 @@
   <title>Mongoose.js and MongoDB</title>
   <meta property="og:title" content="Mongoose.js and MongoDB" />
   <meta name="twitter:title" content="Mongoose.js and MongoDB" />
-  <meta name="description" content="Custom _id
-
-
-你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的
-可以令 _id 有意思,
-
-
-e.g. studentSchema, use regno as custom _id
-e.g. teacherSchema, use teacherInitial as custom _id
-
-use uuid if you need to have id before add new stuff
-
-
-e.g. attachmentSchema, need the id to rename the attachment before saving to database.
-
-
-
-">
-  <meta property="og:description" content="Custom _id
-
-
-你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的
-可以令 _id 有意思,
-
-
-e.g. studentSchema, use regno as custom _id
-e.g. teacherSchema, use teacherInitial as custom _id
-
-use uuid if you need to have id before add new stuff
-
-
-e.g. attachmentSchema, need the id to rename the attachment before saving to database.
-
-
-
-">
-  <meta name="twitter:description" content="Custom _id
-
-
-你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的
-可以令 _id 有意思,
-
-
-e.g. studentSchema, use regno as custom _id
-e.g. teacherSchema, use teacherInitial as custom _id
-
-use …">
+  <meta name="description" content="Custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的 可以令 _id 有意思,
+ e.g. studentSchema, use regno as custom _id e.g. teacherSchema, use teacherInitial as custom _id  use uuid if you need to have id before add new stuff
+ e.g. attachmentSchema, need the id to rename the attachment before saving to database.   Schema.ObjectId  if no need to use custom _id then use Schema.">
+  <meta property="og:description" content="Custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的 可以令 _id 有意思,
+ e.g. studentSchema, use regno as custom _id e.g. teacherSchema, use teacherInitial as custom _id  use uuid if you need to have id before add new stuff
+ e.g. attachmentSchema, need the id to rename the attachment before saving to database.   Schema.ObjectId  if no need to use custom _id then use Schema.">
+  <meta name="twitter:description" content="Custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的 可以令 _id 有意思,
+ e.g. studentSchema, use regno as custom _id e.g. teacherSchema, use teacherInitial as custom _id  use uuid …">
   <meta name="author" content="CyrusN"/>
   <link href='https://cyrusn.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://cyrusn.github.io/img/avatar.png" />
@@ -205,12 +166,21 @@ use …">
             <div class="post-heading">
               <h1>Mongoose.js and MongoDB</h1>
                 
-                
+                  <h2 class="post-subheading"></h2>
                   <span class="post-meta">
   Posted on 2015-05-10
   
 </span>
-
+<br>
+<span class="post-meta meta-tags">
+  
+  #<a href="/tags/database">database</a>&nbsp;
+  
+  #<a href="/tags/mongodb">MongoDB</a>&nbsp;
+  
+  #<a href="/tags/mongoose">Mongoose</a>&nbsp;
+  
+</span>
 
                 
             </div>
@@ -225,25 +195,31 @@ use …">
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
       <article role="main" class="blog-post">
-        <h1 id="custom-id">Custom <code>_id</code></h1>
+        
+
+<h1 id="custom-id">Custom <code>_id</code></h1>
 
 <ul>
 <li>你schema 有 <code>_id</code> mongo 就唔同你gen, 亦唔可以用 <code>Schema.ObjectId</code> 做ref, 會認唔到type 的</li>
-<li>可以令 <code>_id</code> 有意思,
+
+<li><p>可以令 <code>_id</code> 有意思,</p>
 
 <ul>
 <li>e.g. studentSchema, use <code>regno</code> as custom <code>_id</code></li>
 <li>e.g. teacherSchema, use <code>teacherInitial</code> as custom <code>_id</code></li>
 </ul></li>
-<li>use <code>uuid</code> if you need to have <code>id</code> before <em>add new stuff</em>
+
+<li><p>use <code>uuid</code> if you need to have <code>id</code> before <em>add new stuff</em></p>
 
 <ul>
 <li>e.g. attachmentSchema, need the <code>id</code> to rename the attachment before saving to database.</li>
 </ul></li>
 </ul>
 
-<p></p>
+<!-- more -->
 
 <h1 id="schema-objectid">Schema.ObjectId</h1>
 
@@ -274,8 +250,8 @@ var Headmaster = 5
 var Previleged = 6
 // ...
 role: { type: Int, min: Teacher, max: Previleged}
-
 </code></pre>
+
       </article>
 
       
@@ -310,6 +286,7 @@ role: { type: Int, min: Teacher, max: Previleged}
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://cyrusn.github.io/js/main.js"></script>
 <script src="https://cyrusn.github.io/js/highlight.min.js"></script>
+<script src="/js/keypress.js"></script>
 <script> hljs.initHighlightingOnLoad(); </script>
 <script> renderMathInElement(document.body); </script>
 

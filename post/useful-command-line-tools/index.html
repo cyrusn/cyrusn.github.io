@@ -8,8 +8,8 @@
   <title>useful command line tools</title>
   <meta property="og:title" content="useful command line tools" />
   <meta name="twitter:title" content="useful command line tools" />
-  <meta name="description" content="Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.txt # redirect the standard output result to file (append) echo &quot;hello world&quot; &gt;&gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed &#39;s/ /_/g&#39; &lt; test.txt &gt; test_1.txt # line input cat &lt;&lt; end heredoc&gt; hello heredoc&gt; world heredoc&gt; end  Useful Commands Cheatsheet  d to show directory history  type cd -number or directly type the number to go to directory  !">
-  <meta property="og:description" content="Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.txt # redirect the standard output result to file (append) echo &quot;hello world&quot; &gt;&gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed &#39;s/ /_/g&#39; &lt; test.txt &gt; test_1.txt # line input cat &lt;&lt; end heredoc&gt; hello heredoc&gt; world heredoc&gt; end  Useful Commands Cheatsheet  d to show directory history  type cd -number or directly type the number to go to directory  !">
+  <meta name="description" content="Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.txt # redirect the standard output result to file (append) echo &quot;hello world&quot; &gt;&gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed &#39;s/ /_/g&#39; &lt; test.txt &gt; test_1.txt # line input cat &lt;&lt; end heredoc&gt; hello heredoc&gt; world heredoc&gt; end  Useful Commands Cheatsheet  d to show directory history">
+  <meta property="og:description" content="Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.txt # redirect the standard output result to file (append) echo &quot;hello world&quot; &gt;&gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed &#39;s/ /_/g&#39; &lt; test.txt &gt; test_1.txt # line input cat &lt;&lt; end heredoc&gt; hello heredoc&gt; world heredoc&gt; end  Useful Commands Cheatsheet  d to show directory history">
   <meta name="twitter:description" content="Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.txt # redirect the standard …">
   <meta name="author" content="CyrusN"/>
   <link href='https://cyrusn.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -161,12 +161,21 @@
             <div class="post-heading">
               <h1>useful command line tools</h1>
                 
-                
+                  <h2 class="post-subheading"></h2>
                   <span class="post-meta">
   Posted on 2015-05-24
   
 </span>
-
+<br>
+<span class="post-meta meta-tags">
+  
+  #<a href="/tags/commandline">commandline</a>&nbsp;
+  
+  #<a href="/tags/terminal">terminal</a>&nbsp;
+  
+  #<a href="/tags/zsh">zsh</a>&nbsp;
+  
+</span>
 
                 
             </div>
@@ -181,6 +190,8 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
       <article role="main" class="blog-post">
         
 
@@ -213,15 +224,19 @@ heredoc&gt; end
 <h2 id="cheatsheet-http-floss-zoomquiet-io-data-20120129165222-index-html"><a href="http://floss.zoomquiet.io/data/20120129165222/index.html">Cheatsheet</a></h2>
 
 <ul>
-<li><code>d</code> to show directory history
+<li><p><code>d</code> to show directory history</p>
 
 <ul>
 <li>type <code>cd -number</code> or directly type the <code>number</code> to go to directory</li>
 </ul></li>
-<li><code>!:n-m</code> get the attribute from n to m of last command</li>
-<li><code>!!</code> to get the last command</li>
-<li><code>!*</code> to get the argz of last command</li>
-<li><a href="http://www.zzapper.co.uk/zshtips.html">zsh tip</a></li>
+
+<li><p><code>!:n-m</code> get the attribute from n to m of last command</p></li>
+
+<li><p><code>!!</code> to get the last command</p></li>
+
+<li><p><code>!*</code> to get the argz of last command</p></li>
+
+<li><p><a href="http://www.zzapper.co.uk/zshtips.html">zsh tip</a></p></li>
 </ul>
 
 <h2 id="links">Links</h2>
@@ -269,7 +284,7 @@ alias ql='qlmanage -p'`
 
 <h2 id="xargs">Xargs</h2>
 
-<p>Granted, I often <code>xargs</code>  at CLI to do the looping (KYLee):</p>
+<p>Granted, I often <code>xargs</code> at CLI to do the looping (KYLee):</p>
 
 <pre><code class="language-sh"># simple use case
 echo &quot;U R L&quot; | xargs -n1 echo
@@ -308,20 +323,11 @@ cat file | xargs -I@ echo @
 convert '*.jpg' -resize 120x120 thumbnail%03d.png
 # rename file batchly
 `rename 's/\.html$/\.php/' *.html`
-
-# create gif
-convert -delay 50 *.png result.gif
-mkdir resize
-for IMG in *.png
-do
-    convert -resize 10% ${IMG} ./resize/${IMG/%.png/_small.png}
-done
 </code></pre>
 
 <h2 id="ffmpeg">ffmpeg</h2>
 
-<p><a href="https://www.ffmpeg.org/">ffmpeg</a>
-A complete, cross-platform solution to record, convert and stream audio and video.</p>
+<p><a href="https://www.ffmpeg.org/">ffmpeg</a> A complete, cross-platform solution to record, convert and stream audio and video.</p>
 
 <pre><code class="language-sh"># -i mean input_file
 $ ffmpeg -i input.mp4 output.avi
@@ -366,7 +372,6 @@ brew install httpie
 
 <ul>
 <li><code>http -b url | jq .name</code></li>
-<li>jq 可以響cli 做到lodash 嘅嘢</li>
 </ul>
 
       </article>
@@ -403,6 +408,7 @@ brew install httpie
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://cyrusn.github.io/js/main.js"></script>
 <script src="https://cyrusn.github.io/js/highlight.min.js"></script>
+<script src="/js/keypress.js"></script>
 <script> hljs.initHighlightingOnLoad(); </script>
 <script> renderMathInElement(document.body); </script>
 

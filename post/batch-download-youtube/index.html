@@ -161,12 +161,15 @@
             <div class="post-heading">
               <h1>Batch Download YouTube</h1>
                 
-                
+                  <h2 class="post-subheading"></h2>
                   <span class="post-meta">
   Posted on 2016-10-07
   
 </span>
-
+<br>
+<span class="post-meta meta-tags">
+  
+</span>
 
                 
             </div>
@@ -181,10 +184,12 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
       <article role="main" class="blog-post">
         
 
-<h2 id="using-youtube-dl-and-xargs">Using <code>youtube-dl</code> and  <code>xargs</code></h2>
+<h1 id="using-youtube-dl-and-xargs">Using <code>youtube-dl</code> and <code>xargs</code></h1>
 
 <pre><code class="language-sh">cat &lt;&lt; EOF | xargs -I@ youtube-dl https://www.youtube.com/watch?v=@
 YouTubeVideoID-1
@@ -193,7 +198,7 @@ YouTubeVideoID-3
 EOF
 </code></pre>
 
-<h2 id="useful-options">Useful options</h2>
+<h1 id="useful-options">Useful options</h1>
 
 <ul>
 <li><code>--extract-audio</code> for download audio only</li>
@@ -235,6 +240,7 @@ EOF
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://cyrusn.github.io/js/main.js"></script>
 <script src="https://cyrusn.github.io/js/highlight.min.js"></script>
+<script src="/js/keypress.js"></script>
 <script> hljs.initHighlightingOnLoad(); </script>
 <script> renderMathInElement(document.body); </script>
 

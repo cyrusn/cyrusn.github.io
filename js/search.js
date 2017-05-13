@@ -79,7 +79,7 @@ $( document ).ready(function() {
             var numWords = 2;
             // var text = suggestion.content.match("(?:\\s?(?:[\\w]+)\\s?){0,"+numWords+"}"+query+"(?:\\s?(?:[\\w]+)\\s?){0,"+numWords+"}");
             // suggestion.context = text;
-            var image = '<div>' + '» ' + suggestion.title + '</div><div style="font-size:12px">' + (suggestion.context || '') +'</div>';
+            var image = '<div>' + '» ' + suggestion.title + '</div><div style="font-size:12px">' + (suggestion.uri || '') +'</div>';
             li.innerHTML = image;
         },
         limit: 10

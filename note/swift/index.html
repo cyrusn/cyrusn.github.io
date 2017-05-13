@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Swift Notes</title>
+  <meta property="og:title" content="Swift Notes" />
+  <meta name="twitter:title" content="Swift Notes" />
+  <meta name="description" content=" Start Developing iOS / OSX Apps The Swift Programming Language (Swift 2.2): About Swift Start Developing iOS Apps (Swift): Jump Right In
+ICON for iOS Development 23,500 Icons - Free Download | Icons8
+Basic Keywords Control Flow  where (A switch case can use a where clause to check for additional conditions.)  Computed Properties  lazy get set willSet didSet  ## Instance Methods
+ self static mutating  Subscript  subscript  Inheritance  override super  Initialization  init convenience required  Deinitialization  deinit unowned  Type Casting  is as  Extension  extension  Protocols  protocol  Generic  Where Clauses  Access Control  public internal private  Summary of the Grammar Using Swift with Cocoa and Objective-C  attribute import @objc @IBOutlet @IBAction @IBDesignable strong weak  ">
+  <meta property="og:description" content=" Start Developing iOS / OSX Apps The Swift Programming Language (Swift 2.2): About Swift Start Developing iOS Apps (Swift): Jump Right In
+ICON for iOS Development 23,500 Icons - Free Download | Icons8
+Basic Keywords Control Flow  where (A switch case can use a where clause to check for additional conditions.)  Computed Properties  lazy get set willSet didSet  ## Instance Methods
+ self static mutating  Subscript  subscript  Inheritance  override super  Initialization  init convenience required  Deinitialization  deinit unowned  Type Casting  is as  Extension  extension  Protocols  protocol  Generic  Where Clauses  Access Control  public internal private  Summary of the Grammar Using Swift with Cocoa and Objective-C  attribute import @objc @IBOutlet @IBAction @IBDesignable strong weak  ">
+  <meta name="twitter:description" content=" Start Developing iOS / OSX Apps The Swift Programming Language (Swift 2.2): About Swift Start Developing iOS Apps (Swift): Jump Right In
+ICON for iOS Development 23,500 Icons - Free Download | Icons8 …">
+  <meta name="author" content="CyrusN"/>
+  <link href='https://cyrusn.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://cyrusn.github.io/img/avatar.png" />
+  <meta name="twitter:image" content="https://cyrusn.github.io/img/avatar.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@cyrusncy" />
+  <meta name="twitter:creator" content="@cyrusncy" />
+  <meta property="og:url" content="https://cyrusn.github.io/note/swift/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CyrusN" />
+
+  <meta name="generator" content="Hugo 0.20.7" />
+  <link rel="canonical" href="https://cyrusn.github.io/note/swift/" />
+  <link rel="alternate" href="https://cyrusn.github.io/index.xml" type="application/rss+xml" title="CyrusN">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cyrusn.github.io/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://cyrusn.github.io/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://cyrusn.github.io/css/highlight.min.css" />
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav">
+        
+        <li class="navlinks-container">
+          <a href="mailto:cyrusncy@gmail.com" title="Email me">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+        <li class="navlinks-container">
+          <a href="https://www.facebook.com/cyrusncy" title="Facebook">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+        <li class="navlinks-container">
+          <a href="https://github.com/cyrusn" title="GitHub">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+        <li class="navlinks-container">
+          <a href="https://twitter.com/cyrusncy" title="Twitter">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Home" href="/">Home</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Posts" href="/post/">Posts</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Notes" href="/note/">Notes</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="CyrusN" href="https://cyrusn.github.io">
+            <img class="avatar-img" src="https://cyrusn.github.io/img/avatar.png" alt="CyrusN" />
+          </a>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Swift Notes</h1>
+                
+                  <h2 class="post-subheading"></h2>
+                  <span class="post-meta">
+  Posted on 2015-05-10
+  
+</span>
+<br>
+<span class="post-meta meta-tags">
+  
+  #<a href="/tags/macos">macos</a>&nbsp;
+  
+  #<a href="/tags/swift">swift</a>&nbsp;
+  
+</span>
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+      <article role="main" class="blog-post">
+        
+
+<h1 id="start-developing-ios-osx-apps">Start Developing iOS / OSX Apps</h1>
+
+<p><a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/">The Swift Programming Language (Swift 2.2): About Swift</a> <a href="https://developer.apple.com/library/ios/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html#//apple_ref/doc/uid/TP40015214-CH2-SW1">Start Developing iOS Apps (Swift): Jump Right In</a></p>
+
+<h1 id="icon-for-ios-development">ICON for iOS Development</h1>
+
+<p><a href="https://icons8.com/web-app/new-icons/all">23,500 Icons - Free Download | Icons8</a></p>
+
+<h1 id="basic-keywords">Basic Keywords</h1>
+
+<h2 id="control-flow-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-controlflow-html-apple-ref-doc-uid-tp40014097-ch9-xid-191"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/ControlFlow.html#//apple_ref/doc/uid/TP40014097-CH9-XID_191">Control Flow</a></h2>
+
+<ul>
+<li>where (A <code>switch</code> case can use a <code>where</code> clause to check for additional conditions.)</li>
+</ul>
+
+<h2 id="computed-properties-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-properties-html"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Properties.html#//">Computed Properties</a></h2>
+
+<ul>
+<li>lazy</li>
+<li>get</li>
+<li>set</li>
+<li>willSet</li>
+<li>didSet</li>
+</ul>
+
+<!-- more -->
+
+<p>## <a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Methods.html#//">Instance Methods</a></p>
+
+<ul>
+<li>self</li>
+<li>static</li>
+<li>mutating</li>
+</ul>
+
+<h2 id="subscript-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-subscripts-html"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Subscripts.html#//">Subscript</a></h2>
+
+<ul>
+<li>subscript</li>
+</ul>
+
+<h2 id="inheritance-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-inheritance-html-apple-ref-doc-uid-tp40014097-ch17-xid-297"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Inheritance.html#//apple_ref/doc/uid/TP40014097-CH17-XID_297">Inheritance</a></h2>
+
+<ul>
+<li>override</li>
+<li>super</li>
+</ul>
+
+<h2 id="initialization-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-initialization-html"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Initialization.html#//">Initialization</a></h2>
+
+<ul>
+<li>init</li>
+<li>convenience</li>
+<li>required</li>
+</ul>
+
+<h2 id="deinitialization-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-deinitialization-html-apple-ref-doc-uid-tp40014097-ch19-xid-220"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Deinitialization.html#//apple_ref/doc/uid/TP40014097-CH19-XID_220">Deinitialization</a></h2>
+
+<ul>
+<li>deinit</li>
+<li>unowned</li>
+</ul>
+
+<h2 id="type-casting-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-typecasting-html-apple-ref-doc-uid-tp40014097-ch22-xid-498"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/TypeCasting.html#//apple_ref/doc/uid/TP40014097-CH22-XID_498">Type Casting</a></h2>
+
+<ul>
+<li>is</li>
+<li>as</li>
+</ul>
+
+<h2 id="extension-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-extensions-html-apple-ref-doc-uid-tp40014097-ch24-xid-229"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Extensions.html#//apple_ref/doc/uid/TP40014097-CH24-XID_229">Extension</a></h2>
+
+<ul>
+<li>extension</li>
+</ul>
+
+<h2 id="protocols-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-protocols-html-apple-ref-doc-uid-tp40014097-ch25-xid-390"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Protocols.html#//apple_ref/doc/uid/TP40014097-CH25-XID_390">Protocols</a></h2>
+
+<ul>
+<li>protocol</li>
+</ul>
+
+<h2 id="generic-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-generics-html-apple-ref-doc-uid-tp40014097-ch26-xid-275"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Generics.html#//apple_ref/doc/uid/TP40014097-CH26-XID_275">Generic</a></h2>
+
+<ul>
+<li>Where Clauses</li>
+</ul>
+
+<h2 id="access-control-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-accesscontrol-html-apple-ref-doc-uid-tp40014097-ch41-xid-29"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/AccessControl.html#//apple_ref/doc/uid/TP40014097-CH41-XID_29">Access Control</a></h2>
+
+<ul>
+<li>public</li>
+<li>internal</li>
+<li>private</li>
+</ul>
+
+<h2 id="summary-of-the-grammar-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-zzsummaryofthegrammar-html-apple-ref-doc-uid-tp40014097-ch38-xid-1131"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/zzSummaryOfTheGrammar.html#//apple_ref/doc/uid/TP40014097-CH38-XID_1131">Summary of the Grammar</a></h2>
+
+<h2 id="using-swift-with-cocoa-and-objective-c-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-buildingcocoaapps-index-html-apple-ref-doc-uid-tp40014216-ch2-xid-0"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216-CH2-XID_0">Using Swift with Cocoa and Objective-C</a></h2>
+
+<ul>
+<li><strong><em>attribute</em></strong></li>
+<li>import</li>
+<li>@objc</li>
+<li>@IBOutlet</li>
+<li>@IBAction</li>
+<li>@IBDesignable</li>
+<li>strong</li>
+<li>weak</li>
+</ul>
+
+      </article>
+
+      
+        
+          <div class="disqus-comments">
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'cyrusngithubio';
+    var disqus_identifier = 'https:\/\/cyrusn.github.io\/note\/swift\/';
+    var disqus_title = 'Swift Notes';
+    var disqus_url = 'https:\/\/cyrusn.github.io\/note\/swift\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cyrusn.github.io/js/main.js"></script>
+<script src="https://cyrusn.github.io/js/highlight.min.js"></script>
+<script src="/js/keypress.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+
+
+
+
+
+  </body>
+</html>
+
