@@ -87,6 +87,19 @@ $ git clean -f
 
 # git merge and rebase
 
+```sh
+# git merge
+$ git merge master <branch_name>
+```
+
+## difference between `merge` and `rebase`
+
+![git merge](https://wac-cdn.atlassian.com/dam/jcr:e229fef6-2c2f-4a4f-b270-e1e1baa94055/02.svg?cdnVersion=ek) Merging is nice because it's a non-destructive operation. The existing branches are not changed in any way. This avoids all of the potential pitfalls of rebasing
+
+![git rebase](https://wac-cdn.atlassian.com/dam/jcr:5b153a22-38be-40d0-aec8-5f2fffc771e5/03.svg?cdnVersion=ek)
+
+`git rebase` moves the entire feature branch to begin on the tip of the master branch, effectively incorporating all of the new commits in master.
+
 # git difftool
 
 # add badges to github
@@ -96,4 +109,4 @@ $ git clean -f
 # Referenche
 
 - [Setting up a repository | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/setting-up-a-repository)
-- [shields.io][<http://shields.io/>]
+- [shields.io](http://shields.io/)
