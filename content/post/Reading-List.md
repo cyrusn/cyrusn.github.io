@@ -1,16 +1,17 @@
-+++
-title = "Reading List"
-date = "2015-05-26 23:41:04"
-+++
+---
+title: Reading List
+date: '2015-05-26 23:41:04'
+---
+
 # Reading List
+
 - [Ben Alman » Immediately-Invoked Function Expression (IIFE)](http://benalman.com/news/2010/11/immediately-invoked-function-expression/)
 - [This section demos loading different config depending on NODE_ENV.](http://code.tutsplus.com/tutorials/protecting-your-keys-from-github--cms-23002)
 - [protecting-your-keys-from-github](http://code.tutsplus.com/tutorials/protecting-your-keys-from-github--cms-23002)
 - [Papyros - Arch Linux.](http://papyros.io/)
 - [reSRC · RESTful Web Services](http://resrc.io/link/679/restful-web-services/)
 - [Hub](https://hub.github.com/)
-- [Demystifying Regular Expressions- YouTube](https://www.youtube.com/watch?v=EkluES9Rvak)
-<!--more-->
+- [Demystifying Regular Expressions- YouTube](https://www.youtube.com/watch?v=EkluES9Rvak)<!-- more -->
 - [Foundation of Apps](http://zurb.com/article/1362/foundation-for-apps-is-here)
 - [TimeLine JS](http://timeline.knightlab.com/)
 - [淺談https](http://err02.com/2014/10/31/HTTP/)
@@ -30,5 +31,6 @@ date = "2015-05-26 23:41:04"
 - [electrolyte](https://github.com/jaredhanson/electrolyte/blob/master/Makefile)
 
 # Archive
+
 - [What-programming-languages-should-a-modern-day-programmer-have-in-his-her-arsenal](http://www.quora.com/What-programming-languages-should-a-modern-day-programmer-have-in-his-her-arsenal)
 - [Remark JS](https://github.com/gnab/remark)

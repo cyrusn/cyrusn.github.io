@@ -1,13 +1,16 @@
-+++
-title = "Gulp"
-date = "2015-05-10 00:46:47"
-tags = ["gulp" ,"javascript"]
-+++
+---
+title: Gulp
+date: '2015-05-10 00:46:47'
+tags:
+  - gulp
+  - javascript
+---
+
 # Automate and enhance your workflow
 
 ## Example
 
- watch jsx change and compile
+watch jsx change and compile
 
 ```javascript
 // http://travismaynard.com/writing/getting-started-with-gulp
@@ -40,7 +43,6 @@ gulp.task('watch', function() {
 gulp.task('default', ['react', 'watch']);
 ```
 
-
 # links
-[gulp](http://gulpjs.com/)
-[Introduction to Gulp.js with practical examples](http://julienrenaux.fr/2014/05/25/introduction-to-gulp-js-with-practical-examples/)
+
+[gulp](http://gulpjs.com/) [Introduction to Gulp.js with practical examples](http://julienrenaux.fr/2014/05/25/introduction-to-gulp-js-with-practical-examples/)

@@ -1,8 +1,10 @@
-+++
-title = "How to use GoogleScript"
-date = "2015-05-22 11:50:04"
-tags = ["google script"]
-+++
+---
+title: How to use GoogleScript
+date: '2015-05-22 11:50:04'
+tags:
+  - google script
+---
+
 # Useful Examples
 
 ## Send email from spreadsheet data
@@ -20,7 +22,7 @@ function convertValuesToObject(values) {
   var obj = {};
   obj.timestamp = values[0]
   obj.email = values[1]
-  obj.title = values[2]
+  obj.title: values[2]
 
   return obj
 }
@@ -49,7 +51,6 @@ function setEmailBody(obj) {
   var htmlBody = Utilities.formatString("<h1>%s</h1>", obj.title)
   return htmlBody
 }
-
 ```
 
 ## Set Trigger on form submit
@@ -79,7 +80,7 @@ function initializeTrigger() {
 ```javascript
 function createQuestion (obj) {
   var type = obj.type;
-  var title = obj.title;
+  var title: obj.title;
   var lists = obj.lists;
   var isRequired = obj.isRequired || false;
   var desc = obj.desc || false;

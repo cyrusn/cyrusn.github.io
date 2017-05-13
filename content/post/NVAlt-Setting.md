@@ -1,8 +1,9 @@
-+++
-title = "NVAlt Setting"
-date = "2016-09-29 16:23:18"
-tags = ["note-taking"]
-+++
+---
+title: NVAlt Setting
+date: '2016-09-29 16:23:18'
+tags:
+  - note-taking
+---
 
 Custom Preview Theme
 

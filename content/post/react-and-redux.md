@@ -1,25 +1,26 @@
-+++
-title = "ReactJS-and-Redux"
-tags = ["react", "redux"]
-date = "2017-04-17 14:38:47"
-+++
+---
+title: React-and-Redux
+tags:
+  - react
+  - redux
+date: '2017-04-17 14:38:47'
+---
 
-# [Function Components][id1]
+# Function Components
 
+- [Function Components](https://facebook.github.io/react/docs/components-and-props.html)
 - [Stateless Functional Components in React 0.14 – Josh Black – Medium](https://medium.com/@joshblack/stateless-components-in-react-0-14-f9798f8b992d)
 
 Since react 14.0, you can now use the new stateless function component instead of the instead of ES6 class method to define a component
 
-<!--more-->
-
-``` js
+```javascript
 // stateless functional components
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
 ```
 
-``` js
+```javascript
 // using class to define a component
 class Welcome extends React.Component {
   render() {
@@ -30,16 +31,16 @@ class Welcome extends React.Component {
 
 or even cleaner
 
-```js
+```javascript
 // use arrow function to define stateless funcitonal components
 const Welcome = ({name}) => <h1>Hello, {name}</h1>
 ```
 
-
 ## PropTypes
+
 - [Typechecking With PropTypes - React](https://facebook.github.io/react/docs/typechecking-with-proptypes.html)
 
-```js
+```javascript
 // import {PropTypes} from 'react' <= previously, PropTypes is binded to react library
 import PropTypes from 'prop-types';
 
@@ -57,7 +58,5 @@ Greeting.propTypes = {
 ```
 
 ## Redux
+
 - [Read Me · Redux](http://redux.js.org/)
-
-
-[id1]: https://facebook.github.io/react/docs/components-and-props.html

@@ -1,12 +1,11 @@
-+++
-title = "Batch Download YouTube"
-date = "2016-10-07 23:14:04"
-+++
+---
+title: Batch Download YouTube
+date: '2016-10-07 23:14:04'
+---
 
+# Using `youtube-dl` and `xargs`
 
-## Using `youtube-dl` and  `xargs`
-
-``` sh
+```sh
 cat << EOF | xargs -I@ youtube-dl https://www.youtube.com/watch?v=@
 YouTubeVideoID-1
 YouTubeVideoID-2
@@ -14,7 +13,7 @@ YouTubeVideoID-3
 EOF
 ```
 
-## Useful options
+# Useful options
 
 - `--extract-audio` for download audio only
 - `--audio-format mp3` choose the audio format

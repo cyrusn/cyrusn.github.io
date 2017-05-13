@@ -1,10 +1,13 @@
-+++
-title = "JavaScript on OSAScript"
-date = "2015-05-27 12:45:16"
-tags = ["macos", "osascript"]
-+++
+---
+title: JavaScript on OSAScript
+date: '2015-05-27 12:45:16'
+tags:
+  - macos
+  - osascript
+---
 
 # Example
+
 - [JXA-Cookbook](https://github.com/dtinth/JXA-Cookbook/)
 - [Apple Release Notes](https://developer.apple.com/library/mac/releasenotes/InterapplicationCommunication/RN-JavaScriptForAutomation/)
 - [JavaScript for OS X Automation by Example](http://developer.telerik.com/featured/javascript-os-x-automation-example/)
@@ -15,9 +18,8 @@ tags = ["macos", "osascript"]
 #! /usr/bin/osascript -l JavaScript
 app = Application.currentApplication();
 app.includeStandardAdditions = true;
-app.displayNotification('Hello, world', {withtitle = 'Title'})
+app.displayNotification('Hello, world', {withtitle: 'Title'})
 ```
-
 
 ## example
 
@@ -35,8 +37,6 @@ function run(argz) {
 }
 ```
 
-
-
 ```javascript
 // alfred workflow:
 // email link of Google Chrome active tab
@@ -44,7 +44,7 @@ function run(argz){
   var Chrome = Application('Google Chrome');
   var activeTab = Chrome.windows[0].activeTab;
 
-  var title = activeTab.title();
+  var title: activeTab.title();
   var url = activeTab.url();
   var mdl = '[' + title + '](' + url + ')';
 

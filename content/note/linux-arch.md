@@ -1,9 +1,11 @@
-+++
-date = "2017-05-12T20:26:30+08:00"
-subtitle =  ""
-tags =  ["linux", "arch"]
-title =  "linux arch"
-+++
+---
+title: Linux Arch Notes
+date: '2017-05-12T20:26:30+08:00'
+subtitle: ''
+tags:
+  - linux
+  - arch
+---
 
 # References
 

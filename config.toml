@@ -1,6 +1,6 @@
 baseurl = "https://cyrusn.github.io"
 DefaultContentLanguage = "en"
-title = "CyrusN"
+title: "CyrusN"
 theme = "beautifulhugo"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
@@ -9,7 +9,7 @@ disqusShortname = "cyrusngithubio"
 #googleAnalytics = "XXX"
 
 [Params]
-  subtitle = "My Programming Notes"
+  subtitle: "My Programming Notes"
   logo = "img/avatar.png"
   favicon = "favicon.ico"
   dateFormat = "2006-01-02"

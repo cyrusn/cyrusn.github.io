@@ -1,12 +1,15 @@
-+++
-title = "Hexo Notes"
-date = "2015-05-22 12:10:48"
-tags = ["hexo"]
-+++
-# How to Enable TOC
-## Create `toc.ejs`
-add following content at `yourTheme/layout/widget/toc.ejs`
+---
+title: Hexo Notes
+date: '2015-05-22 12:10:48'
+tags:
+  - hexo
+---
 
+# How to Enable TOC
+
+## Create `toc.ejs`
+
+add following content at `yourTheme/layout/widget/toc.ejs`
 
 ```html
 <% var content = page.content;
@@ -21,20 +24,17 @@ if (is_post() && content) { %>
 <% } %>
 ```
 
-
-<!--more-->
+<!-- more -->
 
 ## Create `toc.styl`
-add following content at `yourTheme/source/css/_partial/toc.styl`
-then add `@import "_partial/toc"` to `yourTheme/source/css/style.styl`
 
+add following content at `yourTheme/source/css/_partial/toc.styl` then add `@import "_partial/toc"` to `yourTheme/source/css/style.styl`
 
 ```text
 .toc
     li
       list-style: none
 ```
-
 
 ## finally
 
@@ -44,11 +44,9 @@ widgets:
 - toc
 ```
 
-
 # Add recent_update to sidebar
 
 add following content at `yourTheme/layout/widget/recent_update.ejs`
-
 
 ```ejs
 <% if (site.posts.length){ %>
@@ -68,7 +66,6 @@ add following content at `yourTheme/layout/widget/recent_update.ejs`
 <% } %>
 ```
 
-
 ## finally
 
 ```text
@@ -77,12 +74,11 @@ widgets:
 - recent_update
 ```
 
-
 # Preventing crash with github/repo
-If you want to change the permalink to title only but afraid the title will crash your repo `gh-pages`, you can try to use the following method
-Go to `/_config.yml`
-## in url session
 
+If you want to change the permalink to title only but afraid the title will crash your repo `gh-pages`, you can try to use the following method Go to `/_config.yml`
+
+## in url session
 
 ```yaml
 # URL
@@ -95,6 +91,5 @@ deploy:
   repo: https://github.com/<user>/<user>.github.io
   branch: master
 ```
-
 
 then all post link will become `http://<user>.github.io/blog/name_of_your_post` and the pathname of your site is still `http://<user>.github.io`

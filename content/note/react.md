@@ -1,8 +1,10 @@
-+++
-title = "ReactJS Notes"
-date = "2015-05-10 01:26:51"
-tags = ["react"]
-+++
+---
+title: ReactJS Notes
+date: '2015-05-10 01:26:51'
+tags:
+  - react
+---
+
 # API notes and example
 
 ## [Top-Level API](http://facebook.github.io/react/docs/top-level-api.html)
@@ -17,14 +19,12 @@ React.bar({
 })
 ```
 
-
 ## [Component API](http://facebook.github.io/react/docs/component-api.html)
 
 ```javascript
 // use within the function in Top-Level API
 this.foo
 ```
-
 
 ## [Component Specs and Lifecycle](http://facebook.github.io/react/docs/component-specs.html)
 
@@ -57,7 +57,6 @@ small source span strong style sub summary sup table tbody td textarea tfoot th
 thead time title tr track u ul var video wbr
 ```
 
-
 ### HTML Attributes
 
 ```text
@@ -74,10 +73,9 @@ selected shape size sizes span spellCheck src srcDoc srcSet start step style
 tabIndex target title type useMap value width wmode
 ```
 
-
 ## [Event System](http://facebook.github.io/react/docs/events.html)
-### SyntheticEvent
 
+### SyntheticEvent
 
 ```javascript
 boolean bubbles
@@ -94,8 +92,6 @@ number timeStamp
 string type
 ```
 
-
-
 ```text
 React.createClass({
     // event are the argument
@@ -106,40 +102,35 @@ React.createClass({
 })
 ```
 
-
 ### Supported Events
+
 React normalizes events so that they have consistent properties across different browsers.
 
 The event handlers below are triggered by an event in the bubbling phase. To register an event handler for the capture phase, append Capture to the event name; for example, instead of using onClick, you would use onClickCapture to handle the click event in the capture phase
 
 #### Clipboard Events
-Event names:
 
+Event names:
 
 ```text
 onCopy onCut onPaste
 ```
 
-
 Properties:
-
 
 ```text
 DOMDataTransfer clipboardData
 ```
 
-
 #### Keyboard Events
-Event names:
 
+Event names:
 
 ```text
 onKeyDown onKeyPress onKeyUp
 ```
 
-
 Properties:
-
 
 ```text
 boolean altKey
@@ -156,28 +147,23 @@ boolean shiftKey
 Number which
 ```
 
-
 #### Focus Events
-Event names:
 
+Event names:
 
 ```text
 onFocus onBlur
 ```
 
-
 Properties:
-
 
 ```text
 DOMEventTarget relatedTarget
 ```
 
-
-
 #### Mouse Events
-Event names:
 
+Event names:
 
 ```text
 onClick onContextMenu onDoubleClick onDrag onDragEnd onDragEnter onDragExit
@@ -187,7 +173,6 @@ The onMouseEnter and onMouseLeave events propagate from the component being left
 ```
 
 Properties:
-
 
 ```text
 boolean altKey
@@ -203,37 +188,29 @@ Number pageY
 DOMEventTarget relatedTarget
 Number screenX
 Number screenY
-boolean shiftKey```
-
+boolean shiftKey
+```
 
 #### Touch events
+
 To enable touch events, call React.initializeTouchEvents(true) before rendering any component.
 
 Event names:
 
-```
+````
 
 onTouchCancel onTouchEnd onTouchMove onTouchStart
 
 ```text
 Properties:
+````
 
-```
-
-boolean altKey
-DOMTouchList changedTouches
-boolean ctrlKey
-function getModifierState(key)
-boolean metaKey
-boolean shiftKey
-DOMTouchList targetTouches
-DOMTouchList touches
+boolean altKey DOMTouchList changedTouches boolean ctrlKey function getModifierState(key) boolean metaKey boolean shiftKey DOMTouchList targetTouches DOMTouchList touches
 
 ```text
 
 #### UI Events
 Event names:
-
 ```
 
 onScroll
@@ -241,11 +218,9 @@ onScroll
 ```text
 
 Properties:
-
 ```
 
-Number detail
-DOMAbstractView view
+Number detail DOMAbstractView view
 
 ```text
 
@@ -299,5 +274,4 @@ DOMAbstractView view
 
 ## from leesei
 [React: CSS in JS // Speaker Deck](https://speakerdeck.com/vjeux/react-css-in-js)
-
 ```

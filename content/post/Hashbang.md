@@ -1,8 +1,10 @@
-+++
-title = "Hashbang"
-date = "2015-05-21 12:47:20"
-tags = ["hashbang"]
-+++
+---
+title: Hashbang
+date: '2015-05-21 12:47:20'
+tags:
+  - hashbang
+---
+
 # Hashbang line
 
 ## NodeJS
@@ -11,13 +13,11 @@ tags = ["hashbang"]
 #! /usr/local/bin/node
 ```
 
-
 ## JS osascript
 
 ```sh
 #! /usr/bin/osascript -l javascript
 ```
-
 
 ## zsh or bash
 

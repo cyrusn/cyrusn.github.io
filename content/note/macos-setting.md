@@ -1,20 +1,25 @@
-+++
-title = "Settings of My OSX"
-date = "2015-10-01 13:32:12"
-tags = ["macos", "setting"]
-+++
+---
+title: macos Setting Notes
+date: '2015-10-01 13:32:12'
+tags:
+  - macos
+  - setting
+---
+
 # Custom OSX
+
 - [Remove shift key augmentation for Mission Control animation](http://apple.stackexchange.com/questions/66433/remove-shift-key-augmentation-for-mission-control-animation#answer-115698)
-- Enable the three finger drag in *Accessibility*
+- Enable the three finger drag in _Accessibility_
 
 # Terminal
+
 - Autocomplete `echo "set completion-ignore-case On" >> ~/.inputrc`
 - install command line tools in XCode `xcode-select --install`
 
 ## zsh
+
 - [install .oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 - symlink for setting zsh
-
 
 ```sh
     ## for installation of zsh
@@ -26,18 +31,18 @@ tags = ["macos", "setting"]
     ln -s ~/Dropbox/MacSetting/Terminal/coreutil/.dir_colors ~/
 ```
 
+<!-- more -->
 
-<!--more-->
+ ### for further customisation
 
-### for further customisation
 - add `export` at `~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom/export.zsh`
 - add `alias` at `~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom/alias.zsh`
-
 
 # homebrew package
 
 ## my automatic script for installation homebrew package
-[https://github.com/cyrusn/cyrusn-terminal-setting](https://github.com/cyrusn/cyrusn-terminal-setting)
+
+<https://github.com/cyrusn/cyrusn-terminal-setting>
 
 # Nodejs Setting
 
@@ -49,14 +54,11 @@ tags = ["macos", "setting"]
 prefix = ${HOME}/.npm-packages
 ```
 
-
-
 ## Find all global packages for install
 
 ```sh
 echo "$(\ls $(npm root -g)  | tr -s '\t\n' ' ')"
 ```
-
 
 ### npm list -g
 
@@ -64,19 +66,14 @@ echo "$(\ls $(npm root -g)  | tr -s '\t\n' ' ')"
 npm install -g eslint eslint-plugin-react gulp hexo hexo-cli http-server jshint jsxhint lodash node-gyp nodemon
 ```
 
-
 ## export path at `.bashrc` or `.zshrc` or equivalent
-
 
 ```sh
 export NODE_PATH=$HOME/.npm-packages/lib/node_modules
 export PATH=$HOME/.npm-packages/bin:$PATH
 ```
 
-
-
 # create symlink
-
 
 ```sh
 cd ~/
@@ -85,7 +82,6 @@ ln -s ~/Dropbox/MacSetting/atom/ ~/.atom
 ln -s ~/Dropbox/.npm-packages/ ~/
 ```
 
-
 ## sublimeText
 
 ```sh
@@ -93,7 +89,6 @@ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
 ln -s ~/Dropbox/MacSetting/sublimetext/User  ./
 ```
 
-
 # custom setting on osx
-- set terminal color theme
 
+- set terminal color theme
