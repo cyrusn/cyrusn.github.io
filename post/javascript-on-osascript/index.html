@@ -8,9 +8,18 @@
   <title>JavaScript on OSAScript</title>
   <meta property="og:title" content="JavaScript on OSAScript" />
   <meta name="twitter:title" content="JavaScript on OSAScript" />
-  <meta name="description" content="Example  JXA-Cookbook Apple Release Notes JavaScript for OS X Automation by Example  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle: &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[0].activeTab; var result = &#39;[&#39; &#43; activeTab.title() &#43; &#39;](&#39; &#43; activeTab.">
-  <meta property="og:description" content="Example  JXA-Cookbook Apple Release Notes JavaScript for OS X Automation by Example  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle: &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[0].activeTab; var result = &#39;[&#39; &#43; activeTab.title() &#43; &#39;](&#39; &#43; activeTab.">
-  <meta name="twitter:description" content="Example  JXA-Cookbook Apple Release Notes JavaScript for OS X Automation by Example  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); …">
+  <meta name="description" content="Example  JXA-Cookbook
+ Apple Release Notes
+ JavaScript for OS X Automation by Example
+  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle: &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[0].activeTab; var result = &#39;[&#39; &#43; activeTab.">
+  <meta property="og:description" content="Example  JXA-Cookbook
+ Apple Release Notes
+ JavaScript for OS X Automation by Example
+  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle: &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[0].activeTab; var result = &#39;[&#39; &#43; activeTab.">
+  <meta name="twitter:description" content="Example  JXA-Cookbook
+ Apple Release Notes
+ JavaScript for OS X Automation by Example
+  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); …">
   <meta name="author" content="CyrusN"/>
   <link href='https://cyrusn.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://cyrusn.github.io/img/avatar.png" />
@@ -32,7 +41,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
   <link rel="stylesheet" href="https://cyrusn.github.io/css/pygment_highlights.css" />
-  <link rel="stylesheet" href="https://cyrusn.github.io/css/highlight.min.css" />
+  
+  <link rel="stylesheet" href="https://cyrusn.github.io/css/atom-one-dark.css" />
+  <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
 
 </head>
 
@@ -196,9 +207,10 @@
 <h1 id="example">Example</h1>
 
 <ul>
-<li><a href="https://github.com/dtinth/JXA-Cookbook/">JXA-Cookbook</a></li>
-<li><a href="https://developer.apple.com/library/mac/releasenotes/InterapplicationCommunication/RN-JavaScriptForAutomation/">Apple Release Notes</a></li>
-<li><a href="http://developer.telerik.com/featured/javascript-os-x-automation-example/">JavaScript for OS X Automation by Example</a></li>
+<li><a href="https://github.com/dtinth/JXA-Cookbook/">JXA-Cookbook</a><br /></li>
+<li><a href="https://developer.apple.com/library/mac/releasenotes/InterapplicationCommunication/RN-JavaScriptForAutomation/">Apple Release Notes</a><br /></li>
+<li><a href="http://developer.telerik.com/featured/javascript-os-x-automation-example/">JavaScript for OS X Automation by Example</a><br />
+<br /></li>
 </ul>
 
 <h2 id="display-notification">Display Notification</h2>
@@ -291,6 +303,8 @@ function run(argz){
 
 
 <script src="/js/keypress.js"></script>
+<script src="/js/perfect-scrollbar.min.js"></script>
+<script src="/js/perfect-scrollbar.jquery.min.js"></script>
 
   </body>
 </html>

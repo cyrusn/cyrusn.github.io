@@ -8,9 +8,11 @@
   <title>tmux Notes</title>
   <meta property="og:title" content="tmux Notes" />
   <meta name="twitter:title" content="tmux Notes" />
-  <meta name="description" content="using tmux # list all session tmux ls # attach to session tmux attach -t sessionName # create new session tmux new -s sessionName # kill session tmux kill-session -t sessionName  navigate in tmux  Ctrl-b then [ then you can use your normal navigation keys to scroll around (eg. Up Arrow or PgDn). Press q to quit scroll mode.
+  <meta name="description" content="using tmux # list all session tmux ls # attach to session tmux attach -t sessionName # create new session tmux new -s sessionName # kill session tmux kill-session -t sessionName  navigate in tmux  Ctrl-b then [ then you can use your normal navigation keys to scroll around (eg. Up Arrow or PgDn).
+ Press q to quit scroll mode.
  just quit terminal for exit the session">
-  <meta property="og:description" content="using tmux # list all session tmux ls # attach to session tmux attach -t sessionName # create new session tmux new -s sessionName # kill session tmux kill-session -t sessionName  navigate in tmux  Ctrl-b then [ then you can use your normal navigation keys to scroll around (eg. Up Arrow or PgDn). Press q to quit scroll mode.
+  <meta property="og:description" content="using tmux # list all session tmux ls # attach to session tmux attach -t sessionName # create new session tmux new -s sessionName # kill session tmux kill-session -t sessionName  navigate in tmux  Ctrl-b then [ then you can use your normal navigation keys to scroll around (eg. Up Arrow or PgDn).
+ Press q to quit scroll mode.
  just quit terminal for exit the session">
   <meta name="twitter:description" content="using tmux # list all session tmux ls # attach to session tmux attach -t sessionName # create new session tmux new -s sessionName # kill session tmux kill-session -t sessionName  navigate in tmux …">
   <meta name="author" content="CyrusN"/>
@@ -34,7 +36,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
   <link rel="stylesheet" href="https://cyrusn.github.io/css/pygment_highlights.css" />
-  <link rel="stylesheet" href="https://cyrusn.github.io/css/highlight.min.css" />
+  
+  <link rel="stylesheet" href="https://cyrusn.github.io/css/atom-one-dark.css" />
+  <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
 
 </head>
 
@@ -211,7 +215,7 @@ tmux kill-session -t sessionName
 <h2 id="navigate-in-tmux">navigate in tmux</h2>
 
 <ul>
-<li><code>Ctrl-b</code> then <code>[</code> then you can use your normal navigation keys to scroll around (eg. Up Arrow or PgDn).</li>
+<li><code>Ctrl-b</code> then <code>[</code> then you can use your normal navigation keys to scroll around (eg. Up Arrow or PgDn).<br /></li>
 
 <li><p>Press <code>q</code> to quit scroll mode.</p></li>
 
@@ -259,6 +263,8 @@ tmux kill-session -t sessionName
 
 
 <script src="/js/keypress.js"></script>
+<script src="/js/perfect-scrollbar.min.js"></script>
+<script src="/js/perfect-scrollbar.jquery.min.js"></script>
 
   </body>
 </html>

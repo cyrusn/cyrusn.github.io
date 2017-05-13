@@ -18,7 +18,8 @@
       <pubDate>Fri, 12 May 2017 13:43:00 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/tmux/</guid>
-      <description>using tmux # list all session tmux ls # attach to session tmux attach -t sessionName # create new session tmux new -s sessionName # kill session tmux kill-session -t sessionName  navigate in tmux  Ctrl-b then [ then you can use your normal navigation keys to scroll around (eg. Up Arrow or PgDn). Press q to quit scroll mode.
+      <description>using tmux # list all session tmux ls # attach to session tmux attach -t sessionName # create new session tmux new -s sessionName # kill session tmux kill-session -t sessionName  navigate in tmux  Ctrl-b then [ then you can use your normal navigation keys to scroll around (eg. Up Arrow or PgDn).
+ Press q to quit scroll mode.
  just quit terminal for exit the session</description>
     </item>
     
@@ -28,17 +29,10 @@
       <pubDate>Fri, 12 May 2017 20:26:30 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/linux-arch/</guid>
-      <description>References  Build a Killer Customized Arch Linux Installation (and Learn All About Linux in the Process) Installation guide - ArchWiki Antergos | Your Linux. Always Fresh. Never Frozen.   The purpose of Antergos is to provide a modern, elegant, and powerful operating system based on one of the best Linux distributions available, Arch Linux. Users need not be linux experts nor developers in order to use Antergos. From long-time linux users to linux users of only a few months, Antergos is for everyone.</description>
-    </item>
-    
-    <item>
-      <title>React-and-Redux</title>
-      <link>https://cyrusn.github.io/post/react-and-redux/</link>
-      <pubDate>Mon, 17 Apr 2017 14:38:47 +0000</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/react-and-redux/</guid>
-      <description>Function Components  Function Components Stateless Functional Components in React 0.14 – Josh Black – Medium  Since react 14.0, you can now use the new stateless function component instead of the instead of ES6 class method to define a component
-// stateless functional components function Welcome(props) { return &amp;lt;h1&amp;gt;Hello, {props.name}&amp;lt;/h1&amp;gt;; }  // using class to define a component class Welcome extends React.Component { render() { return &amp;lt;h1&amp;gt;Hello, {this.</description>
+      <description>References  Build a Killer Customized Arch Linux Installation (and Learn All About Linux in the Process)
+ Installation guide - ArchWiki
+ Antergos | Your Linux. Always Fresh. Never Frozen.
+   The purpose of Antergos is to provide a modern, elegant, and powerful operating system based on one of the best Linux distributions available, Arch Linux. Users need not be linux experts nor developers in order to use Antergos.</description>
     </item>
     
     <item>
@@ -80,7 +74,8 @@ To display both the kernel version and your system&amp;rsquo;s architecture (32-
       <pubDate>Sun, 09 Oct 2016 07:41:27 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/caddy/</guid>
-      <description> Installation # install caddy in linux commandline curl -fsSL https://getcaddy.com | bash -s search  Settng of Caddyfile for microservice TODO Make Caddy to serve https  </description>
+      <description> Installation # install caddy in linux commandline curl -fsSL https://getcaddy.com | bash -s search  Settng of Caddyfile for microservice TODO Make Caddy to serve https
+  </description>
     </item>
     
     <item>
@@ -89,7 +84,11 @@ To display both the kernel version and your system&amp;rsquo;s architecture (32-
       <pubDate>Fri, 07 Oct 2016 23:35:46 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/https-and-jwt/</guid>
-      <description> Links  Self-signed certificate - Wikiwand Let&amp;rsquo;s Encrypt - Free SSL/TLS Certificates JWT, JWS and JWE for Not So Dummies! JSON Web Token Series - YouTube  </description>
+      <description> Links  Self-signed certificate - Wikiwand
+ Let&amp;rsquo;s Encrypt - Free SSL/TLS Certificates
+ JWT, JWS and JWE for Not So Dummies!
+ JSON Web Token Series - YouTube
+  </description>
     </item>
     
     <item>
@@ -98,7 +97,10 @@ To display both the kernel version and your system&amp;rsquo;s architecture (32-
       <pubDate>Fri, 07 Oct 2016 23:14:04 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/batch-download-youtube/</guid>
-      <description> Using youtube-dl and xargs cat &amp;lt;&amp;lt; EOF | xargs -I@ youtube-dl https://www.youtube.com/watch?v=@ YouTubeVideoID-1 YouTubeVideoID-2 YouTubeVideoID-3 EOF  Useful options  --extract-audio for download audio only --audio-format mp3 choose the audio format --audio-quality 2 set the audio quality, 0(best)-9(worst), (default 5)  </description>
+      <description> Using youtube-dl and xargs cat &amp;lt;&amp;lt; EOF | xargs -I@ youtube-dl https://www.youtube.com/watch?v=@ YouTubeVideoID-1 YouTubeVideoID-2 YouTubeVideoID-3 EOF  Useful options  --extract-audio for download audio only
+ --audio-format mp3 choose the audio format
+ --audio-quality 2 set the audio quality, 0(best)-9(worst), (default 5)
+  </description>
     </item>
     
     <item>
@@ -107,7 +109,9 @@ To display both the kernel version and your system&amp;rsquo;s architecture (32-
       <pubDate>Wed, 05 Oct 2016 00:23:42 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/web-authentication/</guid>
-      <description>Notes  Authentication in Golang with JWTs Cookies vs Tokens: The Definitive Guide The Ins and Outs of Token Based Authentication | Scotch   Enterprise APIs and OAuth: Have it All
+      <description>Notes  Authentication in Golang with JWTs
+ Cookies vs Tokens: The Definitive Guide
+ The Ins and Outs of Token Based Authentication | Scotch   Enterprise APIs and OAuth: Have it All
 Secure your users&amp;rsquo; passwords from the browser on
 Authentication Protocols Basic access authentication - Wikiwand Digest access authentication - Wikiwand Secure Remote Password protocol - Wikiwand
 Anatomy of a zero-knowledge web application - Clipperz, register your creations on the blockchain</description>
@@ -119,8 +123,11 @@ Anatomy of a zero-knowledge web application - Clipperz, register your creations 
       <pubDate>Tue, 04 Oct 2016 11:56:18 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/vim/</guid>
-      <description>VIM Basic  Vim Cheat Sheet - English VimGenius vimgifs  Some useful skills Insert across multi-lines Select the lines you want to modify using Ctrl-v. Press: I: Insert before what&amp;rsquo;s selected. A: Append after what&amp;rsquo;s selected. c: Replace what&amp;rsquo;s selected. Type the new text. Press Esc to apply the changes to all selected lines.
-Search and replace :s/foo/bar/g Change each &amp;lsquo;foo&amp;rsquo; to &amp;lsquo;bar&amp;rsquo; in the current line. :%s/foo/bar/g Change each &amp;lsquo;foo&amp;rsquo; to &amp;lsquo;bar&amp;rsquo; in all the lines.</description>
+      <description>VIM Basic  Vim Cheat Sheet - English
+ VimGenius
+ vimgifs
+  Some useful skills Insert across multi-lines Select the lines you want to modify using Ctrl-v. Press: I: Insert before what&amp;rsquo;s selected. A: Append after what&amp;rsquo;s selected. c: Replace what&amp;rsquo;s selected. Type the new text. Press Esc to apply the changes to all selected lines.
+Search and replace :s/foo/bar/g Change each &amp;lsquo;foo&amp;rsquo; to &amp;lsquo;bar&amp;rsquo; in the current line.</description>
     </item>
     
     <item>
@@ -139,18 +146,20 @@ Search and replace :s/foo/bar/g Change each &amp;lsquo;foo&amp;rsquo; to &amp;ls
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/nvalt-setting/</guid>
       <description>Custom Preview Theme
- Notational Velocity (nvALT) Custom Stylesheet and Markup HTML  </description>
+ Notational Velocity (nvALT) Custom Stylesheet and Markup HTML
+  </description>
     </item>
     
     <item>
       <title>Config Digital Ocean Droplet as Microservice</title>
-      <link>https://cyrusn.github.io/post/config-digtal-ocean-droplet-as-microservice/</link>
+      <link>https://cyrusn.github.io/note/config-digtal-ocean-droplet-as-microservice/</link>
       <pubDate>Thu, 29 Sep 2016 08:31:57 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/config-digtal-ocean-droplet-as-microservice/</guid>
+      <guid>https://cyrusn.github.io/note/config-digtal-ocean-droplet-as-microservice/</guid>
       <description>Objective This page is a notes for setting apache server for my digital ocean droplet
 Setting Apache2  in file /etc/hosts
- change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS  change Port
+ change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS
+  change Port
  in file /etc/apache2/port.conf
  add ServerName localhost
  change the line listen *:80 to listen 127.0.0.1:4000
@@ -195,8 +204,8 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
       <pubDate>Sat, 26 Mar 2016 12:31:11 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/digital-ocean/</guid>
-      <description>connect to console # prepare ssh keys first # login droplet ssh root@ip.of.the.droplet # to copy a file from B to A while logged into B scp /path/to/file username@a:/path/to/destination # to copy a file from B to A while logged into A scp username@b:/path/to/file /path/to/destination  # perpare ssh key
- How To Use SSH Keys with DigitalOcean Droplets | DigitalOcean  achieve  Save a snapshot and delete droplet restore droplet by the snapshot  Update Server&amp;rsquo;s Kernel How To Update a DigitalOcean Server&amp;rsquo;s Kernel | DigitalOcean igitalocean.</description>
+      <description>connect to console # prepare ssh keys first # login droplet ssh root@ip.of.the.droplet # to copy a file from B to A while logged into B scp /path/to/file username@a:/path/to/destination # to copy a file from B to A while logged into A scp username@b:/path/to/file /path/to/destination  perpare ssh key  How To Use SSH Keys with DigitalOcean Droplets | DigitalOcean
+  achieve  Save a snapshot and delete droplet</description>
     </item>
     
     <item>
@@ -205,7 +214,9 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
       <pubDate>Tue, 08 Dec 2015 08:35:55 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/leveldb/</guid>
-      <description>Links Main Page YouTube Introduction</description>
+      <description> Links  Main Page
+ YouTube Introduction bEip0)
+  </description>
     </item>
     
     <item>
@@ -214,7 +225,13 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
       <pubDate>Thu, 01 Oct 2015 13:32:12 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/macos-setting/</guid>
-      <description>Custom OSX  Remove shift key augmentation for Mission Control animation Enable the three finger drag in Accessibility  Terminal  Autocomplete echo &amp;quot;set completion-ignore-case On&amp;quot; &amp;gt;&amp;gt; ~/.inputrc install command line tools in XCode xcode-select --install  zsh  install .oh-my-zsh symlink for setting zsh  ## for installation of zsh ln -s Dropbox/MacSetting/Terminal/cyrusn ./.cyrusn ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zshrc ~/ ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom ~/ ## for installation of coreutil/.dir_colors ln -s ~/Dropbox/MacSetting/Terminal/coreutil/.</description>
+      <description>Custom OSX  Remove shift key augmentation for Mission Control animation
+ Enable the three finger drag in Accessibility
+  Terminal  Autocomplete echo &amp;quot;set completion-ignore-case On&amp;quot; &amp;gt;&amp;gt; ~/.inputrc
+ install command line tools in XCode xcode-select --install
+  zsh  install .oh-my-zsh
+ symlink for setting zsh
+  ## for installation of zsh ln -s Dropbox/MacSetting/Terminal/cyrusn ./.cyrusn ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zshrc ~/ ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom ~/ ## for installation of coreutil/.</description>
     </item>
     
     <item>
@@ -223,7 +240,8 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
       <pubDate>Fri, 24 Jul 2015 23:02:19 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/alfred/</guid>
-      <description>How to use node on alfred workflow node&amp;lt;&amp;lt;-&amp;quot;code&amp;quot; // your code here // e.g. console.log(&amp;quot;hello world&amp;quot;); code  iTerm2 Integration curl --silent &#39;https://raw.githubusercontent.com/stuartcryan/custom-iterm-applescripts-for-alfred/master/custom_iterm_script_iterm_2.9.applescript&#39; | pbcopy   stuartcryan/custom-iterm-applescripts-for-alfred: Custom iTerm Applescripts for Alfred  )</description>
+      <description>How to use node on alfred workflow node&amp;lt;&amp;lt;-&amp;quot;code&amp;quot; // your code here // e.g. console.log(&amp;quot;hello world&amp;quot;); code  iTerm2 Integration curl --silent &#39;https://raw.githubusercontent.com/stuartcryan/custom-iterm-applescripts-for-alfred/master/custom_iterm_script_iterm_2.9.applescript&#39; | pbcopy   stuartcryan/custom-iterm-applescripts-for-alfred: Custom iTerm Applescripts for Alfred
+  )</description>
     </item>
     
     <item>
@@ -232,7 +250,12 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
       <pubDate>Mon, 29 Jun 2015 07:58:25 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/google-chrome-app/</guid>
-      <description> Links  Adblock Plus - Chrome Web Store Tampermonkey - Chrome Web Store Wikiwand: Wikipedia Modernized - Chrome Web Store Markdown Preview Plus - Chrome Web Store Postman - REST Client - Chrome Web Store  </description>
+      <description> Links  Adblock Plus - Chrome Web Store
+ Tampermonkey - Chrome Web Store
+ Wikiwand: Wikipedia Modernized - Chrome Web Store
+ Markdown Preview Plus - Chrome Web Store
+ Postman - REST Client - Chrome Web Store
+  </description>
     </item>
     
     <item>
@@ -264,7 +287,10 @@ Links UML 2.0 Tutorial - YouTube Unified Modeling Language (UML) description, UM
       <pubDate>Wed, 27 May 2015 12:45:16 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/javascript-on-osascript/</guid>
-      <description>Example  JXA-Cookbook Apple Release Notes JavaScript for OS X Automation by Example  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle: &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[0].activeTab; var result = &#39;[&#39; + activeTab.title() + &#39;](&#39; + activeTab.</description>
+      <description>Example  JXA-Cookbook
+ Apple Release Notes
+ JavaScript for OS X Automation by Example
+  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle: &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[0].activeTab; var result = &#39;[&#39; + activeTab.</description>
     </item>
     
     <item>
@@ -273,7 +299,20 @@ Links UML 2.0 Tutorial - YouTube Unified Modeling Language (UML) description, UM
       <pubDate>Tue, 26 May 2015 23:41:04 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/reading-list/</guid>
-      <description>Reading List  Ben Alman » Immediately-Invoked Function Expression (IIFE) This section demos loading different config depending on NODE_ENV. protecting-your-keys-from-github Papyros - Arch Linux. reSRC · RESTful Web Services Hub Demystifying Regular Expressions- YouTube Foundation of Apps TimeLine JS 淺談https Leesei&amp;rsquo;s shell notes Command Line Basic dotfile angular-strap-scrollspy.js at master · mgcrea-angular-strap · GitHub javascript - Properly Handing Anchors in AngularStrap&amp;rsquo;s ScrollSpy - Stack Overflow ngScrollSpy by mg twitter bootstrap - How to implement a scrollspy in angular.</description>
+      <description>Reading List  Ben Alman » Immediately-Invoked Function Expression (IIFE)
+ This section demos loading different config depending on NODE_ENV.
+ protecting-your-keys-from-github
+ Papyros - Arch Linux.
+ reSRC · RESTful Web Services
+ Hub
+ Demystifying Regular Expressions- YouTube Foundation of Apps
+ TimeLine JS
+ 淺談https
+ Leesei&amp;rsquo;s shell notes
+ Command Line Basic
+ dotfile
+ angular-strap-scrollspy.js at master · mgcrea-angular-strap · GitHub
+ javascript - Properly Handing Anchors in AngularStrap&amp;rsquo;s ScrollSpy - Stack Overflow</description>
     </item>
     
     <item>
@@ -288,10 +327,10 @@ migrate Moving WordPress « WordPress Codex</description>
     
     <item>
       <title>useful command line tools</title>
-      <link>https://cyrusn.github.io/post/useful-command-line-tools/</link>
+      <link>https://cyrusn.github.io/note/useful-command-line-tools/</link>
       <pubDate>Sun, 24 May 2015 22:36:53 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/useful-command-line-tools/</guid>
+      <guid>https://cyrusn.github.io/note/useful-command-line-tools/</guid>
       <description>Basic Redirect operators # pipe echo &amp;quot;hello world&amp;quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &amp;quot;hello world&amp;quot; &amp;gt; test.txt # redirect the standard output result to file (append) echo &amp;quot;hello world&amp;quot; &amp;gt;&amp;gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed &#39;s/ /_/g&#39; &amp;lt; test.txt &amp;gt; test_1.txt # line input cat &amp;lt;&amp;lt; end heredoc&amp;gt; hello heredoc&amp;gt; world heredoc&amp;gt; end  Useful Commands Cheatsheet  d to show directory history</description>
     </item>
     
@@ -301,20 +340,10 @@ migrate Moving WordPress « WordPress Codex</description>
       <pubDate>Fri, 22 May 2015 17:20:27 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/hardware-architecture/</guid>
-      <description>Basic  Hardware Basics - YouTube  what is legacy FGA: &amp;ldquo;legacy&amp;rdquo; is not a pejorative. Do not use it as such.
+      <description>Basic  Hardware Basics - YouTube
+  what is legacy FGA: &amp;ldquo;legacy&amp;rdquo; is not a pejorative. Do not use it as such.
 BIOS POST -&amp;gt; BIOS -&amp;gt; MBR of boot partition -&amp;gt; Bootloader -&amp;gt; Kernel -&amp;gt; init/systemd -&amp;gt; shell/display manager -&amp;gt; startx/xinit
 UEFI Unified Extensible Firmware Interface - ArchWiki</description>
-    </item>
-    
-    <item>
-      <title>Hexo Notes</title>
-      <link>https://cyrusn.github.io/note/hexo/</link>
-      <pubDate>Fri, 22 May 2015 12:10:48 +0000</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/hexo/</guid>
-      <description>How to Enable TOC Create toc.ejs add following content at yourTheme/layout/widget/toc.ejs
-&amp;lt;% var content = page.content; if (is_post() &amp;amp;&amp;amp; content) { %&amp;gt; &amp;lt;div class=&amp;quot;widget-wrap&amp;quot;&amp;gt; &amp;lt;h3 class=&amp;quot;widget-title&amp;quot;&amp;gt;Table of Contents&amp;lt;/h3&amp;gt; &amp;lt;div class=&amp;quot;widget&amp;quot;&amp;gt; &amp;lt;%- toc(content) %&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;% } %&amp;gt;  Create toc.styl add following content at yourTheme/source/css/_partial/toc.styl then add @import &amp;quot;_partial/toc&amp;quot; to yourTheme/source/css/style.styl
-.toc li list-style: none  finally # Sidebar widgets: - toc  Add recent_update to sidebar add following content at yourTheme/layout/widget/recent_update.</description>
     </item>
     
     <item>
@@ -359,12 +388,22 @@ slidedown/slidedown</description>
     </item>
     
     <item>
-      <title>ReactJS Notes</title>
+      <title>React Notes</title>
       <link>https://cyrusn.github.io/note/react/</link>
       <pubDate>Sun, 10 May 2015 01:26:51 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/react/</guid>
-      <description>API notes and example Top-Level API React.foo({ ... }) React.bar({ ... })  Component API // use within the function in Top-Level API this.foo  Component Specs and Lifecycle React.createClass({ // system function foo: function(){ ... }, // or define your own customMethod: function(){ ... }, ... })  Tags and Attributes HTML Elements a abbr address area article aside audio b base bdi bdo big blockquote body br button canvas caption cite code col colgroup data datalist dd del details dfn dialog div dl dt em embed fieldset figcaption figure footer form h1 h2 h3 h4 h5 h6 head header hr html i iframe img input ins kbd keygen label legend li link main map mark menu menuitem meta meter nav noscript object ol optgroup option output p param picture pre progress q rp rt ruby s samp script section select small source span strong style sub summary sup table tbody td textarea tfoot th thead time title tr track u ul var video wbr  HTML Attributes accept acceptCharset accessKey action allowFullScreen allowTransparency alt async autoComplete autoFocus autoPlay cellPadding cellSpacing charSet checked classID className cols colSpan content contentEditable contextMenu controls coords crossOrigin data dateTime defer dir disabled download draggable encType form formAction formEncType formMethod formNoValidate formTarget frameBorder height hidden href hrefLang htmlFor httpEquiv icon id label lang list loop manifest marginHeight marginWidth max maxLength media mediaGroup method min multiple muted name noValidate open pattern placeholder poster preload radioGroup readOnly rel required role rows rowSpan sandbox scope scrolling seamless selected shape size sizes span spellCheck src srcDoc srcSet start step style tabIndex target title type useMap value width wmode  Event System SyntheticEvent boolean bubbles boolean cancelable DOMEventTarget currentTarget boolean defaultPrevented number eventPhase boolean isTrusted DOMEvent nativeEvent void preventDefault() void stopPropagation() DOMEventTarget target number timeStamp string type  React.</description>
+      <description>API notes and example  Top-Level API
+ Component API
+ Component Specs and ifecycle
+ Tags and Attributes
+ Event System
+  Ref Links Concept  React | A JavaScript library for building user interfaces
+ Reactive MVC and the Virtual DOM &amp;ndash; Futurice
+ ReactJS For Stupid People
+ Component Interop With React And Custom Elements
+ Josh Haberman: React Demystified
+ Intro to the React Framework | Nettuts+</description>
     </item>
     
     <item>
@@ -373,9 +412,15 @@ slidedown/slidedown</description>
       <pubDate>Sun, 10 May 2015 01:22:16 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/basic-cs-knowledge/</guid>
-      <description>打底班  Programming Languages - YouTube Hardware Basics - YouTube Operating System Basics - YouTube  Free Courses http://codeschool.org/ Coursera - Free Online Courses From Top Universities
-JavaScript JavaScript Not Working? Here are 10 Common JavaScript Problems | Toptal Learn All The Nodes Node Tuts // leesei: 我兩年前都係睇 Pedro，佢最近拍過晒 JSConf - YouTube // leesei: 好很多，太舊唔洗睇
-property, protoypal inheritance JavaScript: proto Object properties in JavaScript Properties in JavaScript: definition versus assignment JavaScript terminology: the two prototypes JavaScript properties: inheritance and enumerability JavaScript inheritance by example JavaScript inheritance: beyond the basics (video) Property assignment and the prototype chain A closer look at _.</description>
+      <description>打底班  Programming Languages - YouTube
+ Hardware Basics - YouTube
+ Operating System Basics - YouTube
+  Free Courses  Coursera - Free Online Courses From Top Universities
+  JavaScript  JavaScript Not Working? Here are 10 Common JavaScript Problems | Toptal
+ Learn All The Nodes
+ Node Tuts // leesei: 我兩年前都係睇 Pedro，佢最近拍過晒
+ JSConf - YouTube // leesei: 好很多，太舊唔洗睇
+  property, protoypal inheritance  JavaScript: protop</description>
     </item>
     
     <item>
@@ -384,7 +429,17 @@ property, protoypal inheritance JavaScript: proto Object properties in JavaScrip
       <pubDate>Sun, 10 May 2015 00:58:17 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/hapijs/</guid>
-      <description> HapiJS  hapi.js Tutorials Example: Hapi Mongoose Angular  Plugin  Plugin hapi-auth-basic hapi-session-mongo hapi-auth-cookie Best Practice Project Structure · Issue #2479 · hapijs/hapi  Reference  hapi-playground  My Notes  How to set CORS  // set CORS enable for all routes server.connection({ routes: { cors: { headers: [true], credentials: true } } });  </description>
+      <description> HapiJS  hapi.js
+ Tutorials
+ Example: Hapi Mongoose Angular
+  Plugin  Plugin
+ hapi-auth-basic
+ hapi-session-mongo
+ hapi-auth-cookie
+ Best Practice Project Structure · Issue #2479 · hapijs/hapi
+  Reference  hapi-playground
+  My Notes  How to set CORS
+  // set CORS enable for all routes server.connection({ routes: { cors: { headers: [true], credentials: true } } });  </description>
     </item>
     
     <item>
@@ -413,10 +468,16 @@ Use HTML Code and Javascript TimelineJS</description>
       <pubDate>Sun, 10 May 2015 00:47:48 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/swift/</guid>
-      <description> Start Developing iOS / OSX Apps The Swift Programming Language (Swift 2.2): About Swift Start Developing iOS Apps (Swift): Jump Right In
+      <description>Start Developing iOS / OSX Apps The Swift Programming Language (Swift 2.2): About Swift
+Start Developing iOS Apps (Swift): Jump Right In
 ICON for iOS Development 23,500 Icons - Free Download | Icons8
-Basic Keywords Control Flow  where (A switch case can use a where clause to check for additional conditions.)  Computed Properties  lazy get set willSet didSet  ## Instance Methods
- self static mutating  Subscript  subscript  Inheritance  override super  Initialization  init convenience required  Deinitialization  deinit unowned  Type Casting  is as  Extension  extension  Protocols  protocol  Generic  Where Clauses  Access Control  public internal private  Summary of the Grammar Using Swift with Cocoa and Objective-C  attribute import @objc @IBOutlet @IBAction @IBDesignable strong weak  </description>
+Basic Keywords Control Flow  where (A switch case can use a where clause to check for additional conditions.)
+  Computed Properties  lazy
+ get
+ set
+ willSet
+ didSet
+  ## Instance Methods</description>
     </item>
     
     <item>
@@ -436,7 +497,17 @@ RevealJS RevealJS Pandoc
       <pubDate>Sun, 10 May 2015 00:47:40 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/project-and-todo/</guid>
-      <description> Install Script for My Mac  咁就寫做install script 放埋響個Terminal repo度啦 再加埋repo 條link 響個post 咁就同人地寫啲technical blog 一樣了 pull and 行install script 寫個script git pull oh-my-zsh同setup symlink  Google Analytics &amp;amp; Webmaster  reference post 個sitemap.xml 俾google 做index reference  Learn Basic Python Scripting counsellingSystem  nodejs golang  assembly code － MIPS  睇下去到低層個電腦做緊乜就可 Instruction set MIPS assembly language  </description>
+      <description> Install Script for My Mac  咁就寫做install script 放埋響個Terminal repo度啦
+ 再加埋repo 條link 響個post
+ 咁就同人地寫啲technical blog 一樣了 pull and 行install script 寫個script git pull oh-my-zsh同setup symlink
+  Google Analytics &amp;amp; Webmaster  reference post 個sitemap.xml 俾google 做index
+ reference
+  Learn Basic Python Scripting counsellingSystem  nodejs
+ golang
+  assembly code － MIPS  睇下去到低層個電腦做緊乜就可
+ Instruction set
+ MIPS assembly language
+  </description>
     </item>
     
     <item>
@@ -446,8 +517,16 @@ RevealJS RevealJS Pandoc
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/alumni-webpage/</guid>
       <description> Referece － Sticky Footer － responsive-utilities
-Reminder  Don&amp;rsquo;t use bootstrap.js, use ui-bootstrap.js instead. jQuery is no longer useful ui-bootstrap.collapse
- beware the crash between collapse=&amp;quot;isCollapsed&amp;quot; and class=&amp;quot;visible-xs&amp;quot; use ui-bootstrap.dropdown   Leesei Suggestion  每次test isHide 唔好 響tagNames 加個`active field (boolean) 可以navbarTag onclick (jqlite 嘢) update active state ve field (boolean) 可以navbarTag onclick (jqlite 嘢) update active state  </description>
+Reminder  Don&amp;rsquo;t use bootstrap.js, use ui-bootstrap.js instead.
+ jQuery is no longer useful
+ ui-bootstrap.collapse
+ beware the crash between collapse=&amp;quot;isCollapsed&amp;quot; and class=&amp;quot;visible-xs&amp;quot;
+ use ui-bootstrap.dropdown
+   Leesei Suggestion  每次test isHide 唔好
+ 響tagNames 加個`active field (boolean)
+ 可以navbarTag onclick (jqlite 嘢) update active state ve field (boolean)
+ 可以navbarTag onclick (jqlite 嘢) update active state
+  </description>
     </item>
     
     <item>
@@ -465,9 +544,13 @@ Reminder  Don&amp;rsquo;t use bootstrap.js, use ui-bootstrap.js instead. jQuery 
       <pubDate>Sun, 10 May 2015 00:47:16 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/mongoose.js-and-mongodb/</guid>
-      <description>Custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的 可以令 _id 有意思,
- e.g. studentSchema, use regno as custom _id e.g. teacherSchema, use teacherInitial as custom _id  use uuid if you need to have id before add new stuff
- e.g. attachmentSchema, need the id to rename the attachment before saving to database.   Schema.ObjectId  if no need to use custom _id then use Schema.</description>
+      <description>Custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的
+ 可以令 _id 有意思,
+ e.g. studentSchema, use regno as custom _id
+ e.g. teacherSchema, use teacherInitial as custom _id
+  use uuid if you need to have id before add new stuff
+ e.g. attachmentSchema, need the id to rename the attachment before saving to database.
+   Schema.ObjectId  if no need to use custom _id then use Schema.</description>
     </item>
     
     <item>
@@ -476,14 +559,18 @@ Reminder  Don&amp;rsquo;t use bootstrap.js, use ui-bootstrap.js instead. jQuery 
       <pubDate>Sun, 10 May 2015 00:47:15 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/polymer/</guid>
-      <description>Bower - Search Custom Elements - A Web Components Gallery for Modern Web Apps Google Web Components PolymerLabs · GitHub Web Components Catalog - Component Kitchen
+      <description>Bower - Search
+ Custom Elements - A Web Components Gallery for Modern Web Apps
+ Google Web Components
+ PolymerLabs · GitHub
+ Web Components Catalog - Component Kitchen
  寫響htm 叫declarative style, 用C/javascript 嗰啲叫imperative style
  declarative 易睇易明，但唔應該放logic
  angular 個template system 都有少少logic的 ng-if, ng-style, ng-show 都係做switching
  放個route definition 我個人接受唔到
  不過如果個route table 係獨立一個html define 我又okay 喎，咁佢就同一個json 等效
  我應該係接受唔到route definition 同view element inline
-  Copy By Value Vs By reference  | By value | By reference  &amp;mdash;&amp;mdash;- | &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;- | &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;- Copy | The value is actually copied; there are two distinct, independent copies.</description>
+  Copy By Value Vs By reference  | By value | By reference  &amp;mdash;&amp;mdash;- | &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;- | &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-</description>
     </item>
     
     <item>
@@ -492,21 +579,20 @@ Reminder  Don&amp;rsquo;t use bootstrap.js, use ui-bootstrap.js instead. jQuery 
       <pubDate>Sun, 10 May 2015 00:47:13 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/learning-progress/</guid>
-      <description>Computer Science Knowledge  big O Codecademy  Javascript  RPS exercise jsbooks Effective JavaScript 68 Specific Ways to Harness the Power of JavaScript
- Learning about iife, closure, lazy evaluation, iife reference  The Art of readable Coding
+      <description>Computer Science Knowledge  big O
+ Codecademy
+  Javascript  RPS exercise
+ jsbooks
+ Effective JavaScript 68 Specific Ways to Harness the Power of JavaScript
+ Learning about iife, closure, lazy evaluation,
+ iife reference
+  The Art of readable Coding
  Eloquent Javascript
   phantom.js for automate login the webpage
- leesei CTF example casperjs phantomjs  AngularJS  Understanding AngularJS – Simple Example AngularJS Fundamentals In 60-ish Minutes A Better Way to Learn AngularJS  Node.</description>
-    </item>
-    
-    <item>
-      <title>Gulp</title>
-      <link>https://cyrusn.github.io/post/gulp/</link>
-      <pubDate>Sun, 10 May 2015 00:46:47 +0000</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/gulp/</guid>
-      <description>Automate and enhance your workflow Example watch jsx change and compile
-// http://travismaynard.com/writing/getting-started-with-gulp var gulp = require(&#39;gulp&#39;); var logger = require(&#39;cyrusn-logger&#39;); var react = require(&#39;gulp-react&#39;); gulp.task(&#39;default&#39;, function() { console.log(&amp;quot;hello world&amp;quot;); }); var sourcePath = &#39;./src/Client-React/source/*.jsx&#39;; gulp.task(&#39;react&#39;, function(){ return gulp .src(sourcePath) .pipe(react()) // to prevent break when meet error .on(&#39;error&#39;, function(err){ logger.debug(err.message); this.emit(&#39;end&#39;); }) .pipe(gulp.dest(&#39;./src/Client-React/dist&#39;)); }); gulp.task(&#39;watch&#39;, function() { gulp.watch(sourcePath, [&#39;react&#39;]); }); gulp.task(&#39;default&#39;, [&#39;react&#39;, &#39;watch&#39;]);  links gulp Introduction to Gulp.</description>
+ leesei CTF example
+ casperjs
+ phantomjs
+  AngularJS  Understanding AngularJS – Simple Example</description>
     </item>
     
     <item>
@@ -516,7 +602,9 @@ Reminder  Don&amp;rsquo;t use bootstrap.js, use ui-bootstrap.js instead. jQuery 
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/post/url-shortener-and-qr-code-generator/</guid>
       <description>Installation npm install -g goo.gl
-Google API OAuth for shortening a batch of links, create project for URL Shortener API. you will get 1,000,000 requests/day for FREE QR Code to a link  reference https://chart.googleapis.com/chart?chs=200x200&amp;amp;cht=qr&amp;amp;chl= + the link you need  Google Form Prefill https://docs.google.com/forms/d/Form_ID/viewform?entry.Q1_ID=Q1_ANS&amp;amp;entry.Q2_ID=Q2_ANS... 2_ID=Q2_ANS&amp;hellip;2_ID=Q2_ANS...\ ID=Q2_ANS&amp;hellip;ID=Q2_ANS... `</description>
+Google API OAuth for shortening a batch of links, create project for URL Shortener API. you will get 1,000,000 requests/day for FREE QR Code to a link  reference
+ https://chart.googleapis.com/chart?chs=200x200&amp;amp;cht=qr&amp;amp;chl= + the link you need
+  Google Form Prefill https://docs.google.com/forms/d/Form_ID/viewform?entry.Q1_ID=Q1_ANS&amp;amp;entry.Q2_ID=Q2_ANS... 2_ID=Q2_ANS&amp;hellip;2_ID=Q2_ANS...\ ID=Q2_ANS&amp;hellip;ID=Q2_ANS... `</description>
     </item>
     
     <item>
@@ -525,8 +613,17 @@ Google API OAuth for shortening a batch of links, create project for URL Shorten
       <pubDate>Sun, 10 May 2015 00:46:38 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/golang/</guid>
-      <description>Understanding Goroutine  Is golang goroutine a coroutine? Coroutine vs Continuation vs Generator Comparison with generators  MongoDB  mgo Painless Data Storage with MongoDB and Go Connecting to MongoDB with mgo and golang  Router  mux - Gorilla, the golang web toolkit  # Middleware
- justinas/alice: Painless middleware chaining for Go  SQL Database  Go database/sql tutorial  Authentication  dgrijalva/jwt-go: Golang implementation of JSON Web Tokens (JWT) Golang Authentication Using JSON Web Tokens  Useful Package  PuerkitoBio/goquery: A little like that j-thing, only in Go.</description>
+      <description>Feautre  Embedding
+  Understanding Goroutine  Is golang goroutine a coroutine?
+ Coroutine vs Continuation vs Generator
+ Comparison with generators
+  MongoDB  mgo
+ Painless Data Storage with MongoDB and Go
+ Connecting to MongoDB with mgo and golang
+  Router  mux - Gorilla, the golang web toolkit
+  # Middleware
+ justinas/alice: Painless middleware chaining for Go
+  SQL Database  Go database/sql tutorial</description>
     </item>
     
     <item>
@@ -535,7 +632,9 @@ Google API OAuth for shortening a batch of links, create project for URL Shorten
       <pubDate>Sun, 10 May 2015 00:46:36 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/gitbook/</guid>
-      <description> Gitbook Modern book format and toolchain using Git and Markdown  </description>
+      <description> Gitbook
+ Modern book format and toolchain using Git and Markdown
+  </description>
     </item>
     
     <item>

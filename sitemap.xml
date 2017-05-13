@@ -12,11 +12,6 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/post/react-and-redux/</loc>
-    <lastmod>2017-04-17T14:38:47+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://cyrusn.github.io/post/create-startup-script-in-linux/</loc>
     <lastmod>2016-10-21T12:43:34+00:00</lastmod>
   </url>
@@ -67,7 +62,7 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/post/config-digtal-ocean-droplet-as-microservice/</loc>
+    <loc>https://cyrusn.github.io/note/config-digtal-ocean-droplet-as-microservice/</loc>
     <lastmod>2016-09-29T08:31:57+00:00</lastmod>
   </url>
   
@@ -137,18 +132,13 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/post/useful-command-line-tools/</loc>
+    <loc>https://cyrusn.github.io/note/useful-command-line-tools/</loc>
     <lastmod>2015-05-24T22:36:53+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://cyrusn.github.io/post/hardware-architecture/</loc>
     <lastmod>2015-05-22T17:20:27+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/note/hexo/</loc>
-    <lastmod>2015-05-22T12:10:48+00:00</lastmod>
   </url>
   
   <url>
@@ -234,11 +224,6 @@
   <url>
     <loc>https://cyrusn.github.io/post/learning-progress/</loc>
     <lastmod>2015-05-10T00:47:13+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/post/gulp/</loc>
-    <lastmod>2015-05-10T00:46:47+00:00</lastmod>
   </url>
   
   <url>
@@ -404,12 +389,6 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/tags/gulp/</loc>
-    <lastmod>2015-05-10T00:46:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://cyrusn.github.io/tags/hapijs/</loc>
     <lastmod>2015-05-10T00:58:17+00:00</lastmod>
     <priority>0</priority>
@@ -422,8 +401,8 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/tags/hexo/</loc>
-    <lastmod>2015-05-22T12:10:48+00:00</lastmod>
+    <loc>https://cyrusn.github.io/tags/httpie/</loc>
+    <lastmod>2015-05-24T22:36:53+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -442,6 +421,12 @@
   <url>
     <loc>https://cyrusn.github.io/tags/javascript/</loc>
     <lastmod>2015-12-08T08:35:55+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/jq/</loc>
+    <lastmod>2015-05-24T22:36:53+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -524,7 +509,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/post/</loc>
-    <lastmod>2017-04-17T14:38:47+00:00</lastmod>
+    <lastmod>2016-10-21T12:43:34+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -535,14 +520,32 @@
   </url>
   
   <url>
+    <loc>https://cyrusn.github.io/tags/pt/</loc>
+    <lastmod>2015-05-24T22:36:53+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://cyrusn.github.io/tags/react/</loc>
-    <lastmod>2017-04-17T14:38:47+00:00</lastmod>
+    <lastmod>2015-05-10T01:26:51+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/redirect/</loc>
+    <lastmod>2015-05-24T22:36:53+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cyrusn.github.io/tags/redux/</loc>
-    <lastmod>2017-04-17T14:38:47+00:00</lastmod>
+    <lastmod>2015-05-10T01:26:51+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/scp/</loc>
+    <lastmod>2016-03-26T12:31:11+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -643,8 +646,20 @@
   </url>
   
   <url>
+    <loc>https://cyrusn.github.io/tags/wild-card/</loc>
+    <lastmod>2015-05-24T22:36:53+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://cyrusn.github.io/tags/wordpress/</loc>
     <lastmod>2015-05-26T11:19:29+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/xargs/</loc>
+    <lastmod>2015-05-24T22:36:53+00:00</lastmod>
     <priority>0</priority>
   </url>
   

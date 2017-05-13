@@ -8,15 +8,21 @@
   <title>Web Authentication</title>
   <meta property="og:title" content="Web Authentication" />
   <meta name="twitter:title" content="Web Authentication" />
-  <meta name="description" content="Notes  Authentication in Golang with JWTs Cookies vs Tokens: The Definitive Guide The Ins and Outs of Token Based Authentication | Scotch   Enterprise APIs and OAuth: Have it All
+  <meta name="description" content="Notes  Authentication in Golang with JWTs
+ Cookies vs Tokens: The Definitive Guide
+ The Ins and Outs of Token Based Authentication | Scotch   Enterprise APIs and OAuth: Have it All
 Secure your users&rsquo; passwords from the browser on
 Authentication Protocols Basic access authentication - Wikiwand Digest access authentication - Wikiwand Secure Remote Password protocol - Wikiwand
 Anatomy of a zero-knowledge web application - Clipperz, register your creations on the blockchain">
-  <meta property="og:description" content="Notes  Authentication in Golang with JWTs Cookies vs Tokens: The Definitive Guide The Ins and Outs of Token Based Authentication | Scotch   Enterprise APIs and OAuth: Have it All
+  <meta property="og:description" content="Notes  Authentication in Golang with JWTs
+ Cookies vs Tokens: The Definitive Guide
+ The Ins and Outs of Token Based Authentication | Scotch   Enterprise APIs and OAuth: Have it All
 Secure your users&rsquo; passwords from the browser on
 Authentication Protocols Basic access authentication - Wikiwand Digest access authentication - Wikiwand Secure Remote Password protocol - Wikiwand
 Anatomy of a zero-knowledge web application - Clipperz, register your creations on the blockchain">
-  <meta name="twitter:description" content="Notes  Authentication in Golang with JWTs Cookies vs Tokens: The Definitive Guide The Ins and Outs of Token Based Authentication | Scotch   Enterprise APIs and OAuth: Have it All
+  <meta name="twitter:description" content="Notes  Authentication in Golang with JWTs
+ Cookies vs Tokens: The Definitive Guide
+ The Ins and Outs of Token Based Authentication | Scotch   Enterprise APIs and OAuth: Have it All
 Secure your …">
   <meta name="author" content="CyrusN"/>
   <link href='https://cyrusn.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -39,7 +45,9 @@ Secure your …">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
   <link rel="stylesheet" href="https://cyrusn.github.io/css/pygment_highlights.css" />
-  <link rel="stylesheet" href="https://cyrusn.github.io/css/highlight.min.css" />
+  
+  <link rel="stylesheet" href="https://cyrusn.github.io/css/atom-one-dark.css" />
+  <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
 
 </head>
 
@@ -207,9 +215,10 @@ Secure your …">
 <h1 id="notes">Notes</h1>
 
 <ul>
-<li><a href="https://auth0.com/blog/authentication-in-golang/">Authentication in Golang with JWTs</a></li>
-<li><a href="https://auth0.com/blog/cookies-vs-tokens-definitive-guide/">Cookies vs Tokens: The Definitive Guide</a></li>
-<li><a href="https://scotch.io/tutorials/the-ins-and-outs-of-token-based-authentication">The Ins and Outs of Token Based Authentication | Scotch</a> <!-- more --></li>
+<li><a href="https://auth0.com/blog/authentication-in-golang/">Authentication in Golang with JWTs</a><br /></li>
+<li><a href="https://auth0.com/blog/cookies-vs-tokens-definitive-guide/">Cookies vs Tokens: The Definitive Guide</a><br /></li>
+<li><a href="https://scotch.io/tutorials/the-ins-and-outs-of-token-based-authentication">The Ins and Outs of Token Based Authentication | Scotch</a> <!-- more --><br />
+<br /></li>
 </ul>
 
 <p><a href="http://news.sys-con.com/node/2275857/print">Enterprise APIs and OAuth: Have it All</a></p>
@@ -229,8 +238,6 @@ Secure your …">
 <p>Server generates session token and send to client via cookie. The session token acts as a bearer token and is used to look up login/session info in memory or datastore.</p>
 
 <p><a href="http://hueniverse.com/2015/07/08/on-securing-web-session-ids/">On Securing Web Session Ids | hueniverse</a> <a href="https://github.com/expressjs/session">expressjs/session: Simple session middleware for Express</a></p>
-
-<hr />
 
 <h2 id="asymmetric-key">Asymmetric Key</h2>
 
@@ -259,9 +266,10 @@ Secure your …">
 <p>There are three ways to send your access token in a request.</p>
 
 <ul>
-<li>In an HTTP Authorization header (always works)</li>
-<li>In the URL query string (only works with GET requests)</li>
-<li>In the request body (only works for POST &amp; PUT when body is URL-encoded)</li>
+<li>In an HTTP Authorization header (always works)<br /></li>
+<li>In the URL query string (only works with GET requests)<br /></li>
+<li>In the request body (only works for POST &amp; PUT when body is URL-encoded)<br />
+<br /></li>
 </ul>
 
 <h3 id="bearer-token-clients">Bearer token clients</h3>
@@ -419,6 +427,8 @@ var encodedJWT = payload + &quot;.&quot; + signature;
 
 
 <script src="/js/keypress.js"></script>
+<script src="/js/perfect-scrollbar.min.js"></script>
+<script src="/js/perfect-scrollbar.jquery.min.js"></script>
 
   </body>
 </html>

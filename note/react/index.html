@@ -5,12 +5,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>ReactJS Notes</title>
-  <meta property="og:title" content="ReactJS Notes" />
-  <meta name="twitter:title" content="ReactJS Notes" />
-  <meta name="description" content="API notes and example Top-Level API React.foo({ ... }) React.bar({ ... })  Component API // use within the function in Top-Level API this.foo  Component Specs and Lifecycle React.createClass({ // system function foo: function(){ ... }, // or define your own customMethod: function(){ ... }, ... })  Tags and Attributes HTML Elements a abbr address area article aside audio b base bdi bdo big blockquote body br button canvas caption cite code col colgroup data datalist dd del details dfn dialog div dl dt em embed fieldset figcaption figure footer form h1 h2 h3 h4 h5 h6 head header hr html i iframe img input ins kbd keygen label legend li link main map mark menu menuitem meta meter nav noscript object ol optgroup option output p param picture pre progress q rp rt ruby s samp script section select small source span strong style sub summary sup table tbody td textarea tfoot th thead time title tr track u ul var video wbr  HTML Attributes accept acceptCharset accessKey action allowFullScreen allowTransparency alt async autoComplete autoFocus autoPlay cellPadding cellSpacing charSet checked classID className cols colSpan content contentEditable contextMenu controls coords crossOrigin data dateTime defer dir disabled download draggable encType form formAction formEncType formMethod formNoValidate formTarget frameBorder height hidden href hrefLang htmlFor httpEquiv icon id label lang list loop manifest marginHeight marginWidth max maxLength media mediaGroup method min multiple muted name noValidate open pattern placeholder poster preload radioGroup readOnly rel required role rows rowSpan sandbox scope scrolling seamless selected shape size sizes span spellCheck src srcDoc srcSet start step style tabIndex target title type useMap value width wmode  Event System SyntheticEvent boolean bubbles boolean cancelable DOMEventTarget currentTarget boolean defaultPrevented number eventPhase boolean isTrusted DOMEvent nativeEvent void preventDefault() void stopPropagation() DOMEventTarget target number timeStamp string type  React.">
-  <meta property="og:description" content="API notes and example Top-Level API React.foo({ ... }) React.bar({ ... })  Component API // use within the function in Top-Level API this.foo  Component Specs and Lifecycle React.createClass({ // system function foo: function(){ ... }, // or define your own customMethod: function(){ ... }, ... })  Tags and Attributes HTML Elements a abbr address area article aside audio b base bdi bdo big blockquote body br button canvas caption cite code col colgroup data datalist dd del details dfn dialog div dl dt em embed fieldset figcaption figure footer form h1 h2 h3 h4 h5 h6 head header hr html i iframe img input ins kbd keygen label legend li link main map mark menu menuitem meta meter nav noscript object ol optgroup option output p param picture pre progress q rp rt ruby s samp script section select small source span strong style sub summary sup table tbody td textarea tfoot th thead time title tr track u ul var video wbr  HTML Attributes accept acceptCharset accessKey action allowFullScreen allowTransparency alt async autoComplete autoFocus autoPlay cellPadding cellSpacing charSet checked classID className cols colSpan content contentEditable contextMenu controls coords crossOrigin data dateTime defer dir disabled download draggable encType form formAction formEncType formMethod formNoValidate formTarget frameBorder height hidden href hrefLang htmlFor httpEquiv icon id label lang list loop manifest marginHeight marginWidth max maxLength media mediaGroup method min multiple muted name noValidate open pattern placeholder poster preload radioGroup readOnly rel required role rows rowSpan sandbox scope scrolling seamless selected shape size sizes span spellCheck src srcDoc srcSet start step style tabIndex target title type useMap value width wmode  Event System SyntheticEvent boolean bubbles boolean cancelable DOMEventTarget currentTarget boolean defaultPrevented number eventPhase boolean isTrusted DOMEvent nativeEvent void preventDefault() void stopPropagation() DOMEventTarget target number timeStamp string type  React.">
-  <meta name="twitter:description" content="API notes and example Top-Level API React.foo({ ... }) React.bar({ ... })  Component API // use within the function in Top-Level API this.foo  Component Specs and Lifecycle React.createClass({ // …">
+  <title>React Notes</title>
+  <meta property="og:title" content="React Notes" />
+  <meta name="twitter:title" content="React Notes" />
+  <meta name="description" content="API notes and example  Top-Level API
+ Component API
+ Component Specs and ifecycle
+ Tags and Attributes
+ Event System
+  Ref Links Concept  React | A JavaScript library for building user interfaces
+ Reactive MVC and the Virtual DOM &ndash; Futurice
+ ReactJS For Stupid People
+ Component Interop With React And Custom Elements
+ Josh Haberman: React Demystified
+ Intro to the React Framework | Nettuts&#43;">
+  <meta property="og:description" content="API notes and example  Top-Level API
+ Component API
+ Component Specs and ifecycle
+ Tags and Attributes
+ Event System
+  Ref Links Concept  React | A JavaScript library for building user interfaces
+ Reactive MVC and the Virtual DOM &ndash; Futurice
+ ReactJS For Stupid People
+ Component Interop With React And Custom Elements
+ Josh Haberman: React Demystified
+ Intro to the React Framework | Nettuts&#43;">
+  <meta name="twitter:description" content="API notes and example  Top-Level API
+ Component API
+ Component Specs and ifecycle
+ Tags and Attributes
+ Event System
+  Ref Links Concept  React | A JavaScript library for building user interfaces …">
   <meta name="author" content="CyrusN"/>
   <link href='https://cyrusn.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://cyrusn.github.io/img/avatar.png" />
@@ -32,7 +57,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
   <link rel="stylesheet" href="https://cyrusn.github.io/css/pygment_highlights.css" />
-  <link rel="stylesheet" href="https://cyrusn.github.io/css/highlight.min.css" />
+  
+  <link rel="stylesheet" href="https://cyrusn.github.io/css/atom-one-dark.css" />
+  <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
 
 </head>
 
@@ -159,7 +186,7 @@
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>ReactJS Notes</h1>
+              <h1>React Notes</h1>
                 
                   <h2 class="post-subheading"></h2>
                   <span class="post-meta">
@@ -170,6 +197,8 @@
 <span class="post-meta meta-tags">
   
   #<a href="/tags/react">react</a>&nbsp;
+  
+  #<a href="/tags/redux">redux</a>&nbsp;
   
 </span>
 
@@ -193,224 +222,82 @@
 
 <h1 id="api-notes-and-example">API notes and example</h1>
 
-<h2 id="top-level-api-http-facebook-github-io-react-docs-top-level-api-html"><a href="http://facebook.github.io/react/docs/top-level-api.html">Top-Level API</a></h2>
-
-<pre><code class="language-javascript">React.foo({
-    ...
-})
-
-React.bar({
-...
-})
-</code></pre>
-
-<h2 id="component-api-http-facebook-github-io-react-docs-component-api-html"><a href="http://facebook.github.io/react/docs/component-api.html">Component API</a></h2>
-
-<pre><code class="language-javascript">// use within the function in Top-Level API
-this.foo
-</code></pre>
-
-<h2 id="component-specs-and-lifecycle-http-facebook-github-io-react-docs-component-specs-html"><a href="http://facebook.github.io/react/docs/component-specs.html">Component Specs and Lifecycle</a></h2>
-
-<pre><code class="language-javascript">React.createClass({
-    // system function
-    foo: function(){
-        ...
-    },
-    // or define your own
-    customMethod: function(){
-        ...
-    },
-    ...
-})
-</code></pre>
-
-<h2 id="tags-and-attributes-http-facebook-github-io-react-docs-tags-and-attributes-html"><a href="http://facebook.github.io/react/docs/tags-and-attributes.html">Tags and Attributes</a></h2>
-
-<h3 id="html-elements">HTML Elements</h3>
-
-<pre><code class="language-text">a abbr address area article aside audio b base bdi bdo big blockquote body br
-button canvas caption cite code col colgroup data datalist dd del details dfn
-dialog div dl dt em embed fieldset figcaption figure footer form h1 h2 h3 h4 h5
-h6 head header hr html i iframe img input ins kbd keygen label legend li link
-main map mark menu menuitem meta meter nav noscript object ol optgroup option
-output p param picture pre progress q rp rt ruby s samp script section select
-small source span strong style sub summary sup table tbody td textarea tfoot th
-thead time title tr track u ul var video wbr
-</code></pre>
-
-<h3 id="html-attributes">HTML Attributes</h3>
-
-<pre><code class="language-text">accept acceptCharset accessKey action allowFullScreen allowTransparency alt
-async autoComplete autoFocus autoPlay cellPadding cellSpacing charSet checked classID
-className cols colSpan content contentEditable contextMenu controls coords
-crossOrigin data dateTime defer dir disabled download draggable encType form
-formAction formEncType formMethod formNoValidate formTarget frameBorder height
-hidden href hrefLang htmlFor httpEquiv icon id label lang list loop manifest
-marginHeight marginWidth max maxLength media mediaGroup method min multiple
-muted name noValidate open pattern placeholder poster preload radioGroup
-readOnly rel required role rows rowSpan sandbox scope scrolling seamless
-selected shape size sizes span spellCheck src srcDoc srcSet start step style
-tabIndex target title type useMap value width wmode
-</code></pre>
-
-<h2 id="event-system-http-facebook-github-io-react-docs-events-html"><a href="http://facebook.github.io/react/docs/events.html">Event System</a></h2>
-
-<h3 id="syntheticevent">SyntheticEvent</h3>
-
-<pre><code class="language-javascript">boolean bubbles
-boolean cancelable
-DOMEventTarget currentTarget
-boolean defaultPrevented
-number eventPhase
-boolean isTrusted
-DOMEvent nativeEvent
-void preventDefault()
-void stopPropagation()
-DOMEventTarget target
-number timeStamp
-string type
-</code></pre>
-
-<pre><code class="language-text">React.createClass({
-    // event are the argument
-    custom: function(event){
-        event.foo
-    }
-    ...
-})
-</code></pre>
-
-<h3 id="supported-events">Supported Events</h3>
-
-<p>React normalizes events so that they have consistent properties across different browsers.</p>
-
-<p>The event handlers below are triggered by an event in the bubbling phase. To register an event handler for the capture phase, append Capture to the event name; for example, instead of using onClick, you would use onClickCapture to handle the click event in the capture phase</p>
-
-<h4 id="clipboard-events">Clipboard Events</h4>
-
-<p>Event names:</p>
-
-<pre><code class="language-text">onCopy onCut onPaste
-</code></pre>
-
-<p>Properties:</p>
-
-<pre><code class="language-text">DOMDataTransfer clipboardData
-</code></pre>
-
-<h4 id="keyboard-events">Keyboard Events</h4>
-
-<p>Event names:</p>
-
-<pre><code class="language-text">onKeyDown onKeyPress onKeyUp
-</code></pre>
-
-<p>Properties:</p>
-
-<pre><code class="language-text">boolean altKey
-Number charCode
-boolean ctrlKey
-function getModifierState(key)
-String key
-Number keyCode
-String locale
-Number location
-boolean metaKey
-boolean repeat
-boolean shiftKey
-Number which
-</code></pre>
-
-<h4 id="focus-events">Focus Events</h4>
-
-<p>Event names:</p>
-
-<pre><code class="language-text">onFocus onBlur
-</code></pre>
-
-<p>Properties:</p>
-
-<pre><code class="language-text">DOMEventTarget relatedTarget
-</code></pre>
-
-<h4 id="mouse-events">Mouse Events</h4>
-
-<pre><code class="language-text">Event names:
-
-onClick onContextMenu onDoubleClick onDrag onDragEnd onDragEnter onDragExit
-onDragLeave onDragOver onDragStart onDrop onMouseDown onMouseEnter onMouseLeave
-onMouseMove onMouseOut onMouseOver onMouseUp
-The onMouseEnter and onMouseLeave events propagate from the component being left to the one being entered instead of ordinary bubbling and do not have a capture phase.
-</code></pre>
-
-<p>Properties:</p>
-
-<pre><code class="language-text">boolean altKey
-Number button
-Number buttons
-Number clientX
-Number clientY
-boolean ctrlKey
-function getModifierState(key)
-boolean metaKey
-Number pageX
-Number pageY
-DOMEventTarget relatedTarget
-Number screenX
-Number screenY
-boolean shiftKey
-</code></pre>
-
-<h4 id="touch-events">Touch events</h4>
-
-<p>To enable touch events, call React.initializeTouchEvents(true) before rendering any component.</p>
-
-<pre><code class="language-text">Event names:
-onTouchCancel onTouchEnd onTouchMove onTouchStart
-</code></pre>
-
-<pre><code class="language-text">Properties:
-boolean altKey DOMTouchList changedTouches boolean ctrlKey function getModifierState(key) boolean metaKey boolean shiftKey DOMTouchList targetTouches DOMTouchList touches
-</code></pre>
-
-<h4 id="ui-events">UI Events</h4>
-
-<pre><code class="language-text">Event names:
-
-onScroll
-</code></pre>
-
-<pre><code class="language-text">Properties:
-
-Number detail DOMAbstractView view
-</code></pre>
-
-<h1 id="flux">flux</h1>
-
-<p><img src="https://cask.scotch.io/2014/10/duZH2Sz.png" alt="Flux Flowchat" /></p>
+<ul>
+<li><a href="http://facebook.github.io/react/docs/top-level-api.html">Top-Level API</a><br /></li>
+<li><a href="http://facebook.github.io/react/docs/component-api.html">Component API</a><br /></li>
+<li><a href="http://facebook.github.io/react/docs/component-specs.html">Component Specs and ifecycle</a><br /></li>
+<li><a href="http://facebook.github.io/react/docs/tags-and-attributes.html">Tags and Attributes</a><br /></li>
+<li><a href="http://facebook.github.io/react/docs/events.html">Event System</a><br />
+<br /></li>
+</ul>
 
 <h1 id="ref-links">Ref Links</h1>
 
 <h2 id="concept">Concept</h2>
 
-<p><a href="http://facebook.github.io/react/index.html">React | A JavaScript library for building user interfaces</a> <a href="http://futurice.com/blog/reactive-mvc-and-the-virtual-dom">Reactive MVC and the Virtual DOM &ndash; Futurice</a> <a href="http://blog.andrewray.me/reactjs-for-stupid-people/">ReactJS For Stupid People</a> <a href="http://addyosmani.com/blog/component-interop-with-react-and-custom-elements/">Component Interop With React And Custom Elements</a> <a href="http://blog.reverberate.org/2014/02/react-demystified.html">Josh Haberman: React Demystified</a> <a href="http://net.tutsplus.com/tutorials/javascript-ajax/intro-to-the-react-framework/">Intro to the React Framework | Nettuts+</a> <a href="https://developers.mobileapptracking.com/addressing-angular-weaknesses-with-react-and-flux/">Integrating React and Flux with Angular</a></p>
+<ul>
+<li><a href="http://facebook.github.io/react/index.html">React | A JavaScript library for building user interfaces</a><br /></li>
+<li><a href="http://futurice.com/blog/reactive-mvc-and-the-virtual-dom">Reactive MVC and the Virtual DOM &ndash; Futurice</a><br /></li>
+<li><a href="http://blog.andrewray.me/reactjs-for-stupid-people/">ReactJS For Stupid People</a><br /></li>
+<li><a href="http://addyosmani.com/blog/component-interop-with-react-and-custom-elements/">Component Interop With React And Custom Elements</a><br /></li>
+<li><a href="http://blog.reverberate.org/2014/02/react-demystified.html">Josh Haberman: React Demystified</a><br /></li>
+<li><a href="http://net.tutsplus.com/tutorials/javascript-ajax/intro-to-the-react-framework/">Intro to the React Framework | Nettuts+</a><br /></li>
+<li><a href="https://developers.mobileapptracking.com/addressing-angular-weaknesses-with-react-and-flux/">Integrating React and Flux with Angular</a><br />
+<br /></li>
+</ul>
 
 <h2 id="tutorial">Tutorial</h2>
 
-<p><a href="http://scotch.io/tutorials/javascript/learning-react-getting-started-and-concepts">Learning React.js- Getting Started and Concepts ♥ Scotch</a> <a href="https://scotch.io/tutorials/build-a-real-time-twitter-stream-with-node-and-react-js">Build A Real-Time Twitter Stream with Node and React.js</a> <a href="https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture">Getting To Know Flux, the React.js Architecture</a> <a href="https://scotch.io/tutorials/creating-a-simple-shopping-cart-with-react-js-and-flux">Creating A Simple Shopping Cart with React.js and Flux</a> <a href="https://github.com/enaqx/awesome-react">enaqx-awesome-react · GitHub</a> <a href="http://hulufei.gitbooks.io/react-tutorial/content/">React 入门教程</a> <a href="http://learnreact.robbestad.com/">Learn React</a> <a href="http://spoike.ghost.io/deconstructing-reactjss-flux/">Deconstructing ReactJS&rsquo;s Flux</a></p>
+<ul>
+<li><a href="http://scotch.io/tutorials/javascript/learning-react-getting-started-and-concepts">Learning React.js- Getting Started and Concepts ♥ Scotch</a><br /></li>
+<li><a href="https://scotch.io/tutorials/build-a-real-time-twitter-stream-with-node-and-react-js">Build A Real-Time Twitter Stream with Node and React.js</a><br /></li>
+<li><a href="https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture">Getting To Know Flux, the React.js Architecture</a><br /></li>
+<li><a href="https://scotch.io/tutorials/creating-a-simple-shopping-cart-with-react-js-and-flux">Creating A Simple Shopping Cart with React.js and Flux</a><br /></li>
+<li><a href="https://github.com/enaqx/awesome-react">enaqx-awesome-react · GitHub</a><br /></li>
+<li><a href="http://hulufei.gitbooks.io/react-tutorial/content/">React 入门教程</a><br /></li>
+<li><a href="http://learnreact.robbestad.com/">Learn React</a><br /></li>
+<li><a href="http://spoike.ghost.io/deconstructing-reactjss-flux/">Deconstructing ReactJS&rsquo;s Flux</a><br />
+<br /></li>
+</ul>
 
 <h2 id="example">Example</h2>
 
-<p><a href="https://github.com/jakemmarsh/react-rocket-boilerplate">react-rocket-boilerplate</a> <a href="http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome">James Long</a> <a href="https://github.com/kenwheeler/mcfly">kenwheeler-mcfly · GitHub</a> <a href="http://react.rocks/">ReactJS Examples, Demos, Code</a> <a href="http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs/">Faster AngularJS Rendering (AngularJS and ReactJS) | thierry.nicola</a> <a href="https://github.com/jhudson8/react-chartjs">jhudson8-react-chartjs · GitHub</a> <a href="http://binarymuse.github.io/react-primer/build/">React Primer</a> <a href="https://github.com/sardaukar/react-router-auth-example">react-router auth</a></p>
+<ul>
+<li><a href="https://github.com/jakemmarsh/react-rocket-boilerplate">react-rocket-boilerplate</a><br /></li>
+<li><a href="http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome">James Long</a><br /></li>
+<li><a href="https://github.com/kenwheeler/mcfly">kenwheeler-mcfly · GitHub</a><br /></li>
+<li><a href="http://react.rocks/">ReactJS Examples, Demos, Code</a><br /></li>
+<li><a href="http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs/">Faster AngularJS Rendering (AngularJS and ReactJS) | thierry.nicola</a><br /></li>
+<li><a href="https://github.com/jhudson8/react-chartjs">jhudson8-react-chartjs · GitHub</a><br /></li>
+<li><a href="http://binarymuse.github.io/react-primer/build/">React Primer</a><br /></li>
+<li><a href="https://github.com/sardaukar/react-router-auth-example">react-router auth</a><br />
+<br /></li>
+</ul>
 
 <h2 id="tools">Tools</h2>
 
-<p><a href="https://github.com/spoike/refluxjs">Reflux</a> <a href="https://github.com/andreypopp/Reactify">Reactify</a> <a href="https://github.com/facebook/react/wiki/Complementary-Tools">Complementary Tools · facebook-react Wiki · GitHub</a> <a href="https://github.com/rackt/react-router">rackt-react-router · GitHub</a> <a href="https://github.com/mtscout6/react-router-bootstrap">mtscout6-react-router-bootstrap · GitHub</a> <a href="http://react-bootstrap.github.io/">React Bootstrap</a> <a href="http://strml.viewdocs.io/react-router-component">react-router-component :: viewdocs.io</a> <a href="https://github.com/react-component">react-component · GitHub</a> <a href="http://react-components.com/">React Components</a> <a href="https://github.com/Yomguithereal/baobab">Baobab</a> <a href="http://www.tuxedojs.org/">tuxedojs</a> <a href="http://www.progville.com/javascript/5-react-js-flux-tools/">5 React.js + Flux tools</a> <a href="https://babeljs.io/">Babel</a></p>
+<ul>
+<li><a href="https://github.com/spoike/refluxjs">Reflux</a><br /></li>
+<li><a href="https://github.com/andreypopp/Reactify">Reactify</a><br /></li>
+<li><a href="https://github.com/facebook/react/wiki/Complementary-Tools">Complementary Tools · facebook-react Wiki · GitHub</a><br /></li>
+<li><a href="https://github.com/rackt/react-router">rackt-react-router · GitHub</a><br /></li>
+<li><a href="https://github.com/mtscout6/react-router-bootstrap">mtscout6-react-router-bootstrap · GitHub</a><br /></li>
+<li><a href="http://react-bootstrap.github.io/">React Bootstrap</a><br /></li>
+<li><a href="http://strml.viewdocs.io/react-router-component">react-router-component :: viewdocs.io</a><br /></li>
+<li><a href="https://github.com/react-component">react-component · GitHub</a><br /></li>
+<li><a href="http://react-components.com/">React Components</a><br /></li>
+<li><a href="https://github.com/Yomguithereal/baobab">Baobab</a><br /></li>
+<li><a href="http://www.tuxedojs.org/">tuxedojs</a><br /></li>
+<li><a href="http://www.progville.com/javascript/5-react-js-flux-tools/">5 React.js + Flux tools</a><br /></li>
+<li><a href="https://babeljs.io/">Babel</a><br />
+<br /></li>
+</ul>
 
 <h2 id="from-leesei">from leesei</h2>
 
-<p><a href="https://speakerdeck.com/vjeux/react-css-in-js">React: CSS in JS // Speaker Deck</a></p>
+<ul>
+<li><a href="https://speakerdeck.com/vjeux/react-css-in-js">React: CSS in JS // Speaker Deck</a><br /></li>
+</ul>
 
       </article>
 
@@ -421,7 +308,7 @@ Number detail DOMAbstractView view
 <script type="text/javascript">
     var disqus_shortname = 'cyrusngithubio';
     var disqus_identifier = 'https:\/\/cyrusn.github.io\/note\/react\/';
-    var disqus_title = 'ReactJS Notes';
+    var disqus_title = 'React Notes';
     var disqus_url = 'https:\/\/cyrusn.github.io\/note\/react\/';
 
     (function() {
@@ -453,6 +340,8 @@ Number detail DOMAbstractView view
 
 
 <script src="/js/keypress.js"></script>
+<script src="/js/perfect-scrollbar.min.js"></script>
+<script src="/js/perfect-scrollbar.jquery.min.js"></script>
 
   </body>
 </html>

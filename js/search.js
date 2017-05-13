@@ -5,7 +5,7 @@ function endsWith(str, suffix) {
 }
 
 // Initialize lunrjs using our generated index file
-function initLunr() {
+function initLunr(cb) {
     if (!endsWith(baseurl,"/")){
         baseurl = baseurl+'/'
     };
@@ -24,9 +24,10 @@ function initLunr() {
             lunrIndex.field('tags', {
                 boost: 10
             });
-            // lunrIndex.field("content", {
-            //     boost: 5
-            // });
+
+            lunrIndex.field("content", {
+                boost: 5
+            });
 
             // Feed lunr with each file and let lunr actually index them
             pagesIndex.forEach(function(page) {
@@ -34,10 +35,12 @@ function initLunr() {
             });
             lunrIndex.pipeline.remove(lunrIndex.stemmer)
         })
+        .done(cb)
         .fail(function(jqxhr, textStatus, error) {
             var err = textStatus + ", " + error;
             console.error("Error getting Hugo index flie:", err);
         });
+
 }
 
 /**
@@ -56,7 +59,9 @@ function search(query) {
 }
 
 // Let's get started
-initLunr();
+initLunr(function() {
+  document.getElementById("search-by").focus();
+});
 $( document ).ready(function() {
     var horseyList = horsey($("#search-by").get(0), {
         suggestions: function (value, done) {
@@ -64,25 +69,40 @@ $( document ).ready(function() {
             var results = search(query);
             done(results);
         },
-        filter: function (q, suggestion) {
-            return true;
-        },
+          filter: function (q, suggestion) {
+              return true;
+          },
         set: function (value) {
-            location.href=value.uri;
+            location.href = value.uri;
         },
         render: function (li, suggestion) {
             var uri = suggestion.uri.substring(1,suggestion.uri.length);
 
             suggestion.href = baseurl + uri;
 
-            var query = $("#search-by").val();
-            var numWords = 2;
-            // var text = suggestion.content.match("(?:\\s?(?:[\\w]+)\\s?){0,"+numWords+"}"+query+"(?:\\s?(?:[\\w]+)\\s?){0,"+numWords+"}");
+            var query = $("#search-by").val().toLowerCase();
+
             // suggestion.context = text;
-            var image = '<div>' + '» ' + suggestion.title + '</div><div style="font-size:12px">' + (suggestion.uri || '') +'</div>';
+
+            var image = '<h4 style="margin: 0;">' + suggestion.title + '</h4>'
+            var linkIcon = '<span class="glyphicon glyphicon-link"></span> '
+            var parser = document.createElement('a')
+            parser.href = suggestion.uri
+            image += '<div style="font-size:12px">' + linkIcon +  (parser.pathname || '') +'</div>';
+
+            if (suggestion.content) {
+              var numWords = 3;
+              var text = suggestion.content.toLowerCase().match("(?:\\s?(?:[\\w]+)\\s?){0,"+numWords+"}"+query+"(?:\\s?(?:[\\w]+)\\s?){0,"+numWords+"}");
+            }
+
+            if (text) {
+              var contentIcon = '<span class="glyphicon glyphicon-file"></span> '
+              image += '<div style="font-size:12px; font-style: italic"> ' + contentIcon + '... ' + (text || '') + ' ...' + '</div>';
+            }
+
             li.innerHTML = image;
         },
-        limit: 10
+        highlighter: true
     });
     horseyList.refreshPosition();
 });

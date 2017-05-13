@@ -153,6 +153,7 @@ function horsey (el, options) {
     crossvent.add(li, 'horsey-filter', filterItem);
     crossvent.add(li, 'horsey-hide', hideItem);
     ul.appendChild(li);
+
     api.suggestions.push(suggestion);
     return li;
 
@@ -231,6 +232,16 @@ function horsey (el, options) {
     if (suggestion) {
       selection = suggestion;
       selection.className += ' sey-selected';
+
+      var liTop = suggestion.offsetParent.offsetTop
+      var liBottom = suggestion.offsetParent.offsetTop +
+      suggestion.offsetParent.offsetHeight
+
+      var ulTop = suggestion.getBoundingClientRect().top
+      var ulBottom = suggestion.getBoundingClientRect().bottom
+      if (ulTop <= liTop || ulBottom >= liBottom) {
+        suggestion.scrollIntoView()
+      }
     }
   }
 

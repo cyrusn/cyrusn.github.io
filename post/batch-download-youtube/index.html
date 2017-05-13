@@ -8,8 +8,14 @@
   <title>Batch Download YouTube</title>
   <meta property="og:title" content="Batch Download YouTube" />
   <meta name="twitter:title" content="Batch Download YouTube" />
-  <meta name="description" content=" Using youtube-dl and xargs cat &lt;&lt; EOF | xargs -I@ youtube-dl https://www.youtube.com/watch?v=@ YouTubeVideoID-1 YouTubeVideoID-2 YouTubeVideoID-3 EOF  Useful options  --extract-audio for download audio only --audio-format mp3 choose the audio format --audio-quality 2 set the audio quality, 0(best)-9(worst), (default 5)  ">
-  <meta property="og:description" content=" Using youtube-dl and xargs cat &lt;&lt; EOF | xargs -I@ youtube-dl https://www.youtube.com/watch?v=@ YouTubeVideoID-1 YouTubeVideoID-2 YouTubeVideoID-3 EOF  Useful options  --extract-audio for download audio only --audio-format mp3 choose the audio format --audio-quality 2 set the audio quality, 0(best)-9(worst), (default 5)  ">
+  <meta name="description" content=" Using youtube-dl and xargs cat &lt;&lt; EOF | xargs -I@ youtube-dl https://www.youtube.com/watch?v=@ YouTubeVideoID-1 YouTubeVideoID-2 YouTubeVideoID-3 EOF  Useful options  --extract-audio for download audio only
+ --audio-format mp3 choose the audio format
+ --audio-quality 2 set the audio quality, 0(best)-9(worst), (default 5)
+  ">
+  <meta property="og:description" content=" Using youtube-dl and xargs cat &lt;&lt; EOF | xargs -I@ youtube-dl https://www.youtube.com/watch?v=@ YouTubeVideoID-1 YouTubeVideoID-2 YouTubeVideoID-3 EOF  Useful options  --extract-audio for download audio only
+ --audio-format mp3 choose the audio format
+ --audio-quality 2 set the audio quality, 0(best)-9(worst), (default 5)
+  ">
   <meta name="twitter:description" content=" Using youtube-dl and xargs cat &lt;&lt; EOF | xargs -I@ youtube-dl https://www.youtube.com/watch?v=@ YouTubeVideoID-1 YouTubeVideoID-2 YouTubeVideoID-3 EOF  Useful options  --extract-audio for …">
   <meta name="author" content="CyrusN"/>
   <link href='https://cyrusn.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -32,7 +38,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
   <link rel="stylesheet" href="https://cyrusn.github.io/css/pygment_highlights.css" />
-  <link rel="stylesheet" href="https://cyrusn.github.io/css/highlight.min.css" />
+  
+  <link rel="stylesheet" href="https://cyrusn.github.io/css/atom-one-dark.css" />
+  <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
 
 </head>
 
@@ -201,9 +209,9 @@ EOF
 <h1 id="useful-options">Useful options</h1>
 
 <ul>
-<li><code>--extract-audio</code> for download audio only</li>
-<li><code>--audio-format mp3</code> choose the audio format</li>
-<li><code>--audio-quality 2</code> set the audio quality, 0(best)-9(worst), (default 5)</li>
+<li><code>--extract-audio</code> for download audio only<br /></li>
+<li><code>--audio-format mp3</code> choose the audio format<br /></li>
+<li><code>--audio-quality 2</code> set the audio quality, 0(best)-9(worst), (default 5)<br /></li>
 </ul>
 
       </article>
@@ -247,6 +255,8 @@ EOF
 
 
 <script src="/js/keypress.js"></script>
+<script src="/js/perfect-scrollbar.min.js"></script>
+<script src="/js/perfect-scrollbar.jquery.min.js"></script>
 
   </body>
 </html>

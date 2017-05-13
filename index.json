@@ -1,709 +1,1201 @@
 [
+
+
+
 {
 	"uri": "https://cyrusn.github.io/note/tmux/",
 	"title": "tmux Notes",
 	"tags": ["tmux"],
-	"description": ""
+	"description": "",
+	"content": " using tmux # list all session tmux ls # attach to session tmux attach -t sessionName # create new session tmux new -s sessionName # kill session tmux kill-session -t sessionName  navigate in tmux  Ctrl-b then [ then you can use your normal navigation keys to scroll around (eg. Up Arrow or PgDn).\n Press q to quit scroll mode.\n just quit terminal for exit the session\n  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/note/linux-arch/",
 	"title": "Linux Arch Notes",
 	"tags": ["linux", "arch"],
-	"description": ""
+	"description": "",
+	"content": " References  Build a Killer Customized Arch Linux Installation (and Learn All About Linux in the Process)\n Installation guide - ArchWiki\n Antergos | Your Linux. Always Fresh. Never Frozen.\n   The purpose of Antergos is to provide a modern, elegant, and powerful operating system based on one of the best Linux distributions available, Arch Linux. Users need not be linux experts nor developers in order to use Antergos. From long-time linux users to linux users of only a few months, Antergos is for everyone.\n "
 },
-{
-	"uri": "https://cyrusn.github.io/post/react-and-redux/",
-	"title": "React-and-Redux",
-	"tags": ["react", "redux"],
-	"description": ""
-},
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/create-startup-script-in-linux/",
 	"title": "Create Startup Script in Linux",
 	"tags": ["linux", "startup"],
-	"description": ""
+	"description": "",
+	"content": "Create a new script in /etc/init.d/myscript.\nvi /etc/init.d/myscript  (Obviously it doesn\u0026rsquo;t have to be called \u0026ldquo;myscript\u0026rdquo;.) In this script, do whatever you want to do. Perhaps just run the script you mentioned.\n#!/bin/sh /path/to/my/script.sh  Make it executable.\nchmod 755 /etc/init.d/myscript  Configure the init system to run this script at startup.\nupdate-rc.d myscript defaults  ystem to run this script at startup.\nupdate-rc.d myscript defaults  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/note/mysql/",
 	"title": "MySQL Notes",
 	"tags": ["mysql", "sql"],
-	"description": ""
+	"description": "",
+	"content": " Start SQL in MacOS # Start SQL Server mysql.server start  mysql -u root -p  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/update-digital-ocean-kernel/",
 	"title": "Update Digital Ocean Kernel",
 	"tags": ["digitalocean"],
-	"description": ""
+	"description": "",
+	"content": " Check Which Kernel is Currently in Use\nTo display both the kernel version and your system\u0026rsquo;s architecture (32-bit or 64-bit), type: uname -ir  Upgrading All Packages and Using the Newest Kernel sudo apt-get update sudo apt-get dist-upgrade sudo reboot sudo apt-get install update-manager-core sudo do-release-upgrade  Reference How To Upgrade to Ubuntu 16.04 LTS | DigitalOcean How To Update a DigitalOcean Server\u0026rsquo;s Kernel | DigitalOcean\n"
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/note/caddy/",
 	"title": "Caddy Notes",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": " Installation # install caddy in linux commandline curl -fsSL https://getcaddy.com | bash -s search  Settng of Caddyfile for microservice TODO Make Caddy to serve https\n  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/https-and-jwt/",
 	"title": "HTTPS and JWT",
 	"tags": ["https"],
-	"description": ""
+	"description": "",
+	"content": " Links  Self-signed certificate - Wikiwand\n Let\u0026rsquo;s Encrypt - Free SSL/TLS Certificates\n JWT, JWS and JWE for Not So Dummies!\n JSON Web Token Series - YouTube\n  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/batch-download-youtube/",
 	"title": "Batch Download YouTube",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": " Using youtube-dl and xargs cat \u0026lt;\u0026lt; EOF | xargs -I@ youtube-dl https://www.youtube.com/watch?v=@ YouTubeVideoID-1 YouTubeVideoID-2 YouTubeVideoID-3 EOF  Useful options  --extract-audio for download audio only\n --audio-format mp3 choose the audio format\n --audio-quality 2 set the audio quality, 0(best)-9(worst), (default 5)\n  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/web-authentication/",
 	"title": "Web Authentication",
 	"tags": ["authentication", "jwt", "security", "web-token"],
-	"description": ""
+	"description": "",
+	"content": " Notes  Authentication in Golang with JWTs\n Cookies vs Tokens: The Definitive Guide\n The Ins and Outs of Token Based Authentication | Scotch   Enterprise APIs and OAuth: Have it All\nSecure your users\u0026rsquo; passwords from the browser on\nAuthentication Protocols Basic access authentication - Wikiwand Digest access authentication - Wikiwand Secure Remote Password protocol - Wikiwand\nAnatomy of a zero-knowledge web application - Clipperz, register your creations on the blockchain\nAccess-Control-Allow-Origin: * does not allow requests to supply credentials like HTTP authentication, client-side SSL certificates, or cookies. ?\nServer Based Server generates session token and send to client via cookie. The session token acts as a bearer token and is used to look up login/session info in memory or datastore.\nOn Securing Web Session Ids | hueniverse expressjs/session: Simple session middleware for Express\nAsymmetric Key BrowserAuth.net using asymmetric-key for web\nsubstack/trust-log: manage trust over time mafintosh/ghsign: Sign/verify data using your local ssh private key and your public key from Github\nToken Based  \u0026ldquo;Server Based\u0026rdquo; and \u0026ldquo;Token Based\u0026rdquo; could be a misnomer. Some articles says server-based auth bind a client to a specific server but this is not actually true. We can setup a in-memory datastore shared by a bunch of app servers to look up the token upon a client request. And tokens in token-based auth may as well be stored in cookies. It\u0026rsquo;s just that all session info are embedded in the token in token-based auth.\n The Ins and Outs of Token Based Authentication | Scotch Best practices for token-based authentication in REST API - Google Groups.desktop Token Based Authentication for Single Page Apps (SPAs) - Stormpath User Management API Token-Based Authentication With AngularJS \u0026amp; NodeJS - Tuts+ Code Tutorial Cookies are bad for you: Improving web application security - sitr.us\nCookies vs Tokens. Getting auth right with Angular.JS 10 Things You Should Know about Tokens\nStop using JWT for sessions - joepie91\u0026rsquo;s Ramblings Stop using JWT for sessions, part 2: Why your solution doesn\u0026rsquo;t work - joepie91\u0026rsquo;s Ramblings\nA Token Walks into a SPA - YouTube hapijs/hapi-auth-cookie: Cookie authentication plugin is actually a token based authentication\nroblevintennis-passport-api-tokens · GitHub\nGoodbye Short Sessions: a proposal for using service-workers to improve cookie management on the web | Web Updates - Google Developers\nThere are three ways to send your access token in a request.\n In an HTTP Authorization header (always works)\n In the URL query string (only works with GET requests)\n In the request body (only works for POST \u0026amp; PUT when body is URL-encoded)\n  Bearer token clients angular-token-auth/auth.client.js at master · auth0-blog/angular-token-auth talis/bearhug-angular: Response interceptor for elegant bearer-token handling for angular\u0026rsquo;s $http service\nAuthorizationServer/callback.cshtml at master · IdentityModel/AuthorizationServer\nsahat/satellizer: Token-based AngularJS Authentication\nQuestions Token based auth allows for RBAC (Role-Based Access Control), but other method can support RBAC as well (with a session lookup)\nreplay attack with bearer token OAuth 2.0 (without Signatures) is Bad for the Web | hueniverse OAuth Bearer Tokens are a Terrible Idea | hueniverse\nauth0/node-auth0: Node.js client library for the Auth0 platform. node-auth0/examples/nodejs-regular-webapp at master · auth0/node-auth0 node-auth0/examples/nodejs-api at master · auth0/node-auth0 auth0/cookie-jwt-auth why store back to cookie?\nauth0/spa-jwt-authentication-tutorial - JavaScript\nAdding authentication to your React Flux app repo\nCritical vulnerabilities in JSON Web Token libraries\nvs OAuth OAuth vs JWT vs OpenID OAuth2 token is opaque, JWT can be used JWT: 2 years later OAuth 2 VS JSON Web Tokens: How to secure an API - Seedbox Technologies | Les Technologies Seedbox 谈谈OAuth1,OAuth2异同 | Litten的博客 兔子，胡萝卜与OAuth的故事 | Litten的博客\nSingle Sing On (SSO) Implement Single Sign On Authentication Lock: Single Sign On \u0026amp; Token Based Authentication - Auth0\nauth0/lock - CSS auth0/lock-passwordless\nOAuth1 The OAuth Bible OAuth | hueniverse 1.0 RFC 5849 - The OAuth 1.0 Protocol\nOAuth and OAuth WRAP: defeating the password anti-pattern | Ars Technica Deprecated for 2.0\nOAuth2 OAuth - Wikiwand The OAuth Bible OAuth / FrontPage\nOAuth Community Site 2.0 RFC 6749 - The OAuth 2.0 Authorization Framework RFC 6750 - The OAuth 2.0 Authorization Framework: Bearer Token Usage Egor Homakov: OAuth2: One access_token To Rule Them All\nOpenID | hueniverse OAuth | hueniverse\nDesigning a Secure REST (Web) API without OAuth upload client public key (securely) to server (kind of like passwordless SSH)\ndogeared/OZorkAuth\nIn the Wild OAuth | GitHub Developer Guide Using OAuth 2.0 to Access Google APIs | Google Identity Platform | Google Developers Using OAuth 2.0 for Google APIs | 9bit Studios\nboo OAuth2 RealtimeConf - \u0026ldquo;OAuth 2.0 - Looking Back and Moving On\u0026rdquo; by Eran Hammer on Vimeo OAuth 2.0 and the Road to Hell | hueniverse On Leaving OAuth | hueniverse The problem with OAuth for Authentication. | Thread Safe\nLibraries prose-gatekeeper · GitHub passport hapi-bell\nAnd much more\u0026hellip;\nJWT JWT is the spec for how a non-opaque token should be created. This allows token receiver to parse the token and receive meta without database query. JSON Web Token - Wikiwand\nRFC 7515 - JSON Web Signature (JWS) RFC 7516 - JSON Web Encryption (JWE) RFC 7517 - JSON Web Key (JWK) RFC 7518 - JSON Web Algorithms (JWA) RFC 7519 - JSON Web Token (JWT) RFC 7520 - JOSE Cookbook\nJWT = header.claim.signature\nvar myHeaders = { \u0026quot;alg\u0026quot;: \u0026quot;HS256\u0026quot;, //denotes the algorithm (shorthand alg) used for the signature is HMAC SHA-256 \u0026quot;typ\u0026quot;: \u0026quot;JWT\u0026quot; //denotes the type (shorthand typ) of token this is } var myClaims = { \u0026quot;sub\u0026quot;: \u0026quot;tom@stormpath.com\u0026quot;, \u0026quot;name\u0026quot;: \u0026quot;Tom Abbott\u0026quot;, \u0026quot;role\u0026quot;: \u0026quot;user\u0026quot; } var headers = base64URLencode(myHeaders); var claims = base64URLencode(myClaims); var payload = header + \u0026quot;.\u0026quot; + claims; var signature = base64URLencode(HMACSHA256(payload, secret)); var encodedJWT = payload + \u0026quot;.\u0026quot; + signature;  MNUG 2014.08.13 - Lightning talk: JWT: JSON Web Token - YouTube Introduction to JWT (JSON Web Token) - Securing apps \u0026amp; services - YouTube\nNodeJS Tutorial | APIs Strike Back: The Rise of JSON Web Tokens - YouTube Demo with Express\nUsing JSON Web Tokens as API Keys Blacklisting JSON Web Token API Keys Refresh Tokens auth0/node-jsonwebtoken auth0/nginx-jwt auth0/jwt-as-api-keys\nJSON Web Token Tutorial: Example using AngularJS \u0026amp; Laravel | Toptal JWT primer, comparison with server based authentication ttkalec/laravel5-angular-jwt: Simple Laravel 5/Angular app that shows how to use the most basic JWT authentication\ndwyl/learn-json-web-tokens The Anatomy of a JSON Web Token | Scotch Authenticate a Node.js API with JSON Web Tokens | Scotch Authentication with Node.js, JWTs, and Oracle Database | JavaScript and Oracle Securing node.js RESTful services with JWT Tokens | Richard Astbury\u0026rsquo;s Blog\nUse JWT The Right Way! - Stormpath User Management API JWT primer, tips for security Build Secure User Interfaces Using JSON Web Tokens (JWTs) - Stormpath User Management API Using Stormpath for OAuth 2.0 and Access/Refresh Token Management - Stormpath\nWhere to Store your JWTs - Cookies vs HTML5 Web Storage - Stormpath User Identity API JWT primer, tips for storage and CSURF Conclusion: Store the JWT in HttpOnly; Secure cookie. Add xsrfToken to JWT for CSURF protection.\nOz Auth to See the Wizard | hueniverse\nhueniverse/oz: Web Authorization Protocol hueniverse/hawk What\u0026rsquo;s Hawk and how to use it?\ngeek/OAuth geek/oz: Web Authorization Protocol\n"
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/note/vim/",
 	"title": "VIM Notes",
 	"tags": ["editor", "vim"],
-	"description": ""
+	"description": "",
+	"content": " VIM Basic  Vim Cheat Sheet - English\n VimGenius\n vimgifs\n  Some useful skills Insert across multi-lines Select the lines you want to modify using Ctrl-v. Press: I: Insert before what\u0026rsquo;s selected. A: Append after what\u0026rsquo;s selected. c: Replace what\u0026rsquo;s selected. Type the new text. Press Esc to apply the changes to all selected lines.\nSearch and replace :s/foo/bar/g Change each \u0026lsquo;foo\u0026rsquo; to \u0026lsquo;bar\u0026rsquo; in the current line. :%s/foo/bar/g Change each \u0026lsquo;foo\u0026rsquo; to \u0026lsquo;bar\u0026rsquo; in all the lines.\nVIM Plugin  vim-pathogen\n Vim Awesome\n  My installed Plugins  ctrlp\n emmet\n nerdtree\n vim-airline\n vim-go\n vim-airline-themes\n vim-snippets\n syntastic\n tagbar\n vim-colors-solarized\n  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/docker/",
 	"title": "Docker",
 	"tags": ["docker"],
-	"description": ""
+	"description": "",
+	"content": "Docker - Build, Ship, and Run Any App, Anywhere\n"
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/nvalt-setting/",
 	"title": "NVAlt Setting",
 	"tags": ["note-taking"],
-	"description": ""
+	"description": "",
+	"content": "Custom Preview Theme\n Notational Velocity (nvALT) Custom Stylesheet and Markup HTML\n  "
 },
+
+
+
 {
-	"uri": "https://cyrusn.github.io/post/config-digtal-ocean-droplet-as-microservice/",
+	"uri": "https://cyrusn.github.io/note/config-digtal-ocean-droplet-as-microservice/",
 	"title": "Config Digital Ocean Droplet as Microservice",
-	"tags": ["apache", "SSL", "TLS"],
-	"description": ""
+	"tags": ["apache", "SSL", "TLS", "tmux"],
+	"description": "",
+	"content": " Objective This page is a notes for setting apache server for my digital ocean droplet\nSetting Apache2  in file /etc/hosts\n change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS\n  change Port\n in file /etc/apache2/port.conf\n add ServerName localhost\n change the line listen *:80 to listen 127.0.0.1:4000\n disable other modules \u0026lt;IfModule ssl_module\u0026gt; and \u0026lt;IfModule mod_gnutls.c\u0026gt;\n in file /etc/apache2/site-enabled/000-default.conf\n change the line \u0026lt;VirtualHost *:80\u0026gt; to \u0026lt;VirtualHost localhost:4000\u0026gt;\n  restart apache2\n run sudo /etc/init.d/apache2 restart\n   Wordpress config WordPress to use proxy\n add the following lines in /var/www/html/wp-config.php\n  define(‘WP_PROXY_HOST’, ‘careers.liping.edu.hk’); define(‘WP_PROXY_PORT’, ’80’);` define('WP_PROXY_BYPASS_HOSTS', 'localhost, careers.liping.edu.hk'); define('FORCE_SSL_ADMIN', true);   add the following lines in `/var/www/html/wp-content/themes/yourTheme/function.php\n  update_option( 'siteurl', 'http://careers.liping.edu.hk' ); update_option( 'home', 'http://careers.liping.edu.hk' );  Caddy Server Caddy Notes\ncareers.liping.edu.hk proxy / localhost:4000 { header_upstream Host {host} }  using caddy to run the server through tmux\nTODO set apache only serve for localhost\n use caddy to create a proxy server with https\n fix all Mixed Content problem\n use Goggle oauth2 login instead\n set autostart and run in daemon with upstart\n  Reference  DenBeke – Running Caddy Server as a service with Upstart\n How To Configure the Apache Web Server on an Ubuntu or Debian VPS | DigitalOcean\n Is TLS Fast Yet?\n Proxy server - Wikiwand\n Webmaster - Wikiwand\n  Key Word  reverse proxy\n Microservice\n load balancing\n  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/how-to-convert-pngs-to-gif/",
 	"title": "How to convert images to gif",
 	"tags": ["imagemagick", "productivity", "gif", "convert"],
-	"description": ""
+	"description": "",
+	"content": " install imagemagick through homebrew $ brew install imagemagick  convert pngs to gif with 2 second per frame $ convert -delay 200 *.png converted.gif  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/open-ssl/",
 	"title": "Open SSL",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": " OpenSSL is a toolkit for the TLS and SSL. The Most Common OpenSSL Commands key/cert types X.509 - Wikiwand DER vs. CRT vs. CER vs. PEM Certificates and How To Convert Them .pem == .crt == X.509? probably .key == .csr == DER? probably not, .csr can be converted to .crt .pfx/.p12 == PKCS#12\nkey: no meta data, just the prime numbers and moduluses cert: with meta data\ncert generation How to create a .pfx/.p12 certificate file using OpenSSL – SSL Information and FAQ HOWTO: Generate a CSR for OpenSSL – (see tools.ssl.com) – SSL Information and FAQ ssl - How to create a self-signed certificate with openssl? - Stack Overflow OpenSSL CSR Tool - Create Your CSR Faster | DigiCert.com\nHow To Create a Self-Signed SSL Certificate for Nginx in Ubuntu 16.04 | DigitalOcean\n# new private key and Certificate Signing Request openssl req -nodes -new -newkey rsa:2048 -keyout privateKey.key -out CSR.csr # then sign SSH certificate (.crt) with csr openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout selfsigned.key -out selfsigned.crt openssl genrsa -out privatekey.pem 2048 # key openssl req -new -key privatekey.pem -x509 -days 7300 -out certificate.pem openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:2048 openssl rsa -pubout -in private_key.pem -out public_key.pem  query cert How to examine the metadata of an SSL (HTTPS/TLS) cert SSL Certificate Tools\n# X.509 openssl x509 -text -noout -in certificate.pem openssl x509 -text -noout -in certificate.cert # DER openssl req -text -noout -in certificate.csr # PKCS#12 (.pfx or .p12) openssl pkcs12 -info -in key.p12  conversion SSL Converter - Convert SSL Certificates to different formats\n# DER (.crt .cer .der) -\u0026gt; PEM openssl x509 -inform der -in certificate.cer -out certificate.pem # PEM -\u0026gt; DER openssl x509 -outform der -in certificate.pem -out certificate.der # PKCS#12 -\u0026gt; PEM openssl pkcs12 -in keyStore.pfx -out keyStore.pem -nodes # You can add -nocerts to only output the private key or add -nokeys to only output the certificates. # PEM -\u0026gt; PKCS#12 openssl pkcs12 -export -out certificate.pfx -inkey privateKey.key -in certificate.crt -certfile CACert.crt  troubleshooting sudo su sudo tcpdump -vvv -s 0 -nni \u0026lt;interface\u0026gt; -w \u0026lt;file\u0026gt; host \u0026lt;host\u0026gt; and port \u0026lt;port\u0026gt; \u0026amp; openssl s_client -connect \u0026lt;host\u0026gt;:\u0026lt;port\u0026gt; -state -msg # e.g. sudo su sudo tcpdump -vvv -s 0 -nni eno1 -w internal.cap host 10.6.64.170 and port 443 \u0026amp; openssl s_client -connect 10.6.64.170:443 -state -msg  SOL15475 - Troubleshooting SSL/TLS renegotiation SOL15292 - Troubleshooting SSL/TLS handshake failures SOL10209 - Overview of packet tracing with the ssldump utility\n"
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/ssl-tls/",
 	"title": "SSL TLS",
 	"tags": ["security", "SSL", "TLS"],
-	"description": ""
+	"description": "",
+	"content": " Transport Layer Security (TLS) and its predecessor, Secure Sockets Layer (SSL), are cryptographic protocols designed to provide communications security over a computer network.\nThe authentication relied on Certificate Authorities (CA) and a public key infrastructure using X.509 certificates. The server register with a CA and sign its public key with the key of CA for a fee. The client, after receiving the public key from server, verifies it with the CA.\nFile:Ssl handshake with two way authentication with certificates.png - Wikimedia Commons\nOpenSSL is a toolkit for the TLS and SSL.\n see Open SSL\n ImperialViolet - Overclocking SSL ImperialViolet - Public key pinning Survival Guide - TLS/SSL and SSL (X.509) Certificates (CA-signed and Self-Signed) Is TLS Fast Yet? BetterCrypto⋅org Rolling out Public Key Pinning with HPKP Reporting \u0026ndash; Google Web Updates The SSL/TLS Handshake: an Overview – SSL Information and FAQ SSL: it\u0026rsquo;s hard to do right | The Recompiler\nHow the NSA (may have) put a backdoor in RSA\u0026rsquo;s cryptography: A technical primer | Ars Technica Critics slam SSL authority for minting certificate for impersonating sites | Ars Technica\nHow to obtain and install an SSL/TLS certificate, for free | Ars Technica Web served, part 2: Securing things with SSL/TLS | Ars Technica\nHSTS HTTP Strict Transport Security - Wikiwand: always use HTTPS HSTS Preload List Submission\nSSL checkers Qualys SSL Labs SSL Certificate Checker - Diagnostic Tool | DigiCert.com\nPerfect Forward Secrecy (PFS) SSL Enabling Forward Secrecy | DigiCert.com\nIssues CA As it turns out, CA may not be trust-worthy after all. There are many instances of CA issuing fraudulent certificates (willingly or being hacked).\nHow the Comodo certificate fraud calls CA trust into question | Ars Technica\nGoogle warns of unauthorized TLS certificates trusted by almost all OSes [Updated] | Ars Technica Google Chrome will banish Chinese certificate authority for breach of trust | Ars Technica\nAnother fraudulent certificate raises the same old questions about certificate authorities | Ars Technica\nhttp://arstechnica.com/search/?ie=UTF-8\u0026amp;q=+Certificate+Authorities\nHeartbleed (2014) Heartbleed Bug Heartbleed – Andrew Kennedy Critical crypto bug exposes Yahoo Mail, other passwords Russian roulette-style | Ars Technica Coder in a World of Code: My Heart Bleeds for OpenSSL\nRenegotiation Gap (2009) Truth in SOA: Really Understanding the SSL/TLS Vulnerability (Part 1)\nLet\u0026rsquo;s Encrypt Let\u0026rsquo;s Encrypt How It Works Technology The CA\u0026rsquo;s Role in Fighting Phishing and Malware - Let\u0026rsquo;s Encrypt - Free SSL/TLS Certificates\nRate Limits for Let\u0026rsquo;s Encrypt - Documentation - Let\u0026rsquo;s Encrypt Community Support\nLet\u0026rsquo;s Encrypt Demo - YouTube Generate free SSL certificates with Docker and LetsEncrypt | Tit Petrič How To Secure Nginx with Let\u0026rsquo;s Encrypt on Ubuntu 16.04 | DigitalOcean Let\u0026rsquo;s Encrypt with HAProxy Let\u0026rsquo;s Encrypt on Raspberry Pi adventures in haproxy: tcp, tls, https, ssh, openvpn LetsEncrypt on Nginx How to configure Nginx with free Let\u0026rsquo;s Encrypt SSL certificate on Debian or Ubuntu Linux\nClients letsencrypt Certbot acmetool diafygi/acme-tiny: A tiny script to issue and renew TLS certs from Let\u0026rsquo;s Encrypt Neilpang/le: Simplest shell script for LetsEncrypt free Certificate client\nxenolf/lego: Let\u0026rsquo;s Encrypt client and ACME library written in Go Used in Caddy\nDaplie/node-letsencrypt: letsencrypt for node.js DylanPiercey/auto-sni: Free, automated HTTPS for NodeJS made easy.\nHeroku Announcing Heroku Free SSL Beta and Flexible Dyno Hours | Heroku Let\u0026rsquo;s Encrypt and Heroku [Solved] - Server - Let\u0026rsquo;s Encrypt Community Support Let\u0026rsquo;s Encrypt with a Rails app on Heroku // Collective Idea | Crafting web and mobile software based in Holland, Michigan Use Let\u0026rsquo;s Encrypt TLS certificate on Heroku \u0026ndash; Sikachu\u0026rsquo;s Blog \u0026ndash; Medium SSL Endpoint | Heroku Dev Center Set up CloudFlare\u0026rsquo;s free SSL on Heroku\nStandards RFC 2986 - PKCS #10: Certification Request Syntax Specification Version 1.7 RFC 3447 - Public-Key Cryptography Standards (PKCS) #1: RSA Cryptography Specifications Version 2.1 RFC 5958 - Asymmetric Key Packages RFC 6101 - The Secure Sockets Layer (SSL) Protocol Version 3.0 RFC 7525 - Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS) RFC 7292 - PKCS #12: Personal Information Exchange Syntax v1.1\n"
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/note/digital-ocean/",
 	"title": "Digital Ocean Notes",
-	"tags": ["do"],
-	"description": ""
+	"tags": ["do", "scp"],
+	"description": "",
+	"content": " connect to console # prepare ssh keys first # login droplet ssh root@ip.of.the.droplet # to copy a file from B to A while logged into B scp /path/to/file username@a:/path/to/destination # to copy a file from B to A while logged into A scp username@b:/path/to/file /path/to/destination  perpare ssh key  How To Use SSH Keys with DigitalOcean Droplets | DigitalOcean\n  achieve  Save a snapshot and delete droplet\n restore droplet by the snapshot\n  Update Server\u0026rsquo;s Kernel  How To Update a DigitalOcean Server\u0026rsquo;s Kernel | DigitalOcean igitalocean.com/community/tutorials/how-to-update-a-digitalocean-server-s-kernel)\n  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/note/leveldb/",
 	"title": "LevelDB Notes",
 	"tags": ["database", "javascript", "leveldb"],
-	"description": ""
+	"description": "",
+	"content": " Links  Main Page\n YouTube Introduction bEip0)\n  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/note/macos-setting/",
 	"title": "macos Setting Notes",
 	"tags": ["macos", "setting"],
-	"description": ""
+	"description": "",
+	"content": " Custom OSX  Remove shift key augmentation for Mission Control animation\n Enable the three finger drag in Accessibility\n  Terminal  Autocomplete echo \u0026quot;set completion-ignore-case On\u0026quot; \u0026gt;\u0026gt; ~/.inputrc\n install command line tools in XCode xcode-select --install\n  zsh  install .oh-my-zsh\n symlink for setting zsh\n  ## for installation of zsh ln -s Dropbox/MacSetting/Terminal/cyrusn ./.cyrusn ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zshrc ~/ ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom ~/ ## for installation of coreutil/.dir_colors ln -s ~/Dropbox/MacSetting/Terminal/coreutil/.dir_colors ~/  for further customisation  add export at ~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom/export.zsh\n add alias at ~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom/alias.zsh\n  homebrew package my automatic script for installation homebrew package https://github.com/cyrusn/cyrusn-terminal-setting\nNodejs Setting set the bin folder in ${HOME} # .npmrc # reference: https://gist.github.com/leesei/6591437 prefix = ${HOME}/.npm-packages  Find all global packages for install echo \u0026quot;$(\\ls $(npm root -g) | tr -s '\\t\\n' ' ')\u0026quot;  npm list -g npm install -g eslint eslint-plugin-react gulp hexo hexo-cli http-server jshint jsxhint lodash node-gyp nodemon  export path at .bashrc or .zshrc or equivalent export NODE_PATH=$HOME/.npm-packages/lib/node_modules export PATH=$HOME/.npm-packages/bin:$PATH  create symlink cd ~/ ln -s ~/Dropbox/MacSetting/Terminal/vim ~/.vim ln -s ~/Dropbox/MacSetting/atom/ ~/.atom ln -s ~/Dropbox/.npm-packages/ ~/  sublimeText cd ~/Library/Application\\ Support/Sublime\\ Text\\ 3/Packages/ ln -s ~/Dropbox/MacSetting/sublimetext/User ./  custom setting on osx  set terminal color theme\n  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/note/alfred/",
 	"title": "Alfred Notes",
 	"tags": ["productivity", "alfred"],
-	"description": ""
+	"description": "",
+	"content": " How to use node on alfred workflow node\u0026lt;\u0026lt;-\u0026quot;code\u0026quot; // your code here // e.g. console.log(\u0026quot;hello world\u0026quot;); code  iTerm2 Integration curl --silent 'https://raw.githubusercontent.com/stuartcryan/custom-iterm-applescripts-for-alfred/master/custom_iterm_script_iterm_2.9.applescript' | pbcopy   stuartcryan/custom-iterm-applescripts-for-alfred: Custom iTerm Applescripts for Alfred\n  )\n"
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/note/google-chrome-app/",
 	"title": "Google Chrome App",
 	"tags": ["google", "chrome", "app"],
-	"description": ""
+	"description": "",
+	"content": " Links  Adblock Plus - Chrome Web Store\n Tampermonkey - Chrome Web Store\n Wikiwand: Wikipedia Modernized - Chrome Web Store\n Markdown Preview Plus - Chrome Web Store\n Postman - REST Client - Chrome Web Store\n  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/programming-concept/",
 	"title": "Programming Concept",
 	"tags": ["productivity"],
-	"description": ""
+	"description": "",
+	"content": " Links How to make your code self-documenting? | CodeUtopia Separation of concerns - Wikipedia Garbage in, garbage out - Wikiwand\nleesei\u0026rsquo;s choice Naming  寫出黎就要俾名，俾名啲concept 就清楚，code 亦自然清楚\n leesei   What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?  That programming is about solving problems, not writing code. Here are the four basic tasks that an individual programmer must perform.\n Define the problem (requirements and constraints).\n Define the solution (algorithms and data structures).\n Express the solution in code.\n Prove and/or test correctness.\n    (5) Jeff Darcy's answer - Quora    "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/note/uml/",
 	"title": "UML Notes",
 	"tags": ["uml"],
-	"description": ""
+	"description": "",
+	"content": " Usecase Include and Extend uml - What\u0026rsquo;s is the difference between include and extend in use case diagram? - Stack Overflow\nExample Amazon Application Use Case Diagram\nCreole in notes notes in plantuml support Creole language Creole (markup) - Wikiwand\nLinks UML 2.0 Tutorial - YouTube Unified Modeling Language (UML) description, UML diagram examples, tutorials and reference for all types of UML diagrams - use case diagrams, class, package, component, composite structure diagrams, deployments, activities, interactions, profiles, etc.\n"
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/javascript-on-osascript/",
 	"title": "JavaScript on OSAScript",
 	"tags": ["macos", "osascript"],
-	"description": ""
+	"description": "",
+	"content": " Example  JXA-Cookbook\n Apple Release Notes\n JavaScript for OS X Automation by Example\n  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification('Hello, world', {withtitle: 'Title'})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application('Google Chrome'); var activeTab = Chrome.windows[0].activeTab; var result = '[' + activeTab.title() + '](' + activeTab.url() + ')'; app.setTheClipboardTo(result) return result }  // alfred workflow: // email link of Google Chrome active tab function run(argz){ var Chrome = Application('Google Chrome'); var activeTab = Chrome.windows[0].activeTab; var title: activeTab.title(); var url = activeTab.url(); var mdl = '[' + title + '](' + url + ')'; // cos I use Airmail as email client var Airmail = Application('Airmail'); message = Airmail.OutgoingMessage().make(); message.subject = activeTab.title(); var htmlcontent = ''; htmlcontent += '\u0026lt;a href=\u0026quot;' + url + '\u0026quot;\u0026gt;' + url + '\u0026lt;/a\u0026gt;'; htmlcontent += '\u0026lt;br\u0026gt;\u0026lt;br\u0026gt;'; htmlcontent += mdl; message.htmlcontent = htmlcontent; Airmail.compose(message); Airmail.activate(); }  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/reading-list/",
 	"title": "Reading List",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": " Reading List  Ben Alman » Immediately-Invoked Function Expression (IIFE)\n This section demos loading different config depending on NODE_ENV.\n protecting-your-keys-from-github\n Papyros - Arch Linux.\n reSRC · RESTful Web Services\n Hub\n Demystifying Regular Expressions- YouTube Foundation of Apps\n TimeLine JS\n 淺談https\n Leesei\u0026rsquo;s shell notes\n Command Line Basic\n dotfile\n angular-strap-scrollspy.js at master · mgcrea-angular-strap · GitHub\n javascript - Properly Handing Anchors in AngularStrap\u0026rsquo;s ScrollSpy - Stack Overflow\n ngScrollSpy by mg\n twitter bootstrap - How to implement a scrollspy in angular.js the right way? - Stack Overflow\n Using AngularJS to recreate Bootstrap\u0026rsquo;s ScrollSpy - Alexander Hill | mallex();\n Using ScrollSpy in AngularJS - acnenomor.com\n flowType\n SublimeLinter\n shitformakingwebsites\n eskimo\n electrolyte\n  Archive  What-programming-languages-should-a-modern-day-programmer-have-in-his-her-arsenal\n Remark JS\n  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/note/wordpress/",
 	"title": "Wordpress Notes",
 	"tags": ["wordpress"],
-	"description": ""
+	"description": "",
+	"content": " theme Child Themes « WordPress Codex\nmigrate Moving WordPress « WordPress Codex\n"
 },
+
+
+
 {
-	"uri": "https://cyrusn.github.io/post/useful-command-line-tools/",
+	"uri": "https://cyrusn.github.io/note/useful-command-line-tools/",
 	"title": "useful command line tools",
-	"tags": ["commandline", "terminal", "zsh"],
-	"description": ""
+	"tags": ["commandline", "terminal", "httpie", "jq", "zsh", "redirect", "xargs", "wild card", "pt"],
+	"description": "",
+	"content": " Basic Redirect operators # pipe echo \u0026quot;hello world\u0026quot; | sed 's/ /_/' # redirect the standard output result to file (replace) echo \u0026quot;hello world\u0026quot; \u0026gt; test.txt # redirect the standard output result to file (append) echo \u0026quot;hello world\u0026quot; \u0026gt;\u0026gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed 's/ /_/g' \u0026lt; test.txt \u0026gt; test_1.txt # line input cat \u0026lt;\u0026lt; end heredoc\u0026gt; hello heredoc\u0026gt; world heredoc\u0026gt; end  Useful Commands Cheatsheet  d to show directory history\n type cd -number or directly type the number to go to directory\n  !:n-m get the attribute from n to m of last command\n !! to get the last command\n !* to get the argz of last command\n zsh tip\n  Links zsh - Table of Contents\ncopydir function copydir { pwd | tr -d \u0026quot;\\r\\n\u0026quot; | pbcopy }   copydir to copy current directory to clipboard\n  qlmanage # Quick-look a file from the command line alias ql='qlmanage -p'  airport sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/sbin/airport  Scan your local wireless environment from the command line\npgrep and pkill Find or signal a program or process by name\nshutdown Restart the Mac\n$ shutdown -r now  textutil Convert between various text file formats\nXargs Granted, I often xargs at CLI to do the looping (KYLee):\n# simple use case echo \u0026quot;U R L\u0026quot; | xargs -n1 echo # -I may be needed for more complex use case (`mv @ @.bak`) # however -I implies -L (takes input as line) # so split before call echo \u0026quot;U R L\u0026quot; | sed 's/ /\\n/g' | xargs -I@ echo @ # or do with temp file echo \u0026quot;U\\nR\\nL\u0026quot; \u0026gt; file cat file | xargs -I@ echo @  Find files and delete them can use * as wild card $ find . -name \u0026quot;FILE-TO-FIND\u0026quot; -exec rm -rf {} \\;  Powerful tools ImageMagick (convert) ImageMagick\n Use ImageMagick to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.\n convert image.jpg image.png  # It is sometimes convenient to resize an image as they are read. Suppose you have hundreds of large JPEG images you want to convert to a sequence of PNG thumbails: convert '*.jpg' -resize 120x120 thumbnail%03d.png # rename file batchly $ rename 's/\\.html$/\\.php/' *.html  ffmpeg ffmpeg A complete, cross-platform solution to record, convert and stream audio and video.\n# -i mean input_file $ ffmpeg -i input.mp4 output.avi  http-server  http-server is a simple, zero-configuration command-line http server. It is powerful enough for production usage, but it\u0026rsquo;s simple and hackable enough to be used for testing, local development, and learning.\n youtube-dl  youtube-dl is a small command-line program to download videos from YouTube.com and a few more sites.\n  Platinum Searcher  A code search tool similar to ack and the_silver_searcher(ag). It supports multi platforms and multi encodings.\n  $ pt  Pandoc  examples\n a universal document converter\n  osx metadata mac OS X mdfind, mdutil, mdls, mdimport. file metadata utilities\nHTTPie – command line HTTP client # install brew install httpie  jq  http -b url | jq .name\n  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/hardware-architecture/",
 	"title": "Hardware Architecture",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": " Basic  Hardware Basics - YouTube\n  what is legacy FGA: \u0026ldquo;legacy\u0026rdquo; is not a pejorative. Do not use it as such.\nBIOS POST -\u0026gt; BIOS -\u0026gt; MBR of boot partition -\u0026gt; Bootloader -\u0026gt; Kernel -\u0026gt; init/systemd -\u0026gt; shell/display manager -\u0026gt; startx/xinit\nUEFI Unified Extensible Firmware Interface - ArchWiki\n"
 },
-{
-	"uri": "https://cyrusn.github.io/note/hexo/",
-	"title": "Hexo Notes",
-	"tags": ["hexo"],
-	"description": ""
-},
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/how-to-use-googlescript/",
 	"title": "How to use GoogleScript",
 	"tags": ["google script"],
-	"description": ""
+	"description": "",
+	"content": " Useful Examples Send email from spreadsheet data function sendMailByRowNo(rowNo){ // rowString e.g. 1:1 var rowString = Utilities.formatString(\u0026quot;%s:%s\u0026quot;, rowNo, rowNo) var values = spreadsheet.getRange(rowString).getValues()[0] sendMailByValues(values) } function convertValuesToObject(values) { var obj = {}; obj.timestamp = values[0] obj.email = values[1] obj.title: values[2] return obj } function sendMailByValues(values) { var obj = convertValuesToObject(values) Logger.log(obj) var htmlBody = setEmailBody(obj) var mailAppObject = { to: obj.email, subject: obj.title, htmlBody: htmlBody } // an example to attach a pdf file in google drive // var attachements = DriveApp.getFileById(''); // if (attachements) { // mailAppObject.attachments = [file.getAs(MimeType.PDF)] // } MailApp.sendEmail(mailAppObject); } function setEmailBody(obj) { var htmlBody = Utilities.formatString(\u0026quot;\u0026lt;h1\u0026gt;%s\u0026lt;/h1\u0026gt;\u0026quot;, obj.title) return htmlBody }  Set Trigger on form submit // initializeTrigger set the trigger, will run `sendMailOnFormSubmit` function on form submit function initializeTrigger() { var SendFormScript = ScriptApp .newTrigger(\u0026quot;sendMailOnFormSubmit\u0026quot;) .forSpreadsheet(spreadsheetID); var triggers = ScriptApp.getProjectTriggers(); // Delete all previous triggers. for (var i in triggers) { ScriptApp.deleteTrigger(triggers[i]); } SendFormScript .onFormSubmit() .create(); }  Small Functions is good function createQuestion (obj) { var type = obj.type; var title: obj.title; var lists = obj.lists; var isRequired = obj.isRequired || false; var desc = obj.desc || false; switch (type) { case 'text': return createTextQuestion(title, isRequired, desc) break; case 'list': return createListQuestion(title, lists, isRequired, desc); break; case 'paragraph': return createParagraphTextQuestion(title, isRequired, desc) break; case 'header': return createSessionHeader(title, desc); break; case 'pagebreak': return createPageBreak(title, desc) break; } } function createListQuestion(title, lists, isRequired, desc) { var choices = []; lists.forEach(function(item) { choices.push(item); }) var listQuestion = form.addListItem(); listQuestion.setRequired(isRequired) .setTitle(title) .setChoiceValues(choices) if (desc) { listQuestion.setHelpText(desc); } return listQuestion; } function createTextQuestion(title, isRequired, desc) { var textQuestion = form.addTextItem() textQuestion.setTitle(title) .setRequired(isRequired) if (desc) { textQuestion.setHelpText(desc); } return textQuestion; } function createParagraphTextQuestion(title, isRequired, desc) { var textQuestion = form.addParagraphTextItem(); textQuestion.setTitle(title) .setRequired(isRequired) if (desc) { textQuestion.setHelpText(desc); } return textQuestion; } function createPageBreak(title, helpText) { helpText = helpText || '' return form .addPageBreakItem() .setTitle(title) .setHelpText(helpText); } function createSessionHeader(title, desc) { var header = form .addSectionHeaderItem() .setTitle(title) if (desc) { form.setHelpText(desc); } return header }  Some useful function // return a formatted string Utilities.formatString(template, ...args) // return a formatted date string Utilities.formatDate(new Date(), \u0026quot;GMT+8:00\u0026quot;, \u0026quot;yyyy-MM-dd\u0026quot;)  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/hashbang/",
 	"title": "Hashbang",
 	"tags": ["hashbang"],
-	"description": ""
+	"description": "",
+	"content": " Hashbang line NodeJS #! /usr/local/bin/node  JS osascript #! /usr/bin/osascript -l javascript  zsh or bash #! /usr/bin/zsh #! /usr/bin/bash  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/draw-more-work-less/",
 	"title": "Draw More Work Less",
 	"tags": ["plantuml", "uml"],
-	"description": ""
+	"description": "",
+	"content": " Some Links UML | leesei\u0026rsquo;s notebook Draw More, Work Less | [self employed] Draw More, Work Less PlantUML Mermaid\nfrom leesei Unified Modeling Language (UML) Business Process Model and Notation (BPMN) is very similar to activity diagram. YANG Central\nAllen Holub\u0026rsquo;s UML Quick Reference\nText based tools I used to use the GUI tool Dia. But it was very buggy and no longer updated. I then went on to look for alternatives.\nI am frustrated with the UI diagram apps:\n layout of components takes time\n it is difficult to modify the diagrams in UI (especially for batch operations, e.g. rename, grouping)\n application lock-in becaused of the saved file format\n  So I focused on tools that provides a DSL for drawing UML from plain text. Candidates are (ranked according to the criteria below):\n   Tool Language Diagrams Remark     PlantUML Java Activity, State, Sequence, Component, Class, Object, Use Case, DITAA, JCCKit, Sudoku, XEarth live, Language Reference   blockdiag Python Block, Activity, Sequence, Network, Rack, Packet live   mermaid JavaScript Flowchart (Activity), Sequence, Gantt live   js-sequence-diagrams JavaScript Sequence live   UMLGraph Java Sequence, Class    ckwnc ? Sequence live only, C-like syntax   Graphviz C Digraph supports dot, layout/rendering layer for PlantUML and UMLGraph    I ended up choosing PlantUML because:\n the syntax is more familiar and flexible\n active development\n generates beautiful diagrams\n styleable\n supports more diagram types\n easy to setup\n binings to more projects indicates widespread usage\n  BTW, blockdiag would be the first runner up. It also features several unique diagram types.\nGaaS (graph as a service) Your Graphviz, UMLGraph or PlantUML for your README\nPlantUML\u0026rsquo;s jQuery and Javascript async and sync integration.\nGUI Tools Gaphor UML Modelling (Python)\nUMLet - Free UML Tool for Fast UML Diagrams\nArgoUML\nViolet UML Editor : easy to use, completely free\nLucidchart Diagrams - Desktop - Chrome Web Store\nGliffy Diagrams - Chrome Web Store\nSketchboard.io - Chrome Web Store\n"
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/tools-on-programming/",
 	"title": "Tools on Programming",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": "Can I use\u0026hellip; Support tables for HTML5, CSS3, etc\nPersistJS is a JavaScript client-side persistent storage library jeremydurham/persist-js\nslidedown/slidedown\n"
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/note/react/",
-	"title": "ReactJS Notes",
-	"tags": ["react"],
-	"description": ""
+	"title": "React Notes",
+	"tags": ["react", "redux"],
+	"description": "",
+	"content": " API notes and example  Top-Level API\n Component API\n Component Specs and ifecycle\n Tags and Attributes\n Event System\n  Ref Links Concept  React | A JavaScript library for building user interfaces\n Reactive MVC and the Virtual DOM \u0026ndash; Futurice\n ReactJS For Stupid People\n Component Interop With React And Custom Elements\n Josh Haberman: React Demystified\n Intro to the React Framework | Nettuts+\n Integrating React and Flux with Angular\n  Tutorial  Learning React.js- Getting Started and Concepts ♥ Scotch\n Build A Real-Time Twitter Stream with Node and React.js\n Getting To Know Flux, the React.js Architecture\n Creating A Simple Shopping Cart with React.js and Flux\n enaqx-awesome-react · GitHub\n React 入门教程\n Learn React\n Deconstructing ReactJS\u0026rsquo;s Flux\n  Example  react-rocket-boilerplate\n James Long\n kenwheeler-mcfly · GitHub\n ReactJS Examples, Demos, Code\n Faster AngularJS Rendering (AngularJS and ReactJS) | thierry.nicola\n jhudson8-react-chartjs · GitHub\n React Primer\n react-router auth\n  Tools  Reflux\n Reactify\n Complementary Tools · facebook-react Wiki · GitHub\n rackt-react-router · GitHub\n mtscout6-react-router-bootstrap · GitHub\n React Bootstrap\n react-router-component :: viewdocs.io\n react-component · GitHub\n React Components\n Baobab\n tuxedojs\n 5 React.js + Flux tools\n Babel\n  from leesei  React: CSS in JS // Speaker Deck\n  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/basic-cs-knowledge/",
 	"title": "Basic CS Knowledge",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": " 打底班  Programming Languages - YouTube\n Hardware Basics - YouTube\n Operating System Basics - YouTube\n  Free Courses  Coursera - Free Online Courses From Top Universities\n  JavaScript  JavaScript Not Working? Here are 10 Common JavaScript Problems | Toptal\n Learn All The Nodes\n Node Tuts // leesei: 我兩年前都係睇 Pedro，佢最近拍過晒\n JSConf - YouTube // leesei: 好很多，太舊唔洗睇\n  property, protoypal inheritance  JavaScript: protop\n Object properties in JavaScript\n Properties in JavaScript: definition versus assignment\n JavaScript terminology: the two prototypes\n JavaScript properties: inheritance and enumerability\n JavaScript inheritance by example\n JavaScript inheritance: beyond the basics (video)\n Property assignment and the prototype chain\n A closer look at _.extend and copying properties\n Learning Javascript with Object Graphs (Part I) - How To Node - NodeJS\n Learning Javascript with Object Graphs (Part II) - How To Node - NodeJS\n Learning Javascript with Object Graphs (Part III) - How To Node - NodeJS\n Prototypal Inheritance - How To Node - NodeJS\n Object Playground: The Definitive Guide to Object-Oriented JavaScript\n Inheritance and the prototype chain - JavaScript | MDN\n Prototypal Inheritance\n Learning JavaScript Design Patterns\n John Resig - Simple JavaScript Inheritance\n OOP in JS, Part 1 : Public/Private Variables and Methods\n OOP in JS, Part 2 : Inheritance\n Metaduck duck](http://metaduck.com/05-dump-this.html)\n  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/hapijs/",
 	"title": "HapiJS",
 	"tags": ["hapijs"],
-	"description": ""
+	"description": "",
+	"content": " HapiJS  hapi.js\n Tutorials\n Example: Hapi Mongoose Angular\n  Plugin  Plugin\n hapi-auth-basic\n hapi-session-mongo\n hapi-auth-cookie\n Best Practice Project Structure · Issue #2479 · hapijs/hapi\n  Reference  hapi-playground\n  My Notes  How to set CORS\n  // set CORS enable for all routes server.connection({ routes: { cors: { headers: [true], credentials: true } } });  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/note/git/",
 	"title": "Git Notes",
 	"tags": ["git", "github"],
-	"description": ""
+	"description": "",
+	"content": " start a new repo $ git init # add repo $ git remote add origin https://github.com/user/repo.git  change existing repo $ git remote rm origin $ git remote add origin https://github.com/user/repo.git  create a new branch and merge # on latest commit $ git checkout -b \u0026lt;branch_name\u0026gt; # create new branch # do you work $ git commit -a # edit the commit log as details as possible $ git checkout master $ git merge \u0026lt;branch_name\u0026gt; # double check everything, if ok then push. $ git push # else $ git checkout \u0026lt;branch_name\u0026gt;  amendment $ git commit -a --amend $ git checkout master $ git merge \u0026lt;branch_name\u0026gt; $ git push  gitignore $ npm install gitignore # for startup a node project $ gitignore node # or startup a go project $ gitignore go # use flag -types to list all available language $ gitignore -types  undo changes # a more 'save' way git revert \u0026lt;commit\u0026gt; # a dangerous (will loss all uncommitted changes) but cleaner way $ git reset --hard \u0026lt;commit\u0026gt; # removes untracked files # show files is going to be removed $ git clean -n # force clean $ git clean -f   The git clean command is often executed in conjunction with git reset \u0026ndash;hard. Remember that resetting only affects tracked files, so a separate command is required for cleaning up untracked ones. Combined, these two commands let you return the working directory to the exact state of a particular commit.\n git merge and rebase # git merge $ git merge master \u0026lt;branch_name\u0026gt;  difference between merge and rebase Merging is nice because it\u0026rsquo;s a non-destructive operation. The existing branches are not changed in any way. This avoids all of the potential pitfalls of rebasing\ngit rebase moves the entire feature branch to begin on the tip of the master branch, effectively incorporating all of the new commits in master.\ngit difftool add badges to github Badge Generator\nReferenche  Setting up a repository | Atlassian Git Tutorial\n shields.io\n  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/using-timeline-js-in-history-lesson/",
 	"title": "Using Timeline JS in History Lesson",
 	"tags": ["timelinejs"],
-	"description": ""
+	"description": "",
+	"content": " TimelineJS is easy to use for making a timeline with google spreadsheet\nExample  Youtube Video Tutorial  How it Work Use Google Spreadsheet Description\nUse HTML Code and Javascript TimelineJS\n"
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/note/swift/",
 	"title": "Swift Notes",
 	"tags": ["macos", "swift"],
-	"description": ""
+	"description": "",
+	"content": " Start Developing iOS / OSX Apps The Swift Programming Language (Swift 2.2): About Swift\nStart Developing iOS Apps (Swift): Jump Right In\nICON for iOS Development 23,500 Icons - Free Download | Icons8\nBasic Keywords Control Flow  where (A switch case can use a where clause to check for additional conditions.)\n  Computed Properties  lazy\n get\n set\n willSet\n didSet\n  ## Instance Methods\n self\n static\n mutating\n  Subscript  subscript\n  Inheritance  override\n super\n  Initialization  init\n convenience\n required\n  Deinitialization  deinit\n unowned\n  Type Casting  is\n as\n  Extension  extension\n  Protocols  protocol\n  Generic  Where Clauses\n  Access Control  public\n internal\n private\n  Summary of the Grammar Using Swift with Cocoa and Objective-C  attribute\n import\n @objc\n @IBOutlet\n @IBAction\n @IBDesignable\n strong\n weak\n  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/slidedownhtml-presentation/",
 	"title": "Slidedown HTML presentation",
 	"tags": ["slidedown"],
-	"description": ""
+	"description": "",
+	"content": " Slide Down example github\nRevealJS RevealJS Pandoc\n# pandoc convert md to RevealJS html pandoc -s --mathjax -i -t revealjs SLIDES.md -o example.html  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/project-and-todo/",
 	"title": "Project and TODO",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": " Install Script for My Mac  咁就寫做install script 放埋響個Terminal repo度啦\n 再加埋repo 條link 響個post\n 咁就同人地寫啲technical blog 一樣了 pull and 行install script 寫個script git pull oh-my-zsh同setup symlink\n  Google Analytics \u0026amp; Webmaster  reference post 個sitemap.xml 俾google 做index\n reference\n  Learn Basic Python Scripting counsellingSystem  nodejs\n golang\n  assembly code － MIPS  睇下去到低層個電腦做緊乜就可\n Instruction set\n MIPS assembly language\n  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/note/alumni-webpage/",
 	"title": "Alumni Webpage Notes",
 	"tags": ["angularjs", "bootstrap"],
-	"description": ""
+	"description": "",
+	"content": " Referece － Sticky Footer － responsive-utilities\nReminder  Don\u0026rsquo;t use bootstrap.js, use ui-bootstrap.js instead.\n jQuery is no longer useful\n ui-bootstrap.collapse\n beware the crash between collapse=\u0026quot;isCollapsed\u0026quot; and class=\u0026quot;visible-xs\u0026quot;\n use ui-bootstrap.dropdown\n   Leesei Suggestion  每次test isHide 唔好\n 響tagNames 加個`active field (boolean)\n 可以navbarTag onclick (jqlite 嘢) update active state ve field (boolean)\n 可以navbarTag onclick (jqlite 嘢) update active state\n  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/monokai-color-code/",
 	"title": "Monokai Color Code",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": "Cg Red - #DC322F  Razzmatazz - #F92672  Faded Red #FF7F7C  Free Speech Magenta - #E654CE  Lavender Indigo - #935FFA  Dull Lavender - #AE81FF  Conifer - #A6E22E  Snow Flurry - #E0FDCE  Picton Blue - #3BC0F0  Turquoise Blue - #66D9EF  Tree Poppy - #FD971F  Sun - #F6AA11  Paris Daisy - #FEE555  Straw - #E6DB74  Stonewall - #7C7865  Harp - #CFCFC2  Iron - #C8CECC  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/mongoose.js-and-mongodb/",
 	"title": "Mongoose.js and MongoDB",
 	"tags": ["database", "MongoDB", "Mongoose"],
-	"description": ""
+	"description": "",
+	"content": " Custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的\n 可以令 _id 有意思,\n e.g. studentSchema, use regno as custom _id\n e.g. teacherSchema, use teacherInitial as custom _id\n  use uuid if you need to have id before add new stuff\n e.g. attachmentSchema, need the id to rename the attachment before saving to database.\n   Schema.ObjectId  if no need to use custom _id then use Schema.ObjectId\n  [{type: string}] vs [String] In mongoose schema, latter is better as it treat it purely a string array, the former one will create _id for each element.\nautoIndex \u0026amp; versionKey // disable `autoindex` if you know you will not query this schema. SubjectSchema.set('autoIndex', false); // disable `versionKey` if you know you don't need to monitor the update. SubjectSchema.set('versionKey', false);  Use variable as a number var Teacher = 1; var Counselor = 2; var HeadCounselor = 3 var Classmaster = 4 var Headmaster = 5 var Previleged = 6 // ... role: { type: Int, min: Teacher, max: Previleged}  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/note/polymer/",
 	"title": "Polymer notes",
 	"tags": ["polymer"],
-	"description": ""
+	"description": "",
+	"content": "  Bower - Search\n Custom Elements - A Web Components Gallery for Modern Web Apps\n Google Web Components\n PolymerLabs · GitHub\n Web Components Catalog - Component Kitchen\n 寫響htm 叫declarative style, 用C/javascript 嗰啲叫imperative style\n declarative 易睇易明，但唔應該放logic\n angular 個template system 都有少少logic的 ng-if, ng-style, ng-show 都係做switching\n 放個route definition 我個人接受唔到\n 不過如果個route table 係獨立一個html define 我又okay 喎，咁佢就同一個json 等效\n 我應該係接受唔到route definition 同view element inline\n  Copy By Value Vs By reference  | By value | By reference  \u0026mdash;\u0026mdash;- | \u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;- | \u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;-\nCopy | The value is actually copied; there are two distinct, independent copies. | Only a reference to the value is copied. If the value is modified through the new reference, that change is also visible through the original reference.\nPass | A distinct copy of the value is passed to the function; changes to it have no effect outside the function. | A reference to the value is passed to the function. If the function modifies the value through the passed reference, the modification is visible outside the function.\nCompare | Two distinct values are compared (often byte by byte) to see if they are the same value. | Two references are compared to see if they refer to the same value. Two references to distinct values are not equal, even if the two values consist of the same bytes.\n"
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/learning-progress/",
 	"title": "Learning Progress",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": " Computer Science Knowledge  big O\n Codecademy\n  Javascript  RPS exercise\n jsbooks\n Effective JavaScript 68 Specific Ways to Harness the Power of JavaScript\n Learning about iife, closure, lazy evaluation,\n iife reference\n  The Art of readable Coding\n Eloquent Javascript\n  phantom.js for automate login the webpage\n leesei CTF example\n casperjs\n phantomjs\n  AngularJS  Understanding AngularJS – Simple Example\n AngularJS Fundamentals In 60-ish Minutes\n A Better Way to Learn AngularJS\n  Node.JS  Node: Up and Running\n Finish ch1.\n Finish ch2.\n Reading Ch3.\n  Node.js: Step by Step\n  CS50 for general computing knowledge\nTerminal  how to add colors to Mac Terminal\n dircolors-solarized\n the command line is your best friend\n Terminal 101: Using MacPorts and Homebrew\n bashrc, bash aliases, profile and other files\n  Markdown  Markdown語法說明\n pandoc\n  AppleScript  AppleScript Automantion\n  Other resource  rfc2616 about HTTP/1.1\n  "
 },
-{
-	"uri": "https://cyrusn.github.io/post/gulp/",
-	"title": "Gulp",
-	"tags": ["gulp", "javascript"],
-	"description": ""
-},
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/url-shortener-and-qr-code-generator/",
 	"title": "URL shortener and QR code Generator",
 	"tags": ["google", "shortener"],
-	"description": ""
+	"description": "",
+	"content": " Installation npm install -g goo.gl\nGoogle API OAuth for shortening a batch of links, create project for URL Shortener API. you will get 1,000,000 requests/day for FREE QR Code to a link  reference\n https://chart.googleapis.com/chart?chs=200x200\u0026amp;cht=qr\u0026amp;chl= + the link you need\n  Google Form Prefill https://docs.google.com/forms/d/Form_ID/viewform?entry.Q1_ID=Q1_ANS\u0026amp;entry.Q2_ID=Q2_ANS... 2_ID=Q2_ANS\u0026hellip;2_ID=Q2_ANS...\\ ID=Q2_ANS\u0026hellip;ID=Q2_ANS... `\n"
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/note/golang/",
 	"title": "Golang Notes",
 	"tags": ["golang"],
-	"description": ""
+	"description": "",
+	"content": " Feautre  Embedding\n  Understanding Goroutine  Is golang goroutine a coroutine?\n Coroutine vs Continuation vs Generator\n Comparison with generators\n  MongoDB  mgo\n Painless Data Storage with MongoDB and Go\n Connecting to MongoDB with mgo and golang\n  Router  mux - Gorilla, the golang web toolkit\n  # Middleware\n justinas/alice: Painless middleware chaining for Go\n  SQL Database  Go database/sql tutorial\n  Authentication  dgrijalva/jwt-go: Golang implementation of JSON Web Tokens (JWT)\n Golang Authentication Using JSON Web Tokens\n  Useful Package  PuerkitoBio/goquery: A little like that j-thing, only in Go.\n bcrypt - GoDoc\n  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/note/gitbook/",
 	"title": "Gitbook Notes",
 	"tags": ["gitbook"],
-	"description": ""
+	"description": "",
+	"content": " Gitbook\n Modern book format and toolchain using Git and Markdown\n  "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/page/about/",
 	"title": "About me",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": "CyrusN is a math teacher in Hong Kong, eager to learn more in programming.\n A teacher is two jobs. Fill young minds with knowledge, yes. But more important, give those minds a compass so that that knowledge doesn\u0026rsquo;t go to waste.\nFrom the movie: Mr Holland\u0026rsquo;s Opus\n "
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/alfred/",
 	"title": "Alfred",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/angularjs/",
 	"title": "Angularjs",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/apache/",
 	"title": "Apache",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/app/",
 	"title": "App",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/arch/",
 	"title": "Arch",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/authentication/",
 	"title": "Authentication",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/bootstrap/",
 	"title": "Bootstrap",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/categories/",
 	"title": "Categories",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/chrome/",
 	"title": "Chrome",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/commandline/",
 	"title": "Commandline",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/convert/",
 	"title": "Convert",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/",
 	"title": "CyrusN",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/database/",
 	"title": "Database",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/digitalocean/",
 	"title": "Digitalocean",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/do/",
 	"title": "Do",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/docker/",
 	"title": "Docker",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/editor/",
 	"title": "Editor",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/gif/",
 	"title": "Gif",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/git/",
 	"title": "Git",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/gitbook/",
 	"title": "Gitbook",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/github/",
 	"title": "Github",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/golang/",
 	"title": "Golang",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/google/",
 	"title": "Google",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/google-script/",
 	"title": "Google Script",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
-{
-	"uri": "https://cyrusn.github.io/tags/gulp/",
-	"title": "Gulp",
-	"tags": [],
-	"description": ""
-},
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/hapijs/",
 	"title": "Hapijs",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/hashbang/",
 	"title": "Hashbang",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
-	"uri": "https://cyrusn.github.io/tags/hexo/",
-	"title": "Hexo",
+	"uri": "https://cyrusn.github.io/tags/httpie/",
+	"title": "Httpie",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/https/",
 	"title": "Https",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/imagemagick/",
 	"title": "Imagemagick",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/javascript/",
 	"title": "Javascript",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/jq/",
+	"title": "Jq",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/jwt/",
 	"title": "Jwt",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/leveldb/",
 	"title": "Leveldb",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/linux/",
 	"title": "Linux",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/macos/",
 	"title": "Macos",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/mongodb/",
 	"title": "Mongodb",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/mongoose/",
 	"title": "Mongoose",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/mysql/",
 	"title": "Mysql",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/note-taking/",
 	"title": "Note Taking",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/note/",
 	"title": "Notes",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/osascript/",
 	"title": "Osascript",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/page/",
 	"title": "Pages",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/plantuml/",
 	"title": "Plantuml",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/polymer/",
 	"title": "Polymer",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/post/",
 	"title": "Posts",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/productivity/",
 	"title": "Productivity",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/pt/",
+	"title": "Pt",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/react/",
 	"title": "React",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/redirect/",
+	"title": "Redirect",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/redux/",
 	"title": "Redux",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/scp/",
+	"title": "Scp",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/security/",
 	"title": "Security",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/setting/",
 	"title": "Setting",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/shortener/",
 	"title": "Shortener",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/slidedown/",
 	"title": "Slidedown",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/sql/",
 	"title": "Sql",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/ssl/",
 	"title": "Ssl",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/startup/",
 	"title": "Startup",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/swift/",
 	"title": "Swift",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/",
 	"title": "Tags",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/terminal/",
 	"title": "Terminal",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/timelinejs/",
 	"title": "Timelinejs",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/tls/",
 	"title": "Tls",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/tmux/",
 	"title": "Tmux",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/uml/",
 	"title": "Uml",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/vim/",
 	"title": "Vim",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/web-token/",
 	"title": "Web Token",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/wild-card/",
+	"title": "Wild Card",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/wordpress/",
 	"title": "Wordpress",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 },
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/xargs/",
+	"title": "Xargs",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
 {
 	"uri": "https://cyrusn.github.io/tags/zsh/",
 	"title": "Zsh",
 	"tags": [],
-	"description": ""
+	"description": "",
+	"content": ""
 }]

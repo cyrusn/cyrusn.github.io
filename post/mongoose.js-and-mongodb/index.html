@@ -8,14 +8,25 @@
   <title>Mongoose.js and MongoDB</title>
   <meta property="og:title" content="Mongoose.js and MongoDB" />
   <meta name="twitter:title" content="Mongoose.js and MongoDB" />
-  <meta name="description" content="Custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的 可以令 _id 有意思,
- e.g. studentSchema, use regno as custom _id e.g. teacherSchema, use teacherInitial as custom _id  use uuid if you need to have id before add new stuff
- e.g. attachmentSchema, need the id to rename the attachment before saving to database.   Schema.ObjectId  if no need to use custom _id then use Schema.">
-  <meta property="og:description" content="Custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的 可以令 _id 有意思,
- e.g. studentSchema, use regno as custom _id e.g. teacherSchema, use teacherInitial as custom _id  use uuid if you need to have id before add new stuff
- e.g. attachmentSchema, need the id to rename the attachment before saving to database.   Schema.ObjectId  if no need to use custom _id then use Schema.">
-  <meta name="twitter:description" content="Custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的 可以令 _id 有意思,
- e.g. studentSchema, use regno as custom _id e.g. teacherSchema, use teacherInitial as custom _id  use uuid …">
+  <meta name="description" content="Custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的
+ 可以令 _id 有意思,
+ e.g. studentSchema, use regno as custom _id
+ e.g. teacherSchema, use teacherInitial as custom _id
+  use uuid if you need to have id before add new stuff
+ e.g. attachmentSchema, need the id to rename the attachment before saving to database.
+   Schema.ObjectId  if no need to use custom _id then use Schema.">
+  <meta property="og:description" content="Custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的
+ 可以令 _id 有意思,
+ e.g. studentSchema, use regno as custom _id
+ e.g. teacherSchema, use teacherInitial as custom _id
+  use uuid if you need to have id before add new stuff
+ e.g. attachmentSchema, need the id to rename the attachment before saving to database.
+   Schema.ObjectId  if no need to use custom _id then use Schema.">
+  <meta name="twitter:description" content="Custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的
+ 可以令 _id 有意思,
+ e.g. studentSchema, use regno as custom _id
+ e.g. teacherSchema, use teacherInitial as custom _id
+  use …">
   <meta name="author" content="CyrusN"/>
   <link href='https://cyrusn.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://cyrusn.github.io/img/avatar.png" />
@@ -37,7 +48,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
   <link rel="stylesheet" href="https://cyrusn.github.io/css/pygment_highlights.css" />
-  <link rel="stylesheet" href="https://cyrusn.github.io/css/highlight.min.css" />
+  
+  <link rel="stylesheet" href="https://cyrusn.github.io/css/atom-one-dark.css" />
+  <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
 
 </head>
 
@@ -203,19 +216,21 @@
 <h1 id="custom-id">Custom <code>_id</code></h1>
 
 <ul>
-<li>你schema 有 <code>_id</code> mongo 就唔同你gen, 亦唔可以用 <code>Schema.ObjectId</code> 做ref, 會認唔到type 的</li>
+<li>你schema 有 <code>_id</code> mongo 就唔同你gen, 亦唔可以用 <code>Schema.ObjectId</code> 做ref, 會認唔到type 的<br /></li>
 
 <li><p>可以令 <code>_id</code> 有意思,</p>
 
 <ul>
-<li>e.g. studentSchema, use <code>regno</code> as custom <code>_id</code></li>
-<li>e.g. teacherSchema, use <code>teacherInitial</code> as custom <code>_id</code></li>
+<li>e.g. studentSchema, use <code>regno</code> as custom <code>_id</code><br /></li>
+<li>e.g. teacherSchema, use <code>teacherInitial</code> as custom <code>_id</code><br />
+<br /></li>
 </ul></li>
 
 <li><p>use <code>uuid</code> if you need to have <code>id</code> before <em>add new stuff</em></p>
 
 <ul>
-<li>e.g. attachmentSchema, need the <code>id</code> to rename the attachment before saving to database.</li>
+<li>e.g. attachmentSchema, need the <code>id</code> to rename the attachment before saving to database.<br />
+<br /></li>
 </ul></li>
 </ul>
 
@@ -224,7 +239,8 @@
 <h1 id="schema-objectid">Schema.ObjectId</h1>
 
 <ul>
-<li>if no need to use custom <code>_id</code> then use Schema.ObjectId</li>
+<li>if no need to use custom <code>_id</code> then use Schema.ObjectId<br />
+<br /></li>
 </ul>
 
 <h1 id="type-string-vs-string"><code>[{type: string}]</code> vs <code>[String]</code></h1>
@@ -293,6 +309,8 @@ role: { type: Int, min: Teacher, max: Previleged}
 
 
 <script src="/js/keypress.js"></script>
+<script src="/js/perfect-scrollbar.min.js"></script>
+<script src="/js/perfect-scrollbar.jquery.min.js"></script>
 
   </body>
 </html>
