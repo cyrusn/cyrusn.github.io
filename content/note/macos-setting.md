@@ -22,18 +22,16 @@ tags:
 - symlink for setting zsh
 
 ```sh
-    ## for installation of zsh
-    ln -s Dropbox/MacSetting/Terminal/cyrusn ./.cyrusn
-    ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zshrc ~/
-    ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom ~/
+## for installation of zsh
+ln -s Dropbox/MacSetting/Terminal/cyrusn ./.cyrusn
+ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zshrc ~/
+ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom ~/
 
-    ## for installation of coreutil/.dir_colors
-    ln -s ~/Dropbox/MacSetting/Terminal/coreutil/.dir_colors ~/
+## for installation of coreutil/.dir_colors
+ln -s ~/Dropbox/MacSetting/Terminal/coreutil/.dir_colors ~/
 ```
 
-<!-- more -->
-
- ### for further customisation
+### for further customisation
 
 - add `export` at `~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom/export.zsh`
 - add `alias` at `~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom/alias.zsh`
@@ -77,7 +75,7 @@ export PATH=$HOME/.npm-packages/bin:$PATH
 
 ```sh
 cd ~/
-ln -s ~/Dropbox/MacSetting/Terminal/vim ~/.vim`
+ln -s ~/Dropbox/MacSetting/Terminal/vim ~/.vim
 ln -s ~/Dropbox/MacSetting/atom/ ~/.atom
 ln -s ~/Dropbox/.npm-packages/ ~/
 ```

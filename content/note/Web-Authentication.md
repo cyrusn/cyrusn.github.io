@@ -32,7 +32,6 @@ Server generates session token and send to client via cookie. The session token 
 
 [On Securing Web Session Ids | hueniverse](http://hueniverse.com/2015/07/08/on-securing-web-session-ids/) [expressjs/session: Simple session middleware for Express](https://github.com/expressjs/session)
 
---------------------------------------------------------------------------------
 
 ## Asymmetric Key
 

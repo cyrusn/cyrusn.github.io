@@ -5,6 +5,10 @@ tags:
   - golang
 ---
 
+# Feautre
+
+- [Embedding](https://golang.org/doc/effective_go.html#embedding)
+
 # Understanding Goroutine
 
 - [Is golang goroutine a coroutine?](http://stackoverflow.com/questions/18058164/is-/golang-goroutine-a-coroutine)

@@ -4,6 +4,8 @@ date: '2015-05-10 00:52:39'
 tags:
   - git
   - github
+  - slide
+
 ---
 
 # start a new repo
@@ -15,6 +17,7 @@ $ git init
 $ git remote add origin https://github.com/user/repo.git
 ```
 
+---
 # change existing repo
 
 ```sh

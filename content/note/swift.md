@@ -7,10 +7,11 @@ tags:
 ---
 
 # Start Developing iOS / OSX Apps
-
-[The Swift Programming Language (Swift 2.2): About Swift](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/) [Start Developing iOS Apps (Swift): Jump Right In](https://developer.apple.com/library/ios/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html#//apple_ref/doc/uid/TP40015214-CH2-SW1)
+[The Swift Programming Language (Swift 2.2): About Swift](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/)
+[Start Developing iOS Apps (Swift): Jump Right In](https://developer.apple.com/library/ios/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html#//apple_ref/doc/uid/TP40015214-CH2-SW1)
 
 # ICON for iOS Development
+
 
 [23,500 Icons - Free Download | Icons8](https://icons8.com/web-app/new-icons/all)
 

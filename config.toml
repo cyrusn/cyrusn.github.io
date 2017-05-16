@@ -8,8 +8,14 @@ pygmentCodeFences = true
 disqusShortname = "cyrusngithubio"
 #googleAnalytics = "XXX"
 
+[blackfriday]
+  # angledQuotes = true
+  # fractions = false
+  # plainIDAnchors = true
+  extensions = ["hardLineBreak"]
+
 [Params]
-  subtitle = "My Programming Notes"
+  subtitle = "My Notes"
   logo = "img/avatar.png"
   favicon = "favicon.ico"
   dateFormat = "2006-01-02"
@@ -17,6 +23,7 @@ disqusShortname = "cyrusngithubio"
   rss = false
   comments = true
   search = true
+  showHint = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
 #[[Params.bigimg]]
@@ -55,26 +62,32 @@ disqusShortname = "cyrusngithubio"
     weight = 1
 
 [[menu.main]]
-    name = "Posts"
+    name = "Post"
     identifier = "post"
     url = "/post/"
-    weight = 1
+    weight = 2
 
 [[menu.main]]
+    name = "Note"
     identifier = "note"
-    name = "Notes"
     url = "/note/"
-    weight = 2
+    weight = 3
+
+[[menu.main]]
+    name = "Slide"
+    identifier = "slide"
+    url = "/slide/"
+    weight = 4
 
 [[menu.main]]
     name = "Tags"
     url = "tags"
-    weight = 3
+    weight = 10
 
 [[menu.main]]
 name = "About"
 url = "/page/about/"
-weight = 5
+weight = 20
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]

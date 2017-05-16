@@ -4,7 +4,15 @@ date: '2015-05-24 22:36:53'
 tags:
   - commandline
   - terminal
+  - httpie
+  - jq
   - zsh
+  - redirect
+  - xargs
+  - wild card
+  - pt
+  - kill
+  - top
 ---
 
 # Basic
@@ -37,20 +45,14 @@ heredoc> end
 ## [Cheatsheet](http://floss.zoomquiet.io/data/20120129165222/index.html)
 
 - `d` to show directory history
-
   - type `cd -number` or directly type the `number` to go to directory
-
 - `!:n-m` get the attribute from n to m of last command
-
 - `!!` to get the last command
-
 - `!*` to get the argz of last command
-
 - [zsh tip](http://www.zzapper.co.uk/zshtips.html)
 
 ## Links
-
-[zsh - Table of Contents](http://www.cs.elte.hu/zsh-manual/zsh_toc.html)
+- [zsh - Table of Contents](http://www.cs.elte.hu/zsh-manual/zsh_toc.html)
 
 ## copydir
 
@@ -66,13 +68,13 @@ function copydir {
 
 ```sh
 # Quick-look a file from the command line
-alias ql='qlmanage -p'`
+alias ql='qlmanage -p'
 ```
 
 ## airport
 
 ```sh
-    sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/sbin/airport`
+    sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/sbin/airport
 ```
 
 Scan your local wireless environment from the command line
@@ -86,7 +88,7 @@ Find or signal a program or process by name
 Restart the Mac
 
 ```sh
-    shutdown -r now
+$ shutdown -r now
 ```
 
 ## textutil
@@ -96,7 +98,6 @@ Convert between various text file formats
 ## Xargs
 
 Granted, I often `xargs` at CLI to do the looping (KYLee):
-
 ```sh
 # simple use case
 echo "U R L" | xargs -n1 echo
@@ -114,9 +115,8 @@ cat file | xargs -I@ echo @
 ## Find files and delete them
 
 # can use * as wild card
-
-```
-find . -name “FILE-TO-FIND" -exec rm -rf {} \;
+``` sh
+$ find . -name "FILE-TO-FIND" -exec rm -rf {} \;
 ```
 
 # Powerful tools
@@ -135,7 +135,8 @@ convert image.jpg image.png
 # It is sometimes convenient to resize an image as they are read. Suppose you have hundreds of large JPEG images you want to convert to a sequence of PNG thumbails:
 convert '*.jpg' -resize 120x120 thumbnail%03d.png
 # rename file batchly
-`rename 's/\.html$/\.php/' *.html`
+
+$ rename 's/\.html$/\.php/' *.html
 ```
 
 ## ffmpeg
@@ -159,6 +160,10 @@ $ ffmpeg -i input.mp4 output.avi
 
 - A code search tool similar to ack and the_silver_searcher(ag). It supports multi platforms and multi encodings.
 
+```sh
+$ pt
+```
+
 ## [Pandoc](http://johnmacfarlane.net/pandoc/index.html)
 
 - [examples](http://johnmacfarlane.net/pandoc/demos.html)
@@ -178,3 +183,6 @@ brew install httpie
 ## [jq](https://stedolan.github.io/jq/)
 
 - `http -b url | jq .name`
+
+## top
+using `top` command to kill running process

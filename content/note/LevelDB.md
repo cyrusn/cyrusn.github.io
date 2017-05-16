@@ -8,5 +8,5 @@ tags:
 ---
 
 # Links
-
-[Main Page](https://github.com/google/leveldb) [YouTube Introduction](https://www.youtube.com/watch?v=sR7p_JbEip0)
+- [Main Page](https://github.com/google/leveldb)
+- [YouTube Introduction](https://www.youtube.com/watch?v=sR7p_JbEip0) bEip0)

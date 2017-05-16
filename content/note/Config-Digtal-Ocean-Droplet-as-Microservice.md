@@ -5,6 +5,7 @@ tags:
   - apache
   - SSL
   - TLS
+  - tmux
 ---
 
 # Objective
@@ -16,23 +17,17 @@ This page is a notes for setting apache server for my digital ocean droplet
 ## Apache2
 
 - in file `/etc/hosts`
-
   - change `127.0.0.1 localhost` to `127.0.1.1 localhost WordPress-CaLP-LPSS`
 
 - change Port
-
   - in file `/etc/apache2/port.conf`
-
     - add `ServerName localhost`
     - change the line `listen *:80` to `listen 127.0.0.1:4000`
     - disable other modules `<IfModule ssl_module>` and `<IfModule mod_gnutls.c>`
-
   - in file `/etc/apache2/site-enabled/000-default.conf`
-
     - change the line `<VirtualHost *:80>` to `<VirtualHost localhost:4000>`
 
 - restart apache2
-
   - run `sudo /etc/init.d/apache2 restart`
 
 ## Wordpress
