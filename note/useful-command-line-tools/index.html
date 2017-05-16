@@ -99,13 +99,19 @@
         
           
             <li>
-              <a title="Posts" href="/post/">Posts</a>
+              <a title="Post" href="/post/">Post</a>
             </li>
           
         
           
             <li>
-              <a title="Notes" href="/note/">Notes</a>
+              <a title="Note" href="/note/">Note</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Slide" href="/slide/">Slide</a>
             </li>
           
         
@@ -159,7 +165,8 @@
       
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          
+          <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
             <div class="post-heading">
               <h1>useful command line tools</h1>
                 
@@ -189,6 +196,10 @@
   
   #<a href="/tags/pt">pt</a>&nbsp;
   
+  #<a href="/tags/kill">kill</a>&nbsp;
+  
+  #<a href="/tags/top">top</a>&nbsp;
+  
 </span>
 
                 
@@ -203,7 +214,7 @@
     
 <div class="container">
   <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
 
 
       <article role="main" class="blog-post">
@@ -238,25 +249,24 @@ heredoc&gt; end
 <h2 id="cheatsheet-http-floss-zoomquiet-io-data-20120129165222-index-html"><a href="http://floss.zoomquiet.io/data/20120129165222/index.html">Cheatsheet</a></h2>
 
 <ul>
-<li><p><code>d</code> to show directory history</p>
+<li><code>d</code> to show directory history<br />
 
 <ul>
-<li>type <code>cd -number</code> or directly type the <code>number</code> to go to directory<br />
-<br /></li>
+<li>type <code>cd -number</code> or directly type the <code>number</code> to go to directory<br /></li>
 </ul></li>
-
-<li><p><code>!:n-m</code> get the attribute from n to m of last command</p></li>
-
-<li><p><code>!!</code> to get the last command</p></li>
-
-<li><p><code>!*</code> to get the argz of last command</p></li>
-
-<li><p><a href="http://www.zzapper.co.uk/zshtips.html">zsh tip</a></p></li>
+<li><code>!:n-m</code> get the attribute from n to m of last command<br /></li>
+<li><code>!!</code> to get the last command<br /></li>
+<li><code>!*</code> to get the argz of last command<br /></li>
+<li><a href="http://www.zzapper.co.uk/zshtips.html">zsh tip</a><br />
+<br /></li>
 </ul>
 
 <h2 id="links">Links</h2>
 
-<p><a href="http://www.cs.elte.hu/zsh-manual/zsh_toc.html">zsh - Table of Contents</a></p>
+<ul>
+<li><a href="http://www.cs.elte.hu/zsh-manual/zsh_toc.html">zsh - Table of Contents</a><br />
+<br /></li>
+</ul>
 
 <h2 id="copydir">copydir</h2>
 
@@ -394,8 +404,13 @@ brew install httpie
 <h2 id="jq-https-stedolan-github-io-jq"><a href="https://stedolan.github.io/jq/">jq</a></h2>
 
 <ul>
-<li><code>http -b url | jq .name</code><br /></li>
+<li><code>http -b url | jq .name</code><br />
+<br /></li>
 </ul>
+
+<h2 id="top">top</h2>
+
+<p>using <code>top</code> command to kill running process</p>
 
       </article>
 
@@ -437,7 +452,7 @@ brew install httpie
 
 
 
-<script src="/js/keypress.js"></script>
+<script src="/js/go-to-home.js"></script>
 <script src="/js/perfect-scrollbar.min.js"></script>
 <script src="/js/perfect-scrollbar.jquery.min.js"></script>
 

@@ -3,6 +3,66 @@
 
 
 {
+	"uri": "https://cyrusn.github.io/slide/pomodoro/",
+	"title": "提升生產力及專注力",
+	"tags": ["GTD", "Pomodoro", "tomato"],
+	"description": "",
+	"content": " 提升生產力及專注力 Getting Things Done \u0026amp; 蕃茄工作法 工作時間  平日每天約4小時\n 假日每天約6小時\n 合共：4hr x 5day + 6hr x 2day = 32 hrs\n 如何保持專注?\n  規劃  每科應用15分鐘回顧及整理當天所學\n 功課應盡早完成\n 每天用盡所有工作時間\n  流程 \nWhy?  何時做 \u0026gt; 何時交\n 計時能令人集中\n e.g. 考試、測驗\n   參考資料  Online Pomodoro Timer\n Pomodoro Technique\n Getting Things Done\n  keywords\npomodoro tomato timer technique getting things done\n"
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/note/taiwan-study/",
+	"title": "臺灣升學 Notes",
+	"tags": ["taiwan study", "career"],
+	"description": "",
+	"content": " Useful Links  學士班適用簡章2017\n Q\u0026amp;A\n 來台就學費用估算\n 入學暨來臺相關規定\n 赴臺升學小冊子(新版).pdf\n  資格 「僑生」指海外出生連續居留迄今，或最近連續居留海外六年以上，並取得僑居地永久或長期居留證件回國就學之華裔學生。但就讀大學醫學、牙醫及中醫學系者，其連續居留年限為八年以上。\n"
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/note/4+1/",
+	"title": "4C+1X 升學考慮",
+	"tags": ["1x", "2x", "jupas", "taiwan study", "dse"],
+	"description": "",
+	"content": " JUPAS 各大學入學要求  4C+2X (3322+33)\n HKU\n CUHK\n HKUST\n PolyU\n  4C+2X (3322+22)\n CityU\n  4C+1X (2018年要求：3322+3)\n HKBU\n  4C+1X (3322+2)\n LU\n EdUHK\n OUHK\n SSSDP\n   Reference  JUPAS Website\n  Accept M as X  CityU\n CUHK\n PolyU\n HKUST\n HKU (部分課程)\n  HD / AD  基本入學要求：22 + 222\n  Taiwan 個人申請  跟據校內成績、讀書計劃及師長推薦\n  聯合分發  中英數 ＋ 2科（包括通識），詳見下表。\n Reference\n 香港學生適用簡章(PDF)\n   Mainland  內地免試招生\n 按個別內地大學收生準則而定\n 一般普通類別收生要求為4C (3322)\n 部分大學會提高要求（頂尖大學），只考慮修讀4C+2X的學生\n  Reference\n 內地部分高校免試招生香港學生計劃指南2016-17\n   "
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/note/programming-principal/",
+	"title": "Programming Principal",
+	"tags": [],
+	"description": "",
+	"content": "  Separation of Concern\n DRY - Don’t repeat yourself\n Abstraction Principle\n KISS (Keep it simple, stupid!)\n Write Code for the Maintainer\n Principle of least astonishment\n YAGNI (you aren’t gonna need it)\n Do the simplest thing that could possibly work\n Open/Closed Principle\n Orthogonality\n Robustness Principle\n Hide Implementation Details\n Minimize Coupling\n Maximize Cohesion\n Principle of least astonishment\n Boy-Scout Rule\n Leave the campground cleaner than you found it\n  Law of Demeter\n Don’t Talk to stranger\n design patterns - According to Demeter\u0026rsquo;s law, is a class allowed to return one of its members? - Software Engineering Stack Exchange\n  Code Reuse is Good\n Embrace Change\n Don’t make me think\n Do One Thing and Do It Well (Unix Philosophy)\n Single Responsibility Principle\n Curly’s Law\n  Single Responsibility Principle\n Avoid Premature Optimization\n  reference  The Principles of Good Programming\n Programming Principles\n  "
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/note/medicine/",
+	"title": "Medicine",
+	"tags": [],
+	"description": "",
+	"content": "Relief of pain and inflammation beside Panadol\n- Celecoxib (痛博士 200mg)\n- mefenamic acid capsule 250mg (Ponstan GE)\n Mefenamic acid is used to treat painful conditions such as arthritis, pain associated with heavy menstrual bleeding, and pain after surgical operations.\n "
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/note/career-theory/",
+	"title": "Career Theory",
+	"tags": ["education", "career", "life planning", "donald super"],
+	"description": "",
+	"content": " LifeDesign.pdf\n career-theory-model-super.pdf\n     The Life Career Rainbow - Get a better work/life balance - Career Development from MindTools.com\n Holland’s Theory of Career Choice | Career Key\n The Big Five Career Theories\n The Serious Leisure Perspective (SLP) - Welcome\n  "
+},
+
+
+
+{
 	"uri": "https://cyrusn.github.io/note/tmux/",
 	"title": "tmux Notes",
 	"tags": ["tmux"],
@@ -23,7 +83,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/create-startup-script-in-linux/",
+	"uri": "https://cyrusn.github.io/note/create-startup-script-in-linux/",
 	"title": "Create Startup Script in Linux",
 	"tags": ["linux", "startup"],
 	"description": "",
@@ -43,7 +103,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/update-digital-ocean-kernel/",
+	"uri": "https://cyrusn.github.io/note/update-digital-ocean-kernel/",
 	"title": "Update Digital Ocean Kernel",
 	"tags": ["digitalocean"],
 	"description": "",
@@ -63,7 +123,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/https-and-jwt/",
+	"uri": "https://cyrusn.github.io/note/https-and-jwt/",
 	"title": "HTTPS and JWT",
 	"tags": ["https"],
 	"description": "",
@@ -73,7 +133,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/batch-download-youtube/",
+	"uri": "https://cyrusn.github.io/note/batch-download-youtube/",
 	"title": "Batch Download YouTube",
 	"tags": [],
 	"description": "",
@@ -83,7 +143,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/web-authentication/",
+	"uri": "https://cyrusn.github.io/note/web-authentication/",
 	"title": "Web Authentication",
 	"tags": ["authentication", "jwt", "security", "web-token"],
 	"description": "",
@@ -103,7 +163,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/docker/",
+	"uri": "https://cyrusn.github.io/note/docker/",
 	"title": "Docker",
 	"tags": ["docker"],
 	"description": "",
@@ -113,7 +173,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/nvalt-setting/",
+	"uri": "https://cyrusn.github.io/note/nvalt-setting/",
 	"title": "NVAlt Setting",
 	"tags": ["note-taking"],
 	"description": "",
@@ -133,7 +193,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/how-to-convert-pngs-to-gif/",
+	"uri": "https://cyrusn.github.io/note/how-to-convert-pngs-to-gif/",
 	"title": "How to convert images to gif",
 	"tags": ["imagemagick", "productivity", "gif", "convert"],
 	"description": "",
@@ -143,7 +203,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/open-ssl/",
+	"uri": "https://cyrusn.github.io/note/open-ssl/",
 	"title": "Open SSL",
 	"tags": [],
 	"description": "",
@@ -153,11 +213,11 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/ssl-tls/",
+	"uri": "https://cyrusn.github.io/note/ssl-tls/",
 	"title": "SSL TLS",
 	"tags": ["security", "SSL", "TLS"],
 	"description": "",
-	"content": " Transport Layer Security (TLS) and its predecessor, Secure Sockets Layer (SSL), are cryptographic protocols designed to provide communications security over a computer network.\nThe authentication relied on Certificate Authorities (CA) and a public key infrastructure using X.509 certificates. The server register with a CA and sign its public key with the key of CA for a fee. The client, after receiving the public key from server, verifies it with the CA.\nFile:Ssl handshake with two way authentication with certificates.png - Wikimedia Commons\nOpenSSL is a toolkit for the TLS and SSL.\n see Open SSL\n ImperialViolet - Overclocking SSL ImperialViolet - Public key pinning Survival Guide - TLS/SSL and SSL (X.509) Certificates (CA-signed and Self-Signed) Is TLS Fast Yet? BetterCrypto⋅org Rolling out Public Key Pinning with HPKP Reporting \u0026ndash; Google Web Updates The SSL/TLS Handshake: an Overview – SSL Information and FAQ SSL: it\u0026rsquo;s hard to do right | The Recompiler\nHow the NSA (may have) put a backdoor in RSA\u0026rsquo;s cryptography: A technical primer | Ars Technica Critics slam SSL authority for minting certificate for impersonating sites | Ars Technica\nHow to obtain and install an SSL/TLS certificate, for free | Ars Technica Web served, part 2: Securing things with SSL/TLS | Ars Technica\nHSTS HTTP Strict Transport Security - Wikiwand: always use HTTPS HSTS Preload List Submission\nSSL checkers Qualys SSL Labs SSL Certificate Checker - Diagnostic Tool | DigiCert.com\nPerfect Forward Secrecy (PFS) SSL Enabling Forward Secrecy | DigiCert.com\nIssues CA As it turns out, CA may not be trust-worthy after all. There are many instances of CA issuing fraudulent certificates (willingly or being hacked).\nHow the Comodo certificate fraud calls CA trust into question | Ars Technica\nGoogle warns of unauthorized TLS certificates trusted by almost all OSes [Updated] | Ars Technica Google Chrome will banish Chinese certificate authority for breach of trust | Ars Technica\nAnother fraudulent certificate raises the same old questions about certificate authorities | Ars Technica\nhttp://arstechnica.com/search/?ie=UTF-8\u0026amp;q=+Certificate+Authorities\nHeartbleed (2014) Heartbleed Bug Heartbleed – Andrew Kennedy Critical crypto bug exposes Yahoo Mail, other passwords Russian roulette-style | Ars Technica Coder in a World of Code: My Heart Bleeds for OpenSSL\nRenegotiation Gap (2009) Truth in SOA: Really Understanding the SSL/TLS Vulnerability (Part 1)\nLet\u0026rsquo;s Encrypt Let\u0026rsquo;s Encrypt How It Works Technology The CA\u0026rsquo;s Role in Fighting Phishing and Malware - Let\u0026rsquo;s Encrypt - Free SSL/TLS Certificates\nRate Limits for Let\u0026rsquo;s Encrypt - Documentation - Let\u0026rsquo;s Encrypt Community Support\nLet\u0026rsquo;s Encrypt Demo - YouTube Generate free SSL certificates with Docker and LetsEncrypt | Tit Petrič How To Secure Nginx with Let\u0026rsquo;s Encrypt on Ubuntu 16.04 | DigitalOcean Let\u0026rsquo;s Encrypt with HAProxy Let\u0026rsquo;s Encrypt on Raspberry Pi adventures in haproxy: tcp, tls, https, ssh, openvpn LetsEncrypt on Nginx How to configure Nginx with free Let\u0026rsquo;s Encrypt SSL certificate on Debian or Ubuntu Linux\nClients letsencrypt Certbot acmetool diafygi/acme-tiny: A tiny script to issue and renew TLS certs from Let\u0026rsquo;s Encrypt Neilpang/le: Simplest shell script for LetsEncrypt free Certificate client\nxenolf/lego: Let\u0026rsquo;s Encrypt client and ACME library written in Go Used in Caddy\nDaplie/node-letsencrypt: letsencrypt for node.js DylanPiercey/auto-sni: Free, automated HTTPS for NodeJS made easy.\nHeroku Announcing Heroku Free SSL Beta and Flexible Dyno Hours | Heroku Let\u0026rsquo;s Encrypt and Heroku [Solved] - Server - Let\u0026rsquo;s Encrypt Community Support Let\u0026rsquo;s Encrypt with a Rails app on Heroku // Collective Idea | Crafting web and mobile software based in Holland, Michigan Use Let\u0026rsquo;s Encrypt TLS certificate on Heroku \u0026ndash; Sikachu\u0026rsquo;s Blog \u0026ndash; Medium SSL Endpoint | Heroku Dev Center Set up CloudFlare\u0026rsquo;s free SSL on Heroku\nStandards RFC 2986 - PKCS #10: Certification Request Syntax Specification Version 1.7 RFC 3447 - Public-Key Cryptography Standards (PKCS) #1: RSA Cryptography Specifications Version 2.1 RFC 5958 - Asymmetric Key Packages RFC 6101 - The Secure Sockets Layer (SSL) Protocol Version 3.0 RFC 7525 - Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS) RFC 7292 - PKCS #12: Personal Information Exchange Syntax v1.1\n"
+	"content": " Transport Layer Security (TLS) and its predecessor, Secure Sockets Layer (SSL), are cryptographic protocols designed to provide communications security over a computer network.\nThe authentication relied on Certificate Authorities (CA) and a public key infrastructure using X.509 certificates. The server register with a CA and sign its public key with the key of CA for a fee. The client, after receiving the public key from server, verifies it with the CA.\nFile:Ssl handshake with two way authentication with certificates.png - Wikimedia Commons\nOpenSSL is a toolkit for the TLS and SSL.\n see Open SSL\n ImperialViolet - Overclocking SSL\nImperialViolet - Public key pinning\nSurvival Guide - TLS/SSL and SSL (X.509) Certificates (CA-signed and Self-Signed)\nIs TLS Fast Yet?\nBetterCrypto⋅org\nRolling out Public Key Pinning with HPKP Reporting \u0026ndash; Google Web Updates\nThe SSL/TLS Handshake: an Overview – SSL Information and FAQ\nSSL: it\u0026rsquo;s hard to do right | The Recompiler\nHow the NSA (may have) put a backdoor in RSA\u0026rsquo;s cryptography: A technical primer | Ars Technica\nCritics slam SSL authority for minting certificate for impersonating sites | Ars Technica\nHow to obtain and install an SSL/TLS certificate, for free | Ars Technica\nWeb served, part 2: Securing things with SSL/TLS | Ars Technica\nHSTS HTTP Strict Transport Security - Wikiwand: always use HTTPS\nHSTS Preload List Submission\nSSL checkers Qualys SSL Labs\nSSL Certificate Checker - Diagnostic Tool | DigiCert.com\nPerfect Forward Secrecy (PFS) SSL Enabling Forward Secrecy | DigiCert.com\nIssues CA As it turns out, CA may not be trust-worthy after all. There are many instances of CA issuing fraudulent certificates (willingly or being hacked).\nHow the Comodo certificate fraud calls CA trust into question | Ars Technica\nGoogle warns of unauthorized TLS certificates trusted by almost all OSes\n[Updated] | Ars Technica Google Chrome will banish Chinese certificate authority for breach of trust | Ars Technica\nAnother fraudulent certificate raises the same old questions about certificate authorities | Ars Technica\nhttp://arstechnica.com/search/?ie=UTF-8\u0026amp;q=+Certificate+Authorities\nHeartbleed (2014) Heartbleed Bug\nHeartbleed – Andrew Kennedy\nCritical crypto bug exposes Yahoo Mail, other passwords Russian roulette-style | Ars Technica\nCoder in a World of Code: My Heart Bleeds for OpenSSL\nRenegotiation Gap (2009) Truth in SOA: Really Understanding the SSL/TLS Vulnerability (Part 1)\nLet\u0026rsquo;s Encrypt Let\u0026rsquo;s Encrypt\nHow It Works\nTechnology\nThe CA\u0026rsquo;s Role in Fighting Phishing and Malware - Let\u0026rsquo;s Encrypt - Free SSL/TLS Certificates\nRate Limits for Let\u0026rsquo;s Encrypt - Documentation - Let\u0026rsquo;s Encrypt Community Support\nLet\u0026rsquo;s Encrypt Demo - YouTube\nGenerate free SSL certificates with Docker and LetsEncrypt | Tit Petrič\nHow To Secure Nginx with Let\u0026rsquo;s Encrypt on Ubuntu 16.04 | DigitalOcean\nLet\u0026rsquo;s Encrypt with HAProxy\nLet\u0026rsquo;s Encrypt on Raspberry Pi\nadventures in haproxy: tcp, tls, https, ssh, openvpn\nLetsEncrypt on Nginx\nHow to configure Nginx with free Let\u0026rsquo;s Encrypt SSL certificate on Debian or Ubuntu Linux\nClients letsencrypt\nCertbot\nacmetool\ndiafygi/acme-tiny: A tiny script to issue and renew TLS certs from Let\u0026rsquo;s Encrypt\nNeilpang/le: Simplest shell script for LetsEncrypt free Certificate client\nxenolf/lego: Let\u0026rsquo;s Encrypt client and ACME library written in Go Used in Caddy\nDaplie/node-letsencrypt: letsencrypt for node.js\nDylanPiercey/auto-sni: Free, automated HTTPS for NodeJS made easy.\nHeroku Announcing Heroku Free SSL Beta and Flexible Dyno Hours | Heroku\nLet\u0026rsquo;s Encrypt and Heroku [Solved] - Server - Let\u0026rsquo;s Encrypt Community Support\nLet\u0026rsquo;s Encrypt with a Rails app on Heroku // Collective Idea | Crafting web and mobile software based in Holland, Michigan\nUse Let\u0026rsquo;s Encrypt TLS certificate on Heroku \u0026ndash; Sikachu\u0026rsquo;s Blog \u0026ndash; Medium\nSSL Endpoint | Heroku Dev Center\nSet up CloudFlare\u0026rsquo;s free SSL on Heroku\nStandards RFC 2986 - PKCS #10: Certification Request Syntax Specification Version 1.7\nRFC 3447 - Public-Key Cryptography Standards (PKCS) #1: RSA Cryptography Specifications Version 2.1\nRFC 5958 - Asymmetric Key Packages\nRFC 6101 - The Secure Sockets Layer (SSL) Protocol Version 3.0\nRFC 7525 - Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)\nRFC 7292 - PKCS #12: Personal Information Exchange Syntax v1.1\n"
 },
 
 
@@ -213,7 +273,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/programming-concept/",
+	"uri": "https://cyrusn.github.io/note/programming-concept/",
 	"title": "Programming Concept",
 	"tags": ["productivity"],
 	"description": "",
@@ -233,7 +293,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/javascript-on-osascript/",
+	"uri": "https://cyrusn.github.io/note/javascript-on-osascript/",
 	"title": "JavaScript on OSAScript",
 	"tags": ["macos", "osascript"],
 	"description": "",
@@ -243,7 +303,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/reading-list/",
+	"uri": "https://cyrusn.github.io/note/reading-list/",
 	"title": "Reading List",
 	"tags": [],
 	"description": "",
@@ -265,15 +325,15 @@
 {
 	"uri": "https://cyrusn.github.io/note/useful-command-line-tools/",
 	"title": "useful command line tools",
-	"tags": ["commandline", "terminal", "httpie", "jq", "zsh", "redirect", "xargs", "wild card", "pt"],
+	"tags": ["commandline", "terminal", "httpie", "jq", "zsh", "redirect", "xargs", "wild card", "pt", "kill", "top"],
 	"description": "",
-	"content": " Basic Redirect operators # pipe echo \u0026quot;hello world\u0026quot; | sed 's/ /_/' # redirect the standard output result to file (replace) echo \u0026quot;hello world\u0026quot; \u0026gt; test.txt # redirect the standard output result to file (append) echo \u0026quot;hello world\u0026quot; \u0026gt;\u0026gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed 's/ /_/g' \u0026lt; test.txt \u0026gt; test_1.txt # line input cat \u0026lt;\u0026lt; end heredoc\u0026gt; hello heredoc\u0026gt; world heredoc\u0026gt; end  Useful Commands Cheatsheet  d to show directory history\n type cd -number or directly type the number to go to directory\n  !:n-m get the attribute from n to m of last command\n !! to get the last command\n !* to get the argz of last command\n zsh tip\n  Links zsh - Table of Contents\ncopydir function copydir { pwd | tr -d \u0026quot;\\r\\n\u0026quot; | pbcopy }   copydir to copy current directory to clipboard\n  qlmanage # Quick-look a file from the command line alias ql='qlmanage -p'  airport sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/sbin/airport  Scan your local wireless environment from the command line\npgrep and pkill Find or signal a program or process by name\nshutdown Restart the Mac\n$ shutdown -r now  textutil Convert between various text file formats\nXargs Granted, I often xargs at CLI to do the looping (KYLee):\n# simple use case echo \u0026quot;U R L\u0026quot; | xargs -n1 echo # -I may be needed for more complex use case (`mv @ @.bak`) # however -I implies -L (takes input as line) # so split before call echo \u0026quot;U R L\u0026quot; | sed 's/ /\\n/g' | xargs -I@ echo @ # or do with temp file echo \u0026quot;U\\nR\\nL\u0026quot; \u0026gt; file cat file | xargs -I@ echo @  Find files and delete them can use * as wild card $ find . -name \u0026quot;FILE-TO-FIND\u0026quot; -exec rm -rf {} \\;  Powerful tools ImageMagick (convert) ImageMagick\n Use ImageMagick to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.\n convert image.jpg image.png  # It is sometimes convenient to resize an image as they are read. Suppose you have hundreds of large JPEG images you want to convert to a sequence of PNG thumbails: convert '*.jpg' -resize 120x120 thumbnail%03d.png # rename file batchly $ rename 's/\\.html$/\\.php/' *.html  ffmpeg ffmpeg A complete, cross-platform solution to record, convert and stream audio and video.\n# -i mean input_file $ ffmpeg -i input.mp4 output.avi  http-server  http-server is a simple, zero-configuration command-line http server. It is powerful enough for production usage, but it\u0026rsquo;s simple and hackable enough to be used for testing, local development, and learning.\n youtube-dl  youtube-dl is a small command-line program to download videos from YouTube.com and a few more sites.\n  Platinum Searcher  A code search tool similar to ack and the_silver_searcher(ag). It supports multi platforms and multi encodings.\n  $ pt  Pandoc  examples\n a universal document converter\n  osx metadata mac OS X mdfind, mdutil, mdls, mdimport. file metadata utilities\nHTTPie – command line HTTP client # install brew install httpie  jq  http -b url | jq .name\n  "
+	"content": " Basic Redirect operators # pipe echo \u0026quot;hello world\u0026quot; | sed 's/ /_/' # redirect the standard output result to file (replace) echo \u0026quot;hello world\u0026quot; \u0026gt; test.txt # redirect the standard output result to file (append) echo \u0026quot;hello world\u0026quot; \u0026gt;\u0026gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed 's/ /_/g' \u0026lt; test.txt \u0026gt; test_1.txt # line input cat \u0026lt;\u0026lt; end heredoc\u0026gt; hello heredoc\u0026gt; world heredoc\u0026gt; end  Useful Commands Cheatsheet  d to show directory history\n type cd -number or directly type the number to go to directory\n  !:n-m get the attribute from n to m of last command\n !! to get the last command\n !* to get the argz of last command\n zsh tip\n  Links  zsh - Table of Contents\n  copydir function copydir { pwd | tr -d \u0026quot;\\r\\n\u0026quot; | pbcopy }   copydir to copy current directory to clipboard\n  qlmanage # Quick-look a file from the command line alias ql='qlmanage -p'  airport sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/sbin/airport  Scan your local wireless environment from the command line\npgrep and pkill Find or signal a program or process by name\nshutdown Restart the Mac\n$ shutdown -r now  textutil Convert between various text file formats\nXargs Granted, I often xargs at CLI to do the looping (KYLee):\n# simple use case echo \u0026quot;U R L\u0026quot; | xargs -n1 echo # -I may be needed for more complex use case (`mv @ @.bak`) # however -I implies -L (takes input as line) # so split before call echo \u0026quot;U R L\u0026quot; | sed 's/ /\\n/g' | xargs -I@ echo @ # or do with temp file echo \u0026quot;U\\nR\\nL\u0026quot; \u0026gt; file cat file | xargs -I@ echo @  Find files and delete them can use * as wild card $ find . -name \u0026quot;FILE-TO-FIND\u0026quot; -exec rm -rf {} \\;  Powerful tools ImageMagick (convert) ImageMagick\n Use ImageMagick to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.\n convert image.jpg image.png  # It is sometimes convenient to resize an image as they are read. Suppose you have hundreds of large JPEG images you want to convert to a sequence of PNG thumbails: convert '*.jpg' -resize 120x120 thumbnail%03d.png # rename file batchly $ rename 's/\\.html$/\\.php/' *.html  ffmpeg ffmpeg A complete, cross-platform solution to record, convert and stream audio and video.\n# -i mean input_file $ ffmpeg -i input.mp4 output.avi  http-server  http-server is a simple, zero-configuration command-line http server. It is powerful enough for production usage, but it\u0026rsquo;s simple and hackable enough to be used for testing, local development, and learning.\n youtube-dl  youtube-dl is a small command-line program to download videos from YouTube.com and a few more sites.\n  Platinum Searcher  A code search tool similar to ack and the_silver_searcher(ag). It supports multi platforms and multi encodings.\n  $ pt  Pandoc  examples\n a universal document converter\n  osx metadata mac OS X mdfind, mdutil, mdls, mdimport. file metadata utilities\nHTTPie – command line HTTP client # install brew install httpie  jq  http -b url | jq .name\n  top using top command to kill running process\n"
 },
 
 
 
 {
-	"uri": "https://cyrusn.github.io/post/hardware-architecture/",
+	"uri": "https://cyrusn.github.io/note/hardware-architecture/",
 	"title": "Hardware Architecture",
 	"tags": [],
 	"description": "",
@@ -283,7 +343,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/how-to-use-googlescript/",
+	"uri": "https://cyrusn.github.io/note/how-to-use-googlescript/",
 	"title": "How to use GoogleScript",
 	"tags": ["google script"],
 	"description": "",
@@ -293,7 +353,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/hashbang/",
+	"uri": "https://cyrusn.github.io/note/hashbang/",
 	"title": "Hashbang",
 	"tags": ["hashbang"],
 	"description": "",
@@ -303,7 +363,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/draw-more-work-less/",
+	"uri": "https://cyrusn.github.io/note/draw-more-work-less/",
 	"title": "Draw More Work Less",
 	"tags": ["plantuml", "uml"],
 	"description": "",
@@ -313,7 +373,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/tools-on-programming/",
+	"uri": "https://cyrusn.github.io/note/tools-on-programming/",
 	"title": "Tools on Programming",
 	"tags": [],
 	"description": "",
@@ -333,7 +393,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/basic-cs-knowledge/",
+	"uri": "https://cyrusn.github.io/note/basic-cs-knowledge/",
 	"title": "Basic CS Knowledge",
 	"tags": [],
 	"description": "",
@@ -343,7 +403,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/hapijs/",
+	"uri": "https://cyrusn.github.io/note/hapijs/",
 	"title": "HapiJS",
 	"tags": ["hapijs"],
 	"description": "",
@@ -355,7 +415,7 @@
 {
 	"uri": "https://cyrusn.github.io/note/git/",
 	"title": "Git Notes",
-	"tags": ["git", "github"],
+	"tags": ["git", "github", "slide"],
 	"description": "",
 	"content": " start a new repo $ git init # add repo $ git remote add origin https://github.com/user/repo.git  change existing repo $ git remote rm origin $ git remote add origin https://github.com/user/repo.git  create a new branch and merge # on latest commit $ git checkout -b \u0026lt;branch_name\u0026gt; # create new branch # do you work $ git commit -a # edit the commit log as details as possible $ git checkout master $ git merge \u0026lt;branch_name\u0026gt; # double check everything, if ok then push. $ git push # else $ git checkout \u0026lt;branch_name\u0026gt;  amendment $ git commit -a --amend $ git checkout master $ git merge \u0026lt;branch_name\u0026gt; $ git push  gitignore $ npm install gitignore # for startup a node project $ gitignore node # or startup a go project $ gitignore go # use flag -types to list all available language $ gitignore -types  undo changes # a more 'save' way git revert \u0026lt;commit\u0026gt; # a dangerous (will loss all uncommitted changes) but cleaner way $ git reset --hard \u0026lt;commit\u0026gt; # removes untracked files # show files is going to be removed $ git clean -n # force clean $ git clean -f   The git clean command is often executed in conjunction with git reset \u0026ndash;hard. Remember that resetting only affects tracked files, so a separate command is required for cleaning up untracked ones. Combined, these two commands let you return the working directory to the exact state of a particular commit.\n git merge and rebase # git merge $ git merge master \u0026lt;branch_name\u0026gt;  difference between merge and rebase Merging is nice because it\u0026rsquo;s a non-destructive operation. The existing branches are not changed in any way. This avoids all of the potential pitfalls of rebasing\ngit rebase moves the entire feature branch to begin on the tip of the master branch, effectively incorporating all of the new commits in master.\ngit difftool add badges to github Badge Generator\nReferenche  Setting up a repository | Atlassian Git Tutorial\n shields.io\n  "
 },
@@ -363,7 +423,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/using-timeline-js-in-history-lesson/",
+	"uri": "https://cyrusn.github.io/note/using-timeline-js-in-history-lesson/",
 	"title": "Using Timeline JS in History Lesson",
 	"tags": ["timelinejs"],
 	"description": "",
@@ -383,7 +443,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/slidedownhtml-presentation/",
+	"uri": "https://cyrusn.github.io/note/slidedownhtml-presentation/",
 	"title": "Slidedown HTML presentation",
 	"tags": ["slidedown"],
 	"description": "",
@@ -393,7 +453,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/project-and-todo/",
+	"uri": "https://cyrusn.github.io/note/project-and-todo/",
 	"title": "Project and TODO",
 	"tags": [],
 	"description": "",
@@ -413,7 +473,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/monokai-color-code/",
+	"uri": "https://cyrusn.github.io/note/monokai-color-code/",
 	"title": "Monokai Color Code",
 	"tags": [],
 	"description": "",
@@ -423,7 +483,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/mongoose.js-and-mongodb/",
+	"uri": "https://cyrusn.github.io/note/mongoose.js-and-mongodb/",
 	"title": "Mongoose.js and MongoDB",
 	"tags": ["database", "MongoDB", "Mongoose"],
 	"description": "",
@@ -443,7 +503,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/learning-progress/",
+	"uri": "https://cyrusn.github.io/note/learning-progress/",
 	"title": "Learning Progress",
 	"tags": [],
 	"description": "",
@@ -453,7 +513,7 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/url-shortener-and-qr-code-generator/",
+	"uri": "https://cyrusn.github.io/note/url-shortener-and-qr-code-generator/",
 	"title": "URL shortener and QR code Generator",
 	"tags": ["google", "shortener"],
 	"description": "",
@@ -478,6 +538,26 @@
 	"tags": ["gitbook"],
 	"description": "",
 	"content": " Gitbook\n Modern book format and toolchain using Git and Markdown\n  "
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/1x/",
+	"title": "1x",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/2x/",
+	"title": "2x",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 
 
@@ -555,6 +635,16 @@
 {
 	"uri": "https://cyrusn.github.io/tags/bootstrap/",
 	"title": "Bootstrap",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/career/",
+	"title": "Career",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -653,8 +743,38 @@
 
 
 {
+	"uri": "https://cyrusn.github.io/tags/donald-super/",
+	"title": "Donald Super",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/dse/",
+	"title": "Dse",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
 	"uri": "https://cyrusn.github.io/tags/editor/",
 	"title": "Editor",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/education/",
+	"title": "Education",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -733,6 +853,16 @@
 
 
 {
+	"uri": "https://cyrusn.github.io/tags/gtd/",
+	"title": "Gtd",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
 	"uri": "https://cyrusn.github.io/tags/hapijs/",
 	"title": "Hapijs",
 	"tags": [],
@@ -803,6 +933,16 @@
 
 
 {
+	"uri": "https://cyrusn.github.io/tags/jupas/",
+	"title": "Jupas",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
 	"uri": "https://cyrusn.github.io/tags/jwt/",
 	"title": "Jwt",
 	"tags": [],
@@ -813,8 +953,28 @@
 
 
 {
+	"uri": "https://cyrusn.github.io/tags/kill/",
+	"title": "Kill",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
 	"uri": "https://cyrusn.github.io/tags/leveldb/",
 	"title": "Leveldb",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/life-planning/",
+	"title": "Life Planning",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -933,8 +1093,8 @@
 
 
 {
-	"uri": "https://cyrusn.github.io/post/",
-	"title": "Posts",
+	"uri": "https://cyrusn.github.io/tags/pomodoro/",
+	"title": "Pomodoro",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -1033,8 +1193,28 @@
 
 
 {
+	"uri": "https://cyrusn.github.io/tags/slide/",
+	"title": "Slide",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
 	"uri": "https://cyrusn.github.io/tags/slidedown/",
 	"title": "Slidedown",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/slide/",
+	"title": "Slides",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -1093,6 +1273,16 @@
 
 
 {
+	"uri": "https://cyrusn.github.io/tags/taiwan-study/",
+	"title": "Taiwan Study",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
 	"uri": "https://cyrusn.github.io/tags/terminal/",
 	"title": "Terminal",
 	"tags": [],
@@ -1125,6 +1315,26 @@
 {
 	"uri": "https://cyrusn.github.io/tags/tmux/",
 	"title": "Tmux",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/tomato/",
+	"title": "Tomato",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/top/",
+	"title": "Top",
 	"tags": [],
 	"description": "",
 	"content": ""

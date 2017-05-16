@@ -7,10 +7,128 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
     <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
-    <lastBuildDate>Fri, 12 May 2017 13:43:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 May 2017 00:17:50 +0800</lastBuildDate>
     
 	<atom:link href="https://cyrusn.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>提升生產力及專注力</title>
+      <link>https://cyrusn.github.io/slide/pomodoro/</link>
+      <pubDate>Tue, 16 May 2017 00:17:50 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/pomodoro/</guid>
+      <description>提升生產力及專注力 Getting Things Done &amp;amp; 蕃茄工作法 工作時間  平日每天約4小時
+ 假日每天約6小時
+ 合共：4hr x 5day + 6hr x 2day = 32 hrs
+ 如何保持專注?
+  規劃  每科應用15分鐘回顧及整理當天所學
+ 功課應盡早完成
+ 每天用盡所有工作時間
+  流程 
+Why?  何時做 &amp;gt; 何時交
+ 計時能令人集中
+ e.g. 考試、測驗
+   參考資料  Online Pomodoro Timer
+ Pomodoro Technique
+ Getting Things Done
+  keywords
+pomodoro tomato timer technique getting things done</description>
+    </item>
+    
+    <item>
+      <title>臺灣升學 Notes</title>
+      <link>https://cyrusn.github.io/note/taiwan-study/</link>
+      <pubDate>Mon, 15 May 2017 23:13:25 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/taiwan-study/</guid>
+      <description>Useful Links  學士班適用簡章2017
+ Q&amp;amp;A
+ 來台就學費用估算
+ 入學暨來臺相關規定
+ 赴臺升學小冊子(新版).pdf
+  資格 「僑生」指海外出生連續居留迄今，或最近連續居留海外六年以上，並取得僑居地永久或長期居留證件回國就學之華裔學生。但就讀大學醫學、牙醫及中醫學系者，其連續居留年限為八年以上。</description>
+    </item>
+    
+    <item>
+      <title>4C&#43;1X 升學考慮</title>
+      <link>https://cyrusn.github.io/note/4&#43;1/</link>
+      <pubDate>Mon, 15 May 2017 23:12:02 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/4&#43;1/</guid>
+      <description>JUPAS 各大學入學要求  4C+2X (3322+33)
+ HKU
+ CUHK
+ HKUST
+ PolyU
+  4C+2X (3322+22)
+ CityU
+  4C+1X (2018年要求：3322+3)
+ HKBU
+  4C+1X (3322+2)
+ LU
+ EdUHK
+ OUHK
+ SSSDP
+   Reference  JUPAS Website
+  Accept M as X  CityU
+ CUHK
+ PolyU
+ HKUST
+ HKU (部分課程)
+  HD / AD  基本入學要求：22 + 222</description>
+    </item>
+    
+    <item>
+      <title>Programming Principal</title>
+      <link>https://cyrusn.github.io/note/programming-principal/</link>
+      <pubDate>Mon, 15 May 2017 23:09:54 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/programming-principal/</guid>
+      <description>Separation of Concern
+ DRY - Don’t repeat yourself
+ Abstraction Principle
+ KISS (Keep it simple, stupid!)
+ Write Code for the Maintainer
+ Principle of least astonishment
+ YAGNI (you aren’t gonna need it)
+ Do the simplest thing that could possibly work
+ Open/Closed Principle
+ Orthogonality
+ Robustness Principle
+ Hide Implementation Details
+ Minimize Coupling
+ Maximize Cohesion
+ Principle of least astonishment</description>
+    </item>
+    
+    <item>
+      <title>Medicine</title>
+      <link>https://cyrusn.github.io/note/medicine/</link>
+      <pubDate>Mon, 15 May 2017 22:04:30 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/medicine/</guid>
+      <description>Relief of pain and inflammation beside Panadol
+- Celecoxib (痛博士 200mg)
+- mefenamic acid capsule 250mg (Ponstan GE)
+ Mefenamic acid is used to treat painful conditions such as arthritis, pain associated with heavy menstrual bleeding, and pain after surgical operations.
+ </description>
+    </item>
+    
+    <item>
+      <title>Career Theory</title>
+      <link>https://cyrusn.github.io/note/career-theory/</link>
+      <pubDate>Mon, 15 May 2017 14:21:39 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/career-theory/</guid>
+      <description> LifeDesign.pdf
+ career-theory-model-super.pdf
+     The Life Career Rainbow - Get a better work/life balance - Career Development from MindTools.com
+ Holland’s Theory of Career Choice | Career Key
+ The Big Five Career Theories
+ The Serious Leisure Perspective (SLP) - Welcome
+  </description>
+    </item>
     
     <item>
       <title>tmux Notes</title>
@@ -37,10 +155,10 @@
     
     <item>
       <title>Create Startup Script in Linux</title>
-      <link>https://cyrusn.github.io/post/create-startup-script-in-linux/</link>
+      <link>https://cyrusn.github.io/note/create-startup-script-in-linux/</link>
       <pubDate>Fri, 21 Oct 2016 12:43:34 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/create-startup-script-in-linux/</guid>
+      <guid>https://cyrusn.github.io/note/create-startup-script-in-linux/</guid>
       <description>Create a new script in /etc/init.d/myscript.
 vi /etc/init.d/myscript  (Obviously it doesn&amp;rsquo;t have to be called &amp;ldquo;myscript&amp;rdquo;.) In this script, do whatever you want to do. Perhaps just run the script you mentioned.
 #!/bin/sh /path/to/my/script.sh  Make it executable.
@@ -60,10 +178,10 @@ update-rc.d myscript defaults  </description>
     
     <item>
       <title>Update Digital Ocean Kernel</title>
-      <link>https://cyrusn.github.io/post/update-digital-ocean-kernel/</link>
+      <link>https://cyrusn.github.io/note/update-digital-ocean-kernel/</link>
       <pubDate>Tue, 11 Oct 2016 21:24:17 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/update-digital-ocean-kernel/</guid>
+      <guid>https://cyrusn.github.io/note/update-digital-ocean-kernel/</guid>
       <description>Check Which Kernel is Currently in Use
 To display both the kernel version and your system&amp;rsquo;s architecture (32-bit or 64-bit), type: uname -ir  Upgrading All Packages and Using the Newest Kernel sudo apt-get update sudo apt-get dist-upgrade sudo reboot sudo apt-get install update-manager-core sudo do-release-upgrade  Reference How To Upgrade to Ubuntu 16.04 LTS | DigitalOcean How To Update a DigitalOcean Server&amp;rsquo;s Kernel | DigitalOcean</description>
     </item>
@@ -80,10 +198,10 @@ To display both the kernel version and your system&amp;rsquo;s architecture (32-
     
     <item>
       <title>HTTPS and JWT</title>
-      <link>https://cyrusn.github.io/post/https-and-jwt/</link>
+      <link>https://cyrusn.github.io/note/https-and-jwt/</link>
       <pubDate>Fri, 07 Oct 2016 23:35:46 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/https-and-jwt/</guid>
+      <guid>https://cyrusn.github.io/note/https-and-jwt/</guid>
       <description> Links  Self-signed certificate - Wikiwand
  Let&amp;rsquo;s Encrypt - Free SSL/TLS Certificates
  JWT, JWS and JWE for Not So Dummies!
@@ -93,10 +211,10 @@ To display both the kernel version and your system&amp;rsquo;s architecture (32-
     
     <item>
       <title>Batch Download YouTube</title>
-      <link>https://cyrusn.github.io/post/batch-download-youtube/</link>
+      <link>https://cyrusn.github.io/note/batch-download-youtube/</link>
       <pubDate>Fri, 07 Oct 2016 23:14:04 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/batch-download-youtube/</guid>
+      <guid>https://cyrusn.github.io/note/batch-download-youtube/</guid>
       <description> Using youtube-dl and xargs cat &amp;lt;&amp;lt; EOF | xargs -I@ youtube-dl https://www.youtube.com/watch?v=@ YouTubeVideoID-1 YouTubeVideoID-2 YouTubeVideoID-3 EOF  Useful options  --extract-audio for download audio only
  --audio-format mp3 choose the audio format
  --audio-quality 2 set the audio quality, 0(best)-9(worst), (default 5)
@@ -105,10 +223,10 @@ To display both the kernel version and your system&amp;rsquo;s architecture (32-
     
     <item>
       <title>Web Authentication</title>
-      <link>https://cyrusn.github.io/post/web-authentication/</link>
+      <link>https://cyrusn.github.io/note/web-authentication/</link>
       <pubDate>Wed, 05 Oct 2016 00:23:42 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/web-authentication/</guid>
+      <guid>https://cyrusn.github.io/note/web-authentication/</guid>
       <description>Notes  Authentication in Golang with JWTs
  Cookies vs Tokens: The Definitive Guide
  The Ins and Outs of Token Based Authentication | Scotch   Enterprise APIs and OAuth: Have it All
@@ -132,19 +250,19 @@ Search and replace :s/foo/bar/g Change each &amp;lsquo;foo&amp;rsquo; to &amp;ls
     
     <item>
       <title>Docker</title>
-      <link>https://cyrusn.github.io/post/docker/</link>
+      <link>https://cyrusn.github.io/note/docker/</link>
       <pubDate>Fri, 30 Sep 2016 23:06:22 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/docker/</guid>
+      <guid>https://cyrusn.github.io/note/docker/</guid>
       <description>Docker - Build, Ship, and Run Any App, Anywhere</description>
     </item>
     
     <item>
       <title>NVAlt Setting</title>
-      <link>https://cyrusn.github.io/post/nvalt-setting/</link>
+      <link>https://cyrusn.github.io/note/nvalt-setting/</link>
       <pubDate>Thu, 29 Sep 2016 16:23:18 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/nvalt-setting/</guid>
+      <guid>https://cyrusn.github.io/note/nvalt-setting/</guid>
       <description>Custom Preview Theme
  Notational Velocity (nvALT) Custom Stylesheet and Markup HTML
   </description>
@@ -170,19 +288,19 @@ Setting Apache2  in file /etc/hosts
     
     <item>
       <title>How to convert images to gif</title>
-      <link>https://cyrusn.github.io/post/how-to-convert-pngs-to-gif/</link>
+      <link>https://cyrusn.github.io/note/how-to-convert-pngs-to-gif/</link>
       <pubDate>Mon, 26 Sep 2016 07:46:28 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/how-to-convert-pngs-to-gif/</guid>
+      <guid>https://cyrusn.github.io/note/how-to-convert-pngs-to-gif/</guid>
       <description> install imagemagick through homebrew $ brew install imagemagick  convert pngs to gif with 2 second per frame $ convert -delay 200 *.png converted.gif  </description>
     </item>
     
     <item>
       <title>Open SSL</title>
-      <link>https://cyrusn.github.io/post/open-ssl/</link>
+      <link>https://cyrusn.github.io/note/open-ssl/</link>
       <pubDate>Sun, 25 Sep 2016 21:27:54 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/open-ssl/</guid>
+      <guid>https://cyrusn.github.io/note/open-ssl/</guid>
       <description>OpenSSL is a toolkit for the TLS and SSL. The Most Common OpenSSL Commands key/cert types X.509 - Wikiwand DER vs. CRT vs. CER vs. PEM Certificates and How To Convert Them .pem == .crt == X.509? probably .key == .csr == DER? probably not, .csr can be converted to .crt .pfx/.p12 == PKCS#12
 key: no meta data, just the prime numbers and moduluses cert: with meta data
 cert generation How to create a .</description>
@@ -190,10 +308,10 @@ cert generation How to create a .</description>
     
     <item>
       <title>SSL TLS</title>
-      <link>https://cyrusn.github.io/post/ssl-tls/</link>
+      <link>https://cyrusn.github.io/note/ssl-tls/</link>
       <pubDate>Sun, 25 Sep 2016 21:27:54 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/ssl-tls/</guid>
+      <guid>https://cyrusn.github.io/note/ssl-tls/</guid>
       <description>Transport Layer Security (TLS) and its predecessor, Secure Sockets Layer (SSL), are cryptographic protocols designed to provide communications security over a computer network.
 The authentication relied on Certificate Authorities (CA) and a public key infrastructure using X.509 certificates. The server register with a CA and sign its public key with the key of CA for a fee. The client, after receiving the public key from server, verifies it with the CA.</description>
     </item>
@@ -260,10 +378,10 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
     
     <item>
       <title>Programming Concept</title>
-      <link>https://cyrusn.github.io/post/programming-concept/</link>
+      <link>https://cyrusn.github.io/note/programming-concept/</link>
       <pubDate>Fri, 05 Jun 2015 08:53:37 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/programming-concept/</guid>
+      <guid>https://cyrusn.github.io/note/programming-concept/</guid>
       <description>Links How to make your code self-documenting? | CodeUtopia Separation of concerns - Wikipedia Garbage in, garbage out - Wikiwand
 leesei&amp;rsquo;s choice Naming  寫出黎就要俾名，俾名啲concept 就清楚，code 亦自然清楚
  leesei   What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?  That programming is about solving problems, not writing code. Here are the four basic tasks that an individual programmer must perform.</description>
@@ -283,10 +401,10 @@ Links UML 2.0 Tutorial - YouTube Unified Modeling Language (UML) description, UM
     
     <item>
       <title>JavaScript on OSAScript</title>
-      <link>https://cyrusn.github.io/post/javascript-on-osascript/</link>
+      <link>https://cyrusn.github.io/note/javascript-on-osascript/</link>
       <pubDate>Wed, 27 May 2015 12:45:16 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/javascript-on-osascript/</guid>
+      <guid>https://cyrusn.github.io/note/javascript-on-osascript/</guid>
       <description>Example  JXA-Cookbook
  Apple Release Notes
  JavaScript for OS X Automation by Example
@@ -295,10 +413,10 @@ Links UML 2.0 Tutorial - YouTube Unified Modeling Language (UML) description, UM
     
     <item>
       <title>Reading List</title>
-      <link>https://cyrusn.github.io/post/reading-list/</link>
+      <link>https://cyrusn.github.io/note/reading-list/</link>
       <pubDate>Tue, 26 May 2015 23:41:04 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/reading-list/</guid>
+      <guid>https://cyrusn.github.io/note/reading-list/</guid>
       <description>Reading List  Ben Alman » Immediately-Invoked Function Expression (IIFE)
  This section demos loading different config depending on NODE_ENV.
  protecting-your-keys-from-github
@@ -336,10 +454,10 @@ migrate Moving WordPress « WordPress Codex</description>
     
     <item>
       <title>Hardware Architecture</title>
-      <link>https://cyrusn.github.io/post/hardware-architecture/</link>
+      <link>https://cyrusn.github.io/note/hardware-architecture/</link>
       <pubDate>Fri, 22 May 2015 17:20:27 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/hardware-architecture/</guid>
+      <guid>https://cyrusn.github.io/note/hardware-architecture/</guid>
       <description>Basic  Hardware Basics - YouTube
   what is legacy FGA: &amp;ldquo;legacy&amp;rdquo; is not a pejorative. Do not use it as such.
 BIOS POST -&amp;gt; BIOS -&amp;gt; MBR of boot partition -&amp;gt; Bootloader -&amp;gt; Kernel -&amp;gt; init/systemd -&amp;gt; shell/display manager -&amp;gt; startx/xinit
@@ -348,28 +466,28 @@ UEFI Unified Extensible Firmware Interface - ArchWiki</description>
     
     <item>
       <title>How to use GoogleScript</title>
-      <link>https://cyrusn.github.io/post/how-to-use-googlescript/</link>
+      <link>https://cyrusn.github.io/note/how-to-use-googlescript/</link>
       <pubDate>Fri, 22 May 2015 11:50:04 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/how-to-use-googlescript/</guid>
+      <guid>https://cyrusn.github.io/note/how-to-use-googlescript/</guid>
       <description>Useful Examples Send email from spreadsheet data function sendMailByRowNo(rowNo){ // rowString e.g. 1:1 var rowString = Utilities.formatString(&amp;quot;%s:%s&amp;quot;, rowNo, rowNo) var values = spreadsheet.getRange(rowString).getValues()[0] sendMailByValues(values) } function convertValuesToObject(values) { var obj = {}; obj.timestamp = values[0] obj.email = values[1] obj.title: values[2] return obj } function sendMailByValues(values) { var obj = convertValuesToObject(values) Logger.log(obj) var htmlBody = setEmailBody(obj) var mailAppObject = { to: obj.email, subject: obj.title, htmlBody: htmlBody } // an example to attach a pdf file in google drive // var attachements = DriveApp.</description>
     </item>
     
     <item>
       <title>Hashbang</title>
-      <link>https://cyrusn.github.io/post/hashbang/</link>
+      <link>https://cyrusn.github.io/note/hashbang/</link>
       <pubDate>Thu, 21 May 2015 12:47:20 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/hashbang/</guid>
+      <guid>https://cyrusn.github.io/note/hashbang/</guid>
       <description> Hashbang line NodeJS #! /usr/local/bin/node  JS osascript #! /usr/bin/osascript -l javascript  zsh or bash #! /usr/bin/zsh #! /usr/bin/bash  </description>
     </item>
     
     <item>
       <title>Draw More Work Less</title>
-      <link>https://cyrusn.github.io/post/draw-more-work-less/</link>
+      <link>https://cyrusn.github.io/note/draw-more-work-less/</link>
       <pubDate>Sun, 10 May 2015 01:29:03 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/draw-more-work-less/</guid>
+      <guid>https://cyrusn.github.io/note/draw-more-work-less/</guid>
       <description>Some Links UML | leesei&amp;rsquo;s notebook Draw More, Work Less | [self employed] Draw More, Work Less PlantUML Mermaid
 from leesei Unified Modeling Language (UML) Business Process Model and Notation (BPMN) is very similar to activity diagram. YANG Central
 Allen Holub&amp;rsquo;s UML Quick Reference
@@ -378,10 +496,10 @@ Text based tools I used to use the GUI tool Dia. But it was very buggy and no lo
     
     <item>
       <title>Tools on Programming</title>
-      <link>https://cyrusn.github.io/post/tools-on-programming/</link>
+      <link>https://cyrusn.github.io/note/tools-on-programming/</link>
       <pubDate>Sun, 10 May 2015 01:28:02 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/tools-on-programming/</guid>
+      <guid>https://cyrusn.github.io/note/tools-on-programming/</guid>
       <description>Can I use&amp;hellip; Support tables for HTML5, CSS3, etc
 PersistJS is a JavaScript client-side persistent storage library jeremydurham/persist-js
 slidedown/slidedown</description>
@@ -408,10 +526,10 @@ slidedown/slidedown</description>
     
     <item>
       <title>Basic CS Knowledge</title>
-      <link>https://cyrusn.github.io/post/basic-cs-knowledge/</link>
+      <link>https://cyrusn.github.io/note/basic-cs-knowledge/</link>
       <pubDate>Sun, 10 May 2015 01:22:16 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/basic-cs-knowledge/</guid>
+      <guid>https://cyrusn.github.io/note/basic-cs-knowledge/</guid>
       <description>打底班  Programming Languages - YouTube
  Hardware Basics - YouTube
  Operating System Basics - YouTube
@@ -425,10 +543,10 @@ slidedown/slidedown</description>
     
     <item>
       <title>HapiJS</title>
-      <link>https://cyrusn.github.io/post/hapijs/</link>
+      <link>https://cyrusn.github.io/note/hapijs/</link>
       <pubDate>Sun, 10 May 2015 00:58:17 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/hapijs/</guid>
+      <guid>https://cyrusn.github.io/note/hapijs/</guid>
       <description> HapiJS  hapi.js
  Tutorials
  Example: Hapi Mongoose Angular
@@ -453,10 +571,10 @@ slidedown/slidedown</description>
     
     <item>
       <title>Using Timeline JS in History Lesson</title>
-      <link>https://cyrusn.github.io/post/using-timeline-js-in-history-lesson/</link>
+      <link>https://cyrusn.github.io/note/using-timeline-js-in-history-lesson/</link>
       <pubDate>Sun, 10 May 2015 00:47:53 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/using-timeline-js-in-history-lesson/</guid>
+      <guid>https://cyrusn.github.io/note/using-timeline-js-in-history-lesson/</guid>
       <description>TimelineJS is easy to use for making a timeline with google spreadsheet
 Example  Youtube Video Tutorial  How it Work Use Google Spreadsheet Description
 Use HTML Code and Javascript TimelineJS</description>
@@ -482,10 +600,10 @@ Basic Keywords Control Flow  where (A switch case can use a where clause to chec
     
     <item>
       <title>Slidedown HTML presentation</title>
-      <link>https://cyrusn.github.io/post/slidedownhtml-presentation/</link>
+      <link>https://cyrusn.github.io/note/slidedownhtml-presentation/</link>
       <pubDate>Sun, 10 May 2015 00:47:45 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/slidedownhtml-presentation/</guid>
+      <guid>https://cyrusn.github.io/note/slidedownhtml-presentation/</guid>
       <description> Slide Down example github
 RevealJS RevealJS Pandoc
 # pandoc convert md to RevealJS html pandoc -s --mathjax -i -t revealjs SLIDES.md -o example.html  </description>
@@ -493,10 +611,10 @@ RevealJS RevealJS Pandoc
     
     <item>
       <title>Project and TODO</title>
-      <link>https://cyrusn.github.io/post/project-and-todo/</link>
+      <link>https://cyrusn.github.io/note/project-and-todo/</link>
       <pubDate>Sun, 10 May 2015 00:47:40 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/project-and-todo/</guid>
+      <guid>https://cyrusn.github.io/note/project-and-todo/</guid>
       <description> Install Script for My Mac  咁就寫做install script 放埋響個Terminal repo度啦
  再加埋repo 條link 響個post
  咁就同人地寫啲technical blog 一樣了 pull and 行install script 寫個script git pull oh-my-zsh同setup symlink
@@ -531,19 +649,19 @@ Reminder  Don&amp;rsquo;t use bootstrap.js, use ui-bootstrap.js instead.
     
     <item>
       <title>Monokai Color Code</title>
-      <link>https://cyrusn.github.io/post/monokai-color-code/</link>
+      <link>https://cyrusn.github.io/note/monokai-color-code/</link>
       <pubDate>Sun, 10 May 2015 00:47:19 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/monokai-color-code/</guid>
+      <guid>https://cyrusn.github.io/note/monokai-color-code/</guid>
       <description>Cg Red - #DC322F  Razzmatazz - #F92672  Faded Red #FF7F7C  Free Speech Magenta - #E654CE  Lavender Indigo - #935FFA  Dull Lavender - #AE81FF  Conifer - #A6E22E  Snow Flurry - #E0FDCE  Picton Blue - #3BC0F0  Turquoise Blue - #66D9EF  Tree Poppy - #FD971F  Sun - #F6AA11  Paris Daisy - #FEE555  Straw - #E6DB74  Stonewall - #7C7865  Harp - #CFCFC2  Iron - #C8CECC  </description>
     </item>
     
     <item>
       <title>Mongoose.js and MongoDB</title>
-      <link>https://cyrusn.github.io/post/mongoose.js-and-mongodb/</link>
+      <link>https://cyrusn.github.io/note/mongoose.js-and-mongodb/</link>
       <pubDate>Sun, 10 May 2015 00:47:16 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/mongoose.js-and-mongodb/</guid>
+      <guid>https://cyrusn.github.io/note/mongoose.js-and-mongodb/</guid>
       <description>Custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的
  可以令 _id 有意思,
  e.g. studentSchema, use regno as custom _id
@@ -575,10 +693,10 @@ Reminder  Don&amp;rsquo;t use bootstrap.js, use ui-bootstrap.js instead.
     
     <item>
       <title>Learning Progress</title>
-      <link>https://cyrusn.github.io/post/learning-progress/</link>
+      <link>https://cyrusn.github.io/note/learning-progress/</link>
       <pubDate>Sun, 10 May 2015 00:47:13 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/learning-progress/</guid>
+      <guid>https://cyrusn.github.io/note/learning-progress/</guid>
       <description>Computer Science Knowledge  big O
  Codecademy
   Javascript  RPS exercise
@@ -597,10 +715,10 @@ Reminder  Don&amp;rsquo;t use bootstrap.js, use ui-bootstrap.js instead.
     
     <item>
       <title>URL shortener and QR code Generator</title>
-      <link>https://cyrusn.github.io/post/url-shortener-and-qr-code-generator/</link>
+      <link>https://cyrusn.github.io/note/url-shortener-and-qr-code-generator/</link>
       <pubDate>Sun, 10 May 2015 00:46:40 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/url-shortener-and-qr-code-generator/</guid>
+      <guid>https://cyrusn.github.io/note/url-shortener-and-qr-code-generator/</guid>
       <description>Installation npm install -g goo.gl
 Google API OAuth for shortening a batch of links, create project for URL Shortener API. you will get 1,000,000 requests/day for FREE QR Code to a link  reference
  https://chart.googleapis.com/chart?chs=200x200&amp;amp;cht=qr&amp;amp;chl= + the link you need
