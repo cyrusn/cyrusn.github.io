@@ -12,7 +12,8 @@ Create a new script in /etc/init.d/myscript.
 vi /etc/init.d/myscript
 ```
 
-<!-- more --> (Obviously it doesn't have to be called "myscript".) In this script, do whatever you want to do. Perhaps just run the script you mentioned.
+(Obviously it doesn't have to be called "myscript".) In this script, do whatever you want to do. Perhaps just run the script you mentioned.
+<!-- more -->
 
 ```sh
 #!/bin/sh

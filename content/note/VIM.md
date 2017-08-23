@@ -14,6 +14,9 @@ tags:
 
 # Some useful skills
 
+## Update VIM Pathogen Plugin
+`for i in ~/.vim/bundle/*; do git -C $i pull; done`
+
 ## Insert across multi-lines
 
 Select the lines you want to modify using `Ctrl-v`. Press: `I`: Insert before what's selected. `A`: Append after what's selected. `c`: Replace what's selected. Type the new text. Press `Esc` to apply the changes to all selected lines.

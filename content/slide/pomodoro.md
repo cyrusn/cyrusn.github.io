@@ -1,22 +1,28 @@
 ---
 date: 2017-05-16T00:17:50+08:00
+title: 提升生產力及專注力
 subtitle: ""
 tags:
   - GTD
   - Pomodoro
   - tomato
-title: 提升生產力及專注力
 ---
 
 # 提升生產力及專注力
-## Getting Things Done & 蕃茄工作法
+## GTD & 蕃茄工作法
 
 ---
+# Reference
+- [The Pomodoro Technique® - proudly developed by Francesco Cirillo | Cirillo Company](https://cirillocompany.de/pages/pomodoro-technique)
+- [David Allen's Getting Things Done® Methodology](http://gettingthingsdone.com/)
 
+
+---
 # 工作時間
 - 平日每天約4小時
 - 假日每天約6小時
-- 合共：4hr x 5day + 6hr x 2day = 32 hrs
+- 合共：
+  `4hr x 5day + 6hr x 2day = 32 hrs`
 - 如何保持專注?
 
 ---
@@ -45,5 +51,10 @@ ___
 - [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique)
 - [Getting Things Done](https://en.wikipedia.org/wiki/Getting_Things_Done)
 
-*keywords*
-`pomodoro` `tomato` `timer` `technique` `getting things done`
+___
+# *keywords*:
+- `pomodoro`
+- `tomato`
+- `timer`
+- `technique`
+- `getting things done`

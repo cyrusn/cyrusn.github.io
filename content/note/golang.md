@@ -32,6 +32,8 @@ tags:
 # SQL Database
 
 - [Go database/sql tutorial](http://go-database-sql.org/)
+- [Practical Persistence in Go: Organising Database Access](http://www.alexedwards.net/blog/organising-database-access)
+- [Practical Persistence in Go: SQL Databases](http://www.alexedwards.net/blog/practical-persistence-sql)
 
 # Authentication
 
