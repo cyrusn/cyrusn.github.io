@@ -7,10 +7,122 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
     <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
-    <lastBuildDate>Tue, 16 May 2017 00:17:50 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 20 Aug 2017 23:02:28 +0800</lastBuildDate>
     
 	<atom:link href="https://cyrusn.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>swimming</title>
+      <link>https://cyrusn.github.io/note/swimming/</link>
+      <pubDate>Sun, 20 Aug 2017 23:02:28 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/swimming/</guid>
+      <description> FreeStyle  3 Drills to Improve Freestyle Stroke | Swimming Lessons - YouTube
+ Speedo&amp;rsquo;s Ultimate Guide to a Perfect Freestyle Swim Stroke! (Tutorial) - Presented by ProTriathlon - YouTube
+  </description>
+    </item>
+    
+    <item>
+      <title>sql</title>
+      <link>https://cyrusn.github.io/note/sql/</link>
+      <pubDate>Sun, 09 Jul 2017 20:56:56 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/sql/</guid>
+      <description>Some of The Most Important SQL Commands  SELECT - extracts data from a database
+ UPDATE - updates data in a database
+ DELETE - deletes data from a database
+ INSERT INTO - inserts new data into a database
+ CREATE DATABASE - creates a new database
+ ALTER DATABASE - modifies a database
+ CREATE TABLE - creates a new table
+ ALTER TABLE - modifies a table</description>
+    </item>
+    
+    <item>
+      <title>Dyson Washing</title>
+      <link>https://cyrusn.github.io/note/dyson/</link>
+      <pubDate>Sun, 09 Jul 2017 14:55:02 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/dyson/</guid>
+      <description> How to clean the Dyson V6 / DC59 Cordless Vacuum Cleaner - YouTube
+ Dyson V6 Absolute and V6 Mattress - Washing the filters (Official Dyson video) - YouTube
+  </description>
+    </item>
+    
+    <item>
+      <title>STEM Education</title>
+      <link>https://cyrusn.github.io/note/stem/</link>
+      <pubDate>Tue, 20 Jun 2017 19:05:48 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/stem/</guid>
+      <description> Coding and Math Reference  Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine
+ UC Davis Center for Integrated Computing and STEM Education
+  </description>
+    </item>
+    
+    <item>
+      <title>Notes on PCVEPT Course</title>
+      <link>https://cyrusn.github.io/note/pcvpet/</link>
+      <pubDate>Sat, 27 May 2017 10:57:07 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/pcvpet/</guid>
+      <description>Notes on PCVPET  Vocational Education in Hong Kong
+ Blue Collar
+ Why MTR always out of order?
+ The Event of Langham Place
+ Air Conditional / escalator
+ only fill up 25% of needs
+  Is that because the lack development of Vocational Training?
+ Hong Kong need technician
+ Student need to find what they will devote in and capable of.
+ Earn And Learn Scheme 3 days works and 3 days study</description>
+    </item>
+    
+    <item>
+      <title>signal</title>
+      <link>https://cyrusn.github.io/note/signal/</link>
+      <pubDate>Thu, 25 May 2017 15:03:22 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/signal/</guid>
+      <description> How to Kill a Process from the Command Line | Linux.com | The source for Linux information
+ depth first vs breath first
+  </description>
+    </item>
+    
+    <item>
+      <title>Task Warrior</title>
+      <link>https://cyrusn.github.io/note/taskwarrior/</link>
+      <pubDate>Sun, 21 May 2017 18:33:42 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/taskwarrior/</guid>
+      <description>Taskwarrior Taskwarrior - What&amp;rsquo;s next?</description>
+    </item>
+    
+    <item>
+      <title>Google Calendar for LPSS Colleagues</title>
+      <link>https://cyrusn.github.io/note/google-calendar/</link>
+      <pubDate>Fri, 19 May 2017 09:50:13 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/google-calendar/</guid>
+      <description>Add Calendar to mobile devices  Login your LiPing domain account in the web browser first
+ Go to www.google.com
+ username: lpXXX@liping.edu.hk
+ password: please ask ITAV team if you didn’t get the password
+  Go to calendar view or press this link https://calendar.google.com/calendar
+ Go to Other Calendar section and paste the link below to the box “Add a colleague’s calendar”
+ liping.edu.hk_0jfuie399d0elvaac06k0hur8o@group.calendar.google.com
+   Then you will see the word “School Calendar” under the Other Calendar section.</description>
+    </item>
+    
+    <item>
+      <title>OSI Model</title>
+      <link>https://cyrusn.github.io/note/osi-model/</link>
+      <pubDate>Fri, 19 May 2017 08:12:48 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/osi-model/</guid>
+      <description>    OSI Model by Layer     2 Data Link Layer   1 Physical layer    </description>
+    </item>
     
     <item>
       <title>提升生產力及專注力</title>
@@ -18,9 +130,12 @@
       <pubDate>Tue, 16 May 2017 00:17:50 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/pomodoro/</guid>
-      <description>提升生產力及專注力 Getting Things Done &amp;amp; 蕃茄工作法 工作時間  平日每天約4小時
+      <description>提升生產力及專注力 GTD &amp;amp; 蕃茄工作法 Reference  The Pomodoro Technique® - proudly developed by Francesco Cirillo | Cirillo Company
+ David Allen&amp;rsquo;s Getting Things Done® Methodology
+  工作時間  平日每天約4小時
  假日每天約6小時
- 合共：4hr x 5day + 6hr x 2day = 32 hrs
+ 合共：
+4hr x 5day + 6hr x 2day = 32 hrs
  如何保持專注?
   規劃  每科應用15分鐘回顧及整理當天所學
  功課應盡早完成
@@ -28,12 +143,7 @@
   流程 
 Why?  何時做 &amp;gt; 何時交
  計時能令人集中
- e.g. 考試、測驗
-   參考資料  Online Pomodoro Timer
- Pomodoro Technique
- Getting Things Done
-  keywords
-pomodoro tomato timer technique getting things done</description>
+ e.g. 考試、測驗</description>
     </item>
     
     <item>
@@ -121,13 +231,15 @@ pomodoro tomato timer technique getting things done</description>
       <pubDate>Mon, 15 May 2017 14:21:39 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/career-theory/</guid>
-      <description> LifeDesign.pdf
+      <description>Donal Super Theory  Super&amp;rsquo;s Career Development Theory - IResearchNet
  career-theory-model-super.pdf
-     The Life Career Rainbow - Get a better work/life balance - Career Development from MindTools.com
+ The Life Career Rainbow - Get a better work/life balance - Career Development from MindTools.com
+  Reference  LifeDesign.pdf
  Holland’s Theory of Career Choice | Career Key
  The Big Five Career Theories
  The Serious Leisure Perspective (SLP) - Welcome
-  </description>
+ Careers and Career Information - CareerOneStop
+ Free Personality Test | 16Personalities</description>
     </item>
     
     <item>
@@ -244,8 +356,8 @@ Anatomy of a zero-knowledge web application - Clipperz, register your creations 
       <description>VIM Basic  Vim Cheat Sheet - English
  VimGenius
  vimgifs
-  Some useful skills Insert across multi-lines Select the lines you want to modify using Ctrl-v. Press: I: Insert before what&amp;rsquo;s selected. A: Append after what&amp;rsquo;s selected. c: Replace what&amp;rsquo;s selected. Type the new text. Press Esc to apply the changes to all selected lines.
-Search and replace :s/foo/bar/g Change each &amp;lsquo;foo&amp;rsquo; to &amp;lsquo;bar&amp;rsquo; in the current line.</description>
+  Some useful skills Update VIM Pathogen Plugin for i in ~/.vim/bundle/*; do git -C $i pull; done
+Insert across multi-lines Select the lines you want to modify using Ctrl-v. Press: I: Insert before what&amp;rsquo;s selected. A: Append after what&amp;rsquo;s selected. c: Replace what&amp;rsquo;s selected. Type the new text. Press Esc to apply the changes to all selected lines.</description>
     </item>
     
     <item>

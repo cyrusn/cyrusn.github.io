@@ -3,15 +3,10 @@
 <link rel="stylesheet" href="/revealjs/lib/css/zenburn.css">
 
 <style>
-   
-  ::-webkit-scrollbar {
-  display: none !important;
-  }
-
-   
-  .slides {
-  overflow-y: auto !important;
-  overflow-x: hidden !important;
+  
+  .reveal code {
+    color: #c7254e !important;
+    background-color: #f9f2f4 !important;
   }
 </style>
 
@@ -23,14 +18,20 @@
          data-separator-notes="^Note:"
          data-charset="utf8">
 # 提升生產力及專注力
-## Getting Things Done &amp; 蕃茄工作法
+## GTD &amp; 蕃茄工作法
 
 ---
+# Reference
+- [The Pomodoro Technique® - proudly developed by Francesco Cirillo | Cirillo Company](https://cirillocompany.de/pages/pomodoro-technique)
+- [David Allen&#39;s Getting Things Done® Methodology](http://gettingthingsdone.com/)
 
+
+---
 # 工作時間
 - 平日每天約4小時
 - 假日每天約6小時
-- 合共：4hr x 5day &#43; 6hr x 2day = 32 hrs
+- 合共：
+  `4hr x 5day &#43; 6hr x 2day = 32 hrs`
 - 如何保持專注?
 
 ---
@@ -59,8 +60,13 @@ ___
 - [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique)
 - [Getting Things Done](https://en.wikipedia.org/wiki/Getting_Things_Done)
 
-*keywords*
-`pomodoro` `tomato` `timer` `technique` `getting things done`
+___
+# *keywords*:
+- `pomodoro`
+- `tomato`
+- `timer`
+- `technique`
+- `getting things done`
 
 </section>
 </div>
@@ -69,22 +75,26 @@ ___
 <script src="/revealjs/js/reveal.js"></script>
 <script>
   Reveal.initialize({
-        	embedded : true,
+    slideNumber: true,
+    history: true,
+    transition: "convex",
+    markdown: {
+      gfm: true,
+      breaks: true
+    },
+    
 
-          
-   	slideNumber: true,
-
-          
-          
-          dependencies: [
-            { src: '\/revealjs\/lib\/js\/classList.js"', condition: function() { return !document.body.classList; } },
-            { src: '\/revealjs\/plugin\/markdown\/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: '\/revealjs\/plugin\/math\/math.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: '\/revealjs\/plugin\/markdown\/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: '\/revealjs\/plugin\/highlight\/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-            { src: '\/revealjs\/plugin\/zoom-js\/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-            { src: '\/revealjs\/plugin\/notes\/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-          ]
-        });
+    
+    
+    dependencies: [
+      { src: '\/revealjs\/lib\/js\/classList.js"', condition: function() { return !document.body.classList; } },
+      { src: '\/revealjs\/plugin\/markdown\/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: '\/revealjs\/plugin\/math\/math.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: '\/revealjs\/plugin\/markdown\/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: '\/revealjs\/plugin\/highlight\/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: '\/revealjs\/plugin\/zoom-js\/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: '\/revealjs\/plugin\/notes\/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+    ]
+  });
 </script>
 <script src="/js/go-to-home.js"></script>

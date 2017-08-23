@@ -3,11 +3,101 @@
 
 
 {
+	"uri": "https://cyrusn.github.io/note/swimming/",
+	"title": "swimming",
+	"tags": ["freestyle"],
+	"description": "",
+	"content": " FreeStyle  3 Drills to Improve Freestyle Stroke | Swimming Lessons - YouTube\n Speedo\u0026rsquo;s Ultimate Guide to a Perfect Freestyle Swim Stroke! (Tutorial) - Presented by ProTriathlon - YouTube\n  "
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/note/sql/",
+	"title": "sql",
+	"tags": ["normalization", "normal form"],
+	"description": "",
+	"content": " Some of The Most Important SQL Commands  SELECT - extracts data from a database\n UPDATE - updates data in a database\n DELETE - deletes data from a database\n INSERT INTO - inserts new data into a database\n CREATE DATABASE - creates a new database\n ALTER DATABASE - modifies a database\n CREATE TABLE - creates a new table\n ALTER TABLE - modifies a table\n DROP TABLE - deletes a table\n CREATE INDEX - creates an index (search key)\n DROP INDEX - deletes an index\n  SQL PRIMARY KEY Constraint The PRIMARY KEY constraint uniquely identifies each record in a database table.\nPrimary keys must contain UNIQUE values, and cannot contain NULL values.\nA table can have only one primary key, which may consist of single or multiple fields.\nCREATE TABLE Persons ( ID int NOT NULL, LastName varchar(255) NOT NULL, FirstName varchar(255), Age int, PRIMARY KEY (ID) );  SQL FOREIGN KEY Constraint A FOREIGN KEY is a key used to link two tables together.\nA FOREIGN KEY is a field (or collection of fields) in one table that refers to the PRIMARY KEY in another table.\nThe table containing the foreign key is called the child table, and the table containing the candidate key is called the referenced or parent table\ne.g\nCREATE TABLE Orders ( OrderID int NOT NULL, OrderNumber int NOT NULL, PersonID int, PRIMARY KEY (OrderID), FOREIGN KEY (PersonID) REFERENCES Persons(PersonID) );  Different Types of SQL JOINs Here are the different types of the JOINs in SQL:\n(INNER) JOIN: Returns records that have matching values in both tables\nLEFT (OUTER) JOIN: Return all records from the left table, and the matched records from the right table\nRIGHT (OUTER) JOIN: Return all records from the right table, and the matched records from the left table\nFULL (OUTER) JOIN: Return all records when there is a match in either left or right table\n   inner left right full            "
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/note/dyson/",
+	"title": "Dyson Washing",
+	"tags": [],
+	"description": "",
+	"content": " How to clean the Dyson V6 / DC59 Cordless Vacuum Cleaner - YouTube\n Dyson V6 Absolute and V6 Mattress - Washing the filters (Official Dyson video) - YouTube\n  "
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/note/stem/",
+	"title": "STEM Education",
+	"tags": ["education"],
+	"description": "",
+	"content": " Coding and Math Reference  Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine\n UC Davis Center for Integrated Computing and STEM Education\n  "
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/note/pcvpet/",
+	"title": "Notes on PCVEPT Course",
+	"tags": ["career", "vpet"],
+	"description": "",
+	"content": " Notes on PCVPET  Vocational Education in Hong Kong\n Blue Collar\n Why MTR always out of order?\n The Event of Langham Place\n Air Conditional / escalator\n only fill up 25% of needs\n  Is that because the lack development of Vocational Training?\n Hong Kong need technician\n Student need to find what they will devote in and capable of.\n Earn And Learn Scheme 3 days works and 3 days study\n Pages - VPETCITY Home\n  Simple Game\n Simple Classification of Occupations\n Physical Materials\n People\n Symbol\n Low entry requirement but High Pay\n 器皿潔淨員\n 肉類切割技術員\n 紮鐵工\n 持牌飛機維修工程師\n 司機兼收派件員 （Like SF）\n  Book List\n 我要做Boss\n Good Show\n   "
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/note/signal/",
+	"title": "signal",
+	"tags": ["signal", "process", "top", "killall"],
+	"description": "",
+	"content": " How to Kill a Process from the Command Line | Linux.com | The source for Linux information\n depth first vs breath first\n  "
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/note/taskwarrior/",
+	"title": "Task Warrior",
+	"tags": ["taskwarrior", "todo", "task", "reminder"],
+	"description": "",
+	"content": " Taskwarrior Taskwarrior - What\u0026rsquo;s next?\n"
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/note/google-calendar/",
+	"title": "Google Calendar for LPSS Colleagues",
+	"tags": ["calendar", "google", "lpss"],
+	"description": "",
+	"content": " Add Calendar to mobile devices  Login your LiPing domain account in the web browser first\n Go to www.google.com\n username: lpXXX@liping.edu.hk\n password: please ask ITAV team if you didn’t get the password\n  Go to calendar view or press this link https://calendar.google.com/calendar\n Go to Other Calendar section and paste the link below to the box “Add a colleague’s calendar”\n liping.edu.hk_0jfuie399d0elvaac06k0hur8o@group.calendar.google.com\n   Then you will see the word “School Calendar” under the Other Calendar section.\n If you want to access the calendar through your mobile devices, go to the link below\n https://calendar.google.com/calendar/syncselect\n Check the box next to School Calendar (Read Only)\n Press the save button after you checked the box\n  Add your liping.edu.hk Domain account to your mobile devices, you may find the instructions from the link below\n How to Add Google Account on Android Device\n How to set up mail, contacts, and calendars on iPhone and iPad | iMore\n  Last but not least, contact the IT experts around you if you didn’t understand the sentences above.\n Enjoy\n  P.S.  Events with the title started with a asterisk character (*) haven’t been confirmed the date.\n i.e. * Free Hall from HKDSE centre on 1 April 17\n  This is not an official calendar, please ref to school calendar sent by Jessica Kan for the most accurate one.\n  "
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/note/osi-model/",
+	"title": "OSI Model",
+	"tags": ["tcp", "udp", "osi"],
+	"description": "",
+	"content": "    OSI Model by Layer     2 Data Link Layer   1 Physical layer    "
+},
+
+
+
+{
 	"uri": "https://cyrusn.github.io/slide/pomodoro/",
 	"title": "提升生產力及專注力",
 	"tags": ["GTD", "Pomodoro", "tomato"],
 	"description": "",
-	"content": " 提升生產力及專注力 Getting Things Done \u0026amp; 蕃茄工作法 工作時間  平日每天約4小時\n 假日每天約6小時\n 合共：4hr x 5day + 6hr x 2day = 32 hrs\n 如何保持專注?\n  規劃  每科應用15分鐘回顧及整理當天所學\n 功課應盡早完成\n 每天用盡所有工作時間\n  流程 \nWhy?  何時做 \u0026gt; 何時交\n 計時能令人集中\n e.g. 考試、測驗\n   參考資料  Online Pomodoro Timer\n Pomodoro Technique\n Getting Things Done\n  keywords\npomodoro tomato timer technique getting things done\n"
+	"content": " 提升生產力及專注力 GTD \u0026amp; 蕃茄工作法 Reference  The Pomodoro Technique® - proudly developed by Francesco Cirillo | Cirillo Company\n David Allen\u0026rsquo;s Getting Things Done® Methodology\n  工作時間  平日每天約4小時\n 假日每天約6小時\n 合共：\n4hr x 5day + 6hr x 2day = 32 hrs\n 如何保持專注?\n  規劃  每科應用15分鐘回顧及整理當天所學\n 功課應盡早完成\n 每天用盡所有工作時間\n  流程 \nWhy?  何時做 \u0026gt; 何時交\n 計時能令人集中\n e.g. 考試、測驗\n   參考資料  Online Pomodoro Timer\n Pomodoro Technique\n Getting Things Done\n  keywords:  pomodoro\n tomato\n timer\n technique\n getting things done\n  "
 },
 
 
@@ -57,7 +147,7 @@
 	"title": "Career Theory",
 	"tags": ["education", "career", "life planning", "donald super"],
 	"description": "",
-	"content": " LifeDesign.pdf\n career-theory-model-super.pdf\n     The Life Career Rainbow - Get a better work/life balance - Career Development from MindTools.com\n Holland’s Theory of Career Choice | Career Key\n The Big Five Career Theories\n The Serious Leisure Perspective (SLP) - Welcome\n  "
+	"content": " Donal Super Theory  Super\u0026rsquo;s Career Development Theory - IResearchNet\n career-theory-model-super.pdf\n The Life Career Rainbow - Get a better work/life balance - Career Development from MindTools.com\n  Reference  LifeDesign.pdf\n Holland’s Theory of Career Choice | Career Key\n The Big Five Career Theories\n The Serious Leisure Perspective (SLP) - Welcome\n Careers and Career Information - CareerOneStop\n Free Personality Test | 16Personalities\n    "
 },
 
 
@@ -157,7 +247,7 @@
 	"title": "VIM Notes",
 	"tags": ["editor", "vim"],
 	"description": "",
-	"content": " VIM Basic  Vim Cheat Sheet - English\n VimGenius\n vimgifs\n  Some useful skills Insert across multi-lines Select the lines you want to modify using Ctrl-v. Press: I: Insert before what\u0026rsquo;s selected. A: Append after what\u0026rsquo;s selected. c: Replace what\u0026rsquo;s selected. Type the new text. Press Esc to apply the changes to all selected lines.\nSearch and replace :s/foo/bar/g Change each \u0026lsquo;foo\u0026rsquo; to \u0026lsquo;bar\u0026rsquo; in the current line. :%s/foo/bar/g Change each \u0026lsquo;foo\u0026rsquo; to \u0026lsquo;bar\u0026rsquo; in all the lines.\nVIM Plugin  vim-pathogen\n Vim Awesome\n  My installed Plugins  ctrlp\n emmet\n nerdtree\n vim-airline\n vim-go\n vim-airline-themes\n vim-snippets\n syntastic\n tagbar\n vim-colors-solarized\n  "
+	"content": " VIM Basic  Vim Cheat Sheet - English\n VimGenius\n vimgifs\n  Some useful skills Update VIM Pathogen Plugin for i in ~/.vim/bundle/*; do git -C $i pull; done\nInsert across multi-lines Select the lines you want to modify using Ctrl-v. Press: I: Insert before what\u0026rsquo;s selected. A: Append after what\u0026rsquo;s selected. c: Replace what\u0026rsquo;s selected. Type the new text. Press Esc to apply the changes to all selected lines.\nSearch and replace :s/foo/bar/g Change each \u0026lsquo;foo\u0026rsquo; to \u0026lsquo;bar\u0026rsquo; in the current line. :%s/foo/bar/g Change each \u0026lsquo;foo\u0026rsquo; to \u0026lsquo;bar\u0026rsquo; in all the lines.\nVIM Plugin  vim-pathogen\n Vim Awesome\n  My installed Plugins  ctrlp\n emmet\n nerdtree\n vim-airline\n vim-go\n vim-airline-themes\n vim-snippets\n syntastic\n tagbar\n vim-colors-solarized\n  "
 },
 
 
@@ -527,7 +617,7 @@
 	"title": "Golang Notes",
 	"tags": ["golang"],
 	"description": "",
-	"content": " Feautre  Embedding\n  Understanding Goroutine  Is golang goroutine a coroutine?\n Coroutine vs Continuation vs Generator\n Comparison with generators\n  MongoDB  mgo\n Painless Data Storage with MongoDB and Go\n Connecting to MongoDB with mgo and golang\n  Router  mux - Gorilla, the golang web toolkit\n  # Middleware\n justinas/alice: Painless middleware chaining for Go\n  SQL Database  Go database/sql tutorial\n  Authentication  dgrijalva/jwt-go: Golang implementation of JSON Web Tokens (JWT)\n Golang Authentication Using JSON Web Tokens\n  Useful Package  PuerkitoBio/goquery: A little like that j-thing, only in Go.\n bcrypt - GoDoc\n  "
+	"content": " Feautre  Embedding\n  Understanding Goroutine  Is golang goroutine a coroutine?\n Coroutine vs Continuation vs Generator\n Comparison with generators\n  MongoDB  mgo\n Painless Data Storage with MongoDB and Go\n Connecting to MongoDB with mgo and golang\n  Router  mux - Gorilla, the golang web toolkit\n  # Middleware\n justinas/alice: Painless middleware chaining for Go\n  SQL Database  Go database/sql tutorial\n Practical Persistence in Go: Organising Database Access\n Practical Persistence in Go: SQL Databases\n  Authentication  dgrijalva/jwt-go: Golang implementation of JSON Web Tokens (JWT)\n Golang Authentication Using JSON Web Tokens\n  Useful Package  PuerkitoBio/goquery: A little like that j-thing, only in Go.\n bcrypt - GoDoc\n  "
 },
 
 
@@ -635,6 +725,16 @@
 {
 	"uri": "https://cyrusn.github.io/tags/bootstrap/",
 	"title": "Bootstrap",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/calendar/",
+	"title": "Calendar",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -775,6 +875,16 @@
 {
 	"uri": "https://cyrusn.github.io/tags/education/",
 	"title": "Education",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/freestyle/",
+	"title": "Freestyle",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -963,6 +1073,16 @@
 
 
 {
+	"uri": "https://cyrusn.github.io/tags/killall/",
+	"title": "Killall",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
 	"uri": "https://cyrusn.github.io/tags/leveldb/",
 	"title": "Leveldb",
 	"tags": [],
@@ -985,6 +1105,16 @@
 {
 	"uri": "https://cyrusn.github.io/tags/linux/",
 	"title": "Linux",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/lpss/",
+	"title": "Lpss",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -1033,6 +1163,26 @@
 
 
 {
+	"uri": "https://cyrusn.github.io/tags/normal-form/",
+	"title": "Normal Form",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/normalization/",
+	"title": "Normalization",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
 	"uri": "https://cyrusn.github.io/tags/note-taking/",
 	"title": "Note Taking",
 	"tags": [],
@@ -1055,6 +1205,16 @@
 {
 	"uri": "https://cyrusn.github.io/tags/osascript/",
 	"title": "Osascript",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/osi/",
+	"title": "Osi",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -1095,6 +1255,16 @@
 {
 	"uri": "https://cyrusn.github.io/tags/pomodoro/",
 	"title": "Pomodoro",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/process/",
+	"title": "Process",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -1153,6 +1323,16 @@
 
 
 {
+	"uri": "https://cyrusn.github.io/tags/reminder/",
+	"title": "Reminder",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
 	"uri": "https://cyrusn.github.io/tags/scp/",
 	"title": "Scp",
 	"tags": [],
@@ -1185,6 +1365,16 @@
 {
 	"uri": "https://cyrusn.github.io/tags/shortener/",
 	"title": "Shortener",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/signal/",
+	"title": "Signal",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -1283,6 +1473,36 @@
 
 
 {
+	"uri": "https://cyrusn.github.io/tags/task/",
+	"title": "Task",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/taskwarrior/",
+	"title": "Taskwarrior",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/tcp/",
+	"title": "Tcp",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
 	"uri": "https://cyrusn.github.io/tags/terminal/",
 	"title": "Terminal",
 	"tags": [],
@@ -1323,6 +1543,16 @@
 
 
 {
+	"uri": "https://cyrusn.github.io/tags/todo/",
+	"title": "Todo",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
 	"uri": "https://cyrusn.github.io/tags/tomato/",
 	"title": "Tomato",
 	"tags": [],
@@ -1343,6 +1573,16 @@
 
 
 {
+	"uri": "https://cyrusn.github.io/tags/udp/",
+	"title": "Udp",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
 	"uri": "https://cyrusn.github.io/tags/uml/",
 	"title": "Uml",
 	"tags": [],
@@ -1355,6 +1595,16 @@
 {
 	"uri": "https://cyrusn.github.io/tags/vim/",
 	"title": "Vim",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/vpet/",
+	"title": "Vpet",
 	"tags": [],
 	"description": "",
 	"content": ""
