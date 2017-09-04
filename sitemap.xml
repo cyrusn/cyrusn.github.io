@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://cyrusn.github.io/note/tsf/</loc>
+    <lastmod>2017-09-04T17:09:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/note/grammer/</loc>
+    <lastmod>2017-09-04T07:48:04+08:00</lastmod>
+  </url>
   
   <url>
     <loc>https://cyrusn.github.io/note/swimming/</loc>
@@ -411,7 +422,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/</loc>
-    <lastmod>2017-08-20T23:02:28+08:00</lastmod>
+    <lastmod>2017-09-04T17:09:38+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -464,6 +475,17 @@
   </url>
   
   <url>
+    <loc>https://cyrusn.github.io/tags/english/</loc>
+    <lastmod>2017-09-04T07:48:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/essay/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://cyrusn.github.io/tags/freestyle/</loc>
     <lastmod>2017-08-20T23:02:28+08:00</lastmod>
     <priority>0</priority>
@@ -512,6 +534,12 @@
   </url>
   
   <url>
+    <loc>https://cyrusn.github.io/tags/grammer/</loc>
+    <lastmod>2017-09-04T07:48:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://cyrusn.github.io/tags/gtd/</loc>
     <lastmod>2017-05-16T00:17:50+08:00</lastmod>
     <priority>0</priority>
@@ -556,6 +584,12 @@
   <url>
     <loc>https://cyrusn.github.io/tags/jq/</loc>
     <lastmod>2015-05-24T22:36:53+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/js/</loc>
+    <lastmod>2017-09-04T17:09:38+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -651,7 +685,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/note/</loc>
-    <lastmod>2017-08-20T23:02:28+08:00</lastmod>
+    <lastmod>2017-09-04T17:09:38+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -928,6 +962,10 @@
     <loc>https://cyrusn.github.io/tags/zsh/</loc>
     <lastmod>2015-05-24T22:36:53+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/note/careers_essay_2017-08-30/</loc>
   </url>
   
 </urlset>

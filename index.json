@@ -3,6 +3,26 @@
 
 
 {
+	"uri": "https://cyrusn.github.io/note/tsf/",
+	"title": "TSF",
+	"tags": ["js"],
+	"description": "",
+	"content": "var students = [{ name: \u0026quot;foo\u0026quot;, clazz: \u0026quot;4A\u0026quot; }, { name: \u0026quot;world\u0026quot;, clazz: \u0026quot;4B\u0026quot; }, { name: \u0026quot;bar\u0026quot;, clazz: \u0026quot;4B\u0026quot; }, { name: \u0026quot;hello\u0026quot;, clazz: \u0026quot;4C\u0026quot; }] var clazzes = [\u0026quot;4B\u0026quot;, \u0026quot;4C\u0026quot;] clazzes.forEach(function (clazz) { students.filter(createFilterFunction(clazz)).forEach(logName) }) function createFilterFunction (clazz) { // return filterFunction return function (student) { return student.clazz == clazz } } function logName (student) { console.log(student.name) }  "
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/note/grammer/",
+	"title": "Grammer",
+	"tags": ["english", "grammer"],
+	"description": "",
+	"content": " English Grammer 101\nTenses    Descibe future event  Will vs Going To Differences - GrammarBank\n  FANBOYS  Writing Compound Sentences Using FANBOYS\n  Participles  What are participles?\n Participial phrase\n  "
+},
+
+
+
+{
 	"uri": "https://cyrusn.github.io/note/swimming/",
 	"title": "swimming",
 	"tags": ["freestyle"],
@@ -327,7 +347,7 @@
 	"title": "LevelDB Notes",
 	"tags": ["database", "javascript", "leveldb"],
 	"description": "",
-	"content": " Links  Main Page\n YouTube Introduction bEip0)\n  "
+	"content": " Links  Main Page\n [YouTube Introduction][levelDB]\n  [levelDB]: https://www.youtube.com/watch?v=sR7p_JbEip0) bEip0\n"
 },
 
 
@@ -883,6 +903,26 @@
 
 
 {
+	"uri": "https://cyrusn.github.io/tags/english/",
+	"title": "English",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/essay/",
+	"title": "Essay",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
 	"uri": "https://cyrusn.github.io/tags/freestyle/",
 	"title": "Freestyle",
 	"tags": [],
@@ -963,6 +1003,16 @@
 
 
 {
+	"uri": "https://cyrusn.github.io/tags/grammer/",
+	"title": "Grammer",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
 	"uri": "https://cyrusn.github.io/tags/gtd/",
 	"title": "Gtd",
 	"tags": [],
@@ -1035,6 +1085,16 @@
 {
 	"uri": "https://cyrusn.github.io/tags/jq/",
 	"title": "Jq",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/tags/js/",
+	"title": "Js",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -1658,4 +1718,14 @@
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+
+
+
+{
+	"uri": "https://cyrusn.github.io/note/careers_essay_2017-08-30/",
+	"title": "生涯規劃",
+	"tags": ["essay"],
+	"description": "",
+	"content": " my history\n \n  "
 }]

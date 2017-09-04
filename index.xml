@@ -7,10 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
     <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
-    <lastBuildDate>Sun, 20 Aug 2017 23:02:28 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 04 Sep 2017 17:09:38 +0800</lastBuildDate>
     
 	<atom:link href="https://cyrusn.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TSF</title>
+      <link>https://cyrusn.github.io/note/tsf/</link>
+      <pubDate>Mon, 04 Sep 2017 17:09:38 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/tsf/</guid>
+      <description>var students = [{ name: &amp;quot;foo&amp;quot;, clazz: &amp;quot;4A&amp;quot; }, { name: &amp;quot;world&amp;quot;, clazz: &amp;quot;4B&amp;quot; }, { name: &amp;quot;bar&amp;quot;, clazz: &amp;quot;4B&amp;quot; }, { name: &amp;quot;hello&amp;quot;, clazz: &amp;quot;4C&amp;quot; }] var clazzes = [&amp;quot;4B&amp;quot;, &amp;quot;4C&amp;quot;] clazzes.forEach(function (clazz) { students.filter(createFilterFunction(clazz)).forEach(logName) }) function createFilterFunction (clazz) { // return filterFunction return function (student) { return student.clazz == clazz } } function logName (student) { console.log(student.name) }  </description>
+    </item>
+    
+    <item>
+      <title>Grammer</title>
+      <link>https://cyrusn.github.io/note/grammer/</link>
+      <pubDate>Mon, 04 Sep 2017 07:48:04 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/grammer/</guid>
+      <description> English Grammer 101
+Tenses    Descibe future event  Will vs Going To Differences - GrammarBank
+  FANBOYS  Writing Compound Sentences Using FANBOYS
+  Participles  What are participles?
+ Participial phrase
+  </description>
+    </item>
     
     <item>
       <title>swimming</title>
@@ -444,9 +467,9 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
       <pubDate>Tue, 08 Dec 2015 08:35:55 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/leveldb/</guid>
-      <description> Links  Main Page
- YouTube Introduction bEip0)
-  </description>
+      <description>Links  Main Page
+ [YouTube Introduction][levelDB]
+  [levelDB]: https://www.youtube.com/watch?v=sR7p_JbEip0) bEip0</description>
     </item>
     
     <item>
@@ -877,6 +900,17 @@ Google API OAuth for shortening a batch of links, create project for URL Shorten
  A teacher is two jobs. Fill young minds with knowledge, yes. But more important, give those minds a compass so that that knowledge doesn&amp;rsquo;t go to waste.
 From the movie: Mr Holland&amp;rsquo;s Opus
  </description>
+    </item>
+    
+    <item>
+      <title>生涯規劃</title>
+      <link>https://cyrusn.github.io/note/careers_essay_2017-08-30/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/careers_essay_2017-08-30/</guid>
+      <description> my history
+ 
+  </description>
     </item>
     
   </channel>
