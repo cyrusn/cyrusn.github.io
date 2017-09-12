@@ -17,7 +17,7 @@ title: Google Calendar for LPSS Colleagues
 2. Go to calendar view or press this link [https://calendar.google.com/calendar](https://calendar.google.com/calendar)
 3. Go to Other Calendar section and paste the link below to the box “Add a colleague’s calendar”
     * liping.edu.hk_0jfuie399d0elvaac06k0hur8o@group.calendar.google.com
-    * ![image](/img/note/google-calendar-01.png)
+    * ![image](./01.png)
 4. Then you will see the word “School Calendar” under the Other Calendar section.
 5. If you want to access the calendar through your mobile devices, go to the link below
     * [https://calendar.google.com/calendar/syncselect](https://calendar.google.com/calendar/syncselect)
