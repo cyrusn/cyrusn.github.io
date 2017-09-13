@@ -10,7 +10,7 @@ tags:
 <!-- MarkdownTOC -->
 
 - 學校課程持續更新
-- STEM
+- [STEM](#stem)
 - [C&A](#curriculum-and-assessment)
 
 <!-- /MarkdownTOC -->
@@ -19,7 +19,7 @@ tags:
 # [學校課程持續更新](http://www.edb.gov.hk/tc/curriculum-development/renewal/guides.html)
 
 
-# STEM
+# STEM{#stem}
 - [《推動STEM教育 — 發揮創意潛能》報告](http://www.edb.gov.hk/attachment/tc/curriculum-development/renewal/STEM_Education_Report_Chi_20170303.pdf)
 - [數學教育課程指引 (小一至中六)](http://www.edb.gov.hk/attachment/en/curriculum-development/renewal/ME/ME_KLACG_eng_draft_2017_04.pdf)
 - [科技教育課程指引 (小一至中六)](http://www.edb.gov.hk/attachment/en/curriculum-development/renewal/TE/TE_KLACG_eng_draft_2017_05.pdf)
