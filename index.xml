@@ -13,7 +13,7 @@
     
     
     <item>
-      <title>Yakko S World Lyric</title>
+      <title>Yakko&#39;s World Lyric</title>
       <link>https://cyrusn.github.io/note/yakko-s-world-lyric/</link>
       <pubDate>Wed, 13 Sep 2017 21:31:16 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
@@ -122,6 +122,7 @@ Tenses    Descibe future event  Will vs Going To Differences - GrammarBank
       <guid>https://cyrusn.github.io/note/stem/</guid>
       <description> Coding and Math Reference  Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine
  UC Davis Center for Integrated Computing and STEM Education
+ Zebra Puzzle - Wikiwand
   </description>
     </item>
     
@@ -926,8 +927,11 @@ Google API OAuth for shortening a batch of links, create project for URL Shorten
       <pubDate>Sun, 10 May 2015 00:46:36 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/gitbook/</guid>
-      <description> Gitbook
+      <description>  Gitbook
  Modern book format and toolchain using Git and Markdown
+  Plugin  katex
+ sectionx
+ responsive-iframes
   </description>
     </item>
     
@@ -941,17 +945,6 @@ Google API OAuth for shortening a batch of links, create project for URL Shorten
  A teacher is two jobs. Fill young minds with knowledge, yes. But more important, give those minds a compass so that that knowledge doesn&amp;rsquo;t go to waste.
 From the movie: Mr Holland&amp;rsquo;s Opus
  </description>
-    </item>
-    
-    <item>
-      <title>生涯規劃</title>
-      <link>https://cyrusn.github.io/note/careers_essay_2017-08-30/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/careers_essay_2017-08-30/</guid>
-      <description> my history
- 
-  </description>
     </item>
     
   </channel>
