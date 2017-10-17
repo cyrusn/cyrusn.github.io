@@ -8,7 +8,8 @@ tags:
 
 # Referece
 
-－ [Sticky Footer](http://css-tricks.com/snippets/css/sticky-footer/) － [responsive-utilities](http://getbootstrap.com/css/#responsive-utilities)
+－ [Sticky Footer](http://css-tricks.com/snippets/css/sticky-footer/) 
+－ [responsive-utilities](http://getbootstrap.com/css/#responsive-utilities)
 
 # Reminder
 

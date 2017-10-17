@@ -5,5 +5,12 @@ tags:
   - gitbook
 ---
 
-- [Gitbook](https://github.com/GitbookIO/gitbook)
+- [Gitbook][1]
 - Modern book format and toolchain using Git and Markdown
+
+# Plugin
+- katex
+- sectionx
+- responsive-iframes
+
+[1]: https://github.com/GitbookIO/gitbook

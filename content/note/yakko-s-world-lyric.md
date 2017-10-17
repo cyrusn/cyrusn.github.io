@@ -1,12 +1,12 @@
 ---
-title: "Yakko S World Lyric"
+title: "Yakko's World Lyric"
 date: 2017-09-13T21:31:16+08:00
 tags:
   - lyric
   - map
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5pOFKmk7ytU" frameborder="0" allowfullscreen></iframe>
+{{< youtube 5pOFKmk7ytU >}}
 
 U***nit***ed States, ***Can***ada, ***Me***xico, ***Pa***nama
 ***Hai***ti, Ja***mai***ca, Pe***ru***, 
@@ -33,16 +33,16 @@ Bar***ba***dos, and ***Guam***.
 ---
 
 ***Nor***way, and S***we***den, and ***Ice***land, and ***Fin***land and
-***Ger***many ***no***w ~ one ***piece***,
+***Ger***many ***no***w ~ want ***peace***,
 
-S***wit***zerland, ***Au***stria, ***Cze***choslo***vak***ia
+S***wit***zerland, ***Au***stria, ***Cze***ch, Slo***vak***ia
 ***It***aly, ***Tur***key, and ***Greece***.
 
 ***Po***land, Ro***man***ia, S***cot***land, Al***ban***ia
 ***Ir***eland, **Ru**ssia, O***man***,
 
-Bul***gar***ia, Saudi A***ra***bia
-***Hun***gary, ***Cy***prus, I***raq***, and I***ran***.
+Bul***gar***ia, Saudi A***ra***bia, ***Hun***gary
+***Cy***prus, I***raq***, and I***ran***.
 
 ***There***'s ***Sy***ria, ***Le***banon, ***I***srael, ***Jor***dan Both
 ***Ye***mens, Ku***wait***, and Bah***rain***,
@@ -55,7 +55,8 @@ The ***Ne***therlands, ***Lu***xembourg, **Bel**gium, and ***Por***tugal
 ***In***dia, ***Pak***istan, **Bur**ma, Af***ghan***istan
 ***Thai***land, Ne***pal***, and Bhu***tan***,
 
-***Kam***pu***che***a, Malay***si***a, then ***Ban***gladesh ***A***sia and
+
+***Kam***pu***che***a, Ma***lay***sia, then ***Ban***gladesh ***A***sia and
 ***Chi***na, Ko***re***a, Ja***pan***.
 
 Mon***go***lia, ***Laos***, and Ti***bet***, Indo***ne***sia

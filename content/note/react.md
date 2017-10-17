@@ -8,62 +8,106 @@ tags:
 
 # API notes and example
 
-- [Top-Level API](http://facebook.github.io/react/docs/top-level-api.html)
-- [Component API](http://facebook.github.io/react/docs/component-api.html)
-- [Component Specs and ifecycle](http://facebook.github.io/react/docs/component-specs.html)
-- [Tags and Attributes](http://facebook.github.io/react/docs/tags-and-attributes.html)
-- [Event System](http://facebook.github.io/react/docs/events.html)
+- [Top-Level API][1]
+- [Component API][2]
+- [Component Specs and ifecycle][3]
+- [Tags and Attributes][4]
+- [Event System][5]
 
 # Ref Links
 
 ## Concept
 
-- [React | A JavaScript library for building user interfaces](http://facebook.github.io/react/index.html)
-- [Reactive MVC and the Virtual DOM -- Futurice](http://futurice.com/blog/reactive-mvc-and-the-virtual-dom)
-- [ReactJS For Stupid People](http://blog.andrewray.me/reactjs-for-stupid-people/)
-- [Component Interop With React And Custom Elements](http://addyosmani.com/blog/component-interop-with-react-and-custom-elements/)
-- [Josh Haberman: React Demystified](http://blog.reverberate.org/2014/02/react-demystified.html)
-- [Intro to the React Framework | Nettuts+](http://net.tutsplus.com/tutorials/javascript-ajax/intro-to-the-react-framework/)
-- [Integrating React and Flux with Angular](https://developers.mobileapptracking.com/addressing-angular-weaknesses-with-react-and-flux/)
+- [React | A JavaScript library for building user interfaces][6]
+- [Reactive MVC and the Virtual DOM -- Futurice][7]
+- [ReactJS For Stupid People][8]
+- [Component Interop With React And Custom Elements][9]
+- [Josh Haberman: React Demystified][10]
+- [Intro to the React Framework | Nettuts+][11]
+- [Integrating React and Flux with Angular][12]
 
 ## Tutorial
 
-- [Learning React.js- Getting Started and Concepts ♥ Scotch](http://scotch.io/tutorials/javascript/learning-react-getting-started-and-concepts)
-- [Build A Real-Time Twitter Stream with Node and React.js](https://scotch.io/tutorials/build-a-real-time-twitter-stream-with-node-and-react-js)
-- [Getting To Know Flux, the React.js Architecture](https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture)
-- [Creating A Simple Shopping Cart with React.js and Flux](https://scotch.io/tutorials/creating-a-simple-shopping-cart-with-react-js-and-flux)
-- [enaqx-awesome-react · GitHub](https://github.com/enaqx/awesome-react)
-- [React 入门教程](http://hulufei.gitbooks.io/react-tutorial/content/)
-- [Learn React](http://learnreact.robbestad.com/)
-- [Deconstructing ReactJS's Flux](http://spoike.ghost.io/deconstructing-reactjss-flux/)
+- [Learning React.js- Getting Started and Concepts ♥ Scotch][13]
+- [Build A Real-Time Twitter Stream with Node and React.js][14]
+- [Getting To Know Flux, the React.js Architecture][15]
+- [Creating A Simple Shopping Cart with React.js and Flux][16]
+- [enaqx-awesome-react · GitHub][17]
+- [React 入门教程][18]
+- [Learn React][19]
+- [Deconstructing ReactJS's Flux][20]
 
 ## Example
 
-- [react-rocket-boilerplate](https://github.com/jakemmarsh/react-rocket-boilerplate)
-- [James Long](http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome)
-- [kenwheeler-mcfly · GitHub](https://github.com/kenwheeler/mcfly)
-- [ReactJS Examples, Demos, Code](http://react.rocks/)
-- [Faster AngularJS Rendering (AngularJS and ReactJS) | thierry.nicola](http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs/)
-- [jhudson8-react-chartjs · GitHub](https://github.com/jhudson8/react-chartjs)
-- [React Primer](http://binarymuse.github.io/react-primer/build/)
-- [react-router auth](https://github.com/sardaukar/react-router-auth-example)
+- [react-rocket-boilerplate][21]
+- [James Long][22]
+- [kenwheeler-mcfly · GitHub][23]
+- [ReactJS Examples, Demos, Code][24]
+- [Faster AngularJS Rendering (AngularJS and ReactJS) | thierry.nicola][25]
+- [jhudson8-react-chartjs · GitHub][26]
+- [React Primer][27]
+- [react-router auth][28]
 
 ## Tools
 
-- [Reflux](https://github.com/spoike/refluxjs)
-- [Reactify](https://github.com/andreypopp/Reactify)
-- [Complementary Tools · facebook-react Wiki · GitHub](https://github.com/facebook/react/wiki/Complementary-Tools)
-- [rackt-react-router · GitHub](https://github.com/rackt/react-router)
-- [mtscout6-react-router-bootstrap · GitHub](https://github.com/mtscout6/react-router-bootstrap)
-- [React Bootstrap](http://react-bootstrap.github.io/)
-- [react-router-component :: viewdocs.io](http://strml.viewdocs.io/react-router-component)
-- [react-component · GitHub](https://github.com/react-component)
-- [React Components](http://react-components.com/)
-- [Baobab](https://github.com/Yomguithereal/baobab)
-- [tuxedojs](http://www.tuxedojs.org/)
-- [5 React.js + Flux tools](http://www.progville.com/javascript/5-react-js-flux-tools/)
-- [Babel](https://babeljs.io/)
+- [Reflux][29]
+- [Reactify][30]
+- [Complementary Tools · facebook-react Wiki · GitHub][31]
+- [rackt-react-router · GitHub][32]
+- [mtscout6-react-router-bootstrap · GitHub][33]
+- [React Bootstrap][34]
+- [react-router-component :: viewdocs.io][35]
+- [react-component · GitHub][36]
+- [React Components][37]
+- [Baobab][38]
+- [tuxedojs][39]
+- [5 React.js + Flux tools][40]
+- [Babel][41]
 
 ## from leesei
 
-- [React: CSS in JS // Speaker Deck](https://speakerdeck.com/vjeux/react-css-in-js)
+- [React: CSS in JS // Speaker Deck][42]
+
+
+[1]: http://facebook.github.io/react/docs/top-level-api.html
+[2]: http://facebook.github.io/react/docs/component-api.html
+[3]: http://facebook.github.io/react/docs/component-specs.html
+[4]: http://facebook.github.io/react/docs/tags-and-attributes.html
+[5]: http://facebook.github.io/react/docs/events.html
+[6]: http://facebook.github.io/react/index.html
+[7]: http://futurice.com/blog/reactive-mvc-and-the-virtual-dom
+[8]: http://blog.andrewray.me/reactjs-for-stupid-people/
+[9]: http://addyosmani.com/blog/component-interop-with-react-and-custom-elements/
+[10]: http://blog.reverberate.org/2014/02/react-demystified.html
+[11]: http://net.tutsplus.com/tutorials/javascript-ajax/intro-to-the-react-framework/
+[12]: https://developers.mobileapptracking.com/addressing-angular-weaknesses-with-react-and-flux/
+[13]: http://scotch.io/tutorials/javascript/learning-react-getting-started-and-concepts
+[14]: https://scotch.io/tutorials/build-a-real-time-twitter-stream-with-node-and-react-js
+[15]: https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture
+[16]: https://scotch.io/tutorials/creating-a-simple-shopping-cart-with-react-js-and-flux
+[17]: https://github.com/enaqx/awesome-react
+[18]: http://hulufei.gitbooks.io/react-tutorial/content/
+[19]: http://learnreact.robbestad.com/
+[20]: http://spoike.ghost.io/deconstructing-reactjss-flux/
+[21]: https://github.com/jakemmarsh/react-rocket-boilerplate
+[22]: http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome
+[23]: https://github.com/kenwheeler/mcfly
+[24]: http://react.rocks/
+[25]: http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs/
+[26]: https://github.com/jhudson8/react-chartjs
+[27]: http://binarymuse.github.io/react-primer/build/
+[28]: https://github.com/sardaukar/react-router-auth-example
+[29]: https://github.com/spoike/refluxjs
+[30]: https://github.com/andreypopp/Reactify
+[31]: https://github.com/facebook/react/wiki/Complementary-Tools
+[32]: https://github.com/rackt/react-router
+[33]: https://github.com/mtscout6/react-router-bootstrap
+[34]: http://react-bootstrap.github.io/
+[35]: http://strml.viewdocs.io/react-router-component
+[36]: https://github.com/react-component
+[37]: http://react-components.com/
+[38]: https://github.com/Yomguithereal/baobab
+[39]: http://www.tuxedojs.org/
+[40]: http://www.progville.com/javascript/5-react-js-flux-tools/
+[41]: https://babeljs.io/
+[42]: https://speakerdeck.com/vjeux/react-css-in-js

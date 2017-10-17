@@ -74,14 +74,21 @@ using `caddy` to run the server through `tmux`
 
 # Reference
 
-- [DenBeke – Running Caddy Server as a service with Upstart](https://denbeke.be/blog/servers/running-caddy-server-as-a-service/)
-- [How To Configure the Apache Web Server on an Ubuntu or Debian VPS | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-configure-the-apache-web-server-on-an-ubuntu-or-debian-vps)
-- [Is TLS Fast Yet?](https://istlsfastyet.com/)
-- [Proxy server - Wikiwand](https://www.wikiwand.com/en/Proxy_server#/Web_proxy_servers)
-- [Webmaster - Wikiwand](https://www.wikiwand.com/en/Webmaster)
+- [DenBeke – Running Caddy Server as a service with Upstart][1]
+- [How To Configure the Apache Web Server on an Ubuntu or Debian VPS | DigitalOcean][2]
+- [Is TLS Fast Yet?][3]
+- [Proxy server - Wikiwand][4]
+- [Webmaster - Wikiwand][5]
 
 # Key Word
 
 - reverse proxy
 - Microservice
 - load balancing
+
+
+[1]: https://denbeke.be/blog/servers/running-caddy-server-as-a-service/
+[2]: https://www.digitalocean.com/community/tutorials/how-to-configure-the-apache-web-server-on-an-ubuntu-or-debian-vps
+[3]: https://istlsfastyet.com/
+[4]: https://www.wikiwand.com/en/Proxy_server#/Web_proxy_servers
+[5]: https://www.wikiwand.com/en/Webmaster

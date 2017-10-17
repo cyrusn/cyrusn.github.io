@@ -29,4 +29,4 @@ scp username@b:/path/to/file /path/to/destination
 - restore droplet by the snapshot
 
 # Update Server's Kernel
-- [How To Update a DigitalOcean Server's Kernel | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-update-a-digitalocean-server-s-kernel) igitalocean.com/community/tutorials/how-to-update-a-digitalocean-server-s-kernel)
+- [How To Update a DigitalOcean Server's Kernel | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-update-a-digitalocean-server-s-kernel) 

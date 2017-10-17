@@ -11,7 +11,8 @@ date: '2015-05-10 00:47:40'
 
 # Google Analytics & Webmaster
 
-- [reference](http://www.google.com/intl/en/webmasters/#utm_source=en-wmxmsg&utm_medium=wmxmsg&utm_campaign=bm&authuser=0) post 個sitemap.xml 俾google 做index
+- [reference](http://www.google.com/intl/en/webmasters/#utm_source=en-wmxmsg&utm_medium=wmxmsg&utm_campaign=bm&authuser=0) 
+- post 個sitemap.xml 俾google 做index
 - [reference](http://www.google.com/analytics/learn/setupchecklist.html)
 
 # Learn Basic Python Scripting

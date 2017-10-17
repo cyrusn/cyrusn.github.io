@@ -4,39 +4,72 @@ date: '2015-05-10 01:22:16'
 ---
 
 # 打底班
-- [Programming Languages - YouTube](https://www.youtube.com/playlist?list=PL7141DE955793D3F0)
-- [Hardware Basics - YouTube](https://www.youtube.com/watch?v=9-KUm9YpPm0)
-- [Operating System Basics - YouTube](https://www.youtube.com/watch?v=9GDX-IyZ_C8)
+- [Programming Languages - YouTube][1]
+- [Hardware Basics - YouTube][2]
+- [Operating System Basics - YouTube][3]
 
 # Free Courses
-- [Coursera - Free Online Courses From Top Universities](https://www.coursera.org/courses?courseType=v2.ondemand)
+- [Coursera - Free Online Courses From Top Universities][4]
 
 # JavaScript
-- [JavaScript Not Working? Here are 10 Common JavaScript Problems | Toptal](http://www.toptal.com/javascript/10-most-common-javascript-mistakes)
-- [Learn All The Nodes](http://www.learnallthenodes.com/)
-- [Node Tuts](http://nodetuts.com/index.html) // leesei: 我兩年前都係睇 Pedro，佢最近拍過晒
-- [JSConf - YouTube](https://www.youtube.com/user/jsconfeu/playlists?view=1&sort=dd) // leesei: 好很多，太舊唔洗睇
+- [JavaScript Not Working? Here are 10 Common JavaScript Problems | Toptal][5]
+- [Learn All The Nodes][6]
+- [Node Tuts][7] // leesei: 我兩年前都係睇 Pedro，佢最近拍過晒
+- [JSConf - YouTube][8] // leesei: 好很多，太舊唔洗睇
 
 ## property, protoypal inheritance
 
-- [JavaScript: **proto**](http://www.2ality.com/2012/10/proto.html)p
-- [Object properties in JavaScript](http://www.2ality.com/2012/10/javascript-properties.html)
-- [Properties in JavaScript: definition versus assignment](http://www.2ality.com/2012/08/property-definition-assignment.html)
-- [JavaScript terminology: the two prototypes](http://www.2ality.com/2013/01/two-prototypes.html)
-- [JavaScript properties: inheritance and enumerability](http://www.2ality.com/2011/07/js-properties.html)
-- [JavaScript inheritance by example](http://www.2ality.com/2012/01/js-inheritance-by-example.html)
-- [JavaScript inheritance: beyond the basics (video)](http://www.2ality.com/2012/11/js-inheritance-beyond-basics.html)
-- [Property assignment and the prototype chain](http://www.2ality.com/2012/11/property-assignment-prototype-chain.html)
-- [A closer look at \_.extend and copying properties](http://www.2ality.com/2012/08/underscore-extend.html)
-- [Learning Javascript with Object Graphs (Part I) - How To Node - NodeJS](http://howtonode.org/object-graphs)
-- [Learning Javascript with Object Graphs (Part II) - How To Node - NodeJS](http://howtonode.org/object-graphs-2)
-- [Learning Javascript with Object Graphs (Part III) - How To Node - NodeJS](http://howtonode.org/object-graphs-3)
-- [Prototypal Inheritance - How To Node - NodeJS](http://howtonode.org/prototypical-inheritance)
-- [Object Playground: The Definitive Guide to Object-Oriented JavaScript](http://www.objectplayground.com/)
-- [Inheritance and the prototype chain - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
-- [Prototypal Inheritance](http://javascript.crockford.com/prototypal.html)
-- [Learning JavaScript Design Patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#prototypepatternjavascript)
-- [John Resig - Simple JavaScript Inheritance](http://ejohn.org/blog/simple-javascript-inheritance/)
-- [OOP in JS, Part 1 : Public/Private Variables and Methods](http://phrogz.net/JS/classes/OOPinJS.html)
-- [OOP in JS, Part 2 : Inheritance](http://phrogz.net/JS/classes/OOPinJS2.html)
-- [Metaduck](http://metaduck.com/05-dump-this.html) duck](<http://metaduck.com/05-dump-this.html>)
+- [JavaScript: **proto**][9]
+- [Object properties in JavaScript][10]
+- [Properties in JavaScript: definition versus assignment][11]
+- [JavaScript terminology: the two prototypes][12]
+- [JavaScript properties: inheritance and enumerability][13]
+- [JavaScript inheritance by example][14]
+- [JavaScript inheritance: beyond the basics (video)][15]
+- [Property assignment and the prototype chain][16]
+- [A closer look at \_.extend and copying properties][17]
+- [Learning Javascript with Object Graphs (Part I) - How To Node - NodeJS][18]
+- [Learning Javascript with Object Graphs (Part II) - How To Node - NodeJS][19]
+- [Learning Javascript with Object Graphs (Part III) - How To Node - NodeJS][20]
+- [Prototypal Inheritance - How To Node - NodeJS][21]
+- [Object Playground: The Definitive Guide to Object-Oriented JavaScript][22]
+- [Inheritance and the prototype chain - JavaScript | MDN][23]
+- [Prototypal Inheritance][24]
+- [Learning JavaScript Design Patterns][25]
+- [John Resig - Simple JavaScript Inheritance][26]
+- [OOP in JS, Part 1 : Public/Private Variables and Methods][27]
+- [OOP in JS, Part 2 : Inheritance][28]
+- [Metaduck][29] 
+- [duck][30]
+
+
+[1]: https://www.youtube.com/playlist?list=PL7141DE955793D3F0
+[2]: https://www.youtube.com/watch?v=9-KUm9YpPm0
+[3]: https://www.youtube.com/watch?v=9GDX-IyZ_C8
+[4]: https://www.coursera.org/courses?courseType=v2.ondemand
+[5]: http://www.toptal.com/javascript/10-most-common-javascript-mistakes
+[6]: http://www.learnallthenodes.com/
+[7]: http://nodetuts.com/index.html
+[8]: https://www.youtube.com/user/jsconfeu/playlists?view=1&sort=dd
+[9]: http://www.2ality.com/2012/10/proto.html
+[10]: http://www.2ality.com/2012/10/javascript-properties.html
+[11]: http://www.2ality.com/2012/08/property-definition-assignment.html
+[12]: http://www.2ality.com/2013/01/two-prototypes.html
+[13]: http://www.2ality.com/2011/07/js-properties.html
+[14]: http://www.2ality.com/2012/01/js-inheritance-by-example.html
+[15]: http://www.2ality.com/2012/11/js-inheritance-beyond-basics.html
+[16]: http://www.2ality.com/2012/11/property-assignment-prototype-chain.html
+[17]: http://www.2ality.com/2012/08/underscore-extend.html
+[18]: http://howtonode.org/object-graphs
+[19]: http://howtonode.org/object-graphs-2
+[20]: http://howtonode.org/object-graphs-3
+[21]: http://howtonode.org/prototypical-inheritance
+[22]: http://www.objectplayground.com/
+[23]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
+[24]: http://javascript.crockford.com/prototypal.html
+[25]: http://addyosmani.com/resources/essentialjsdesignpatterns/book/#prototypepatternjavascript
+[26]: http://ejohn.org/blog/simple-javascript-inheritance/
+[27]: http://phrogz.net/JS/classes/OOPinJS.html
+[28]: http://phrogz.net/JS/classes/OOPinJS2.html
+[29]: http://metaduck.com/05-dump-this.html
+[30]: http://metaduck.com/05-dump-this.html

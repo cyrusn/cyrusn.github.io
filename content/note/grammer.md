@@ -13,15 +13,19 @@ English Grammer 101
 - ![tensesTable](./tenses-table.png)
 
 # Descibe future event
-- [Will vs Going To Differences - GrammarBank](http://www.grammarbank.com/will-vs-going-to.html)
+- [Will vs Going To Differences - GrammarBank][1]
 
 
 # FANBOYS
-- [Writing Compound Sentences Using FANBOYS](http://www.csus.edu/owl/index/sent/fanboys.htm)
+- [Writing Compound Sentences Using FANBOYS][2]
 
 
 # Participles
-- [What are participles?](https://www.englishgrammar.org/participles/)
-- [Participial phrase](http://www.paperrater.com/page/participial-phrase)
+- [What are participles?][3]
+- [Participial phrase][4]
 
 
+[1]: http://www.grammarbank.com/will-vs-going-to.html
+[2]: http://www.csus.edu/owl/index/sent/fanboys.htm
+[3]: https://www.englishgrammar.org/participles/
+[4]: http://www.paperrater.com/page/participial-phrase
