@@ -7,10 +7,55 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
     <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
-    <lastBuildDate>Wed, 13 Sep 2017 21:31:16 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 03 Nov 2017 11:17:14 +0800</lastBuildDate>
     
 	<atom:link href="https://cyrusn.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introduction to Raspberry Pi</title>
+      <link>https://cyrusn.github.io/slide/introduction-to-raspberry-pi/</link>
+      <pubDate>Fri, 03 Nov 2017 11:17:14 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/introduction-to-raspberry-pi/</guid>
+      <description>class: center middle
+Introdution to Raspberry-Pi Cyrus Ngan Agenda  Raspberry Pi
+ What is Raspberry-pi
+ What is GPIO?
+ Top 10 Raspberry Pi Projects for Beginners
+ Setup
+ Python Script
+  class: center middle
+Raspberry Pi .split-50[
+.column[
+        RASPBERRY PI 3 MODEL B    ]
+.column[
+        RASPBERRY PI ZERO W    ]]</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi</title>
+      <link>https://cyrusn.github.io/note/raspberry-pi/</link>
+      <pubDate>Tue, 19 Sep 2017 09:44:09 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/raspberry-pi/</guid>
+      <description>Setting
+ Links
+ Pin
+ Examples
+ Some Projects
+ Some thoughts
+ Setting brightness of Touch led
+ Sensors
+ Others
+ Sensor HAT
+ ADC (Analog to Digital Convertor)
+  Setting  Raspberry Pi Documentation
+ Installation - Raspberry Pi Documentation
+ VNC (Virtual Network Computing) - Raspberry Pi Documentation
+ SSH (Secure Shell) - Raspberry Pi Documentation
+ Passwordless SSH access - Raspberry Pi Documentation</description>
+    </item>
     
     <item>
       <title>Yakko&#39;s World Lyric</title>
@@ -32,8 +77,7 @@ Paraguay, Uruguay, Surinam And French Guiana
 Barbados, and Guam.
 Norway, and Sweden, and Iceland, and Finland and
 Germany now ~ want peace,
-Switzerland, Austria, Czechoslovakia
-Italy, Turkey, and Greece.</description>
+Switzerland, Austria, Czech, Slovakia</description>
     </item>
     
     <item>
@@ -42,13 +86,14 @@ Italy, Turkey, and Greece.</description>
       <pubDate>Tue, 05 Sep 2017 10:58:58 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/education/</guid>
-      <description>  學校課程持續更新
- STEM
- C&amp;amp;A
-  學校課程持續更新 STEM  《推動STEM教育 — 發揮創意潛能》報告
+      <description>  [學校課程持續更新][update]
+ [STEM][stem]
+ [C&amp;amp;A][curriculum-and-assessment]
+  學校課程持續更新  學校課程持續更新
+  STEM  科學教育課程指引 (小一至中六)
  數學教育課程指引 (小一至中六)
+ 《推動STEM教育 — 發揮創意潛能》報告
  科技教育課程指引 (小一至中六)
- 科學教育課程指引 (小一至中六)
   C&amp;amp;A  課程文件
   </description>
     </item>
@@ -120,10 +165,16 @@ Tenses    Descibe future event  Will vs Going To Differences - GrammarBank
       <pubDate>Tue, 20 Jun 2017 19:05:48 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/stem/</guid>
-      <description> Coding and Math Reference  Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine
+      <description>Coding and Math
+ Reference
+ Statistic
+ Engineering
+ Some Idea from 青年會書院
+  Coding and Math Reference  Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine
  UC Davis Center for Integrated Computing and STEM Education
  Zebra Puzzle - Wikiwand
-  </description>
+ The Micro:bit Foundation is a global non-profit organisation making invention with technology fun for everyone!
+  Statistic  What is STEM Education?</description>
     </item>
     
     <item>
@@ -186,7 +237,7 @@ Tenses    Descibe future event  Will vs Going To Differences - GrammarBank
       <pubDate>Fri, 19 May 2017 08:12:48 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/osi-model/</guid>
-      <description>    OSI Model by Layer     2 Data Link Layer   1 Physical layer    </description>
+      <description>    OSI Model by Layer     1 Physical layer   2 Data Link Layer    </description>
     </item>
     
     <item>
@@ -195,7 +246,8 @@ Tenses    Descibe future event  Will vs Going To Differences - GrammarBank
       <pubDate>Tue, 16 May 2017 00:17:50 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/pomodoro/</guid>
-      <description>提升生產力及專注力 GTD &amp;amp; 蕃茄工作法 Reference  The Pomodoro Technique® - proudly developed by Francesco Cirillo | Cirillo Company
+      <description>class: center, middle
+提升生產力及專注力 GTD &amp;amp; 蕃茄工作法 Reference  The Pomodoro Technique® - proudly developed by Francesco Cirillo | Cirillo Company
  David Allen&amp;rsquo;s Getting Things Done® Methodology
   工作時間  平日每天約4小時
  假日每天約6小時
@@ -207,8 +259,7 @@ Tenses    Descibe future event  Will vs Going To Differences - GrammarBank
  每天用盡所有工作時間
   流程 
 Why?  何時做 &amp;gt; 何時交
- 計時能令人集中
- e.g. 考試、測驗</description>
+ 計時能令人集中</description>
     </item>
     
     <item>
@@ -222,7 +273,8 @@ Why?  何時做 &amp;gt; 何時交
  來台就學費用估算
  入學暨來臺相關規定
  赴臺升學小冊子(新版).pdf
-  資格 「僑生」指海外出生連續居留迄今，或最近連續居留海外六年以上，並取得僑居地永久或長期居留證件回國就學之華裔學生。但就讀大學醫學、牙醫及中醫學系者，其連續居留年限為八年以上。</description>
+  資格 「僑生」指海外出生連續居留迄今，或最近連續居留海外六年以上，並取得僑居地永久或長期居留證件回國就學之華裔學生。
+但就讀大學醫學、牙醫及中醫學系者，其連續居留年限為八年以上。</description>
     </item>
     
     <item>
@@ -252,29 +304,6 @@ Why?  何時做 &amp;gt; 何時交
  HKUST
  HKU (部分課程)
   HD / AD  基本入學要求：22 + 222</description>
-    </item>
-    
-    <item>
-      <title>Programming Principal</title>
-      <link>https://cyrusn.github.io/note/programming-principal/</link>
-      <pubDate>Mon, 15 May 2017 23:09:54 +0800</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/programming-principal/</guid>
-      <description>Separation of Concern
- DRY - Don’t repeat yourself
- Abstraction Principle
- KISS (Keep it simple, stupid!)
- Write Code for the Maintainer
- Principle of least astonishment
- YAGNI (you aren’t gonna need it)
- Do the simplest thing that could possibly work
- Open/Closed Principle
- Orthogonality
- Robustness Principle
- Hide Implementation Details
- Minimize Coupling
- Maximize Cohesion
- Principle of least astonishment</description>
     </item>
     
     <item>
@@ -406,10 +435,12 @@ To display both the kernel version and your system&amp;rsquo;s architecture (32-
       <guid>https://cyrusn.github.io/note/web-authentication/</guid>
       <description>Notes  Authentication in Golang with JWTs
  Cookies vs Tokens: The Definitive Guide
- The Ins and Outs of Token Based Authentication | Scotch   Enterprise APIs and OAuth: Have it All
-Secure your users&amp;rsquo; passwords from the browser on
-Authentication Protocols Basic access authentication - Wikiwand Digest access authentication - Wikiwand Secure Remote Password protocol - Wikiwand
-Anatomy of a zero-knowledge web application - Clipperz, register your creations on the blockchain</description>
+ The Ins and Outs of Token Based Authentication | Scotch  Enterprise APIs and OAuth: Have it All
+ Secure your users&amp;rsquo; passwords from the browser on
+  Authentication Protocols  Basic access authentication - Wikiwand
+ Digest access authentication - Wikiwand
+ Secure Remote Password protocol - Wikiwand
+ Anatomy of a zero-knowledge web application - Clipperz, register your creations on the blockchain</description>
     </item>
     
     <item>
@@ -535,8 +566,8 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
       <pubDate>Fri, 24 Jul 2015 23:02:19 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/alfred/</guid>
-      <description>How to use node on alfred workflow node&amp;lt;&amp;lt;-&amp;quot;code&amp;quot; // your code here // e.g. console.log(&amp;quot;hello world&amp;quot;); code  iTerm2 Integration curl --silent &#39;https://raw.githubusercontent.com/stuartcryan/custom-iterm-applescripts-for-alfred/master/custom_iterm_script_iterm_2.9.applescript&#39; | pbcopy   stuartcryan/custom-iterm-applescripts-for-alfred: Custom iTerm Applescripts for Alfred
-  )</description>
+      <description> How to use node on alfred workflow node&amp;lt;&amp;lt;-&amp;quot;code&amp;quot; // your code here // e.g. console.log(&amp;quot;hello world&amp;quot;); code  iTerm2 Integration curl --silent &#39;https://raw.githubusercontent.com/stuartcryan/custom-iterm-applescripts-for-alfred/master/custom_iterm_script_iterm_2.9.applescript&#39; | pbcopy   stuartcryan/custom-iterm-applescripts-for-alfred: Custom iTerm Applescripts for Alfred
+  </description>
     </item>
     
     <item>
@@ -559,9 +590,16 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
       <pubDate>Fri, 05 Jun 2015 08:53:37 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/programming-concept/</guid>
-      <description>Links How to make your code self-documenting? | CodeUtopia Separation of concerns - Wikipedia Garbage in, garbage out - Wikiwand
-leesei&amp;rsquo;s choice Naming  寫出黎就要俾名，俾名啲concept 就清楚，code 亦自然清楚
- leesei   What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?  That programming is about solving problems, not writing code. Here are the four basic tasks that an individual programmer must perform.</description>
+      <description>Links
+ leesei&amp;rsquo;s choice
+ Naming
+ What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?
+  [Programming Principal][pp]
+ reference
+  Links  How to make your code self-documenting? | CodeUtopia
+ Separation of concerns - Wikipedia
+ Garbage in, garbage out - Wikiwand
+  leesei&amp;rsquo;s choice Naming  寫出黎就要俾名，俾名啲concept 就清楚，code 亦自然清楚</description>
     </item>
     
     <item>
@@ -570,10 +608,12 @@ leesei&amp;rsquo;s choice Naming  寫出黎就要俾名，俾名啲concept 就�
       <pubDate>Thu, 28 May 2015 15:21:07 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/uml/</guid>
-      <description>Usecase Include and Extend uml - What&amp;rsquo;s is the difference between include and extend in use case diagram? - Stack Overflow
+      <description> Usecase Include and Extend uml - What&amp;rsquo;s is the difference between include and extend in use case diagram? - Stack Overflow
 Example Amazon Application Use Case Diagram
-Creole in notes notes in plantuml support Creole language Creole (markup) - Wikiwand
-Links UML 2.0 Tutorial - YouTube Unified Modeling Language (UML) description, UML diagram examples, tutorials and reference for all types of UML diagrams - use case diagrams, class, package, component, composite structure diagrams, deployments, activities, interactions, profiles, etc.</description>
+Creole in notes notes in plantuml support Creole language Creole (markup) - Wikiwand)
+Links  UML 2.0 Tutorial - YouTube
+ Unified Modeling Language (UML) description
+  </description>
     </item>
     
     <item>
@@ -585,7 +625,7 @@ Links UML 2.0 Tutorial - YouTube Unified Modeling Language (UML) description, UM
       <description>Example  JXA-Cookbook
  Apple Release Notes
  JavaScript for OS X Automation by Example
-  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle: &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[0].activeTab; var result = &#39;[&#39; + activeTab.</description>
+  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle: &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[&amp;amp;0].activeTab; var result = &#39;[&#39; + activeTab.</description>
     </item>
     
     <item>
@@ -642,12 +682,17 @@ UEFI Unified Extensible Firmware Interface - ArchWiki</description>
     </item>
     
     <item>
-      <title>How to use GoogleScript</title>
-      <link>https://cyrusn.github.io/note/how-to-use-googlescript/</link>
+      <title>Google App Script</title>
+      <link>https://cyrusn.github.io/note/google-app-script/</link>
       <pubDate>Fri, 22 May 2015 11:50:04 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/how-to-use-googlescript/</guid>
-      <description>Useful Examples Send email from spreadsheet data function sendMailByRowNo(rowNo){ // rowString e.g. 1:1 var rowString = Utilities.formatString(&amp;quot;%s:%s&amp;quot;, rowNo, rowNo) var values = spreadsheet.getRange(rowString).getValues()[0] sendMailByValues(values) } function convertValuesToObject(values) { var obj = {}; obj.timestamp = values[0] obj.email = values[1] obj.title: values[2] return obj } function sendMailByValues(values) { var obj = convertValuesToObject(values) Logger.log(obj) var htmlBody = setEmailBody(obj) var mailAppObject = { to: obj.email, subject: obj.title, htmlBody: htmlBody } // an example to attach a pdf file in google drive // var attachements = DriveApp.</description>
+      <guid>https://cyrusn.github.io/note/google-app-script/</guid>
+      <description>Links  Apps Script | Google Developers
+  Using html request to send form response  open inspecter in google form (view version, not editable one)
+ find the input Tag of the question and copy it&amp;rsquo;s name. The name look like entry.933828429
+ replace the word view in the link to formResponse
+ https://docs.google.com/forms/d/e/1FAIpQLSdC2RD1aD4W4duLGDjxsVFDGvJW6IUhhxsBGWiQlV7TU_w5LA/formResponse
+  add the query to the end of the link look like above</description>
     </item>
     
     <item>
@@ -665,10 +710,14 @@ UEFI Unified Extensible Firmware Interface - ArchWiki</description>
       <pubDate>Sun, 10 May 2015 01:29:03 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/draw-more-work-less/</guid>
-      <description>Some Links UML | leesei&amp;rsquo;s notebook Draw More, Work Less | [self employed] Draw More, Work Less PlantUML Mermaid
+      <description>[Some Links][some-links]
+ [from leesei][from-leesei]
+ [Text based tools][text-based-tools]
+ [GUI Tools][gui-tools]
+   Some Links UML | leesei&amp;rsquo;s notebook Draw More, Work Less | [self employed] Draw More, Work Less PlantUML Mermaid
 from leesei Unified Modeling Language (UML) Business Process Model and Notation (BPMN) is very similar to activity diagram. YANG Central
 Allen Holub&amp;rsquo;s UML Quick Reference
-Text based tools I used to use the GUI tool Dia. But it was very buggy and no longer updated. I then went on to look for alternatives.</description>
+Text based tools I used to use the GUI tool Dia.</description>
     </item>
     
     <item>
@@ -715,7 +764,7 @@ slidedown/slidedown</description>
  Learn All The Nodes
  Node Tuts // leesei: 我兩年前都係睇 Pedro，佢最近拍過晒
  JSConf - YouTube // leesei: 好很多，太舊唔洗睇
-  property, protoypal inheritance  JavaScript: protop</description>
+  property, protoypal inheritance  JavaScript: proto</description>
     </item>
     
     <item>
@@ -781,9 +830,11 @@ Basic Keywords Control Flow  where (A switch case can use a where clause to chec
       <pubDate>Sun, 10 May 2015 00:47:45 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/slidedownhtml-presentation/</guid>
-      <description> Slide Down example github
-RevealJS RevealJS Pandoc
-# pandoc convert md to RevealJS html pandoc -s --mathjax -i -t revealjs SLIDES.md -o example.html  </description>
+      <description> Slide Down  example
+ github
+  RevealJS  RevealJS
+ Pandoc
+  # pandoc convert md to RevealJS html pandoc -s --mathjax -i -t revealjs SLIDES.md -o example.html  </description>
     </item>
     
     <item>
@@ -795,7 +846,8 @@ RevealJS RevealJS Pandoc
       <description> Install Script for My Mac  咁就寫做install script 放埋響個Terminal repo度啦
  再加埋repo 條link 響個post
  咁就同人地寫啲technical blog 一樣了 pull and 行install script 寫個script git pull oh-my-zsh同setup symlink
-  Google Analytics &amp;amp; Webmaster  reference post 個sitemap.xml 俾google 做index
+  Google Analytics &amp;amp; Webmaster  reference
+ post 個sitemap.xml 俾google 做index
  reference
   Learn Basic Python Scripting counsellingSystem  nodejs
  golang
@@ -811,7 +863,8 @@ RevealJS RevealJS Pandoc
       <pubDate>Sun, 10 May 2015 00:47:23 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/alumni-webpage/</guid>
-      <description> Referece － Sticky Footer － responsive-utilities
+      <description> Referece － Sticky Footer
+－ responsive-utilities
 Reminder  Don&amp;rsquo;t use bootstrap.js, use ui-bootstrap.js instead.
  jQuery is no longer useful
  ui-bootstrap.collapse
@@ -908,7 +961,8 @@ Google API OAuth for shortening a batch of links, create project for URL Shorten
       <pubDate>Sun, 10 May 2015 00:46:38 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/golang/</guid>
-      <description>Feautre  Embedding
+      <description>Useful commands  update all packages go get -u all
+  Feautre  Embedding
   Understanding Goroutine  Is golang goroutine a coroutine?
  Coroutine vs Continuation vs Generator
  Comparison with generators
@@ -916,9 +970,7 @@ Google API OAuth for shortening a batch of links, create project for URL Shorten
  Painless Data Storage with MongoDB and Go
  Connecting to MongoDB with mgo and golang
   Router  mux - Gorilla, the golang web toolkit
-  # Middleware
- justinas/alice: Painless middleware chaining for Go
-  SQL Database  Go database/sql tutorial</description>
+  # Middleware</description>
     </item>
     
     <item>
@@ -929,7 +981,7 @@ Google API OAuth for shortening a batch of links, create project for URL Shorten
       <guid>https://cyrusn.github.io/note/gitbook/</guid>
       <description>  Gitbook
  Modern book format and toolchain using Git and Markdown
-  Plugin  katex
+  Useful Plugins  katex
  sectionx
  responsive-iframes
   </description>

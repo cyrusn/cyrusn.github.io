@@ -42,7 +42,7 @@ Setting Apache2  in file /etc/hosts
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="CyrusN" />
 
-  <meta name="generator" content="Hugo 0.26" />
+  <meta name="generator" content="Hugo 0.30.2" />
   <link rel="canonical" href="https://cyrusn.github.io/note/config-digtal-ocean-droplet-as-microservice/" />
   <link rel="alternate" href="https://cyrusn.github.io/index.xml" type="application/rss+xml" title="CyrusN">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
@@ -119,13 +119,13 @@ Setting Apache2  in file /etc/hosts
         
           
             <li>
-              <a title="Post" href="/post/">Post</a>
+              <a title="Note" href="/note/">Note</a>
             </li>
           
         
           
             <li>
-              <a title="Note" href="/note/">Note</a>
+              <a title="Project" href="/project/">Project</a>
             </li>
           
         
@@ -154,15 +154,7 @@ Setting Apache2  in file /etc/hosts
       </ul>
     </div>
 
-    <div class="avatar-container">
-      <div class="avatar-img-border">
-        
-          <a title="CyrusN" href="https://cyrusn.github.io">
-            <img class="avatar-img" src="https://cyrusn.github.io/img/avatar.png" alt="CyrusN" />
-          </a>
-        
-      </div>
-    </div>
+    
   </div>
 </nav>
 
@@ -288,8 +280,6 @@ update_option( 'home', 'http://careers.liping.edu.hk' );
 
 <h2 id="caddy-server">Caddy Server</h2>
 
-<p><a href="quiver-note-url/0A359168-5F3B-43C3-903B-3049F7446AD2">Caddy Notes</a></p>
-
 <pre><code class="language-sh">careers.liping.edu.hk
 
 proxy / localhost:4000 {
@@ -302,12 +292,12 @@ proxy / localhost:4000 {
 <h1 id="todo">TODO</h1>
 
 <ul class="task-list">
-<li><input type="checkbox" checked disabled class="task-list-item"> set <code>apache</code> only serve for <code>localhost</code><br /></li>
-<li><input type="checkbox" checked disabled class="task-list-item"> use <code>caddy</code> to create a proxy server with <code>https</code><br /></li>
-<li><input type="checkbox" disabled class="task-list-item"> fix all Mixed Content problem<br /></li>
-<li><input type="checkbox" disabled class="task-list-item"> use Goggle <code>oauth2</code> login instead<br /></li>
-<li><input type="checkbox" disabled class="task-list-item"> set autostart and run in daemon with <code>upstart</code><br />
-<br /></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> set <code>apache</code> only serve for <code>localhost</code><br /></label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> use <code>caddy</code> to create a proxy server with <code>https</code><br /></label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> fix all Mixed Content problem<br /></label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> use Goggle <code>oauth2</code> login instead<br /></label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> set autostart and run in daemon with <code>upstart</code><br />
+<br /></label></li>
 </ul>
 
 <h1 id="reference">Reference</h1>
@@ -326,7 +316,14 @@ proxy / localhost:4000 {
 <ul>
 <li>reverse proxy<br /></li>
 <li>Microservice<br /></li>
-<li>load balancing<br /></li>
+<li>load balancing<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br /></li>
 </ul>
 
       </article>
@@ -352,8 +349,8 @@ proxy / localhost:4000 {
         (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
           </div>
         
       

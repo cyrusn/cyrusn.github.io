@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cyrusn.github.io/slide/introduction-to-raspberry-pi/</loc>
+    <lastmod>2017-11-03T11:17:14+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/note/raspberry-pi/</loc>
+    <lastmod>2017-09-19T09:44:09+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cyrusn.github.io/note/yakko-s-world-lyric/</loc>
     <lastmod>2017-09-13T21:31:16+08:00</lastmod>
   </url>
@@ -80,11 +90,6 @@
   <url>
     <loc>https://cyrusn.github.io/note/4&#43;1/</loc>
     <lastmod>2017-05-15T23:12:02+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/note/programming-principal/</loc>
-    <lastmod>2017-05-15T23:09:54+08:00</lastmod>
   </url>
   
   <url>
@@ -238,7 +243,7 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/note/how-to-use-googlescript/</loc>
+    <loc>https://cyrusn.github.io/note/google-app-script/</loc>
     <lastmod>2015-05-22T11:50:04+00:00</lastmod>
   </url>
   
@@ -432,7 +437,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/</loc>
-    <lastmod>2017-09-13T21:31:16+08:00</lastmod>
+    <lastmod>2017-11-03T11:17:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -480,6 +485,18 @@
   
   <url>
     <loc>https://cyrusn.github.io/tags/education/</loc>
+    <lastmod>2017-06-20T19:05:48+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/electronics/</loc>
+    <lastmod>2017-06-20T19:05:48+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/engineering/</loc>
     <lastmod>2017-06-20T19:05:48+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -581,6 +598,12 @@
   </url>
   
   <url>
+    <loc>https://cyrusn.github.io/tags/iot/</loc>
+    <lastmod>2017-09-19T09:44:09+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://cyrusn.github.io/tags/javascript/</loc>
     <lastmod>2015-12-08T08:35:55+00:00</lastmod>
     <priority>0</priority>
@@ -636,7 +659,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/tags/linux/</loc>
-    <lastmod>2017-05-12T20:26:30+08:00</lastmod>
+    <lastmod>2017-09-19T09:44:09+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -702,7 +725,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/note/</loc>
-    <lastmod>2017-09-13T21:31:16+08:00</lastmod>
+    <lastmod>2017-09-19T09:44:09+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -720,6 +743,12 @@
   
   <url>
     <loc>https://cyrusn.github.io/page/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/pi/</loc>
+    <lastmod>2017-11-03T11:17:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -762,6 +791,12 @@
   <url>
     <loc>https://cyrusn.github.io/tags/pt/</loc>
     <lastmod>2015-05-24T22:36:53+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/raspberry/</loc>
+    <lastmod>2017-11-03T11:17:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -839,7 +874,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/slide/</loc>
-    <lastmod>2017-05-16T00:17:50+08:00</lastmod>
+    <lastmod>2017-11-03T11:17:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -858,6 +893,12 @@
   <url>
     <loc>https://cyrusn.github.io/tags/startup/</loc>
     <lastmod>2016-10-21T12:43:34+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/stem/</loc>
+    <lastmod>2017-09-19T09:44:09+08:00</lastmod>
     <priority>0</priority>
   </url>
   

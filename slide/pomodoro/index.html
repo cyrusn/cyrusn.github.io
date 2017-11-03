@@ -1,29 +1,19 @@
-<link rel="stylesheet" href="/revealjs/css/reveal.css">
-<link rel="stylesheet" href="/revealjs/css/theme/white.css" id="theme">
-<link rel="stylesheet" href="/revealjs/lib/css/zenburn.css">
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/remark.css">
+</head>
+<body>
+  <textarea id="source">
+class: center, middle
 
-<style>
-  
-  .reveal code {
-    color: #c7254e !important;
-    background-color: #f9f2f4 !important;
-  }
-</style>
-
-<div class="reveal">
-<div class="slides">
-<section data-markdown
-         data-separator="^---"
-         data-separator-vertical="^___"
-         data-separator-notes="^Note:"
-         data-charset="utf8">
 # 提升生產力及專注力
 ## GTD &amp; 蕃茄工作法
 
 ---
 # Reference
-- [The Pomodoro Technique® - proudly developed by Francesco Cirillo | Cirillo Company](https://cirillocompany.de/pages/pomodoro-technique)
-- [David Allen&#39;s Getting Things Done® Methodology](http://gettingthingsdone.com/)
+- [The Pomodoro Technique® - proudly developed by Francesco Cirillo | Cirillo Company][&amp;1]
+- [David Allen&#39;s Getting Things Done® Methodology][&amp;2]
 
 
 ---
@@ -35,66 +25,60 @@
 - 如何保持專注?
 
 ---
-
 # 規劃
 - 每科應用15分鐘回顧及整理當天所學
 - 功課應盡早完成
 - 每天用盡所有工作時間
 
 ---
-
 # 流程
-&lt;a href=&#39;https://dl.dropboxusercontent.com/s/hs9jspievysiptw/flow.svg&#39; target=&#39;_blank&#39;&gt;&lt;img src=&#34;https://dl.dropboxusercontent.com/s/hs9jspievysiptw/flow.svg&#34;&gt;&lt;/a&gt;
 
-___
+[![image]][image]
 
+---
 # Why?
 - 何時做 &gt; 何時交
 - 計時能令人集中
   &#43; e.g. 考試、測驗
 
 ---
+
+.split-50[
+.column[
 # 參考資料
 
-- [Online Pomodoro Timer](http://www.moosti.com/)
-- [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique)
-- [Getting Things Done](https://en.wikipedia.org/wiki/Getting_Things_Done)
+- [Online Pomodoro Timer][&amp;3]
+- [Pomodoro Technique][&amp;5]
+- [Getting Things Done][&amp;4]
+]
 
-___
+.column[
 # *keywords*:
 - `pomodoro`
 - `tomato`
 - `timer`
 - `technique`
 - `getting things done`
+]
+]
 
-</section>
-</div>
-</div>
-<script src="/revealjs/lib/js/head.min.js"></script>
-<script src="/revealjs/js/reveal.js"></script>
-<script>
-  Reveal.initialize({
-    slideNumber: true,
-    history: true,
-    transition: "convex",
-    markdown: {
-      gfm: true,
-      breaks: true
-    },
-    
-
-    
-    
-    dependencies: [
-      { src: '\/revealjs\/lib\/js\/classList.js"', condition: function() { return !document.body.classList; } },
-      { src: '\/revealjs\/plugin\/markdown\/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: '\/revealjs\/plugin\/math\/math.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: '\/revealjs\/plugin\/markdown\/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: '\/revealjs\/plugin\/highlight\/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-      { src: '\/revealjs\/plugin\/zoom-js\/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-      { src: '\/revealjs\/plugin\/notes\/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-    ]
-  });
-</script>
-<script src="/js/go-to-home.js"></script>
+[&amp;1]: https://cirillocompany.de/pages/pomodoro-technique
+[&amp;2]: http://gettingthingsdone.com/
+[&amp;3]: http://www.moosti.com/
+[&amp;5]: https://en.wikipedia.org/wiki/Pomodoro_Technique
+[&amp;4]: https://en.wikipedia.org/wiki/Getting_Things_Done
+[image]: https://dl.dropboxusercontent.com/s/hs9jspievysiptw/flow.svg
+  </textarea>
+  <script src="/js/remark-latest.min.js"></script>
+  <script>
+    var slideshow = remark.create({
+      
+      highlightStyle: 'monokai',
+      highlightLines: true,
+      navigation: {
+        scroll: false,
+        click: true
+      }
+    })
+  </script>
+</body>

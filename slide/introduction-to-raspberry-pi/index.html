@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/remark.css">
+</head>
+<body>
+  <textarea id="source">
+class: center middle
+
+# Introdution to Raspberry-Pi
+## Cyrus Ngan
+
+---
+# Agenda
+
+- Raspberry Pi
+- What is Raspberry-pi
+- What is GPIO?
+- Top 10 Raspberry Pi Projects for Beginners
+- Setup
+- Python Script
+
+---
+class: center middle
+# Raspberry Pi
+
+.split-50[
+.column[
+
+|     ![model3][&amp;1]      |
+|------------------------|
+| RASPBERRY PI 3 MODEL B |
+
+]
+.column[
+
+|     ![zero][&amp;2]     |
+|---------------------|
+| RASPBERRY PI ZERO W |
+
+]]
+
+
+---
+# What is Raspberry-Pi
+
+&gt; A small and affordable computer that you can use to learn programming
+
+- Linux base computer with `wifi`, `bluebooth`, `LAN`, `HDMI` etc ...
+- All files in Pi are store in a microSD card.
+- The word `Pi` is stand for python the programming language.
+
+---
+# What is GPIO?
+- General-Purpose Input/output (GPIO)&lt;sup&gt;[[1]][&amp;3]&lt;/sup&gt;
+
+.footnote[
+* [Raspberry Pi GPIO Pinout][&amp;3]
+]
+
+
+---
+class: center middle
+# [Top 10 Raspberry Pi Projects for Beginners][&amp;4]
+
+
+---
+# Setup
+
+
+---
+# Python Script
+
+``` python
+import RPi.GPIO as GPIO
+...
+```
+
+---
+class: center middle
+# Thanks
+
+## 👏👏👏
+
+[&amp;1]: https://www.raspberrypi.org/app/uploads/2017/05/Raspberry-Pi-3-462x322.jpg
+[&amp;2]: https://www.raspberrypi.org/app/uploads/2017/05/Pi-Zero-W-Tilt-462x322.jpg
+[&amp;3]: https://pinout.xyz/
+[&amp;4]: https://lifehacker.com/top-10-raspberry-pi-projects-for-beginners-1791002723
+
+  </textarea>
+  <script src="/js/remark-latest.min.js"></script>
+  <script>
+    var slideshow = remark.create({
+      
+      highlightStyle: 'monokai',
+      highlightLines: true,
+      navigation: {
+        scroll: false,
+        click: true
+      }
+    })
+  </script>
+</body>
