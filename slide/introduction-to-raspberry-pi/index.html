@@ -8,17 +8,26 @@
 class: center middle
 
 # Introdution to Raspberry-Pi
-## Cyrus Ngan
 
 ---
 # Agenda
 
+&lt;!-- MarkdownTOC autolink=false depth=1 --&gt;
+
 - Raspberry Pi
-- What is Raspberry-pi
+- What is Raspberry-Pi
+- Raspberry-Pi vs Audrino vs Microbit
 - What is GPIO?
-- Top 10 Raspberry Pi Projects for Beginners
 - Setup
+- Introduction to 16 common sensors
+- e.g. Blinking LED
+- e.g. Blinking LED cont...
 - Python Script
+- Top 10 Raspberry Pi Projects for Beginners
+- Thanks
+
+&lt;!-- /MarkdownTOC --&gt;
+
 
 ---
 class: center middle
@@ -30,6 +39,7 @@ class: center middle
 |     ![model3][&amp;1]      |
 |------------------------|
 | RASPBERRY PI 3 MODEL B |
+| More Powerful          |
 
 ]
 .column[
@@ -37,6 +47,7 @@ class: center middle
 |     ![zero][&amp;2]     |
 |---------------------|
 | RASPBERRY PI ZERO W |
+| Much Lighter        |
 
 ]]
 
@@ -46,9 +57,28 @@ class: center middle
 
 &gt; A small and affordable computer that you can use to learn programming
 
-- Linux base computer with `wifi`, `bluebooth`, `LAN`, `HDMI` etc ...
+- Linux base .red[**Single Board Computer**] with `wifi`, `bluebooth`, `LAN`, `HDMI` etc ...
 - All files in Pi are store in a microSD card.
-- The word `Pi` is stand for python the programming language.
+- Programme with  `Python`, `Scratch`, `JavaScript`, `Golang`...
+- Run in Raspbian OS
+
+---
+
+class: center
+# Raspberry-Pi vs Audrino vs Microbit
+
+|          |      Raspberry-Pi     |             Audrino              |                Micro:Bit                 |
+|----------|-----------------------|----------------------------------|------------------------------------------|
+| Type     | Single Board Computer | Micro-Controller                 | Micro-Controller                         |
+| Price    | ¥269.00 (Model 3)     | ¥87.00 (UNO R3)                  | ¥108.00                                  |
+| Language | Python&lt;br&gt;Scratch     | C / C&#43;&#43;                          | JavaScript&lt;br&gt;MicroPython&lt;br&gt;BlockEditor |
+| Pin      | 40 Digital Pin        | Digital Pin: 14&lt;br&gt;Analog Pin: 6 | 20 Pin (6 With ADC)                      |
+
+
+.footnote[
+
+- [micro:bit : BBC micro:bit pins](https://www.microbit.co.uk/device/pins)
+]
 
 ---
 # What is GPIO?
@@ -58,14 +88,44 @@ class: center middle
 * [Raspberry Pi GPIO Pinout][&amp;3]
 ]
 
-
 ---
-class: center middle
-# [Top 10 Raspberry Pi Projects for Beginners][&amp;4]
-
-
----
+class: center
 # Setup
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/gbJB3387xUw&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+class: center
+
+# Introduction to 16 common sensors
+
+[![16sensors][&amp;5]][&amp;5]
+
+---
+# e.g. Blinking LED
+![blink_led][&amp;7]
+
+---
+# e.g. Blinking LED cont...
+
+``` python
+import RPi.GPIO as GPIO # import GPIO library
+import time # import time library
+
+LED = 18 # define the pin as LED
+GPIO.setmode(GPIO.BCM)
+GPIO.set(LED, GPIO.OUT)
+GPIO.setwarnings(False)
+
+print(&#34;Programme start.&#34;)
+GPIO.output(LED, True)
+time.sleep(0.5)
+GPIO.output(LED, False)
+time.sleep(0.5)
+print(&#34;Programme closed.&#34;)
+``` 
+
+
 
 
 ---
@@ -76,6 +136,14 @@ import RPi.GPIO as GPIO
 ...
 ```
 
+
+---
+class: center middle
+# Top 10 Raspberry Pi Projects for Beginners
+
+.footnote[[Top 10 Raspberry Pi Projects for Beginners][&amp;6]]
+
+
 ---
 class: center middle
 # Thanks
@@ -85,19 +153,44 @@ class: center middle
 [&amp;1]: https://www.raspberrypi.org/app/uploads/2017/05/Raspberry-Pi-3-462x322.jpg
 [&amp;2]: https://www.raspberrypi.org/app/uploads/2017/05/Pi-Zero-W-Tilt-462x322.jpg
 [&amp;3]: https://pinout.xyz/
-[&amp;4]: https://lifehacker.com/top-10-raspberry-pi-projects-for-beginners-1791002723
-
+[&amp;5]: https://www.jakartanotebook.com/images/products/68/181/22325/1/raspberry-pi-3-and-raspberry-pi-2-model-b-16-kinds-of-sensor-5.jpg
+[&amp;6]: https://lifehacker.com/top-10-raspberry-pi-projects-for-beginners-1791002723
+[&amp;7]: https://www.raspinews.com/wp-content/uploads/2017/06/Blinking-LED-Raspberry-Pi-Wiring-768x597-1.png
   </textarea>
-  <script src="/js/remark-latest.min.js"></script>
+  <script src="/js/remark-latest.min.js">
+  </script>
   <script>
-    var slideshow = remark.create({
-      
-      highlightStyle: 'monokai',
-      highlightLines: true,
-      navigation: {
-        scroll: false,
-        click: true
-      }
+    var option = {}
+    var obj = Object.assign({}, {"highlight-lines":true,"highlight-style":"monokai","navigation":{"click":true,"scroll":false},"ratio":"4:3"}, {"ratio":"16:9"})
+
+    function convertDaseCaseToCamelCase (word) {
+      return word.split("-").map(function(arr, n) {
+        if ( n != 0 ) {
+          return arr[0].toUpperCase() + arr.slice(1)
+        } 
+        return arr
+      }).join("")
+    }
+    for (var prop in obj) {
+      var key = convertDaseCaseToCamelCase(prop)
+      var value = obj[prop]
+
+      option[key] = value
+    }
+
+    var slideshow = remark.create(option)
+    document.onkeypress = function(e) {
+        e = e || window.event;
+        var charCode = (typeof e.which == "number") ? e.which : e.keyCode;
+
+        if (charCode == 113) {
+            window.location.href = '/'
+        }
+    };
+    var anchor = document.getElementsByTagName("a");
+    anchor.forEach( a => {
+      a.setAttribute('target', '_blank')
     })
+
   </script>
 </body>

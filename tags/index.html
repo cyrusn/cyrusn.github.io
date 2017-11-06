@@ -1,528 +1,550 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<html>
+<head>
+  <meta charset="utf-8">  
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
 
   <title>Tags</title>
-  <meta property="og:title" content="Tags" />
-  <meta name="twitter:title" content="Tags" />
-  <meta name="author" content="CyrusN"/>
-  <link href='https://cyrusn.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta property="og:image" content="https://cyrusn.github.io/img/avatar.png" />
-  <meta name="twitter:image" content="https://cyrusn.github.io/img/avatar.png" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@cyrusncy" />
-  <meta name="twitter:creator" content="@cyrusncy" />
-  <meta property="og:url" content="https://cyrusn.github.io/tags/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="CyrusN" />
 
-  <meta name="generator" content="Hugo 0.30.2" />
-  <link rel="canonical" href="https://cyrusn.github.io/tags/" />
-  <link rel="alternate" href="https://cyrusn.github.io/index.xml" type="application/rss+xml" title="CyrusN">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cyrusn.github.io/css/main.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
-  <link rel="stylesheet" href="https://cyrusn.github.io/css/pygment_highlights.css" />
-  
-  <link rel="stylesheet" href="https://cyrusn.github.io/css/atom-one-dark.css" />
-  <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
+
+
+
+<meta name="author" content="CyrusN"/>
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<script src='/js/remark-latest.min.js'></script>
+<script src='/js/jquery-3.2.1.slim.min.js'></script>
+<script src='/js/popper.min.js'></script>
+
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+<script src='/js/bootstrap.min.js' ></script>
+
+
+<script src=' /js/lunr.min.js '></script>
+
+
+<link rel="stylesheet" type="text/css" href='/css/style.css'>
+
+
+<script src=' /js/lodash.min.js '></script>
+
+
 
 </head>
+<body>
 
-  <body>
-    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+  <div class="natvigator sticky-top">
+  <div class="bg-light bg-light" data-nav-status="toggle">    
+    <nav class="mx-auto navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="https://cyrusn.github.io">CyrusN</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      
-    </div>
 
-
-    <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav">
-        
-        <li class="navlinks-container">
-          <a href="mailto:cyrusncy@gmail.com" title="Email me">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-        </li>
-        <li class="navlinks-container">
-          <a href="https://www.facebook.com/cyrusncy" title="Facebook">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-        </li>
-        <li class="navlinks-container">
-          <a href="https://github.com/cyrusn" title="GitHub">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-        </li>
-        <li class="navlinks-container">
-          <a href="https://twitter.com/cyrusncy" title="Twitter">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-        </li>
-        
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
           
-            <li>
-              <a title="Home" href="/">Home</a>
-            </li>
           
-        
+          <li>
+            <a class="nav-link" title="Note" href="/note/">Note</a>
+          </li>
+            
           
-            <li>
-              <a title="Note" href="/note/">Note</a>
-            </li>
           
-        
+          <li>
+            <a class="nav-link" title="Project" href="/project/">Project</a>
+          </li>
+            
           
-            <li>
-              <a title="Project" href="/project/">Project</a>
-            </li>
           
-        
+          <li>
+            <a class="nav-link" title="Slide" href="/slide/">Slide</a>
+          </li>
+            
           
-            <li>
-              <a title="Slide" href="/slide/">Slide</a>
-            </li>
           
-        
+          <li>
+            <a class="nav-link" title="Tags" href="/tags">Tags</a>
+          </li>
+            
           
-            <li>
-              <a title="Tags" href="/tags">Tags</a>
-            </li>
           
-        
+          <li>
+            <a class="nav-link" title="About" href="/page/about/">About</a>
+          </li>
+            
           
-            <li>
-              <a title="About" href="/page/about/">About</a>
-            </li>
-          
-        
-
-        
-
-        
-      </ul>
-    </div>
-
-    
-  </div>
-</nav>
-
-
-
-
-    
-  
-  
-  
-
-
-
-
-  
-
-  <header class="header-section ">
-    
-    <div class="intro-header no-img">
-      
-      <div class="container">
-        <div class="row">
-          
-          <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-            <div class="post-heading">
-              <h1>Tags</h1>
-                
-                  <hr class="small">
-                  <span class="post-subheading"></span>
-                
-            </div>
-          </div>
-        </div>
+        </ul>
       </div>
-    </div>
-  </header>
-
-
-    
-  
-  <div class="container" role="main">
-    <article class="post-preview">
-      <div class="list-group col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
-      
-      <a href="/tags/career" class="list-group-item">
-          career<span class="badge">3</span></a>
-      
-      <a href="/tags/google" class="list-group-item">
-          google<span class="badge">3</span></a>
-      
-      <a href="/tags/linux" class="list-group-item">
-          linux<span class="badge">3</span></a>
-      
-      <a href="/tags/macos" class="list-group-item">
-          macos<span class="badge">3</span></a>
-      
-      <a href="/tags/productivity" class="list-group-item">
-          productivity<span class="badge">3</span></a>
-      
-      <a href="/tags/database" class="list-group-item">
-          database<span class="badge">2</span></a>
-      
-      <a href="/tags/education" class="list-group-item">
-          education<span class="badge">2</span></a>
-      
-      <a href="/tags/pi" class="list-group-item">
-          pi<span class="badge">2</span></a>
-      
-      <a href="/tags/raspberry" class="list-group-item">
-          raspberry<span class="badge">2</span></a>
-      
-      <a href="/tags/security" class="list-group-item">
-          security<span class="badge">2</span></a>
-      
-      <a href="/tags/ssl" class="list-group-item">
-          ssl<span class="badge">2</span></a>
-      
-      <a href="/tags/taiwan-study" class="list-group-item">
-          taiwan-study<span class="badge">2</span></a>
-      
-      <a href="/tags/tls" class="list-group-item">
-          tls<span class="badge">2</span></a>
-      
-      <a href="/tags/tmux" class="list-group-item">
-          tmux<span class="badge">2</span></a>
-      
-      <a href="/tags/top" class="list-group-item">
-          top<span class="badge">2</span></a>
-      
-      <a href="/tags/uml" class="list-group-item">
-          uml<span class="badge">2</span></a>
-      
-      <a href="/tags/1x" class="list-group-item">
-          1x<span class="badge">1</span></a>
-      
-      <a href="/tags/2x" class="list-group-item">
-          2x<span class="badge">1</span></a>
-      
-      <a href="/tags/alfred" class="list-group-item">
-          alfred<span class="badge">1</span></a>
-      
-      <a href="/tags/angularjs" class="list-group-item">
-          angularjs<span class="badge">1</span></a>
-      
-      <a href="/tags/apache" class="list-group-item">
-          apache<span class="badge">1</span></a>
-      
-      <a href="/tags/app" class="list-group-item">
-          app<span class="badge">1</span></a>
-      
-      <a href="/tags/arch" class="list-group-item">
-          arch<span class="badge">1</span></a>
-      
-      <a href="/tags/authentication" class="list-group-item">
-          authentication<span class="badge">1</span></a>
-      
-      <a href="/tags/bootstrap" class="list-group-item">
-          bootstrap<span class="badge">1</span></a>
-      
-      <a href="/tags/calendar" class="list-group-item">
-          calendar<span class="badge">1</span></a>
-      
-      <a href="/tags/chrome" class="list-group-item">
-          chrome<span class="badge">1</span></a>
-      
-      <a href="/tags/commandline" class="list-group-item">
-          commandline<span class="badge">1</span></a>
-      
-      <a href="/tags/convert" class="list-group-item">
-          convert<span class="badge">1</span></a>
-      
-      <a href="/tags/digitalocean" class="list-group-item">
-          digitalocean<span class="badge">1</span></a>
-      
-      <a href="/tags/do" class="list-group-item">
-          do<span class="badge">1</span></a>
-      
-      <a href="/tags/docker" class="list-group-item">
-          docker<span class="badge">1</span></a>
-      
-      <a href="/tags/donald-super" class="list-group-item">
-          donald-super<span class="badge">1</span></a>
-      
-      <a href="/tags/dse" class="list-group-item">
-          dse<span class="badge">1</span></a>
-      
-      <a href="/tags/editor" class="list-group-item">
-          editor<span class="badge">1</span></a>
-      
-      <a href="/tags/electronics" class="list-group-item">
-          electronics<span class="badge">1</span></a>
-      
-      <a href="/tags/engineering" class="list-group-item">
-          engineering<span class="badge">1</span></a>
-      
-      <a href="/tags/english" class="list-group-item">
-          english<span class="badge">1</span></a>
-      
-      <a href="/tags/freestyle" class="list-group-item">
-          freestyle<span class="badge">1</span></a>
-      
-      <a href="/tags/gif" class="list-group-item">
-          gif<span class="badge">1</span></a>
-      
-      <a href="/tags/git" class="list-group-item">
-          git<span class="badge">1</span></a>
-      
-      <a href="/tags/gitbook" class="list-group-item">
-          gitbook<span class="badge">1</span></a>
-      
-      <a href="/tags/github" class="list-group-item">
-          github<span class="badge">1</span></a>
-      
-      <a href="/tags/golang" class="list-group-item">
-          golang<span class="badge">1</span></a>
-      
-      <a href="/tags/google-script" class="list-group-item">
-          google-script<span class="badge">1</span></a>
-      
-      <a href="/tags/grammer" class="list-group-item">
-          grammer<span class="badge">1</span></a>
-      
-      <a href="/tags/gtd" class="list-group-item">
-          gtd<span class="badge">1</span></a>
-      
-      <a href="/tags/hapijs" class="list-group-item">
-          hapijs<span class="badge">1</span></a>
-      
-      <a href="/tags/hashbang" class="list-group-item">
-          hashbang<span class="badge">1</span></a>
-      
-      <a href="/tags/httpie" class="list-group-item">
-          httpie<span class="badge">1</span></a>
-      
-      <a href="/tags/https" class="list-group-item">
-          https<span class="badge">1</span></a>
-      
-      <a href="/tags/imagemagick" class="list-group-item">
-          imagemagick<span class="badge">1</span></a>
-      
-      <a href="/tags/iot" class="list-group-item">
-          iot<span class="badge">1</span></a>
-      
-      <a href="/tags/javascript" class="list-group-item">
-          javascript<span class="badge">1</span></a>
-      
-      <a href="/tags/jq" class="list-group-item">
-          jq<span class="badge">1</span></a>
-      
-      <a href="/tags/js" class="list-group-item">
-          js<span class="badge">1</span></a>
-      
-      <a href="/tags/jupas" class="list-group-item">
-          jupas<span class="badge">1</span></a>
-      
-      <a href="/tags/jwt" class="list-group-item">
-          jwt<span class="badge">1</span></a>
-      
-      <a href="/tags/kill" class="list-group-item">
-          kill<span class="badge">1</span></a>
-      
-      <a href="/tags/killall" class="list-group-item">
-          killall<span class="badge">1</span></a>
-      
-      <a href="/tags/leveldb" class="list-group-item">
-          leveldb<span class="badge">1</span></a>
-      
-      <a href="/tags/life-planning" class="list-group-item">
-          life-planning<span class="badge">1</span></a>
-      
-      <a href="/tags/lpss" class="list-group-item">
-          lpss<span class="badge">1</span></a>
-      
-      <a href="/tags/lyric" class="list-group-item">
-          lyric<span class="badge">1</span></a>
-      
-      <a href="/tags/map" class="list-group-item">
-          map<span class="badge">1</span></a>
-      
-      <a href="/tags/mongodb" class="list-group-item">
-          mongodb<span class="badge">1</span></a>
-      
-      <a href="/tags/mongoose" class="list-group-item">
-          mongoose<span class="badge">1</span></a>
-      
-      <a href="/tags/mysql" class="list-group-item">
-          mysql<span class="badge">1</span></a>
-      
-      <a href="/tags/normal-form" class="list-group-item">
-          normal-form<span class="badge">1</span></a>
-      
-      <a href="/tags/normalization" class="list-group-item">
-          normalization<span class="badge">1</span></a>
-      
-      <a href="/tags/note-taking" class="list-group-item">
-          note-taking<span class="badge">1</span></a>
-      
-      <a href="/tags/osascript" class="list-group-item">
-          osascript<span class="badge">1</span></a>
-      
-      <a href="/tags/osi" class="list-group-item">
-          osi<span class="badge">1</span></a>
-      
-      <a href="/tags/plantuml" class="list-group-item">
-          plantuml<span class="badge">1</span></a>
-      
-      <a href="/tags/policy" class="list-group-item">
-          policy<span class="badge">1</span></a>
-      
-      <a href="/tags/polymer" class="list-group-item">
-          polymer<span class="badge">1</span></a>
-      
-      <a href="/tags/pomodoro" class="list-group-item">
-          pomodoro<span class="badge">1</span></a>
-      
-      <a href="/tags/process" class="list-group-item">
-          process<span class="badge">1</span></a>
-      
-      <a href="/tags/pt" class="list-group-item">
-          pt<span class="badge">1</span></a>
-      
-      <a href="/tags/react" class="list-group-item">
-          react<span class="badge">1</span></a>
-      
-      <a href="/tags/redirect" class="list-group-item">
-          redirect<span class="badge">1</span></a>
-      
-      <a href="/tags/redux" class="list-group-item">
-          redux<span class="badge">1</span></a>
-      
-      <a href="/tags/reminder" class="list-group-item">
-          reminder<span class="badge">1</span></a>
-      
-      <a href="/tags/scp" class="list-group-item">
-          scp<span class="badge">1</span></a>
-      
-      <a href="/tags/secondment" class="list-group-item">
-          secondment<span class="badge">1</span></a>
-      
-      <a href="/tags/setting" class="list-group-item">
-          setting<span class="badge">1</span></a>
-      
-      <a href="/tags/shortener" class="list-group-item">
-          shortener<span class="badge">1</span></a>
-      
-      <a href="/tags/signal" class="list-group-item">
-          signal<span class="badge">1</span></a>
-      
-      <a href="/tags/slide" class="list-group-item">
-          slide<span class="badge">1</span></a>
-      
-      <a href="/tags/slidedown" class="list-group-item">
-          slidedown<span class="badge">1</span></a>
-      
-      <a href="/tags/sql" class="list-group-item">
-          sql<span class="badge">1</span></a>
-      
-      <a href="/tags/startup" class="list-group-item">
-          startup<span class="badge">1</span></a>
-      
-      <a href="/tags/stem" class="list-group-item">
-          stem<span class="badge">1</span></a>
-      
-      <a href="/tags/swift" class="list-group-item">
-          swift<span class="badge">1</span></a>
-      
-      <a href="/tags/task" class="list-group-item">
-          task<span class="badge">1</span></a>
-      
-      <a href="/tags/taskwarrior" class="list-group-item">
-          taskwarrior<span class="badge">1</span></a>
-      
-      <a href="/tags/tcp" class="list-group-item">
-          tcp<span class="badge">1</span></a>
-      
-      <a href="/tags/terminal" class="list-group-item">
-          terminal<span class="badge">1</span></a>
-      
-      <a href="/tags/timelinejs" class="list-group-item">
-          timelinejs<span class="badge">1</span></a>
-      
-      <a href="/tags/todo" class="list-group-item">
-          todo<span class="badge">1</span></a>
-      
-      <a href="/tags/tomato" class="list-group-item">
-          tomato<span class="badge">1</span></a>
-      
-      <a href="/tags/udp" class="list-group-item">
-          udp<span class="badge">1</span></a>
-      
-      <a href="/tags/vim" class="list-group-item">
-          vim<span class="badge">1</span></a>
-      
-      <a href="/tags/vpet" class="list-group-item">
-          vpet<span class="badge">1</span></a>
-      
-      <a href="/tags/web-token" class="list-group-item">
-          web-token<span class="badge">1</span></a>
-      
-      <a href="/tags/wild-card" class="list-group-item">
-          wild-card<span class="badge">1</span></a>
-      
-      <a href="/tags/wordpress" class="list-group-item">
-          wordpress<span class="badge">1</span></a>
-      
-      <a href="/tags/xargs" class="list-group-item">
-          xargs<span class="badge">1</span></a>
-      
-      <a href="/tags/zsh" class="list-group-item">
-          zsh<span class="badge">1</span></a>
-      
-      </div>
-    </article>
+    </nav>
   </div>
+</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="https://cyrusn.github.io/js/main.js"></script>
-<script src="https://cyrusn.github.io/js/highlight.min.js"></script>
-<script> hljs.initHighlightingOnLoad(); </script>
-<script> renderMathInElement(document.body); </script>
+  <div class="container mt-2">
+     
+<div class="text-center">
+  <h1 class="display-4">Tags</h1>
 
+  
+    <div class="col-8 offset-2 text-justify">
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/career" >
+        career <span class="badge badge-light">3 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/google" >
+        google <span class="badge badge-light">3 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/linux" >
+        linux <span class="badge badge-light">3 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/macos" >
+        macos <span class="badge badge-light">3 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/productivity" >
+        productivity <span class="badge badge-light">3 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/database" >
+        database <span class="badge badge-light">2 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/education" >
+        education <span class="badge badge-light">2 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/pi" >
+        pi <span class="badge badge-light">2 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/raspberry" >
+        raspberry <span class="badge badge-light">2 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/security" >
+        security <span class="badge badge-light">2 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/ssl" >
+        ssl <span class="badge badge-light">2 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/taiwan-study" >
+        taiwan-study <span class="badge badge-light">2 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/tls" >
+        tls <span class="badge badge-light">2 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/tmux" >
+        tmux <span class="badge badge-light">2 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/top" >
+        top <span class="badge badge-light">2 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/uml" >
+        uml <span class="badge badge-light">2 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/1x" >
+        1x <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/2x" >
+        2x <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/alfred" >
+        alfred <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/angularjs" >
+        angularjs <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/apache" >
+        apache <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/app" >
+        app <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/arch" >
+        arch <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/authentication" >
+        authentication <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/bootstrap" >
+        bootstrap <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/calendar" >
+        calendar <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/chrome" >
+        chrome <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/commandline" >
+        commandline <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/convert" >
+        convert <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/digitalocean" >
+        digitalocean <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/do" >
+        do <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/docker" >
+        docker <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/donald-super" >
+        donald-super <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/dse" >
+        dse <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/editor" >
+        editor <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/electronics" >
+        electronics <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/engineering" >
+        engineering <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/english" >
+        english <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/freestyle" >
+        freestyle <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/gif" >
+        gif <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/git" >
+        git <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/gitbook" >
+        gitbook <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/github" >
+        github <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/golang" >
+        golang <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/google-script" >
+        google-script <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/grammer" >
+        grammer <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/gtd" >
+        gtd <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/hapijs" >
+        hapijs <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/hashbang" >
+        hashbang <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/httpie" >
+        httpie <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/https" >
+        https <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/imagemagick" >
+        imagemagick <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/iot" >
+        iot <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/javascript" >
+        javascript <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/jq" >
+        jq <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/js" >
+        js <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/jupas" >
+        jupas <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/jwt" >
+        jwt <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/kill" >
+        kill <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/killall" >
+        killall <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/leveldb" >
+        leveldb <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/life-planning" >
+        life-planning <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/lpss" >
+        lpss <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/lyric" >
+        lyric <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/map" >
+        map <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/mongodb" >
+        mongodb <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/mongoose" >
+        mongoose <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/mysql" >
+        mysql <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/normal-form" >
+        normal-form <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/normalization" >
+        normalization <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/note-taking" >
+        note-taking <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/osascript" >
+        osascript <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/osi" >
+        osi <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/plantuml" >
+        plantuml <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/policy" >
+        policy <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/polymer" >
+        polymer <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/pomodoro" >
+        pomodoro <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/process" >
+        process <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/pt" >
+        pt <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/react" >
+        react <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/redirect" >
+        redirect <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/redux" >
+        redux <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/reminder" >
+        reminder <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/scp" >
+        scp <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/secondment" >
+        secondment <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/setting" >
+        setting <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/shortener" >
+        shortener <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/signal" >
+        signal <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/slide" >
+        slide <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/slidedown" >
+        slidedown <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/sql" >
+        sql <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/startup" >
+        startup <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/stem" >
+        stem <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/swift" >
+        swift <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/task" >
+        task <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/taskwarrior" >
+        taskwarrior <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/tcp" >
+        tcp <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/terminal" >
+        terminal <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/timelinejs" >
+        timelinejs <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/todo" >
+        todo <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/tomato" >
+        tomato <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/udp" >
+        udp <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/vim" >
+        vim <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/vpet" >
+        vpet <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/web-token" >
+        web-token <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/wild-card" >
+        wild-card <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/wordpress" >
+        wordpress <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/xargs" >
+        xargs <span class="badge badge-light">1 </span> 
+      </a>
+    
+      <a class="badge badge-pill badge-secondary" href="/tags/zsh" >
+        zsh <span class="badge badge-light">1 </span> 
+      </a>
+    
+    </div>
+  </div>
+  
+    <link rel="stylesheet" href='/css/atom-one-dark.css'>
+<script src='/js/highlight.pack.js'></script>
 
-
-
-<script src="/js/go-to-home.js"></script>
-<script src="/js/perfect-scrollbar.min.js"></script>
-<script src="/js/perfect-scrollbar.jquery.min.js"></script>
-
-  </body>
+<script src="/js/main.js"></script>
+  </div>
+</body>
 </html>
-

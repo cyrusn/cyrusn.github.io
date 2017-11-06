@@ -69,16 +69,40 @@ class: center, middle
 [&amp;4]: https://en.wikipedia.org/wiki/Getting_Things_Done
 [image]: https://dl.dropboxusercontent.com/s/hs9jspievysiptw/flow.svg
   </textarea>
-  <script src="/js/remark-latest.min.js"></script>
+  <script src="/js/remark-latest.min.js">
+  </script>
   <script>
-    var slideshow = remark.create({
-      
-      highlightStyle: 'monokai',
-      highlightLines: true,
-      navigation: {
-        scroll: false,
-        click: true
-      }
+    var option = {}
+    var obj = Object.assign({}, {"highlight-lines":true,"highlight-style":"monokai","navigation":{"click":true,"scroll":false},"ratio":"4:3"}, "")
+
+    function convertDaseCaseToCamelCase (word) {
+      return word.split("-").map(function(arr, n) {
+        if ( n != 0 ) {
+          return arr[0].toUpperCase() + arr.slice(1)
+        } 
+        return arr
+      }).join("")
+    }
+    for (var prop in obj) {
+      var key = convertDaseCaseToCamelCase(prop)
+      var value = obj[prop]
+
+      option[key] = value
+    }
+
+    var slideshow = remark.create(option)
+    document.onkeypress = function(e) {
+        e = e || window.event;
+        var charCode = (typeof e.which == "number") ? e.which : e.keyCode;
+
+        if (charCode == 113) {
+            window.location.href = '/'
+        }
+    };
+    var anchor = document.getElementsByTagName("a");
+    anchor.forEach( a => {
+      a.setAttribute('target', '_blank')
     })
+
   </script>
 </body>

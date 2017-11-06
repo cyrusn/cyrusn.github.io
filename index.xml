@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CyrusN</title>
+    <title>Notebook | CyrusN</title>
     <link>https://cyrusn.github.io/</link>
-    <description>Recent content on CyrusN</description>
+    <description>Recent content on Notebook | CyrusN</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
     <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
@@ -19,18 +19,21 @@
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/introduction-to-raspberry-pi/</guid>
       <description>class: center middle
-Introdution to Raspberry-Pi Cyrus Ngan Agenda  Raspberry Pi
- What is Raspberry-pi
+Introdution to Raspberry-Pi Agenda  Raspberry Pi
+ What is Raspberry-Pi
+ Raspberry-Pi vs Audrino vs Microbit
  What is GPIO?
- Top 10 Raspberry Pi Projects for Beginners
  Setup
+ Introduction to 16 common sensors
+ e.g. Blinking LED
+ e.g. Blinking LED cont&amp;hellip;
  Python Script
+ Top 10 Raspberry Pi Projects for Beginners
+ Thanks
   class: center middle
 Raspberry Pi .split-50[
 .column[
-        RASPBERRY PI 3 MODEL B    ]
-.column[
-        RASPBERRY PI ZERO W    ]]</description>
+        RASPBERRY PI 3 MODEL B   More Powerful    ]</description>
     </item>
     
     <item>
@@ -661,7 +664,7 @@ migrate Moving WordPress « WordPress Codex</description>
     </item>
     
     <item>
-      <title>useful command line tools</title>
+      <title>Useful Command Line Tools</title>
       <link>https://cyrusn.github.io/note/useful-command-line-tools/</link>
       <pubDate>Sun, 24 May 2015 22:36:53 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
