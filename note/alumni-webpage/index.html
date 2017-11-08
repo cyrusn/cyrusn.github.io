@@ -60,12 +60,30 @@ Reminder  Don&rsquo;t use bootstrap.js, use ui-bootstrap.js instead.
 
 
 <script src="/js/main.js"></script>
+<script>
+const pageKind = "page"
+const navLinks = ['/']
+
+  navLinks.push("\/note\/")
+
+  navLinks.push("\/project\/")
+
+  navLinks.push("\/slide\/")
+
+  navLinks.push("\/tags\/")
+
+  navLinks.push("\/page\/about\/")
+
+
+var Paginator = {}
+
+</script>
 
 </head>
 <body>
 
   <div class="natvigator sticky-top">
-  <div class="bg-light bg-light" data-nav-status="toggle">    
+  <div class="bg-light bg-light" data-nav-status="toggle">
     <nav class="mx-auto navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="https://cyrusn.github.io">CyrusN</a>
 
@@ -103,7 +121,7 @@ Reminder  Don&rsquo;t use bootstrap.js, use ui-bootstrap.js instead.
           
           
           <li>
-            <a class="nav-link" title="Tags" href="/tags">Tags</a>
+            <a class="nav-link" title="Tags" href="/tags/">Tags</a>
           </li>
             
           
@@ -123,7 +141,7 @@ Reminder  Don&rsquo;t use bootstrap.js, use ui-bootstrap.js instead.
     
 <h1 class="display-4 text-center">Alumni Webpage Notes</h1>
 <hr>
-<div class="mx-auto text-justify w-100 px-5">
+<div class="mx-auto">
   <h3 class="text-muted"></h3>
   <blockquote class="blockquote">
     <p class="mb-0">
@@ -134,10 +152,21 @@ Reminder  Don&rsquo;t use bootstrap.js, use ui-bootstrap.js instead.
     
   </blockquote>
   <p>
+    
+
+<small>
+
+
   <a class="badge badge-secondary" href="/tags/angularjs">angularjs</a>
 
   <a class="badge badge-secondary" href="/tags/bootstrap">bootstrap</a>
-</p>
+
+</small>
+
+
+
+
+  </p>
   <div id="content">
     
 

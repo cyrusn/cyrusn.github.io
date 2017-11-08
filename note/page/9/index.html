@@ -30,12 +30,30 @@
 
 
 <script src="/js/main.js"></script>
+<script>
+const pageKind = "section"
+const navLinks = ['/']
+
+  navLinks.push("\/note\/")
+
+  navLinks.push("\/project\/")
+
+  navLinks.push("\/slide\/")
+
+  navLinks.push("\/tags\/")
+
+  navLinks.push("\/page\/about\/")
+
+
+var Paginator = {}
+
+</script>
 
 </head>
 <body>
 
   <div class="natvigator sticky-top">
-  <div class="bg-light bg-light" data-nav-status="toggle">    
+  <div class="bg-light bg-light" data-nav-status="toggle">
     <nav class="mx-auto navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="https://cyrusn.github.io">CyrusN</a>
 
@@ -73,7 +91,7 @@
           
           
           <li>
-            <a class="nav-link" title="Tags" href="/tags">Tags</a>
+            <a class="nav-link" title="Tags" href="/tags/">Tags</a>
           </li>
             
           
@@ -93,7 +111,7 @@
     
 <h1 class="text-center display-4">Notes</h1>
 <hr>
-<div class="mx-auto w-75">
+<div class="mx-md-5 px-md-5">
   <div>
     
 
@@ -199,9 +217,9 @@
       id='list-0'
       class="list-group-item list-group-item-action list-group-item-light active">
       <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">
+        <h6 class="mb-1">
           <a class="text-light" href="/note/uml/">UML Notes</a>
-        </h5>
+        </h6>
         <small>2015-05-28</small>
       </div>
       <div class='mb-0'>
@@ -209,22 +227,27 @@
           <a class="text-light" href="/note/uml/">/note/uml/</a>
         </small>
       </div>
-      <div class='mt-0'>
-        <small>
-          
+      
+
+<small>
+
+
   <a class="badge badge-secondary" href="/tags/uml">uml</a>
 
-        </small>
-      </div>
+</small>
+
+
+
+
     </div>
     
       <div
       id='list-1'
       class="list-group-item list-group-item-action list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">
+        <h6 class="mb-1">
           <a class="text-muted" href="/note/javascript-on-osascript/">JavaScript on OSAScript</a>
-        </h5>
+        </h6>
         <small>2015-05-27</small>
       </div>
       <div class='mb-0'>
@@ -232,24 +255,29 @@
           <a class="text-muted" href="/note/javascript-on-osascript/">/note/javascript-on-osascript/</a>
         </small>
       </div>
-      <div class='mt-0'>
-        <small>
-          
+      
+
+<small>
+
+
   <a class="badge badge-secondary" href="/tags/macos">macos</a>
 
   <a class="badge badge-secondary" href="/tags/osascript">osascript</a>
 
-        </small>
-      </div>
+</small>
+
+
+
+
     </div>
     
       <div
       id='list-2'
       class="list-group-item list-group-item-action list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">
+        <h6 class="mb-1">
           <a class="text-muted" href="/note/reading-list/">Reading List</a>
-        </h5>
+        </h6>
         <small>2015-05-26</small>
       </div>
       <div class='mb-0'>
@@ -257,20 +285,18 @@
           <a class="text-muted" href="/note/reading-list/">/note/reading-list/</a>
         </small>
       </div>
-      <div class='mt-0'>
-        <small>
-          
-        </small>
-      </div>
+      
+
+
     </div>
     
       <div
       id='list-3'
       class="list-group-item list-group-item-action list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">
+        <h6 class="mb-1">
           <a class="text-muted" href="/note/wordpress/">Wordpress Notes</a>
-        </h5>
+        </h6>
         <small>2015-05-26</small>
       </div>
       <div class='mb-0'>
@@ -278,22 +304,27 @@
           <a class="text-muted" href="/note/wordpress/">/note/wordpress/</a>
         </small>
       </div>
-      <div class='mt-0'>
-        <small>
-          
+      
+
+<small>
+
+
   <a class="badge badge-secondary" href="/tags/wordpress">wordpress</a>
 
-        </small>
-      </div>
+</small>
+
+
+
+
     </div>
     
       <div
       id='list-4'
       class="list-group-item list-group-item-action list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">
+        <h6 class="mb-1">
           <a class="text-muted" href="/note/useful-command-line-tools/">Useful Command Line Tools</a>
-        </h5>
+        </h6>
         <small>2015-05-24</small>
       </div>
       <div class='mb-0'>
@@ -301,9 +332,11 @@
           <a class="text-muted" href="/note/useful-command-line-tools/">/note/useful-command-line-tools/</a>
         </small>
       </div>
-      <div class='mt-0'>
-        <small>
-          
+      
+
+<small>
+
+
   <a class="badge badge-secondary" href="/tags/commandline">commandline</a>
 
   <a class="badge badge-secondary" href="/tags/terminal">terminal</a>
@@ -326,17 +359,28 @@
 
   <a class="badge badge-secondary" href="/tags/top">top</a>
 
-        </small>
-      </div>
+</small>
+
+
+
+
     </div>
     
   </div>
 </div>
-
 <script type="text/javascript">
    
   
-  $('#list-0').find('.badge, .badge-secondary').toggleClass('badge-light badge-secondary')
+  $('#list-0').find('.badge-secondary').toggleClass('badge-light badge-secondary')
+
+  
+  Paginator = {
+    hasNext:  true ,
+    hasPrev:  true ,
+    nextPage: "\/note\/page\/10\/",
+    prevPage: "\/note\/page\/8\/"
+  }
+  
 </script>
 
 

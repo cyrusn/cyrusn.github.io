@@ -44,12 +44,30 @@
 
 
 <script src="/js/main.js"></script>
+<script>
+const pageKind = "page"
+const navLinks = ['/']
+
+  navLinks.push("\/note\/")
+
+  navLinks.push("\/project\/")
+
+  navLinks.push("\/slide\/")
+
+  navLinks.push("\/tags\/")
+
+  navLinks.push("\/page\/about\/")
+
+
+var Paginator = {}
+
+</script>
 
 </head>
 <body>
 
   <div class="natvigator sticky-top">
-  <div class="bg-light bg-light" data-nav-status="toggle">    
+  <div class="bg-light bg-light" data-nav-status="toggle">
     <nav class="mx-auto navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="https://cyrusn.github.io">CyrusN</a>
 
@@ -87,7 +105,7 @@
           
           
           <li>
-            <a class="nav-link" title="Tags" href="/tags">Tags</a>
+            <a class="nav-link" title="Tags" href="/tags/">Tags</a>
           </li>
             
           
@@ -107,7 +125,7 @@
     
 <h1 class="display-4 text-center">Medicine</h1>
 <hr>
-<div class="mx-auto text-justify w-100 px-5">
+<div class="mx-auto">
   <h3 class="text-muted"></h3>
   <blockquote class="blockquote">
     <p class="mb-0">
@@ -117,7 +135,11 @@
     <footer class="blockquote-footer">2017-05-15</footer>
     
   </blockquote>
-  <p></p>
+  <p>
+    
+
+
+  </p>
   <div id="content">
     <p>Relief of pain and inflammation beside Panadol<br />
 - Celecoxib (痛博士 200mg)<br />

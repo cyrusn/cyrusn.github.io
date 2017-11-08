@@ -37,12 +37,30 @@ cert generation How to create a .">
 
 
 <script src="/js/main.js"></script>
+<script>
+const pageKind = "page"
+const navLinks = ['/']
+
+  navLinks.push("\/note\/")
+
+  navLinks.push("\/project\/")
+
+  navLinks.push("\/slide\/")
+
+  navLinks.push("\/tags\/")
+
+  navLinks.push("\/page\/about\/")
+
+
+var Paginator = {}
+
+</script>
 
 </head>
 <body>
 
   <div class="natvigator sticky-top">
-  <div class="bg-light bg-light" data-nav-status="toggle">    
+  <div class="bg-light bg-light" data-nav-status="toggle">
     <nav class="mx-auto navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="https://cyrusn.github.io">CyrusN</a>
 
@@ -80,7 +98,7 @@ cert generation How to create a .">
           
           
           <li>
-            <a class="nav-link" title="Tags" href="/tags">Tags</a>
+            <a class="nav-link" title="Tags" href="/tags/">Tags</a>
           </li>
             
           
@@ -100,7 +118,7 @@ cert generation How to create a .">
     
 <h1 class="display-4 text-center">Open SSL</h1>
 <hr>
-<div class="mx-auto text-justify w-100 px-5">
+<div class="mx-auto">
   <h3 class="text-muted"></h3>
   <blockquote class="blockquote">
     <p class="mb-0">
@@ -110,7 +128,11 @@ cert generation How to create a .">
     <footer class="blockquote-footer">2016-09-25</footer>
     
   </blockquote>
-  <p></p>
+  <p>
+    
+
+
+  </p>
   <div id="content">
     
 

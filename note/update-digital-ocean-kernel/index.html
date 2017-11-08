@@ -36,12 +36,30 @@ To display both the kernel version and your system&rsquo;s architecture (32-bit 
 
 
 <script src="/js/main.js"></script>
+<script>
+const pageKind = "page"
+const navLinks = ['/']
+
+  navLinks.push("\/note\/")
+
+  navLinks.push("\/project\/")
+
+  navLinks.push("\/slide\/")
+
+  navLinks.push("\/tags\/")
+
+  navLinks.push("\/page\/about\/")
+
+
+var Paginator = {}
+
+</script>
 
 </head>
 <body>
 
   <div class="natvigator sticky-top">
-  <div class="bg-light bg-light" data-nav-status="toggle">    
+  <div class="bg-light bg-light" data-nav-status="toggle">
     <nav class="mx-auto navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="https://cyrusn.github.io">CyrusN</a>
 
@@ -79,7 +97,7 @@ To display both the kernel version and your system&rsquo;s architecture (32-bit 
           
           
           <li>
-            <a class="nav-link" title="Tags" href="/tags">Tags</a>
+            <a class="nav-link" title="Tags" href="/tags/">Tags</a>
           </li>
             
           
@@ -99,7 +117,7 @@ To display both the kernel version and your system&rsquo;s architecture (32-bit 
     
 <h1 class="display-4 text-center">Update Digital Ocean Kernel</h1>
 <hr>
-<div class="mx-auto text-justify w-100 px-5">
+<div class="mx-auto">
   <h3 class="text-muted"></h3>
   <blockquote class="blockquote">
     <p class="mb-0">
@@ -110,8 +128,19 @@ To display both the kernel version and your system&rsquo;s architecture (32-bit 
     
   </blockquote>
   <p>
+    
+
+<small>
+
+
   <a class="badge badge-secondary" href="/tags/digitalocean">digitalocean</a>
-</p>
+
+</small>
+
+
+
+
+  </p>
   <div id="content">
     
 

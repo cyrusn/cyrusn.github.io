@@ -39,12 +39,30 @@
 
 
 <script src="/js/main.js"></script>
+<script>
+const pageKind = "page"
+const navLinks = ['/']
+
+  navLinks.push("\/note\/")
+
+  navLinks.push("\/project\/")
+
+  navLinks.push("\/slide\/")
+
+  navLinks.push("\/tags\/")
+
+  navLinks.push("\/page\/about\/")
+
+
+var Paginator = {}
+
+</script>
 
 </head>
 <body>
 
   <div class="natvigator sticky-top">
-  <div class="bg-light bg-light" data-nav-status="toggle">    
+  <div class="bg-light bg-light" data-nav-status="toggle">
     <nav class="mx-auto navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="https://cyrusn.github.io">CyrusN</a>
 
@@ -82,7 +100,7 @@
           
           
           <li>
-            <a class="nav-link" title="Tags" href="/tags">Tags</a>
+            <a class="nav-link" title="Tags" href="/tags/">Tags</a>
           </li>
             
           
@@ -102,7 +120,7 @@
     
 <h1 class="display-4 text-center">signal</h1>
 <hr>
-<div class="mx-auto text-justify w-100 px-5">
+<div class="mx-auto">
   <h3 class="text-muted"></h3>
   <blockquote class="blockquote">
     <p class="mb-0">
@@ -113,6 +131,11 @@
     
   </blockquote>
   <p>
+    
+
+<small>
+
+
   <a class="badge badge-secondary" href="/tags/signal">signal</a>
 
   <a class="badge badge-secondary" href="/tags/process">process</a>
@@ -120,7 +143,13 @@
   <a class="badge badge-secondary" href="/tags/top">top</a>
 
   <a class="badge badge-secondary" href="/tags/killall">killall</a>
-</p>
+
+</small>
+
+
+
+
+  </p>
   <div id="content">
     <ul>
 <li><a href="https://www.linux.com/learn/intro-to-linux/2017/5/how-kill-process-command-line">How to Kill a Process from the Command Line | Linux.com | The source for Linux information</a><br /></li>

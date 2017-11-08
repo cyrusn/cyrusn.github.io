@@ -18,8 +18,9 @@
       <pubDate>Fri, 03 Nov 2017 11:17:14 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/introduction-to-raspberry-pi/</guid>
-      <description>class: center middle
-Introdution to Raspberry-Pi Agenda  Raspberry Pi
+      <description>.center.middle[
+Introdution to Raspberry-Pi ]
+Agenda  Raspberry Pi
  What is Raspberry-Pi
  Raspberry-Pi vs Audrino vs Microbit
  What is GPIO?

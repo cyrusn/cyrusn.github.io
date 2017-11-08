@@ -53,12 +53,30 @@ Setting Apache2  in file /etc/hosts
 
 
 <script src="/js/main.js"></script>
+<script>
+const pageKind = "page"
+const navLinks = ['/']
+
+  navLinks.push("\/note\/")
+
+  navLinks.push("\/project\/")
+
+  navLinks.push("\/slide\/")
+
+  navLinks.push("\/tags\/")
+
+  navLinks.push("\/page\/about\/")
+
+
+var Paginator = {}
+
+</script>
 
 </head>
 <body>
 
   <div class="natvigator sticky-top">
-  <div class="bg-light bg-light" data-nav-status="toggle">    
+  <div class="bg-light bg-light" data-nav-status="toggle">
     <nav class="mx-auto navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="https://cyrusn.github.io">CyrusN</a>
 
@@ -96,7 +114,7 @@ Setting Apache2  in file /etc/hosts
           
           
           <li>
-            <a class="nav-link" title="Tags" href="/tags">Tags</a>
+            <a class="nav-link" title="Tags" href="/tags/">Tags</a>
           </li>
             
           
@@ -116,7 +134,7 @@ Setting Apache2  in file /etc/hosts
     
 <h1 class="display-4 text-center">Config Digital Ocean Droplet as Microservice</h1>
 <hr>
-<div class="mx-auto text-justify w-100 px-5">
+<div class="mx-auto">
   <h3 class="text-muted"></h3>
   <blockquote class="blockquote">
     <p class="mb-0">
@@ -127,6 +145,11 @@ Setting Apache2  in file /etc/hosts
     
   </blockquote>
   <p>
+    
+
+<small>
+
+
   <a class="badge badge-secondary" href="/tags/apache">apache</a>
 
   <a class="badge badge-secondary" href="/tags/ssl">SSL</a>
@@ -134,7 +157,13 @@ Setting Apache2  in file /etc/hosts
   <a class="badge badge-secondary" href="/tags/tls">TLS</a>
 
   <a class="badge badge-secondary" href="/tags/tmux">tmux</a>
-</p>
+
+</small>
+
+
+
+
+  </p>
   <div id="content">
     
 

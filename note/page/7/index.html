@@ -30,12 +30,30 @@
 
 
 <script src="/js/main.js"></script>
+<script>
+const pageKind = "section"
+const navLinks = ['/']
+
+  navLinks.push("\/note\/")
+
+  navLinks.push("\/project\/")
+
+  navLinks.push("\/slide\/")
+
+  navLinks.push("\/tags\/")
+
+  navLinks.push("\/page\/about\/")
+
+
+var Paginator = {}
+
+</script>
 
 </head>
 <body>
 
   <div class="natvigator sticky-top">
-  <div class="bg-light bg-light" data-nav-status="toggle">    
+  <div class="bg-light bg-light" data-nav-status="toggle">
     <nav class="mx-auto navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="https://cyrusn.github.io">CyrusN</a>
 
@@ -73,7 +91,7 @@
           
           
           <li>
-            <a class="nav-link" title="Tags" href="/tags">Tags</a>
+            <a class="nav-link" title="Tags" href="/tags/">Tags</a>
           </li>
             
           
@@ -93,7 +111,7 @@
     
 <h1 class="text-center display-4">Notes</h1>
 <hr>
-<div class="mx-auto w-75">
+<div class="mx-md-5 px-md-5">
   <div>
     
 
@@ -199,9 +217,9 @@
       id='list-0'
       class="list-group-item list-group-item-action list-group-item-light active">
       <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">
+        <h6 class="mb-1">
           <a class="text-light" href="/note/config-digtal-ocean-droplet-as-microservice/">Config Digital Ocean Droplet as Microservice</a>
-        </h5>
+        </h6>
         <small>2016-09-29</small>
       </div>
       <div class='mb-0'>
@@ -209,9 +227,11 @@
           <a class="text-light" href="/note/config-digtal-ocean-droplet-as-microservice/">/note/config-digtal-ocean-droplet-as-microservice/</a>
         </small>
       </div>
-      <div class='mt-0'>
-        <small>
-          
+      
+
+<small>
+
+
   <a class="badge badge-secondary" href="/tags/apache">apache</a>
 
   <a class="badge badge-secondary" href="/tags/ssl">SSL</a>
@@ -220,17 +240,20 @@
 
   <a class="badge badge-secondary" href="/tags/tmux">tmux</a>
 
-        </small>
-      </div>
+</small>
+
+
+
+
     </div>
     
       <div
       id='list-1'
       class="list-group-item list-group-item-action list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">
+        <h6 class="mb-1">
           <a class="text-muted" href="/note/how-to-convert-pngs-to-gif/">How to convert images to gif</a>
-        </h5>
+        </h6>
         <small>2016-09-26</small>
       </div>
       <div class='mb-0'>
@@ -238,9 +261,11 @@
           <a class="text-muted" href="/note/how-to-convert-pngs-to-gif/">/note/how-to-convert-pngs-to-gif/</a>
         </small>
       </div>
-      <div class='mt-0'>
-        <small>
-          
+      
+
+<small>
+
+
   <a class="badge badge-secondary" href="/tags/imagemagick">imagemagick</a>
 
   <a class="badge badge-secondary" href="/tags/productivity">productivity</a>
@@ -249,17 +274,20 @@
 
   <a class="badge badge-secondary" href="/tags/convert">convert</a>
 
-        </small>
-      </div>
+</small>
+
+
+
+
     </div>
     
       <div
       id='list-2'
       class="list-group-item list-group-item-action list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">
+        <h6 class="mb-1">
           <a class="text-muted" href="/note/open-ssl/">Open SSL</a>
-        </h5>
+        </h6>
         <small>2016-09-25</small>
       </div>
       <div class='mb-0'>
@@ -267,20 +295,18 @@
           <a class="text-muted" href="/note/open-ssl/">/note/open-ssl/</a>
         </small>
       </div>
-      <div class='mt-0'>
-        <small>
-          
-        </small>
-      </div>
+      
+
+
     </div>
     
       <div
       id='list-3'
       class="list-group-item list-group-item-action list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">
+        <h6 class="mb-1">
           <a class="text-muted" href="/note/ssl-tls/">SSL TLS</a>
-        </h5>
+        </h6>
         <small>2016-09-25</small>
       </div>
       <div class='mb-0'>
@@ -288,26 +314,31 @@
           <a class="text-muted" href="/note/ssl-tls/">/note/ssl-tls/</a>
         </small>
       </div>
-      <div class='mt-0'>
-        <small>
-          
+      
+
+<small>
+
+
   <a class="badge badge-secondary" href="/tags/security">security</a>
 
   <a class="badge badge-secondary" href="/tags/ssl">SSL</a>
 
   <a class="badge badge-secondary" href="/tags/tls">TLS</a>
 
-        </small>
-      </div>
+</small>
+
+
+
+
     </div>
     
       <div
       id='list-4'
       class="list-group-item list-group-item-action list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">
+        <h6 class="mb-1">
           <a class="text-muted" href="/note/digital-ocean/">Digital Ocean Notes</a>
-        </h5>
+        </h6>
         <small>2016-03-26</small>
       </div>
       <div class='mb-0'>
@@ -315,24 +346,37 @@
           <a class="text-muted" href="/note/digital-ocean/">/note/digital-ocean/</a>
         </small>
       </div>
-      <div class='mt-0'>
-        <small>
-          
+      
+
+<small>
+
+
   <a class="badge badge-secondary" href="/tags/do">do</a>
 
   <a class="badge badge-secondary" href="/tags/scp">scp</a>
 
-        </small>
-      </div>
+</small>
+
+
+
+
     </div>
     
   </div>
 </div>
-
 <script type="text/javascript">
    
   
-  $('#list-0').find('.badge, .badge-secondary').toggleClass('badge-light badge-secondary')
+  $('#list-0').find('.badge-secondary').toggleClass('badge-light badge-secondary')
+
+  
+  Paginator = {
+    hasNext:  true ,
+    hasPrev:  true ,
+    nextPage: "\/note\/page\/8\/",
+    prevPage: "\/note\/page\/6\/"
+  }
+  
 </script>
 
 

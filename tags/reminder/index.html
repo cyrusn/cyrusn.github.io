@@ -30,12 +30,30 @@
 
 
 <script src="/js/main.js"></script>
+<script>
+const pageKind = "taxonomy"
+const navLinks = ['/']
+
+  navLinks.push("\/note\/")
+
+  navLinks.push("\/project\/")
+
+  navLinks.push("\/slide\/")
+
+  navLinks.push("\/tags\/")
+
+  navLinks.push("\/page\/about\/")
+
+
+var Paginator = {}
+
+</script>
 
 </head>
 <body>
 
   <div class="natvigator sticky-top">
-  <div class="bg-light bg-light" data-nav-status="toggle">    
+  <div class="bg-light bg-light" data-nav-status="toggle">
     <nav class="mx-auto navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="https://cyrusn.github.io">CyrusN</a>
 
@@ -73,7 +91,7 @@
           
           
           <li>
-            <a class="nav-link" title="Tags" href="/tags">Tags</a>
+            <a class="nav-link" title="Tags" href="/tags/">Tags</a>
           </li>
             
           
@@ -93,7 +111,7 @@
     
 <h1 class="text-center display-4">Reminder</h1>
 <hr>
-<div class="mx-auto w-75">
+<div class="mx-md-5 px-md-5">
   <div>
     
 
@@ -103,9 +121,9 @@
       id='list-0'
       class="list-group-item list-group-item-action list-group-item-light active">
       <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">
+        <h6 class="mb-1">
           <a class="text-light" href="/note/taskwarrior/">Task Warrior</a>
-        </h5>
+        </h6>
         <small>2017-05-21</small>
       </div>
       <div class='mb-0'>
@@ -113,9 +131,11 @@
           <a class="text-light" href="/note/taskwarrior/">/note/taskwarrior/</a>
         </small>
       </div>
-      <div class='mt-0'>
-        <small>
-          
+      
+
+<small>
+
+
   <a class="badge badge-secondary" href="/tags/taskwarrior">taskwarrior</a>
 
   <a class="badge badge-secondary" href="/tags/todo">todo</a>
@@ -124,17 +144,28 @@
 
   <a class="badge badge-secondary" href="/tags/reminder">reminder</a>
 
-        </small>
-      </div>
+</small>
+
+
+
+
     </div>
     
   </div>
 </div>
-
 <script type="text/javascript">
    
   
-  $('#list-0').find('.badge, .badge-secondary').toggleClass('badge-light badge-secondary')
+  $('#list-0').find('.badge-secondary').toggleClass('badge-light badge-secondary')
+
+  
+  Paginator = {
+    hasNext:  false ,
+    hasPrev:  false ,
+    nextPage: null,
+    prevPage: null
+  }
+  
 </script>
 
 

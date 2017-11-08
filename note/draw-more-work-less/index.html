@@ -51,12 +51,30 @@ Text based tools I used to use the GUI tool Dia.">
 
 
 <script src="/js/main.js"></script>
+<script>
+const pageKind = "page"
+const navLinks = ['/']
+
+  navLinks.push("\/note\/")
+
+  navLinks.push("\/project\/")
+
+  navLinks.push("\/slide\/")
+
+  navLinks.push("\/tags\/")
+
+  navLinks.push("\/page\/about\/")
+
+
+var Paginator = {}
+
+</script>
 
 </head>
 <body>
 
   <div class="natvigator sticky-top">
-  <div class="bg-light bg-light" data-nav-status="toggle">    
+  <div class="bg-light bg-light" data-nav-status="toggle">
     <nav class="mx-auto navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="https://cyrusn.github.io">CyrusN</a>
 
@@ -94,7 +112,7 @@ Text based tools I used to use the GUI tool Dia.">
           
           
           <li>
-            <a class="nav-link" title="Tags" href="/tags">Tags</a>
+            <a class="nav-link" title="Tags" href="/tags/">Tags</a>
           </li>
             
           
@@ -114,7 +132,7 @@ Text based tools I used to use the GUI tool Dia.">
     
 <h1 class="display-4 text-center">Draw More Work Less</h1>
 <hr>
-<div class="mx-auto text-justify w-100 px-5">
+<div class="mx-auto">
   <h3 class="text-muted"></h3>
   <blockquote class="blockquote">
     <p class="mb-0">
@@ -125,10 +143,21 @@ Text based tools I used to use the GUI tool Dia.">
     
   </blockquote>
   <p>
+    
+
+<small>
+
+
   <a class="badge badge-secondary" href="/tags/plantuml">plantuml</a>
 
   <a class="badge badge-secondary" href="/tags/uml">uml</a>
-</p>
+
+</small>
+
+
+
+
+  </p>
   <div id="content">
     
 
