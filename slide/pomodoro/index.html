@@ -71,6 +71,8 @@ class: center, middle
   </textarea>
   <script src="/js/remark-latest.min.js">
   </script>
+  
+
   <script>
     var option = {}
     var obj = Object.assign({}, {"highlight-lines":true,"highlight-style":"monokai","navigation":{"click":true,"scroll":false},"ratio":"4:3"}, "")
@@ -89,8 +91,9 @@ class: center, middle
 
       option[key] = value
     }
-
+    
     var slideshow = remark.create(option)
+    
     document.onkeypress = function(e) {
         e = e || window.event;
         var charCode = (typeof e.which == "number") ? e.which : e.keyCode;
@@ -103,6 +106,5 @@ class: center, middle
     anchor.forEach( a => {
       a.setAttribute('target', '_blank')
     })
-
   </script>
 </body>

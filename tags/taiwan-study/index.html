@@ -8,7 +8,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-
   <title>Taiwan Study</title>
 
 
@@ -32,10 +31,7 @@
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
-<script src=' /js/lodash.min.js '></script>
-
-
-
+<script src="/js/main.js"></script>
 </head>
 <body>
 
@@ -94,50 +90,58 @@
   </div>
 </div>
 
-  <div class="container mt-2">
+  <div class="container mt-2 mx-auto">
     
-<div class="row">  
-  <div class="col-lg-8 offset-2">
-    <h1 class="text-center display-4">Taiwan Study</h1>
-    <hr>
+<h1 class="text-center display-4">Taiwan Study</h1>
+<hr>
+<div class="mx-auto w-75">
+  <div>
     
 
     <div class="list-group">
       
-      <div class="list-group-item list-group-item-action list-group-item-light">
-        <a class="text-muted d-flex w-100 justify-content-between" href="/note/taiwan-study/">
-          <h5 class="mb-1">臺灣升學 Notes</h5>          
-          <small>2017-05-15</small>
-        </a>
-        <div class='mb-0'>
-          <small>
-            <a class="text-muted" href="/note/taiwan-study/">/note/taiwan-study/</a>
-          </small>          
-        </div>
-        <div class='mt-0'>
-          <small>
-            
+      <div 
+      id='list-0'
+      class="list-group-item list-group-item-action list-group-item-light active">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">
+          <a class="text-light" href="/note/taiwan-study/">臺灣升學 Notes</a>
+        </h5>          
+        <small>2017-05-15</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-light" href="/note/taiwan-study/">/note/taiwan-study/</a>
+        </small>          
+      </div>
+      <div class='mt-0'>
+        <small>
+          
   <a class="badge badge-secondary" href="/tags/taiwan-study">taiwan study</a>
 
   <a class="badge badge-secondary" href="/tags/career">career</a>
 
-          </small>
-        </div>
+        </small>
       </div>
-      
-      <div class="list-group-item list-group-item-action list-group-item-light">
-        <a class="text-muted d-flex w-100 justify-content-between" href="/note/4&#43;1/">
-          <h5 class="mb-1">4C&#43;1X 升學考慮</h5>          
-          <small>2017-05-15</small>
-        </a>
-        <div class='mb-0'>
-          <small>
-            <a class="text-muted" href="/note/4&#43;1/">/note/4+1/</a>
-          </small>          
-        </div>
-        <div class='mt-0'>
-          <small>
-            
+    </div>
+    
+      <div 
+      id='list-1'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">
+          <a class="text-muted" href="/note/4&#43;1/">4C&#43;1X 升學考慮</a>
+        </h5>          
+        <small>2017-05-15</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-muted" href="/note/4&#43;1/">/note/4+1/</a>
+        </small>          
+      </div>
+      <div class='mt-0'>
+        <small>
+          
   <a class="badge badge-secondary" href="/tags/1x">1x</a>
 
   <a class="badge badge-secondary" href="/tags/2x">2x</a>
@@ -148,19 +152,22 @@
 
   <a class="badge badge-secondary" href="/tags/dse">dse</a>
 
-          </small>
-        </div>
+        </small>
       </div>
-      
     </div>
+    
   </div>
 </div>
+
+<script type="text/javascript">
+  $('#list-0').find('.badge, .badge-secondary').toggleClass('badge-light badge-secondary')
+</script>
 
 
     <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
 
-<script src="/js/main.js"></script>
+
   </div>
 </body>
 </html>

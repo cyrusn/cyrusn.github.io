@@ -8,7 +8,6 @@
 class: center middle
 
 # Introdution to Raspberry-Pi
-
 ---
 # Agenda
 
@@ -33,24 +32,10 @@ class: center middle
 class: center middle
 # Raspberry Pi
 
-.split-50[
-.column[
-
-|     ![model3][&amp;1]      |
-|------------------------|
-| RASPBERRY PI 3 MODEL B |
-| More Powerful          |
-
-]
-.column[
-
-|     ![zero][&amp;2]     |
-|---------------------|
-| RASPBERRY PI ZERO W |
-| Much Lighter        |
-
-]]
-
+| RASPBERRY PI 3 MODEL B | RASPBERRY PI ZERO W |
+|------------------------|---------------------|
+| ![model3][&amp;1]          | ![zero][&amp;2]         |
+| More Powerful          | Much Lighter        |
 
 ---
 # What is Raspberry-Pi
@@ -159,6 +144,8 @@ class: center middle
   </textarea>
   <script src="/js/remark-latest.min.js">
   </script>
+  
+
   <script>
     var option = {}
     var obj = Object.assign({}, {"highlight-lines":true,"highlight-style":"monokai","navigation":{"click":true,"scroll":false},"ratio":"4:3"}, {"ratio":"16:9"})
@@ -177,8 +164,9 @@ class: center middle
 
       option[key] = value
     }
-
+    
     var slideshow = remark.create(option)
+    
     document.onkeypress = function(e) {
         e = e || window.event;
         var charCode = (typeof e.which == "number") ? e.which : e.keyCode;
@@ -191,6 +179,5 @@ class: center middle
     anchor.forEach( a => {
       a.setAttribute('target', '_blank')
     })
-
   </script>
 </body>

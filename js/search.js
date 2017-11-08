@@ -1,5 +1,5 @@
-/* global $ fetch lunr _ */
-var pageIndex, lunrIndex
+/* global $ fetch lunr */
+var pageIndex, lunrIndex, searchResult
 
 function initLunr (cb) {
   fetch('/index.json')
@@ -27,7 +27,7 @@ function initLunr (cb) {
 
 initLunr(function () {
   $('#search-box').focus()
-  listenQuery()
+  $(document).ready(listenQuery)
 })
 
 function search (query) {
@@ -36,32 +36,37 @@ function search (query) {
     return Object.assign({
       score: result.score
     }, pageIndex[result.ref], {content: ''})
-    
   })
-  .filter(a => a.score > 0.2)
+  .filter(a => a.score > 0.1)
 }
 
 function listenQuery () {
-  $('#search-box').on('input keydown focus', function () {
-    const query = $(this).val().toLowerCase()
-    const results = search(query)
-    displaySearchResults(results, pageIndex)
+  var searchBox = $('#search-box')
+  searchBox.on('input', () => {
+    var query = searchBox.val().toLowerCase()
+    searchResult = search(query)
+    displaySearchResults(searchResult, pageIndex)
   })
 }
 
 function displaySearchResults (results, pageIndex) {
-  var listItems = results.map(({index, date, uri, title, tags}) => {
-    var badges = tags.map(word => `<a href="/tags/${word}" class='badge badge-pill badge-secondary'>${word}</a>`).join(' ')
+  var listItems = results.map(({index, date, uri, title, tags}, key) => {
+    const active = key === 0 ? 'active' : ''
+    const muted = key !== 0 ? 'text-muted' : 'text-light'
+    const badge = key === 0 ? 'badge-light' : 'badge-secondary'
 
-    return `<div 
-      id='${index}'
-      class="list-group-item list-group-item-action list-group-item-light">
+    var badges = tags.map((word) => `<a href="/tags/${word}" class='badge badge-pill ${badge}'>${word}</a>`).join(' ')
+    return `
+    <div 
+      id='list-${key}'
+      class="list-group-item list-group-item-action flex-column align-items-start ${active}">
+
       <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1"><a class="text-muted" href="${uri}">${title}</a></h5>
+        <h5 class="mb-1"><a class="${muted}" href="${uri}">${title}</a></h5>
         <small>${date}</small>
       </div>
       <p class='mb-0'>
-        <a class="text-muted" href="${uri}"> ${uri.replace(window.location.origin, '')} </a>
+        <a class="${muted}" href="${uri}"> ${uri.replace(window.location.origin, '')} </a>
       </p>
       <small>
         ${badges}

@@ -8,7 +8,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-
   <title>Open SSL</title>
 
 
@@ -39,10 +38,7 @@ cert generation How to create a .">
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
-<script src=' /js/lodash.min.js '></script>
-
-
-
+<script src="/js/main.js"></script>
 </head>
 <body>
 
@@ -101,12 +97,13 @@ cert generation How to create a .">
   </div>
 </div>
 
-  <div class="container mt-2">
+  <div class="container mt-2 mx-auto">
     
-<div class="text-justify">
-  <h1 class="display-4 mb-0">Open SSL</h1>
+<h1 class="display-4 text-center">Open SSL</h1>
+<hr>
+<div class="mx-auto text-justify w-100 px-5">
   <h3 class="text-muted"></h3>
-  <blockquote class="blockquote">    
+  <blockquote class="blockquote">
     <p class="mb-0">
       
     </p>
@@ -115,8 +112,7 @@ cert generation How to create a .">
     
   </blockquote>
   <p></p>
-  <hr>
-  <div>
+  <div id="content">
     
 
 <p><a href="https://www.openssl.org/">OpenSSL</a> is a toolkit for the TLS and SSL. <a href="https://www.sslshopper.com/article-most-common-openssl-commands.html">The Most Common OpenSSL Commands</a> <!-- more --></p>
@@ -191,10 +187,11 @@ openssl s_client -connect 10.6.64.170:443 -state -msg
 <p><a href="https://support.f5.com/kb/en-us/solutions/public/15000/400/sol15475.html">SOL15475 - Troubleshooting SSL/TLS renegotiation</a> <a href="https://support.f5.com/kb/en-us/solutions/public/15000/200/sol15292.html">SOL15292 - Troubleshooting SSL/TLS handshake failures</a> <a href="https://support.f5.com/kb/en-us/solutions/public/10000/200/sol10209.html">SOL10209 - Overview of packet tracing with the ssldump utility</a></p>
 
   </div>
-  <hr>
-  
-  <div class="disqus-comments">
-    <div id="disqus_thread"></div>
+</div>
+
+<hr>
+<div class="disqus-comments mx-auto px-5">
+  <div id="disqus_thread"></div>
 <script>
     var disqus_config = function () {
     
@@ -214,15 +211,14 @@ openssl s_client -connect 10.6.64.170:443 -state -msg
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
-  
-
 </div>
+
+
 
     <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
 
-<script src="/js/main.js"></script>
+
   </div>
 </body>
 </html>
