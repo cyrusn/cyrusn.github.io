@@ -2,10 +2,13 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="/css/remark.css">
+  
+  <script src='/js/remark-latest.min.js'></script>
+
 </head>
 <body>
   <textarea id="source">
-class: center, middle
+    class: center, middle
 
 # 提升生產力及專注力
 ## GTD &amp; 蕃茄工作法
@@ -74,37 +77,27 @@ class: center, middle
   
 
   <script>
-    var option = {}
-    var obj = Object.assign({}, {"highlight-lines":true,"highlight-style":"monokai","navigation":{"click":true,"scroll":false},"ratio":"4:3"}, "")
-
-    function convertDaseCaseToCamelCase (word) {
-      return word.split("-").map(function(arr, n) {
-        if ( n != 0 ) {
-          return arr[0].toUpperCase() + arr.slice(1)
-        } 
-        return arr
-      }).join("")
+    const option = {}
+    const obj = Object.assign({}, {"highlight-lines":true,"highlight-style":"monokai","navigation":{"click":true,"scroll":false},"ratio":"4:3"}, "")
+    function dashToCamelCase (word) {
+      return word.split("-").map((arr, n) =>
+        ( n === 0 ) ? arr : (arr[0].toUpperCase() + arr.slice(1))
+        ).join("")
     }
-    for (var prop in obj) {
-      var key = convertDaseCaseToCamelCase(prop)
-      var value = obj[prop]
-
-      option[key] = value
+    for (const key in obj) {
+      option[dashToCamelCase(key)] = obj[key]
     }
     
-    var slideshow = remark.create(option)
+    const slideshow = remark.create(option)
     
     document.onkeypress = function(e) {
-        e = e || window.event;
-        var charCode = (typeof e.which == "number") ? e.which : e.keyCode;
-
-        if (charCode == 113) {
-            window.location.href = '/'
-        }
+      e = e || window.event;
+      const charCode = (typeof e.which == "number") ? e.which : e.keyCode;
+      if (charCode == 113) {
+        window.location.href = '/'
+      }
     };
-    var anchor = document.getElementsByTagName("a");
-    anchor.forEach( a => {
-      a.setAttribute('target', '_blank')
-    })
+    Array.from(document.getElementsByTagName("a"))
+    .forEach(a => a.setAttribute('target', '_blank'))
   </script>
 </body>
