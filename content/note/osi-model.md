@@ -10,5 +10,5 @@ tags:
 
 |   | OSI Model by Layer |
 |:--|:-------------------|
-| 2 | Data Link Layer    |
 | 1 | Physical layer     |
+| 2 | Data Link Layer    |

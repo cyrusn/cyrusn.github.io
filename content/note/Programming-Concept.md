@@ -7,21 +7,21 @@ tags:
 
 <!-- MarkdownTOC -->
 
-- [Links](#links)
-- [leesei's choice](#leeseis-choice)
-  - [Naming](#naming)
-  - [What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?](#what-can-i-learn-right-now-in-just-10-minutes-that-could-be-useful-for-the-rest-of-my-programming-career)
-- [Programming Principal](#pp)
-- [reference](#reference)
+- Links
+- leesei's choice
+    - Naming
+    - What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?
+- [Programming Principal][pp]
+- reference
 
 <!-- /MarkdownTOC -->
 
 
 # Links
 
-- [How to make your code self-documenting? | CodeUtopia][1]
-- [Separation of concerns - Wikipedia][2]
-- [Garbage in, garbage out - Wikiwand][3]
+- [How to make your code self-documenting? | CodeUtopia][&1]
+- [Separation of concerns - Wikipedia][&2]
+- [Garbage in, garbage out - Wikiwand][&3]
 
 # leesei's choice
 
@@ -58,7 +58,7 @@ tags:
   - Leave the campground cleaner than you found it
 - Law of Demeter
   - Don’t Talk to stranger
-  - [design patterns - According to Demeter's law, is a class allowed to return one of its members? - Software Engineering Stack Exchange][4]
+  - [design patterns - According to Demeter's law, is a class allowed to return one of its members? - Software Engineering Stack Exchange][&4]
 - Code Reuse is Good
 - Embrace Change
 - Don’t make me think
@@ -69,13 +69,13 @@ tags:
 - Avoid Premature Optimization
 
 # reference
-- [The Principles of Good Programming][5]
-- [Programming Principles][6]
+- [The Principles of Good Programming][&5]
+- [Programming Principles][&6]
 
 
-[1]: http://codeutopia.net/blog/2014/12/01/how-to-make-your-code-self-documenting/
-[2]: http://en.wikipedia.org/wiki/Separation_of_concerns
-[3]: http://www.wikiwand.com/en/Garbage_in,_garbage_out
-[4]: http://softwareengineering.stackexchange.com/questions/322622/according-to-demeters-law-is-a-class-allowed-to-return-one-of-its-members
-[5]: http://www.artima.com/weblogs/viewpost.jsp?thread=331531
-[6]: https://webpro.github.io/programming-principles/
+[&1]: http://codeutopia.net/blog/2014/12/01/how-to-make-your-code-self-documenting/
+[&2]: http://en.wikipedia.org/wiki/Separation_of_concerns
+[&3]: http://www.wikiwand.com/en/Garbage_in,_garbage_out
+[&4]: http://softwareengineering.stackexchange.com/questions/322622/according-to-demeters-law-is-a-class-allowed-to-return-one-of-its-members
+[&5]: http://www.artima.com/weblogs/viewpost.jsp?thread=331531
+[&6]: https://webpro.github.io/programming-principles/

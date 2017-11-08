@@ -1,5 +1,5 @@
 ---
-title: useful command line tools
+title: Useful Command Line Tools
 date: '2015-05-24 22:36:53'
 tags:
   - commandline

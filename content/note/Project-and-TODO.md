@@ -11,9 +11,9 @@ date: '2015-05-10 00:47:40'
 
 # Google Analytics & Webmaster
 
-- [reference](http://www.google.com/intl/en/webmasters/#utm_source=en-wmxmsg&utm_medium=wmxmsg&utm_campaign=bm&authuser=0) 
+- [reference][&1] 
 - post 個sitemap.xml 俾google 做index
-- [reference](http://www.google.com/analytics/learn/setupchecklist.html)
+- [reference][&2]
 
 # Learn Basic Python Scripting
 
@@ -25,5 +25,11 @@ date: '2015-05-10 00:47:40'
 # assembly code － MIPS
 
 - 睇下去到低層個電腦做緊乜就可
-- [Instruction set](http://en.wikipedia.org/wiki/ARM_architecture#Instruction_set)
-- [MIPS assembly language](http://en.wikipedia.org/wiki/MIPS_instruction_set#MIPS_assembly_language)
+- [Instruction set][&3]
+- [MIPS assembly language][&4]
+
+
+[&1]: http://www.google.com/intl/en/webmasters/#utm_source=en-wmxmsg&utm_medium=wmxmsg&utm_campaign=bm&authuser=0
+[&2]: http://www.google.com/analytics/learn/setupchecklist.html
+[&3]: http://en.wikipedia.org/wiki/ARM_architecture#Instruction_set
+[&4]: http://en.wikipedia.org/wiki/MIPS_instruction_set#MIPS_assembly_language

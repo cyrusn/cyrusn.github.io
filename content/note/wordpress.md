@@ -6,9 +6,12 @@ tags:
 ---
 
 # theme
-
-[Child Themes « WordPress Codex](http://codex.wordpress.org/Child_Themes)
+[Child Themes « WordPress Codex][&1]
 
 # migrate
 
-[Moving WordPress « WordPress Codex](http://codex.wordpress.org/Moving_WordPress)
+[Moving WordPress « WordPress Codex][&2]
+
+
+[&1]: http://codex.wordpress.org/Child_Themes
+[&2]: http://codex.wordpress.org/Moving_WordPress

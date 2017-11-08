@@ -1,17 +1,14 @@
 baseurl = "https://cyrusn.github.io"
 DefaultContentLanguage = "en"
-title = "CyrusN"
-theme = "beautifulhugo"
+title = "Notebook | CyrusN"
+theme = "notebook-searcher"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
+paginate = 5
 disqusShortname = "cyrusngithubio"
-#googleAnalytics = "XXX"
 
 [blackfriday]
-  # angledQuotes = true
-  # fractions = false
-  # plainIDAnchors = true
   extensions = ["hardLineBreak"]
 
 [Params]
@@ -24,17 +21,14 @@ disqusShortname = "cyrusngithubio"
   comments = true
   search = true
   showHint = true
-#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 
-#[[Params.bigimg]]
-#  src = "img/triangle.jpg"
-#  desc = "Triangle"
-#[[Params.bigimg]]
-#  src = "img/sphere.jpg"
-#  desc = "Sphere"
-#[[Params.bigimg]]
-#  src = "img/hexagon.jpg"
-#  desc = "Hexagon"
+[Params.RemarkOption]
+  highlight-lines = true
+  highlight-style = "monokai"
+  ratio = "4:3"
+  [Params.RemarkOption.navigation]
+      scroll = false
+      click = true
 
 [Author]
   name = "CyrusN"
@@ -42,30 +36,7 @@ disqusShortname = "cyrusngithubio"
   github = "cyrusn"
   facebook = "cyrusncy"
   twitter = "cyrusncy"
-  # googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
-  # reddit = "username"
-  # linkedin = "username"
-  # xing = "username"
-  # stackoverflow = "users/XXXXXXX/username"
-  # snapchat = "username"
-  # instagram = "username"
-  # youtube = "user/username" # or channel/channelname
-  # soundcloud = "username"
-  # spotify = "username"
-  # bandcamp = "username"
-  # itchio = "username"
 
-[[menu.main]]
-    name = "Home"
-    identifier = "home"
-    url = ""
-    weight = 1
-
-# [[menu.main]]
-#     name = "Post"
-#     identifier = "post"
-#     url = "/post/"
-#     weight = 2
 
 [[menu.main]]
     name = "Note"

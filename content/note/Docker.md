@@ -5,7 +5,7 @@ tags:
   - docker
 ---
 
-[Docker - Build, Ship, and Run Any App, Anywhere][1]
+[Docker - Build, Ship, and Run Any App, Anywhere][&1]
 
 
-[1]: https://www.docker.com/
+[&1]: https://www.docker.com/

@@ -9,5 +9,8 @@ tags:
 title: signal
 ---
 
-- [How to Kill a Process from the Command Line | Linux.com | The source for Linux information](https://www.linux.com/learn/intro-to-linux/2017/5/how-kill-process-command-line)
+- [How to Kill a Process from the Command Line | Linux.com | The source for Linux information][&1]
 - depth first vs breath first
+
+
+[&1]: https://www.linux.com/learn/intro-to-linux/2017/5/how-kill-process-command-line

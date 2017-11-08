@@ -6,21 +6,31 @@ tags:
   - uml
 ---
 
+<!-- MarkdownTOC -->
+
+- [Some Links][some-links]
+- [from leesei][from-leesei]
+    - [Text based tools][text-based-tools]
+    - [GUI Tools][gui-tools]
+
+<!-- /MarkdownTOC -->
+
+
 # Some Links
 
-[UML | leesei's notebook][1] [Draw More, Work Less | [self employed]][2] [Draw More, Work Less][3] [PlantUML][4] [Mermaid][5]
+[UML | leesei's notebook][&01] [Draw More, Work Less | [self employed]][&02] [Draw More, Work Less][&03] [PlantUML][&04] [Mermaid][&05]
 
 # from leesei
 
-[Unified Modeling Language (UML)][6] [Business Process Model and Notation (BPMN)][7] is very similar to activity diagram. [YANG Central][8]
+[Unified Modeling Language (UML)][&06] [Business Process Model and Notation (BPMN)][&07] is very similar to activity diagram. [YANG Central][&08]
 
-[Allen Holub's UML Quick Reference][9]
+[Allen Holub's UML Quick Reference][&09]
 
 <!-- more -->
 
 ## Text based tools
 
-I used to use the GUI tool [Dia][10]. But it was very buggy and no longer updated. I then went on to look for alternatives.
+I used to use the GUI tool [Dia][&10]. But it was very buggy and no longer updated. I then went on to look for alternatives.
 
 I am frustrated with the UI diagram apps:
 
@@ -30,15 +40,15 @@ I am frustrated with the UI diagram apps:
 
 So I focused on tools that provides a DSL for drawing UML from plain text. Candidates are (ranked according to the criteria below):
 
-Tool                   | Language   | Diagrams                                                                                     | Remark
----------------------- | ---------- | -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------
-[PlantUML]             | Java       | Activity, State, Sequence, Component, Class, Object, Use Case, DITAA, JCCKit, Sudoku, XEarth | [live][11], [Language Reference][12]
-[blockdiag]            | Python     | Block, Activity, Sequence, Network, Rack, Packet                                             | [live][13]
-[mermaid]              | JavaScript | Flowchart (Activity), Sequence, Gantt                                                        | [live][14]
-[js-sequence-diagrams] | JavaScript | Sequence                                                                                     | live
-[UMLGraph]             | Java       | Sequence, Class                                                                              |
-[ckwnc]                | ?          | Sequence                                                                                     | live **only**, C-like syntax
-[Graphviz]             | C          | Digraph                                                                                      | supports `dot`, layout/rendering layer for PlantUML and UMLGraph
+|            Tool            |  Language  |                                           Diagrams                                           |                              Remark                              |
+|----------------------------|------------|----------------------------------------------------------------------------------------------|------------------------------------------------------------------|
+| [PlantUML][&11]             | Java       | Activity, State, Sequence, Component, Class, Object, Use Case, DITAA, JCCKit, Sudoku, XEarth | [live][&12], [Language Reference][&13]                             |
+| [blockdiag][&14]            | Python     | Block, Activity, Sequence, Network, Rack, Packet                                             | [live][&15]                                                       |
+| [mermaid][&16]              | JavaScript | Flowchart (Activity), Sequence, Gantt                                                        | [live][&17]                                                       |
+| [js-sequence-diagrams][&18] | JavaScript | Sequence                                                                                     | live                                                             |
+| [UMLGraph][&19]             | Java       | Sequence, Class                                                                              |                                                                  |
+| [ckwnc][&20]                | ?          | Sequence                                                                                     | live **only**, C-like syntax                                     |
+| [Graphviz][&21]             | C          | Digraph                                                                                      | supports `dot`, layout/rendering layer for PlantUML and UMLGraph |
 
 I ended up choosing PlantUML because:
 
@@ -54,49 +64,51 @@ BTW, blockdiag would be the first runner up. It also features several unique dia
 
 ### GaaS (graph as a service)
 
-[Your Graphviz, UMLGraph or PlantUML for your README][15]
+[Your Graphviz, UMLGraph or PlantUML for your README][&23]
 
-PlantUML's [jQuery][16] and Javascript [async][17] and [sync][18] integration.
+PlantUML's [jQuery][&24] and Javascript [async][&25] and [sync][&26] integration.
 
 ## GUI Tools
 
-- [Gaphor UML Modelling][19] (Python)
-- [UMLet - Free UML Tool for Fast UML Diagrams][20]
-- [ArgoUML][21]
-- [Violet UML Editor : easy to use, completely free][22]
-- [Lucidchart Diagrams - Desktop - Chrome Web Store][23]
-- [Gliffy Diagrams - Chrome Web Storše][24]
-- [Sketchboard.io - Chrome Web Store][25]
+- [Gaphor UML Modelling][&27] (Python)
+- [UMLet - Free UML Tool for Fast UML Diagrams][&28]
+- [ArgoUML][&29]
+- [Violet UML Editor : easy to use, completely free][&30]
+- [Lucidchart Diagrams - Desktop - Chrome Web Store][&31]
+- [Gliffy Diagrams - Chrome Web Storše][&32]
+- [Sketchboard.io - Chrome Web Store][&33]
 
-[blockdiag]: http://blockdiag.com/en/
-[ckwnc]: http://www.ckwnc.com
-[graphviz]: http://www.graphviz.org/
-[js-sequence-diagrams]: http://bramp.github.io/js-sequence-diagrams/
-[mermaid]: https://github.com/knsv/mermaid
-[plantuml]: http://plantuml.sourceforge.net/
-[umlgraph]: http://www.umlgraph.org/index.html
-[1]: http://leesei.github.io/uml/
-[2]: http://www.mbarsinai.com/blog/2014/01/12/draw-more-work-less/
-[3]: http://www.slideshare.net/MichaelBarSinai/generated-siagramspublic
-[4]: http://plantuml.sourceforge.net/sitemap.html
-[5]: http://knsv.github.io/mermaid/
-[6]: http://en.wikipedia.org/wiki/Unified_Modeling_Language
-[7]: http://en.wikipedia.org/wiki/Business_Process_Model_and_Notation
-[8]: http://www.yang-central.org/twiki/bin/view/Main/WebHome
-[9]: http://www.holub.com/goodies/uml/
-[10]: https://wiki.gnome.org/Apps/Dia/
-[11]: http://www.plantuml.com/plantuml/
-[12]: http://plantuml.sourceforge.net/PlantUML_Language_Reference_Guide.pdf
-[13]: http://blockdiag.appspot.com/
-[14]: http://knsv.github.io/mermaid/live_editor/
-[15]: http://www.gravizo.com/
-[16]: http://plantuml.sourceforge.net/jquery.html
-[17]: http://plantuml.sourceforge.net/demojavascript.html
-[18]: http://plantuml.sourceforge.net/demojavascript2.html
-[19]: http://gaphor.sourceforge.net/download.php
-[20]: http://www.umlet.com/
-[21]: http://argouml.tigris.org/
-[22]: http://alexdp.free.fr/violetumleditor/page.php
-[23]: https://chrome.google.com/webstore/detail/lucidchart-diagrams-deskt/djejicklhojeokkfmdelnempiecmdomj?hl=en
-[24]: https://chrome.google.com/webstore/detail/gliffy-diagrams/bhmicilclplefnflapjmnngmkkkkpfad?hl=en
-[25]: https://chrome.google.com/webstore/detail/sketchboardio/bgafhjpdkfjfmmjbebbdckolonomaoil?hl=en
+
+
+[&01]: http://leesei.github.io/uml/
+[&02]: http://www.mbarsinai.com/blog/2014/01/12/draw-more-work-less/
+[&03]: http://www.slideshare.net/MichaelBarSinai/generated-siagramspublic
+[&04]: http://plantuml.sourceforge.net/sitemap.html
+[&05]: http://knsv.github.io/mermaid/
+[&06]: http://en.wikipedia.org/wiki/Unified_Modeling_Language
+[&07]: http://en.wikipedia.org/wiki/Business_Process_Model_and_Notation
+[&08]: http://www.yang-central.org/twiki/bin/view/Main/WebHome
+[&09]: http://www.holub.com/goodies/uml/
+[&10]: https://wiki.gnome.org/Apps/Dia/
+[&11]: http://blockdiag.com/en/
+[&12]: http://www.plantuml.com/plantuml/
+[&13]: http://plantuml.sourceforge.net/PlantUML_Language_Reference_Guide.pdf
+[&14]: http://www.ckwnc.com
+[&15]: http://blockdiag.appspot.com/
+[&16]: http://www.graphviz.org/
+[&17]: http://knsv.github.io/mermaid/live_editor/
+[&18]: http://bramp.github.io/js-sequence-diagrams/
+[&19]: https://github.com/knsv/mermaid
+[&20]: http://plantuml.sourceforge.net/
+[&21]: http://www.umlgraph.org/index.html
+[&23]: http://www.gravizo.com/
+[&24]: http://plantuml.sourceforge.net/jquery.html
+[&25]: http://plantuml.sourceforge.net/demojavascript.html
+[&26]: http://plantuml.sourceforge.net/demojavascript2.html
+[&27]: http://gaphor.sourceforge.net/download.php
+[&28]: http://www.umlet.com/
+[&29]: http://argouml.tigris.org/
+[&30]: http://alexdp.free.fr/violetumleditor/page.php
+[&31]: https://chrome.google.com/webstore/detail/lucidchart-diagrams-deskt/djejicklhojeokkfmdelnempiecmdomj?hl=en
+[&32]: https://chrome.google.com/webstore/detail/gliffy-diagrams/bhmicilclplefnflapjmnngmkkkkpfad?hl=en
+[&33]: https://chrome.google.com/webstore/detail/sketchboardio/bgafhjpdkfjfmmjbebbdckolonomaoil?hl=en

@@ -10,4 +10,7 @@ title: Task Warrior
 ---
 
 # Taskwarrior
-[Taskwarrior - What's next?](https://taskwarrior.org/docs/)
+[Taskwarrior - What's next?][&1]
+
+
+[&1]: https://taskwarrior.org/docs/

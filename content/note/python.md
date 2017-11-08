@@ -6,8 +6,8 @@ subtitle: ""
 tags:
 ---
 
-# Tool
-- [Format String][1]
+# Tools
+- [Format String][&1]
 
 
-[1]: https://pyformat.info/
+[&1]: https://pyformat.info/

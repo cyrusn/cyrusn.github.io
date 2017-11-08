@@ -28,3 +28,11 @@ tags:
   + different counter handle different case
   + cases have different importance
   + different category (concern)
+
+# Math Modeling
+- Why we need to study math?
+  + It solves the solution
+  + Mathematics of Marriage
+    * Dynamic Nonlinear Models
+  + 二進制 vs Sorting
+  + 最速下降線

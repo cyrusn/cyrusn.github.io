@@ -12,6 +12,8 @@ tags:
 <!-- MarkdownTOC  -->
 
 - [Schedule](#schedule)
+- [ST Paul](#SPC)
+  - [2017-10-31 \(Tue\)](#2017-10-31-tue)
 - [荃官](#twgss)
   - [2017-10-06 \(Fri\)](#2017-10-06-fri)
 - [孫方中書院](#sfcc)
@@ -22,25 +24,52 @@ tags:
 <!-- /MarkdownTOC -->
 
 # Schedule
-|       Date       |      Time     |   Task  |    Location   |
-|------------------|---------------|---------|---------------|
-| 2017-09-05 (Tue) | WD            | DL      | EDB           |
-| 2017-09-07 (Thu) | PM            | DL      | EDB           |
-| 2017-09-08 (Fri) | PM            | DL      | EDB           |
-| 2017-09-11 (Mon) | AM            | DL      | EDB           |
-| 2017-09-12 (Tue) | WD            | DL      | EDB           |
-| 2017-09-14 (Thu) | PM            | DL      | EDB           |
-| 2017-09-19 (Tue) | WD            | DL      | EDB           |
-| 2017-09-22 (Fri) | 3:00 - 4:30   | SV      | SUNFC (Dave)  |
-| 2017-09-26 (Tue) | WD            | DL      | EDB           |
-| 2017-09-28 (Thu) | PM            | DL      | EDB           |
-| 2017-10-06 (Fri) | 15:30 - 17:30 | SV      | TWGSS (Alice) |
-| 2017-10-10 (Tue) | WD            | DL      | EDB           |
-| 2017-10-12 (Thu) | 4:30 - 5:30   | Meeting | Kowloon Tong  |
-| 2017-10-17 (Tue) | WD            | DL      | EDB           |
-| 2017-10-17 (Tue) | 2:15 - 16:00  | SV      | TWGSS (Tak)   |
-|                  |               |         |               |
 
+|       Date       |      Time     |   Task  |        Location        |
+|------------------|---------------|---------|------------------------|
+| 2017-09-05 (Tue) | WD            | DL      | EDB                    |
+| 2017-09-07 (Thu) | PM            | DL      | EDB                    |
+| 2017-09-08 (Fri) | PM            | DL      | EDB                    |
+| 2017-09-11 (Mon) | AM            | DL      | EDB                    |
+| 2017-09-12 (Tue) | WD            | DL      | EDB                    |
+| 2017-09-14 (Thu) | PM            | DL      | EDB                    |
+| 2017-09-19 (Tue) | WD            | DL      | EDB                    |
+| 2017-09-22 (Fri) | 15:00 - 16:30 | SV      | SUNFC (Dave)           |
+| 2017-09-26 (Tue) | WD            | DL      | EDB                    |
+| 2017-09-28 (Thu) | PM            | DL      | EDB                    |
+| 2017-10-06 (Fri) | 15:30 - 17:30 | SV      | TWGSS (Alice)          |
+| 2017-10-10 (Tue) | WD            | DL      | EDB                    |
+| 2017-10-12 (Thu) | 14:30 - 17:30 | Meeting | Kowloon Tong           |
+| 2017-10-17 (Tue) | WD            | DL      | EDB                    |
+| 2017-10-17 (Tue) | 14:15 - 16:00 | SV      | TWGHSCGMS (Tak)        |
+| 2017-10-23 (Mon) | AM            | DL      | EDB                    |
+| 2017-10-24 (Tue) | PM            | LC      | Kowloon Tong East EP12 |
+| 2017-10-27 (Fri) | PM            | LC      | 青年會書院             |
+| 2017-10-30 (Mon) | AM            | DL      | EDB                    |
+| 2017-10-31 (Tue) | AM            | DL      | EDB                    |
+| 2017-10-31 (Tue) | PM            | SV      | ST Paul                |
+| 2017-11-06 (Mon) | AM            | DL      | EDB                    |
+
+
+# ST Paul{#SPC}
+## 2017-10-31 (Tue)
+- Mathematical Modeling in curriculum
+- Mr Poon, Ms Leung, Ms Lo, Ms Ng
+- What is the learning objective?
+- Nov, Dec Topics
+  + S1 Percentage
+  + Better have Discussion, Presentation and Debriefing => refine the modeling
+  + Assumption
+  + Limitation
+- selling strategy (profit)
+  + How a wet market work?
+  + Marketing?
+  + 10蚊兜，10蚊兜 ...
+  + Level of assessments
+- Rubricks?
+- Group discussion
+  + at least 搵2組問問題
+- 
 
 # 荃官 {#twgss}
 ## 2017-10-06 (Fri)
@@ -163,3 +192,4 @@ tags:
   + Shape
   + Surface Area
   + Thickness
+

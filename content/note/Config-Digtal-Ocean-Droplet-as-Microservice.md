@@ -52,8 +52,6 @@ update_option( 'home', 'http://careers.liping.edu.hk' );
 
 ## Caddy Server
 
-[Caddy Notes](quiver-note-url/0A359168-5F3B-43C3-903B-3049F7446AD2)
-
 ```sh
 careers.liping.edu.hk
 
@@ -74,11 +72,11 @@ using `caddy` to run the server through `tmux`
 
 # Reference
 
-- [DenBeke – Running Caddy Server as a service with Upstart][1]
-- [How To Configure the Apache Web Server on an Ubuntu or Debian VPS | DigitalOcean][2]
-- [Is TLS Fast Yet?][3]
-- [Proxy server - Wikiwand][4]
-- [Webmaster - Wikiwand][5]
+- [DenBeke – Running Caddy Server as a service with Upstart][&1]
+- [How To Configure the Apache Web Server on an Ubuntu or Debian VPS | DigitalOcean][&2]
+- [Is TLS Fast Yet?][&3]
+- [Proxy server - Wikiwand][&4]
+- [Webmaster - Wikiwand][&5]
 
 # Key Word
 
@@ -87,8 +85,8 @@ using `caddy` to run the server through `tmux`
 - load balancing
 
 
-[1]: https://denbeke.be/blog/servers/running-caddy-server-as-a-service/
-[2]: https://www.digitalocean.com/community/tutorials/how-to-configure-the-apache-web-server-on-an-ubuntu-or-debian-vps
-[3]: https://istlsfastyet.com/
-[4]: https://www.wikiwand.com/en/Proxy_server#/Web_proxy_servers
-[5]: https://www.wikiwand.com/en/Webmaster
+[&1]: https://denbeke.be/blog/servers/running-caddy-server-as-a-service/
+[&2]: https://www.digitalocean.com/community/tutorials/how-to-configure-the-apache-web-server-on-an-ubuntu-or-debian-vps
+[&3]: https://istlsfastyet.com/
+[&4]: https://www.wikiwand.com/en/Proxy_server#/Web_proxy_servers
+[&5]: https://www.wikiwand.com/en/Webmaster

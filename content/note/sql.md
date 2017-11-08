@@ -63,11 +63,11 @@ LEFT (OUTER) JOIN: Return all records from the left table, and the matched recor
 RIGHT (OUTER) JOIN: Return all records from the right table, and the matched records from the left table
 FULL (OUTER) JOIN: Return all records when there is a match in either left or right table
 
-|      inner      |     left      |      right      |     full      |
-|:---------------:|:-------------:|:---------------:|:-------------:|
-| ![inner][inner] | ![left][left] | ![right][right] | ![full][full] |
+| inner             | left            | right             | full            |
+| :---------------: | :-------------: | :---------------: | :-------------: |
+| ![inner][&1]       | ![left][&2]      | ![right][&3]       | ![full][&4]      |
 
-[inner]: https://www.w3schools.com/sql/img_innerjoin.gif
-[left]: https://www.w3schools.com/sql/img_leftjoin.gif
-[right]: https://www.w3schools.com/sql/img_rightjoin.gif
-[full]: https://www.w3schools.com/sql/img_fulljoin.gif
+[&1]: https://www.w3schools.com/sql/img_innerjoin.gif
+[&2]: https://www.w3schools.com/sql/img_leftjoin.gif
+[&3]: https://www.w3schools.com/sql/img_rightjoin.gif
+[&4]: https://www.w3schools.com/sql/img_fulljoin.gif

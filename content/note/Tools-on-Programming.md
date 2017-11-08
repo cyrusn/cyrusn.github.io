@@ -3,8 +3,13 @@ title: Tools on Programming
 date: '2015-05-10 01:28:02'
 ---
 
-[Can I use... Support tables for HTML5, CSS3, etc](http://caniuse.com/)
+[Can I use... Support tables for HTML5, CSS3, etc][&1]
 
-PersistJS is a JavaScript client-side persistent storage library [jeremydurham/persist-js](https://github.com/jeremydurham/persist-js)
+PersistJS is a JavaScript client-side persistent storage library [jeremydurham/persist-js][&2]
 
-[slidedown/slidedown](https://github.com/slidedown/slidedown)
+[slidedown/slidedown][&3]
+
+
+[&1]: http://caniuse.com/
+[&2]: https://github.com/jeremydurham/persist-js
+[&3]: https://github.com/slidedown/slidedown

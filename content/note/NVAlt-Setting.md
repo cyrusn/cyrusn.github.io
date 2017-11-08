@@ -7,4 +7,7 @@ tags:
 
 Custom Preview Theme
 
-- [Notational Velocity (nvALT) Custom Stylesheet and Markup HTML](https://gist.github.com/goblindegook/1919496)
+- [Notational Velocity (nvALT) Custom Stylesheet and Markup HTML][&1]
+
+
+[&1]: https://gist.github.com/goblindegook/1919496

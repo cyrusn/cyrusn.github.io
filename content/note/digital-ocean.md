@@ -22,11 +22,15 @@ scp username@b:/path/to/file /path/to/destination
 
 # perpare ssh key
 
-- [How To Use SSH Keys with DigitalOcean Droplets | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets)
+- [How To Use SSH Keys with DigitalOcean Droplets | DigitalOcean][&1]
 
 # achieve
 - Save a snapshot and delete droplet
 - restore droplet by the snapshot
 
 # Update Server's Kernel
-- [How To Update a DigitalOcean Server's Kernel | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-update-a-digitalocean-server-s-kernel) 
+- [How To Update a DigitalOcean Server's Kernel | DigitalOcean][&2] 
+
+
+[&1]: https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets
+[&2]: https://www.digitalocean.com/community/tutorials/how-to-update-a-digitalocean-server-s-kernel
