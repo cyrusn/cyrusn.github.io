@@ -5,7 +5,7 @@ theme = "notebook-searcher"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
-paginate = 5
+paginate = 10
 disqusShortname = "cyrusngithubio"
 
 [blackfriday]
@@ -58,7 +58,7 @@ disqusShortname = "cyrusngithubio"
 
 [[menu.main]]
     name = "Tags"
-    url = "tags"
+    url = "/tags/"
     weight = 10
 
 [[menu.main]]

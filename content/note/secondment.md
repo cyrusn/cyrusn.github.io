@@ -2,7 +2,8 @@
 draft: true
 title: Secondment
 date: 2017-09-22T15:02:03+08:00
-subtitle: A note for secondment
+subtitle: Secondment Note for 1718
+description: This is a note for any IDEAS coming from secondment.
 tags:
   - secondment
   - edb
@@ -40,7 +41,7 @@ tags:
 | 2017-10-06 (Fri) | 15:30 - 17:30 | SV      | TWGSS (Alice)          |
 | 2017-10-10 (Tue) | WD            | DL      | EDB                    |
 | 2017-10-12 (Thu) | 14:30 - 17:30 | Meeting | Kowloon Tong           |
-| 2017-10-17 (Tue) | WD            | DL      | EDB                    |
+| 2017-10-17 (Tue) | AM            | DL      | EDB                    |
 | 2017-10-17 (Tue) | 14:15 - 16:00 | SV      | TWGHSCGMS (Tak)        |
 | 2017-10-23 (Mon) | AM            | DL      | EDB                    |
 | 2017-10-24 (Tue) | PM            | LC      | Kowloon Tong East EP12 |
@@ -49,6 +50,8 @@ tags:
 | 2017-10-31 (Tue) | AM            | DL      | EDB                    |
 | 2017-10-31 (Tue) | PM            | SV      | ST Paul                |
 | 2017-11-06 (Mon) | AM            | DL      | EDB                    |
+| 2017-11-09 (Thu) | PM            | DL      | EDB                    |
+| 2017-11-10 (Fri) | PM            | LC      | EDB                    |
 
 
 # ST Paul{#SPC}
@@ -192,4 +195,5 @@ tags:
   + Shape
   + Surface Area
   + Thickness
+
 

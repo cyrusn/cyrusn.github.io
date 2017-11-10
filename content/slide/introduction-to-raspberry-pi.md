@@ -1,17 +1,18 @@
 ---
 date: 2017-11-03T11:17:14+08:00
 title: "Introduction to Raspberry Pi"
-subtitle: ""
+draft: true
+RemarkOption:
+    ratio: "16:9"
 tags:
     - raspberry
     - pi
-RemarkOption:
-    ratio: "16:9"
 ---
 
-class: center middle
+class: center, middle
 
 # Introdution to Raspberry-Pi
+
 ---
 # Agenda
 
@@ -25,7 +26,7 @@ class: center middle
 - Introduction to 16 common sensors
 - e.g. Blinking LED
 - e.g. Blinking LED cont...
-- Python Script
+- Programming Learning
 - Top 10 Raspberry Pi Projects for Beginners
 - Thanks
 
@@ -98,6 +99,7 @@ class: center
 # e.g. Blinking LED cont...
 
 ``` python
+
 import RPi.GPIO as GPIO # import GPIO library
 import time # import time library
 
@@ -112,18 +114,22 @@ time.sleep(0.5)
 GPIO.output(LED, False)
 time.sleep(0.5)
 print("Programme closed.")
-``` 
 
-
-
+```
 
 ---
-# Python Script
+# Programming Learning
+## Basic Concept of Programming
 
-``` python
-import RPi.GPIO as GPIO
-...
-```
+- Basic Syntax
+- Data Types
+    + `int`, `float`, `string`, `array`, `object` ... 
+- Control Flow
+    + `if else`, `while`, `for`, `switch` ...
+- Variable
+- Operators
+    + `+`, `-`, `*`, `%`, ...
+- Library / Community   
 
 
 ---

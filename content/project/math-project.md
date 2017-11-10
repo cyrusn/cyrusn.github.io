@@ -36,3 +36,19 @@ tags:
     * Dynamic Nonlinear Models
   + 二進制 vs Sorting
   + 最速下降線
+
+
+# Expandable
+- Concept on foldablility / collsapeble?
+- Tessellation
+- foldable form on Tessellation
+- Math modaling
+  + thickness
+  + volume
+- how birds collapse its wing
+- [Negative Poisson's ratio][&1]
+- [(110) Pinterest](https://www.pinterest.com/pin/625578204460750191/)
+
+
+
+[&1]: http://silver.neep.wisc.edu/~lakes/Poisson.html

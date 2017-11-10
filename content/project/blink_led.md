@@ -1,7 +1,6 @@
 ---
 date: 2017-10-16T16:05:23+08:00
 title: "Blink Led"
-draft: true
 subtitle: ""
 tags:
   - raspberry
@@ -34,6 +33,7 @@ import RPi.GPIO as GPIO
 import time
 
 LED = 18
+GPIO.setmode(GPIO.BCM)
 GPIO.set(LED, GPIO.OUT)
 GPIO.setwarnings(False)
 
