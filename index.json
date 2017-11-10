@@ -2,13 +2,14 @@
 {
   "index": 0,
   "kind": "page",
-  "type": "slide",
-  "uri": "https://cyrusn.github.io/slide/introduction-to-raspberry-pi/",
-  "title": "Introduction to Raspberry Pi",
-  "date": "2017-11-03",
-  "tags": ["raspberry", "pi"],
+  "type": "project",
+  "uri": "https://cyrusn.github.io/project/blink_led/",
+  "title": "Blink Led",
+  "date": "2017-10-16",
+  "tags": ["raspberry", "pi", "raspberrypi"],
   "description": "",
-  "content": " .center.middle[\nintrodution to raspberry-pi ]\nagenda  raspberry pi\n what is raspberry-pi\n raspberry-pi vs audrino vs microbit\n what is gpio?\n setup\n introduction to 16 common sensors\n e.g. blinking led\n e.g. blinking led cont\u0026hellip;\n python script\n top 10 raspberry pi projects for beginners\n thanks\n  class: center middle\nraspberry pi    raspberry pi 3 model b raspberry pi zero w         more powerful much lighter    what is raspberry-pi  a small and affordable computer that you can use to learn programming\n  linux base .red[single board computer] with wifi, bluebooth, lan, hdmi etc \u0026hellip;\n all files in pi are store in a microsd card.\n programme with python, scratch, javascript, golang\u0026hellip;\n run in raspbian os\n  class: center\nraspberry-pi vs audrino vs microbit     raspberry-pi audrino micro:bit     type single board computer micro-controller micro-controller   price ¥269.00 (model 3) ¥87.00 (uno r3) ¥108.00   language python\nscratch c / c++ javascript\nmicropython\nblockeditor   pin 40 digital pin digital pin: 14\nanalog pin: 6 20 pin (6 with adc)    .footnote[\n micro:bit : bbc micro:bit pins\n]\n  what is gpio?  general-purpose input/output (gpio)[1]\n  .footnote[\n* raspberry pi gpio pinout\n]\nclass: center\nsetup  class: center\nintroduction to 16 common sensors \ne.g. blinking led e.g. blinking led cont\u0026hellip; import rpi.gpio as gpio # import gpio library import time # import time library led = 18 # define the pin as led gpio.setmode(gpio.bcm) gpio.set(led, gpio.out) gpio.setwarnings(false) print(\u0026quot;programme start.\u0026quot;) gpio.output(led, true) time.sleep(0.5) gpio.output(led, false) time.sleep(0.5) print(\u0026quot;programme closed.\u0026quot;)  python script import rpi.gpio as gpio ...  class: center middle\ntop 10 raspberry pi projects for beginners .footnote[top 10 raspberry pi projects for beginners]\nclass: center middle\nthanks 👏👏👏 "
+  "content": "  introduction\n setting\n python code\n  introduction making blinking led is just like writing a hello world programme in engineering.\nsetting python code import rpi.gpio as gpio import time led = 18 gpio.setmode(gpio.bcm) gpio.set(led, gpio.out) gpio.setwarnings(false) print(\u0026quot;programme start.\u0026quot;) gpio.output(led, true) time.sleep(0.5) gpio.output(led, false) time.sleep(0.5) print(\u0026quot;programme closed.\u0026quot;)  ",
+  "draft": false
 },
 {
   "index": 1,
@@ -19,7 +20,8 @@
   "date": "2017-09-19",
   "tags": ["iot", "stem", "linux", "raspberry", "pi"],
   "description": "",
-  "content": "  setting\n links\n pin\n examples\n some projects\n some thoughts\n setting brightness of touch led\n sensors\n others\n sensor hat\n adc (analog to digital convertor)\n  setting  raspberry pi documentation\n installation - raspberry pi documentation\n vnc (virtual network computing) - raspberry pi documentation\n ssh (secure shell) - raspberry pi documentation\n passwordless ssh access - raspberry pi documentation\n sense hat at raspberry pi gpio pinout\n  links  5 amazing gadgets built on raspberry pi - youtube\n how to make a diy raspberry pi arcade cabinet! - youtube\n psp raspberry pi 3 hdmi lcd retropie pspi - youtube\n top 10 coolest raspberry pi projects - youtube\n top 10 raspberry pi projects for beginners\n l298 - google search\n raspberry pi: launch python script on startup: 8 steps\n 淺談電路板　micro:bit vs arduino vs raspberry pi淺談電路板　micro:bit vs arduino vs raspberry pi - pcm\n  pin  gpio: models a+, b+, raspberry pi 2 b and raspberry pi 3 b - raspberry pi documentation\n raspberry pi gpio pinout\n  examples  project 1: gpio led using python\n intro to raspberry pi gpio - youtube\n raspberry pi for beginners: led connections, bread-boards, and programming - youtube\n modmypi | hc-sr04 ultrasonic range sensor on the raspberry pi\n  some projects  plug and play iot with the pi sense hat\n the simplest way to build a raspberry pi-powered amazon echo\n raspberry pi · alexa/alexa-avs-sample-app wiki\n control raspberry pi gpio with amazon echo and python: 11 steps (with pictures)\n  some thoughts \u0026ldquo;blinking led\u0026rdquo; is just like writing an \u0026ldquo;hello world\u0026rdquo; programme in physical computing.\nsetting brightness of touch led  raspberry pi 7” touchscreen display | element14 | raspberry pi accessories\n  # and to turn it off: echo 0 \u0026gt; /sys/class/backlight/rpi_backlight/bl_power  # the brightness can be adjusted using: echo 1 \u0026gt; /sys/class/backlight/rpi_backlight/bl_power  # where n is some value between 0 and 255. echo n \u0026gt; /sys/class/backlight/rpi_backlight/brightness  sensors import rpi.gpio as gpio import time gpio.setwarnings(false) gpio.setmode(gpio.bcm) gpio.setup(11, gpio.in) #read output from pir motion sensor gpio.setup(18, gpio.out) #led output pin while true: i=gpio.input(11) if i==0: #when output from motion sensor is low print \u0026quot;no intruders\u0026quot;,i gpio.output(18, 0) #turn off led time.sleep(0.1) elif i==1: #when output from motion sensor is high print \u0026quot;intruder detected\u0026quot;,i gpio.output(18, 1) #turn on led time.sleep(0.1)  others  resistor color codes | color codes | electronics textbook\n  sensor hat  home - sense hat\n sense hat - raspberry pi documentation\n getting started with the sense hat | raspberry pi projects\n  adc (analog to digital convertor)  mcp3008 | raspberry pi analog to digital converters | adafruit learning system\n  "
+  "content": "  setting\n links\n pin\n examples\n some projects\n some thoughts\n setting brightness of touch led\n sensors\n others\n sensor hat\n adc (analog to digital convertor)\n  setting  raspberry pi documentation\n installation - raspberry pi documentation\n vnc (virtual network computing) - raspberry pi documentation\n ssh (secure shell) - raspberry pi documentation\n passwordless ssh access - raspberry pi documentation\n sense hat at raspberry pi gpio pinout\n  links  5 amazing gadgets built on raspberry pi - youtube\n how to make a diy raspberry pi arcade cabinet! - youtube\n psp raspberry pi 3 hdmi lcd retropie pspi - youtube\n top 10 coolest raspberry pi projects - youtube\n top 10 raspberry pi projects for beginners\n l298 - google search\n raspberry pi: launch python script on startup: 8 steps\n 淺談電路板　micro:bit vs arduino vs raspberry pi淺談電路板　micro:bit vs arduino vs raspberry pi - pcm\n  pin  gpio: models a+, b+, raspberry pi 2 b and raspberry pi 3 b - raspberry pi documentation\n raspberry pi gpio pinout\n  examples  project 1: gpio led using python\n intro to raspberry pi gpio - youtube\n raspberry pi for beginners: led connections, bread-boards, and programming - youtube\n modmypi | hc-sr04 ultrasonic range sensor on the raspberry pi\n  some projects  plug and play iot with the pi sense hat\n the simplest way to build a raspberry pi-powered amazon echo\n raspberry pi · alexa/alexa-avs-sample-app wiki\n control raspberry pi gpio with amazon echo and python: 11 steps (with pictures)\n  some thoughts \u0026ldquo;blinking led\u0026rdquo; is just like writing an \u0026ldquo;hello world\u0026rdquo; programme in physical computing.\nsetting brightness of touch led  raspberry pi 7” touchscreen display | element14 | raspberry pi accessories\n  # and to turn it off: echo 0 \u0026gt; /sys/class/backlight/rpi_backlight/bl_power  # the brightness can be adjusted using: echo 1 \u0026gt; /sys/class/backlight/rpi_backlight/bl_power  # where n is some value between 0 and 255. echo n \u0026gt; /sys/class/backlight/rpi_backlight/brightness  sensors import rpi.gpio as gpio import time gpio.setwarnings(false) gpio.setmode(gpio.bcm) gpio.setup(11, gpio.in) #read output from pir motion sensor gpio.setup(18, gpio.out) #led output pin while true: i=gpio.input(11) if i==0: #when output from motion sensor is low print \u0026quot;no intruders\u0026quot;,i gpio.output(18, 0) #turn off led time.sleep(0.1) elif i==1: #when output from motion sensor is high print \u0026quot;intruder detected\u0026quot;,i gpio.output(18, 1) #turn on led time.sleep(0.1)  others  resistor color codes | color codes | electronics textbook\n  sensor hat  home - sense hat\n sense hat - raspberry pi documentation\n getting started with the sense hat | raspberry pi projects\n  adc (analog to digital convertor)  mcp3008 | raspberry pi analog to digital converters | adafruit learning system\n  ",
+  "draft": false
 },
 {
   "index": 2,
@@ -30,7 +32,8 @@
   "date": "2017-09-13",
   "tags": ["lyric", "map"],
   "description": "",
-  "content": "   united states, canada, mexico, panama\nhaiti, jamaica, peru,\nrepublic dominican, cuba, carribean\ngreenland, el salvador too.\npuerto rico, columbia, venezuela\nhonduras, guyana, and still,\nguatemala, bolivia, then argentina\nand ecuador, chile, brazil.\ncosta rica, belize, nicaragua, bermuda\nbahamas, tobago, san juan,\nparaguay, uruguay, surinam and french guiana\nbarbados, and guam.\nnorway, and sweden, and iceland, and finland and\ngermany now ~ want peace,\nswitzerland, austria, czech, slovakia\nitaly, turkey, and greece.\npoland, romania, scotland, albania\nireland, russia, oman,\nbulgaria, saudi arabia, hungary\ncyprus, iraq, and iran.\nthere\u0026rsquo;s syria, lebanon, israel, jordan both\nyemens, kuwait, and bahrain,\nthe netherlands, luxembourg, belgium, and portugal\nfrance, england, denmark, and spain.\nindia, pakistan, burma, afghanistan\nthailand, nepal, and bhutan,\nkampuchea, malaysia, then bangladesh asia and\nchina, korea, japan.\nmongolia, laos, and tibet, indonesia\nthe philippine islands, taiwan,\nsri lanka, new guinea, sumatra, new zealand\nthen borneo, and vietnam.\ntu ~ nisia, morocco, uganda, angola\nzimbabwe, djibouti, botswana,\nmozambique, zambia, swaziland, gambia\nguinea, algeria, ghana.\nburundi, lesotho, and malawi, togo\nthe spanish sahara is gone,\nniger, nigeria, chad, and liberia\negypt, benin, and gabon.\ntanzania, somalia, kenya, and mali\nsierra leone, and algiers,\ndahomey, namibia, senegal, libya\ncameroon, congo, zaire.\nethiopia, guinea-bissau, madagascar\nrwanda, mahore, and cayman,\nhong kong, abu dhabi, qatar, yugoslavia\u0026hellip;\ncrete, mauritania\nthen transylviania,\nmonaco, liechtenstein\nmalta, and paestine,\nfiji, australia, sudan.\n"
+  "content": "   united states, canada, mexico, panama\nhaiti, jamaica, peru,\nrepublic dominican, cuba, carribean\ngreenland, el salvador too.\npuerto rico, columbia, venezuela\nhonduras, guyana, and still,\nguatemala, bolivia, then argentina\nand ecuador, chile, brazil.\ncosta rica, belize, nicaragua, bermuda\nbahamas, tobago, san juan,\nparaguay, uruguay, surinam and french guiana\nbarbados, and guam.\nnorway, and sweden, and iceland, and finland and\ngermany now ~ want peace,\nswitzerland, austria, czech, slovakia\nitaly, turkey, and greece.\npoland, romania, scotland, albania\nireland, russia, oman,\nbulgaria, saudi arabia, hungary\ncyprus, iraq, and iran.\nthere\u0026rsquo;s syria, lebanon, israel, jordan both\nyemens, kuwait, and bahrain,\nthe netherlands, luxembourg, belgium, and portugal\nfrance, england, denmark, and spain.\nindia, pakistan, burma, afghanistan\nthailand, nepal, and bhutan,\nkampuchea, malaysia, then bangladesh asia and\nchina, korea, japan.\nmongolia, laos, and tibet, indonesia\nthe philippine islands, taiwan,\nsri lanka, new guinea, sumatra, new zealand\nthen borneo, and vietnam.\ntu ~ nisia, morocco, uganda, angola\nzimbabwe, djibouti, botswana,\nmozambique, zambia, swaziland, gambia\nguinea, algeria, ghana.\nburundi, lesotho, and malawi, togo\nthe spanish sahara is gone,\nniger, nigeria, chad, and liberia\negypt, benin, and gabon.\ntanzania, somalia, kenya, and mali\nsierra leone, and algiers,\ndahomey, namibia, senegal, libya\ncameroon, congo, zaire.\nethiopia, guinea-bissau, madagascar\nrwanda, mahore, and cayman,\nhong kong, abu dhabi, qatar, yugoslavia\u0026hellip;\ncrete, mauritania\nthen transylviania,\nmonaco, liechtenstein\nmalta, and paestine,\nfiji, australia, sudan.\n",
+  "draft": false
 },
 {
   "index": 3,
@@ -41,7 +44,8 @@
   "date": "2017-09-05",
   "tags": ["policy", "secondment"],
   "description": "",
-  "content": "  [學校課程持續更新][update]\n [stem][stem]\n [c\u0026amp;a][curriculum-and-assessment]\n  學校課程持續更新  學校課程持續更新\n  stem  科學教育課程指引 (小一至中六)\n 數學教育課程指引 (小一至中六)\n 《推動stem教育 — 發揮創意潛能》報告\n 科技教育課程指引 (小一至中六)\n  c\u0026amp;a  課程文件\n  "
+  "content": "  [學校課程持續更新][update]\n [stem][stem]\n [c\u0026amp;a][curriculum-and-assessment]\n  學校課程持續更新  學校課程持續更新\n  stem  科學教育課程指引 (小一至中六)\n 數學教育課程指引 (小一至中六)\n 《推動stem教育 — 發揮創意潛能》報告\n 科技教育課程指引 (小一至中六)\n  c\u0026amp;a  課程文件\n  ",
+  "draft": false
 },
 {
   "index": 4,
@@ -52,7 +56,8 @@
   "date": "2017-09-04",
   "tags": ["js"],
   "description": "",
-  "content": "var students = [{ name: \u0026quot;foo\u0026quot;, clazz: \u0026quot;4a\u0026quot; }, { name: \u0026quot;world\u0026quot;, clazz: \u0026quot;4b\u0026quot; }, { name: \u0026quot;bar\u0026quot;, clazz: \u0026quot;4b\u0026quot; }, { name: \u0026quot;hello\u0026quot;, clazz: \u0026quot;4c\u0026quot; }] var clazzes = [\u0026quot;4b\u0026quot;, \u0026quot;4c\u0026quot;] clazzes.foreach(function (clazz) { students.filter(createfilterfunction(clazz)).foreach(logname) }) function createfilterfunction (clazz) { // return filterfunction return function (student) { return student.clazz == clazz } } function logname (student) { console.log(student.name) }  "
+  "content": "var students = [{ name: \u0026quot;foo\u0026quot;, clazz: \u0026quot;4a\u0026quot; }, { name: \u0026quot;world\u0026quot;, clazz: \u0026quot;4b\u0026quot; }, { name: \u0026quot;bar\u0026quot;, clazz: \u0026quot;4b\u0026quot; }, { name: \u0026quot;hello\u0026quot;, clazz: \u0026quot;4c\u0026quot; }] var clazzes = [\u0026quot;4b\u0026quot;, \u0026quot;4c\u0026quot;] clazzes.foreach(function (clazz) { students.filter(createfilterfunction(clazz)).foreach(logname) }) function createfilterfunction (clazz) { // return filterfunction return function (student) { return student.clazz == clazz } } function logname (student) { console.log(student.name) }  ",
+  "draft": false
 },
 {
   "index": 5,
@@ -63,7 +68,8 @@
   "date": "2017-09-04",
   "tags": ["english", "grammer"],
   "description": "",
-  "content": " english grammer 101\ntenses    descibe future event  will vs going to differences - grammarbank\n  fanboys  writing compound sentences using fanboys\n  participles  what are participles?\n participial phrase\n  "
+  "content": " english grammer 101\ntenses    descibe future event  will vs going to differences - grammarbank\n  fanboys  writing compound sentences using fanboys\n  participles  what are participles?\n participial phrase\n  ",
+  "draft": false
 },
 {
   "index": 6,
@@ -74,7 +80,8 @@
   "date": "2017-08-20",
   "tags": ["freestyle"],
   "description": "",
-  "content": " freestyle  3 drills to improve freestyle stroke | swimming lessons - youtube\n speedo\u0026rsquo;s ultimate guide to a perfect freestyle swim stroke! (tutorial) - presented by protriathlon - youtube\n  "
+  "content": " freestyle  3 drills to improve freestyle stroke | swimming lessons - youtube\n speedo\u0026rsquo;s ultimate guide to a perfect freestyle swim stroke! (tutorial) - presented by protriathlon - youtube\n  ",
+  "draft": false
 },
 {
   "index": 7,
@@ -85,7 +92,8 @@
   "date": "2017-07-09",
   "tags": ["normalization", "normal form"],
   "description": "",
-  "content": " some of the most important sql commands  select - extracts data from a database\n update - updates data in a database\n delete - deletes data from a database\n insert into - inserts new data into a database\n create database - creates a new database\n alter database - modifies a database\n create table - creates a new table\n alter table - modifies a table\n drop table - deletes a table\n create index - creates an index (search key)\n drop index - deletes an index\n  sql primary key constraint the primary key constraint uniquely identifies each record in a database table.\nprimary keys must contain unique values, and cannot contain null values.\na table can have only one primary key, which may consist of single or multiple fields.\ncreate table persons ( id int not null, lastname varchar(255) not null, firstname varchar(255), age int, primary key (id) );  sql foreign key constraint a foreign key is a key used to link two tables together.\na foreign key is a field (or collection of fields) in one table that refers to the primary key in another table.\nthe table containing the foreign key is called the child table, and the table containing the candidate key is called the referenced or parent table\ne.g\ncreate table orders ( orderid int not null, ordernumber int not null, personid int, primary key (orderid), foreign key (personid) references persons(personid) );  different types of sql joins here are the different types of the joins in sql:\n(inner) join: returns records that have matching values in both tables\nleft (outer) join: return all records from the left table, and the matched records from the right table\nright (outer) join: return all records from the right table, and the matched records from the left table\nfull (outer) join: return all records when there is a match in either left or right table\n   inner left right full            "
+  "content": " some of the most important sql commands  select - extracts data from a database\n update - updates data in a database\n delete - deletes data from a database\n insert into - inserts new data into a database\n create database - creates a new database\n alter database - modifies a database\n create table - creates a new table\n alter table - modifies a table\n drop table - deletes a table\n create index - creates an index (search key)\n drop index - deletes an index\n  sql primary key constraint the primary key constraint uniquely identifies each record in a database table.\nprimary keys must contain unique values, and cannot contain null values.\na table can have only one primary key, which may consist of single or multiple fields.\ncreate table persons ( id int not null, lastname varchar(255) not null, firstname varchar(255), age int, primary key (id) );  sql foreign key constraint a foreign key is a key used to link two tables together.\na foreign key is a field (or collection of fields) in one table that refers to the primary key in another table.\nthe table containing the foreign key is called the child table, and the table containing the candidate key is called the referenced or parent table\ne.g\ncreate table orders ( orderid int not null, ordernumber int not null, personid int, primary key (orderid), foreign key (personid) references persons(personid) );  different types of sql joins here are the different types of the joins in sql:\n(inner) join: returns records that have matching values in both tables\nleft (outer) join: return all records from the left table, and the matched records from the right table\nright (outer) join: return all records from the right table, and the matched records from the left table\nfull (outer) join: return all records when there is a match in either left or right table\n   inner left right full            ",
+  "draft": false
 },
 {
   "index": 8,
@@ -96,7 +104,8 @@
   "date": "2017-07-09",
   "tags": [],
   "description": "",
-  "content": " how to clean the dyson v6 / dc59 cordless vacuum cleaner - youtube\n dyson v6 absolute and v6 mattress - washing the filters (official dyson video) - youtube\n  "
+  "content": " how to clean the dyson v6 / dc59 cordless vacuum cleaner - youtube\n dyson v6 absolute and v6 mattress - washing the filters (official dyson video) - youtube\n  ",
+  "draft": false
 },
 {
   "index": 9,
@@ -107,7 +116,8 @@
   "date": "2017-06-20",
   "tags": ["education", "electronics", "engineering"],
   "description": "",
-  "content": "  coding and math\n reference\n statistic\n engineering\n some idea from 青年會書院\n resource\n  coding and math reference  computer science (not just coding) needs a bigger role in stem education | edtech magazine\n uc davis center for integrated computing and stem education\n zebra puzzle - wikiwand\n the micro:bit foundation is a global non-profit organisation making invention with technology fun for everyone!\n  statistic  what is stem education?\n  engineering  basic electronic components and what they do - dummies\n how transistors work - a simple explanation\n  a guide to how a relay works - build electronic circuits\n fritzing fritzing\n electronic basics #19: i2c and how to use it - youtube\n  some idea from 青年會書院  pe, he is the great media for implementation of stem\n vr 眼鏡，360 3d camera, student rided a bicycle with the camera, and other student can watch in vr and ride in 跑步機\n pe 心跳帶，跑步統計，data colloction\n rfid 收集跑圈時間\n 分子雪糕 in he\n  others\n ar in book, the video will show the book introduction\n he + bio 水耕活動\n 滑翔機 =\u0026gt; 飛幾遠 =\u0026gt; 估算\n  stem lab?\n digital learning common (數位學習共享空間)\n 環保飯堂 + stem + 影音室\n 3d printing, 青書cafe, food printing 立體食物打印機\n student cafe\n 3d food printers: how they could change what you eat | digital trends\n  2d design =\u0026gt; 3d design =\u0026gt; 3d printing\n tinkercad 3d 繪圖工具\n 如何照顧不同學習需要的學生\n 各活動設計，應有關連\n 活動設計應有深度，3d print 舊膠 vs print 野食？\n student are makers\n 3d printing to make a camera mount, snap the view of moon\n  f1 - f3 micro:bit\n 中一習作 micro bit to 計步器\n friction (physic)\n m -\u0026gt; km (math)\n  f3 sensor 濕度，𣺉水\n  diy hologram\n 平截頭體的應用\n  老師們要有共同願境\n 只有頭中尾三次meeting\n but whatsapp idea\n discussion\n  比同事時間及空間, they need to have time to think to develop too\n 老師才可以發展\n 能否突出老師們的長處?\n  it support / wifi\n  resource  free 3d printing app\n learn | tinkercad\n  mr / ar\n draw circuit\n fritzing\n  stereographic projection\n 最速下降線 steepest descent curve\n \n  "
+  "content": "  coding and math\n reference\n statistic\n engineering\n some idea from 青年會書院\n resource\n  coding and math reference  computer science (not just coding) needs a bigger role in stem education | edtech magazine\n uc davis center for integrated computing and stem education\n zebra puzzle - wikiwand\n the micro:bit foundation is a global non-profit organisation making invention with technology fun for everyone!\n  statistic  what is stem education?\n  engineering  basic electronic components and what they do - dummies\n how transistors work - a simple explanation\n  a guide to how a relay works - build electronic circuits\n fritzing fritzing\n electronic basics #19: i2c and how to use it - youtube\n  some idea from 青年會書院  pe, he is the great media for implementation of stem\n vr 眼鏡，360 3d camera, student rided a bicycle with the camera, and other student can watch in vr and ride in 跑步機\n pe 心跳帶，跑步統計，data colloction\n rfid 收集跑圈時間\n 分子雪糕 in he\n  others\n ar in book, the video will show the book introduction\n he + bio 水耕活動\n 滑翔機 =\u0026gt; 飛幾遠 =\u0026gt; 估算\n  stem lab?\n digital learning common (數位學習共享空間)\n 環保飯堂 + stem + 影音室\n 3d printing, 青書cafe, food printing 立體食物打印機\n student cafe\n 3d food printers: how they could change what you eat | digital trends\n  2d design =\u0026gt; 3d design =\u0026gt; 3d printing\n tinkercad 3d 繪圖工具\n 如何照顧不同學習需要的學生\n 各活動設計，應有關連\n 活動設計應有深度，3d print 舊膠 vs print 野食？\n student are makers\n 3d printing to make a camera mount, snap the view of moon\n  f1 - f3 micro:bit\n 中一習作 micro bit to 計步器\n friction (physic)\n m -\u0026gt; km (math)\n  f3 sensor 濕度，𣺉水\n  diy hologram\n 平截頭體的應用\n  老師們要有共同願境\n 只有頭中尾三次meeting\n but whatsapp idea\n discussion\n  比同事時間及空間, they need to have time to think to develop too\n 老師才可以發展\n 能否突出老師們的長處?\n  it support / wifi\n  resource  free 3d printing app\n learn | tinkercad\n  mr / ar\n draw circuit\n fritzing\n  stereographic projection\n 最速下降線 steepest descent curve\n \n  ",
+  "draft": false
 },
 {
   "index": 10,
@@ -118,7 +128,8 @@
   "date": "2017-05-27",
   "tags": ["career", "vpet"],
   "description": "",
-  "content": " notes on pcvpet  vocational education in hong kong\n blue collar\n why mtr always out of order?\n the event of langham place\n air conditional / escalator\n only fill up 25% of needs\n  is that because the lack development of vocational training?\n hong kong need technician\n student need to find what they will devote in and capable of.\n earn and learn scheme 3 days works and 3 days study\n pages - vpetcity home\n  simple game\n simple classification of occupations\n physical materials\n people\n symbol\n low entry requirement but high pay\n 器皿潔淨員\n 肉類切割技術員\n 紮鐵工\n 持牌飛機維修工程師\n 司機兼收派件員 （like sf）\n  book list\n 我要做boss\n good show\n   "
+  "content": " notes on pcvpet  vocational education in hong kong\n blue collar\n why mtr always out of order?\n the event of langham place\n air conditional / escalator\n only fill up 25% of needs\n  is that because the lack development of vocational training?\n hong kong need technician\n student need to find what they will devote in and capable of.\n earn and learn scheme 3 days works and 3 days study\n pages - vpetcity home\n  simple game\n simple classification of occupations\n physical materials\n people\n symbol\n low entry requirement but high pay\n 器皿潔淨員\n 肉類切割技術員\n 紮鐵工\n 持牌飛機維修工程師\n 司機兼收派件員 （like sf）\n  book list\n 我要做boss\n good show\n   ",
+  "draft": false
 },
 {
   "index": 11,
@@ -129,7 +140,8 @@
   "date": "2017-05-25",
   "tags": ["signal", "process", "top", "killall"],
   "description": "",
-  "content": " how to kill a process from the command line | linux.com | the source for linux information\n depth first vs breath first\n  "
+  "content": " how to kill a process from the command line | linux.com | the source for linux information\n depth first vs breath first\n  ",
+  "draft": false
 },
 {
   "index": 12,
@@ -140,7 +152,8 @@
   "date": "2017-05-21",
   "tags": ["taskwarrior", "todo", "task", "reminder"],
   "description": "",
-  "content": " taskwarrior taskwarrior - what\u0026rsquo;s next?\n"
+  "content": " taskwarrior taskwarrior - what\u0026rsquo;s next?\n",
+  "draft": false
 },
 {
   "index": 13,
@@ -151,7 +164,8 @@
   "date": "2017-05-19",
   "tags": ["calendar", "google", "lpss"],
   "description": "",
-  "content": " add calendar to mobile devices  login your liping domain account in the web browser first\n go to www.google.com\n username: lpxxx@liping.edu.hk\n password: please ask itav team if you didn’t get the password\n  go to calendar view or press this link https://calendar.google.com/calendar\n go to other calendar section and paste the link below to the box “add a colleague’s calendar”\n liping.edu.hk_0jfuie399d0elvaac06k0hur8o@group.calendar.google.com\n   then you will see the word “school calendar” under the other calendar section.\n if you want to access the calendar through your mobile devices, go to the link below\n https://calendar.google.com/calendar/syncselect\n check the box next to school calendar (read only)\n press the save button after you checked the box\n  add your liping.edu.hk domain account to your mobile devices, you may find the instructions from the link below\n how to add google account on android device\n how to set up mail, contacts, and calendars on iphone and ipad | imore\n  last but not least, contact the it experts around you if you didn’t understand the sentences above.\n enjoy\n  p.s.  events with the title started with a asterisk character (*) haven’t been confirmed the date.\n i.e. * free hall from hkdse centre on 1 april 17\n  this is not an official calendar, please ref to school calendar sent by jessica kan for the most accurate one.\n  "
+  "content": " add calendar to mobile devices  login your liping domain account in the web browser first\n go to www.google.com\n username: lpxxx@liping.edu.hk\n password: please ask itav team if you didn’t get the password\n  go to calendar view or press this link https://calendar.google.com/calendar\n go to other calendar section and paste the link below to the box “add a colleague’s calendar”\n liping.edu.hk_0jfuie399d0elvaac06k0hur8o@group.calendar.google.com\n   then you will see the word “school calendar” under the other calendar section.\n if you want to access the calendar through your mobile devices, go to the link below\n https://calendar.google.com/calendar/syncselect\n check the box next to school calendar (read only)\n press the save button after you checked the box\n  add your liping.edu.hk domain account to your mobile devices, you may find the instructions from the link below\n how to add google account on android device\n how to set up mail, contacts, and calendars on iphone and ipad | imore\n  last but not least, contact the it experts around you if you didn’t understand the sentences above.\n enjoy\n  p.s.  events with the title started with a asterisk character (*) haven’t been confirmed the date.\n i.e. * free hall from hkdse centre on 1 april 17\n  this is not an official calendar, please ref to school calendar sent by jessica kan for the most accurate one.\n  ",
+  "draft": false
 },
 {
   "index": 14,
@@ -162,7 +176,8 @@
   "date": "2017-05-19",
   "tags": ["tcp", "udp", "osi"],
   "description": "",
-  "content": "    osi model by layer     1 physical layer   2 data link layer    "
+  "content": "    osi model by layer     1 physical layer   2 data link layer    ",
+  "draft": false
 },
 {
   "index": 15,
@@ -173,7 +188,8 @@
   "date": "2017-05-16",
   "tags": ["GTD", "Pomodoro", "tomato"],
   "description": "",
-  "content": " class: center, middle\n提升生產力及專注力 gtd \u0026amp; 蕃茄工作法 reference  the pomodoro technique® - proudly developed by francesco cirillo | cirillo company\n david allen\u0026rsquo;s getting things done® methodology\n  工作時間  平日每天約4小時\n 假日每天約6小時\n 合共：\n4hr x 5day + 6hr x 2day = 32 hrs\n 如何保持專注?\n  規劃  每科應用15分鐘回顧及整理當天所學\n 功課應盡早完成\n 每天用盡所有工作時間\n  流程 \nwhy?  何時做 \u0026gt; 何時交\n 計時能令人集中\n e.g. 考試、測驗\n   .split-50[\n.column[\n參考資料  online pomodoro timer\n pomodoro technique\n getting things done\n]\n  .column[\nkeywords:  pomodoro\n tomato\n timer\n technique\n getting things done\n]\n]\n  "
+  "content": " class: center, middle\n提升生產力及專注力 gtd \u0026amp; 蕃茄工作法 reference  the pomodoro technique® - proudly developed by francesco cirillo | cirillo company\n david allen\u0026rsquo;s getting things done® methodology\n  工作時間  平日每天約4小時\n 假日每天約6小時\n 合共：\n4hr x 5day + 6hr x 2day = 32 hrs\n 如何保持專注?\n  規劃  每科應用15分鐘回顧及整理當天所學\n 功課應盡早完成\n 每天用盡所有工作時間\n  流程 \nwhy?  何時做 \u0026gt; 何時交\n 計時能令人集中\n e.g. 考試、測驗\n   .split-50[\n.column[\n參考資料  online pomodoro timer\n pomodoro technique\n getting things done\n]\n  .column[\nkeywords:  pomodoro\n tomato\n timer\n technique\n getting things done\n]\n]\n  ",
+  "draft": false
 },
 {
   "index": 16,
@@ -184,7 +200,8 @@
   "date": "2017-05-15",
   "tags": ["taiwan study", "career"],
   "description": "",
-  "content": " useful links  學士班適用簡章2017\n q\u0026amp;a\n 來台就學費用估算\n 入學暨來臺相關規定\n 赴臺升學小冊子(新版).pdf\n  資格 「僑生」指海外出生連續居留迄今，或最近連續居留海外六年以上，並取得僑居地永久或長期居留證件回國就學之華裔學生。\n但就讀大學醫學、牙醫及中醫學系者，其連續居留年限為八年以上。\n"
+  "content": " useful links  學士班適用簡章2017\n q\u0026amp;a\n 來台就學費用估算\n 入學暨來臺相關規定\n 赴臺升學小冊子(新版).pdf\n  資格 「僑生」指海外出生連續居留迄今，或最近連續居留海外六年以上，並取得僑居地永久或長期居留證件回國就學之華裔學生。\n但就讀大學醫學、牙醫及中醫學系者，其連續居留年限為八年以上。\n",
+  "draft": false
 },
 {
   "index": 17,
@@ -195,7 +212,8 @@
   "date": "2017-05-15",
   "tags": ["1x", "2x", "jupas", "taiwan study", "dse"],
   "description": "",
-  "content": " jupas 各大學入學要求  4c+2x (3322+33)\n hku\n cuhk\n hkust\n polyu\n  4c+2x (3322+22)\n cityu\n  4c+1x (2018年要求：3322+3)\n hkbu\n  4c+1x (3322+2)\n lu\n eduhk\n ouhk\n sssdp\n   reference  jupas website\n  accept m as x  cityu\n cuhk\n polyu\n hkust\n hku (部分課程)\n  hd / ad  基本入學要求：22 + 222\n  taiwan 個人申請  跟據校內成績、讀書計劃及師長推薦\n  聯合分發  中英數 ＋ 2科（包括通識），詳見下表。\n reference\n 香港學生適用簡章(pdf)\n   mainland  內地免試招生\n 按個別內地大學收生準則而定\n 一般普通類別收生要求為4c (3322)\n 部分大學會提高要求（頂尖大學），只考慮修讀4c+2x的學生\n  reference\n 內地部分高校免試招生香港學生計劃指南2016-17\n   "
+  "content": " jupas 各大學入學要求  4c+2x (3322+33)\n hku\n cuhk\n hkust\n polyu\n  4c+2x (3322+22)\n cityu\n  4c+1x (2018年要求：3322+3)\n hkbu\n  4c+1x (3322+2)\n lu\n eduhk\n ouhk\n sssdp\n   reference  jupas website\n  accept m as x  cityu\n cuhk\n polyu\n hkust\n hku (部分課程)\n  hd / ad  基本入學要求：22 + 222\n  taiwan 個人申請  跟據校內成績、讀書計劃及師長推薦\n  聯合分發  中英數 ＋ 2科（包括通識），詳見下表。\n reference\n 香港學生適用簡章(pdf)\n   mainland  內地免試招生\n 按個別內地大學收生準則而定\n 一般普通類別收生要求為4c (3322)\n 部分大學會提高要求（頂尖大學），只考慮修讀4c+2x的學生\n  reference\n 內地部分高校免試招生香港學生計劃指南2016-17\n   ",
+  "draft": false
 },
 {
   "index": 18,
@@ -206,7 +224,8 @@
   "date": "2017-05-15",
   "tags": [],
   "description": "",
-  "content": "relief of pain and inflammation beside panadol\n- celecoxib (痛博士 200mg)\n- mefenamic acid capsule 250mg (ponstan ge)\n mefenamic acid is used to treat painful conditions such as arthritis, pain associated with heavy menstrual bleeding, and pain after surgical operations.\n "
+  "content": "relief of pain and inflammation beside panadol\n- celecoxib (痛博士 200mg)\n- mefenamic acid capsule 250mg (ponstan ge)\n mefenamic acid is used to treat painful conditions such as arthritis, pain associated with heavy menstrual bleeding, and pain after surgical operations.\n ",
+  "draft": false
 },
 {
   "index": 19,
@@ -217,7 +236,8 @@
   "date": "2017-05-15",
   "tags": ["education", "career", "life planning", "donald super"],
   "description": "",
-  "content": " donal super theory  super\u0026rsquo;s career development theory - iresearchnet\n career-theory-model-super.pdf\n the life career rainbow - get a better work/life balance - career development from mindtools.com\n  reference  lifedesign.pdf\n holland’s theory of career choice | career key\n the big five career theories\n the serious leisure perspective (slp) - welcome\n careers and career information - careeronestop\n free personality test | 16personalities\n    "
+  "content": " donal super theory  super\u0026rsquo;s career development theory - iresearchnet\n career-theory-model-super.pdf\n the life career rainbow - get a better work/life balance - career development from mindtools.com\n  reference  lifedesign.pdf\n holland’s theory of career choice | career key\n the big five career theories\n the serious leisure perspective (slp) - welcome\n careers and career information - careeronestop\n free personality test | 16personalities\n    ",
+  "draft": false
 },
 {
   "index": 20,
@@ -228,7 +248,8 @@
   "date": "2017-05-12",
   "tags": ["tmux"],
   "description": "",
-  "content": " using tmux # list all session tmux ls # attach to session tmux attach -t sessionname # create new session tmux new -s sessionname # kill session tmux kill-session -t sessionname  navigate in tmux  ctrl-b then [ then you can use your normal navigation keys to scroll around (eg. up arrow or pgdn).\n press q to quit scroll mode.\n just quit terminal for exit the session\n  "
+  "content": " using tmux # list all session tmux ls # attach to session tmux attach -t sessionname # create new session tmux new -s sessionname # kill session tmux kill-session -t sessionname  navigate in tmux  ctrl-b then [ then you can use your normal navigation keys to scroll around (eg. up arrow or pgdn).\n press q to quit scroll mode.\n just quit terminal for exit the session\n  ",
+  "draft": false
 },
 {
   "index": 21,
@@ -239,7 +260,8 @@
   "date": "2017-05-12",
   "tags": ["linux", "arch"],
   "description": "",
-  "content": " references  build a killer customized arch linux installation (and learn all about linux in the process)\n installation guide - archwiki\n antergos | your linux. always fresh. never frozen.\n   the purpose of antergos is to provide a modern, elegant, and powerful operating system based on one of the best linux distributions available, arch linux. users need not be linux experts nor developers in order to use antergos. from long-time linux users to linux users of only a few months, antergos is for everyone.\n "
+  "content": " references  build a killer customized arch linux installation (and learn all about linux in the process)\n installation guide - archwiki\n antergos | your linux. always fresh. never frozen.\n   the purpose of antergos is to provide a modern, elegant, and powerful operating system based on one of the best linux distributions available, arch linux. users need not be linux experts nor developers in order to use antergos. from long-time linux users to linux users of only a few months, antergos is for everyone.\n ",
+  "draft": false
 },
 {
   "index": 22,
@@ -250,7 +272,8 @@
   "date": "2016-10-21",
   "tags": ["linux", "startup"],
   "description": "",
-  "content": "create a new script in /etc/init.d/myscript.\nvi /etc/init.d/myscript  (obviously it doesn\u0026rsquo;t have to be called \u0026ldquo;myscript\u0026rdquo;.) in this script, do whatever you want to do. perhaps just run the script you mentioned.\n#!/bin/sh /path/to/my/script.sh  make it executable.\nchmod 755 /etc/init.d/myscript  configure the init system to run this script at startup.\nupdate-rc.d myscript defaults  ystem to run this script at startup.\nupdate-rc.d myscript defaults  "
+  "content": "create a new script in /etc/init.d/myscript.\nvi /etc/init.d/myscript  (obviously it doesn\u0026rsquo;t have to be called \u0026ldquo;myscript\u0026rdquo;.) in this script, do whatever you want to do. perhaps just run the script you mentioned.\n#!/bin/sh /path/to/my/script.sh  make it executable.\nchmod 755 /etc/init.d/myscript  configure the init system to run this script at startup.\nupdate-rc.d myscript defaults  ystem to run this script at startup.\nupdate-rc.d myscript defaults  ",
+  "draft": false
 },
 {
   "index": 23,
@@ -261,7 +284,8 @@
   "date": "2016-10-18",
   "tags": ["mysql", "sql"],
   "description": "",
-  "content": " start sql in macos # start sql server mysql.server start  mysql -u root -p  "
+  "content": " start sql in macos # start sql server mysql.server start  mysql -u root -p  ",
+  "draft": false
 },
 {
   "index": 24,
@@ -272,7 +296,8 @@
   "date": "2016-10-11",
   "tags": ["digitalocean"],
   "description": "",
-  "content": " check which kernel is currently in use\nto display both the kernel version and your system\u0026rsquo;s architecture (32-bit or 64-bit), type: uname -ir  upgrading all packages and using the newest kernel sudo apt-get update sudo apt-get dist-upgrade sudo reboot sudo apt-get install update-manager-core sudo do-release-upgrade  reference how to upgrade to ubuntu 16.04 lts | digitalocean how to update a digitalocean server\u0026rsquo;s kernel | digitalocean\n"
+  "content": " check which kernel is currently in use\nto display both the kernel version and your system\u0026rsquo;s architecture (32-bit or 64-bit), type: uname -ir  upgrading all packages and using the newest kernel sudo apt-get update sudo apt-get dist-upgrade sudo reboot sudo apt-get install update-manager-core sudo do-release-upgrade  reference how to upgrade to ubuntu 16.04 lts | digitalocean how to update a digitalocean server\u0026rsquo;s kernel | digitalocean\n",
+  "draft": false
 },
 {
   "index": 25,
@@ -283,7 +308,8 @@
   "date": "2016-10-09",
   "tags": [],
   "description": "",
-  "content": " installation # install caddy in linux commandline curl -fssl https://getcaddy.com | bash -s search  settng of caddyfile for microservice todo make caddy to serve https\n  "
+  "content": " installation # install caddy in linux commandline curl -fssl https://getcaddy.com | bash -s search  settng of caddyfile for microservice todo make caddy to serve https\n  ",
+  "draft": false
 },
 {
   "index": 26,
@@ -294,7 +320,8 @@
   "date": "2016-10-07",
   "tags": ["https"],
   "description": "",
-  "content": " links  self-signed certificate - wikiwand\n let\u0026rsquo;s encrypt - free ssl/tls certificates\n jwt, jws and jwe for not so dummies!\n json web token series - youtube\n  "
+  "content": " links  self-signed certificate - wikiwand\n let\u0026rsquo;s encrypt - free ssl/tls certificates\n jwt, jws and jwe for not so dummies!\n json web token series - youtube\n  ",
+  "draft": false
 },
 {
   "index": 27,
@@ -305,7 +332,8 @@
   "date": "2016-10-07",
   "tags": [],
   "description": "",
-  "content": " using youtube-dl and xargs cat \u0026lt;\u0026lt; eof | xargs -i@ youtube-dl https://www.youtube.com/watch?v=@ youtubevideoid-1 youtubevideoid-2 youtubevideoid-3 eof  useful options  --extract-audio for download audio only\n --audio-format mp3 choose the audio format\n --audio-quality 2 set the audio quality, 0(best)-9(worst), (default 5)\n  "
+  "content": " using youtube-dl and xargs cat \u0026lt;\u0026lt; eof | xargs -i@ youtube-dl https://www.youtube.com/watch?v=@ youtubevideoid-1 youtubevideoid-2 youtubevideoid-3 eof  useful options  --extract-audio for download audio only\n --audio-format mp3 choose the audio format\n --audio-quality 2 set the audio quality, 0(best)-9(worst), (default 5)\n  ",
+  "draft": false
 },
 {
   "index": 28,
@@ -316,7 +344,8 @@
   "date": "2016-10-05",
   "tags": ["authentication", "jwt", "security", "web-token"],
   "description": "",
-  "content": " notes  authentication in golang with jwts\n cookies vs tokens: the definitive guide\n the ins and outs of token based authentication | scotch  enterprise apis and oauth: have it all\n secure your users\u0026rsquo; passwords from the browser on\n  authentication protocols  basic access authentication - wikiwand\n digest access authentication - wikiwand\n secure remote password protocol - wikiwand\n anatomy of a zero-knowledge web application - clipperz, register your creations on the blockchain\n  access-control-allow-origin: * does not allow requests to supply credentials like http authentication, client-side ssl certificates, or cookies. ?\nserver based server generates session token and send to client via cookie. the session token acts as a bearer token and is used to look up login/session info in memory or datastore.\n on securing web session ids | hueniverse\n expressjs/session: simple session middleware for express\n  asymmetric key  browserauth.net using asymmetric-key for web\n substack/trust-log: manage trust over time\n mafintosh/ghsign: sign/verify data using your local ssh private key and your public key from github\n  token based  \u0026ldquo;server based\u0026rdquo; and \u0026ldquo;token based\u0026rdquo; could be a misnomer. some articles says server-based auth bind a client to a specific server but this is not actually true. we can setup a in-memory datastore shared by a bunch of app servers to look up the token upon a client request. and tokens in token-based auth may as well be stored in cookies. it\u0026rsquo;s just that all session info are embedded in the token in token-based auth.\n  the ins and outs of token based authentication | scotch\n best practices for token-based authentication in rest api - google groups.desktop\n token based authentication for single page apps (spas) - stormpath user management api\n token-based authentication with angularjs \u0026amp; nodejs - tuts+ code tutorial\n cookies are bad for you: improving web application security - sitr.us\n cookies vs tokens. getting auth right with angular.js\n 10 things you should know about tokens\n stop using jwt for sessions - joepie91\u0026rsquo;s ramblings\n stop using jwt for sessions, part 2: why your solution doesn\u0026rsquo;t work - joepie91\u0026rsquo;s ramblings\n a token walks into a spa - youtube\n hapijs/hapi-auth-cookie: cookie authentication plugin is actually a token based authentication\n roblevintennis-passport-api-tokens · github\n goodbye short sessions: a proposal for using service-workers to improve cookie management on the web | web updates - google developers\n  there are three ways to send your access token in a request.\n in an http authorization header (always works)\n in the url query string (only works with get requests)\n in the request body (only works for post \u0026amp; put when body is url-encoded)\n  bearer token clients  angular-token-auth/auth.client.js at master · auth0-blog/angular-token-auth\n talis/bearhug-angular: response interceptor for elegant bearer-token handling for angular\u0026rsquo;s $http service\n authorizationserver/callback.cshtml at master · identitymodel/authorizationserver\n sahat/satellizer: token-based angularjs authentication\n  questions token based auth allows for rbac (role-based access control), but other method can support rbac as well (with a session lookup)\nreplay attack with bearer token oauth 2.0 (without signatures) is bad for the web | hueniverse\n- oauth bearer tokens are a terrible idea | hueniverse\n- auth0/node-auth0: node.js client library for the auth0 platform.\n- node-auth0/examples/nodejs-regular-webapp at master · auth0/node-auth0\n- node-auth0/examples/nodejs-api at master · auth0/node-auth0\n- auth0/cookie-jwt-auth why store back to cookie?\n- auth0/spa-jwt-authentication-tutorial - javascript\n- adding authentication to your react flux app\n- repo\n- critical vulnerabilities in json web token libraries\nvs oauth oauth vs jwt vs openid oauth2 token is opaque, jwt can be used jwt: 2 years later\n- oauth 2 vs json web tokens: how to secure an api - seedbox technologies | les technologies seedbox\n- 谈谈oauth1,oauth2异同 | litten的博客\n- 兔子，胡萝卜与oauth的故事 | litten的博客\nsingle sing on (sso)  implement single sign on authentication\n lock: single sign on \u0026amp; token based authentication - auth0\n auth0/lock - css\n auth0/lock-passwordless\n  oauth1  the oauth bible\n oauth | hueniverse\n 1.0 rfc 5849 - the oauth 1.0 protocol\n oauth and oauth wrap: defeating the password anti-pattern | ars technica deprecated for 2.0\n  oauth2  oauth - wikiwand\n the oauth bible\n oauth / frontpage\n oauth community site\n 2.0 rfc 6749 - the oauth 2.0 authorization framework\n rfc 6750 - the oauth 2.0 authorization framework: bearer token usage\n egor homakov: oauth2: one access_token to rule them all\n openid | hueniverse\n oauth | hueniverse\n designing a secure rest (web) api without oauth\n upload client public key (securely) to server (kind of like passwordless ssh)\n dogeared/ozorkauth\n  in the wild  oauth | github developer guide\n using oauth 2.0 to access google apis | google identity platform | google developers\n using oauth 2.0 for google apis | 9bit studios\n  boo oauth2  realtimeconf - \u0026ldquo;oauth 2.0 - looking back and moving on\u0026rdquo; by eran hammer on vimeo\n oauth 2.0 and the road to hell | hueniverse\n on leaving oauth | hueniverse\n the problem with oauth for authentication. | thread safe\n  libraries  prose-gatekeeper · github passport hapi-bell\n  and much more\u0026hellip;\njwt  jwt is the spec for how a non-opaque token should be created. this allows token receiver to parse the token and receive meta without database query.\n json web token - wikiwand\n rfc 7515 - json web signature (jws)\n rfc 7516 - json web encryption (jwe)\n rfc 7517 - json web key (jwk)\n rfc 7518 - json web algorithms (jwa)\n rfc 7519 - json web token (jwt)\n rfc 7520 - jose cookbook\n  jwt = header.claim.signature\nvar myheaders = { \u0026quot;alg\u0026quot;: \u0026quot;hs256\u0026quot;, //denotes the algorithm (shorthand alg) used for the signature is hmac sha-256 \u0026quot;typ\u0026quot;: \u0026quot;jwt\u0026quot; //denotes the type (shorthand typ) of token this is } var myclaims = { \u0026quot;sub\u0026quot;: \u0026quot;tom@stormpath.com\u0026quot;, \u0026quot;name\u0026quot;: \u0026quot;tom abbott\u0026quot;, \u0026quot;role\u0026quot;: \u0026quot;user\u0026quot; } var headers = base64urlencode(myheaders); var claims = base64urlencode(myclaims); var payload = header + \u0026quot;.\u0026quot; + claims; var signature = base64urlencode(hmacsha256(payload, secret)); var encodedjwt = payload + \u0026quot;.\u0026quot; + signature;   mnug 2014.08.13 - lightning talk: jwt: json web token - youtube\n introduction to jwt (json web token) - securing apps \u0026amp; services - youtube\n nodejs tutorial | apis strike back: the rise of json web tokens - youtube\n  demo with express  using json web tokens as api keys\n blacklisting json web token api keys\n refresh tokens\n auth0/node-jsonwebtoken\n auth0/nginx-jwt\n auth0/jwt-as-api-keys\n json web token tutorial: example using angularjs \u0026amp; laravel | toptal jwt primer, comparison with server based authentication ttkalec/laravel5-angular-jwt: simple laravel 5/angular app that shows how to use the most basic jwt authentication\n dwyl/learn-json-web-tokens\n the anatomy of a json web token | scotch\n authenticate a node.js api with json web tokens | scotch\n authentication with node.js, jwts, and oracle database | javascript and oracle\n securing node.js restful services with jwt tokens | richard astbury\u0026rsquo;s blog\n use jwt the right way! - stormpath user management api\n  jwt primer, tips for security  build secure user interfaces using json web tokens (jwts) - stormpath user management api\n using stormpath for oauth 2.0 and access/refresh token management - stormpath\n where to store your jwts - cookies vs html5 web storage - stormpath user identity api jwt primer, tips for storage and csurf conclusion: store the jwt in httponly; secure cookie. add xsrftoken to jwt for csurf protection.\n  oz  auth to see the wizard | hueniverse\n hueniverse/oz: web authorization protocol\n hueniverse/hawk\n what\u0026rsquo;s hawk and how to use it?\n geek/oauth\n geek/oz: web authorization protocol\n  "
+  "content": " notes  authentication in golang with jwts\n cookies vs tokens: the definitive guide\n the ins and outs of token based authentication | scotch  enterprise apis and oauth: have it all\n secure your users\u0026rsquo; passwords from the browser on\n  authentication protocols  basic access authentication - wikiwand\n digest access authentication - wikiwand\n secure remote password protocol - wikiwand\n anatomy of a zero-knowledge web application - clipperz, register your creations on the blockchain\n  access-control-allow-origin: * does not allow requests to supply credentials like http authentication, client-side ssl certificates, or cookies. ?\nserver based server generates session token and send to client via cookie. the session token acts as a bearer token and is used to look up login/session info in memory or datastore.\n on securing web session ids | hueniverse\n expressjs/session: simple session middleware for express\n  asymmetric key  browserauth.net using asymmetric-key for web\n substack/trust-log: manage trust over time\n mafintosh/ghsign: sign/verify data using your local ssh private key and your public key from github\n  token based  \u0026ldquo;server based\u0026rdquo; and \u0026ldquo;token based\u0026rdquo; could be a misnomer. some articles says server-based auth bind a client to a specific server but this is not actually true. we can setup a in-memory datastore shared by a bunch of app servers to look up the token upon a client request. and tokens in token-based auth may as well be stored in cookies. it\u0026rsquo;s just that all session info are embedded in the token in token-based auth.\n  the ins and outs of token based authentication | scotch\n best practices for token-based authentication in rest api - google groups.desktop\n token based authentication for single page apps (spas) - stormpath user management api\n token-based authentication with angularjs \u0026amp; nodejs - tuts+ code tutorial\n cookies are bad for you: improving web application security - sitr.us\n cookies vs tokens. getting auth right with angular.js\n 10 things you should know about tokens\n stop using jwt for sessions - joepie91\u0026rsquo;s ramblings\n stop using jwt for sessions, part 2: why your solution doesn\u0026rsquo;t work - joepie91\u0026rsquo;s ramblings\n a token walks into a spa - youtube\n hapijs/hapi-auth-cookie: cookie authentication plugin is actually a token based authentication\n roblevintennis-passport-api-tokens · github\n goodbye short sessions: a proposal for using service-workers to improve cookie management on the web | web updates - google developers\n  there are three ways to send your access token in a request.\n in an http authorization header (always works)\n in the url query string (only works with get requests)\n in the request body (only works for post \u0026amp; put when body is url-encoded)\n  bearer token clients  angular-token-auth/auth.client.js at master · auth0-blog/angular-token-auth\n talis/bearhug-angular: response interceptor for elegant bearer-token handling for angular\u0026rsquo;s $http service\n authorizationserver/callback.cshtml at master · identitymodel/authorizationserver\n sahat/satellizer: token-based angularjs authentication\n  questions token based auth allows for rbac (role-based access control), but other method can support rbac as well (with a session lookup)\nreplay attack with bearer token oauth 2.0 (without signatures) is bad for the web | hueniverse\n- oauth bearer tokens are a terrible idea | hueniverse\n- auth0/node-auth0: node.js client library for the auth0 platform.\n- node-auth0/examples/nodejs-regular-webapp at master · auth0/node-auth0\n- node-auth0/examples/nodejs-api at master · auth0/node-auth0\n- auth0/cookie-jwt-auth why store back to cookie?\n- auth0/spa-jwt-authentication-tutorial - javascript\n- adding authentication to your react flux app\n- repo\n- critical vulnerabilities in json web token libraries\nvs oauth oauth vs jwt vs openid oauth2 token is opaque, jwt can be used jwt: 2 years later\n- oauth 2 vs json web tokens: how to secure an api - seedbox technologies | les technologies seedbox\n- 谈谈oauth1,oauth2异同 | litten的博客\n- 兔子，胡萝卜与oauth的故事 | litten的博客\nsingle sing on (sso)  implement single sign on authentication\n lock: single sign on \u0026amp; token based authentication - auth0\n auth0/lock - css\n auth0/lock-passwordless\n  oauth1  the oauth bible\n oauth | hueniverse\n 1.0 rfc 5849 - the oauth 1.0 protocol\n oauth and oauth wrap: defeating the password anti-pattern | ars technica deprecated for 2.0\n  oauth2  oauth - wikiwand\n the oauth bible\n oauth / frontpage\n oauth community site\n 2.0 rfc 6749 - the oauth 2.0 authorization framework\n rfc 6750 - the oauth 2.0 authorization framework: bearer token usage\n egor homakov: oauth2: one access_token to rule them all\n openid | hueniverse\n oauth | hueniverse\n designing a secure rest (web) api without oauth\n upload client public key (securely) to server (kind of like passwordless ssh)\n dogeared/ozorkauth\n  in the wild  oauth | github developer guide\n using oauth 2.0 to access google apis | google identity platform | google developers\n using oauth 2.0 for google apis | 9bit studios\n  boo oauth2  realtimeconf - \u0026ldquo;oauth 2.0 - looking back and moving on\u0026rdquo; by eran hammer on vimeo\n oauth 2.0 and the road to hell | hueniverse\n on leaving oauth | hueniverse\n the problem with oauth for authentication. | thread safe\n  libraries  prose-gatekeeper · github passport hapi-bell\n  and much more\u0026hellip;\njwt  jwt is the spec for how a non-opaque token should be created. this allows token receiver to parse the token and receive meta without database query.\n json web token - wikiwand\n rfc 7515 - json web signature (jws)\n rfc 7516 - json web encryption (jwe)\n rfc 7517 - json web key (jwk)\n rfc 7518 - json web algorithms (jwa)\n rfc 7519 - json web token (jwt)\n rfc 7520 - jose cookbook\n  jwt = header.claim.signature\nvar myheaders = { \u0026quot;alg\u0026quot;: \u0026quot;hs256\u0026quot;, //denotes the algorithm (shorthand alg) used for the signature is hmac sha-256 \u0026quot;typ\u0026quot;: \u0026quot;jwt\u0026quot; //denotes the type (shorthand typ) of token this is } var myclaims = { \u0026quot;sub\u0026quot;: \u0026quot;tom@stormpath.com\u0026quot;, \u0026quot;name\u0026quot;: \u0026quot;tom abbott\u0026quot;, \u0026quot;role\u0026quot;: \u0026quot;user\u0026quot; } var headers = base64urlencode(myheaders); var claims = base64urlencode(myclaims); var payload = header + \u0026quot;.\u0026quot; + claims; var signature = base64urlencode(hmacsha256(payload, secret)); var encodedjwt = payload + \u0026quot;.\u0026quot; + signature;   mnug 2014.08.13 - lightning talk: jwt: json web token - youtube\n introduction to jwt (json web token) - securing apps \u0026amp; services - youtube\n nodejs tutorial | apis strike back: the rise of json web tokens - youtube\n  demo with express  using json web tokens as api keys\n blacklisting json web token api keys\n refresh tokens\n auth0/node-jsonwebtoken\n auth0/nginx-jwt\n auth0/jwt-as-api-keys\n json web token tutorial: example using angularjs \u0026amp; laravel | toptal jwt primer, comparison with server based authentication ttkalec/laravel5-angular-jwt: simple laravel 5/angular app that shows how to use the most basic jwt authentication\n dwyl/learn-json-web-tokens\n the anatomy of a json web token | scotch\n authenticate a node.js api with json web tokens | scotch\n authentication with node.js, jwts, and oracle database | javascript and oracle\n securing node.js restful services with jwt tokens | richard astbury\u0026rsquo;s blog\n use jwt the right way! - stormpath user management api\n  jwt primer, tips for security  build secure user interfaces using json web tokens (jwts) - stormpath user management api\n using stormpath for oauth 2.0 and access/refresh token management - stormpath\n where to store your jwts - cookies vs html5 web storage - stormpath user identity api jwt primer, tips for storage and csurf conclusion: store the jwt in httponly; secure cookie. add xsrftoken to jwt for csurf protection.\n  oz  auth to see the wizard | hueniverse\n hueniverse/oz: web authorization protocol\n hueniverse/hawk\n what\u0026rsquo;s hawk and how to use it?\n geek/oauth\n geek/oz: web authorization protocol\n  ",
+  "draft": false
 },
 {
   "index": 29,
@@ -327,7 +356,8 @@
   "date": "2016-10-04",
   "tags": ["editor", "vim"],
   "description": "",
-  "content": " vim basic  vim cheat sheet - english\n vimgenius\n vimgifs\n  some useful skills update vim pathogen plugin for i in ~/.vim/bundle/*; do git -c $i pull; done\ninsert across multi-lines select the lines you want to modify using ctrl-v. press: i: insert before what\u0026rsquo;s selected. a: append after what\u0026rsquo;s selected. c: replace what\u0026rsquo;s selected. type the new text. press esc to apply the changes to all selected lines.\nsearch and replace :s/foo/bar/g change each \u0026lsquo;foo\u0026rsquo; to \u0026lsquo;bar\u0026rsquo; in the current line. :%s/foo/bar/g change each \u0026lsquo;foo\u0026rsquo; to \u0026lsquo;bar\u0026rsquo; in all the lines.\nvim plugin  vim-pathogen\n vim awesome\n  my installed plugins  ctrlp\n emmet\n nerdtree\n vim-airline\n vim-go\n vim-airline-themes\n vim-snippets\n syntastic\n tagbar\n vim-colors-solarized\n  "
+  "content": " vim basic  vim cheat sheet - english\n vimgenius\n vimgifs\n  some useful skills update vim pathogen plugin for i in ~/.vim/bundle/*; do git -c $i pull; done\ninsert across multi-lines select the lines you want to modify using ctrl-v. press: i: insert before what\u0026rsquo;s selected. a: append after what\u0026rsquo;s selected. c: replace what\u0026rsquo;s selected. type the new text. press esc to apply the changes to all selected lines.\nsearch and replace :s/foo/bar/g change each \u0026lsquo;foo\u0026rsquo; to \u0026lsquo;bar\u0026rsquo; in the current line. :%s/foo/bar/g change each \u0026lsquo;foo\u0026rsquo; to \u0026lsquo;bar\u0026rsquo; in all the lines.\nvim plugin  vim-pathogen\n vim awesome\n  my installed plugins  ctrlp\n emmet\n nerdtree\n vim-airline\n vim-go\n vim-airline-themes\n vim-snippets\n syntastic\n tagbar\n vim-colors-solarized\n  ",
+  "draft": false
 },
 {
   "index": 30,
@@ -338,7 +368,8 @@
   "date": "2016-09-30",
   "tags": ["docker"],
   "description": "",
-  "content": "docker - build, ship, and run any app, anywhere\n"
+  "content": "docker - build, ship, and run any app, anywhere\n",
+  "draft": false
 },
 {
   "index": 31,
@@ -349,7 +380,8 @@
   "date": "2016-09-29",
   "tags": ["note-taking"],
   "description": "",
-  "content": "custom preview theme\n notational velocity (nvalt) custom stylesheet and markup html\n  "
+  "content": "custom preview theme\n notational velocity (nvalt) custom stylesheet and markup html\n  ",
+  "draft": false
 },
 {
   "index": 32,
@@ -360,7 +392,8 @@
   "date": "2016-09-29",
   "tags": ["apache", "SSL", "TLS", "tmux"],
   "description": "",
-  "content": " objective this page is a notes for setting apache server for my digital ocean droplet\nsetting apache2  in file /etc/hosts\n change 127.0.0.1 localhost to 127.0.1.1 localhost wordpress-calp-lpss\n  change port\n in file /etc/apache2/port.conf\n add servername localhost\n change the line listen *:80 to listen 127.0.0.1:4000\n disable other modules \u0026lt;ifmodule ssl_module\u0026gt; and \u0026lt;ifmodule mod_gnutls.c\u0026gt;\n in file /etc/apache2/site-enabled/000-default.conf\n change the line \u0026lt;virtualhost *:80\u0026gt; to \u0026lt;virtualhost localhost:4000\u0026gt;\n  restart apache2\n run sudo /etc/init.d/apache2 restart\n   wordpress config wordpress to use proxy\n add the following lines in /var/www/html/wp-config.php\n  define(‘wp_proxy_host’, ‘careers.liping.edu.hk’); define(‘wp_proxy_port’, ’80’);` define('wp_proxy_bypass_hosts', 'localhost, careers.liping.edu.hk'); define('force_ssl_admin', true);   add the following lines in `/var/www/html/wp-content/themes/yourtheme/function.php\n  update_option( 'siteurl', 'http://careers.liping.edu.hk' ); update_option( 'home', 'http://careers.liping.edu.hk' );  caddy server careers.liping.edu.hk proxy / localhost:4000 { header_upstream host {host} }  using caddy to run the server through tmux\ntodo set apache only serve for localhost\n use caddy to create a proxy server with https\n fix all mixed content problem\n use goggle oauth2 login instead\n set autostart and run in daemon with upstart\n  reference  denbeke – running caddy server as a service with upstart\n how to configure the apache web server on an ubuntu or debian vps | digitalocean\n is tls fast yet?\n proxy server - wikiwand\n webmaster - wikiwand\n  key word  reverse proxy\n microservice\n load balancing\n  "
+  "content": " objective this page is a notes for setting apache server for my digital ocean droplet\nsetting apache2  in file /etc/hosts\n change 127.0.0.1 localhost to 127.0.1.1 localhost wordpress-calp-lpss\n  change port\n in file /etc/apache2/port.conf\n add servername localhost\n change the line listen *:80 to listen 127.0.0.1:4000\n disable other modules \u0026lt;ifmodule ssl_module\u0026gt; and \u0026lt;ifmodule mod_gnutls.c\u0026gt;\n in file /etc/apache2/site-enabled/000-default.conf\n change the line \u0026lt;virtualhost *:80\u0026gt; to \u0026lt;virtualhost localhost:4000\u0026gt;\n  restart apache2\n run sudo /etc/init.d/apache2 restart\n   wordpress config wordpress to use proxy\n add the following lines in /var/www/html/wp-config.php\n  define(‘wp_proxy_host’, ‘careers.liping.edu.hk’); define(‘wp_proxy_port’, ’80’);` define('wp_proxy_bypass_hosts', 'localhost, careers.liping.edu.hk'); define('force_ssl_admin', true);   add the following lines in `/var/www/html/wp-content/themes/yourtheme/function.php\n  update_option( 'siteurl', 'http://careers.liping.edu.hk' ); update_option( 'home', 'http://careers.liping.edu.hk' );  caddy server careers.liping.edu.hk proxy / localhost:4000 { header_upstream host {host} }  using caddy to run the server through tmux\ntodo set apache only serve for localhost\n use caddy to create a proxy server with https\n fix all mixed content problem\n use goggle oauth2 login instead\n set autostart and run in daemon with upstart\n  reference  denbeke – running caddy server as a service with upstart\n how to configure the apache web server on an ubuntu or debian vps | digitalocean\n is tls fast yet?\n proxy server - wikiwand\n webmaster - wikiwand\n  key word  reverse proxy\n microservice\n load balancing\n  ",
+  "draft": false
 },
 {
   "index": 33,
@@ -371,7 +404,8 @@
   "date": "2016-09-26",
   "tags": ["imagemagick", "productivity", "gif", "convert"],
   "description": "",
-  "content": " install imagemagick through homebrew $ brew install imagemagick  convert pngs to gif with 2 second per frame $ convert -delay 200 *.png converted.gif  "
+  "content": " install imagemagick through homebrew $ brew install imagemagick  convert pngs to gif with 2 second per frame $ convert -delay 200 *.png converted.gif  ",
+  "draft": false
 },
 {
   "index": 34,
@@ -382,7 +416,8 @@
   "date": "2016-09-25",
   "tags": [],
   "description": "",
-  "content": " openssl is a toolkit for the tls and ssl. the most common openssl commands key/cert types x.509 - wikiwand der vs. crt vs. cer vs. pem certificates and how to convert them .pem == .crt == x.509? probably .key == .csr == der? probably not, .csr can be converted to .crt .pfx/.p12 == pkcs#12\nkey: no meta data, just the prime numbers and moduluses cert: with meta data\ncert generation how to create a .pfx/.p12 certificate file using openssl – ssl information and faq howto: generate a csr for openssl – (see tools.ssl.com) – ssl information and faq ssl - how to create a self-signed certificate with openssl? - stack overflow openssl csr tool - create your csr faster | digicert.com\nhow to create a self-signed ssl certificate for nginx in ubuntu 16.04 | digitalocean\n# new private key and certificate signing request openssl req -nodes -new -newkey rsa:2048 -keyout privatekey.key -out csr.csr # then sign ssh certificate (.crt) with csr openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout selfsigned.key -out selfsigned.crt openssl genrsa -out privatekey.pem 2048 # key openssl req -new -key privatekey.pem -x509 -days 7300 -out certificate.pem openssl genpkey -algorithm rsa -out private_key.pem -pkeyopt rsa_keygen_bits:2048 openssl rsa -pubout -in private_key.pem -out public_key.pem  query cert how to examine the metadata of an ssl (https/tls) cert ssl certificate tools\n# x.509 openssl x509 -text -noout -in certificate.pem openssl x509 -text -noout -in certificate.cert # der openssl req -text -noout -in certificate.csr # pkcs#12 (.pfx or .p12) openssl pkcs12 -info -in key.p12  conversion ssl converter - convert ssl certificates to different formats\n# der (.crt .cer .der) -\u0026gt; pem openssl x509 -inform der -in certificate.cer -out certificate.pem # pem -\u0026gt; der openssl x509 -outform der -in certificate.pem -out certificate.der # pkcs#12 -\u0026gt; pem openssl pkcs12 -in keystore.pfx -out keystore.pem -nodes # you can add -nocerts to only output the private key or add -nokeys to only output the certificates. # pem -\u0026gt; pkcs#12 openssl pkcs12 -export -out certificate.pfx -inkey privatekey.key -in certificate.crt -certfile cacert.crt  troubleshooting sudo su sudo tcpdump -vvv -s 0 -nni \u0026lt;interface\u0026gt; -w \u0026lt;file\u0026gt; host \u0026lt;host\u0026gt; and port \u0026lt;port\u0026gt; \u0026amp; openssl s_client -connect \u0026lt;host\u0026gt;:\u0026lt;port\u0026gt; -state -msg # e.g. sudo su sudo tcpdump -vvv -s 0 -nni eno1 -w internal.cap host 10.6.64.170 and port 443 \u0026amp; openssl s_client -connect 10.6.64.170:443 -state -msg  sol15475 - troubleshooting ssl/tls renegotiation sol15292 - troubleshooting ssl/tls handshake failures sol10209 - overview of packet tracing with the ssldump utility\n"
+  "content": " openssl is a toolkit for the tls and ssl. the most common openssl commands key/cert types x.509 - wikiwand der vs. crt vs. cer vs. pem certificates and how to convert them .pem == .crt == x.509? probably .key == .csr == der? probably not, .csr can be converted to .crt .pfx/.p12 == pkcs#12\nkey: no meta data, just the prime numbers and moduluses cert: with meta data\ncert generation how to create a .pfx/.p12 certificate file using openssl – ssl information and faq howto: generate a csr for openssl – (see tools.ssl.com) – ssl information and faq ssl - how to create a self-signed certificate with openssl? - stack overflow openssl csr tool - create your csr faster | digicert.com\nhow to create a self-signed ssl certificate for nginx in ubuntu 16.04 | digitalocean\n# new private key and certificate signing request openssl req -nodes -new -newkey rsa:2048 -keyout privatekey.key -out csr.csr # then sign ssh certificate (.crt) with csr openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout selfsigned.key -out selfsigned.crt openssl genrsa -out privatekey.pem 2048 # key openssl req -new -key privatekey.pem -x509 -days 7300 -out certificate.pem openssl genpkey -algorithm rsa -out private_key.pem -pkeyopt rsa_keygen_bits:2048 openssl rsa -pubout -in private_key.pem -out public_key.pem  query cert how to examine the metadata of an ssl (https/tls) cert ssl certificate tools\n# x.509 openssl x509 -text -noout -in certificate.pem openssl x509 -text -noout -in certificate.cert # der openssl req -text -noout -in certificate.csr # pkcs#12 (.pfx or .p12) openssl pkcs12 -info -in key.p12  conversion ssl converter - convert ssl certificates to different formats\n# der (.crt .cer .der) -\u0026gt; pem openssl x509 -inform der -in certificate.cer -out certificate.pem # pem -\u0026gt; der openssl x509 -outform der -in certificate.pem -out certificate.der # pkcs#12 -\u0026gt; pem openssl pkcs12 -in keystore.pfx -out keystore.pem -nodes # you can add -nocerts to only output the private key or add -nokeys to only output the certificates. # pem -\u0026gt; pkcs#12 openssl pkcs12 -export -out certificate.pfx -inkey privatekey.key -in certificate.crt -certfile cacert.crt  troubleshooting sudo su sudo tcpdump -vvv -s 0 -nni \u0026lt;interface\u0026gt; -w \u0026lt;file\u0026gt; host \u0026lt;host\u0026gt; and port \u0026lt;port\u0026gt; \u0026amp; openssl s_client -connect \u0026lt;host\u0026gt;:\u0026lt;port\u0026gt; -state -msg # e.g. sudo su sudo tcpdump -vvv -s 0 -nni eno1 -w internal.cap host 10.6.64.170 and port 443 \u0026amp; openssl s_client -connect 10.6.64.170:443 -state -msg  sol15475 - troubleshooting ssl/tls renegotiation sol15292 - troubleshooting ssl/tls handshake failures sol10209 - overview of packet tracing with the ssldump utility\n",
+  "draft": false
 },
 {
   "index": 35,
@@ -393,7 +428,8 @@
   "date": "2016-09-25",
   "tags": ["security", "SSL", "TLS"],
   "description": "",
-  "content": " transport layer security (tls) and its predecessor, secure sockets layer (ssl), are cryptographic protocols designed to provide communications security over a computer network.\nthe authentication relied on certificate authorities (ca) and a public key infrastructure using x.509 certificates. the server register with a ca and sign its public key with the key of ca for a fee. the client, after receiving the public key from server, verifies it with the ca.\nfile:ssl handshake with two way authentication with certificates.png - wikimedia commons\nopenssl is a toolkit for the tls and ssl.\n see open ssl\n  imperialviolet - overclocking ssl\n imperialviolet - public key pinning\n survival guide - tls/ssl and ssl (x.509) certificates (ca-signed and self-signed)\n is tls fast yet?\n bettercrypto⋅org\n rolling out public key pinning with hpkp reporting \u0026ndash; google web updates\n the ssl/tls handshake: an overview – ssl information and faq\n ssl: it\u0026rsquo;s hard to do right | the recompiler\n how the nsa (may have) put a backdoor in rsa\u0026rsquo;s cryptography: a technical primer | ars technica\n critics slam ssl authority for minting certificate for impersonating sites | ars technica\n how to obtain and install an ssl/tls certificate, for free | ars technica\n web served, part 2: securing things with ssl/tls | ars technica\n  hsts  http strict transport security - wikiwand: always use https\n hsts preload list submission\n  ssl checkers  qualys ssl labs\n ssl certificate checker - diagnostic tool | digicert.com\n  perfect forward secrecy (pfs)  ssl enabling forward secrecy | digicert.com\n  issues ca as it turns out, ca may not be trust-worthy after all. there are many instances of ca issuing fraudulent certificates (willingly or being hacked).\n how the comodo certificate fraud calls ca trust into question | ars technica\n google warns of unauthorized tls certificates trusted by almost all oses[updated] | ars technica google chrome will banish chinese certificate authority for breach of trust | ars technica\n another fraudulent certificate raises the same old questions about certificate authorities | ars technica\n  heartbleed (2014)  heartbleed bug\n heartbleed – andrew kennedy\n critical crypto bug exposes yahoo mail, other passwords russian roulette-style | ars technica\n coder in a world of code: my heart bleeds for openssl\n  renegotiation gap (2009)  truth in soa: really understanding the ssl/tls vulnerability (part 1)\n  let\u0026rsquo;s encrypt  let\u0026rsquo;s encrypt\n how it works\n technology\n the ca\u0026rsquo;s role in fighting phishing and malware - let\u0026rsquo;s encrypt - free ssl/tls certificates\n rate limits for let\u0026rsquo;s encrypt - documentation - let\u0026rsquo;s encrypt community support\n let\u0026rsquo;s encrypt demo - youtube\n generate free ssl certificates with docker and letsencrypt | tit petrič\n how to secure nginx with let\u0026rsquo;s encrypt on ubuntu 16.04 | digitalocean\n let\u0026rsquo;s encrypt with haproxy\n let\u0026rsquo;s encrypt on raspberry pi\n adventures in haproxy: tcp, tls, https, ssh, openvpn\n letsencrypt on nginx\n how to configure nginx with free let\u0026rsquo;s encrypt ssl certificate on debian or ubuntu linux\n  clients  letsencrypt\n certbot\n acmetool\n diafygi/acme-tiny: a tiny script to issue and renew tls certs from let\u0026rsquo;s encrypt\n neilpang/le: simplest shell script for letsencrypt free certificate client\n xenolf/lego: let\u0026rsquo;s encrypt client and acme library written in go used in caddy\n daplie/node-letsencrypt: letsencrypt for node.js\n dylanpiercey/auto-sni: free, automated https for nodejs made easy.\n  heroku  announcing heroku free ssl beta and flexible dyno hours | heroku\n let\u0026rsquo;s encrypt and heroku [solved] - server - let\u0026rsquo;s encrypt community support\n let\u0026rsquo;s encrypt with a rails app on heroku // collective idea | crafting web and mobile software based in holland, michigan\n use let\u0026rsquo;s encrypt tls certificate on heroku \u0026ndash; sikachu\u0026rsquo;s blog \u0026ndash; medium\n ssl endpoint | heroku dev center\n set up cloudflare\u0026rsquo;s free ssl on heroku\n  standards  rfc 2986 - pkcs #10: certification request syntax specification version 1.7\n rfc 3447 - public-key cryptography standards (pkcs) #1: rsa cryptography specifications version 2.1\n rfc 5958 - asymmetric key packages\n rfc 6101 - the secure sockets layer (ssl) protocol version 3.0\n rfc 7525 - recommendations for secure use of transport layer security (tls) and datagram transport layer security (dtls)\n rfc 7292 - pkcs #12: personal information exchange syntax v1.1\n  "
+  "content": " transport layer security (tls) and its predecessor, secure sockets layer (ssl), are cryptographic protocols designed to provide communications security over a computer network.\nthe authentication relied on certificate authorities (ca) and a public key infrastructure using x.509 certificates. the server register with a ca and sign its public key with the key of ca for a fee. the client, after receiving the public key from server, verifies it with the ca.\nfile:ssl handshake with two way authentication with certificates.png - wikimedia commons\nopenssl is a toolkit for the tls and ssl.\n see open ssl\n  imperialviolet - overclocking ssl\n imperialviolet - public key pinning\n survival guide - tls/ssl and ssl (x.509) certificates (ca-signed and self-signed)\n is tls fast yet?\n bettercrypto⋅org\n rolling out public key pinning with hpkp reporting \u0026ndash; google web updates\n the ssl/tls handshake: an overview – ssl information and faq\n ssl: it\u0026rsquo;s hard to do right | the recompiler\n how the nsa (may have) put a backdoor in rsa\u0026rsquo;s cryptography: a technical primer | ars technica\n critics slam ssl authority for minting certificate for impersonating sites | ars technica\n how to obtain and install an ssl/tls certificate, for free | ars technica\n web served, part 2: securing things with ssl/tls | ars technica\n  hsts  http strict transport security - wikiwand: always use https\n hsts preload list submission\n  ssl checkers  qualys ssl labs\n ssl certificate checker - diagnostic tool | digicert.com\n  perfect forward secrecy (pfs)  ssl enabling forward secrecy | digicert.com\n  issues ca as it turns out, ca may not be trust-worthy after all. there are many instances of ca issuing fraudulent certificates (willingly or being hacked).\n how the comodo certificate fraud calls ca trust into question | ars technica\n google warns of unauthorized tls certificates trusted by almost all oses[updated] | ars technica google chrome will banish chinese certificate authority for breach of trust | ars technica\n another fraudulent certificate raises the same old questions about certificate authorities | ars technica\n  heartbleed (2014)  heartbleed bug\n heartbleed – andrew kennedy\n critical crypto bug exposes yahoo mail, other passwords russian roulette-style | ars technica\n coder in a world of code: my heart bleeds for openssl\n  renegotiation gap (2009)  truth in soa: really understanding the ssl/tls vulnerability (part 1)\n  let\u0026rsquo;s encrypt  let\u0026rsquo;s encrypt\n how it works\n technology\n the ca\u0026rsquo;s role in fighting phishing and malware - let\u0026rsquo;s encrypt - free ssl/tls certificates\n rate limits for let\u0026rsquo;s encrypt - documentation - let\u0026rsquo;s encrypt community support\n let\u0026rsquo;s encrypt demo - youtube\n generate free ssl certificates with docker and letsencrypt | tit petrič\n how to secure nginx with let\u0026rsquo;s encrypt on ubuntu 16.04 | digitalocean\n let\u0026rsquo;s encrypt with haproxy\n let\u0026rsquo;s encrypt on raspberry pi\n adventures in haproxy: tcp, tls, https, ssh, openvpn\n letsencrypt on nginx\n how to configure nginx with free let\u0026rsquo;s encrypt ssl certificate on debian or ubuntu linux\n  clients  letsencrypt\n certbot\n acmetool\n diafygi/acme-tiny: a tiny script to issue and renew tls certs from let\u0026rsquo;s encrypt\n neilpang/le: simplest shell script for letsencrypt free certificate client\n xenolf/lego: let\u0026rsquo;s encrypt client and acme library written in go used in caddy\n daplie/node-letsencrypt: letsencrypt for node.js\n dylanpiercey/auto-sni: free, automated https for nodejs made easy.\n  heroku  announcing heroku free ssl beta and flexible dyno hours | heroku\n let\u0026rsquo;s encrypt and heroku [solved] - server - let\u0026rsquo;s encrypt community support\n let\u0026rsquo;s encrypt with a rails app on heroku // collective idea | crafting web and mobile software based in holland, michigan\n use let\u0026rsquo;s encrypt tls certificate on heroku \u0026ndash; sikachu\u0026rsquo;s blog \u0026ndash; medium\n ssl endpoint | heroku dev center\n set up cloudflare\u0026rsquo;s free ssl on heroku\n  standards  rfc 2986 - pkcs #10: certification request syntax specification version 1.7\n rfc 3447 - public-key cryptography standards (pkcs) #1: rsa cryptography specifications version 2.1\n rfc 5958 - asymmetric key packages\n rfc 6101 - the secure sockets layer (ssl) protocol version 3.0\n rfc 7525 - recommendations for secure use of transport layer security (tls) and datagram transport layer security (dtls)\n rfc 7292 - pkcs #12: personal information exchange syntax v1.1\n  ",
+  "draft": false
 },
 {
   "index": 36,
@@ -404,7 +440,8 @@
   "date": "2016-03-26",
   "tags": ["do", "scp"],
   "description": "",
-  "content": " connect to console # prepare ssh keys first # login droplet ssh root@ip.of.the.droplet # to copy a file from b to a while logged into b scp /path/to/file username@a:/path/to/destination # to copy a file from b to a while logged into a scp username@b:/path/to/file /path/to/destination  perpare ssh key  how to use ssh keys with digitalocean droplets | digitalocean\n  achieve  save a snapshot and delete droplet\n restore droplet by the snapshot\n  update server\u0026rsquo;s kernel  how to update a digitalocean server\u0026rsquo;s kernel | digitalocean\n  "
+  "content": " connect to console # prepare ssh keys first # login droplet ssh root@ip.of.the.droplet # to copy a file from b to a while logged into b scp /path/to/file username@a:/path/to/destination # to copy a file from b to a while logged into a scp username@b:/path/to/file /path/to/destination  perpare ssh key  how to use ssh keys with digitalocean droplets | digitalocean\n  achieve  save a snapshot and delete droplet\n restore droplet by the snapshot\n  update server\u0026rsquo;s kernel  how to update a digitalocean server\u0026rsquo;s kernel | digitalocean\n  ",
+  "draft": false
 },
 {
   "index": 37,
@@ -415,7 +452,8 @@
   "date": "2015-12-08",
   "tags": ["database", "javascript", "leveldb"],
   "description": "",
-  "content": " links  main page\n [youtube introduction][leveldb]\n  [leveldb]: https://www.youtube.com/watch?v=sr7p_jbeip0) beip0\n"
+  "content": " links  main page\n [youtube introduction][leveldb]\n  [leveldb]: https://www.youtube.com/watch?v=sr7p_jbeip0) beip0\n",
+  "draft": false
 },
 {
   "index": 38,
@@ -426,7 +464,8 @@
   "date": "2015-10-01",
   "tags": ["macos", "setting"],
   "description": "",
-  "content": " custom osx  remove shift key augmentation for mission control animation\n enable the three finger drag in accessibility\n  terminal  autocomplete echo \u0026quot;set completion-ignore-case on\u0026quot; \u0026gt;\u0026gt; ~/.inputrc\n install command line tools in xcode xcode-select --install\n  zsh  install .oh-my-zsh\n symlink for setting zsh\n  ## for installation of zsh ln -s dropbox/macsetting/terminal/cyrusn ./.cyrusn ln -s ~/dropbox/macsetting/terminal/zsh/.zshrc ~/ ln -s ~/dropbox/macsetting/terminal/zsh/.zsh-custom ~/ ## for installation of coreutil/.dir_colors ln -s ~/dropbox/macsetting/terminal/coreutil/.dir_colors ~/  for further customisation  add export at ~/dropbox/macsetting/terminal/zsh/.zsh-custom/export.zsh\n add alias at ~/dropbox/macsetting/terminal/zsh/.zsh-custom/alias.zsh\n  homebrew package my automatic script for installation homebrew package https://github.com/cyrusn/cyrusn-terminal-setting\nnodejs setting set the bin folder in ${home} # .npmrc # reference: https://gist.github.com/leesei/6591437 prefix = ${home}/.npm-packages  find all global packages for install echo \u0026quot;$(\\ls $(npm root -g) | tr -s '\\t\\n' ' ')\u0026quot;  npm list -g npm install -g eslint eslint-plugin-react gulp hexo hexo-cli http-server jshint jsxhint lodash node-gyp nodemon  export path at .bashrc or .zshrc or equivalent export node_path=$home/.npm-packages/lib/node_modules export path=$home/.npm-packages/bin:$path  create symlink cd ~/ ln -s ~/dropbox/macsetting/terminal/vim ~/.vim ln -s ~/dropbox/macsetting/atom/ ~/.atom ln -s ~/dropbox/.npm-packages/ ~/  sublimetext cd ~/library/application\\ support/sublime\\ text\\ 3/packages/ ln -s ~/dropbox/macsetting/sublimetext/user ./  custom setting on osx  set terminal color theme\n  "
+  "content": " custom osx  remove shift key augmentation for mission control animation\n enable the three finger drag in accessibility\n  terminal  autocomplete echo \u0026quot;set completion-ignore-case on\u0026quot; \u0026gt;\u0026gt; ~/.inputrc\n install command line tools in xcode xcode-select --install\n  zsh  install .oh-my-zsh\n symlink for setting zsh\n  ## for installation of zsh ln -s dropbox/macsetting/terminal/cyrusn ./.cyrusn ln -s ~/dropbox/macsetting/terminal/zsh/.zshrc ~/ ln -s ~/dropbox/macsetting/terminal/zsh/.zsh-custom ~/ ## for installation of coreutil/.dir_colors ln -s ~/dropbox/macsetting/terminal/coreutil/.dir_colors ~/  for further customisation  add export at ~/dropbox/macsetting/terminal/zsh/.zsh-custom/export.zsh\n add alias at ~/dropbox/macsetting/terminal/zsh/.zsh-custom/alias.zsh\n  homebrew package my automatic script for installation homebrew package https://github.com/cyrusn/cyrusn-terminal-setting\nnodejs setting set the bin folder in ${home} # .npmrc # reference: https://gist.github.com/leesei/6591437 prefix = ${home}/.npm-packages  find all global packages for install echo \u0026quot;$(\\ls $(npm root -g) | tr -s '\\t\\n' ' ')\u0026quot;  npm list -g npm install -g eslint eslint-plugin-react gulp hexo hexo-cli http-server jshint jsxhint lodash node-gyp nodemon  export path at .bashrc or .zshrc or equivalent export node_path=$home/.npm-packages/lib/node_modules export path=$home/.npm-packages/bin:$path  create symlink cd ~/ ln -s ~/dropbox/macsetting/terminal/vim ~/.vim ln -s ~/dropbox/macsetting/atom/ ~/.atom ln -s ~/dropbox/.npm-packages/ ~/  sublimetext cd ~/library/application\\ support/sublime\\ text\\ 3/packages/ ln -s ~/dropbox/macsetting/sublimetext/user ./  custom setting on osx  set terminal color theme\n  ",
+  "draft": false
 },
 {
   "index": 39,
@@ -437,7 +476,8 @@
   "date": "2015-07-24",
   "tags": ["productivity", "alfred"],
   "description": "",
-  "content": " how to use node on alfred workflow node\u0026lt;\u0026lt;-\u0026quot;code\u0026quot; // your code here // e.g. console.log(\u0026quot;hello world\u0026quot;); code  iterm2 integration curl --silent 'https://raw.githubusercontent.com/stuartcryan/custom-iterm-applescripts-for-alfred/master/custom_iterm_script_iterm_2.9.applescript' | pbcopy   stuartcryan/custom-iterm-applescripts-for-alfred: custom iterm applescripts for alfred\n  "
+  "content": " how to use node on alfred workflow node\u0026lt;\u0026lt;-\u0026quot;code\u0026quot; // your code here // e.g. console.log(\u0026quot;hello world\u0026quot;); code  iterm2 integration curl --silent 'https://raw.githubusercontent.com/stuartcryan/custom-iterm-applescripts-for-alfred/master/custom_iterm_script_iterm_2.9.applescript' | pbcopy   stuartcryan/custom-iterm-applescripts-for-alfred: custom iterm applescripts for alfred\n  ",
+  "draft": false
 },
 {
   "index": 40,
@@ -448,7 +488,8 @@
   "date": "2015-06-29",
   "tags": ["google", "chrome", "app"],
   "description": "",
-  "content": " links  adblock plus - chrome web store\n tampermonkey - chrome web store\n wikiwand: wikipedia modernized - chrome web store\n markdown preview plus - chrome web store\n postman - rest client - chrome web store\n  "
+  "content": " links  adblock plus - chrome web store\n tampermonkey - chrome web store\n wikiwand: wikipedia modernized - chrome web store\n markdown preview plus - chrome web store\n postman - rest client - chrome web store\n  ",
+  "draft": false
 },
 {
   "index": 41,
@@ -459,7 +500,8 @@
   "date": "2015-06-05",
   "tags": ["productivity"],
   "description": "",
-  "content": "  links\n leesei\u0026rsquo;s choice\n naming\n what can i learn right now in just 10 minutes that could be useful for the rest of my programming career?\n  [programming principal][pp]\n reference\n  links  how to make your code self-documenting? | codeutopia\n separation of concerns - wikipedia\n garbage in, garbage out - wikiwand\n  leesei\u0026rsquo;s choice naming  寫出黎就要俾名，俾名啲concept 就清楚，code 亦自然清楚\n what can i learn right now in just 10 minutes that could be useful for the rest of my programming career?  that programming is about solving problems, not writing code. here are the four basic tasks that an individual programmer must perform.\n define the problem (requirements and constraints).\n define the solution (algorithms and data structures).\n express the solution in code.\n prove and/or test correctness.\n   programming principal  separation of concern\n dry - don’t repeat yourself\n abstraction principle\n kiss (keep it simple, stupid!)\n write code for the maintainer\n principle of least astonishment\n yagni (you aren’t gonna need it)\n do the simplest thing that could possibly work\n open/closed principle\n orthogonality\n robustness principle\n hide implementation details\n minimize coupling\n maximize cohesion\n principle of least astonishment\n boy-scout rule\n leave the campground cleaner than you found it\n  law of demeter\n don’t talk to stranger\n design patterns - according to demeter\u0026rsquo;s law, is a class allowed to return one of its members? - software engineering stack exchange\n  code reuse is good\n embrace change\n don’t make me think\n do one thing and do it well (unix philosophy)\n single responsibility principle\n curly’s law\n  single responsibility principle\n avoid premature optimization\n  reference  the principles of good programming\n programming principles\n  "
+  "content": "  links\n leesei\u0026rsquo;s choice\n naming\n what can i learn right now in just 10 minutes that could be useful for the rest of my programming career?\n  [programming principal][pp]\n reference\n  links  how to make your code self-documenting? | codeutopia\n separation of concerns - wikipedia\n garbage in, garbage out - wikiwand\n  leesei\u0026rsquo;s choice naming  寫出黎就要俾名，俾名啲concept 就清楚，code 亦自然清楚\n what can i learn right now in just 10 minutes that could be useful for the rest of my programming career?  that programming is about solving problems, not writing code. here are the four basic tasks that an individual programmer must perform.\n define the problem (requirements and constraints).\n define the solution (algorithms and data structures).\n express the solution in code.\n prove and/or test correctness.\n   programming principal  separation of concern\n dry - don’t repeat yourself\n abstraction principle\n kiss (keep it simple, stupid!)\n write code for the maintainer\n principle of least astonishment\n yagni (you aren’t gonna need it)\n do the simplest thing that could possibly work\n open/closed principle\n orthogonality\n robustness principle\n hide implementation details\n minimize coupling\n maximize cohesion\n principle of least astonishment\n boy-scout rule\n leave the campground cleaner than you found it\n  law of demeter\n don’t talk to stranger\n design patterns - according to demeter\u0026rsquo;s law, is a class allowed to return one of its members? - software engineering stack exchange\n  code reuse is good\n embrace change\n don’t make me think\n do one thing and do it well (unix philosophy)\n single responsibility principle\n curly’s law\n  single responsibility principle\n avoid premature optimization\n  reference  the principles of good programming\n programming principles\n  ",
+  "draft": false
 },
 {
   "index": 42,
@@ -470,7 +512,8 @@
   "date": "2015-05-28",
   "tags": ["uml"],
   "description": "",
-  "content": " usecase include and extend uml - what\u0026rsquo;s is the difference between include and extend in use case diagram? - stack overflow\nexample amazon application use case diagram\ncreole in notes notes in plantuml support creole language creole (markup) - wikiwand)\nlinks  uml 2.0 tutorial - youtube\n unified modeling language (uml) description\n  "
+  "content": " usecase include and extend uml - what\u0026rsquo;s is the difference between include and extend in use case diagram? - stack overflow\nexample amazon application use case diagram\ncreole in notes notes in plantuml support creole language creole (markup) - wikiwand)\nlinks  uml 2.0 tutorial - youtube\n unified modeling language (uml) description\n  ",
+  "draft": false
 },
 {
   "index": 43,
@@ -481,7 +524,8 @@
   "date": "2015-05-27",
   "tags": ["macos", "osascript"],
   "description": "",
-  "content": " example  jxa-cookbook\n apple release notes\n javascript for os x automation by example\n  display notification #! /usr/bin/osascript -l javascript app = application.currentapplication(); app.includestandardadditions = true; app.displaynotification('hello, world', {withtitle: 'title'})  example // alfred workflow // convert google chrome active tab to markdown link function run(argz) { var app = application.currentapplication(); app.includestandardadditions = true; var chrome = application('google chrome'); var activetab = chrome.windows[\u0026amp;0].activetab; var result = '[' + activetab.title() + '](' + activetab.url() + ')'; app.settheclipboardto(result) return result }  // alfred workflow: // email link of google chrome active tab function run(argz){ var chrome = application('google chrome'); var activetab = chrome.windows[\u0026amp;0].activetab; var title: activetab.title(); var url = activetab.url(); var mdl = '[' + title + '](' + url + ')'; // cos i use airmail as email client var airmail = application('airmail'); message = airmail.outgoingmessage().make(); message.subject = activetab.title(); var htmlcontent = ''; htmlcontent += '\u0026lt;a href=\u0026quot;' + url + '\u0026quot;\u0026gt;' + url + '\u0026lt;/a\u0026gt;'; htmlcontent += '\u0026lt;br\u0026gt;\u0026lt;br\u0026gt;'; htmlcontent += mdl; message.htmlcontent = htmlcontent; airmail.compose(message); airmail.activate(); }  "
+  "content": " example  jxa-cookbook\n apple release notes\n javascript for os x automation by example\n  display notification #! /usr/bin/osascript -l javascript app = application.currentapplication(); app.includestandardadditions = true; app.displaynotification('hello, world', {withtitle: 'title'})  example // alfred workflow // convert google chrome active tab to markdown link function run(argz) { var app = application.currentapplication(); app.includestandardadditions = true; var chrome = application('google chrome'); var activetab = chrome.windows[\u0026amp;0].activetab; var result = '[' + activetab.title() + '](' + activetab.url() + ')'; app.settheclipboardto(result) return result }  // alfred workflow: // email link of google chrome active tab function run(argz){ var chrome = application('google chrome'); var activetab = chrome.windows[\u0026amp;0].activetab; var title: activetab.title(); var url = activetab.url(); var mdl = '[' + title + '](' + url + ')'; // cos i use airmail as email client var airmail = application('airmail'); message = airmail.outgoingmessage().make(); message.subject = activetab.title(); var htmlcontent = ''; htmlcontent += '\u0026lt;a href=\u0026quot;' + url + '\u0026quot;\u0026gt;' + url + '\u0026lt;/a\u0026gt;'; htmlcontent += '\u0026lt;br\u0026gt;\u0026lt;br\u0026gt;'; htmlcontent += mdl; message.htmlcontent = htmlcontent; airmail.compose(message); airmail.activate(); }  ",
+  "draft": false
 },
 {
   "index": 44,
@@ -492,7 +536,8 @@
   "date": "2015-05-26",
   "tags": [],
   "description": "",
-  "content": " reading list  ben alman » immediately-invoked function expression (iife)\n this section demos loading different config depending on node_env.\n protecting-your-keys-from-github\n papyros - arch linux.\n resrc · restful web services\n hub\n demystifying regular expressions- youtube foundation of apps\n timeline js\n 淺談https\n leesei\u0026rsquo;s shell notes\n command line basic\n dotfile\n angular-strap-scrollspy.js at master · mgcrea-angular-strap · github\n javascript - properly handing anchors in angularstrap\u0026rsquo;s scrollspy - stack overflow\n ngscrollspy by mg\n twitter bootstrap - how to implement a scrollspy in angular.js the right way? - stack overflow\n using angularjs to recreate bootstrap\u0026rsquo;s scrollspy - alexander hill | mallex();\n using scrollspy in angularjs - acnenomor.com\n flowtype\n sublimelinter\n shitformakingwebsites\n eskimo\n electrolyte\n  archive  what-programming-languages-should-a-modern-day-programmer-have-in-his-her-arsenal\n remark js\n  "
+  "content": " reading list  ben alman » immediately-invoked function expression (iife)\n this section demos loading different config depending on node_env.\n protecting-your-keys-from-github\n papyros - arch linux.\n resrc · restful web services\n hub\n demystifying regular expressions- youtube foundation of apps\n timeline js\n 淺談https\n leesei\u0026rsquo;s shell notes\n command line basic\n dotfile\n angular-strap-scrollspy.js at master · mgcrea-angular-strap · github\n javascript - properly handing anchors in angularstrap\u0026rsquo;s scrollspy - stack overflow\n ngscrollspy by mg\n twitter bootstrap - how to implement a scrollspy in angular.js the right way? - stack overflow\n using angularjs to recreate bootstrap\u0026rsquo;s scrollspy - alexander hill | mallex();\n using scrollspy in angularjs - acnenomor.com\n flowtype\n sublimelinter\n shitformakingwebsites\n eskimo\n electrolyte\n  archive  what-programming-languages-should-a-modern-day-programmer-have-in-his-her-arsenal\n remark js\n  ",
+  "draft": false
 },
 {
   "index": 45,
@@ -503,7 +548,8 @@
   "date": "2015-05-26",
   "tags": ["wordpress"],
   "description": "",
-  "content": " theme child themes « wordpress codex\nmigrate moving wordpress « wordpress codex\n"
+  "content": " theme child themes « wordpress codex\nmigrate moving wordpress « wordpress codex\n",
+  "draft": false
 },
 {
   "index": 46,
@@ -514,7 +560,8 @@
   "date": "2015-05-24",
   "tags": ["commandline", "terminal", "httpie", "jq", "zsh", "redirect", "xargs", "wild card", "pt", "kill", "top"],
   "description": "",
-  "content": " basic redirect operators # pipe echo \u0026quot;hello world\u0026quot; | sed 's/ /_/' # redirect the standard output result to file (replace) echo \u0026quot;hello world\u0026quot; \u0026gt; test.txt # redirect the standard output result to file (append) echo \u0026quot;hello world\u0026quot; \u0026gt;\u0026gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed 's/ /_/g' \u0026lt; test.txt \u0026gt; test_1.txt # line input cat \u0026lt;\u0026lt; end heredoc\u0026gt; hello heredoc\u0026gt; world heredoc\u0026gt; end  useful commands cheatsheet  d to show directory history\n type cd -number or directly type the number to go to directory\n  !:n-m get the attribute from n to m of last command\n !! to get the last command\n !* to get the argz of last command\n zsh tip\n  links  zsh - table of contents\n  copydir function copydir { pwd | tr -d \u0026quot;\\r\\n\u0026quot; | pbcopy }   copydir to copy current directory to clipboard\n  qlmanage # quick-look a file from the command line alias ql='qlmanage -p'  airport sudo ln -s /system/library/privateframeworks/apple80211.framework/versions/current/resources/airport /usr/sbin/airport  scan your local wireless environment from the command line\npgrep and pkill find or signal a program or process by name\nshutdown restart the mac\n$ shutdown -r now  textutil convert between various text file formats\nxargs granted, i often xargs at cli to do the looping (kylee):\n# simple use case echo \u0026quot;u r l\u0026quot; | xargs -n1 echo # -i may be needed for more complex use case (`mv @ @.bak`) # however -i implies -l (takes input as line) # so split before call echo \u0026quot;u r l\u0026quot; | sed 's/ /\\n/g' | xargs -i@ echo @ # or do with temp file echo \u0026quot;u\\nr\\nl\u0026quot; \u0026gt; file cat file | xargs -i@ echo @  find files and delete them can use * as wild card $ find . -name \u0026quot;file-to-find\u0026quot; -exec rm -rf {} \\;  powerful tools imagemagick (convert) imagemagick\n use imagemagick to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and bézier curves.\n convert image.jpg image.png  # it is sometimes convenient to resize an image as they are read. suppose you have hundreds of large jpeg images you want to convert to a sequence of png thumbails: convert '*.jpg' -resize 120x120 thumbnail%03d.png # rename file batchly $ rename 's/\\.html$/\\.php/' *.html  ffmpeg ffmpeg a complete, cross-platform solution to record, convert and stream audio and video.\n# -i mean input_file $ ffmpeg -i input.mp4 output.avi  http-server  http-server is a simple, zero-configuration command-line http server. it is powerful enough for production usage, but it\u0026rsquo;s simple and hackable enough to be used for testing, local development, and learning.\n youtube-dl  youtube-dl is a small command-line program to download videos from youtube.com and a few more sites.\n  platinum searcher  a code search tool similar to ack and the_silver_searcher(ag). it supports multi platforms and multi encodings.\n  $ pt  pandoc  examples\n a universal document converter\n  osx metadata mac os x mdfind, mdutil, mdls, mdimport. file metadata utilities\nhttpie – command line http client # install brew install httpie  jq  http -b url | jq .name\n  top using top command to kill running process\n"
+  "content": " basic redirect operators # pipe echo \u0026quot;hello world\u0026quot; | sed 's/ /_/' # redirect the standard output result to file (replace) echo \u0026quot;hello world\u0026quot; \u0026gt; test.txt # redirect the standard output result to file (append) echo \u0026quot;hello world\u0026quot; \u0026gt;\u0026gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed 's/ /_/g' \u0026lt; test.txt \u0026gt; test_1.txt # line input cat \u0026lt;\u0026lt; end heredoc\u0026gt; hello heredoc\u0026gt; world heredoc\u0026gt; end  useful commands cheatsheet  d to show directory history\n type cd -number or directly type the number to go to directory\n  !:n-m get the attribute from n to m of last command\n !! to get the last command\n !* to get the argz of last command\n zsh tip\n  links  zsh - table of contents\n  copydir function copydir { pwd | tr -d \u0026quot;\\r\\n\u0026quot; | pbcopy }   copydir to copy current directory to clipboard\n  qlmanage # quick-look a file from the command line alias ql='qlmanage -p'  airport sudo ln -s /system/library/privateframeworks/apple80211.framework/versions/current/resources/airport /usr/sbin/airport  scan your local wireless environment from the command line\npgrep and pkill find or signal a program or process by name\nshutdown restart the mac\n$ shutdown -r now  textutil convert between various text file formats\nxargs granted, i often xargs at cli to do the looping (kylee):\n# simple use case echo \u0026quot;u r l\u0026quot; | xargs -n1 echo # -i may be needed for more complex use case (`mv @ @.bak`) # however -i implies -l (takes input as line) # so split before call echo \u0026quot;u r l\u0026quot; | sed 's/ /\\n/g' | xargs -i@ echo @ # or do with temp file echo \u0026quot;u\\nr\\nl\u0026quot; \u0026gt; file cat file | xargs -i@ echo @  find files and delete them can use * as wild card $ find . -name \u0026quot;file-to-find\u0026quot; -exec rm -rf {} \\;  powerful tools imagemagick (convert) imagemagick\n use imagemagick to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and bézier curves.\n convert image.jpg image.png  # it is sometimes convenient to resize an image as they are read. suppose you have hundreds of large jpeg images you want to convert to a sequence of png thumbails: convert '*.jpg' -resize 120x120 thumbnail%03d.png # rename file batchly $ rename 's/\\.html$/\\.php/' *.html  ffmpeg ffmpeg a complete, cross-platform solution to record, convert and stream audio and video.\n# -i mean input_file $ ffmpeg -i input.mp4 output.avi  http-server  http-server is a simple, zero-configuration command-line http server. it is powerful enough for production usage, but it\u0026rsquo;s simple and hackable enough to be used for testing, local development, and learning.\n youtube-dl  youtube-dl is a small command-line program to download videos from youtube.com and a few more sites.\n  platinum searcher  a code search tool similar to ack and the_silver_searcher(ag). it supports multi platforms and multi encodings.\n  $ pt  pandoc  examples\n a universal document converter\n  osx metadata mac os x mdfind, mdutil, mdls, mdimport. file metadata utilities\nhttpie – command line http client # install brew install httpie  jq  http -b url | jq .name\n  top using top command to kill running process\n",
+  "draft": false
 },
 {
   "index": 47,
@@ -525,7 +572,8 @@
   "date": "2015-05-22",
   "tags": [],
   "description": "",
-  "content": " basic  hardware basics - youtube\n  what is legacy fga: \u0026ldquo;legacy\u0026rdquo; is not a pejorative. do not use it as such.\nbios post -\u0026gt; bios -\u0026gt; mbr of boot partition -\u0026gt; bootloader -\u0026gt; kernel -\u0026gt; init/systemd -\u0026gt; shell/display manager -\u0026gt; startx/xinit\nuefi unified extensible firmware interface - archwiki\n"
+  "content": " basic  hardware basics - youtube\n  what is legacy fga: \u0026ldquo;legacy\u0026rdquo; is not a pejorative. do not use it as such.\nbios post -\u0026gt; bios -\u0026gt; mbr of boot partition -\u0026gt; bootloader -\u0026gt; kernel -\u0026gt; init/systemd -\u0026gt; shell/display manager -\u0026gt; startx/xinit\nuefi unified extensible firmware interface - archwiki\n",
+  "draft": false
 },
 {
   "index": 48,
@@ -536,7 +584,8 @@
   "date": "2015-05-22",
   "tags": ["google script"],
   "description": "",
-  "content": " links  apps script | google developers\n  using html request to send form response  open inspecter in google form (view version, not editable one)\n find the input tag of the question and copy it\u0026rsquo;s name. the name look like entry.933828429\n replace the word view in the link to formresponse\n https://docs.google.com/forms/d/e/1faipqlsdc2rd1ad4w4dulgdjxsvfdgvjw6iuhhxsbgwiqlv7tu_w5la/formresponse\n  add the query to the end of the link look like above\n ?entry.933828429=hello%20world\n where %20 mean space\n  if you need another question\u0026rsquo;s response, use \u0026amp; as seperator, like below.\n ?entry.=hello%20world\u0026amp;entry.204155988=foo\n  finally, add ?submit=submit at the end\n this is the complete example\n https://docs.google.com/forms/d/e/1faipqlsdc2rd1ad4w4dulgdjxsvfdgvjw6iuhhxsbgwiqlv7tu_w5la/formresponse?ifq\u0026amp;entry.204155988=cyrus%20ngan\u0026amp;entry.544002008=foo\u0026amp;submit=submit\n   "
+  "content": " links  apps script | google developers\n  using html request to send form response  open inspecter in google form (view version, not editable one)\n find the input tag of the question and copy it\u0026rsquo;s name. the name look like entry.933828429\n replace the word view in the link to formresponse\n https://docs.google.com/forms/d/e/1faipqlsdc2rd1ad4w4dulgdjxsvfdgvjw6iuhhxsbgwiqlv7tu_w5la/formresponse\n  add the query to the end of the link look like above\n ?entry.933828429=hello%20world\n where %20 mean space\n  if you need another question\u0026rsquo;s response, use \u0026amp; as seperator, like below.\n ?entry.=hello%20world\u0026amp;entry.204155988=foo\n  finally, add ?submit=submit at the end\n this is the complete example\n https://docs.google.com/forms/d/e/1faipqlsdc2rd1ad4w4dulgdjxsvfdgvjw6iuhhxsbgwiqlv7tu_w5la/formresponse?ifq\u0026amp;entry.204155988=cyrus%20ngan\u0026amp;entry.544002008=foo\u0026amp;submit=submit\n   ",
+  "draft": false
 },
 {
   "index": 49,
@@ -547,7 +596,8 @@
   "date": "2015-05-21",
   "tags": ["hashbang"],
   "description": "",
-  "content": " hashbang line nodejs #! /usr/local/bin/node  js osascript #! /usr/bin/osascript -l javascript  zsh or bash #! /usr/bin/zsh #! /usr/bin/bash  "
+  "content": " hashbang line nodejs #! /usr/local/bin/node  js osascript #! /usr/bin/osascript -l javascript  zsh or bash #! /usr/bin/zsh #! /usr/bin/bash  ",
+  "draft": false
 },
 {
   "index": 50,
@@ -558,7 +608,8 @@
   "date": "2015-05-10",
   "tags": ["plantuml", "uml"],
   "description": "",
-  "content": "  [some links][some-links]\n [from leesei][from-leesei]\n [text based tools][text-based-tools]\n [gui tools][gui-tools]\n   some links uml | leesei\u0026rsquo;s notebook draw more, work less | [self employed] draw more, work less plantuml mermaid\nfrom leesei unified modeling language (uml) business process model and notation (bpmn) is very similar to activity diagram. yang central\nallen holub\u0026rsquo;s uml quick reference\ntext based tools i used to use the gui tool dia. but it was very buggy and no longer updated. i then went on to look for alternatives.\ni am frustrated with the ui diagram apps:\n layout of components takes time\n it is difficult to modify the diagrams in ui (especially for batch operations, e.g. rename, grouping)\n application lock-in becaused of the saved file format\n  so i focused on tools that provides a dsl for drawing uml from plain text. candidates are (ranked according to the criteria below):\n   tool language diagrams remark     plantuml java activity, state, sequence, component, class, object, use case, ditaa, jcckit, sudoku, xearth live, language reference   blockdiag python block, activity, sequence, network, rack, packet live   mermaid javascript flowchart (activity), sequence, gantt live   js-sequence-diagrams javascript sequence live   umlgraph java sequence, class    ckwnc ? sequence live only, c-like syntax   graphviz c digraph supports dot, layout/rendering layer for plantuml and umlgraph    i ended up choosing plantuml because:\n the syntax is more familiar and flexible\n active development\n generates beautiful diagrams\n styleable\n supports more diagram types\n easy to setup\n binings to more projects indicates widespread usage\n  btw, blockdiag would be the first runner up. it also features several unique diagram types.\ngaas (graph as a service) your graphviz, umlgraph or plantuml for your readme\nplantuml\u0026rsquo;s jquery and javascript async and sync integration.\ngui tools  gaphor uml modelling (python)\n umlet - free uml tool for fast uml diagrams\n argouml\n violet uml editor : easy to use, completely free\n lucidchart diagrams - desktop - chrome web store\n gliffy diagrams - chrome web storše\n sketchboard.io - chrome web store\n  "
+  "content": "  [some links][some-links]\n [from leesei][from-leesei]\n [text based tools][text-based-tools]\n [gui tools][gui-tools]\n   some links uml | leesei\u0026rsquo;s notebook draw more, work less | [self employed] draw more, work less plantuml mermaid\nfrom leesei unified modeling language (uml) business process model and notation (bpmn) is very similar to activity diagram. yang central\nallen holub\u0026rsquo;s uml quick reference\ntext based tools i used to use the gui tool dia. but it was very buggy and no longer updated. i then went on to look for alternatives.\ni am frustrated with the ui diagram apps:\n layout of components takes time\n it is difficult to modify the diagrams in ui (especially for batch operations, e.g. rename, grouping)\n application lock-in becaused of the saved file format\n  so i focused on tools that provides a dsl for drawing uml from plain text. candidates are (ranked according to the criteria below):\n   tool language diagrams remark     plantuml java activity, state, sequence, component, class, object, use case, ditaa, jcckit, sudoku, xearth live, language reference   blockdiag python block, activity, sequence, network, rack, packet live   mermaid javascript flowchart (activity), sequence, gantt live   js-sequence-diagrams javascript sequence live   umlgraph java sequence, class    ckwnc ? sequence live only, c-like syntax   graphviz c digraph supports dot, layout/rendering layer for plantuml and umlgraph    i ended up choosing plantuml because:\n the syntax is more familiar and flexible\n active development\n generates beautiful diagrams\n styleable\n supports more diagram types\n easy to setup\n binings to more projects indicates widespread usage\n  btw, blockdiag would be the first runner up. it also features several unique diagram types.\ngaas (graph as a service) your graphviz, umlgraph or plantuml for your readme\nplantuml\u0026rsquo;s jquery and javascript async and sync integration.\ngui tools  gaphor uml modelling (python)\n umlet - free uml tool for fast uml diagrams\n argouml\n violet uml editor : easy to use, completely free\n lucidchart diagrams - desktop - chrome web store\n gliffy diagrams - chrome web storše\n sketchboard.io - chrome web store\n  ",
+  "draft": false
 },
 {
   "index": 51,
@@ -569,7 +620,8 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": "can i use\u0026hellip; support tables for html5, css3, etc\npersistjs is a javascript client-side persistent storage library jeremydurham/persist-js\nslidedown/slidedown\n"
+  "content": "can i use\u0026hellip; support tables for html5, css3, etc\npersistjs is a javascript client-side persistent storage library jeremydurham/persist-js\nslidedown/slidedown\n",
+  "draft": false
 },
 {
   "index": 52,
@@ -580,7 +632,8 @@
   "date": "2015-05-10",
   "tags": ["react", "redux"],
   "description": "",
-  "content": " api notes and example  top-level api\n component api\n component specs and ifecycle\n tags and attributes\n event system\n  ref links concept  react | a javascript library for building user interfaces\n reactive mvc and the virtual dom \u0026ndash; futurice\n reactjs for stupid people\n component interop with react and custom elements\n josh haberman: react demystified\n intro to the react framework | nettuts+\n integrating react and flux with angular\n  tutorial  learning react.js- getting started and concepts ♥ scotch\n build a real-time twitter stream with node and react.js\n getting to know flux, the react.js architecture\n creating a simple shopping cart with react.js and flux\n enaqx-awesome-react · github\n react 入门教程\n learn react\n deconstructing reactjs\u0026rsquo;s flux\n  example  react-rocket-boilerplate\n james long\n kenwheeler-mcfly · github\n reactjs examples, demos, code\n faster angularjs rendering (angularjs and reactjs) | thierry.nicola\n jhudson8-react-chartjs · github\n react primer\n react-router auth\n  tools  reflux\n reactify\n complementary tools · facebook-react wiki · github\n rackt-react-router · github\n mtscout6-react-router-bootstrap · github\n react bootstrap\n react-router-component :: viewdocs.io\n react-component · github\n react components\n baobab\n tuxedojs\n 5 react.js + flux tools\n babel\n  from leesei  react: css in js // speaker deck\n  "
+  "content": " api notes and example  top-level api\n component api\n component specs and ifecycle\n tags and attributes\n event system\n  ref links concept  react | a javascript library for building user interfaces\n reactive mvc and the virtual dom \u0026ndash; futurice\n reactjs for stupid people\n component interop with react and custom elements\n josh haberman: react demystified\n intro to the react framework | nettuts+\n integrating react and flux with angular\n  tutorial  learning react.js- getting started and concepts ♥ scotch\n build a real-time twitter stream with node and react.js\n getting to know flux, the react.js architecture\n creating a simple shopping cart with react.js and flux\n enaqx-awesome-react · github\n react 入门教程\n learn react\n deconstructing reactjs\u0026rsquo;s flux\n  example  react-rocket-boilerplate\n james long\n kenwheeler-mcfly · github\n reactjs examples, demos, code\n faster angularjs rendering (angularjs and reactjs) | thierry.nicola\n jhudson8-react-chartjs · github\n react primer\n react-router auth\n  tools  reflux\n reactify\n complementary tools · facebook-react wiki · github\n rackt-react-router · github\n mtscout6-react-router-bootstrap · github\n react bootstrap\n react-router-component :: viewdocs.io\n react-component · github\n react components\n baobab\n tuxedojs\n 5 react.js + flux tools\n babel\n  from leesei  react: css in js // speaker deck\n  ",
+  "draft": false
 },
 {
   "index": 53,
@@ -591,7 +644,8 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": " 打底班  programming languages - youtube\n hardware basics - youtube\n operating system basics - youtube\n  free courses  coursera - free online courses from top universities\n  javascript  javascript not working? here are 10 common javascript problems | toptal\n learn all the nodes\n node tuts // leesei: 我兩年前都係睇 pedro，佢最近拍過晒\n jsconf - youtube // leesei: 好很多，太舊唔洗睇\n  property, protoypal inheritance  javascript: proto\n object properties in javascript\n properties in javascript: definition versus assignment\n javascript terminology: the two prototypes\n javascript properties: inheritance and enumerability\n javascript inheritance by example\n javascript inheritance: beyond the basics (video)\n property assignment and the prototype chain\n a closer look at _.extend and copying properties\n learning javascript with object graphs (part i) - how to node - nodejs\n learning javascript with object graphs (part ii) - how to node - nodejs\n learning javascript with object graphs (part iii) - how to node - nodejs\n prototypal inheritance - how to node - nodejs\n object playground: the definitive guide to object-oriented javascript\n inheritance and the prototype chain - javascript | mdn\n prototypal inheritance\n learning javascript design patterns\n john resig - simple javascript inheritance\n oop in js, part 1 : public/private variables and methods\n oop in js, part 2 : inheritance\n metaduck\n duck\n  "
+  "content": " 打底班  programming languages - youtube\n hardware basics - youtube\n operating system basics - youtube\n  free courses  coursera - free online courses from top universities\n  javascript  javascript not working? here are 10 common javascript problems | toptal\n learn all the nodes\n node tuts // leesei: 我兩年前都係睇 pedro，佢最近拍過晒\n jsconf - youtube // leesei: 好很多，太舊唔洗睇\n  property, protoypal inheritance  javascript: proto\n object properties in javascript\n properties in javascript: definition versus assignment\n javascript terminology: the two prototypes\n javascript properties: inheritance and enumerability\n javascript inheritance by example\n javascript inheritance: beyond the basics (video)\n property assignment and the prototype chain\n a closer look at _.extend and copying properties\n learning javascript with object graphs (part i) - how to node - nodejs\n learning javascript with object graphs (part ii) - how to node - nodejs\n learning javascript with object graphs (part iii) - how to node - nodejs\n prototypal inheritance - how to node - nodejs\n object playground: the definitive guide to object-oriented javascript\n inheritance and the prototype chain - javascript | mdn\n prototypal inheritance\n learning javascript design patterns\n john resig - simple javascript inheritance\n oop in js, part 1 : public/private variables and methods\n oop in js, part 2 : inheritance\n metaduck\n duck\n  ",
+  "draft": false
 },
 {
   "index": 54,
@@ -602,7 +656,8 @@
   "date": "2015-05-10",
   "tags": ["hapijs"],
   "description": "",
-  "content": " hapijs  hapi.js\n tutorials\n example: hapi mongoose angular\n  plugin  plugin\n hapi-auth-basic\n hapi-session-mongo\n hapi-auth-cookie\n best practice project structure · issue #2479 · hapijs/hapi\n  reference  hapi-playground\n  my notes  how to set cors\n  // set cors enable for all routes server.connection({ routes: { cors: { headers: [true], credentials: true } } });  "
+  "content": " hapijs  hapi.js\n tutorials\n example: hapi mongoose angular\n  plugin  plugin\n hapi-auth-basic\n hapi-session-mongo\n hapi-auth-cookie\n best practice project structure · issue #2479 · hapijs/hapi\n  reference  hapi-playground\n  my notes  how to set cors\n  // set cors enable for all routes server.connection({ routes: { cors: { headers: [true], credentials: true } } });  ",
+  "draft": false
 },
 {
   "index": 55,
@@ -613,7 +668,8 @@
   "date": "2015-05-10",
   "tags": ["git", "github", "slide"],
   "description": "",
-  "content": " start a new repo $ git init # add repo $ git remote add origin https://github.com/user/repo.git  change existing repo $ git remote rm origin $ git remote add origin https://github.com/user/repo.git  create a new branch and merge # on latest commit $ git checkout -b \u0026lt;branch_name\u0026gt; # create new branch # do you work $ git commit -a # edit the commit log as details as possible $ git checkout master $ git merge \u0026lt;branch_name\u0026gt; # double check everything, if ok then push. $ git push # else $ git checkout \u0026lt;branch_name\u0026gt;  amendment $ git commit -a --amend $ git checkout master $ git merge \u0026lt;branch_name\u0026gt; $ git push  gitignore $ npm install gitignore # for startup a node project $ gitignore node # or startup a go project $ gitignore go # use flag -types to list all available language $ gitignore -types  undo changes # a more 'save' way git revert \u0026lt;commit\u0026gt; # a dangerous (will loss all uncommitted changes) but cleaner way $ git reset --hard \u0026lt;commit\u0026gt; # removes untracked files # show files is going to be removed $ git clean -n # force clean $ git clean -f   the git clean command is often executed in conjunction with git reset \u0026ndash;hard. remember that resetting only affects tracked files, so a separate command is required for cleaning up untracked ones. combined, these two commands let you return the working directory to the exact state of a particular commit.\n git merge and rebase # git merge $ git merge master \u0026lt;branch_name\u0026gt;  difference between merge and rebase merging is nice because it\u0026rsquo;s a non-destructive operation. the existing branches are not changed in any way. this avoids all of the potential pitfalls of rebasing\ngit rebase moves the entire feature branch to begin on the tip of the master branch, effectively incorporating all of the new commits in master.\ngit difftool add badges to github badge generator\nreferenche  setting up a repository | atlassian git tutorial\n shields.io\n  "
+  "content": " start a new repo $ git init # add repo $ git remote add origin https://github.com/user/repo.git  change existing repo $ git remote rm origin $ git remote add origin https://github.com/user/repo.git  create a new branch and merge # on latest commit $ git checkout -b \u0026lt;branch_name\u0026gt; # create new branch # do you work $ git commit -a # edit the commit log as details as possible $ git checkout master $ git merge \u0026lt;branch_name\u0026gt; # double check everything, if ok then push. $ git push # else $ git checkout \u0026lt;branch_name\u0026gt;  amendment $ git commit -a --amend $ git checkout master $ git merge \u0026lt;branch_name\u0026gt; $ git push  gitignore $ npm install gitignore # for startup a node project $ gitignore node # or startup a go project $ gitignore go # use flag -types to list all available language $ gitignore -types  undo changes # a more 'save' way git revert \u0026lt;commit\u0026gt; # a dangerous (will loss all uncommitted changes) but cleaner way $ git reset --hard \u0026lt;commit\u0026gt; # removes untracked files # show files is going to be removed $ git clean -n # force clean $ git clean -f   the git clean command is often executed in conjunction with git reset \u0026ndash;hard. remember that resetting only affects tracked files, so a separate command is required for cleaning up untracked ones. combined, these two commands let you return the working directory to the exact state of a particular commit.\n git merge and rebase # git merge $ git merge master \u0026lt;branch_name\u0026gt;  difference between merge and rebase merging is nice because it\u0026rsquo;s a non-destructive operation. the existing branches are not changed in any way. this avoids all of the potential pitfalls of rebasing\ngit rebase moves the entire feature branch to begin on the tip of the master branch, effectively incorporating all of the new commits in master.\ngit difftool add badges to github badge generator\nreferenche  setting up a repository | atlassian git tutorial\n shields.io\n  ",
+  "draft": false
 },
 {
   "index": 56,
@@ -624,7 +680,8 @@
   "date": "2015-05-10",
   "tags": ["timelinejs"],
   "description": "",
-  "content": " timelinejs is easy to use for making a timeline with google spreadsheet\nexample  youtube video tutorial  how it work use google spreadsheet description\nuse html code and javascript timelinejs\n"
+  "content": " timelinejs is easy to use for making a timeline with google spreadsheet\nexample  youtube video tutorial  how it work use google spreadsheet description\nuse html code and javascript timelinejs\n",
+  "draft": false
 },
 {
   "index": 57,
@@ -635,7 +692,8 @@
   "date": "2015-05-10",
   "tags": ["macos", "swift"],
   "description": "",
-  "content": " start developing ios / osx apps the swift programming language (swift 2.2): about swift\nstart developing ios apps (swift): jump right in\nicon for ios development 23,500 icons - free download | icons8\nbasic keywords control flow  where (a switch case can use a where clause to check for additional conditions.)\n  computed properties  lazy\n get\n set\n willset\n didset\n  ## instance methods\n self\n static\n mutating\n  subscript  subscript\n  inheritance  override\n super\n  initialization  init\n convenience\n required\n  deinitialization  deinit\n unowned\n  type casting  is\n as\n  extension  extension\n  protocols  protocol\n  generic  where clauses\n  access control  public\n internal\n private\n  summary of the grammar using swift with cocoa and objective-c  attribute\n import\n @objc\n @iboutlet\n @ibaction\n @ibdesignable\n strong\n weak\n  "
+  "content": " start developing ios / osx apps the swift programming language (swift 2.2): about swift\nstart developing ios apps (swift): jump right in\nicon for ios development 23,500 icons - free download | icons8\nbasic keywords control flow  where (a switch case can use a where clause to check for additional conditions.)\n  computed properties  lazy\n get\n set\n willset\n didset\n  ## instance methods\n self\n static\n mutating\n  subscript  subscript\n  inheritance  override\n super\n  initialization  init\n convenience\n required\n  deinitialization  deinit\n unowned\n  type casting  is\n as\n  extension  extension\n  protocols  protocol\n  generic  where clauses\n  access control  public\n internal\n private\n  summary of the grammar using swift with cocoa and objective-c  attribute\n import\n @objc\n @iboutlet\n @ibaction\n @ibdesignable\n strong\n weak\n  ",
+  "draft": false
 },
 {
   "index": 58,
@@ -646,7 +704,8 @@
   "date": "2015-05-10",
   "tags": ["slidedown"],
   "description": "",
-  "content": " slide down  example\n github\n  revealjs  revealjs\n pandoc\n  # pandoc convert md to revealjs html pandoc -s --mathjax -i -t revealjs slides.md -o example.html  "
+  "content": " slide down  example\n github\n  revealjs  revealjs\n pandoc\n  # pandoc convert md to revealjs html pandoc -s --mathjax -i -t revealjs slides.md -o example.html  ",
+  "draft": false
 },
 {
   "index": 59,
@@ -657,7 +716,8 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": " install script for my mac  咁就寫做install script 放埋響個terminal repo度啦\n 再加埋repo 條link 響個post\n 咁就同人地寫啲technical blog 一樣了 pull and 行install script 寫個script git pull oh-my-zsh同setup symlink\n  google analytics \u0026amp; webmaster  reference\n post 個sitemap.xml 俾google 做index\n reference\n  learn basic python scripting counsellingsystem  nodejs\n golang\n  assembly code － mips  睇下去到低層個電腦做緊乜就可\n instruction set\n mips assembly language\n  "
+  "content": " install script for my mac  咁就寫做install script 放埋響個terminal repo度啦\n 再加埋repo 條link 響個post\n 咁就同人地寫啲technical blog 一樣了 pull and 行install script 寫個script git pull oh-my-zsh同setup symlink\n  google analytics \u0026amp; webmaster  reference\n post 個sitemap.xml 俾google 做index\n reference\n  learn basic python scripting counsellingsystem  nodejs\n golang\n  assembly code － mips  睇下去到低層個電腦做緊乜就可\n instruction set\n mips assembly language\n  ",
+  "draft": false
 },
 {
   "index": 60,
@@ -668,7 +728,8 @@
   "date": "2015-05-10",
   "tags": ["angularjs", "bootstrap"],
   "description": "",
-  "content": " referece － sticky footer\n－ responsive-utilities\nreminder  don\u0026rsquo;t use bootstrap.js, use ui-bootstrap.js instead.\n jquery is no longer useful\n ui-bootstrap.collapse\n beware the crash between collapse=\u0026quot;iscollapsed\u0026quot; and class=\u0026quot;visible-xs\u0026quot;\n use ui-bootstrap.dropdown\n   leesei suggestion  每次test ishide 唔好\n 響tagnames 加個`active field (boolean)\n 可以navbartag onclick (jqlite 嘢) update active state ve field (boolean)\n 可以navbartag onclick (jqlite 嘢) update active state\n  "
+  "content": " referece － sticky footer\n－ responsive-utilities\nreminder  don\u0026rsquo;t use bootstrap.js, use ui-bootstrap.js instead.\n jquery is no longer useful\n ui-bootstrap.collapse\n beware the crash between collapse=\u0026quot;iscollapsed\u0026quot; and class=\u0026quot;visible-xs\u0026quot;\n use ui-bootstrap.dropdown\n   leesei suggestion  每次test ishide 唔好\n 響tagnames 加個`active field (boolean)\n 可以navbartag onclick (jqlite 嘢) update active state ve field (boolean)\n 可以navbartag onclick (jqlite 嘢) update active state\n  ",
+  "draft": false
 },
 {
   "index": 61,
@@ -679,7 +740,8 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": "cg red - #dc322f  razzmatazz - #f92672  faded red #ff7f7c  free speech magenta - #e654ce  lavender indigo - #935ffa  dull lavender - #ae81ff  conifer - #a6e22e  snow flurry - #e0fdce  picton blue - #3bc0f0  turquoise blue - #66d9ef  tree poppy - #fd971f  sun - #f6aa11  paris daisy - #fee555  straw - #e6db74  stonewall - #7c7865  harp - #cfcfc2  iron - #c8cecc  "
+  "content": "cg red - #dc322f  razzmatazz - #f92672  faded red #ff7f7c  free speech magenta - #e654ce  lavender indigo - #935ffa  dull lavender - #ae81ff  conifer - #a6e22e  snow flurry - #e0fdce  picton blue - #3bc0f0  turquoise blue - #66d9ef  tree poppy - #fd971f  sun - #f6aa11  paris daisy - #fee555  straw - #e6db74  stonewall - #7c7865  harp - #cfcfc2  iron - #c8cecc  ",
+  "draft": false
 },
 {
   "index": 62,
@@ -690,7 +752,8 @@
   "date": "2015-05-10",
   "tags": ["database", "MongoDB", "Mongoose"],
   "description": "",
-  "content": " custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 schema.objectid 做ref, 會認唔到type 的\n 可以令 _id 有意思,\n e.g. studentschema, use regno as custom _id\n e.g. teacherschema, use teacherinitial as custom _id\n  use uuid if you need to have id before add new stuff\n e.g. attachmentschema, need the id to rename the attachment before saving to database.\n   schema.objectid  if no need to use custom _id then use schema.objectid\n  [{type: string}] vs [string] in mongoose schema, latter is better as it treat it purely a string array, the former one will create _id for each element.\nautoindex \u0026amp; versionkey // disable `autoindex` if you know you will not query this schema. subjectschema.set('autoindex', false); // disable `versionkey` if you know you don't need to monitor the update. subjectschema.set('versionkey', false);  use variable as a number var teacher = 1; var counselor = 2; var headcounselor = 3 var classmaster = 4 var headmaster = 5 var previleged = 6 // ... role: { type: int, min: teacher, max: previleged}  "
+  "content": " custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 schema.objectid 做ref, 會認唔到type 的\n 可以令 _id 有意思,\n e.g. studentschema, use regno as custom _id\n e.g. teacherschema, use teacherinitial as custom _id\n  use uuid if you need to have id before add new stuff\n e.g. attachmentschema, need the id to rename the attachment before saving to database.\n   schema.objectid  if no need to use custom _id then use schema.objectid\n  [{type: string}] vs [string] in mongoose schema, latter is better as it treat it purely a string array, the former one will create _id for each element.\nautoindex \u0026amp; versionkey // disable `autoindex` if you know you will not query this schema. subjectschema.set('autoindex', false); // disable `versionkey` if you know you don't need to monitor the update. subjectschema.set('versionkey', false);  use variable as a number var teacher = 1; var counselor = 2; var headcounselor = 3 var classmaster = 4 var headmaster = 5 var previleged = 6 // ... role: { type: int, min: teacher, max: previleged}  ",
+  "draft": false
 },
 {
   "index": 63,
@@ -701,7 +764,8 @@
   "date": "2015-05-10",
   "tags": ["polymer"],
   "description": "",
-  "content": "  bower - search\n custom elements - a web components gallery for modern web apps\n google web components\n polymerlabs · github\n web components catalog - component kitchen\n 寫響htm 叫declarative style, 用c/javascript 嗰啲叫imperative style\n declarative 易睇易明，但唔應該放logic\n angular 個template system 都有少少logic的 ng-if, ng-style, ng-show 都係做switching\n 放個route definition 我個人接受唔到\n 不過如果個route table 係獨立一個html define 我又okay 喎，咁佢就同一個json 等效\n 我應該係接受唔到route definition 同view element inline\n  copy by value vs by reference  | by value | by reference  \u0026mdash;\u0026mdash;- | \u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;- | \u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;-\ncopy | the value is actually copied; there are two distinct, independent copies. | only a reference to the value is copied. if the value is modified through the new reference, that change is also visible through the original reference.\npass | a distinct copy of the value is passed to the function; changes to it have no effect outside the function. | a reference to the value is passed to the function. if the function modifies the value through the passed reference, the modification is visible outside the function.\ncompare | two distinct values are compared (often byte by byte) to see if they are the same value. | two references are compared to see if they refer to the same value. two references to distinct values are not equal, even if the two values consist of the same bytes.\n"
+  "content": "  bower - search\n custom elements - a web components gallery for modern web apps\n google web components\n polymerlabs · github\n web components catalog - component kitchen\n 寫響htm 叫declarative style, 用c/javascript 嗰啲叫imperative style\n declarative 易睇易明，但唔應該放logic\n angular 個template system 都有少少logic的 ng-if, ng-style, ng-show 都係做switching\n 放個route definition 我個人接受唔到\n 不過如果個route table 係獨立一個html define 我又okay 喎，咁佢就同一個json 等效\n 我應該係接受唔到route definition 同view element inline\n  copy by value vs by reference  | by value | by reference  \u0026mdash;\u0026mdash;- | \u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;- | \u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;\u0026mdash;-\ncopy | the value is actually copied; there are two distinct, independent copies. | only a reference to the value is copied. if the value is modified through the new reference, that change is also visible through the original reference.\npass | a distinct copy of the value is passed to the function; changes to it have no effect outside the function. | a reference to the value is passed to the function. if the function modifies the value through the passed reference, the modification is visible outside the function.\ncompare | two distinct values are compared (often byte by byte) to see if they are the same value. | two references are compared to see if they refer to the same value. two references to distinct values are not equal, even if the two values consist of the same bytes.\n",
+  "draft": false
 },
 {
   "index": 64,
@@ -712,7 +776,8 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": " computer science knowledge  big o\n codecademy\n  javascript  rps exercise\n jsbooks\n effective javascript 68 specific ways to harness the power of javascript\n learning about iife, closure, lazy evaluation,\n iife reference\n  the art of readable coding\n eloquent javascript\n  phantom.js for automate login the webpage\n leesei ctf example\n casperjs\n phantomjs\n  angularjs  understanding angularjs – simple example\n angularjs fundamentals in 60-ish minutes\n a better way to learn angularjs\n  node.js  node: up and running\n finish ch1.\n finish ch2.\n reading ch3.\n  node.js: step by step\n  cs50 for general computing knowledge\nterminal  how to add colors to mac terminal\n dircolors-solarized\n the command line is your best friend\n terminal 101: using macports and homebrew\n bashrc, bash aliases, profile and other files\n  markdown  markdown語法說明\n pandoc\n  applescript  applescript automantion\n  other resource  rfc2616 about http/1.1\n  "
+  "content": " computer science knowledge  big o\n codecademy\n  javascript  rps exercise\n jsbooks\n effective javascript 68 specific ways to harness the power of javascript\n learning about iife, closure, lazy evaluation,\n iife reference\n  the art of readable coding\n eloquent javascript\n  phantom.js for automate login the webpage\n leesei ctf example\n casperjs\n phantomjs\n  angularjs  understanding angularjs – simple example\n angularjs fundamentals in 60-ish minutes\n a better way to learn angularjs\n  node.js  node: up and running\n finish ch1.\n finish ch2.\n reading ch3.\n  node.js: step by step\n  cs50 for general computing knowledge\nterminal  how to add colors to mac terminal\n dircolors-solarized\n the command line is your best friend\n terminal 101: using macports and homebrew\n bashrc, bash aliases, profile and other files\n  markdown  markdown語法說明\n pandoc\n  applescript  applescript automantion\n  other resource  rfc2616 about http/1.1\n  ",
+  "draft": false
 },
 {
   "index": 65,
@@ -723,7 +788,8 @@
   "date": "2015-05-10",
   "tags": ["google", "shortener"],
   "description": "",
-  "content": " installation npm install -g goo.gl\ngoogle api oauth for shortening a batch of links, create project for url shortener api. you will get 1,000,000 requests/day for free qr code to a link  reference\n https://chart.googleapis.com/chart?chs=200x200\u0026amp;cht=qr\u0026amp;chl= + the link you need\n  google form prefill https://docs.google.com/forms/d/form_id/viewform?entry.q1_id=q1_ans\u0026amp;entry.q2_id=q2_ans... 2_id=q2_ans\u0026hellip;2_id=q2_ans...\\ id=q2_ans\u0026hellip;id=q2_ans... `\n"
+  "content": " installation npm install -g goo.gl\ngoogle api oauth for shortening a batch of links, create project for url shortener api. you will get 1,000,000 requests/day for free qr code to a link  reference\n https://chart.googleapis.com/chart?chs=200x200\u0026amp;cht=qr\u0026amp;chl= + the link you need\n  google form prefill https://docs.google.com/forms/d/form_id/viewform?entry.q1_id=q1_ans\u0026amp;entry.q2_id=q2_ans... 2_id=q2_ans\u0026hellip;2_id=q2_ans...\\ id=q2_ans\u0026hellip;id=q2_ans... `\n",
+  "draft": false
 },
 {
   "index": 66,
@@ -734,7 +800,8 @@
   "date": "2015-05-10",
   "tags": ["golang"],
   "description": "",
-  "content": " useful commands  update all packages go get -u all\n  feautre  embedding\n  understanding goroutine  is golang goroutine a coroutine?\n coroutine vs continuation vs generator\n comparison with generators\n  mongodb  mgo\n painless data storage with mongodb and go\n connecting to mongodb with mgo and golang\n  router  mux - gorilla, the golang web toolkit\n  # middleware\n justinas/alice: painless middleware chaining for go\n  sql database  go database/sql tutorial\n practical persistence in go: organising database access\n practical persistence in go: sql databases\n  authentication  dgrijalva/jwt-go: golang implementation of json web tokens (jwt)\n golang authentication using json web tokens\n  useful package  puerkitobio/goquery: a little like that j-thing, only in go.\n bcrypt - godoc\n  useful resources  the factory method pattern in go. – matthew brown\n practical persistence in go: organising database access\n \u0026ldquo;go build\u0026rdquo; became very slow after installing a new version of go - stack overflow\n contexts \u0026amp; dependency injection\n  "
+  "content": " useful commands  update all packages go get -u all\n  feautre  embedding\n  understanding goroutine  is golang goroutine a coroutine?\n coroutine vs continuation vs generator\n comparison with generators\n  mongodb  mgo\n painless data storage with mongodb and go\n connecting to mongodb with mgo and golang\n  router  mux - gorilla, the golang web toolkit\n  # middleware\n justinas/alice: painless middleware chaining for go\n  sql database  go database/sql tutorial\n practical persistence in go: organising database access\n practical persistence in go: sql databases\n  authentication  dgrijalva/jwt-go: golang implementation of json web tokens (jwt)\n golang authentication using json web tokens\n  useful package  puerkitobio/goquery: a little like that j-thing, only in go.\n bcrypt - godoc\n  useful resources  the factory method pattern in go. – matthew brown\n practical persistence in go: organising database access\n \u0026ldquo;go build\u0026rdquo; became very slow after installing a new version of go - stack overflow\n contexts \u0026amp; dependency injection\n  ",
+  "draft": false
 },
 {
   "index": 67,
@@ -745,7 +812,8 @@
   "date": "2015-05-10",
   "tags": ["gitbook"],
   "description": "",
-  "content": "  gitbook\n modern book format and toolchain using git and markdown\n  useful plugins  katex\n sectionx\n responsive-iframes\n  "
+  "content": "  gitbook\n modern book format and toolchain using git and markdown\n  useful plugins  katex\n sectionx\n responsive-iframes\n  ",
+  "draft": false
 },
 {
   "index": 68,
@@ -756,7 +824,8 @@
   "date": "2017-05-15",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 69,
@@ -767,7 +836,8 @@
   "date": "2017-05-15",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 70,
@@ -778,7 +848,8 @@
   "date": "0001-01-01",
   "tags": [],
   "description": "",
-  "content": "cyrusn is a math teacher in hong kong, eager to learn more in programming.\n a teacher has two jobs. fill young minds with knowledge, yes. but more important, give those minds a compass so that that knowledge doesn't go to waste. from the movie: mr holland's opus   "
+  "content": "cyrusn is a math teacher in hong kong, eager to learn more in programming.\n a teacher has two jobs. fill young minds with knowledge, yes. but more important, give those minds a compass so that that knowledge doesn\u0026rsquo;t go to waste.\nfrom the movie: mr holland\u0026rsquo;s opus\n ",
+  "draft": false
 },
 {
   "index": 71,
@@ -789,7 +860,8 @@
   "date": "2015-07-24",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 72,
@@ -800,7 +872,8 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 73,
@@ -811,7 +884,8 @@
   "date": "2016-09-29",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 74,
@@ -822,7 +896,8 @@
   "date": "2015-06-29",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 75,
@@ -833,7 +908,8 @@
   "date": "2017-05-12",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 76,
@@ -844,7 +920,8 @@
   "date": "2016-10-05",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 77,
@@ -855,7 +932,8 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 78,
@@ -866,7 +944,8 @@
   "date": "2017-05-19",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 79,
@@ -877,7 +956,8 @@
   "date": "2017-05-27",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 80,
@@ -888,7 +968,8 @@
   "date": "0001-01-01",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 81,
@@ -899,7 +980,8 @@
   "date": "2015-06-29",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 82,
@@ -910,7 +992,8 @@
   "date": "2015-05-24",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 83,
@@ -921,7 +1004,8 @@
   "date": "2016-09-26",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 84,
@@ -932,7 +1016,8 @@
   "date": "2015-12-08",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 85,
@@ -943,7 +1028,8 @@
   "date": "2016-10-11",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 86,
@@ -954,7 +1040,8 @@
   "date": "2016-03-26",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 87,
@@ -965,7 +1052,8 @@
   "date": "2016-09-30",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 88,
@@ -976,7 +1064,8 @@
   "date": "2017-05-15",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 89,
@@ -987,7 +1076,8 @@
   "date": "2017-05-15",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 90,
@@ -998,7 +1088,8 @@
   "date": "2016-10-04",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 91,
@@ -1009,7 +1100,8 @@
   "date": "2017-06-20",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 92,
@@ -1020,7 +1112,8 @@
   "date": "2017-06-20",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 93,
@@ -1031,7 +1124,8 @@
   "date": "2017-06-20",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 94,
@@ -1042,7 +1136,8 @@
   "date": "2017-09-04",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 95,
@@ -1053,7 +1148,8 @@
   "date": "2017-08-20",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 96,
@@ -1064,7 +1160,8 @@
   "date": "2016-09-26",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 97,
@@ -1075,7 +1172,8 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 98,
@@ -1086,7 +1184,8 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 99,
@@ -1097,7 +1196,8 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 100,
@@ -1108,7 +1208,8 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 101,
@@ -1119,7 +1220,8 @@
   "date": "2017-05-19",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 102,
@@ -1130,7 +1232,8 @@
   "date": "2015-05-22",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 103,
@@ -1141,7 +1244,8 @@
   "date": "2017-09-04",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 104,
@@ -1152,7 +1256,8 @@
   "date": "2017-05-16",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 105,
@@ -1163,7 +1268,8 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 106,
@@ -1174,7 +1280,8 @@
   "date": "2015-05-21",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 107,
@@ -1185,7 +1292,8 @@
   "date": "2015-05-24",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 108,
@@ -1196,7 +1304,8 @@
   "date": "2016-10-07",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 109,
@@ -1207,7 +1316,8 @@
   "date": "2016-09-26",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 110,
@@ -1218,7 +1328,8 @@
   "date": "2017-09-19",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 111,
@@ -1229,7 +1340,8 @@
   "date": "2015-12-08",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 112,
@@ -1240,7 +1352,8 @@
   "date": "2015-05-24",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 113,
@@ -1251,7 +1364,8 @@
   "date": "2017-09-04",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 114,
@@ -1262,7 +1376,8 @@
   "date": "2017-05-15",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 115,
@@ -1273,7 +1388,8 @@
   "date": "2016-10-05",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 116,
@@ -1284,7 +1400,8 @@
   "date": "2015-05-24",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 117,
@@ -1295,7 +1412,8 @@
   "date": "2017-05-25",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 118,
@@ -1306,7 +1424,8 @@
   "date": "2015-12-08",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 119,
@@ -1317,7 +1436,8 @@
   "date": "2017-05-15",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 120,
@@ -1328,7 +1448,8 @@
   "date": "2017-09-19",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 121,
@@ -1339,7 +1460,8 @@
   "date": "2017-05-19",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 122,
@@ -1350,7 +1472,8 @@
   "date": "2017-09-13",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 123,
@@ -1361,7 +1484,8 @@
   "date": "2015-10-01",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 124,
@@ -1372,7 +1496,8 @@
   "date": "2017-09-13",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 125,
@@ -1383,7 +1508,8 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 126,
@@ -1394,7 +1520,8 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 127,
@@ -1405,7 +1532,8 @@
   "date": "2016-10-18",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 128,
@@ -1416,7 +1544,8 @@
   "date": "2017-07-09",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 129,
@@ -1427,7 +1556,8 @@
   "date": "2017-07-09",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 130,
@@ -1438,7 +1568,8 @@
   "date": "2016-09-29",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 131,
@@ -1446,10 +1577,11 @@
   "type": "page",
   "uri": "https://cyrusn.github.io/",
   "title": "Notebook | CyrusN",
-  "date": "2017-11-03",
+  "date": "2017-10-16",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 132,
@@ -1460,7 +1592,8 @@
   "date": "2017-09-19",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 133,
@@ -1471,7 +1604,8 @@
   "date": "2015-05-27",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 134,
@@ -1482,7 +1616,8 @@
   "date": "2017-05-19",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 135,
@@ -1493,7 +1628,8 @@
   "date": "0001-01-01",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 136,
@@ -1501,10 +1637,11 @@
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/pi/",
   "title": "Pi",
-  "date": "2017-11-03",
+  "date": "2017-10-16",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 137,
@@ -1515,7 +1652,8 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 138,
@@ -1526,7 +1664,8 @@
   "date": "2017-09-05",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 139,
@@ -1537,7 +1676,8 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 140,
@@ -1548,7 +1688,8 @@
   "date": "2017-05-16",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 141,
@@ -1559,7 +1700,8 @@
   "date": "2017-05-25",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 142,
@@ -1570,10 +1712,23 @@
   "date": "2016-09-26",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
   "index": 143,
+  "kind": "section",
+  "type": "project",
+  "uri": "https://cyrusn.github.io/project/",
+  "title": "Projects",
+  "date": "2017-10-16",
+  "tags": [],
+  "description": "",
+  "content": "",
+  "draft": false
+},
+{
+  "index": 144,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/pt/",
@@ -1581,21 +1736,35 @@
   "date": "2015-05-24",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 144,
+  "index": 145,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/raspberry/",
   "title": "Raspberry",
-  "date": "2017-11-03",
+  "date": "2017-10-16",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 145,
+  "index": 146,
+  "kind": "taxonomy",
+  "type": "page",
+  "uri": "https://cyrusn.github.io/tags/raspberrypi/",
+  "title": "Raspberrypi",
+  "date": "2017-10-16",
+  "tags": [],
+  "description": "",
+  "content": "",
+  "draft": false
+},
+{
+  "index": 147,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/react/",
@@ -1603,10 +1772,11 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 146,
+  "index": 148,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/redirect/",
@@ -1614,10 +1784,11 @@
   "date": "2015-05-24",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 147,
+  "index": 149,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/redux/",
@@ -1625,10 +1796,11 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 148,
+  "index": 150,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/reminder/",
@@ -1636,10 +1808,11 @@
   "date": "2017-05-21",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 149,
+  "index": 151,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/scp/",
@@ -1647,10 +1820,11 @@
   "date": "2016-03-26",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 150,
+  "index": 152,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/secondment/",
@@ -1658,10 +1832,11 @@
   "date": "2017-09-05",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 151,
+  "index": 153,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/security/",
@@ -1669,10 +1844,11 @@
   "date": "2016-10-05",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 152,
+  "index": 154,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/setting/",
@@ -1680,10 +1856,11 @@
   "date": "2015-10-01",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 153,
+  "index": 155,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/shortener/",
@@ -1691,10 +1868,11 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 154,
+  "index": 156,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/signal/",
@@ -1702,10 +1880,11 @@
   "date": "2017-05-25",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 155,
+  "index": 157,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/slide/",
@@ -1713,10 +1892,11 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 156,
+  "index": 158,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/slidedown/",
@@ -1724,21 +1904,23 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 157,
+  "index": 159,
   "kind": "section",
   "type": "slide",
   "uri": "https://cyrusn.github.io/slide/",
   "title": "Slides",
-  "date": "2017-11-03",
+  "date": "2017-05-16",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 158,
+  "index": 160,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/sql/",
@@ -1746,10 +1928,11 @@
   "date": "2016-10-18",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 159,
+  "index": 161,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/ssl/",
@@ -1757,10 +1940,11 @@
   "date": "2016-09-29",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 160,
+  "index": 162,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/startup/",
@@ -1768,10 +1952,11 @@
   "date": "2016-10-21",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 161,
+  "index": 163,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/stem/",
@@ -1779,10 +1964,11 @@
   "date": "2017-09-19",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 162,
+  "index": 164,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/swift/",
@@ -1790,10 +1976,11 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 163,
+  "index": 165,
   "kind": "taxonomyTerm",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/",
@@ -1801,10 +1988,11 @@
   "date": "2017-05-15",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 164,
+  "index": 166,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/taiwan-study/",
@@ -1812,10 +2000,11 @@
   "date": "2017-05-15",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 165,
+  "index": 167,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/task/",
@@ -1823,10 +2012,11 @@
   "date": "2017-05-21",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 166,
+  "index": 168,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/taskwarrior/",
@@ -1834,10 +2024,11 @@
   "date": "2017-05-21",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 167,
+  "index": 169,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/tcp/",
@@ -1845,10 +2036,11 @@
   "date": "2017-05-19",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 168,
+  "index": 170,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/terminal/",
@@ -1856,10 +2048,11 @@
   "date": "2015-05-24",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 169,
+  "index": 171,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/timelinejs/",
@@ -1867,10 +2060,11 @@
   "date": "2015-05-10",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 170,
+  "index": 172,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/tls/",
@@ -1878,10 +2072,11 @@
   "date": "2016-09-29",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 171,
+  "index": 173,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/tmux/",
@@ -1889,10 +2084,11 @@
   "date": "2017-05-12",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 172,
+  "index": 174,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/todo/",
@@ -1900,10 +2096,11 @@
   "date": "2017-05-21",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 173,
+  "index": 175,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/tomato/",
@@ -1911,10 +2108,11 @@
   "date": "2017-05-16",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 174,
+  "index": 176,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/top/",
@@ -1922,10 +2120,11 @@
   "date": "2017-05-25",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 175,
+  "index": 177,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/udp/",
@@ -1933,10 +2132,11 @@
   "date": "2017-05-19",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 176,
+  "index": 178,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/uml/",
@@ -1944,10 +2144,11 @@
   "date": "2015-05-28",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 177,
+  "index": 179,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/vim/",
@@ -1955,10 +2156,11 @@
   "date": "2016-10-04",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 178,
+  "index": 180,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/vpet/",
@@ -1966,10 +2168,11 @@
   "date": "2017-05-27",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 179,
+  "index": 181,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/web-token/",
@@ -1977,10 +2180,11 @@
   "date": "2016-10-05",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 180,
+  "index": 182,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/wild-card/",
@@ -1988,10 +2192,11 @@
   "date": "2015-05-24",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 181,
+  "index": 183,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/wordpress/",
@@ -1999,10 +2204,11 @@
   "date": "2015-05-26",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 182,
+  "index": 184,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/xargs/",
@@ -2010,10 +2216,11 @@
   "date": "2015-05-24",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 },
 {
-  "index": 183,
+  "index": 185,
   "kind": "taxonomy",
   "type": "page",
   "uri": "https://cyrusn.github.io/tags/zsh/",
@@ -2021,5 +2228,6 @@
   "date": "2015-05-24",
   "tags": [],
   "description": "",
-  "content": ""
+  "content": "",
+  "draft": false
 }]

@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="/css/remark.css">
   
+  <link rel="stylesheet" href="/css/remark.css">
   <script src='/js/remark-latest.min.js'></script>
 
 </head>
 <body>
-  <textarea id="source">
-    class: center, middle
+  <textarea id="source">class: center, middle
 
 # 提升生產力及專注力
 ## GTD &amp; 蕃茄工作法
@@ -70,9 +69,7 @@
 [&amp;3]: http://www.moosti.com/
 [&amp;5]: https://en.wikipedia.org/wiki/Pomodoro_Technique
 [&amp;4]: https://en.wikipedia.org/wiki/Getting_Things_Done
-[image]: https://dl.dropboxusercontent.com/s/hs9jspievysiptw/flow.svg
-  </textarea>
-  <script src="/js/remark-latest.min.js">
+[image]: https://dl.dropboxusercontent.com/s/hs9jspievysiptw/flow.svg</textarea>
   </script>
   
 
@@ -90,9 +87,8 @@
     
     const slideshow = remark.create(option)
     
-    document.onkeypress = function(e) {
-      e = e || window.event;
-      const charCode = (typeof e.which == "number") ? e.which : e.keyCode;
+    document.onkeypress = ({which, keyCode} = window.event) => {
+      const charCode = (typeof which == "number") ? which : keyCode;
       if (charCode == 113) {
         window.location.href = '/'
       }

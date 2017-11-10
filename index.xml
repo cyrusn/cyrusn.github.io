@@ -7,32 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
     <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
-    <lastBuildDate>Fri, 03 Nov 2017 11:17:14 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 16 Oct 2017 16:05:23 +0800</lastBuildDate>
     
 	<atom:link href="https://cyrusn.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Introduction to Raspberry Pi</title>
-      <link>https://cyrusn.github.io/slide/introduction-to-raspberry-pi/</link>
-      <pubDate>Fri, 03 Nov 2017 11:17:14 +0800</pubDate>
+      <title>Blink Led</title>
+      <link>https://cyrusn.github.io/project/blink_led/</link>
+      <pubDate>Mon, 16 Oct 2017 16:05:23 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/slide/introduction-to-raspberry-pi/</guid>
-      <description>.center.middle[
-Introdution to Raspberry-Pi ]
-Agenda  Raspberry Pi
- What is Raspberry-Pi
- Raspberry-Pi vs Audrino vs Microbit
- What is GPIO?
- Setup
- Introduction to 16 common sensors
- e.g. Blinking LED
- e.g. Blinking LED cont&amp;hellip;
- Python Script
- Top 10 Raspberry Pi Projects for Beginners
- Thanks
-  class: center middle
-Raspberry Pi    RASPBERRY PI 3 MODEL B RASPBERRY PI ZERO W         More Powerful Much Lighter    What is Raspberry-Pi  A small and affordable computer that you can use to learn programming</description>
+      <guid>https://cyrusn.github.io/project/blink_led/</guid>
+      <description>  Introduction
+ Setting
+ Python Code
+  Introduction Making Blinking LED is just like writing a hello world programme in engineering.
+Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GPIO.BCM) GPIO.set(LED, GPIO.OUT) GPIO.setwarnings(False) print(&amp;quot;Programme start.&amp;quot;) GPIO.output(LED, True) time.sleep(0.5) GPIO.output(LED, False) time.sleep(0.5) print(&amp;quot;Programme closed.&amp;quot;)  </description>
     </item>
     
     <item>
@@ -996,7 +986,9 @@ Google API OAuth for shortening a batch of links, create project for URL Shorten
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/page/about/</guid>
       <description>CyrusN is a math teacher in Hong Kong, eager to learn more in programming.
- A teacher has two jobs. Fill young minds with knowledge, yes. But more important, give those minds a compass so that that knowledge doesn&#39;t go to waste. From the movie: Mr Holland&#39;s Opus   </description>
+ A teacher has two jobs. Fill young minds with knowledge, yes. But more important, give those minds a compass so that that knowledge doesn&amp;rsquo;t go to waste.
+From the movie: Mr Holland&amp;rsquo;s Opus
+ </description>
     </item>
     
   </channel>
