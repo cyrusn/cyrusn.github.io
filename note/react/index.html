@@ -58,6 +58,8 @@
 
 
 <script src="/js/main.js"></script>
+
+
 <script>
 const pageKind = "page"
 const navLinks = ['/']
@@ -77,73 +79,107 @@ var Paginator = {}
 
 </script>
 
+
+
+
+
+
+
 </head>
 <body>
-  <div class="d-md-flex justify-content-center bg-light">
-<nav class="navbar navbar-expand-md navbar-light">
-  <a class="navbar-brand text-center"
-    href="https://cyrusn.github.io">
-    CyrusN
-  </a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarNav"
-    aria-controls="navbarNav"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class="bg-light d-md-flex justify-content-center">
+    <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand text-center"
+      href="https://cyrusn.github.io">
+      CyrusN
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Note" href="/note/">Note</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Note" href="/note/">Note</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Project" href="/project/">Project</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Project" href="/project/">Project</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Slide" href="/slide/">Slide</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Slide" href="/slide/">Slide</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Tags" href="/tags/">Tags</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Tags" href="/tags/">Tags</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="About" href="/page/about/">About</a>
-      </li>
-      
-      
-    </ul>
-  </div>
-
-</nav>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="About" href="/page/about/">About</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+  </nav>
 </div>
+
+<div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-light">
+        <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body py-1">
+        <p class="text-secondary">
+          <ul class="list-unstyled">
+              <li><code>Q</code> to go home</li>
+              <li><code>Space</code> to search</li>
+              <li><code>Enter</code> to start navigate in results</li>
+              <li><code>Enter again</code> to go to selected page</li>
+              <li><code>J / K</code> to navigate the list</li>
+              <li><code>J / K</code> can also scroll up and down in page</li>
+              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>[ / ]</code> to navigate the navbar</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <div class="container mt-2 mx-auto mb-4">
     
@@ -156,10 +192,14 @@ var Paginator = {}
   
   
   <p>
-    
+    <small>
+  
+  
+  
+</small>
+
 
 <small>
-
 
   <a class="badge badge-secondary" href="/tags/react">react</a>
 
@@ -178,11 +218,11 @@ var Paginator = {}
 <h1 id="api-notes-and-example">API notes and example</h1>
 
 <ul>
-<li><a href="http://facebook.github.io/react/docs/top-level-api.html">Top-Level API</a><br /></li>
-<li><a href="http://facebook.github.io/react/docs/component-api.html">Component API</a><br /></li>
-<li><a href="http://facebook.github.io/react/docs/component-specs.html">Component Specs and ifecycle</a><br /></li>
-<li><a href="http://facebook.github.io/react/docs/tags-and-attributes.html">Tags and Attributes</a><br /></li>
-<li><a href="http://facebook.github.io/react/docs/events.html">Event System</a><br />
+<li><a href="http://facebook.github.io/react/docs/top-level-api.html" target="_blank">Top-Level API</a><br /></li>
+<li><a href="http://facebook.github.io/react/docs/component-api.html" target="_blank">Component API</a><br /></li>
+<li><a href="http://facebook.github.io/react/docs/component-specs.html" target="_blank">Component Specs and ifecycle</a><br /></li>
+<li><a href="http://facebook.github.io/react/docs/tags-and-attributes.html" target="_blank">Tags and Attributes</a><br /></li>
+<li><a href="http://facebook.github.io/react/docs/events.html" target="_blank">Event System</a><br />
 <br /></li>
 </ul>
 
@@ -191,67 +231,67 @@ var Paginator = {}
 <h2 id="concept">Concept</h2>
 
 <ul>
-<li><a href="http://facebook.github.io/react/index.html">React | A JavaScript library for building user interfaces</a><br /></li>
-<li><a href="http://futurice.com/blog/reactive-mvc-and-the-virtual-dom">Reactive MVC and the Virtual DOM &ndash; Futurice</a><br /></li>
-<li><a href="http://blog.andrewray.me/reactjs-for-stupid-people/">ReactJS For Stupid People</a><br /></li>
-<li><a href="http://addyosmani.com/blog/component-interop-with-react-and-custom-elements/">Component Interop With React And Custom Elements</a><br /></li>
-<li><a href="http://blog.reverberate.org/2014/02/react-demystified.html">Josh Haberman: React Demystified</a><br /></li>
-<li><a href="http://net.tutsplus.com/tutorials/javascript-ajax/intro-to-the-react-framework/">Intro to the React Framework | Nettuts+</a><br /></li>
-<li><a href="https://developers.mobileapptracking.com/addressing-angular-weaknesses-with-react-and-flux/">Integrating React and Flux with Angular</a><br />
+<li><a href="http://facebook.github.io/react/index.html" target="_blank">React | A JavaScript library for building user interfaces</a><br /></li>
+<li><a href="http://futurice.com/blog/reactive-mvc-and-the-virtual-dom" target="_blank">Reactive MVC and the Virtual DOM &ndash; Futurice</a><br /></li>
+<li><a href="http://blog.andrewray.me/reactjs-for-stupid-people/" target="_blank">ReactJS For Stupid People</a><br /></li>
+<li><a href="http://addyosmani.com/blog/component-interop-with-react-and-custom-elements/" target="_blank">Component Interop With React And Custom Elements</a><br /></li>
+<li><a href="http://blog.reverberate.org/2014/02/react-demystified.html" target="_blank">Josh Haberman: React Demystified</a><br /></li>
+<li><a href="http://net.tutsplus.com/tutorials/javascript-ajax/intro-to-the-react-framework/" target="_blank">Intro to the React Framework | Nettuts+</a><br /></li>
+<li><a href="https://developers.mobileapptracking.com/addressing-angular-weaknesses-with-react-and-flux/" target="_blank">Integrating React and Flux with Angular</a><br />
 <br /></li>
 </ul>
 
 <h2 id="tutorial">Tutorial</h2>
 
 <ul>
-<li><a href="http://scotch.io/tutorials/javascript/learning-react-getting-started-and-concepts">Learning React.js- Getting Started and Concepts ♥ Scotch</a><br /></li>
-<li><a href="https://scotch.io/tutorials/build-a-real-time-twitter-stream-with-node-and-react-js">Build A Real-Time Twitter Stream with Node and React.js</a><br /></li>
-<li><a href="https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture">Getting To Know Flux, the React.js Architecture</a><br /></li>
-<li><a href="https://scotch.io/tutorials/creating-a-simple-shopping-cart-with-react-js-and-flux">Creating A Simple Shopping Cart with React.js and Flux</a><br /></li>
-<li><a href="https://github.com/enaqx/awesome-react">enaqx-awesome-react · GitHub</a><br /></li>
-<li><a href="http://hulufei.gitbooks.io/react-tutorial/content/">React 入门教程</a><br /></li>
-<li><a href="http://learnreact.robbestad.com/">Learn React</a><br /></li>
-<li><a href="http://spoike.ghost.io/deconstructing-reactjss-flux/">Deconstructing ReactJS&rsquo;s Flux</a><br />
+<li><a href="http://scotch.io/tutorials/javascript/learning-react-getting-started-and-concepts" target="_blank">Learning React.js- Getting Started and Concepts ♥ Scotch</a><br /></li>
+<li><a href="https://scotch.io/tutorials/build-a-real-time-twitter-stream-with-node-and-react-js" target="_blank">Build A Real-Time Twitter Stream with Node and React.js</a><br /></li>
+<li><a href="https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture" target="_blank">Getting To Know Flux, the React.js Architecture</a><br /></li>
+<li><a href="https://scotch.io/tutorials/creating-a-simple-shopping-cart-with-react-js-and-flux" target="_blank">Creating A Simple Shopping Cart with React.js and Flux</a><br /></li>
+<li><a href="https://github.com/enaqx/awesome-react" target="_blank">enaqx-awesome-react · GitHub</a><br /></li>
+<li><a href="http://hulufei.gitbooks.io/react-tutorial/content/" target="_blank">React 入门教程</a><br /></li>
+<li><a href="http://learnreact.robbestad.com/" target="_blank">Learn React</a><br /></li>
+<li><a href="http://spoike.ghost.io/deconstructing-reactjss-flux/" target="_blank">Deconstructing ReactJS&rsquo;s Flux</a><br />
 <br /></li>
 </ul>
 
 <h2 id="example">Example</h2>
 
 <ul>
-<li><a href="https://github.com/jakemmarsh/react-rocket-boilerplate">react-rocket-boilerplate</a><br /></li>
-<li><a href="http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome">James Long</a><br /></li>
-<li><a href="https://github.com/kenwheeler/mcfly">kenwheeler-mcfly · GitHub</a><br /></li>
-<li><a href="http://react.rocks/">ReactJS Examples, Demos, Code</a><br /></li>
-<li><a href="http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs/">Faster AngularJS Rendering (AngularJS and ReactJS) | thierry.nicola</a><br /></li>
-<li><a href="https://github.com/jhudson8/react-chartjs">jhudson8-react-chartjs · GitHub</a><br /></li>
-<li><a href="http://binarymuse.github.io/react-primer/build/">React Primer</a><br /></li>
-<li><a href="https://github.com/sardaukar/react-router-auth-example">react-router auth</a><br />
+<li><a href="https://github.com/jakemmarsh/react-rocket-boilerplate" target="_blank">react-rocket-boilerplate</a><br /></li>
+<li><a href="http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome" target="_blank">James Long</a><br /></li>
+<li><a href="https://github.com/kenwheeler/mcfly" target="_blank">kenwheeler-mcfly · GitHub</a><br /></li>
+<li><a href="http://react.rocks/" target="_blank">ReactJS Examples, Demos, Code</a><br /></li>
+<li><a href="http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs/" target="_blank">Faster AngularJS Rendering (AngularJS and ReactJS) | thierry.nicola</a><br /></li>
+<li><a href="https://github.com/jhudson8/react-chartjs" target="_blank">jhudson8-react-chartjs · GitHub</a><br /></li>
+<li><a href="http://binarymuse.github.io/react-primer/build/" target="_blank">React Primer</a><br /></li>
+<li><a href="https://github.com/sardaukar/react-router-auth-example" target="_blank">react-router auth</a><br />
 <br /></li>
 </ul>
 
 <h2 id="tools">Tools</h2>
 
 <ul>
-<li><a href="https://github.com/spoike/refluxjs">Reflux</a><br /></li>
-<li><a href="https://github.com/andreypopp/Reactify">Reactify</a><br /></li>
-<li><a href="https://github.com/facebook/react/wiki/Complementary-Tools">Complementary Tools · facebook-react Wiki · GitHub</a><br /></li>
-<li><a href="https://github.com/rackt/react-router">rackt-react-router · GitHub</a><br /></li>
-<li><a href="https://github.com/mtscout6/react-router-bootstrap">mtscout6-react-router-bootstrap · GitHub</a><br /></li>
-<li><a href="http://react-bootstrap.github.io/">React Bootstrap</a><br /></li>
-<li><a href="http://strml.viewdocs.io/react-router-component">react-router-component :: viewdocs.io</a><br /></li>
-<li><a href="https://github.com/react-component">react-component · GitHub</a><br /></li>
-<li><a href="http://react-components.com/">React Components</a><br /></li>
-<li><a href="https://github.com/Yomguithereal/baobab">Baobab</a><br /></li>
-<li><a href="http://www.tuxedojs.org/">tuxedojs</a><br /></li>
-<li><a href="http://www.progville.com/javascript/5-react-js-flux-tools/">5 React.js + Flux tools</a><br /></li>
-<li><a href="https://babeljs.io/">Babel</a><br />
+<li><a href="https://github.com/spoike/refluxjs" target="_blank">Reflux</a><br /></li>
+<li><a href="https://github.com/andreypopp/Reactify" target="_blank">Reactify</a><br /></li>
+<li><a href="https://github.com/facebook/react/wiki/Complementary-Tools" target="_blank">Complementary Tools · facebook-react Wiki · GitHub</a><br /></li>
+<li><a href="https://github.com/rackt/react-router" target="_blank">rackt-react-router · GitHub</a><br /></li>
+<li><a href="https://github.com/mtscout6/react-router-bootstrap" target="_blank">mtscout6-react-router-bootstrap · GitHub</a><br /></li>
+<li><a href="http://react-bootstrap.github.io/" target="_blank">React Bootstrap</a><br /></li>
+<li><a href="http://strml.viewdocs.io/react-router-component" target="_blank">react-router-component :: viewdocs.io</a><br /></li>
+<li><a href="https://github.com/react-component" target="_blank">react-component · GitHub</a><br /></li>
+<li><a href="http://react-components.com/" target="_blank">React Components</a><br /></li>
+<li><a href="https://github.com/Yomguithereal/baobab" target="_blank">Baobab</a><br /></li>
+<li><a href="http://www.tuxedojs.org/" target="_blank">tuxedojs</a><br /></li>
+<li><a href="http://www.progville.com/javascript/5-react-js-flux-tools/" target="_blank">5 React.js + Flux tools</a><br /></li>
+<li><a href="https://babeljs.io/" target="_blank">Babel</a><br />
 <br /></li>
 </ul>
 
 <h2 id="from-leesei">from leesei</h2>
 
 <ul>
-<li><a href="https://speakerdeck.com/vjeux/react-css-in-js">React: CSS in JS // Speaker Deck</a><br />
+<li><a href="https://speakerdeck.com/vjeux/react-css-in-js" target="_blank">React: CSS in JS // Speaker Deck</a><br />
 <br />
 <br />
 <br />
@@ -326,11 +366,12 @@ var Paginator = {}
 </div>
 
 
-
     
-
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+
+
+
 
 
 

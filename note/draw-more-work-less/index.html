@@ -51,6 +51,8 @@ Text based tools I used to use the GUI tool Dia.">
 
 
 <script src="/js/main.js"></script>
+
+
 <script>
 const pageKind = "page"
 const navLinks = ['/']
@@ -70,73 +72,107 @@ var Paginator = {}
 
 </script>
 
+
+
+
+
+
+
 </head>
 <body>
-  <div class="d-md-flex justify-content-center bg-light">
-<nav class="navbar navbar-expand-md navbar-light">
-  <a class="navbar-brand text-center"
-    href="https://cyrusn.github.io">
-    CyrusN
-  </a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarNav"
-    aria-controls="navbarNav"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class="bg-light d-md-flex justify-content-center">
+    <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand text-center"
+      href="https://cyrusn.github.io">
+      CyrusN
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Note" href="/note/">Note</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Note" href="/note/">Note</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Project" href="/project/">Project</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Project" href="/project/">Project</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Slide" href="/slide/">Slide</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Slide" href="/slide/">Slide</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Tags" href="/tags/">Tags</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Tags" href="/tags/">Tags</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="About" href="/page/about/">About</a>
-      </li>
-      
-      
-    </ul>
-  </div>
-
-</nav>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="About" href="/page/about/">About</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+  </nav>
 </div>
+
+<div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-light">
+        <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body py-1">
+        <p class="text-secondary">
+          <ul class="list-unstyled">
+              <li><code>Q</code> to go home</li>
+              <li><code>Space</code> to search</li>
+              <li><code>Enter</code> to start navigate in results</li>
+              <li><code>Enter again</code> to go to selected page</li>
+              <li><code>J / K</code> to navigate the list</li>
+              <li><code>J / K</code> can also scroll up and down in page</li>
+              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>[ / ]</code> to navigate the navbar</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <div class="container mt-2 mx-auto mb-4">
     
@@ -149,10 +185,14 @@ var Paginator = {}
   
   
   <p>
-    
+    <small>
+  
+  
+  
+</small>
+
 
 <small>
-
 
   <a class="badge badge-secondary" href="/tags/plantuml">plantuml</a>
 
@@ -185,19 +225,19 @@ var Paginator = {}
 
 <h1 id="some-links">Some Links</h1>
 
-<p><a href="http://leesei.github.io/uml/">UML | leesei&rsquo;s notebook</a> <a href="http://www.mbarsinai.com/blog/2014/01/12/draw-more-work-less/">Draw More, Work Less | [self employed]</a> <a href="http://www.slideshare.net/MichaelBarSinai/generated-siagramspublic">Draw More, Work Less</a> <a href="http://plantuml.sourceforge.net/sitemap.html">PlantUML</a> <a href="http://knsv.github.io/mermaid/">Mermaid</a></p>
+<p><a href="http://leesei.github.io/uml/" target="_blank">UML | leesei&rsquo;s notebook</a> <a href="http://www.mbarsinai.com/blog/2014/01/12/draw-more-work-less/" target="_blank">Draw More, Work Less | [self employed]</a> <a href="http://www.slideshare.net/MichaelBarSinai/generated-siagramspublic" target="_blank">Draw More, Work Less</a> <a href="http://plantuml.sourceforge.net/sitemap.html" target="_blank">PlantUML</a> <a href="http://knsv.github.io/mermaid/" target="_blank">Mermaid</a></p>
 
 <h1 id="from-leesei">from leesei</h1>
 
-<p><a href="http://en.wikipedia.org/wiki/Unified_Modeling_Language">Unified Modeling Language (UML)</a> <a href="http://en.wikipedia.org/wiki/Business_Process_Model_and_Notation">Business Process Model and Notation (BPMN)</a> is very similar to activity diagram. <a href="http://www.yang-central.org/twiki/bin/view/Main/WebHome">YANG Central</a></p>
+<p><a href="http://en.wikipedia.org/wiki/Unified_Modeling_Language" target="_blank">Unified Modeling Language (UML)</a> <a href="http://en.wikipedia.org/wiki/Business_Process_Model_and_Notation" target="_blank">Business Process Model and Notation (BPMN)</a> is very similar to activity diagram. <a href="http://www.yang-central.org/twiki/bin/view/Main/WebHome" target="_blank">YANG Central</a></p>
 
-<p><a href="http://www.holub.com/goodies/uml/">Allen Holub&rsquo;s UML Quick Reference</a></p>
+<p><a href="http://www.holub.com/goodies/uml/" target="_blank">Allen Holub&rsquo;s UML Quick Reference</a></p>
 
 <!-- more -->
 
 <h2 id="text-based-tools">Text based tools</h2>
 
-<p>I used to use the GUI tool <a href="https://wiki.gnome.org/Apps/Dia/">Dia</a>. But it was very buggy and no longer updated. I then went on to look for alternatives.</p>
+<p>I used to use the GUI tool <a href="https://wiki.gnome.org/Apps/Dia/" target="_blank">Dia</a>. But it was very buggy and no longer updated. I then went on to look for alternatives.</p>
 
 <p>I am frustrated with the UI diagram apps:</p>
 
@@ -222,49 +262,49 @@ var Paginator = {}
 
 <tbody>
 <tr>
-<td><a href="http://blockdiag.com/en/">PlantUML</a></td>
+<td><a href="http://blockdiag.com/en/" target="_blank">PlantUML</a></td>
 <td>Java</td>
 <td>Activity, State, Sequence, Component, Class, Object, Use Case, DITAA, JCCKit, Sudoku, XEarth</td>
-<td><a href="http://www.plantuml.com/plantuml/">live</a>, <a href="http://plantuml.sourceforge.net/PlantUML_Language_Reference_Guide.pdf">Language Reference</a></td>
+<td><a href="http://www.plantuml.com/plantuml/" target="_blank">live</a>, <a href="http://plantuml.sourceforge.net/PlantUML_Language_Reference_Guide.pdf" target="_blank">Language Reference</a></td>
 </tr>
 
 <tr>
-<td><a href="http://www.ckwnc.com">blockdiag</a></td>
+<td><a href="http://www.ckwnc.com" target="_blank">blockdiag</a></td>
 <td>Python</td>
 <td>Block, Activity, Sequence, Network, Rack, Packet</td>
-<td><a href="http://blockdiag.appspot.com/">live</a></td>
+<td><a href="http://blockdiag.appspot.com/" target="_blank">live</a></td>
 </tr>
 
 <tr>
-<td><a href="http://www.graphviz.org/">mermaid</a></td>
+<td><a href="http://www.graphviz.org/" target="_blank">mermaid</a></td>
 <td>JavaScript</td>
 <td>Flowchart (Activity), Sequence, Gantt</td>
-<td><a href="http://knsv.github.io/mermaid/live_editor/">live</a></td>
+<td><a href="http://knsv.github.io/mermaid/live_editor/" target="_blank">live</a></td>
 </tr>
 
 <tr>
-<td><a href="http://bramp.github.io/js-sequence-diagrams/">js-sequence-diagrams</a></td>
+<td><a href="http://bramp.github.io/js-sequence-diagrams/" target="_blank">js-sequence-diagrams</a></td>
 <td>JavaScript</td>
 <td>Sequence</td>
 <td>live</td>
 </tr>
 
 <tr>
-<td><a href="https://github.com/knsv/mermaid">UMLGraph</a></td>
+<td><a href="https://github.com/knsv/mermaid" target="_blank">UMLGraph</a></td>
 <td>Java</td>
 <td>Sequence, Class</td>
 <td></td>
 </tr>
 
 <tr>
-<td><a href="http://plantuml.sourceforge.net/">ckwnc</a></td>
+<td><a href="http://plantuml.sourceforge.net/" target="_blank">ckwnc</a></td>
 <td>?</td>
 <td>Sequence</td>
 <td>live <strong>only</strong>, C-like syntax</td>
 </tr>
 
 <tr>
-<td><a href="http://www.umlgraph.org/index.html">Graphviz</a></td>
+<td><a href="http://www.umlgraph.org/index.html" target="_blank">Graphviz</a></td>
 <td>C</td>
 <td>Digraph</td>
 <td>supports <code>dot</code>, layout/rendering layer for PlantUML and UMLGraph</td>
@@ -289,20 +329,20 @@ var Paginator = {}
 
 <h3 id="gaas-graph-as-a-service">GaaS (graph as a service)</h3>
 
-<p><a href="http://www.gravizo.com/">Your Graphviz, UMLGraph or PlantUML for your README</a></p>
+<p><a href="http://www.gravizo.com/" target="_blank">Your Graphviz, UMLGraph or PlantUML for your README</a></p>
 
-<p>PlantUML&rsquo;s <a href="http://plantuml.sourceforge.net/jquery.html">jQuery</a> and Javascript <a href="http://plantuml.sourceforge.net/demojavascript.html">async</a> and <a href="http://plantuml.sourceforge.net/demojavascript2.html">sync</a> integration.</p>
+<p>PlantUML&rsquo;s <a href="http://plantuml.sourceforge.net/jquery.html" target="_blank">jQuery</a> and Javascript <a href="http://plantuml.sourceforge.net/demojavascript.html" target="_blank">async</a> and <a href="http://plantuml.sourceforge.net/demojavascript2.html" target="_blank">sync</a> integration.</p>
 
 <h2 id="gui-tools">GUI Tools</h2>
 
 <ul>
-<li><a href="http://gaphor.sourceforge.net/download.php">Gaphor UML Modelling</a> (Python)<br /></li>
-<li><a href="http://www.umlet.com/">UMLet - Free UML Tool for Fast UML Diagrams</a><br /></li>
-<li><a href="http://argouml.tigris.org/">ArgoUML</a><br /></li>
-<li><a href="http://alexdp.free.fr/violetumleditor/page.php">Violet UML Editor : easy to use, completely free</a><br /></li>
-<li><a href="https://chrome.google.com/webstore/detail/lucidchart-diagrams-deskt/djejicklhojeokkfmdelnempiecmdomj?hl=en">Lucidchart Diagrams - Desktop - Chrome Web Store</a><br /></li>
-<li><a href="https://chrome.google.com/webstore/detail/gliffy-diagrams/bhmicilclplefnflapjmnngmkkkkpfad?hl=en">Gliffy Diagrams - Chrome Web Storše</a><br /></li>
-<li><a href="https://chrome.google.com/webstore/detail/sketchboardio/bgafhjpdkfjfmmjbebbdckolonomaoil?hl=en">Sketchboard.io - Chrome Web Store</a><br />
+<li><a href="http://gaphor.sourceforge.net/download.php" target="_blank">Gaphor UML Modelling</a> (Python)<br /></li>
+<li><a href="http://www.umlet.com/" target="_blank">UMLet - Free UML Tool for Fast UML Diagrams</a><br /></li>
+<li><a href="http://argouml.tigris.org/" target="_blank">ArgoUML</a><br /></li>
+<li><a href="http://alexdp.free.fr/violetumleditor/page.php" target="_blank">Violet UML Editor : easy to use, completely free</a><br /></li>
+<li><a href="https://chrome.google.com/webstore/detail/lucidchart-diagrams-deskt/djejicklhojeokkfmdelnempiecmdomj?hl=en" target="_blank">Lucidchart Diagrams - Desktop - Chrome Web Store</a><br /></li>
+<li><a href="https://chrome.google.com/webstore/detail/gliffy-diagrams/bhmicilclplefnflapjmnngmkkkkpfad?hl=en" target="_blank">Gliffy Diagrams - Chrome Web Storše</a><br /></li>
+<li><a href="https://chrome.google.com/webstore/detail/sketchboardio/bgafhjpdkfjfmmjbebbdckolonomaoil?hl=en" target="_blank">Sketchboard.io - Chrome Web Store</a><br />
 <br />
 <br />
 <br />
@@ -368,11 +408,12 @@ var Paginator = {}
 </div>
 
 
-
     
-
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+
+
+
 
 
 

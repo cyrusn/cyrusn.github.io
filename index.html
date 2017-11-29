@@ -31,6 +31,8 @@
 
 
 <script src="/js/main.js"></script>
+
+
 <script>
 const pageKind = "home"
 const navLinks = ['/']
@@ -50,101 +52,78 @@ var Paginator = {}
 
 </script>
 
+
+
+
+
+
+
 </head>
 <body class="mb-4">
-  <div class="d-md-flex justify-content-center bg-light">
-<nav class="navbar navbar-expand-md navbar-light">
-  <a class="navbar-brand text-center"
-    href="https://cyrusn.github.io">
-    CyrusN
-  </a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarNav"
-    aria-controls="navbarNav"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class="bg-light d-md-flex justify-content-center">
+    <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand text-center"
+      href="https://cyrusn.github.io">
+      CyrusN
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Note" href="/note/">Note</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Note" href="/note/">Note</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Project" href="/project/">Project</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Project" href="/project/">Project</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Slide" href="/slide/">Slide</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Slide" href="/slide/">Slide</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Tags" href="/tags/">Tags</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Tags" href="/tags/">Tags</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="About" href="/page/about/">About</a>
-      </li>
-      
-      
-    </ul>
-  </div>
-
-</nav>
-</div>
-
-  <div class="container mt-4">
-    <div class="mx-md-5 px-md-5">
-  <div class="input-group input-group-lg" id="search-area">
-    <input
-      type="text"
-      class="form-control"
-      placeholder="Search notes"
-      aria-label="Search Notes"
-      aria-describedby="basic-addon2"
-      id="search-box">
-  </div>
-  <p>
-    <small>
-      <span class="badge badge-success" data-toggle="modal" data-target="#tipsModal">tips</span>
-      <span class="pl-1 font-weight-bold font-italic" style='border-left: 4px solid grey'>filters: </span>
-      <span class="badge badge-secondary">title:</span>
-      <span class="badge badge-secondary">description:</span>
-      <span class="badge badge-secondary">tags:</span>
-      <span class="badge badge-secondary">content:</span>
-      <span class="badge badge-secondary">*</span>
-      <a class="badge badge-primary" target='_blank' href="https://lunrjs.com/guides/searching.html">learn more ...</a>
-    </small>
-  </p>
-</div>
-<hr>
-<div class="mx-md-5 px-md-5">
-  <div id="search-result"></div>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="About" href="/page/about/">About</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+  </nav>
 </div>
 
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
@@ -159,9 +138,12 @@ var Paginator = {}
       <div class="modal-body py-1">
         <p class="text-secondary">
           <ul class="list-unstyled">
-              <li><code>/</code> to search</li>
               <li><code>Q</code> to go home</li>
-              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
+              <li><code>Space</code> to search</li>
+              <li><code>Enter</code> to start navigate in results</li>
+              <li><code>Enter again</code> to go to selected page</li>
+              <li><code>J / K</code> to navigate the list</li>
+              <li><code>J / K</code> can also scroll up and down in page</li>
               <li><code>N / P</code> to navigate the page number</li>
               <li><code>[ / ]</code> to navigate the navbar</li>
           </ul>
@@ -171,6 +153,32 @@ var Paginator = {}
   </div>
 </div>
 
+
+  <div class="container mt-4">
+    <div class="mx-md-5 px-md-5">
+  <div class="input-group input-group-lg" id="search-area">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Search notes"
+      aria-label="Search Notes"
+      aria-describedby="basic-addon2"
+      id="search-box">
+  </div>
+  <p>
+    <small>
+      <span class="pl-1 font-weight-bold font-italic">filters: </span>
+      <span class="badge badge-secondary">title:</span>
+      <span class="badge badge-secondary">tags:</span>
+      <span class="badge badge-secondary">wildcards: *</span>
+      <span class="badge badge-secondary">fuzzy match: ~n</span>
+    </small>
+  </p>
+</div>
+<hr>
+<div class="mx-md-5 px-md-5">
+  <div id="search-result"></div>
+</div>
 <script src="/js/search.js"></script>
 
   </div>

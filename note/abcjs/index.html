@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <title>ABCJS</title>
+
+
+  <meta name="description" content="Note for abc music notation">
+  <meta property="og:description" content="Note for abc music notation">
+  <meta name="twitter:description" content="Note for abc music notation">
+
+
+<meta name="author" content="CyrusN"/>
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<script src='/js/jquery-3.2.1.slim.min.js'></script>
+<script src='/js/popper.min.js'></script>
+<script src='/js/bootstrap.min.js' ></script>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+
+
+<script src=' /js/lunr.min.js '></script>
+
+
+<link rel="stylesheet" type="text/css" href='/css/style.css'>
+
+
+<script src="/js/main.js"></script>
+
+
+<script>
+const pageKind = "page"
+const navLinks = ['/']
+
+  navLinks.push("\/note\/")
+
+  navLinks.push("\/project\/")
+
+  navLinks.push("\/slide\/")
+
+  navLinks.push("\/tags\/")
+
+  navLinks.push("\/page\/about\/")
+
+
+var Paginator = {}
+
+</script>
+
+
+
+
+<script src='/js/abcjs_basic_latest-min.js'></script>
+
+
+
+
+</head>
+<body>
+  <div class="bg-light d-md-flex justify-content-center">
+    <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand text-center"
+      href="https://cyrusn.github.io">
+      CyrusN
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Note" href="/note/">Note</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Project" href="/project/">Project</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Slide" href="/slide/">Slide</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Tags" href="/tags/">Tags</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="About" href="/page/about/">About</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+  </nav>
+</div>
+
+<div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-light">
+        <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body py-1">
+        <p class="text-secondary">
+          <ul class="list-unstyled">
+              <li><code>Q</code> to go home</li>
+              <li><code>Space</code> to search</li>
+              <li><code>Enter</code> to start navigate in results</li>
+              <li><code>Enter again</code> to go to selected page</li>
+              <li><code>J / K</code> to navigate the list</li>
+              <li><code>J / K</code> can also scroll up and down in page</li>
+              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>[ / ]</code> to navigate the navbar</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container mt-2 mx-auto mb-4">
+    
+<h1 class="display-4 text-center">ABCJS</h1>
+<hr>
+<div class="mx-auto">
+  
+  <h3 class="text-muted">Note for abc music notation</h3>
+  
+  
+  <p class="text-muted font-weight-bold">Created on 2017-11-29</p>
+  
+  
+  <p>
+    <small>
+  
+  
+    <span class="badge badge-warning">abcjs</span>
+  
+  
+</small>
+
+
+<small>
+
+  <a class="badge badge-secondary" href="/tags/abcjs">ABCJS</a>
+
+  <a class="badge badge-secondary" href="/tags/score">score</a>
+
+  <a class="badge badge-secondary" href="/tags/music">music</a>
+
+</small>
+
+
+
+
+  </p>
+  <hr>
+  <div id="content">
+    
+
+<h1 id="references">References</h1>
+
+<ul>
+<li><a href="http://trillian.mit.edu/~jc/music/abc/doc/ABCtut.html" target="_blank">ABC Music Notation</a><br />
+<br />
+<br /></li>
+</ul>
+
+<h1 id="example-lyrics">Example - Lyrics</h1>
+
+
+
+<script>
+   
+  function show (nav, id) {
+    $(`#${nav}-${id}`).show()
+    $(`#${nav}-link-${id}`).addClass('active')
+  }
+  function hide (nav, id) {
+    $(`#${nav}-${id}`).hide()
+    $(`#${nav}-link-${id}`).removeClass('active')
+  }
+
+  function select (nav, id) {
+    if (nav === 'score') {
+      show('score', id)
+      hide('code', id)
+    } else if (nav === 'code') {
+      show('code', id)
+      hide('score', id)
+    }
+  }
+
+</script>
+<div class="card mb-5">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <button id='score-link-1' class="btn btn-link nav-link active" onclick="select('score', '1')">Score</button>
+      </li>
+      <li class="nav-item">
+        <button id='code-link-1' class="btn btn-link nav-link" onclick="select('code', '1')">Code</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class='card-img' id='score-1'>
+  
+X: 1
+T: Misirlou
+C: N.Roubanis 1934
+O: Greece
+M: 4/4
+L: 1/8
+K: Gm
+%
+|: "D"D3 E ^F2 G2 | A3B ^c2BA | A8- | A8 |
+w: 1.~Mi-sir-lou mou i gli-kia sou ma-tia
+w: 2.~Mav-ro ma-ta Mi-sir-lou mou tre-lli
+| D3E ^F2G2 | A3B ^c2BA | A8- | A8 |
+w: Flo-ga m'e-hi~i-na-psi mes tin kar-dia
+w: Ti zo-i m'al-la-zo me-na fi-li
+
+
+  </div>
+
+  <div class="card-body" id='code-1' style="display: none;">
+    <div class="card-text">
+      <pre>
+X: 1
+T: Misirlou
+C: N.Roubanis 1934
+O: Greece
+M: 4/4
+L: 1/8
+K: Gm
+%
+|: "D"D3 E ^F2 G2 | A3B ^c2BA | A8- | A8 |
+w: 1.~Mi-sir-lou mou i gli-kia sou ma-tia
+w: 2.~Mav-ro ma-ta Mi-sir-lou mou tre-lli
+| D3E ^F2G2 | A3B ^c2BA | A8- | A8 |
+w: Flo-ga m'e-hi~i-na-psi mes tin kar-dia
+w: Ti zo-i m'al-la-zo me-na fi-li
+
+</pre>
+    </div>
+  </div>
+</div>
+
+
+<script>
+   
+  ABCJS.renderAbc('score-1', '\nX: 1\nT: Misirlou\nC: N.Roubanis 1934\nO: Greece\nM: 4\/4\nL: 1\/8\nK: Gm\n%\n|: \x22D\x22D3 E ^F2 G2 | A3B ^c2BA | A8- | A8 |\nw: 1.~Mi-sir-lou mou i gli-kia sou ma-tia\nw: 2.~Mav-ro ma-ta Mi-sir-lou mou tre-lli\n| D3E ^F2G2 | A3B ^c2BA | A8- | A8 |\nw: Flo-ga m\x27e-hi~i-na-psi mes tin kar-dia\nw: Ti zo-i m\x27al-la-zo me-na fi-li\n\n', {}, {
+    'responsive': 'resize',
+    'add_classes': true
+  }, {
+    'oneSvgPerLine': true
+  })
+</script>
+
+
+<h1 id="example-voices">Example Voices</h1>
+
+<p>
+
+<script>
+   
+  function show (nav, id) {
+    $(`#${nav}-${id}`).show()
+    $(`#${nav}-link-${id}`).addClass('active')
+  }
+  function hide (nav, id) {
+    $(`#${nav}-${id}`).hide()
+    $(`#${nav}-link-${id}`).removeClass('active')
+  }
+
+  function select (nav, id) {
+    if (nav === 'score') {
+      show('score', id)
+      hide('code', id)
+    } else if (nav === 'code') {
+      show('code', id)
+      hide('score', id)
+    }
+  }
+
+</script>
+<div class="card mb-5">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <button id='score-link-2' class="btn btn-link nav-link active" onclick="select('score', '2')">Score</button>
+      </li>
+      <li class="nav-item">
+        <button id='code-link-2' class="btn btn-link nav-link" onclick="select('code', '2')">Code</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class='card-img' id='score-2'>
+  
+X:1
+T: Sonata I
+C: J.S. Bach
+M: C
+Q:"Adagio"
+L: 1/8
+K:C
+V:1 clef=treble name="Violino I"      sname="Vl. I"
+V:2 clef=treble name="Violino II"     sname="Vl. II"  space=+10
+[V:1]  g8-|gf/e/ {e}f>g (a/f/d/f/) (A//=B//A//B//TB3//A///B///)|
+[V:2] z8 | z8 |
+%
+[V:1] c/gf/ E/ed/ c/c'b/ A/ag/ | ^f/e/d- d/(c/B/A/) G/(e/c/e/) Aa| d2-d/g/_b/a/ a3 g/=f/|
+[V:2] c8- | cB/A/ {A}B>c (e/c/A/c/) (E//^F//E//F//TF3//E///F///) | G/(D/G/A/) _B/G/g/e/ ^cA d2-|
+%
+[V:1] Te/>d/e- e/(a/f/d/) TB/>A/B- B/(A//B//c/)d/| TG/>F/G- G/(c/A/F/) DTd/>c/ d/g/B/d/|Tc/>B/c2 B A/ag/ fA|
+[V:2] dT=c/>=B/ c>f d>e AF-| FTE/>D/ Ec'/-a/ Tf/>e/f- f/d/g/f/ | Te/>d/e/g/- g/fe/ d^c d/FE/|
+%
+[V:1] G/gf/ E/ed/ c/c'b/ A/ag/|^f/a/g/f/ g2-g>e' f2-|f/e^d/ e2-e>c' =d2-|
+[V:2] DG, G/gf/ E/ed/ =c/c'B/|ad'- d'/c'/d'/e'/ Ta/>g/a- a/c'/b/^f/|(g//a//g//a//Ta3//g///a///) b/a/b/c'/ T^f/>g/f- f/a/g/d/|
+%
+Q:"Alla breve"
+[V:1] [L:1/4] c4|B4|_B4|A2zd|=BGc2-|cd/e/ f/a/g/f/|e/d/c2B|e3^f|gG/A/Bc|
+[V:2] [L:1/4] zC/D/EF|GDG2-|GF/E/DE|FCF2-|FE/D/EF/G/|AFDB|cgG2-|GA/B/ c/e/d/c/|Bd2e|
+
+  </div>
+
+  <div class="card-body" id='code-2' style="display: none;">
+    <div class="card-text">
+      <pre>
+X:1
+T: Sonata I
+C: J.S. Bach
+M: C
+Q:"Adagio"
+L: 1/8
+K:C
+V:1 clef=treble name="Violino I"      sname="Vl. I"
+V:2 clef=treble name="Violino II"     sname="Vl. II"  space=+10
+[V:1]  g8-|gf/e/ {e}f>g (a/f/d/f/) (A//=B//A//B//TB3//A///B///)|
+[V:2] z8 | z8 |
+%
+[V:1] c/gf/ E/ed/ c/c'b/ A/ag/ | ^f/e/d- d/(c/B/A/) G/(e/c/e/) Aa| d2-d/g/_b/a/ a3 g/=f/|
+[V:2] c8- | cB/A/ {A}B>c (e/c/A/c/) (E//^F//E//F//TF3//E///F///) | G/(D/G/A/) _B/G/g/e/ ^cA d2-|
+%
+[V:1] Te/>d/e- e/(a/f/d/) TB/>A/B- B/(A//B//c/)d/| TG/>F/G- G/(c/A/F/) DTd/>c/ d/g/B/d/|Tc/>B/c2 B A/ag/ fA|
+[V:2] dT=c/>=B/ c>f d>e AF-| FTE/>D/ Ec'/-a/ Tf/>e/f- f/d/g/f/ | Te/>d/e/g/- g/fe/ d^c d/FE/|
+%
+[V:1] G/gf/ E/ed/ c/c'b/ A/ag/|^f/a/g/f/ g2-g>e' f2-|f/e^d/ e2-e>c' =d2-|
+[V:2] DG, G/gf/ E/ed/ =c/c'B/|ad'- d'/c'/d'/e'/ Ta/>g/a- a/c'/b/^f/|(g//a//g//a//Ta3//g///a///) b/a/b/c'/ T^f/>g/f- f/a/g/d/|
+%
+Q:"Alla breve"
+[V:1] [L:1/4] c4|B4|_B4|A2zd|=BGc2-|cd/e/ f/a/g/f/|e/d/c2B|e3^f|gG/A/Bc|
+[V:2] [L:1/4] zC/D/EF|GDG2-|GF/E/DE|FCF2-|FE/D/EF/G/|AFDB|cgG2-|GA/B/ c/e/d/c/|Bd2e|
+</pre>
+    </div>
+  </div>
+</div>
+
+
+<script>
+   
+  ABCJS.renderAbc('score-2', '\nX:1\nT: Sonata I\nC: J.S. Bach\nM: C\nQ:\x22Adagio\x22\nL: 1\/8\nK:C\nV:1 clef=treble name=\x22Violino I\x22      sname=\x22Vl. I\x22\nV:2 clef=treble name=\x22Violino II\x22     sname=\x22Vl. II\x22  space=\x2b10\n[V:1]  g8-|gf\/e\/ {e}f\x3eg (a\/f\/d\/f\/) (A\/\/=B\/\/A\/\/B\/\/TB3\/\/A\/\/\/B\/\/\/)|\n[V:2] z8 | z8 |\n%\n[V:1] c\/gf\/ E\/ed\/ c\/c\x27b\/ A\/ag\/ | ^f\/e\/d- d\/(c\/B\/A\/) G\/(e\/c\/e\/) Aa| d2-d\/g\/_b\/a\/ a3 g\/=f\/|\n[V:2] c8- | cB\/A\/ {A}B\x3ec (e\/c\/A\/c\/) (E\/\/^F\/\/E\/\/F\/\/TF3\/\/E\/\/\/F\/\/\/) | G\/(D\/G\/A\/) _B\/G\/g\/e\/ ^cA d2-|\n%\n[V:1] Te\/\x3ed\/e- e\/(a\/f\/d\/) TB\/\x3eA\/B- B\/(A\/\/B\/\/c\/)d\/| TG\/\x3eF\/G- G\/(c\/A\/F\/) DTd\/\x3ec\/ d\/g\/B\/d\/|Tc\/\x3eB\/c2 B A\/ag\/ fA|\n[V:2] dT=c\/\x3e=B\/ c\x3ef d\x3ee AF-| FTE\/\x3eD\/ Ec\x27\/-a\/ Tf\/\x3ee\/f- f\/d\/g\/f\/ | Te\/\x3ed\/e\/g\/- g\/fe\/ d^c d\/FE\/|\n%\n[V:1] G\/gf\/ E\/ed\/ c\/c\x27b\/ A\/ag\/|^f\/a\/g\/f\/ g2-g\x3ee\x27 f2-|f\/e^d\/ e2-e\x3ec\x27 =d2-|\n[V:2] DG, G\/gf\/ E\/ed\/ =c\/c\x27B\/|ad\x27- d\x27\/c\x27\/d\x27\/e\x27\/ Ta\/\x3eg\/a- a\/c\x27\/b\/^f\/|(g\/\/a\/\/g\/\/a\/\/Ta3\/\/g\/\/\/a\/\/\/) b\/a\/b\/c\x27\/ T^f\/\x3eg\/f- f\/a\/g\/d\/|\n%\nQ:\x22Alla breve\x22\n[V:1] [L:1\/4] c4|B4|_B4|A2zd|=BGc2-|cd\/e\/ f\/a\/g\/f\/|e\/d\/c2B|e3^f|gG\/A\/Bc|\n[V:2] [L:1\/4] zC\/D\/EF|GDG2-|GF\/E\/DE|FCF2-|FE\/D\/EF\/G\/|AFDB|cgG2-|GA\/B\/ c\/e\/d\/c\/|Bd2e|\n', {}, {
+    'responsive': 'resize',
+    'add_classes': true
+  }, {
+    'oneSvgPerLine': true
+  })
+</script>
+</p>
+
+  </div>
+</div>
+
+<hr>
+<div class="disqus-comments mx-auto px-5">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cyrusngithubio" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+
+    
+<link rel="stylesheet" href='/css/atom-one-dark.css'>
+<script src='/js/highlight.pack.js'></script>
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>

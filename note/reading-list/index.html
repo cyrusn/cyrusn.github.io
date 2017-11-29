@@ -62,6 +62,8 @@
 
 
 <script src="/js/main.js"></script>
+
+
 <script>
 const pageKind = "page"
 const navLinks = ['/']
@@ -81,73 +83,107 @@ var Paginator = {}
 
 </script>
 
+
+
+
+
+
+
 </head>
 <body>
-  <div class="d-md-flex justify-content-center bg-light">
-<nav class="navbar navbar-expand-md navbar-light">
-  <a class="navbar-brand text-center"
-    href="https://cyrusn.github.io">
-    CyrusN
-  </a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarNav"
-    aria-controls="navbarNav"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class="bg-light d-md-flex justify-content-center">
+    <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand text-center"
+      href="https://cyrusn.github.io">
+      CyrusN
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Note" href="/note/">Note</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Note" href="/note/">Note</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Project" href="/project/">Project</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Project" href="/project/">Project</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Slide" href="/slide/">Slide</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Slide" href="/slide/">Slide</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Tags" href="/tags/">Tags</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Tags" href="/tags/">Tags</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="About" href="/page/about/">About</a>
-      </li>
-      
-      
-    </ul>
-  </div>
-
-</nav>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="About" href="/page/about/">About</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+  </nav>
 </div>
+
+<div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-light">
+        <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body py-1">
+        <p class="text-secondary">
+          <ul class="list-unstyled">
+              <li><code>Q</code> to go home</li>
+              <li><code>Space</code> to search</li>
+              <li><code>Enter</code> to start navigate in results</li>
+              <li><code>Enter again</code> to go to selected page</li>
+              <li><code>J / K</code> to navigate the list</li>
+              <li><code>J / K</code> can also scroll up and down in page</li>
+              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>[ / ]</code> to navigate the navbar</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <div class="container mt-2 mx-auto mb-4">
     
@@ -160,7 +196,12 @@ var Paginator = {}
   
   
   <p>
-    
+    <small>
+  
+  
+  
+</small>
+
 
 
   </p>
@@ -171,38 +212,38 @@ var Paginator = {}
 <h1 id="reading-list">Reading List</h1>
 
 <ul>
-<li><a href="http://benalman.com/news/2010/11/immediately-invoked-function-expression/">Ben Alman » Immediately-Invoked Function Expression (IIFE)</a><br /></li>
-<li><a href="http://code.tutsplus.com/tutorials/protecting-your-keys-from-github--cms-23002">This section demos loading different config depending on NODE_ENV.</a><br /></li>
-<li><a href="http://code.tutsplus.com/tutorials/protecting-your-keys-from-github--cms-23002">protecting-your-keys-from-github</a><br /></li>
-<li><a href="http://papyros.io/">Papyros - Arch Linux.</a><br /></li>
-<li><a href="http://resrc.io/link/679/restful-web-services/">reSRC · RESTful Web Services</a><br /></li>
-<li><a href="https://hub.github.com/">Hub</a><br /></li>
-<li><a href="https://www.youtube.com/watch?v=EkluES9Rvak">Demystifying Regular Expressions- YouTube</a><!-- more --><br /></li>
-<li><a href="http://zurb.com/article/1362/foundation-for-apps-is-here">Foundation of Apps</a><br /></li>
-<li><a href="http://timeline.knightlab.com/">TimeLine JS</a><br /></li>
-<li><a href="http://err02.com/2014/10/31/HTTP/">淺談https</a><br /></li>
-<li><a href="http://leesei.github.io/2014/12/08/shell-notes/">Leesei&rsquo;s shell notes</a><br /></li>
-<li><a href="https://mkaz.com/2013/12/29/command-line-basics-and-tips/">Command Line Basic</a><br /></li>
-<li><a href="http://dotfiles.github.io/">dotfile</a><br /></li>
-<li><a href="https://github.com/mgcrea/angular-strap/blob/master/src/scrollspy/scrollspy.js">angular-strap-scrollspy.js at master · mgcrea-angular-strap · GitHub</a><br /></li>
-<li><a href="http://stackoverflow.com/questions/23160958/properly-handing-anchors-in-angularstraps-scrollspy">javascript - Properly Handing Anchors in AngularStrap&rsquo;s ScrollSpy - Stack Overflow</a><br /></li>
-<li><a href="http://mg.github.io/ngScrollSpy/">ngScrollSpy by mg</a><br /></li>
-<li><a href="http://stackoverflow.com/questions/17470370/how-to-implement-a-scrollspy-in-angular-js-the-right-way">twitter bootstrap - How to implement a scrollspy in angular.js the right way? - Stack Overflow</a><br /></li>
-<li><a href="http://alxhill.com/blog/articles/angular-scrollspy/">Using AngularJS to recreate Bootstrap&rsquo;s ScrollSpy - Alexander Hill | mallex();</a><br /></li>
-<li><a href="http://www.acnenomor.com/5385456p1/using-scrollspy-in-angularjs">Using ScrollSpy in AngularJS - acnenomor.com</a><br /></li>
-<li><a href="http://flowtype.org/">flowType</a><br /></li>
-<li><a href="https://github.com/NicoSantangelo/SublimeLinter-contrib-flow">SublimeLinter</a><br /></li>
-<li><a href="http://shitformakingwebsites.com/">shitformakingwebsites</a><br /></li>
-<li><a href="http://niftylettuce.com/posts/eskimo-rapid-mvp-node-boilerplate/">eskimo</a><br /></li>
-<li><a href="https://github.com/jaredhanson/electrolyte/blob/master/Makefile">electrolyte</a><br />
+<li><a href="http://benalman.com/news/2010/11/immediately-invoked-function-expression/" target="_blank">Ben Alman » Immediately-Invoked Function Expression (IIFE)</a><br /></li>
+<li><a href="http://code.tutsplus.com/tutorials/protecting-your-keys-from-github--cms-23002" target="_blank">This section demos loading different config depending on NODE_ENV.</a><br /></li>
+<li><a href="http://code.tutsplus.com/tutorials/protecting-your-keys-from-github--cms-23002" target="_blank">protecting-your-keys-from-github</a><br /></li>
+<li><a href="http://papyros.io/" target="_blank">Papyros - Arch Linux.</a><br /></li>
+<li><a href="http://resrc.io/link/679/restful-web-services/" target="_blank">reSRC · RESTful Web Services</a><br /></li>
+<li><a href="https://hub.github.com/" target="_blank">Hub</a><br /></li>
+<li><a href="https://www.youtube.com/watch?v=EkluES9Rvak" target="_blank">Demystifying Regular Expressions- YouTube</a><!-- more --><br /></li>
+<li><a href="http://zurb.com/article/1362/foundation-for-apps-is-here" target="_blank">Foundation of Apps</a><br /></li>
+<li><a href="http://timeline.knightlab.com/" target="_blank">TimeLine JS</a><br /></li>
+<li><a href="http://err02.com/2014/10/31/HTTP/" target="_blank">淺談https</a><br /></li>
+<li><a href="http://leesei.github.io/2014/12/08/shell-notes/" target="_blank">Leesei&rsquo;s shell notes</a><br /></li>
+<li><a href="https://mkaz.com/2013/12/29/command-line-basics-and-tips/" target="_blank">Command Line Basic</a><br /></li>
+<li><a href="http://dotfiles.github.io/" target="_blank">dotfile</a><br /></li>
+<li><a href="https://github.com/mgcrea/angular-strap/blob/master/src/scrollspy/scrollspy.js" target="_blank">angular-strap-scrollspy.js at master · mgcrea-angular-strap · GitHub</a><br /></li>
+<li><a href="http://stackoverflow.com/questions/23160958/properly-handing-anchors-in-angularstraps-scrollspy" target="_blank">javascript - Properly Handing Anchors in AngularStrap&rsquo;s ScrollSpy - Stack Overflow</a><br /></li>
+<li><a href="http://mg.github.io/ngScrollSpy/" target="_blank">ngScrollSpy by mg</a><br /></li>
+<li><a href="http://stackoverflow.com/questions/17470370/how-to-implement-a-scrollspy-in-angular-js-the-right-way" target="_blank">twitter bootstrap - How to implement a scrollspy in angular.js the right way? - Stack Overflow</a><br /></li>
+<li><a href="http://alxhill.com/blog/articles/angular-scrollspy/" target="_blank">Using AngularJS to recreate Bootstrap&rsquo;s ScrollSpy - Alexander Hill | mallex();</a><br /></li>
+<li><a href="http://www.acnenomor.com/5385456p1/using-scrollspy-in-angularjs" target="_blank">Using ScrollSpy in AngularJS - acnenomor.com</a><br /></li>
+<li><a href="http://flowtype.org/" target="_blank">flowType</a><br /></li>
+<li><a href="https://github.com/NicoSantangelo/SublimeLinter-contrib-flow" target="_blank">SublimeLinter</a><br /></li>
+<li><a href="http://shitformakingwebsites.com/" target="_blank">shitformakingwebsites</a><br /></li>
+<li><a href="http://niftylettuce.com/posts/eskimo-rapid-mvp-node-boilerplate/" target="_blank">eskimo</a><br /></li>
+<li><a href="https://github.com/jaredhanson/electrolyte/blob/master/Makefile" target="_blank">electrolyte</a><br />
 <br /></li>
 </ul>
 
 <h1 id="archive">Archive</h1>
 
 <ul>
-<li><a href="http://www.quora.com/What-programming-languages-should-a-modern-day-programmer-have-in-his-her-arsenal">What-programming-languages-should-a-modern-day-programmer-have-in-his-her-arsenal</a><br /></li>
-<li><a href="https://github.com/gnab/remark">Remark JS</a><br /></li>
+<li><a href="http://www.quora.com/What-programming-languages-should-a-modern-day-programmer-have-in-his-her-arsenal" target="_blank">What-programming-languages-should-a-modern-day-programmer-have-in-his-her-arsenal</a><br /></li>
+<li><a href="https://github.com/gnab/remark" target="_blank">Remark JS</a><br /></li>
 </ul>
 
   </div>
@@ -233,11 +274,12 @@ var Paginator = {}
 </div>
 
 
-
     
-
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+
+
+
 
 
 

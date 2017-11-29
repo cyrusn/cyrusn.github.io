@@ -7,10 +7,149 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
     <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
-    <lastBuildDate>Mon, 16 Oct 2017 16:05:23 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 29 Nov 2017 11:39:19 +0800</lastBuildDate>
     
 	<atom:link href="https://cyrusn.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ABCJS</title>
+      <link>https://cyrusn.github.io/note/abcjs/</link>
+      <pubDate>Wed, 29 Nov 2017 11:39:19 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/abcjs/</guid>
+      <description>References  ABC Music Notation
+  Example - Lyrics  function show (nav, id) { $(`#${nav}-${id}`).show() $(`#${nav}-link-${id}`).addClass(&#39;active&#39;) } function hide (nav, id) { $(`#${nav}-${id}`).hide() $(`#${nav}-link-${id}`).removeClass(&#39;active&#39;) } function select (nav, id) { if (nav === &#39;score&#39;) { show(&#39;score&#39;, id) hide(&#39;code&#39;, id) } else if (nav === &#39;code&#39;) { show(&#39;code&#39;, id) hide(&#39;score&#39;, id) } }  Score  Code    X: 1 T: Misirlou C: N.Roubanis 1934 O: Greece M: 4/4 L: 1/8 K: Gm % |: &#34;</description>
+    </item>
+    
+    <item>
+      <title>Backing Voice</title>
+      <link>https://cyrusn.github.io/note/backing-voice/</link>
+      <pubDate>Wed, 29 Nov 2017 11:29:10 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/backing-voice/</guid>
+      <description>黃金時代   function show (nav, id) { $(`#${nav}-${id}`).show() $(`#${nav}-link-${id}`).addClass(&#39;active&#39;) } function hide (nav, id) { $(`#${nav}-${id}`).hide() $(`#${nav}-link-${id}`).removeClass(&#39;active&#39;) } function select (nav, id) { if (nav === &#39;score&#39;) { show(&#39;score&#39;, id) hide(&#39;code&#39;, id) } else if (nav === &#39;code&#39;) { show(&#39;code&#39;, id) hide(&#39;score&#39;, id) } }  Score  Code    T: 黃金時代 K: D M: 4/4 L: 1/8 V:1 name=&#34;Vocal&#34; V:2 name=&#34;Chorus&#34; % [V:1] &#34;D&#34;dA/2A/2 -Ad &#34;</description>
+    </item>
+    
+    <item>
+      <title>Jazz</title>
+      <link>https://cyrusn.github.io/note/jazz/</link>
+      <pubDate>Tue, 28 Nov 2017 21:28:46 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/jazz/</guid>
+      <description>function show (nav, id) { $(`#${nav}-${id}`).show() $(`#${nav}-link-${id}`).addClass(&#39;active&#39;) } function hide (nav, id) { $(`#${nav}-${id}`).hide() $(`#${nav}-link-${id}`).removeClass(&#39;active&#39;) } function select (nav, id) { if (nav === &#39;score&#39;) { show(&#39;score&#39;, id) hide(&#39;code&#39;, id) } else if (nav === &#39;code&#39;) { show(&#39;code&#39;, id) hide(&#39;score&#39;, id) } }  Score  Code    K: C &#34;Dm7&#34;[DCF]|&#34;G7&#34;[GBDF]|&#34;Cmaj7&#34;[CEGB]||   K: C &#34;Dm7&#34;[DCF]|&#34;G7&#34;[GBDF]|&#34;Cmaj7&#34;[CEGB]||      ABCJS.renderAbc(&#39;score-1&#39;, &#39;\nK: C\n\x22Dm7\x22[DCF]|\x22G7\x22[GBDF]|\x22Cmaj7\x22[CEGB]||\n&#39;, {}, { &#39;responsive&#39;: &#39;resize&#39;, &#39;add_classes&#39;: true }, { &#39;oneSvgPerLine&#39;: true })  This is the basic chord of jazz music.</description>
+    </item>
+    
+    <item>
+      <title>GraphQL</title>
+      <link>https://cyrusn.github.io/note/graphql/</link>
+      <pubDate>Sat, 18 Nov 2017 01:47:41 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/graphql/</guid>
+      <description> Reference  The steady rise of GraphQL – freeCodeCamp
+ Passage with alot of reference for GraphQL
+   </description>
+    </item>
+    
+    <item>
+      <title>Applying Web-based Resources</title>
+      <link>https://cyrusn.github.io/slide/applying_web_based_resources/</link>
+      <pubDate>Tue, 14 Nov 2017 10:55:10 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/applying_web_based_resources/</guid>
+      <description>Agenda  About Me
+ History (TimelineJS)
+ Examples
+ Mock Multiple Pathway
+ Taiwan Further Study
+  To use or not to use
+ Google Servies
+ Google Form
+  Google Script
+  About Me  Math Major
+ D in comp 102 (HKUST) Just before 2012 Tons of information SLP + OLE
+  Examples  Subject Selection System
+ Mock Multiple Pathway
+  To use or not to use class: split-20</description>
+    </item>
+    
+    <item>
+      <title>Software Design</title>
+      <link>https://cyrusn.github.io/note/software-design/</link>
+      <pubDate>Mon, 13 Nov 2017 08:43:26 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/software-design/</guid>
+      <description>SDD (Software design document) Template  TOC
+ Introduction
+ Purpose
+ Scope
+ Overview
+  System Overview
+ System Architecture
+ Architecture Design
+ Decomposition Description
+ Design Rationale
+  Data Design
+ Data Description
+ Data Dictionary
+  Component Design
+ Human Interface Design
+ Overview of User Interface
+ Screen Images
+ Screen Objects and Actions
+  Requirements Matrix
+  Cucumber and Gherkin  Writing Features - Gherkin Language — Behat 2.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Raspberry Pi</title>
+      <link>https://cyrusn.github.io/slide/introduction-to-raspberry-pi/</link>
+      <pubDate>Fri, 03 Nov 2017 11:17:14 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/introduction-to-raspberry-pi/</guid>
+      <description>class: center middle inverse
+Introduction to Raspberry-Pi  Agenda  Raspberry Pi
+ What is Raspberry-Pi
+ Raspberry-Pi vs Audrino vs Microbit
+ What is GPIO?
+ Setup
+ Introduction to 16 common sensors
+ e.g. Blinking LED
+ e.g. Blinking LED cont...
+ Similar code in Scratch2?
+ Programming Learning
+ Top 10 Raspberry Pi Projects for Beginners
+ Reference
+ Thanks
+   class: center
+Raspberry Pi    RASPBERRY PI 3 MODEL B RASPBERRY PI ZERO W         More Powerful Much Lighter     What is Raspberry-Pi  A small and affordable computer that you can use to learn programming</description>
+    </item>
+    
+    <item>
+      <title>Math Resources</title>
+      <link>https://cyrusn.github.io/note/math-resources/</link>
+      <pubDate>Fri, 20 Oct 2017 14:32:46 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/math-resources/</guid>
+      <description> $$ \alpha $$
+Reference  資源下載 - 超研教育｜中學數學補習社｜Band 1補習學府｜補習課程｜暑期班
+ CE, DSE Maths Pastpaper &amp;amp; Marking Scheme 歷屆試題 | 知新教育
+ 學校沒有教的數學
+ (Part 1-Q1-14) 2015 DSE 數學卷一長問題 Math Paper 1 應該暫時係最詳細既答案 - 經數樂園－學習變有趣～
+ 數學補習 | 數學 2015 paper II 卷二 詳細答案 - Knight Mathematics 數學補習 - 中學專科數學補習社 - DSE數學 - IB/IGCSE/GCE - 自修生
+  </description>
+    </item>
+    
+    <item>
+      <title>Sublime Text</title>
+      <link>https://cyrusn.github.io/note/sublime-text/</link>
+      <pubDate>Wed, 18 Oct 2017 18:56:52 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/sublime-text/</guid>
+      <description> Plugin  Creating Sublime Text 3 Plugins - Part 1 | CNP
+ Sublime Text - Plugin API Reference
+  </description>
+    </item>
     
     <item>
       <title>Blink Led</title>
@@ -23,6 +162,16 @@
  Python Code
   Introduction Making Blinking LED is just like writing a hello world programme in engineering.
 Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GPIO.BCM) GPIO.set(LED, GPIO.OUT) GPIO.setwarnings(False) print(&amp;quot;Programme start.&amp;quot;) GPIO.output(LED, True) time.sleep(0.5) GPIO.output(LED, False) time.sleep(0.5) print(&amp;quot;Programme closed.&amp;quot;)  </description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://cyrusn.github.io/note/python/</link>
+      <pubDate>Sat, 14 Oct 2017 21:38:03 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/python/</guid>
+      <description> Tools  Format String
+  </description>
     </item>
     
     <item>
@@ -78,9 +227,9 @@ Switzerland, Austria, Czech, Slovakia</description>
       <pubDate>Tue, 05 Sep 2017 10:58:58 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/education/</guid>
-      <description>  [學校課程持續更新][update]
- [STEM][stem]
- [C&amp;amp;A][curriculum-and-assessment]
+      <description>  學校課程持續更新
+ STEM
+ C&amp;amp;A
   學校課程持續更新  學校課程持續更新
   STEM  科學教育課程指引 (小一至中六)
  數學教育課程指引 (小一至中六)
@@ -152,16 +301,18 @@ Tenses    Descibe future event  Will vs Going To Differences - GrammarBank
     </item>
     
     <item>
-      <title>STEM Education</title>
-      <link>https://cyrusn.github.io/note/stem/</link>
+      <title>STEM Idea on Education</title>
+      <link>https://cyrusn.github.io/note/stem-idea-on-education/</link>
       <pubDate>Tue, 20 Jun 2017 19:05:48 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/stem/</guid>
+      <guid>https://cyrusn.github.io/note/stem-idea-on-education/</guid>
       <description>Coding and Math
  Reference
  Statistic
  Engineering
  Some Idea from 青年會書院
+ Ideas
+ Model on STEM Education
  Resource
   Coding and Math Reference  Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine
  UC Davis Center for Integrated Computing and STEM Education

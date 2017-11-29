@@ -64,6 +64,8 @@
 
 
 <script src="/js/main.js"></script>
+
+
 <script>
 const pageKind = "page"
 const navLinks = ['/']
@@ -83,73 +85,107 @@ var Paginator = {}
 
 </script>
 
+
+
+
+
+
+
 </head>
 <body>
-  <div class="d-md-flex justify-content-center bg-light">
-<nav class="navbar navbar-expand-md navbar-light">
-  <a class="navbar-brand text-center"
-    href="https://cyrusn.github.io">
-    CyrusN
-  </a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarNav"
-    aria-controls="navbarNav"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class="bg-light d-md-flex justify-content-center">
+    <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand text-center"
+      href="https://cyrusn.github.io">
+      CyrusN
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Note" href="/note/">Note</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Note" href="/note/">Note</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Project" href="/project/">Project</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Project" href="/project/">Project</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Slide" href="/slide/">Slide</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Slide" href="/slide/">Slide</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Tags" href="/tags/">Tags</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Tags" href="/tags/">Tags</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="About" href="/page/about/">About</a>
-      </li>
-      
-      
-    </ul>
-  </div>
-
-</nav>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="About" href="/page/about/">About</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+  </nav>
 </div>
+
+<div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-light">
+        <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body py-1">
+        <p class="text-secondary">
+          <ul class="list-unstyled">
+              <li><code>Q</code> to go home</li>
+              <li><code>Space</code> to search</li>
+              <li><code>Enter</code> to start navigate in results</li>
+              <li><code>Enter again</code> to go to selected page</li>
+              <li><code>J / K</code> to navigate the list</li>
+              <li><code>J / K</code> can also scroll up and down in page</li>
+              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>[ / ]</code> to navigate the navbar</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <div class="container mt-2 mx-auto mb-4">
     
@@ -162,7 +198,12 @@ var Paginator = {}
   
   
   <p>
-    
+    <small>
+  
+  
+  
+</small>
+
 
 
   </p>
@@ -173,8 +214,8 @@ var Paginator = {}
 <h1 id="computer-science-knowledge">Computer Science Knowledge</h1>
 
 <ul>
-<li><a href="http://bigocheatsheet.com/">big O</a><br /></li>
-<li><a href="http://www.codecademy.com/">Codecademy</a><br />
+<li><a href="http://bigocheatsheet.com/" target="_blank">big O</a><br /></li>
+<li><a href="http://www.codecademy.com/" target="_blank">Codecademy</a><br />
 <br /></li>
 </ul>
 
@@ -182,19 +223,19 @@ var Paginator = {}
 
 <ul>
 <li>RPS exercise<br /></li>
-<li><a href="http://jsbooks.revolunet.com">jsbooks</a><br /></li>
+<li><a href="http://jsbooks.revolunet.com" target="_blank">jsbooks</a><br /></li>
 
 <li><p>Effective JavaScript 68 Specific Ways to Harness the Power of JavaScript</p>
 
 <ul>
 <li>Learning about iife, closure, lazy evaluation,<br /></li>
-<li><a href="http://benalman.com/news/2010/11/immediately-invoked-function-expression/">iife reference</a><br />
+<li><a href="http://benalman.com/news/2010/11/immediately-invoked-function-expression/" target="_blank">iife reference</a><br />
 <br /></li>
 </ul></li>
 
 <li><p>The Art of readable Coding</p></li>
 
-<li><p><a href="http://eloquentjavascript.net/contents.html">Eloquent Javascript</a></p></li>
+<li><p><a href="http://eloquentjavascript.net/contents.html" target="_blank">Eloquent Javascript</a></p></li>
 </ul>
 
 <h1 id="phantom-js">phantom.js</h1>
@@ -202,25 +243,25 @@ var Paginator = {}
 <p><em>for automate login the webpage</em></p>
 
 <ul>
-<li><a href="https://github.com/leesei/heroku-ctflogin/blob/master/bin/ctflogin.casperjs">leesei CTF example</a><br /></li>
-<li><a href="http://casperjs.org/">casperjs</a><br /></li>
-<li><a href="http://phantomjs.org/">phantomjs</a><br />
+<li><a href="https://github.com/leesei/heroku-ctflogin/blob/master/bin/ctflogin.casperjs" target="_blank">leesei CTF example</a><br /></li>
+<li><a href="http://casperjs.org/" target="_blank">casperjs</a><br /></li>
+<li><a href="http://phantomjs.org/" target="_blank">phantomjs</a><br />
 <br /></li>
 </ul>
 
 <h1 id="angularjs">AngularJS</h1>
 
 <ul>
-<li><a href="http://bardevblog.wordpress.com/2013/08/14/understanding-angularjs-simple-example/">Understanding AngularJS – Simple Example</a><br /></li>
-<li><a href="http://www.youtube.com/watch?v=i9MHigUZKEM">AngularJS Fundamentals In 60-ish Minutes</a><br /></li>
-<li><a href="http://www.thinkster.io/pick/GtaQ0oMGIl/">A Better Way to Learn AngularJS</a><br />
+<li><a href="http://bardevblog.wordpress.com/2013/08/14/understanding-angularjs-simple-example/" target="_blank">Understanding AngularJS – Simple Example</a><br /></li>
+<li><a href="http://www.youtube.com/watch?v=i9MHigUZKEM" target="_blank">AngularJS Fundamentals In 60-ish Minutes</a><br /></li>
+<li><a href="http://www.thinkster.io/pick/GtaQ0oMGIl/" target="_blank">A Better Way to Learn AngularJS</a><br />
 <br /></li>
 </ul>
 
 <h1 id="node-js">Node.JS</h1>
 
 <ul>
-<li><p><a href="http://chimera.labs.oreilly.com/books/1234000001808/index.html">Node: Up and Running</a></p>
+<li><p><a href="http://chimera.labs.oreilly.com/books/1234000001808/index.html" target="_blank">Node: Up and Running</a></p>
 
 <ul>
 <li>Finish ch1.<br /></li>
@@ -229,43 +270,43 @@ var Paginator = {}
 <br /></li>
 </ul></li>
 
-<li><p><a href="http://net.tutsplus.com/sessions/node-js-step-by-step">Node.js: Step by Step</a></p></li>
+<li><p><a href="http://net.tutsplus.com/sessions/node-js-step-by-step" target="_blank">Node.js: Step by Step</a></p></li>
 </ul>
 
-<h1 id="cs50-cs1"><a href="cs1">CS50</a></h1>
+<h1 id="cs50-cs1"><a href="cs1" target="_blank">CS50</a></h1>
 
 <p><em>for general computing knowledge</em></p>
 
 <h1 id="terminal">Terminal</h1>
 
 <ul>
-<li><a href="http://redlinetech.wordpress.com/2013/02/01/how-to-add-colors-to-mac-terminal/">how to add colors to Mac Terminal</a><br /></li>
-<li><a href="https://github.com/seebi/dircolors-solarized/issues/10">dircolors-solarized</a><br /></li>
-<li><a href="http://net.tutsplus.com/tutorials/tools-and-tips/the-command-line-is-your-best-friend/">the command line is your best friend</a><br /></li>
-<li><a href="http://www.maclife.com/article/columns/terminal_101_using_macports_and_homebrew">Terminal 101: Using MacPorts and Homebrew</a><br /></li>
-<li><a href="http://stefaanlippens.net/my_bashrc_aliases_profile_and_other_stuff">bashrc, bash aliases, profile and other files</a><br />
+<li><a href="http://redlinetech.wordpress.com/2013/02/01/how-to-add-colors-to-mac-terminal/" target="_blank">how to add colors to Mac Terminal</a><br /></li>
+<li><a href="https://github.com/seebi/dircolors-solarized/issues/10" target="_blank">dircolors-solarized</a><br /></li>
+<li><a href="http://net.tutsplus.com/tutorials/tools-and-tips/the-command-line-is-your-best-friend/" target="_blank">the command line is your best friend</a><br /></li>
+<li><a href="http://www.maclife.com/article/columns/terminal_101_using_macports_and_homebrew" target="_blank">Terminal 101: Using MacPorts and Homebrew</a><br /></li>
+<li><a href="http://stefaanlippens.net/my_bashrc_aliases_profile_and_other_stuff" target="_blank">bashrc, bash aliases, profile and other files</a><br />
 <br /></li>
 </ul>
 
 <h1 id="markdown">Markdown</h1>
 
 <ul>
-<li><a href="http://markdown.tw">Markdown語法說明</a><br /></li>
-<li><a href="http://johnmacfarlane.net/pandoc/">pandoc</a><br />
+<li><a href="http://markdown.tw" target="_blank">Markdown語法說明</a><br /></li>
+<li><a href="http://johnmacfarlane.net/pandoc/" target="_blank">pandoc</a><br />
 <br /></li>
 </ul>
 
 <h1 id="applescript">AppleScript</h1>
 
 <ul>
-<li><a href="http://www.macosxautomation.com/applescript/index.html">AppleScript Automantion</a><br />
+<li><a href="http://www.macosxautomation.com/applescript/index.html" target="_blank">AppleScript Automantion</a><br />
 <br /></li>
 </ul>
 
 <h1 id="other-resource">Other resource</h1>
 
 <ul>
-<li><a href="http://tools.ietf.org/search/rfc2616">rfc2616 about HTTP/1.1</a><br />
+<li><a href="http://tools.ietf.org/search/rfc2616" target="_blank">rfc2616 about HTTP/1.1</a><br />
 <br />
 <br />
 <br />
@@ -302,11 +343,12 @@ var Paginator = {}
 </div>
 
 
-
     
-
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+
+
+
 
 
 

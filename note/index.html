@@ -30,6 +30,8 @@
 
 
 <script src="/js/main.js"></script>
+
+
 <script>
 const pageKind = "section"
 const navLinks = ['/']
@@ -49,73 +51,107 @@ var Paginator = {}
 
 </script>
 
+
+
+
+
+
+
 </head>
 <body>
-  <div class="d-md-flex justify-content-center bg-light">
-<nav class="navbar navbar-expand-md navbar-light">
-  <a class="navbar-brand text-center"
-    href="https://cyrusn.github.io">
-    CyrusN
-  </a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarNav"
-    aria-controls="navbarNav"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class="bg-light d-md-flex justify-content-center">
+    <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand text-center"
+      href="https://cyrusn.github.io">
+      CyrusN
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Note" href="/note/">Note</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Note" href="/note/">Note</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Project" href="/project/">Project</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Project" href="/project/">Project</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Slide" href="/slide/">Slide</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Slide" href="/slide/">Slide</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Tags" href="/tags/">Tags</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Tags" href="/tags/">Tags</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="About" href="/page/about/">About</a>
-      </li>
-      
-      
-    </ul>
-  </div>
-
-</nav>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="About" href="/page/about/">About</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+  </nav>
 </div>
+
+<div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-light">
+        <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body py-1">
+        <p class="text-secondary">
+          <ul class="list-unstyled">
+              <li><code>Q</code> to go home</li>
+              <li><code>Space</code> to search</li>
+              <li><code>Enter</code> to start navigate in results</li>
+              <li><code>Enter again</code> to go to selected page</li>
+              <li><code>J / K</code> to navigate the list</li>
+              <li><code>J / K</code> can also scroll up and down in page</li>
+              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>[ / ]</code> to navigate the navbar</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <div class="container mt-2 mx-auto mb-4">
     
@@ -124,6 +160,7 @@ var Paginator = {}
 <div class="mx-md-5 px-md-5">
   <div>
     
+
 
 <div class="d-flex justify-content-center">
   <nav aria-label="Page navigation example">
@@ -175,6 +212,9 @@ var Paginator = {}
       
       
       
+      
+      
+      
 
       <li class="page-item " aria-label="Next">
         <a class="text-muted page-link" href="/note/page/2/">
@@ -183,7 +223,7 @@ var Paginator = {}
       </li>
       
       <li class="page-item ">
-        <a class="text-muted page-link" href="/note/page/7/" aria-label="Last" title="7">
+        <a class="text-muted page-link" href="/note/page/8/" aria-label="Last" title="8">
           <span aria-hidden="true">&raquo;&raquo;</span>
         </a>
       </li>
@@ -192,6 +232,7 @@ var Paginator = {}
   </nav>
 </div>
 
+
     <div class="list-group">
       
       <div
@@ -199,19 +240,267 @@ var Paginator = {}
       class="list-group-item list-group-item-action list-group-item-light active">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
-          <a class="text-light" href="/note/raspberry-pi/">Raspberry Pi</a>
+          <a class="text-light" href="/note/abcjs/">ABCJS</a>
+        </h6>
+        <small>2017-11-29</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-light" href="/note/abcjs/">/note/abcjs/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+    <span class="badge badge-warning">abcjs</span>
+  
+  
+</small>
+
+
+<small>
+
+  <a class="badge badge-secondary" href="/tags/abcjs">ABCJS</a>
+
+  <a class="badge badge-secondary" href="/tags/score">score</a>
+
+  <a class="badge badge-secondary" href="/tags/music">music</a>
+
+</small>
+
+
+
+
+    </div>
+    
+      <div
+      id='list-1'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/backing-voice/">Backing Voice</a>
+        </h6>
+        <small>2017-11-29</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-muted" href="/note/backing-voice/">/note/backing-voice/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+    <span class="badge badge-warning">abcjs</span>
+  
+  
+</small>
+
+
+<small>
+
+  <a class="badge badge-secondary" href="/tags/abcjs">abcjs</a>
+
+</small>
+
+
+
+
+    </div>
+    
+      <div
+      id='list-2'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/jazz/">Jazz</a>
+        </h6>
+        <small>2017-11-28</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-muted" href="/note/jazz/">/note/jazz/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+    <span class="badge badge-warning">abcjs</span>
+  
+  
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-3'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/graphql/">GraphQL</a>
+        </h6>
+        <small>2017-11-18</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-muted" href="/note/graphql/">/note/graphql/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+
+<small>
+
+  <a class="badge badge-secondary" href="/tags/graphql">GraphQL</a>
+
+</small>
+
+
+
+
+    </div>
+    
+      <div
+      id='list-4'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/software-design/">Software Design</a>
+        </h6>
+        <small>2017-11-13</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-muted" href="/note/software-design/">/note/software-design/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+
+<small>
+
+  <a class="badge badge-secondary" href="/tags/design">design</a>
+
+</small>
+
+
+
+
+    </div>
+    
+      <div
+      id='list-5'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/math-resources/">Math Resources</a>
+        </h6>
+        <small>2017-10-20</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-muted" href="/note/math-resources/">/note/math-resources/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+    <span class="badge badge-warning">katex</span>
+  
+</small>
+
+
+<small>
+
+  <a class="badge badge-secondary" href="/tags/past-paper">past paper</a>
+
+</small>
+
+
+
+
+    </div>
+    
+      <div
+      id='list-6'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/sublime-text/">Sublime Text</a>
+        </h6>
+        <small>2017-10-18</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-muted" href="/note/sublime-text/">/note/sublime-text/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-7'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/python/">Python</a>
+        </h6>
+        <small>2017-10-14</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-muted" href="/note/python/">/note/python/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-8'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/raspberry-pi/">Raspberry Pi</a>
         </h6>
         <small>2017-09-19</small>
       </div>
       <div class='mb-0'>
         <small>
-          <a class="text-light" href="/note/raspberry-pi/">/note/raspberry-pi/</a>
+          <a class="text-muted" href="/note/raspberry-pi/">/note/raspberry-pi/</a>
         </small>
       </div>
-      
+      <small>
+  
+  
+  
+</small>
+
 
 <small>
-
 
   <a class="badge badge-secondary" href="/tags/iot">iot</a>
 
@@ -231,7 +520,7 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-1'
+      id='list-9'
       class="list-group-item list-group-item-action list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -244,241 +533,18 @@ var Paginator = {}
           <a class="text-muted" href="/note/yakko-s-world-lyric/">/note/yakko-s-world-lyric/</a>
         </small>
       </div>
-      
+      <small>
+  
+  
+  
+</small>
+
 
 <small>
-
 
   <a class="badge badge-secondary" href="/tags/lyric">lyric</a>
 
   <a class="badge badge-secondary" href="/tags/map">map</a>
-
-</small>
-
-
-
-
-    </div>
-    
-      <div
-      id='list-2'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/education/">Education</a>
-        </h6>
-        <small>2017-09-05</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/education/">/note/education/</a>
-        </small>
-      </div>
-      
-
-<small>
-
-
-  <a class="badge badge-secondary" href="/tags/policy">policy</a>
-
-  <a class="badge badge-secondary" href="/tags/secondment">secondment</a>
-
-</small>
-
-
-
-
-    </div>
-    
-      <div
-      id='list-3'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/tsf/">TSF</a>
-        </h6>
-        <small>2017-09-04</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/tsf/">/note/tsf/</a>
-        </small>
-      </div>
-      
-
-<small>
-
-
-  <a class="badge badge-secondary" href="/tags/js">js</a>
-
-</small>
-
-
-
-
-    </div>
-    
-      <div
-      id='list-4'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/grammer/">Grammer</a>
-        </h6>
-        <small>2017-09-04</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/grammer/">/note/grammer/</a>
-        </small>
-      </div>
-      
-
-<small>
-
-
-  <a class="badge badge-secondary" href="/tags/english">english</a>
-
-  <a class="badge badge-secondary" href="/tags/grammer">grammer</a>
-
-</small>
-
-
-
-
-    </div>
-    
-      <div
-      id='list-5'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/swimming/">swimming</a>
-        </h6>
-        <small>2017-08-20</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/swimming/">/note/swimming/</a>
-        </small>
-      </div>
-      
-
-<small>
-
-
-  <a class="badge badge-secondary" href="/tags/freestyle">freestyle</a>
-
-</small>
-
-
-
-
-    </div>
-    
-      <div
-      id='list-6'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/sql/">sql</a>
-        </h6>
-        <small>2017-07-09</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/sql/">/note/sql/</a>
-        </small>
-      </div>
-      
-
-<small>
-
-
-  <a class="badge badge-secondary" href="/tags/normalization">normalization</a>
-
-  <a class="badge badge-secondary" href="/tags/normal-form">normal form</a>
-
-</small>
-
-
-
-
-    </div>
-    
-      <div
-      id='list-7'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/dyson/">Dyson Washing</a>
-        </h6>
-        <small>2017-07-09</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/dyson/">/note/dyson/</a>
-        </small>
-      </div>
-      
-
-
-    </div>
-    
-      <div
-      id='list-8'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/stem/">STEM Education</a>
-        </h6>
-        <small>2017-06-20</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/stem/">/note/stem/</a>
-        </small>
-      </div>
-      
-
-<small>
-
-
-  <a class="badge badge-secondary" href="/tags/education">education</a>
-
-  <a class="badge badge-secondary" href="/tags/electronics">electronics</a>
-
-  <a class="badge badge-secondary" href="/tags/engineering">engineering</a>
-
-</small>
-
-
-
-
-    </div>
-    
-      <div
-      id='list-9'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/pcvpet/">Notes on PCVEPT Course</a>
-        </h6>
-        <small>2017-05-27</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/pcvpet/">/note/pcvpet/</a>
-        </small>
-      </div>
-      
-
-<small>
-
-
-  <a class="badge badge-secondary" href="/tags/career">career</a>
-
-  <a class="badge badge-secondary" href="/tags/vpet">vpet</a>
 
 </small>
 
@@ -506,9 +572,11 @@ var Paginator = {}
 
 
     
-
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+
+
+
 
 
 

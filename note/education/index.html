@@ -11,9 +11,9 @@
   <title>Education</title>
 
 
-  <meta name="description" content="  [學校課程持續更新][update]
- [STEM][stem]
- [C&amp;A][curriculum-and-assessment]
+  <meta name="description" content="  學校課程持續更新
+ STEM
+ C&amp;A
   學校課程持續更新  學校課程持續更新
   STEM  科學教育課程指引 (小一至中六)
  數學教育課程指引 (小一至中六)
@@ -21,9 +21,9 @@
  科技教育課程指引 (小一至中六)
   C&amp;A  課程文件
   ">
-  <meta property="og:description" content="  [學校課程持續更新][update]
- [STEM][stem]
- [C&amp;A][curriculum-and-assessment]
+  <meta property="og:description" content="  學校課程持續更新
+ STEM
+ C&amp;A
   學校課程持續更新  學校課程持續更新
   STEM  科學教育課程指引 (小一至中六)
  數學教育課程指引 (小一至中六)
@@ -31,9 +31,9 @@
  科技教育課程指引 (小一至中六)
   C&amp;A  課程文件
   ">
-  <meta name="twitter:description" content="  [學校課程持續更新][update]
- [STEM][stem]
- [C&amp;A][curriculum-and-assessment]
+  <meta name="twitter:description" content="  學校課程持續更新
+ STEM
+ C&amp;A
   學校課程持續更新  學校課程持續更新
   STEM  科學教育課程指引 (小一至中六)
  數學教育課程指引 (小一至中六)
@@ -60,6 +60,8 @@
 
 
 <script src="/js/main.js"></script>
+
+
 <script>
 const pageKind = "page"
 const navLinks = ['/']
@@ -79,73 +81,107 @@ var Paginator = {}
 
 </script>
 
+
+
+
+
+
+
 </head>
 <body>
-  <div class="d-md-flex justify-content-center bg-light">
-<nav class="navbar navbar-expand-md navbar-light">
-  <a class="navbar-brand text-center"
-    href="https://cyrusn.github.io">
-    CyrusN
-  </a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarNav"
-    aria-controls="navbarNav"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class="bg-light d-md-flex justify-content-center">
+    <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand text-center"
+      href="https://cyrusn.github.io">
+      CyrusN
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Note" href="/note/">Note</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Note" href="/note/">Note</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Project" href="/project/">Project</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Project" href="/project/">Project</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Slide" href="/slide/">Slide</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Slide" href="/slide/">Slide</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Tags" href="/tags/">Tags</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Tags" href="/tags/">Tags</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="About" href="/page/about/">About</a>
-      </li>
-      
-      
-    </ul>
-  </div>
-
-</nav>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="About" href="/page/about/">About</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+  </nav>
 </div>
+
+<div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-light">
+        <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body py-1">
+        <p class="text-secondary">
+          <ul class="list-unstyled">
+              <li><code>Q</code> to go home</li>
+              <li><code>Space</code> to search</li>
+              <li><code>Enter</code> to start navigate in results</li>
+              <li><code>Enter again</code> to go to selected page</li>
+              <li><code>J / K</code> to navigate the list</li>
+              <li><code>J / K</code> can also scroll up and down in page</li>
+              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>[ / ]</code> to navigate the navbar</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <div class="container mt-2 mx-auto mb-4">
     
@@ -158,10 +194,14 @@ var Paginator = {}
   
   
   <p>
-    
+    <small>
+  
+  
+  
+</small>
+
 
 <small>
-
 
   <a class="badge badge-secondary" href="/tags/policy">policy</a>
 
@@ -180,9 +220,9 @@ var Paginator = {}
 <!-- MarkdownTOC -->
 
 <ul>
-<li>[學校課程持續更新][update]<br /></li>
-<li>[STEM][stem]<br /></li>
-<li>[C&amp;A][curriculum-and-assessment]<br />
+<li><a href="#update">學校課程持續更新</a><br /></li>
+<li><a href="#stem">STEM</a><br /></li>
+<li><a href="#curriculum-and-assessment">C&amp;A</a><br />
 <br /></li>
 </ul>
 
@@ -191,7 +231,7 @@ var Paginator = {}
 <h1 id="update">學校課程持續更新</h1>
 
 <ul>
-<li><a href="http://www.edb.gov.hk/tc/curriculum-development/renewal/guides.html">學校課程持續更新</a><br />
+<li><a href="http://www.edb.gov.hk/tc/curriculum-development/renewal/guides.html" target="_blank">學校課程持續更新</a><br />
 <br />
 <br /></li>
 </ul>
@@ -199,10 +239,10 @@ var Paginator = {}
 <h1 id="stem">STEM</h1>
 
 <ul>
-<li><a href="http://www.edb.gov.hk/attachment/en/curriculum-development/renewal/SE/SE_KLACG_eng_draft_2017_05.pdf">科學教育課程指引 (小一至中六)</a><br /></li>
-<li><a href="http://www.edb.gov.hk/attachment/en/curriculum-development/renewal/ME/ME_KLACG_eng_draft_2017_04.pdf">數學教育課程指引 (小一至中六)</a><br /></li>
-<li><a href="http://www.edb.gov.hk/attachment/tc/curriculum-development/renewal/STEM_Education_Report_Chi_20170303.pdf">《推動STEM教育 — 發揮創意潛能》報告</a><br /></li>
-<li><a href="http://www.edb.gov.hk/attachment/en/curriculum-development/renewal/TE/TE_KLACG_eng_draft_2017_05.pdf">科技教育課程指引 (小一至中六)</a><br />
+<li><a href="http://www.edb.gov.hk/attachment/en/curriculum-development/renewal/SE/SE_KLACG_eng_draft_2017_05.pdf" target="_blank">科學教育課程指引 (小一至中六)</a><br /></li>
+<li><a href="http://www.edb.gov.hk/attachment/en/curriculum-development/renewal/ME/ME_KLACG_eng_draft_2017_04.pdf" target="_blank">數學教育課程指引 (小一至中六)</a><br /></li>
+<li><a href="http://www.edb.gov.hk/attachment/tc/curriculum-development/renewal/STEM_Education_Report_Chi_20170303.pdf" target="_blank">《推動STEM教育 — 發揮創意潛能》報告</a><br /></li>
+<li><a href="http://www.edb.gov.hk/attachment/en/curriculum-development/renewal/TE/TE_KLACG_eng_draft_2017_05.pdf" target="_blank">科技教育課程指引 (小一至中六)</a><br />
 <br />
 <br /></li>
 </ul>
@@ -210,7 +250,7 @@ var Paginator = {}
 <h1 id="curriculum-and-assessment">C&amp;A</h1>
 
 <ul>
-<li><a href="http://www.edb.gov.hk/tc/curriculum-development/kla/ma/curr/index2.html">課程文件</a><br />
+<li><a href="http://www.edb.gov.hk/tc/curriculum-development/kla/ma/curr/index2.html" target="_blank">課程文件</a><br />
 <br />
 <br />
 <br />
@@ -249,11 +289,12 @@ var Paginator = {}
 </div>
 
 
-
     
-
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+
+
+
 
 
 

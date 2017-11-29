@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <title>Backing Voice</title>
+
+
+  <meta name="description" content="Some notes on backing voice">
+  <meta property="og:description" content="Some notes on backing voice">
+  <meta name="twitter:description" content="Some notes on backing voice">
+
+
+<meta name="author" content="CyrusN"/>
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<script src='/js/jquery-3.2.1.slim.min.js'></script>
+<script src='/js/popper.min.js'></script>
+<script src='/js/bootstrap.min.js' ></script>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+
+
+<script src=' /js/lunr.min.js '></script>
+
+
+<link rel="stylesheet" type="text/css" href='/css/style.css'>
+
+
+<script src="/js/main.js"></script>
+
+
+<script>
+const pageKind = "page"
+const navLinks = ['/']
+
+  navLinks.push("\/note\/")
+
+  navLinks.push("\/project\/")
+
+  navLinks.push("\/slide\/")
+
+  navLinks.push("\/tags\/")
+
+  navLinks.push("\/page\/about\/")
+
+
+var Paginator = {}
+
+</script>
+
+
+
+
+<script src='/js/abcjs_basic_latest-min.js'></script>
+
+
+
+
+</head>
+<body>
+  <div class="bg-light d-md-flex justify-content-center">
+    <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand text-center"
+      href="https://cyrusn.github.io">
+      CyrusN
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Note" href="/note/">Note</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Project" href="/project/">Project</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Slide" href="/slide/">Slide</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Tags" href="/tags/">Tags</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="About" href="/page/about/">About</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+  </nav>
+</div>
+
+<div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-light">
+        <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body py-1">
+        <p class="text-secondary">
+          <ul class="list-unstyled">
+              <li><code>Q</code> to go home</li>
+              <li><code>Space</code> to search</li>
+              <li><code>Enter</code> to start navigate in results</li>
+              <li><code>Enter again</code> to go to selected page</li>
+              <li><code>J / K</code> to navigate the list</li>
+              <li><code>J / K</code> can also scroll up and down in page</li>
+              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>[ / ]</code> to navigate the navbar</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container mt-2 mx-auto mb-4">
+    
+<h1 class="display-4 text-center">Backing Voice</h1>
+<hr>
+<div class="mx-auto">
+  
+  <h3 class="text-muted">Some notes on backing voice</h3>
+  
+  
+  <p class="text-muted font-weight-bold">Created on 2017-11-29</p>
+  
+  
+  <p>
+    <small>
+  
+  
+    <span class="badge badge-warning">abcjs</span>
+  
+  
+</small>
+
+
+<small>
+
+  <a class="badge badge-secondary" href="/tags/abcjs">abcjs</a>
+
+</small>
+
+
+
+
+  </p>
+  <hr>
+  <div id="content">
+    
+
+<h1 id="黃金時代">黃金時代</h1>
+
+<p>
+
+<script>
+   
+  function show (nav, id) {
+    $(`#${nav}-${id}`).show()
+    $(`#${nav}-link-${id}`).addClass('active')
+  }
+  function hide (nav, id) {
+    $(`#${nav}-${id}`).hide()
+    $(`#${nav}-link-${id}`).removeClass('active')
+  }
+
+  function select (nav, id) {
+    if (nav === 'score') {
+      show('score', id)
+      hide('code', id)
+    } else if (nav === 'code') {
+      show('code', id)
+      hide('score', id)
+    }
+  }
+
+</script>
+<div class="card mb-5">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <button id='score-link-1' class="btn btn-link nav-link active" onclick="select('score', '1')">Score</button>
+      </li>
+      <li class="nav-item">
+        <button id='code-link-1' class="btn btn-link nav-link" onclick="select('code', '1')">Code</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class='card-img' id='score-1'>
+  
+
+T: 黃金時代
+K: D
+M: 4/4
+L: 1/8
+V:1 name="Vocal"
+V:2 name="Chorus"
+%
+[V:1] "D"dA/2A/2 -Ad "A"cA/2A/2 z2 |"G"Bd/2d/2 -dG "A"F2 E2|
+w: 你 和 誰 - 結 伴 前 來 是 否 比 - 我 精 采 
+[V:2] fd/2d/2 -df ec/2c/2 z2 |z8|
+
+
+  </div>
+
+  <div class="card-body" id='code-1' style="display: none;">
+    <div class="card-text">
+      <pre>
+
+T: 黃金時代
+K: D
+M: 4/4
+L: 1/8
+V:1 name="Vocal"
+V:2 name="Chorus"
+%
+[V:1] "D"dA/2A/2 -Ad "A"cA/2A/2 z2 |"G"Bd/2d/2 -dG "A"F2 E2|
+w: 你 和 誰 - 結 伴 前 來 是 否 比 - 我 精 采 
+[V:2] fd/2d/2 -df ec/2c/2 z2 |z8|
+
+</pre>
+    </div>
+  </div>
+</div>
+
+
+<script>
+   
+  ABCJS.renderAbc('score-1', '\n\nT: 黃金時代\nK: D\nM: 4\/4\nL: 1\/8\nV:1 name=\x22Vocal\x22\nV:2 name=\x22Chorus\x22\n%\n[V:1] \x22D\x22dA\/2A\/2 -Ad \x22A\x22cA\/2A\/2 z2 |\x22G\x22Bd\/2d\/2 -dG \x22A\x22F2 E2|\nw: 你 和 誰 - 結 伴 前 來 是 否 比 - 我 精 采 \n[V:2] fd\/2d\/2 -df ec\/2c\/2 z2 |z8|\n\n', {}, {
+    'responsive': 'resize',
+    'add_classes': true
+  }, {
+    'oneSvgPerLine': true
+  })
+</script>
+<br />
+<!-- w: 自 從 前 愛 - 到 現 在 是 哪 個 可 一 可 再 --></p>
+
+  </div>
+</div>
+
+<hr>
+<div class="disqus-comments mx-auto px-5">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cyrusngithubio" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+
+    
+<link rel="stylesheet" href='/css/atom-one-dark.css'>
+<script src='/js/highlight.pack.js'></script>
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>

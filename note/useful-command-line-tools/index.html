@@ -33,6 +33,8 @@
 
 
 <script src="/js/main.js"></script>
+
+
 <script>
 const pageKind = "page"
 const navLinks = ['/']
@@ -52,73 +54,107 @@ var Paginator = {}
 
 </script>
 
+
+
+
+
+
+
 </head>
 <body>
-  <div class="d-md-flex justify-content-center bg-light">
-<nav class="navbar navbar-expand-md navbar-light">
-  <a class="navbar-brand text-center"
-    href="https://cyrusn.github.io">
-    CyrusN
-  </a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarNav"
-    aria-controls="navbarNav"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class="bg-light d-md-flex justify-content-center">
+    <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand text-center"
+      href="https://cyrusn.github.io">
+      CyrusN
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Note" href="/note/">Note</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Note" href="/note/">Note</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Project" href="/project/">Project</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Project" href="/project/">Project</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Slide" href="/slide/">Slide</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Slide" href="/slide/">Slide</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Tags" href="/tags/">Tags</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Tags" href="/tags/">Tags</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="About" href="/page/about/">About</a>
-      </li>
-      
-      
-    </ul>
-  </div>
-
-</nav>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="About" href="/page/about/">About</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+  </nav>
 </div>
+
+<div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-light">
+        <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body py-1">
+        <p class="text-secondary">
+          <ul class="list-unstyled">
+              <li><code>Q</code> to go home</li>
+              <li><code>Space</code> to search</li>
+              <li><code>Enter</code> to start navigate in results</li>
+              <li><code>Enter again</code> to go to selected page</li>
+              <li><code>J / K</code> to navigate the list</li>
+              <li><code>J / K</code> can also scroll up and down in page</li>
+              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>[ / ]</code> to navigate the navbar</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <div class="container mt-2 mx-auto mb-4">
     
@@ -131,10 +167,14 @@ var Paginator = {}
   
   
   <p>
-    
+    <small>
+  
+  
+  
+</small>
+
 
 <small>
-
 
   <a class="badge badge-secondary" href="/tags/commandline">commandline</a>
 
@@ -194,7 +234,7 @@ heredoc&gt; end
 
 <h1 id="useful-commands">Useful Commands</h1>
 
-<h2 id="cheatsheet-http-floss-zoomquiet-io-data-20120129165222-index-html"><a href="http://floss.zoomquiet.io/data/20120129165222/index.html">Cheatsheet</a></h2>
+<h2 id="cheatsheet-http-floss-zoomquiet-io-data-20120129165222-index-html"><a href="http://floss.zoomquiet.io/data/20120129165222/index.html" target="_blank">Cheatsheet</a></h2>
 
 <ul>
 <li><code>d</code> to show directory history<br />
@@ -205,14 +245,14 @@ heredoc&gt; end
 <li><code>!:n-m</code> get the attribute from n to m of last command<br /></li>
 <li><code>!!</code> to get the last command<br /></li>
 <li><code>!*</code> to get the argz of last command<br /></li>
-<li><a href="http://www.zzapper.co.uk/zshtips.html">zsh tip</a><br />
+<li><a href="http://www.zzapper.co.uk/zshtips.html" target="_blank">zsh tip</a><br />
 <br /></li>
 </ul>
 
 <h2 id="links">Links</h2>
 
 <ul>
-<li><a href="http://www.cs.elte.hu/zsh-manual/zsh_toc.html">zsh - Table of Contents</a><br />
+<li><a href="http://www.cs.elte.hu/zsh-manual/zsh_toc.html" target="_blank">zsh - Table of Contents</a><br />
 <br /></li>
 </ul>
 
@@ -284,7 +324,7 @@ cat file | xargs -I@ echo @
 
 <h2 id="imagemagick-convert">ImageMagick (convert)</h2>
 
-<p><a href="http://www.imagemagick.org/script/command-line-processing.php">ImageMagick</a></p>
+<p><a href="http://www.imagemagick.org/script/command-line-processing.php" target="_blank">ImageMagick</a></p>
 
 <blockquote>
 <p>Use ImageMagick to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.</p>
@@ -302,26 +342,26 @@ $ rename 's/\.html$/\.php/' *.html
 
 <h2 id="ffmpeg">ffmpeg</h2>
 
-<p><a href="https://www.ffmpeg.org/">ffmpeg</a> A complete, cross-platform solution to record, convert and stream audio and video.</p>
+<p><a href="https://www.ffmpeg.org/" target="_blank">ffmpeg</a> A complete, cross-platform solution to record, convert and stream audio and video.</p>
 
 <pre><code class="language-sh"># -i mean input_file
 $ ffmpeg -i input.mp4 output.avi
 </code></pre>
 
-<h2 id="http-server-https-www-npmjs-com-package-http-server"><a href="https://www.npmjs.com/package/http-server">http-server</a></h2>
+<h2 id="http-server-https-www-npmjs-com-package-http-server"><a href="https://www.npmjs.com/package/http-server" target="_blank">http-server</a></h2>
 
 <blockquote>
 <p>http-server is a simple, zero-configuration command-line http server. It is powerful enough for production usage, but it&rsquo;s simple and hackable enough to be used for testing, local development, and learning.</p>
 </blockquote>
 
-<h2 id="youtube-dl-http-rg3-github-io-youtube-dl"><a href="http://rg3.github.io/youtube-dl/">youtube-dl</a></h2>
+<h2 id="youtube-dl-http-rg3-github-io-youtube-dl"><a href="http://rg3.github.io/youtube-dl/" target="_blank">youtube-dl</a></h2>
 
 <ul>
 <li>youtube-dl is a small command-line program to download videos from YouTube.com and a few more sites.<br />
 <br /></li>
 </ul>
 
-<h2 id="platinum-searcher-https-github-com-monochromegane-the-platinum-searcher"><a href="https://github.com/monochromegane/the_platinum_searcher">Platinum Searcher</a></h2>
+<h2 id="platinum-searcher-https-github-com-monochromegane-the-platinum-searcher"><a href="https://github.com/monochromegane/the_platinum_searcher" target="_blank">Platinum Searcher</a></h2>
 
 <ul>
 <li>A code search tool similar to ack and the_silver_searcher(ag). It supports multi platforms and multi encodings.<br />
@@ -331,25 +371,25 @@ $ ffmpeg -i input.mp4 output.avi
 <pre><code class="language-sh">$ pt
 </code></pre>
 
-<h2 id="pandoc-http-johnmacfarlane-net-pandoc-index-html"><a href="http://johnmacfarlane.net/pandoc/index.html">Pandoc</a></h2>
+<h2 id="pandoc-http-johnmacfarlane-net-pandoc-index-html"><a href="http://johnmacfarlane.net/pandoc/index.html" target="_blank">Pandoc</a></h2>
 
 <ul>
-<li><a href="http://johnmacfarlane.net/pandoc/demos.html">examples</a><br /></li>
+<li><a href="http://johnmacfarlane.net/pandoc/demos.html" target="_blank">examples</a><br /></li>
 <li>a universal document converter<br />
 <br /></li>
 </ul>
 
 <h2 id="osx-metadata">osx metadata</h2>
 
-<p><a href="http://real-world-systems.com/docs/mdfind.1.html">mac OS X mdfind, mdutil, mdls, mdimport. file metadata utilities</a></p>
+<p><a href="http://real-world-systems.com/docs/mdfind.1.html" target="_blank">mac OS X mdfind, mdutil, mdls, mdimport. file metadata utilities</a></p>
 
-<h2 id="httpie-command-line-http-client-https-httpie-org"><a href="https://httpie.org/">HTTPie – command line HTTP client</a></h2>
+<h2 id="httpie-command-line-http-client-https-httpie-org"><a href="https://httpie.org/" target="_blank">HTTPie – command line HTTP client</a></h2>
 
 <pre><code class="language-sh"># install
 brew install httpie
 </code></pre>
 
-<h2 id="jq-https-stedolan-github-io-jq"><a href="https://stedolan.github.io/jq/">jq</a></h2>
+<h2 id="jq-https-stedolan-github-io-jq"><a href="https://stedolan.github.io/jq/" target="_blank">jq</a></h2>
 
 <ul>
 <li><code>http -b url | jq .name</code><br />
@@ -388,11 +428,12 @@ brew install httpie
 </div>
 
 
-
     
-
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+
+
+
 
 
 

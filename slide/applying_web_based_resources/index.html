@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  
+  <link rel="stylesheet" href="/css/remark.css">
+  <script src='/js/remark-latest.min.js'></script>
+
+  
+
+  
+
+
+
+</head>
+<body>
+  <textarea id="source"># Agenda
+- About Me
+- History (TimelineJS)
+- Examples
+    &#43; Mock Multiple Pathway
+    &#43; Taiwan Further Study
+- To use or not to use
+- Google Servies
+    &#43; Google Form
+- Google Script
+
+---
+# About Me
+
+- Math Major
+- D in comp 102 (HKUST)
+--
+
+- Just before 2012
+--
+
+- Tons of information
+--
+
+- SLP &#43; OLE
+
+
+---
+# Examples
+
+- Subject Selection System
+- Mock Multiple Pathway
+
+---
+# To use or not to use
+
+
+---
+class: split-20
+
+.sidebar[
+# Google
+
+- Form
+]
+
+
+.content[
+Google form can collect information to do survey on STEM
+]
+
+---
+
+.sidebar[
+# Google
+
+- Form
+- Calendar
+]
+
+
+.content[
+Google Calendar is the best calendar school can adopt
+]
+
+
+---
+
+.sidebar[
+# Google
+
+- Form
+- Calendar
+- Script
+]
+
+.content[
+Google Script can ...
+]
+
+---
+
+.column[
+## Title 1
+- foo
+- bar
+]
+
+.column[
+
+## Title 2
+- hello
+- world
+]
+
+---
+class: center middle
+# .red[♥] Thanks .red[♥]
+</textarea>
+  
+
+  <script>
+    
+    
+    
+    const option = {}
+    const obj = Object.assign({}, {"highlight-lines":true,"highlight-style":"atom-one-dark","navigation":{"click":true,"scroll":false},"ratio":"4:3"}, {"ratio":"16:9"})
+
+    function dashToCamelCase (word) {
+      return word.split("-").map((arr, n) =>
+        ( n === 0 ) ? arr : (arr[0].toUpperCase() + arr.slice(1))
+        ).join("")
+    }
+
+    for (const key in obj) {
+      option[dashToCamelCase(key)] = obj[key]
+    }
+
+    
+    const slideshow = remark.create(option)
+    
+  </script>
+
+  
+  <script type="text/javascript">
+    document.onkeypress = ({which, keyCode} = window.event) => {
+      const charCode = (typeof which === 'number') ? which : keyCode
+      if (charCode === 113) {
+        window.location.href = '/'
+      }
+    }
+  </script>
+</body>

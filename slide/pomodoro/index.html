@@ -5,6 +5,12 @@
   <link rel="stylesheet" href="/css/remark.css">
   <script src='/js/remark-latest.min.js'></script>
 
+  
+
+  
+
+
+
 </head>
 <body>
   <textarea id="source">class: center, middle
@@ -70,30 +76,37 @@
 [&amp;5]: https://en.wikipedia.org/wiki/Pomodoro_Technique
 [&amp;4]: https://en.wikipedia.org/wiki/Getting_Things_Done
 [image]: https://dl.dropboxusercontent.com/s/hs9jspievysiptw/flow.svg</textarea>
-  </script>
   
 
   <script>
+    
+    
+    
     const option = {}
-    const obj = Object.assign({}, {"highlight-lines":true,"highlight-style":"monokai","navigation":{"click":true,"scroll":false},"ratio":"4:3"}, "")
+    const obj = Object.assign({}, {"highlight-lines":true,"highlight-style":"atom-one-dark","navigation":{"click":true,"scroll":false},"ratio":"4:3"}, "")
+
     function dashToCamelCase (word) {
       return word.split("-").map((arr, n) =>
         ( n === 0 ) ? arr : (arr[0].toUpperCase() + arr.slice(1))
         ).join("")
     }
+
     for (const key in obj) {
       option[dashToCamelCase(key)] = obj[key]
     }
+
     
     const slideshow = remark.create(option)
     
+  </script>
+
+  
+  <script type="text/javascript">
     document.onkeypress = ({which, keyCode} = window.event) => {
-      const charCode = (typeof which == "number") ? which : keyCode;
-      if (charCode == 113) {
+      const charCode = (typeof which === 'number') ? which : keyCode
+      if (charCode === 113) {
         window.location.href = '/'
       }
-    };
-    Array.from(document.getElementsByTagName("a"))
-    .forEach(a => a.setAttribute('target', '_blank'))
+    }
   </script>
 </body>

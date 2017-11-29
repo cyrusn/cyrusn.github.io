@@ -37,6 +37,8 @@ cert generation How to create a .">
 
 
 <script src="/js/main.js"></script>
+
+
 <script>
 const pageKind = "page"
 const navLinks = ['/']
@@ -56,73 +58,107 @@ var Paginator = {}
 
 </script>
 
+
+
+
+
+
+
 </head>
 <body>
-  <div class="d-md-flex justify-content-center bg-light">
-<nav class="navbar navbar-expand-md navbar-light">
-  <a class="navbar-brand text-center"
-    href="https://cyrusn.github.io">
-    CyrusN
-  </a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarNav"
-    aria-controls="navbarNav"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class="bg-light d-md-flex justify-content-center">
+    <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand text-center"
+      href="https://cyrusn.github.io">
+      CyrusN
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Note" href="/note/">Note</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Note" href="/note/">Note</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Project" href="/project/">Project</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Project" href="/project/">Project</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Slide" href="/slide/">Slide</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Slide" href="/slide/">Slide</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Tags" href="/tags/">Tags</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Tags" href="/tags/">Tags</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="About" href="/page/about/">About</a>
-      </li>
-      
-      
-    </ul>
-  </div>
-
-</nav>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="About" href="/page/about/">About</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+  </nav>
 </div>
+
+<div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-light">
+        <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body py-1">
+        <p class="text-secondary">
+          <ul class="list-unstyled">
+              <li><code>Q</code> to go home</li>
+              <li><code>Space</code> to search</li>
+              <li><code>Enter</code> to start navigate in results</li>
+              <li><code>Enter again</code> to go to selected page</li>
+              <li><code>J / K</code> to navigate the list</li>
+              <li><code>J / K</code> can also scroll up and down in page</li>
+              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>[ / ]</code> to navigate the navbar</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <div class="container mt-2 mx-auto mb-4">
     
@@ -135,7 +171,12 @@ var Paginator = {}
   
   
   <p>
-    
+    <small>
+  
+  
+  
+</small>
+
 
 
   </p>
@@ -143,19 +184,19 @@ var Paginator = {}
   <div id="content">
     
 
-<p><a href="https://www.openssl.org/">OpenSSL</a> is a toolkit for the TLS and SSL. <a href="https://www.sslshopper.com/article-most-common-openssl-commands.html">The Most Common OpenSSL Commands</a> <!-- more --></p>
+<p><a href="https://www.openssl.org/" target="_blank">OpenSSL</a> is a toolkit for the TLS and SSL. <a href="https://www.sslshopper.com/article-most-common-openssl-commands.html" target="_blank">The Most Common OpenSSL Commands</a> <!-- more --></p>
 
 <h1 id="key-cert-types">key/cert types</h1>
 
-<p><a href="https://www.wikiwand.com/en/X.509">X.509 - Wikiwand</a> <a href="http://info.ssl.com/article.aspx?id=12149">DER vs. CRT vs. CER vs. PEM Certificates and How To Convert Them</a> <code>.pem</code> == <code>.crt</code> == X.509? probably <code>.key</code> == <code>.csr</code> == DER? probably not, <code>.csr</code> can be converted to <code>.crt</code> <code>.pfx</code>/<code>.p12</code> == PKCS#12</p>
+<p><a href="https://www.wikiwand.com/en/X.509" target="_blank">X.509 - Wikiwand</a> <a href="http://info.ssl.com/article.aspx?id=12149" target="_blank">DER vs. CRT vs. CER vs. PEM Certificates and How To Convert Them</a> <code>.pem</code> == <code>.crt</code> == X.509? probably <code>.key</code> == <code>.csr</code> == DER? probably not, <code>.csr</code> can be converted to <code>.crt</code> <code>.pfx</code>/<code>.p12</code> == PKCS#12</p>
 
 <p>key: no meta data, just the prime numbers and moduluses cert: with meta data</p>
 
 <h1 id="cert-generation">cert generation</h1>
 
-<p><a href="https://info.ssl.com/how-to-create-a-pfx-p12-certificate-file-using-openssl/">How to create a .pfx/.p12 certificate file using OpenSSL – SSL Information and FAQ</a> <a href="https://info.ssl.com/howto-generate-a-csr-for-openssl-see-tools-ssl-com/">HOWTO: Generate a CSR for OpenSSL – (see tools.ssl.com) – SSL Information and FAQ</a> <a href="http://stackoverflow.com/questions/10175812/how-to-create-a-self-signed-certificate-with-openssl">ssl - How to create a self-signed certificate with openssl? - Stack Overflow</a> <a href="https://www.digicert.com/easy-csr/openssl.htm">OpenSSL CSR Tool - Create Your CSR Faster | DigiCert.com</a></p>
+<p><a href="https://info.ssl.com/how-to-create-a-pfx-p12-certificate-file-using-openssl/" target="_blank">How to create a .pfx/.p12 certificate file using OpenSSL – SSL Information and FAQ</a> <a href="https://info.ssl.com/howto-generate-a-csr-for-openssl-see-tools-ssl-com/" target="_blank">HOWTO: Generate a CSR for OpenSSL – (see tools.ssl.com) – SSL Information and FAQ</a> <a href="http://stackoverflow.com/questions/10175812/how-to-create-a-self-signed-certificate-with-openssl" target="_blank">ssl - How to create a self-signed certificate with openssl? - Stack Overflow</a> <a href="https://www.digicert.com/easy-csr/openssl.htm" target="_blank">OpenSSL CSR Tool - Create Your CSR Faster | DigiCert.com</a></p>
 
-<p><a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-16-04">How To Create a Self-Signed SSL Certificate for Nginx in Ubuntu 16.04 | DigitalOcean</a></p>
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-16-04" target="_blank">How To Create a Self-Signed SSL Certificate for Nginx in Ubuntu 16.04 | DigitalOcean</a></p>
 
 <pre><code class="language-sh"># new private key and Certificate Signing Request
 openssl req -nodes -new -newkey rsa:2048 -keyout privateKey.key -out CSR.csr
@@ -172,7 +213,7 @@ openssl rsa -pubout -in private_key.pem -out public_key.pem
 
 <h1 id="query-cert">query cert</h1>
 
-<p><a href="https://coolaj86.com/articles/how-to-examine-an-ssl-https-tls-cert/">How to examine the metadata of an SSL (HTTPS/TLS) cert</a> <a href="https://www.sslshopper.com/ssl-certificate-tools.html">SSL Certificate Tools</a></p>
+<p><a href="https://coolaj86.com/articles/how-to-examine-an-ssl-https-tls-cert/" target="_blank">How to examine the metadata of an SSL (HTTPS/TLS) cert</a> <a href="https://www.sslshopper.com/ssl-certificate-tools.html" target="_blank">SSL Certificate Tools</a></p>
 
 <pre><code class="language-sh"># X.509
 openssl x509 -text -noout -in certificate.pem
@@ -187,7 +228,7 @@ openssl pkcs12 -info -in key.p12
 
 <h1 id="conversion">conversion</h1>
 
-<p><a href="https://www.sslshopper.com/ssl-converter.html">SSL Converter - Convert SSL Certificates to different formats</a></p>
+<p><a href="https://www.sslshopper.com/ssl-converter.html" target="_blank">SSL Converter - Convert SSL Certificates to different formats</a></p>
 
 <pre><code class="language-sh"># DER (.crt .cer .der) -&gt; PEM
 openssl x509 -inform der -in certificate.cer -out certificate.pem
@@ -212,7 +253,7 @@ sudo tcpdump -vvv -s 0 -nni eno1 -w internal.cap host 10.6.64.170 and port 443 &
 openssl s_client -connect 10.6.64.170:443 -state -msg
 </code></pre>
 
-<p><a href="https://support.f5.com/kb/en-us/solutions/public/15000/400/sol15475.html">SOL15475 - Troubleshooting SSL/TLS renegotiation</a> <a href="https://support.f5.com/kb/en-us/solutions/public/15000/200/sol15292.html">SOL15292 - Troubleshooting SSL/TLS handshake failures</a> <a href="https://support.f5.com/kb/en-us/solutions/public/10000/200/sol10209.html">SOL10209 - Overview of packet tracing with the ssldump utility</a></p>
+<p><a href="https://support.f5.com/kb/en-us/solutions/public/15000/400/sol15475.html" target="_blank">SOL15475 - Troubleshooting SSL/TLS renegotiation</a> <a href="https://support.f5.com/kb/en-us/solutions/public/15000/200/sol15292.html" target="_blank">SOL15292 - Troubleshooting SSL/TLS handshake failures</a> <a href="https://support.f5.com/kb/en-us/solutions/public/10000/200/sol10209.html" target="_blank">SOL10209 - Overview of packet tracing with the ssldump utility</a></p>
 
   </div>
 </div>
@@ -242,11 +283,12 @@ openssl s_client -connect 10.6.64.170:443 -state -msg
 </div>
 
 
-
     
-
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+
+
+
 
 
 

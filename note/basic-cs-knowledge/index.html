@@ -53,6 +53,8 @@
 
 
 <script src="/js/main.js"></script>
+
+
 <script>
 const pageKind = "page"
 const navLinks = ['/']
@@ -72,73 +74,107 @@ var Paginator = {}
 
 </script>
 
+
+
+
+
+
+
 </head>
 <body>
-  <div class="d-md-flex justify-content-center bg-light">
-<nav class="navbar navbar-expand-md navbar-light">
-  <a class="navbar-brand text-center"
-    href="https://cyrusn.github.io">
-    CyrusN
-  </a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarNav"
-    aria-controls="navbarNav"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class="bg-light d-md-flex justify-content-center">
+    <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand text-center"
+      href="https://cyrusn.github.io">
+      CyrusN
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Note" href="/note/">Note</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Note" href="/note/">Note</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Project" href="/project/">Project</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Project" href="/project/">Project</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Slide" href="/slide/">Slide</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Slide" href="/slide/">Slide</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Tags" href="/tags/">Tags</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Tags" href="/tags/">Tags</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="About" href="/page/about/">About</a>
-      </li>
-      
-      
-    </ul>
-  </div>
-
-</nav>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="About" href="/page/about/">About</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+  </nav>
 </div>
+
+<div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-light">
+        <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body py-1">
+        <p class="text-secondary">
+          <ul class="list-unstyled">
+              <li><code>Q</code> to go home</li>
+              <li><code>Space</code> to search</li>
+              <li><code>Enter</code> to start navigate in results</li>
+              <li><code>Enter again</code> to go to selected page</li>
+              <li><code>J / K</code> to navigate the list</li>
+              <li><code>J / K</code> can also scroll up and down in page</li>
+              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>[ / ]</code> to navigate the navbar</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <div class="container mt-2 mx-auto mb-4">
     
@@ -151,7 +187,12 @@ var Paginator = {}
   
   
   <p>
-    
+    <small>
+  
+  
+  
+</small>
+
 
 
   </p>
@@ -162,54 +203,54 @@ var Paginator = {}
 <h1 id="打底班">打底班</h1>
 
 <ul>
-<li><a href="https://www.youtube.com/playlist?list=PL7141DE955793D3F0">Programming Languages - YouTube</a><br /></li>
-<li><a href="https://www.youtube.com/watch?v=9-KUm9YpPm0">Hardware Basics - YouTube</a><br /></li>
-<li><a href="https://www.youtube.com/watch?v=9GDX-IyZ_C8">Operating System Basics - YouTube</a><br />
+<li><a href="https://www.youtube.com/playlist?list=PL7141DE955793D3F0" target="_blank">Programming Languages - YouTube</a><br /></li>
+<li><a href="https://www.youtube.com/watch?v=9-KUm9YpPm0" target="_blank">Hardware Basics - YouTube</a><br /></li>
+<li><a href="https://www.youtube.com/watch?v=9GDX-IyZ_C8" target="_blank">Operating System Basics - YouTube</a><br />
 <br /></li>
 </ul>
 
 <h1 id="free-courses">Free Courses</h1>
 
 <ul>
-<li><a href="https://www.coursera.org/courses?courseType=v2.ondemand">Coursera - Free Online Courses From Top Universities</a><br />
+<li><a href="https://www.coursera.org/courses?courseType=v2.ondemand" target="_blank">Coursera - Free Online Courses From Top Universities</a><br />
 <br /></li>
 </ul>
 
 <h1 id="javascript">JavaScript</h1>
 
 <ul>
-<li><a href="http://www.toptal.com/javascript/10-most-common-javascript-mistakes">JavaScript Not Working? Here are 10 Common JavaScript Problems | Toptal</a><br /></li>
-<li><a href="http://www.learnallthenodes.com/">Learn All The Nodes</a><br /></li>
-<li><a href="http://nodetuts.com/index.html">Node Tuts</a> // leesei: 我兩年前都係睇 Pedro，佢最近拍過晒<br /></li>
-<li><a href="https://www.youtube.com/user/jsconfeu/playlists?view=1&amp;sort=dd">JSConf - YouTube</a> // leesei: 好很多，太舊唔洗睇<br />
+<li><a href="http://www.toptal.com/javascript/10-most-common-javascript-mistakes" target="_blank">JavaScript Not Working? Here are 10 Common JavaScript Problems | Toptal</a><br /></li>
+<li><a href="http://www.learnallthenodes.com/" target="_blank">Learn All The Nodes</a><br /></li>
+<li><a href="http://nodetuts.com/index.html" target="_blank">Node Tuts</a> // leesei: 我兩年前都係睇 Pedro，佢最近拍過晒<br /></li>
+<li><a href="https://www.youtube.com/user/jsconfeu/playlists?view=1&amp;sort=dd" target="_blank">JSConf - YouTube</a> // leesei: 好很多，太舊唔洗睇<br />
 <br /></li>
 </ul>
 
 <h2 id="property-protoypal-inheritance">property, protoypal inheritance</h2>
 
 <ul>
-<li><a href="http://www.2ality.com/2012/10/proto.html">JavaScript: <strong>proto</strong></a><br /></li>
-<li><a href="http://www.2ality.com/2012/10/javascript-properties.html">Object properties in JavaScript</a><br /></li>
-<li><a href="http://www.2ality.com/2012/08/property-definition-assignment.html">Properties in JavaScript: definition versus assignment</a><br /></li>
-<li><a href="http://www.2ality.com/2013/01/two-prototypes.html">JavaScript terminology: the two prototypes</a><br /></li>
-<li><a href="http://www.2ality.com/2011/07/js-properties.html">JavaScript properties: inheritance and enumerability</a><br /></li>
-<li><a href="http://www.2ality.com/2012/01/js-inheritance-by-example.html">JavaScript inheritance by example</a><br /></li>
-<li><a href="http://www.2ality.com/2012/11/js-inheritance-beyond-basics.html">JavaScript inheritance: beyond the basics (video)</a><br /></li>
-<li><a href="http://www.2ality.com/2012/11/property-assignment-prototype-chain.html">Property assignment and the prototype chain</a><br /></li>
-<li><a href="http://www.2ality.com/2012/08/underscore-extend.html">A closer look at _.extend and copying properties</a><br /></li>
-<li><a href="http://howtonode.org/object-graphs">Learning Javascript with Object Graphs (Part I) - How To Node - NodeJS</a><br /></li>
-<li><a href="http://howtonode.org/object-graphs-2">Learning Javascript with Object Graphs (Part II) - How To Node - NodeJS</a><br /></li>
-<li><a href="http://howtonode.org/object-graphs-3">Learning Javascript with Object Graphs (Part III) - How To Node - NodeJS</a><br /></li>
-<li><a href="http://howtonode.org/prototypical-inheritance">Prototypal Inheritance - How To Node - NodeJS</a><br /></li>
-<li><a href="http://www.objectplayground.com/">Object Playground: The Definitive Guide to Object-Oriented JavaScript</a><br /></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain">Inheritance and the prototype chain - JavaScript | MDN</a><br /></li>
-<li><a href="http://javascript.crockford.com/prototypal.html">Prototypal Inheritance</a><br /></li>
-<li><a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/#prototypepatternjavascript">Learning JavaScript Design Patterns</a><br /></li>
-<li><a href="http://ejohn.org/blog/simple-javascript-inheritance/">John Resig - Simple JavaScript Inheritance</a><br /></li>
-<li><a href="http://phrogz.net/JS/classes/OOPinJS.html">OOP in JS, Part 1 : Public/Private Variables and Methods</a><br /></li>
-<li><a href="http://phrogz.net/JS/classes/OOPinJS2.html">OOP in JS, Part 2 : Inheritance</a><br /></li>
-<li><a href="http://metaduck.com/05-dump-this.html">Metaduck</a><br /></li>
-<li><a href="http://metaduck.com/05-dump-this.html">duck</a><br />
+<li><a href="http://www.2ality.com/2012/10/proto.html" target="_blank">JavaScript: <strong>proto</strong></a><br /></li>
+<li><a href="http://www.2ality.com/2012/10/javascript-properties.html" target="_blank">Object properties in JavaScript</a><br /></li>
+<li><a href="http://www.2ality.com/2012/08/property-definition-assignment.html" target="_blank">Properties in JavaScript: definition versus assignment</a><br /></li>
+<li><a href="http://www.2ality.com/2013/01/two-prototypes.html" target="_blank">JavaScript terminology: the two prototypes</a><br /></li>
+<li><a href="http://www.2ality.com/2011/07/js-properties.html" target="_blank">JavaScript properties: inheritance and enumerability</a><br /></li>
+<li><a href="http://www.2ality.com/2012/01/js-inheritance-by-example.html" target="_blank">JavaScript inheritance by example</a><br /></li>
+<li><a href="http://www.2ality.com/2012/11/js-inheritance-beyond-basics.html" target="_blank">JavaScript inheritance: beyond the basics (video)</a><br /></li>
+<li><a href="http://www.2ality.com/2012/11/property-assignment-prototype-chain.html" target="_blank">Property assignment and the prototype chain</a><br /></li>
+<li><a href="http://www.2ality.com/2012/08/underscore-extend.html" target="_blank">A closer look at _.extend and copying properties</a><br /></li>
+<li><a href="http://howtonode.org/object-graphs" target="_blank">Learning Javascript with Object Graphs (Part I) - How To Node - NodeJS</a><br /></li>
+<li><a href="http://howtonode.org/object-graphs-2" target="_blank">Learning Javascript with Object Graphs (Part II) - How To Node - NodeJS</a><br /></li>
+<li><a href="http://howtonode.org/object-graphs-3" target="_blank">Learning Javascript with Object Graphs (Part III) - How To Node - NodeJS</a><br /></li>
+<li><a href="http://howtonode.org/prototypical-inheritance" target="_blank">Prototypal Inheritance - How To Node - NodeJS</a><br /></li>
+<li><a href="http://www.objectplayground.com/" target="_blank">Object Playground: The Definitive Guide to Object-Oriented JavaScript</a><br /></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain" target="_blank">Inheritance and the prototype chain - JavaScript | MDN</a><br /></li>
+<li><a href="http://javascript.crockford.com/prototypal.html" target="_blank">Prototypal Inheritance</a><br /></li>
+<li><a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/#prototypepatternjavascript" target="_blank">Learning JavaScript Design Patterns</a><br /></li>
+<li><a href="http://ejohn.org/blog/simple-javascript-inheritance/" target="_blank">John Resig - Simple JavaScript Inheritance</a><br /></li>
+<li><a href="http://phrogz.net/JS/classes/OOPinJS.html" target="_blank">OOP in JS, Part 1 : Public/Private Variables and Methods</a><br /></li>
+<li><a href="http://phrogz.net/JS/classes/OOPinJS2.html" target="_blank">OOP in JS, Part 2 : Inheritance</a><br /></li>
+<li><a href="http://metaduck.com/05-dump-this.html" target="_blank">Metaduck</a><br /></li>
+<li><a href="http://metaduck.com/05-dump-this.html" target="_blank">duck</a><br />
 <br />
 <br />
 <br />
@@ -272,11 +313,12 @@ var Paginator = {}
 </div>
 
 
-
     
-
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+
+
+
 
 
 

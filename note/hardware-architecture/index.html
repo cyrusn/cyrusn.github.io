@@ -41,6 +41,8 @@ BIOS POST -&gt; BIOS -&gt; MBR of boot partition -&gt; Bootloader -&gt; Kernel â
 
 
 <script src="/js/main.js"></script>
+
+
 <script>
 const pageKind = "page"
 const navLinks = ['/']
@@ -60,73 +62,107 @@ var Paginator = {}
 
 </script>
 
+
+
+
+
+
+
 </head>
 <body>
-  <div class="d-md-flex justify-content-center bg-light">
-<nav class="navbar navbar-expand-md navbar-light">
-  <a class="navbar-brand text-center"
-    href="https://cyrusn.github.io">
-    CyrusN
-  </a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarNav"
-    aria-controls="navbarNav"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class="bg-light d-md-flex justify-content-center">
+    <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand text-center"
+      href="https://cyrusn.github.io">
+      CyrusN
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Note" href="/note/">Note</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Note" href="/note/">Note</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Project" href="/project/">Project</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Project" href="/project/">Project</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Slide" href="/slide/">Slide</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Slide" href="/slide/">Slide</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Tags" href="/tags/">Tags</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Tags" href="/tags/">Tags</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="About" href="/page/about/">About</a>
-      </li>
-      
-      
-    </ul>
-  </div>
-
-</nav>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="About" href="/page/about/">About</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+  </nav>
 </div>
+
+<div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-light">
+        <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body py-1">
+        <p class="text-secondary">
+          <ul class="list-unstyled">
+              <li><code>Q</code> to go home</li>
+              <li><code>Space</code> to search</li>
+              <li><code>Enter</code> to start navigate in results</li>
+              <li><code>Enter again</code> to go to selected page</li>
+              <li><code>J / K</code> to navigate the list</li>
+              <li><code>J / K</code> can also scroll up and down in page</li>
+              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>[ / ]</code> to navigate the navbar</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <div class="container mt-2 mx-auto mb-4">
     
@@ -139,7 +175,12 @@ var Paginator = {}
   
   
   <p>
-    
+    <small>
+  
+  
+  
+</small>
+
 
 
   </p>
@@ -150,21 +191,21 @@ var Paginator = {}
 <h1 id="basic">Basic</h1>
 
 <ul>
-<li><a href="https://www.youtube.com/watch?v=9-KUm9YpPm0">Hardware Basics - YouTube</a><br />
+<li><a href="https://www.youtube.com/watch?v=9-KUm9YpPm0" target="_blank">Hardware Basics - YouTube</a><br />
 <br /></li>
 </ul>
 
 <h1 id="what-is-legacy">what is legacy</h1>
 
-<p><a href="http://homepage.ntlworld.com/jonathan.deboynepollard/FGA/legacy-is-not-a-pejorative.html">FGA: &ldquo;legacy&rdquo; is not a pejorative. Do not use it as such.</a></p>
+<p><a href="http://homepage.ntlworld.com/jonathan.deboynepollard/FGA/legacy-is-not-a-pejorative.html" target="_blank">FGA: &ldquo;legacy&rdquo; is not a pejorative. Do not use it as such.</a></p>
 
 <h1 id="bios">BIOS</h1>
 
-<p>POST -&gt; BIOS -&gt; MBR of boot partition -&gt; Bootloader -&gt; Kernel -&gt; <a href="https://wiki.archlinux.org/index.php/Init"><code>init</code></a>/<a href="https://wiki.archlinux.org/index.php/Systemd"><code>systemd</code></a> -&gt; shell/display manager -&gt; <code>startx</code>/<code>xinit</code></p>
+<p>POST -&gt; BIOS -&gt; MBR of boot partition -&gt; Bootloader -&gt; Kernel -&gt; <a href="https://wiki.archlinux.org/index.php/Init" target="_blank"><code>init</code></a>/<a href="https://wiki.archlinux.org/index.php/Systemd" target="_blank"><code>systemd</code></a> -&gt; shell/display manager -&gt; <code>startx</code>/<code>xinit</code></p>
 
 <h1 id="uefi">UEFI</h1>
 
-<p><a href="https://wiki.archlinux.org/index.php/Unified_Extensible_Firmware_Interface">Unified Extensible Firmware Interface - ArchWiki</a></p>
+<p><a href="https://wiki.archlinux.org/index.php/Unified_Extensible_Firmware_Interface" target="_blank">Unified Extensible Firmware Interface - ArchWiki</a></p>
 
   </div>
 </div>
@@ -194,11 +235,12 @@ var Paginator = {}
 </div>
 
 
-
     
-
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+
+
+
 
 
 

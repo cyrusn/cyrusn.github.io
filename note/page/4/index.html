@@ -30,6 +30,8 @@
 
 
 <script src="/js/main.js"></script>
+
+
 <script>
 const pageKind = "section"
 const navLinks = ['/']
@@ -49,73 +51,107 @@ var Paginator = {}
 
 </script>
 
+
+
+
+
+
+
 </head>
 <body>
-  <div class="d-md-flex justify-content-center bg-light">
-<nav class="navbar navbar-expand-md navbar-light">
-  <a class="navbar-brand text-center"
-    href="https://cyrusn.github.io">
-    CyrusN
-  </a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarNav"
-    aria-controls="navbarNav"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class="bg-light d-md-flex justify-content-center">
+    <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand text-center"
+      href="https://cyrusn.github.io">
+      CyrusN
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Note" href="/note/">Note</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Note" href="/note/">Note</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Project" href="/project/">Project</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Project" href="/project/">Project</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Slide" href="/slide/">Slide</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Slide" href="/slide/">Slide</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="Tags" href="/tags/">Tags</a>
-      </li>
-      
-      
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Tags" href="/tags/">Tags</a>
+        </li>
+        
+        
 
-      
-      
-      <li class="nav-item">
-        <a class="nav-link" title="About" href="/page/about/">About</a>
-      </li>
-      
-      
-    </ul>
-  </div>
-
-</nav>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="About" href="/page/about/">About</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+  </nav>
 </div>
+
+<div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-light">
+        <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body py-1">
+        <p class="text-secondary">
+          <ul class="list-unstyled">
+              <li><code>Q</code> to go home</li>
+              <li><code>Space</code> to search</li>
+              <li><code>Enter</code> to start navigate in results</li>
+              <li><code>Enter again</code> to go to selected page</li>
+              <li><code>J / K</code> to navigate the list</li>
+              <li><code>J / K</code> can also scroll up and down in page</li>
+              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>[ / ]</code> to navigate the navbar</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <div class="container mt-2 mx-auto mb-4">
     
@@ -124,6 +160,7 @@ var Paginator = {}
 <div class="mx-md-5 px-md-5">
   <div>
     
+
 
 <div class="d-flex justify-content-center">
   <nav aria-label="Page navigation example">
@@ -183,6 +220,9 @@ var Paginator = {}
       
       
       
+      
+      
+      
 
       <li class="page-item " aria-label="Next">
         <a class="text-muted page-link" href="/note/page/5/">
@@ -191,7 +231,7 @@ var Paginator = {}
       </li>
       
       <li class="page-item ">
-        <a class="text-muted page-link" href="/note/page/7/" aria-label="Last" title="7">
+        <a class="text-muted page-link" href="/note/page/8/" aria-label="Last" title="8">
           <span aria-hidden="true">&raquo;&raquo;</span>
         </a>
       </li>
@@ -200,6 +240,7 @@ var Paginator = {}
   </nav>
 </div>
 
+
     <div class="list-group">
       
       <div
@@ -207,19 +248,271 @@ var Paginator = {}
       class="list-group-item list-group-item-action list-group-item-light active">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
-          <a class="text-light" href="/note/config-digtal-ocean-droplet-as-microservice/">Config Digital Ocean Droplet as Microservice</a>
+          <a class="text-light" href="/note/update-digital-ocean-kernel/">Update Digital Ocean Kernel</a>
+        </h6>
+        <small>2016-10-11</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-light" href="/note/update-digital-ocean-kernel/">/note/update-digital-ocean-kernel/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+
+<small>
+
+  <a class="badge badge-secondary" href="/tags/digitalocean">digitalocean</a>
+
+</small>
+
+
+
+
+    </div>
+    
+      <div
+      id='list-1'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/caddy/">Caddy Notes</a>
+        </h6>
+        <small>2016-10-09</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-muted" href="/note/caddy/">/note/caddy/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-2'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/https-and-jwt/">HTTPS and JWT</a>
+        </h6>
+        <small>2016-10-07</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-muted" href="/note/https-and-jwt/">/note/https-and-jwt/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+
+<small>
+
+  <a class="badge badge-secondary" href="/tags/https">https</a>
+
+</small>
+
+
+
+
+    </div>
+    
+      <div
+      id='list-3'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/batch-download-youtube/">Batch Download YouTube</a>
+        </h6>
+        <small>2016-10-07</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-muted" href="/note/batch-download-youtube/">/note/batch-download-youtube/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-4'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/web-authentication/">Web Authentication</a>
+        </h6>
+        <small>2016-10-05</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-muted" href="/note/web-authentication/">/note/web-authentication/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+
+<small>
+
+  <a class="badge badge-secondary" href="/tags/authentication">authentication</a>
+
+  <a class="badge badge-secondary" href="/tags/jwt">jwt</a>
+
+  <a class="badge badge-secondary" href="/tags/security">security</a>
+
+  <a class="badge badge-secondary" href="/tags/web-token">web-token</a>
+
+</small>
+
+
+
+
+    </div>
+    
+      <div
+      id='list-5'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/vim/">VIM Notes</a>
+        </h6>
+        <small>2016-10-04</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-muted" href="/note/vim/">/note/vim/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+
+<small>
+
+  <a class="badge badge-secondary" href="/tags/editor">editor</a>
+
+  <a class="badge badge-secondary" href="/tags/vim">vim</a>
+
+</small>
+
+
+
+
+    </div>
+    
+      <div
+      id='list-6'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/docker/">Docker</a>
+        </h6>
+        <small>2016-09-30</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-muted" href="/note/docker/">/note/docker/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+
+<small>
+
+  <a class="badge badge-secondary" href="/tags/docker">docker</a>
+
+</small>
+
+
+
+
+    </div>
+    
+      <div
+      id='list-7'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/nvalt-setting/">NVAlt Setting</a>
         </h6>
         <small>2016-09-29</small>
       </div>
       <div class='mb-0'>
         <small>
-          <a class="text-light" href="/note/config-digtal-ocean-droplet-as-microservice/">/note/config-digtal-ocean-droplet-as-microservice/</a>
+          <a class="text-muted" href="/note/nvalt-setting/">/note/nvalt-setting/</a>
         </small>
       </div>
-      
+      <small>
+  
+  
+  
+</small>
+
 
 <small>
 
+  <a class="badge badge-secondary" href="/tags/note-taking">note-taking</a>
+
+</small>
+
+
+
+
+    </div>
+    
+      <div
+      id='list-8'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/config-digtal-ocean-droplet-as-microservice/">Config Digital Ocean Droplet as Microservice</a>
+        </h6>
+        <small>2016-09-29</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-muted" href="/note/config-digtal-ocean-droplet-as-microservice/">/note/config-digtal-ocean-droplet-as-microservice/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+
+<small>
 
   <a class="badge badge-secondary" href="/tags/apache">apache</a>
 
@@ -237,7 +530,7 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-1'
+      id='list-9'
       class="list-group-item list-group-item-action list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -250,10 +543,14 @@ var Paginator = {}
           <a class="text-muted" href="/note/how-to-convert-pngs-to-gif/">/note/how-to-convert-pngs-to-gif/</a>
         </small>
       </div>
-      
+      <small>
+  
+  
+  
+</small>
+
 
 <small>
-
 
   <a class="badge badge-secondary" href="/tags/imagemagick">imagemagick</a>
 
@@ -262,239 +559,6 @@ var Paginator = {}
   <a class="badge badge-secondary" href="/tags/gif">gif</a>
 
   <a class="badge badge-secondary" href="/tags/convert">convert</a>
-
-</small>
-
-
-
-
-    </div>
-    
-      <div
-      id='list-2'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/open-ssl/">Open SSL</a>
-        </h6>
-        <small>2016-09-25</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/open-ssl/">/note/open-ssl/</a>
-        </small>
-      </div>
-      
-
-
-    </div>
-    
-      <div
-      id='list-3'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/ssl-tls/">SSL TLS</a>
-        </h6>
-        <small>2016-09-25</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/ssl-tls/">/note/ssl-tls/</a>
-        </small>
-      </div>
-      
-
-<small>
-
-
-  <a class="badge badge-secondary" href="/tags/security">security</a>
-
-  <a class="badge badge-secondary" href="/tags/ssl">SSL</a>
-
-  <a class="badge badge-secondary" href="/tags/tls">TLS</a>
-
-</small>
-
-
-
-
-    </div>
-    
-      <div
-      id='list-4'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/digital-ocean/">Digital Ocean Notes</a>
-        </h6>
-        <small>2016-03-26</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/digital-ocean/">/note/digital-ocean/</a>
-        </small>
-      </div>
-      
-
-<small>
-
-
-  <a class="badge badge-secondary" href="/tags/do">do</a>
-
-  <a class="badge badge-secondary" href="/tags/scp">scp</a>
-
-</small>
-
-
-
-
-    </div>
-    
-      <div
-      id='list-5'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/leveldb/">LevelDB Notes</a>
-        </h6>
-        <small>2015-12-08</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/leveldb/">/note/leveldb/</a>
-        </small>
-      </div>
-      
-
-<small>
-
-
-  <a class="badge badge-secondary" href="/tags/database">database</a>
-
-  <a class="badge badge-secondary" href="/tags/javascript">javascript</a>
-
-  <a class="badge badge-secondary" href="/tags/leveldb">leveldb</a>
-
-</small>
-
-
-
-
-    </div>
-    
-      <div
-      id='list-6'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/macos-setting/">macos Setting Notes</a>
-        </h6>
-        <small>2015-10-01</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/macos-setting/">/note/macos-setting/</a>
-        </small>
-      </div>
-      
-
-<small>
-
-
-  <a class="badge badge-secondary" href="/tags/macos">macos</a>
-
-  <a class="badge badge-secondary" href="/tags/setting">setting</a>
-
-</small>
-
-
-
-
-    </div>
-    
-      <div
-      id='list-7'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/alfred/">Alfred Notes</a>
-        </h6>
-        <small>2015-07-24</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/alfred/">/note/alfred/</a>
-        </small>
-      </div>
-      
-
-<small>
-
-
-  <a class="badge badge-secondary" href="/tags/productivity">productivity</a>
-
-  <a class="badge badge-secondary" href="/tags/alfred">alfred</a>
-
-</small>
-
-
-
-
-    </div>
-    
-      <div
-      id='list-8'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/google-chrome-app/">Google Chrome App</a>
-        </h6>
-        <small>2015-06-29</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/google-chrome-app/">/note/google-chrome-app/</a>
-        </small>
-      </div>
-      
-
-<small>
-
-
-  <a class="badge badge-secondary" href="/tags/google">google</a>
-
-  <a class="badge badge-secondary" href="/tags/chrome">chrome</a>
-
-  <a class="badge badge-secondary" href="/tags/app">app</a>
-
-</small>
-
-
-
-
-    </div>
-    
-      <div
-      id='list-9'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/programming-concept/">Programming Concept</a>
-        </h6>
-        <small>2015-06-05</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/programming-concept/">/note/programming-concept/</a>
-        </small>
-      </div>
-      
-
-<small>
-
-
-  <a class="badge badge-secondary" href="/tags/productivity">productivity</a>
 
 </small>
 
@@ -522,9 +586,11 @@ var Paginator = {}
 
 
     
-
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+
+
+
 
 
 
