@@ -11,43 +11,22 @@
   <title>Programming Concept</title>
 
 
-  <meta name="description" content="Links
- leesei&rsquo;s choice
- Naming
- What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?
-  [Programming Principal][pp]
- reference
-  Links  How to make your code self-documenting? | CodeUtopia
- Separation of concerns - Wikipedia
- Garbage in, garbage out - Wikiwand
-  leesei&rsquo;s choice Naming  寫出黎就要俾名，俾名啲concept 就清楚，code 亦自然清楚">
-  <meta property="og:description" content="Links
- leesei&rsquo;s choice
- Naming
- What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?
-  [Programming Principal][pp]
- reference
-  Links  How to make your code self-documenting? | CodeUtopia
- Separation of concerns - Wikipedia
- Garbage in, garbage out - Wikiwand
-  leesei&rsquo;s choice Naming  寫出黎就要俾名，俾名啲concept 就清楚，code 亦自然清楚">
-  <meta name="twitter:description" content="Links
- leesei&rsquo;s choice
- Naming
- What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?
-  [Programming Principal][pp]
- reference
-  Links  How to …">
+  <meta name="description" content="Links leesei&rsquo;s choice  Naming What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?  [Programming Principal][pp] reference  Links  How to make your code self-documenting? | CodeUtopia Separation of concerns - Wikipedia Garbage in, garbage out - Wikiwand  leesei&rsquo;s choice Naming  寫出黎就要俾名，俾名啲concept 就清楚，code 亦自然清楚
+ What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?">
+  <meta property="og:description" content="Links leesei&rsquo;s choice  Naming What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?  [Programming Principal][pp] reference  Links  How to make your code self-documenting? | CodeUtopia Separation of concerns - Wikipedia Garbage in, garbage out - Wikiwand  leesei&rsquo;s choice Naming  寫出黎就要俾名，俾名啲concept 就清楚，code 亦自然清楚
+ What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?">
+  <meta name="twitter:description" content="Links leesei&rsquo;s choice  Naming What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?  [Programming Principal][pp] reference  Links  How to make …">
 
 
 <meta name="author" content="CyrusN"/>
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
 <script src='/js/jquery-3.2.1.slim.min.js'></script>
 <script src='/js/popper.min.js'></script>
 <script src='/js/bootstrap.min.js' ></script>
-<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+
 
 
 <script src=' /js/lunr.min.js '></script>
@@ -56,7 +35,8 @@
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
-<script src="/js/main.js"></script>
+<script src='/js/main.js'></script>
+<script src='/js/helper.js'></script>
 
 
 <script>
@@ -75,7 +55,6 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
 
 
@@ -87,9 +66,9 @@ var Paginator = {}
 </head>
 <body>
   <div class="bg-light d-md-flex justify-content-center">
-    <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
-      href="https://cyrusn.github.io">
+      href='https://cyrusn.github.io'>
       CyrusN
     </a>
     <button
@@ -148,14 +127,14 @@ var Paginator = {}
         
       </ul>
     </div>
-    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
   </nav>
 </div>
 
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-success text-light">
+      <div class="modal-header bg-info text-light">
         <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="text-light">&times;</span>
@@ -168,9 +147,8 @@ var Paginator = {}
               <li><code>Space</code> to search</li>
               <li><code>Enter</code> to start navigate in results</li>
               <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list</li>
-              <li><code>J / K</code> can also scroll up and down in page</li>
-              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
+              <li><code>H / L</code> to navigate the page number</li>
               <li><code>[ / ]</code> to navigate the navbar</li>
           </ul>
         </p>
@@ -197,13 +175,11 @@ var Paginator = {}
   
 </small>
 
-
 <small>
 
   <a class="badge badge-secondary" href="/tags/productivity">productivity</a>
 
 </small>
-
 
 
 
@@ -215,16 +191,15 @@ var Paginator = {}
 <!-- MarkdownTOC -->
 
 <ul>
-<li>Links<br /></li>
-<li>leesei&rsquo;s choice<br />
+<li>Links</li>
+<li>leesei&rsquo;s choice
 
 <ul>
-<li>Naming<br /></li>
-<li>What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?<br /></li>
+<li>Naming</li>
+<li>What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?</li>
 </ul></li>
-<li>[Programming Principal][pp]<br /></li>
-<li>reference<br />
-<br /></li>
+<li>[Programming Principal][pp]</li>
+<li>reference</li>
 </ul>
 
 <!-- /MarkdownTOC -->
@@ -232,10 +207,9 @@ var Paginator = {}
 <h1 id="links">Links</h1>
 
 <ul>
-<li><a href="http://codeutopia.net/blog/2014/12/01/how-to-make-your-code-self-documenting/" target="_blank">How to make your code self-documenting? | CodeUtopia</a><br /></li>
-<li><a href="http://en.wikipedia.org/wiki/Separation_of_concerns" target="_blank">Separation of concerns - Wikipedia</a><br /></li>
-<li><a href="http://www.wikiwand.com/en/Garbage_in,_garbage_out" target="_blank">Garbage in, garbage out - Wikiwand</a><br />
-<br /></li>
+<li><a href="http://codeutopia.net/blog/2014/12/01/how-to-make-your-code-self-documenting/" target="_blank">How to make your code self-documenting? | CodeUtopia</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Separation_of_concerns" target="_blank">Separation of concerns - Wikipedia</a></li>
+<li><a href="http://www.wikiwand.com/en/Garbage_in,_garbage_out" target="_blank">Garbage in, garbage out - Wikiwand</a></li>
 </ul>
 
 <h1 id="leesei-s-choice">leesei&rsquo;s choice</h1>
@@ -252,69 +226,60 @@ var Paginator = {}
 <p>That programming is about solving problems, not writing code. Here are the four basic tasks that an individual programmer must perform.</p>
 
 <ol>
-<li>Define the problem (requirements and constraints).<br /></li>
-<li>Define the solution (algorithms and data structures).<br /></li>
-<li>Express the solution in code.<br /></li>
-<li>Prove and/or test correctness.<br /></li>
+<li>Define the problem (requirements and constraints).</li>
+<li>Define the solution (algorithms and data structures).</li>
+<li>Express the solution in code.</li>
+<li>Prove and/or test correctness.</li>
 </ol>
 </blockquote>
 
 <h1 id="pp">Programming Principal</h1>
 
 <ul>
-<li>Separation of Concern<br /></li>
-<li>DRY - Don’t repeat yourself<br /></li>
-<li>Abstraction Principle<br /></li>
-<li>KISS (Keep it simple, stupid!)<br /></li>
-<li>Write Code for the Maintainer<br /></li>
-<li>Principle of least astonishment<br /></li>
-<li>YAGNI (you aren’t gonna need it)<br /></li>
-<li>Do the simplest thing that could possibly work<br /></li>
-<li>Open/Closed Principle<br /></li>
-<li>Orthogonality<br /></li>
-<li>Robustness Principle<br /></li>
-<li>Hide Implementation Details<br /></li>
-<li>Minimize Coupling<br /></li>
-<li>Maximize Cohesion<br /></li>
-<li>Principle of least astonishment<br /></li>
-<li>Boy-Scout Rule<br />
+<li>Separation of Concern</li>
+<li>DRY - Don’t repeat yourself</li>
+<li>Abstraction Principle</li>
+<li>KISS (Keep it simple, stupid!)</li>
+<li>Write Code for the Maintainer</li>
+<li>Principle of least astonishment</li>
+<li>YAGNI (you aren’t gonna need it)</li>
+<li>Do the simplest thing that could possibly work</li>
+<li>Open/Closed Principle</li>
+<li>Orthogonality</li>
+<li>Robustness Principle</li>
+<li>Hide Implementation Details</li>
+<li>Minimize Coupling</li>
+<li>Maximize Cohesion</li>
+<li>Principle of least astonishment</li>
+<li>Boy-Scout Rule
 
 <ul>
-<li>Leave the campground cleaner than you found it<br /></li>
+<li>Leave the campground cleaner than you found it</li>
 </ul></li>
-<li>Law of Demeter<br />
+<li>Law of Demeter
 
 <ul>
-<li>Don’t Talk to stranger<br /></li>
-<li><a href="http://softwareengineering.stackexchange.com/questions/322622/according-to-demeters-law-is-a-class-allowed-to-return-one-of-its-members" target="_blank">design patterns - According to Demeter&rsquo;s law, is a class allowed to return one of its members? - Software Engineering Stack Exchange</a><br /></li>
+<li>Don’t Talk to stranger</li>
+<li><a href="http://softwareengineering.stackexchange.com/questions/322622/according-to-demeters-law-is-a-class-allowed-to-return-one-of-its-members" target="_blank">design patterns - According to Demeter&rsquo;s law, is a class allowed to return one of its members? - Software Engineering Stack Exchange</a></li>
 </ul></li>
-<li>Code Reuse is Good<br /></li>
-<li>Embrace Change<br /></li>
-<li>Don’t make me think<br /></li>
-<li>Do One Thing and Do It Well  (Unix Philosophy)<br />
+<li>Code Reuse is Good</li>
+<li>Embrace Change</li>
+<li>Don’t make me think</li>
+<li>Do One Thing and Do It Well  (Unix Philosophy)
 
 <ul>
-<li>Single Responsibility Principle<br /></li>
-<li>Curly’s Law<br /></li>
+<li>Single Responsibility Principle</li>
+<li>Curly’s Law</li>
 </ul></li>
-<li>Single Responsibility Principle<br /></li>
-<li>Avoid Premature Optimization<br />
-<br /></li>
+<li>Single Responsibility Principle</li>
+<li>Avoid Premature Optimization</li>
 </ul>
 
 <h1 id="reference">reference</h1>
 
 <ul>
-<li><a href="http://www.artima.com/weblogs/viewpost.jsp?thread=331531" target="_blank">The Principles of Good Programming</a><br /></li>
-<li><a href="https://webpro.github.io/programming-principles/" target="_blank">Programming Principles</a><br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br /></li>
+<li><a href="http://www.artima.com/weblogs/viewpost.jsp?thread=331531" target="_blank">The Principles of Good Programming</a></li>
+<li><a href="https://webpro.github.io/programming-principles/" target="_blank">Programming Principles</a></li>
 </ul>
 
   </div>
@@ -348,6 +313,18 @@ var Paginator = {}
     
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+
+
+
 
 
 

@@ -11,28 +11,15 @@
   <title>Swift Notes</title>
 
 
-  <meta name="description" content="Start Developing iOS / OSX Apps The Swift Programming Language (Swift 2.2): About Swift
-Start Developing iOS Apps (Swift): Jump Right In
+  <meta name="description" content=" Start Developing iOS / OSX Apps The Swift Programming Language (Swift 2.2): About Swift Start Developing iOS Apps (Swift): Jump Right In
 ICON for iOS Development 23,500 Icons - Free Download | Icons8
-Basic Keywords Control Flow  where (A switch case can use a where clause to check for additional conditions.)
-  Computed Properties  lazy
- get
- set
- willSet
- didSet
-  ## Instance Methods">
-  <meta property="og:description" content="Start Developing iOS / OSX Apps The Swift Programming Language (Swift 2.2): About Swift
-Start Developing iOS Apps (Swift): Jump Right In
+Basic Keywords Control Flow  where (A switch case can use a where clause to check for additional conditions.)  Computed Properties  lazy get set willSet didSet  ## Instance Methods
+ self static mutating  Subscript  subscript  Inheritance  override super  Initialization  init convenience required  Deinitialization  deinit unowned  Type Casting  is as  Extension  extension  Protocols  protocol  Generic  Where Clauses  Access Control  public internal private  Summary of the Grammar Using Swift with Cocoa and Objective-C  attribute import @objc @IBOutlet @IBAction @IBDesignable strong weak  ">
+  <meta property="og:description" content=" Start Developing iOS / OSX Apps The Swift Programming Language (Swift 2.2): About Swift Start Developing iOS Apps (Swift): Jump Right In
 ICON for iOS Development 23,500 Icons - Free Download | Icons8
-Basic Keywords Control Flow  where (A switch case can use a where clause to check for additional conditions.)
-  Computed Properties  lazy
- get
- set
- willSet
- didSet
-  ## Instance Methods">
-  <meta name="twitter:description" content="Start Developing iOS / OSX Apps The Swift Programming Language (Swift 2.2): About Swift
-Start Developing iOS Apps (Swift): Jump Right In
+Basic Keywords Control Flow  where (A switch case can use a where clause to check for additional conditions.)  Computed Properties  lazy get set willSet didSet  ## Instance Methods
+ self static mutating  Subscript  subscript  Inheritance  override super  Initialization  init convenience required  Deinitialization  deinit unowned  Type Casting  is as  Extension  extension  Protocols  protocol  Generic  Where Clauses  Access Control  public internal private  Summary of the Grammar Using Swift with Cocoa and Objective-C  attribute import @objc @IBOutlet @IBAction @IBDesignable strong weak  ">
+  <meta name="twitter:description" content=" Start Developing iOS / OSX Apps The Swift Programming Language (Swift 2.2): About Swift Start Developing iOS Apps (Swift): Jump Right In
 ICON for iOS Development 23,500 Icons - Free Download | Icons8 …">
 
 
@@ -40,10 +27,11 @@ ICON for iOS Development 23,500 Icons - Free Download | Icons8 …">
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
 <script src='/js/jquery-3.2.1.slim.min.js'></script>
 <script src='/js/popper.min.js'></script>
 <script src='/js/bootstrap.min.js' ></script>
-<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+
 
 
 <script src=' /js/lunr.min.js '></script>
@@ -52,7 +40,8 @@ ICON for iOS Development 23,500 Icons - Free Download | Icons8 …">
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
-<script src="/js/main.js"></script>
+<script src='/js/main.js'></script>
+<script src='/js/helper.js'></script>
 
 
 <script>
@@ -71,7 +60,6 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
 
 
@@ -83,9 +71,9 @@ var Paginator = {}
 </head>
 <body>
   <div class="bg-light d-md-flex justify-content-center">
-    <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
-      href="https://cyrusn.github.io">
+      href='https://cyrusn.github.io'>
       CyrusN
     </a>
     <button
@@ -144,14 +132,14 @@ var Paginator = {}
         
       </ul>
     </div>
-    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
   </nav>
 </div>
 
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-success text-light">
+      <div class="modal-header bg-info text-light">
         <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="text-light">&times;</span>
@@ -164,9 +152,8 @@ var Paginator = {}
               <li><code>Space</code> to search</li>
               <li><code>Enter</code> to start navigate in results</li>
               <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list</li>
-              <li><code>J / K</code> can also scroll up and down in page</li>
-              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
+              <li><code>H / L</code> to navigate the page number</li>
               <li><code>[ / ]</code> to navigate the navbar</li>
           </ul>
         </p>
@@ -193,7 +180,6 @@ var Paginator = {}
   
 </small>
 
-
 <small>
 
   <a class="badge badge-secondary" href="/tags/macos">macos</a>
@@ -204,7 +190,6 @@ var Paginator = {}
 
 
 
-
   </p>
   <hr>
   <div id="content">
@@ -212,7 +197,7 @@ var Paginator = {}
 
 <h1 id="start-developing-ios-osx-apps">Start Developing iOS / OSX Apps</h1>
 
-<p><a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/" target="_blank">The Swift Programming Language (Swift 2.2): About Swift</a><br />
+<p><a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/" target="_blank">The Swift Programming Language (Swift 2.2): About Swift</a>
 <a href="https://developer.apple.com/library/ios/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html#//apple_ref/doc/uid/TP40015214-CH2-SW1" target="_blank">Start Developing iOS Apps (Swift): Jump Right In</a></p>
 
 <h1 id="icon-for-ios-development">ICON for iOS Development</h1>
@@ -224,19 +209,17 @@ var Paginator = {}
 <h2 id="control-flow-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-controlflow-html-apple-ref-doc-uid-tp40014097-ch9-xid-191"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/ControlFlow.html#//apple_ref/doc/uid/TP40014097-CH9-XID_191" target="_blank">Control Flow</a></h2>
 
 <ul>
-<li>where (A <code>switch</code> case can use a <code>where</code> clause to check for additional conditions.)<br />
-<br /></li>
+<li>where (A <code>switch</code> case can use a <code>where</code> clause to check for additional conditions.)</li>
 </ul>
 
 <h2 id="computed-properties-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-properties-html"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Properties.html#//" target="_blank">Computed Properties</a></h2>
 
 <ul>
-<li>lazy<br /></li>
-<li>get<br /></li>
-<li>set<br /></li>
-<li>willSet<br /></li>
-<li>didSet<br />
-<br /></li>
+<li>lazy</li>
+<li>get</li>
+<li>set</li>
+<li>willSet</li>
+<li>didSet</li>
 </ul>
 
 <!-- more -->
@@ -244,80 +227,70 @@ var Paginator = {}
 <p>## <a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Methods.html#//" target="_blank">Instance Methods</a></p>
 
 <ul>
-<li>self<br /></li>
-<li>static<br /></li>
-<li>mutating<br />
-<br /></li>
+<li>self</li>
+<li>static</li>
+<li>mutating</li>
 </ul>
 
 <h2 id="subscript-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-subscripts-html"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Subscripts.html#//" target="_blank">Subscript</a></h2>
 
 <ul>
-<li>subscript<br />
-<br /></li>
+<li>subscript</li>
 </ul>
 
 <h2 id="inheritance-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-inheritance-html-apple-ref-doc-uid-tp40014097-ch17-xid-297"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Inheritance.html#//apple_ref/doc/uid/TP40014097-CH17-XID_297" target="_blank">Inheritance</a></h2>
 
 <ul>
-<li>override<br /></li>
-<li>super<br />
-<br /></li>
+<li>override</li>
+<li>super</li>
 </ul>
 
 <h2 id="initialization-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-initialization-html"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Initialization.html#//" target="_blank">Initialization</a></h2>
 
 <ul>
-<li>init<br /></li>
-<li>convenience<br /></li>
-<li>required<br />
-<br /></li>
+<li>init</li>
+<li>convenience</li>
+<li>required</li>
 </ul>
 
 <h2 id="deinitialization-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-deinitialization-html-apple-ref-doc-uid-tp40014097-ch19-xid-220"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Deinitialization.html#//apple_ref/doc/uid/TP40014097-CH19-XID_220" target="_blank">Deinitialization</a></h2>
 
 <ul>
-<li>deinit<br /></li>
-<li>unowned<br />
-<br /></li>
+<li>deinit</li>
+<li>unowned</li>
 </ul>
 
 <h2 id="type-casting-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-typecasting-html-apple-ref-doc-uid-tp40014097-ch22-xid-498"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/TypeCasting.html#//apple_ref/doc/uid/TP40014097-CH22-XID_498" target="_blank">Type Casting</a></h2>
 
 <ul>
-<li>is<br /></li>
-<li>as<br />
-<br /></li>
+<li>is</li>
+<li>as</li>
 </ul>
 
 <h2 id="extension-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-extensions-html-apple-ref-doc-uid-tp40014097-ch24-xid-229"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Extensions.html#//apple_ref/doc/uid/TP40014097-CH24-XID_229" target="_blank">Extension</a></h2>
 
 <ul>
-<li>extension<br />
-<br /></li>
+<li>extension</li>
 </ul>
 
 <h2 id="protocols-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-protocols-html-apple-ref-doc-uid-tp40014097-ch25-xid-390"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Protocols.html#//apple_ref/doc/uid/TP40014097-CH25-XID_390" target="_blank">Protocols</a></h2>
 
 <ul>
-<li>protocol<br />
-<br /></li>
+<li>protocol</li>
 </ul>
 
 <h2 id="generic-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-generics-html-apple-ref-doc-uid-tp40014097-ch26-xid-275"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Generics.html#//apple_ref/doc/uid/TP40014097-CH26-XID_275" target="_blank">Generic</a></h2>
 
 <ul>
-<li>Where Clauses<br />
-<br /></li>
+<li>Where Clauses</li>
 </ul>
 
 <h2 id="access-control-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-accesscontrol-html-apple-ref-doc-uid-tp40014097-ch41-xid-29"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/AccessControl.html#//apple_ref/doc/uid/TP40014097-CH41-XID_29" target="_blank">Access Control</a></h2>
 
 <ul>
-<li>public<br /></li>
-<li>internal<br /></li>
-<li>private<br />
-<br /></li>
+<li>public</li>
+<li>internal</li>
+<li>private</li>
 </ul>
 
 <h2 id="summary-of-the-grammar-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-swift-programming-language-zzsummaryofthegrammar-html-apple-ref-doc-uid-tp40014097-ch38-xid-1131"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/zzSummaryOfTheGrammar.html#//apple_ref/doc/uid/TP40014097-CH38-XID_1131" target="_blank">Summary of the Grammar</a></h2>
@@ -325,14 +298,14 @@ var Paginator = {}
 <h2 id="using-swift-with-cocoa-and-objective-c-https-developer-apple-com-library-prerelease-ios-documentation-swift-conceptual-buildingcocoaapps-index-html-apple-ref-doc-uid-tp40014216-ch2-xid-0"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216-CH2-XID_0" target="_blank">Using Swift with Cocoa and Objective-C</a></h2>
 
 <ul>
-<li><strong><em>attribute</em></strong><br /></li>
-<li>import<br /></li>
-<li>@objc<br /></li>
-<li>@IBOutlet<br /></li>
-<li>@IBAction<br /></li>
-<li>@IBDesignable<br /></li>
-<li>strong<br /></li>
-<li>weak<br /></li>
+<li><strong><em>attribute</em></strong></li>
+<li>import</li>
+<li>@objc</li>
+<li>@IBOutlet</li>
+<li>@IBAction</li>
+<li>@IBDesignable</li>
+<li>strong</li>
+<li>weak</li>
 </ul>
 
   </div>
@@ -366,6 +339,18 @@ var Paginator = {}
     
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+
+
+
 
 
 

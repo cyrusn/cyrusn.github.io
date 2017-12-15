@@ -11,46 +11,20 @@
   <title>HapiJS</title>
 
 
-  <meta name="description" content=" HapiJS  hapi.js
- Tutorials
- Example: Hapi Mongoose Angular
-  Plugin  Plugin
- hapi-auth-basic
- hapi-session-mongo
- hapi-auth-cookie
- Best Practice Project Structure · Issue #2479 · hapijs/hapi
-  Reference  hapi-playground
-  My Notes  How to set CORS
-  // set CORS enable for all routes server.connection({ routes: { cors: { headers: [true], credentials: true } } });  ">
-  <meta property="og:description" content=" HapiJS  hapi.js
- Tutorials
- Example: Hapi Mongoose Angular
-  Plugin  Plugin
- hapi-auth-basic
- hapi-session-mongo
- hapi-auth-cookie
- Best Practice Project Structure · Issue #2479 · hapijs/hapi
-  Reference  hapi-playground
-  My Notes  How to set CORS
-  // set CORS enable for all routes server.connection({ routes: { cors: { headers: [true], credentials: true } } });  ">
-  <meta name="twitter:description" content=" HapiJS  hapi.js
- Tutorials
- Example: Hapi Mongoose Angular
-  Plugin  Plugin
- hapi-auth-basic
- hapi-session-mongo
- hapi-auth-cookie
- Best Practice Project Structure · Issue #2479 · hapijs/hapi …">
+  <meta name="description" content=" HapiJS  hapi.js Tutorials Example: Hapi Mongoose Angular  Plugin  Plugin hapi-auth-basic hapi-session-mongo hapi-auth-cookie Best Practice Project Structure · Issue #2479 · hapijs/hapi  Reference  hapi-playground  My Notes  How to set CORS  // set CORS enable for all routes server.connection({ routes: { cors: { headers: [true], credentials: true } } });  ">
+  <meta property="og:description" content=" HapiJS  hapi.js Tutorials Example: Hapi Mongoose Angular  Plugin  Plugin hapi-auth-basic hapi-session-mongo hapi-auth-cookie Best Practice Project Structure · Issue #2479 · hapijs/hapi  Reference  hapi-playground  My Notes  How to set CORS  // set CORS enable for all routes server.connection({ routes: { cors: { headers: [true], credentials: true } } });  ">
+  <meta name="twitter:description" content=" HapiJS  hapi.js Tutorials Example: Hapi Mongoose Angular  Plugin  Plugin hapi-auth-basic hapi-session-mongo hapi-auth-cookie Best Practice Project Structure · Issue #2479 · hapijs/hapi  Reference …">
 
 
 <meta name="author" content="CyrusN"/>
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
 <script src='/js/jquery-3.2.1.slim.min.js'></script>
 <script src='/js/popper.min.js'></script>
 <script src='/js/bootstrap.min.js' ></script>
-<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+
 
 
 <script src=' /js/lunr.min.js '></script>
@@ -59,7 +33,8 @@
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
-<script src="/js/main.js"></script>
+<script src='/js/main.js'></script>
+<script src='/js/helper.js'></script>
 
 
 <script>
@@ -78,7 +53,6 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
 
 
@@ -90,9 +64,9 @@ var Paginator = {}
 </head>
 <body>
   <div class="bg-light d-md-flex justify-content-center">
-    <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
-      href="https://cyrusn.github.io">
+      href='https://cyrusn.github.io'>
       CyrusN
     </a>
     <button
@@ -151,14 +125,14 @@ var Paginator = {}
         
       </ul>
     </div>
-    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
   </nav>
 </div>
 
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-success text-light">
+      <div class="modal-header bg-info text-light">
         <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="text-light">&times;</span>
@@ -171,9 +145,8 @@ var Paginator = {}
               <li><code>Space</code> to search</li>
               <li><code>Enter</code> to start navigate in results</li>
               <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list</li>
-              <li><code>J / K</code> can also scroll up and down in page</li>
-              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
+              <li><code>H / L</code> to navigate the page number</li>
               <li><code>[ / ]</code> to navigate the navbar</li>
           </ul>
         </p>
@@ -200,13 +173,11 @@ var Paginator = {}
   
 </small>
 
-
 <small>
 
   <a class="badge badge-secondary" href="/tags/hapijs">hapijs</a>
 
 </small>
-
 
 
 
@@ -218,35 +189,31 @@ var Paginator = {}
 <h1 id="hapijs">HapiJS</h1>
 
 <ul>
-<li><a href="http://hapijs.com/" target="_blank">hapi.js</a><br /></li>
-<li><a href="http://hapijs.com/tutorials" target="_blank">Tutorials</a><br /></li>
-<li><a href="http://cronj.com/blog/hapi-mongoose/" target="_blank">Example: Hapi Mongoose Angular</a><br />
-<br /></li>
+<li><a href="http://hapijs.com/" target="_blank">hapi.js</a></li>
+<li><a href="http://hapijs.com/tutorials" target="_blank">Tutorials</a></li>
+<li><a href="http://cronj.com/blog/hapi-mongoose/" target="_blank">Example: Hapi Mongoose Angular</a></li>
 </ul>
 
 <h1 id="plugin">Plugin</h1>
 
 <ul>
-<li><a href="http://hapijs.com/plugins" target="_blank">Plugin</a><br /></li>
-<li><a href="https://github.com/hapijs/hapi-auth-basic" target="_blank">hapi-auth-basic</a><br /></li>
-<li><a href="https://github.com/Mkoopajr/hapi-session-mongo" target="_blank">hapi-session-mongo</a><br /></li>
-<li><a href="https://github.com/hapijs/hapi-auth-cookie" target="_blank">hapi-auth-cookie</a><br /></li>
-<li><a href="https://github.com/hapijs/hapi/issues/2479" target="_blank">Best Practice Project Structure · Issue #2479 · hapijs/hapi</a><br />
-<br /></li>
+<li><a href="http://hapijs.com/plugins" target="_blank">Plugin</a></li>
+<li><a href="https://github.com/hapijs/hapi-auth-basic" target="_blank">hapi-auth-basic</a></li>
+<li><a href="https://github.com/Mkoopajr/hapi-session-mongo" target="_blank">hapi-session-mongo</a></li>
+<li><a href="https://github.com/hapijs/hapi-auth-cookie" target="_blank">hapi-auth-cookie</a></li>
+<li><a href="https://github.com/hapijs/hapi/issues/2479" target="_blank">Best Practice Project Structure · Issue #2479 · hapijs/hapi</a></li>
 </ul>
 
 <h1 id="reference">Reference</h1>
 
 <ul>
-<li><a href="https://github.com/leesei/hapi-playground" target="_blank">hapi-playground</a><br />
-<br /></li>
+<li><a href="https://github.com/leesei/hapi-playground" target="_blank">hapi-playground</a></li>
 </ul>
 
 <h1 id="my-notes">My Notes</h1>
 
 <ul>
-<li><a href="http://hapijs.com/api#route-options" target="_blank">How to set CORS</a><br />
-<br /></li>
+<li><a href="http://hapijs.com/api#route-options" target="_blank">How to set CORS</a></li>
 </ul>
 
 <pre><code class="language-javascript">// set CORS enable for all routes
@@ -291,6 +258,18 @@ server.connection({
     
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+
+
+
 
 
 

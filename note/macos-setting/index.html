@@ -11,33 +11,20 @@
   <title>macos Setting Notes</title>
 
 
-  <meta name="description" content="Custom OSX  Remove shift key augmentation for Mission Control animation
- Enable the three finger drag in Accessibility
-  Terminal  Autocomplete echo &quot;set completion-ignore-case On&quot; &gt;&gt; ~/.inputrc
- install command line tools in XCode xcode-select --install
-  zsh  install .oh-my-zsh
- symlink for setting zsh
-  ## for installation of zsh ln -s Dropbox/MacSetting/Terminal/cyrusn ./.cyrusn ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zshrc ~/ ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom ~/ ## for installation of coreutil/.">
-  <meta property="og:description" content="Custom OSX  Remove shift key augmentation for Mission Control animation
- Enable the three finger drag in Accessibility
-  Terminal  Autocomplete echo &quot;set completion-ignore-case On&quot; &gt;&gt; ~/.inputrc
- install command line tools in XCode xcode-select --install
-  zsh  install .oh-my-zsh
- symlink for setting zsh
-  ## for installation of zsh ln -s Dropbox/MacSetting/Terminal/cyrusn ./.cyrusn ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zshrc ~/ ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom ~/ ## for installation of coreutil/.">
-  <meta name="twitter:description" content="Custom OSX  Remove shift key augmentation for Mission Control animation
- Enable the three finger drag in Accessibility
-  Terminal  Autocomplete echo &quot;set completion-ignore-case On&quot; &gt;&gt; …">
+  <meta name="description" content="Custom OSX  Remove shift key augmentation for Mission Control animation Enable the three finger drag in Accessibility  Terminal  Autocomplete echo &quot;set completion-ignore-case On&quot; &gt;&gt; ~/.inputrc install command line tools in XCode xcode-select --install  zsh  install .oh-my-zsh symlink for setting zsh  ## for installation of zsh ln -s Dropbox/MacSetting/Terminal/cyrusn ./.cyrusn ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zshrc ~/ ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom ~/ ## for installation of coreutil/.dir_colors ln -s ~/Dropbox/MacSetting/Terminal/coreutil/.">
+  <meta property="og:description" content="Custom OSX  Remove shift key augmentation for Mission Control animation Enable the three finger drag in Accessibility  Terminal  Autocomplete echo &quot;set completion-ignore-case On&quot; &gt;&gt; ~/.inputrc install command line tools in XCode xcode-select --install  zsh  install .oh-my-zsh symlink for setting zsh  ## for installation of zsh ln -s Dropbox/MacSetting/Terminal/cyrusn ./.cyrusn ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zshrc ~/ ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom ~/ ## for installation of coreutil/.dir_colors ln -s ~/Dropbox/MacSetting/Terminal/coreutil/.">
+  <meta name="twitter:description" content="Custom OSX  Remove shift key augmentation for Mission Control animation Enable the three finger drag in Accessibility  Terminal  Autocomplete echo &quot;set completion-ignore-case On&quot; &gt;&gt; …">
 
 
 <meta name="author" content="CyrusN"/>
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
 <script src='/js/jquery-3.2.1.slim.min.js'></script>
 <script src='/js/popper.min.js'></script>
 <script src='/js/bootstrap.min.js' ></script>
-<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+
 
 
 <script src=' /js/lunr.min.js '></script>
@@ -46,7 +33,8 @@
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
-<script src="/js/main.js"></script>
+<script src='/js/main.js'></script>
+<script src='/js/helper.js'></script>
 
 
 <script>
@@ -65,7 +53,6 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
 
 
@@ -77,9 +64,9 @@ var Paginator = {}
 </head>
 <body>
   <div class="bg-light d-md-flex justify-content-center">
-    <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
-      href="https://cyrusn.github.io">
+      href='https://cyrusn.github.io'>
       CyrusN
     </a>
     <button
@@ -138,14 +125,14 @@ var Paginator = {}
         
       </ul>
     </div>
-    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
   </nav>
 </div>
 
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-success text-light">
+      <div class="modal-header bg-info text-light">
         <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="text-light">&times;</span>
@@ -158,9 +145,8 @@ var Paginator = {}
               <li><code>Space</code> to search</li>
               <li><code>Enter</code> to start navigate in results</li>
               <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list</li>
-              <li><code>J / K</code> can also scroll up and down in page</li>
-              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
+              <li><code>H / L</code> to navigate the page number</li>
               <li><code>[ / ]</code> to navigate the navbar</li>
           </ul>
         </p>
@@ -187,7 +173,6 @@ var Paginator = {}
   
 </small>
 
-
 <small>
 
   <a class="badge badge-secondary" href="/tags/macos">macos</a>
@@ -195,7 +180,6 @@ var Paginator = {}
   <a class="badge badge-secondary" href="/tags/setting">setting</a>
 
 </small>
-
 
 
 
@@ -207,25 +191,22 @@ var Paginator = {}
 <h1 id="custom-osx">Custom OSX</h1>
 
 <ul>
-<li><a href="http://apple.stackexchange.com/questions/66433/remove-shift-key-augmentation-for-mission-control-animation#answer-115698" target="_blank">Remove shift key augmentation for Mission Control animation</a><br /></li>
-<li>Enable the three finger drag in <em>Accessibility</em><br />
-<br /></li>
+<li><a href="http://apple.stackexchange.com/questions/66433/remove-shift-key-augmentation-for-mission-control-animation#answer-115698" target="_blank">Remove shift key augmentation for Mission Control animation</a></li>
+<li>Enable the three finger drag in <em>Accessibility</em></li>
 </ul>
 
 <h1 id="terminal">Terminal</h1>
 
 <ul>
-<li>Autocomplete <code>echo &quot;set completion-ignore-case On&quot; &gt;&gt; ~/.inputrc</code><br /></li>
-<li>install command line tools in XCode <code>xcode-select --install</code><br />
-<br /></li>
+<li>Autocomplete <code>echo &quot;set completion-ignore-case On&quot; &gt;&gt; ~/.inputrc</code></li>
+<li>install command line tools in XCode <code>xcode-select --install</code></li>
 </ul>
 
 <h2 id="zsh">zsh</h2>
 
 <ul>
-<li><a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank">install .oh-my-zsh</a><br /></li>
-<li>symlink for setting zsh<br />
-<br /></li>
+<li><a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank">install .oh-my-zsh</a></li>
+<li>symlink for setting zsh</li>
 </ul>
 
 <pre><code class="language-sh">## for installation of zsh
@@ -240,9 +221,8 @@ ln -s ~/Dropbox/MacSetting/Terminal/coreutil/.dir_colors ~/
 <h3 id="for-further-customisation">for further customisation</h3>
 
 <ul>
-<li>add <code>export</code> at <code>~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom/export.zsh</code><br /></li>
-<li>add <code>alias</code> at <code>~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom/alias.zsh</code><br />
-<br /></li>
+<li>add <code>export</code> at <code>~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom/export.zsh</code></li>
+<li>add <code>alias</code> at <code>~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom/alias.zsh</code></li>
 </ul>
 
 <h1 id="homebrew-package">homebrew package</h1>
@@ -293,7 +273,7 @@ ln -s ~/Dropbox/MacSetting/sublimetext/User  ./
 <h1 id="custom-setting-on-osx">custom setting on osx</h1>
 
 <ul>
-<li>set terminal color theme<br /></li>
+<li>set terminal color theme</li>
 </ul>
 
   </div>
@@ -327,6 +307,18 @@ ln -s ~/Dropbox/MacSetting/sublimetext/User  ./
     
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+
+
+
 
 
 

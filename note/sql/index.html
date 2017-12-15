@@ -11,36 +11,20 @@
   <title>sql</title>
 
 
-  <meta name="description" content="Some of The Most Important SQL Commands  SELECT - extracts data from a database
- UPDATE - updates data in a database
- DELETE - deletes data from a database
- INSERT INTO - inserts new data into a database
- CREATE DATABASE - creates a new database
- ALTER DATABASE - modifies a database
- CREATE TABLE - creates a new table
- ALTER TABLE - modifies a table">
-  <meta property="og:description" content="Some of The Most Important SQL Commands  SELECT - extracts data from a database
- UPDATE - updates data in a database
- DELETE - deletes data from a database
- INSERT INTO - inserts new data into a database
- CREATE DATABASE - creates a new database
- ALTER DATABASE - modifies a database
- CREATE TABLE - creates a new table
- ALTER TABLE - modifies a table">
-  <meta name="twitter:description" content="Some of The Most Important SQL Commands  SELECT - extracts data from a database
- UPDATE - updates data in a database
- DELETE - deletes data from a database
- INSERT INTO - inserts new data into a …">
+  <meta name="description" content="Some of The Most Important SQL Commands  SELECT - extracts data from a database UPDATE - updates data in a database DELETE - deletes data from a database INSERT INTO - inserts new data into a database CREATE DATABASE - creates a new database ALTER DATABASE - modifies a database CREATE TABLE - creates a new table ALTER TABLE - modifies a table DROP TABLE - deletes a table CREATE INDEX - creates an index (search key) DROP INDEX - deletes an index  SQL PRIMARY KEY Constraint The PRIMARY KEY constraint uniquely identifies each record in a database table.">
+  <meta property="og:description" content="Some of The Most Important SQL Commands  SELECT - extracts data from a database UPDATE - updates data in a database DELETE - deletes data from a database INSERT INTO - inserts new data into a database CREATE DATABASE - creates a new database ALTER DATABASE - modifies a database CREATE TABLE - creates a new table ALTER TABLE - modifies a table DROP TABLE - deletes a table CREATE INDEX - creates an index (search key) DROP INDEX - deletes an index  SQL PRIMARY KEY Constraint The PRIMARY KEY constraint uniquely identifies each record in a database table.">
+  <meta name="twitter:description" content="Some of The Most Important SQL Commands  SELECT - extracts data from a database UPDATE - updates data in a database DELETE - deletes data from a database INSERT INTO - inserts new data into a database …">
 
 
 <meta name="author" content="CyrusN"/>
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
 <script src='/js/jquery-3.2.1.slim.min.js'></script>
 <script src='/js/popper.min.js'></script>
 <script src='/js/bootstrap.min.js' ></script>
-<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+
 
 
 <script src=' /js/lunr.min.js '></script>
@@ -49,7 +33,8 @@
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
-<script src="/js/main.js"></script>
+<script src='/js/main.js'></script>
+<script src='/js/helper.js'></script>
 
 
 <script>
@@ -68,7 +53,6 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
 
 
@@ -80,9 +64,9 @@ var Paginator = {}
 </head>
 <body>
   <div class="bg-light d-md-flex justify-content-center">
-    <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
-      href="https://cyrusn.github.io">
+      href='https://cyrusn.github.io'>
       CyrusN
     </a>
     <button
@@ -141,14 +125,14 @@ var Paginator = {}
         
       </ul>
     </div>
-    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
   </nav>
 </div>
 
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-success text-light">
+      <div class="modal-header bg-info text-light">
         <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="text-light">&times;</span>
@@ -161,9 +145,8 @@ var Paginator = {}
               <li><code>Space</code> to search</li>
               <li><code>Enter</code> to start navigate in results</li>
               <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list</li>
-              <li><code>J / K</code> can also scroll up and down in page</li>
-              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
+              <li><code>H / L</code> to navigate the page number</li>
               <li><code>[ / ]</code> to navigate the navbar</li>
           </ul>
         </p>
@@ -190,7 +173,6 @@ var Paginator = {}
   
 </small>
 
-
 <small>
 
   <a class="badge badge-secondary" href="/tags/normalization">normalization</a>
@@ -198,7 +180,6 @@ var Paginator = {}
   <a class="badge badge-secondary" href="/tags/normal-form">normal form</a>
 
 </small>
-
 
 
 
@@ -210,18 +191,17 @@ var Paginator = {}
 <h1 id="some-of-the-most-important-sql-commands">Some of The Most Important SQL Commands</h1>
 
 <ul>
-<li>SELECT - extracts data from a database<br /></li>
-<li>UPDATE - updates data in a database<br /></li>
-<li>DELETE - deletes data from a database<br /></li>
-<li>INSERT INTO - inserts new data into a database<br /></li>
-<li>CREATE DATABASE - creates a new database<br /></li>
-<li>ALTER DATABASE - modifies a database<br /></li>
-<li>CREATE TABLE - creates a new table<br /></li>
-<li>ALTER TABLE - modifies a table<br /></li>
-<li>DROP TABLE - deletes a table<br /></li>
-<li>CREATE INDEX - creates an index (search key)<br /></li>
-<li>DROP INDEX - deletes an index<br />
-<br /></li>
+<li>SELECT - extracts data from a database</li>
+<li>UPDATE - updates data in a database</li>
+<li>DELETE - deletes data from a database</li>
+<li>INSERT INTO - inserts new data into a database</li>
+<li>CREATE DATABASE - creates a new database</li>
+<li>ALTER DATABASE - modifies a database</li>
+<li>CREATE TABLE - creates a new table</li>
+<li>ALTER TABLE - modifies a table</li>
+<li>DROP TABLE - deletes a table</li>
+<li>CREATE INDEX - creates an index (search key)</li>
+<li>DROP INDEX - deletes an index</li>
 </ul>
 
 <h1 id="sql-primary-key-constraint">SQL PRIMARY KEY Constraint</h1>
@@ -264,9 +244,9 @@ var Paginator = {}
 
 <p>Here are the different types of the JOINs in SQL:</p>
 
-<p>(INNER) JOIN: Returns records that have matching values in both tables<br />
-LEFT (OUTER) JOIN: Return all records from the left table, and the matched records from the right table<br />
-RIGHT (OUTER) JOIN: Return all records from the right table, and the matched records from the left table<br />
+<p>(INNER) JOIN: Returns records that have matching values in both tables
+LEFT (OUTER) JOIN: Return all records from the left table, and the matched records from the right table
+RIGHT (OUTER) JOIN: Return all records from the right table, and the matched records from the left table
 FULL (OUTER) JOIN: Return all records when there is a match in either left or right table</p>
 
 <table>
@@ -320,6 +300,18 @@ FULL (OUTER) JOIN: Return all records when there is a match in either left or ri
     
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+
+
+
 
 
 

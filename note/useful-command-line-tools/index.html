@@ -11,8 +11,8 @@
   <title>Useful Command Line Tools</title>
 
 
-  <meta name="description" content="Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.txt # redirect the standard output result to file (append) echo &quot;hello world&quot; &gt;&gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed &#39;s/ /_/g&#39; &lt; test.txt &gt; test_1.txt # line input cat &lt;&lt; end heredoc&gt; hello heredoc&gt; world heredoc&gt; end  Useful Commands Cheatsheet  d to show directory history">
-  <meta property="og:description" content="Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.txt # redirect the standard output result to file (append) echo &quot;hello world&quot; &gt;&gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed &#39;s/ /_/g&#39; &lt; test.txt &gt; test_1.txt # line input cat &lt;&lt; end heredoc&gt; hello heredoc&gt; world heredoc&gt; end  Useful Commands Cheatsheet  d to show directory history">
+  <meta name="description" content="Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.txt # redirect the standard output result to file (append) echo &quot;hello world&quot; &gt;&gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed &#39;s/ /_/g&#39; &lt; test.txt &gt; test_1.txt # line input cat &lt;&lt; end heredoc&gt; hello heredoc&gt; world heredoc&gt; end  Useful Commands Cheatsheet  d to show directory history  type cd -number or directly type the number to go to directory  !">
+  <meta property="og:description" content="Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.txt # redirect the standard output result to file (append) echo &quot;hello world&quot; &gt;&gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed &#39;s/ /_/g&#39; &lt; test.txt &gt; test_1.txt # line input cat &lt;&lt; end heredoc&gt; hello heredoc&gt; world heredoc&gt; end  Useful Commands Cheatsheet  d to show directory history  type cd -number or directly type the number to go to directory  !">
   <meta name="twitter:description" content="Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.txt # redirect the standard …">
 
 
@@ -20,10 +20,11 @@
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
 <script src='/js/jquery-3.2.1.slim.min.js'></script>
 <script src='/js/popper.min.js'></script>
 <script src='/js/bootstrap.min.js' ></script>
-<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+
 
 
 <script src=' /js/lunr.min.js '></script>
@@ -32,7 +33,8 @@
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
-<script src="/js/main.js"></script>
+<script src='/js/main.js'></script>
+<script src='/js/helper.js'></script>
 
 
 <script>
@@ -51,7 +53,6 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
 
 
@@ -63,9 +64,9 @@ var Paginator = {}
 </head>
 <body>
   <div class="bg-light d-md-flex justify-content-center">
-    <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
-      href="https://cyrusn.github.io">
+      href='https://cyrusn.github.io'>
       CyrusN
     </a>
     <button
@@ -124,14 +125,14 @@ var Paginator = {}
         
       </ul>
     </div>
-    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
   </nav>
 </div>
 
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-success text-light">
+      <div class="modal-header bg-info text-light">
         <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="text-light">&times;</span>
@@ -144,9 +145,8 @@ var Paginator = {}
               <li><code>Space</code> to search</li>
               <li><code>Enter</code> to start navigate in results</li>
               <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list</li>
-              <li><code>J / K</code> can also scroll up and down in page</li>
-              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
+              <li><code>H / L</code> to navigate the page number</li>
               <li><code>[ / ]</code> to navigate the navbar</li>
           </ul>
         </p>
@@ -173,7 +173,6 @@ var Paginator = {}
   
 </small>
 
-
 <small>
 
   <a class="badge badge-secondary" href="/tags/commandline">commandline</a>
@@ -199,7 +198,6 @@ var Paginator = {}
   <a class="badge badge-secondary" href="/tags/top">top</a>
 
 </small>
-
 
 
 
@@ -237,23 +235,21 @@ heredoc&gt; end
 <h2 id="cheatsheet-http-floss-zoomquiet-io-data-20120129165222-index-html"><a href="http://floss.zoomquiet.io/data/20120129165222/index.html" target="_blank">Cheatsheet</a></h2>
 
 <ul>
-<li><code>d</code> to show directory history<br />
+<li><code>d</code> to show directory history
 
 <ul>
-<li>type <code>cd -number</code> or directly type the <code>number</code> to go to directory<br /></li>
+<li>type <code>cd -number</code> or directly type the <code>number</code> to go to directory</li>
 </ul></li>
-<li><code>!:n-m</code> get the attribute from n to m of last command<br /></li>
-<li><code>!!</code> to get the last command<br /></li>
-<li><code>!*</code> to get the argz of last command<br /></li>
-<li><a href="http://www.zzapper.co.uk/zshtips.html" target="_blank">zsh tip</a><br />
-<br /></li>
+<li><code>!:n-m</code> get the attribute from n to m of last command</li>
+<li><code>!!</code> to get the last command</li>
+<li><code>!*</code> to get the argz of last command</li>
+<li><a href="http://www.zzapper.co.uk/zshtips.html" target="_blank">zsh tip</a></li>
 </ul>
 
 <h2 id="links">Links</h2>
 
 <ul>
-<li><a href="http://www.cs.elte.hu/zsh-manual/zsh_toc.html" target="_blank">zsh - Table of Contents</a><br />
-<br /></li>
+<li><a href="http://www.cs.elte.hu/zsh-manual/zsh_toc.html" target="_blank">zsh - Table of Contents</a></li>
 </ul>
 
 <h2 id="copydir">copydir</h2>
@@ -264,8 +260,7 @@ heredoc&gt; end
 </code></pre>
 
 <ul>
-<li><code>copydir</code> to copy current directory to clipboard<br />
-<br /></li>
+<li><code>copydir</code> to copy current directory to clipboard</li>
 </ul>
 
 <h2 id="qlmanage">qlmanage</h2>
@@ -357,15 +352,13 @@ $ ffmpeg -i input.mp4 output.avi
 <h2 id="youtube-dl-http-rg3-github-io-youtube-dl"><a href="http://rg3.github.io/youtube-dl/" target="_blank">youtube-dl</a></h2>
 
 <ul>
-<li>youtube-dl is a small command-line program to download videos from YouTube.com and a few more sites.<br />
-<br /></li>
+<li>youtube-dl is a small command-line program to download videos from YouTube.com and a few more sites.</li>
 </ul>
 
 <h2 id="platinum-searcher-https-github-com-monochromegane-the-platinum-searcher"><a href="https://github.com/monochromegane/the_platinum_searcher" target="_blank">Platinum Searcher</a></h2>
 
 <ul>
-<li>A code search tool similar to ack and the_silver_searcher(ag). It supports multi platforms and multi encodings.<br />
-<br /></li>
+<li>A code search tool similar to ack and the_silver_searcher(ag). It supports multi platforms and multi encodings.</li>
 </ul>
 
 <pre><code class="language-sh">$ pt
@@ -374,9 +367,8 @@ $ ffmpeg -i input.mp4 output.avi
 <h2 id="pandoc-http-johnmacfarlane-net-pandoc-index-html"><a href="http://johnmacfarlane.net/pandoc/index.html" target="_blank">Pandoc</a></h2>
 
 <ul>
-<li><a href="http://johnmacfarlane.net/pandoc/demos.html" target="_blank">examples</a><br /></li>
-<li>a universal document converter<br />
-<br /></li>
+<li><a href="http://johnmacfarlane.net/pandoc/demos.html" target="_blank">examples</a></li>
+<li>a universal document converter</li>
 </ul>
 
 <h2 id="osx-metadata">osx metadata</h2>
@@ -392,8 +384,7 @@ brew install httpie
 <h2 id="jq-https-stedolan-github-io-jq"><a href="https://stedolan.github.io/jq/" target="_blank">jq</a></h2>
 
 <ul>
-<li><code>http -b url | jq .name</code><br />
-<br /></li>
+<li><code>http -b url | jq .name</code></li>
 </ul>
 
 <h2 id="top">top</h2>
@@ -431,6 +422,18 @@ brew install httpie
     
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+
+
+
 
 
 

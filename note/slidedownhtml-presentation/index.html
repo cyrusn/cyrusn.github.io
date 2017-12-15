@@ -11,31 +11,20 @@
   <title>Slidedown HTML presentation</title>
 
 
-  <meta name="description" content=" Slide Down  example
- github
-  RevealJS  RevealJS
- Pandoc
-  # pandoc convert md to RevealJS html pandoc -s --mathjax -i -t revealjs SLIDES.md -o example.html  ">
-  <meta property="og:description" content=" Slide Down  example
- github
-  RevealJS  RevealJS
- Pandoc
-  # pandoc convert md to RevealJS html pandoc -s --mathjax -i -t revealjs SLIDES.md -o example.html  ">
-  <meta name="twitter:description" content=" Slide Down  example
- github
-  RevealJS  RevealJS
- Pandoc
-  # pandoc convert md to RevealJS html pandoc -s --mathjax -i -t revealjs SLIDES.md -o example.html  ">
+  <meta name="description" content=" Slide Down  example github  RevealJS  RevealJS Pandoc  # pandoc convert md to RevealJS html pandoc -s --mathjax -i -t revealjs SLIDES.md -o example.html  ">
+  <meta property="og:description" content=" Slide Down  example github  RevealJS  RevealJS Pandoc  # pandoc convert md to RevealJS html pandoc -s --mathjax -i -t revealjs SLIDES.md -o example.html  ">
+  <meta name="twitter:description" content=" Slide Down  example github  RevealJS  RevealJS Pandoc  # pandoc convert md to RevealJS html pandoc -s --mathjax -i -t revealjs SLIDES.md -o example.html  ">
 
 
 <meta name="author" content="CyrusN"/>
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
 <script src='/js/jquery-3.2.1.slim.min.js'></script>
 <script src='/js/popper.min.js'></script>
 <script src='/js/bootstrap.min.js' ></script>
-<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+
 
 
 <script src=' /js/lunr.min.js '></script>
@@ -44,7 +33,8 @@
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
-<script src="/js/main.js"></script>
+<script src='/js/main.js'></script>
+<script src='/js/helper.js'></script>
 
 
 <script>
@@ -63,7 +53,6 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
 
 
@@ -75,9 +64,9 @@ var Paginator = {}
 </head>
 <body>
   <div class="bg-light d-md-flex justify-content-center">
-    <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
-      href="https://cyrusn.github.io">
+      href='https://cyrusn.github.io'>
       CyrusN
     </a>
     <button
@@ -136,14 +125,14 @@ var Paginator = {}
         
       </ul>
     </div>
-    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
   </nav>
 </div>
 
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-success text-light">
+      <div class="modal-header bg-info text-light">
         <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="text-light">&times;</span>
@@ -156,9 +145,8 @@ var Paginator = {}
               <li><code>Space</code> to search</li>
               <li><code>Enter</code> to start navigate in results</li>
               <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list</li>
-              <li><code>J / K</code> can also scroll up and down in page</li>
-              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
+              <li><code>H / L</code> to navigate the page number</li>
               <li><code>[ / ]</code> to navigate the navbar</li>
           </ul>
         </p>
@@ -185,13 +173,11 @@ var Paginator = {}
   
 </small>
 
-
 <small>
 
   <a class="badge badge-secondary" href="/tags/slidedown">slidedown</a>
 
 </small>
-
 
 
 
@@ -203,17 +189,15 @@ var Paginator = {}
 <h1 id="slide-down">Slide Down</h1>
 
 <ul>
-<li><a href="http://cyrusn.github.io/slidedown/" target="_blank">example</a><br /></li>
-<li><a href="http://github.com/cyrusn/slidedown/" target="_blank">github</a><br />
-<br /></li>
+<li><a href="http://cyrusn.github.io/slidedown/" target="_blank">example</a></li>
+<li><a href="http://github.com/cyrusn/slidedown/" target="_blank">github</a></li>
 </ul>
 
 <h1 id="revealjs">RevealJS</h1>
 
 <ul>
-<li><a href="http://lab.hakim.se/reveal-js/#/" target="_blank">RevealJS</a><br /></li>
-<li><a href="http://johnmacfarlane.net/pandoc/demo/example9/producing-slide-shows-with-pandoc.html" target="_blank">Pandoc</a><br />
-<br /></li>
+<li><a href="http://lab.hakim.se/reveal-js/#/" target="_blank">RevealJS</a></li>
+<li><a href="http://johnmacfarlane.net/pandoc/demo/example9/producing-slide-shows-with-pandoc.html" target="_blank">Pandoc</a></li>
 </ul>
 
 <pre><code class="language-sh"># pandoc convert md to RevealJS html
@@ -251,6 +235,18 @@ pandoc -s --mathjax -i -t revealjs SLIDES.md -o example.html
     
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+
+
+
 
 
 

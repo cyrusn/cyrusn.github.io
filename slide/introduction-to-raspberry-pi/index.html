@@ -1,19 +1,16 @@
 <!DOCTYPE html>
+<html>
 <head>
   <meta charset="utf-8">
   
-  <link rel="stylesheet" href="/css/remark.css">
+  <link rel="stylesheet" href='/css/remark.css'>
   <script src='/js/remark-latest.min.js'></script>
 
-  
-
-  
-
-
-
 </head>
+
 <body>
-  <textarea id="source">class: center middle inverse
+<textarea id="source">
+class: center middle inverse
 
 # Introduction to Raspberry-Pi
 
@@ -185,38 +182,34 @@ class: center middle
 [&amp;10]: http://theory.uwinnipeg.ca/programming/node3.html
 [&amp;10]: https://howtoprogramwithjava.com/programming-101-the-5-basic-concepts-of-any-programming-language/
 [&amp;11]: https://lifehacker.com/top-10-raspberry-pi-projects-for-beginners-1791002723
+
 </textarea>
+
+<script src='/js/helper.js'></script>
+<script>
   
+  
+  
+  const option = {}
+  const obj = Object.assign({}, {"highlight-lines":true,"highlight-style":"atom-one-dark","navigation":{"click":true,"scroll":false},"ratio":"4:3"}, {"ratio":"16:9"})
 
-  <script>
-    
-    
-    
-    const option = {}
-    const obj = Object.assign({}, {"highlight-lines":true,"highlight-style":"atom-one-dark","navigation":{"click":true,"scroll":false},"ratio":"4:3"}, {"ratio":"16:9"})
-
-    function dashToCamelCase (word) {
-      return word.split("-").map((arr, n) =>
-        ( n === 0 ) ? arr : (arr[0].toUpperCase() + arr.slice(1))
-        ).join("")
-    }
-
-    for (const key in obj) {
-      option[dashToCamelCase(key)] = obj[key]
-    }
-
-    
-    const slideshow = remark.create(option)
-    
-  </script>
+  for (const key in obj) {
+    option[dashToCamelCase(key)] = obj[key]
+  }
 
   
-  <script type="text/javascript">
-    document.onkeypress = ({which, keyCode} = window.event) => {
-      const charCode = (typeof which === 'number') ? which : keyCode
-      if (charCode === 113) {
-        window.location.href = '/'
-      }
+  const slideshow = remark.create(option)
+  
+</script>
+
+
+<script>
+  document.onkeypress = ({which, keyCode} = window.event) => {
+    const charCode = (typeof which === 'number') ? which : keyCode
+    if (charCode === 113) {
+      window.location.href = '/'
     }
-  </script>
+  }
+</script>
 </body>
+</html>

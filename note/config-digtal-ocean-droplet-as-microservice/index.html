@@ -13,37 +13,26 @@
 
   <meta name="description" content="Objective This page is a notes for setting apache server for my digital ocean droplet
 Setting Apache2  in file /etc/hosts
- change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS
-  change Port
- in file /etc/apache2/port.conf
- add ServerName localhost
- change the line listen *:80 to listen 127.0.0.1:4000
- disable other modules &lt;IfModule ssl_module&gt; and &lt;IfModule mod_gnutls.c&gt;
- in file /etc/apache2/site-enabled/000-default.conf
- change the line &lt;VirtualHost *:80&gt; to &lt;VirtualHost localhost:4000&gt;">
+ change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS  change Port
+ in file /etc/apache2/port.conf add ServerName localhost change the line listen *:80 to listen 127.0.0.1:4000 disable other modules &lt;IfModule ssl_module&gt; and &lt;IfModule mod_gnutls.c&gt; in file /etc/apache2/site-enabled/000-default.conf change the line &lt;VirtualHost *:80&gt; to &lt;VirtualHost localhost:4000&gt;  restart apache2">
   <meta property="og:description" content="Objective This page is a notes for setting apache server for my digital ocean droplet
 Setting Apache2  in file /etc/hosts
- change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS
-  change Port
- in file /etc/apache2/port.conf
- add ServerName localhost
- change the line listen *:80 to listen 127.0.0.1:4000
- disable other modules &lt;IfModule ssl_module&gt; and &lt;IfModule mod_gnutls.c&gt;
- in file /etc/apache2/site-enabled/000-default.conf
- change the line &lt;VirtualHost *:80&gt; to &lt;VirtualHost localhost:4000&gt;">
+ change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS  change Port
+ in file /etc/apache2/port.conf add ServerName localhost change the line listen *:80 to listen 127.0.0.1:4000 disable other modules &lt;IfModule ssl_module&gt; and &lt;IfModule mod_gnutls.c&gt; in file /etc/apache2/site-enabled/000-default.conf change the line &lt;VirtualHost *:80&gt; to &lt;VirtualHost localhost:4000&gt;  restart apache2">
   <meta name="twitter:description" content="Objective This page is a notes for setting apache server for my digital ocean droplet
 Setting Apache2  in file /etc/hosts
- change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS …">
+ change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS  change …">
 
 
 <meta name="author" content="CyrusN"/>
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
 <script src='/js/jquery-3.2.1.slim.min.js'></script>
 <script src='/js/popper.min.js'></script>
 <script src='/js/bootstrap.min.js' ></script>
-<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+
 
 
 <script src=' /js/lunr.min.js '></script>
@@ -52,7 +41,8 @@ Setting Apache2  in file /etc/hosts
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
-<script src="/js/main.js"></script>
+<script src='/js/main.js'></script>
+<script src='/js/helper.js'></script>
 
 
 <script>
@@ -71,7 +61,6 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
 
 
@@ -83,9 +72,9 @@ var Paginator = {}
 </head>
 <body>
   <div class="bg-light d-md-flex justify-content-center">
-    <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
-      href="https://cyrusn.github.io">
+      href='https://cyrusn.github.io'>
       CyrusN
     </a>
     <button
@@ -144,14 +133,14 @@ var Paginator = {}
         
       </ul>
     </div>
-    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
   </nav>
 </div>
 
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-success text-light">
+      <div class="modal-header bg-info text-light">
         <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="text-light">&times;</span>
@@ -164,9 +153,8 @@ var Paginator = {}
               <li><code>Space</code> to search</li>
               <li><code>Enter</code> to start navigate in results</li>
               <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list</li>
-              <li><code>J / K</code> can also scroll up and down in page</li>
-              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
+              <li><code>H / L</code> to navigate the page number</li>
               <li><code>[ / ]</code> to navigate the navbar</li>
           </ul>
         </p>
@@ -193,7 +181,6 @@ var Paginator = {}
   
 </small>
 
-
 <small>
 
   <a class="badge badge-secondary" href="/tags/apache">apache</a>
@@ -205,7 +192,6 @@ var Paginator = {}
   <a class="badge badge-secondary" href="/tags/tmux">tmux</a>
 
 </small>
-
 
 
 
@@ -226,27 +212,24 @@ var Paginator = {}
 <li><p>in file <code>/etc/hosts</code></p>
 
 <ul>
-<li>change <code>127.0.0.1 localhost</code> to <code>127.0.1.1 localhost WordPress-CaLP-LPSS</code><br />
-<br /></li>
+<li>change <code>127.0.0.1 localhost</code> to <code>127.0.1.1 localhost WordPress-CaLP-LPSS</code></li>
 </ul></li>
 
 <li><p>change Port</p>
 
 <ul>
-<li>in file <code>/etc/apache2/port.conf</code><br /></li>
-<li>add <code>ServerName localhost</code><br /></li>
-<li>change the line <code>listen *:80</code> to <code>listen 127.0.0.1:4000</code><br /></li>
-<li>disable other modules <code>&lt;IfModule ssl_module&gt;</code> and <code>&lt;IfModule mod_gnutls.c&gt;</code><br /></li>
-<li>in file <code>/etc/apache2/site-enabled/000-default.conf</code><br /></li>
-<li>change the line <code>&lt;VirtualHost *:80&gt;</code> to <code>&lt;VirtualHost localhost:4000&gt;</code><br />
-<br /></li>
+<li>in file <code>/etc/apache2/port.conf</code></li>
+<li>add <code>ServerName localhost</code></li>
+<li>change the line <code>listen *:80</code> to <code>listen 127.0.0.1:4000</code></li>
+<li>disable other modules <code>&lt;IfModule ssl_module&gt;</code> and <code>&lt;IfModule mod_gnutls.c&gt;</code></li>
+<li>in file <code>/etc/apache2/site-enabled/000-default.conf</code></li>
+<li>change the line <code>&lt;VirtualHost *:80&gt;</code> to <code>&lt;VirtualHost localhost:4000&gt;</code></li>
 </ul></li>
 
 <li><p>restart apache2</p>
 
 <ul>
-<li>run <code>sudo /etc/init.d/apache2 restart</code><br />
-<br /></li>
+<li>run <code>sudo /etc/init.d/apache2 restart</code></li>
 </ul></li>
 </ul>
 
@@ -255,8 +238,7 @@ var Paginator = {}
 <p>config WordPress to use proxy</p>
 
 <ul>
-<li>add the following lines in <code>/var/www/html/wp-config.php</code><br />
-<br /></li>
+<li>add the following lines in <code>/var/www/html/wp-config.php</code></li>
 </ul>
 
 <pre><code class="language-sh">define(‘WP_PROXY_HOST’, ‘careers.liping.edu.hk’);
@@ -266,8 +248,7 @@ define('FORCE_SSL_ADMIN', true);
 </code></pre>
 
 <ul>
-<li>add the following lines in `/var/www/html/wp-content/themes/yourTheme/function.php<br />
-<br /></li>
+<li>add the following lines in `/var/www/html/wp-content/themes/yourTheme/function.php</li>
 </ul>
 
 <pre><code class="language-sh">update_option( 'siteurl', 'http://careers.liping.edu.hk' );
@@ -288,38 +269,29 @@ proxy / localhost:4000 {
 <h1 id="todo">TODO</h1>
 
 <ul class="task-list">
-<li><label><input type="checkbox" checked disabled class="task-list-item"> set <code>apache</code> only serve for <code>localhost</code><br /></label></li>
-<li><label><input type="checkbox" checked disabled class="task-list-item"> use <code>caddy</code> to create a proxy server with <code>https</code><br /></label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> fix all Mixed Content problem<br /></label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> use Goggle <code>oauth2</code> login instead<br /></label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> set autostart and run in daemon with <code>upstart</code><br />
-<br /></label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> set <code>apache</code> only serve for <code>localhost</code></label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> use <code>caddy</code> to create a proxy server with <code>https</code></label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> fix all Mixed Content problem</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> use Goggle <code>oauth2</code> login instead</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> set autostart and run in daemon with <code>upstart</code></label></li>
 </ul>
 
 <h1 id="reference">Reference</h1>
 
 <ul>
-<li><a href="https://denbeke.be/blog/servers/running-caddy-server-as-a-service/" target="_blank">DenBeke – Running Caddy Server as a service with Upstart</a><br /></li>
-<li><a href="https://www.digitalocean.com/community/tutorials/how-to-configure-the-apache-web-server-on-an-ubuntu-or-debian-vps" target="_blank">How To Configure the Apache Web Server on an Ubuntu or Debian VPS | DigitalOcean</a><br /></li>
-<li><a href="https://istlsfastyet.com/" target="_blank">Is TLS Fast Yet?</a><br /></li>
-<li><a href="https://www.wikiwand.com/en/Proxy_server#/Web_proxy_servers" target="_blank">Proxy server - Wikiwand</a><br /></li>
-<li><a href="https://www.wikiwand.com/en/Webmaster" target="_blank">Webmaster - Wikiwand</a><br />
-<br /></li>
+<li><a href="https://denbeke.be/blog/servers/running-caddy-server-as-a-service/" target="_blank">DenBeke – Running Caddy Server as a service with Upstart</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-configure-the-apache-web-server-on-an-ubuntu-or-debian-vps" target="_blank">How To Configure the Apache Web Server on an Ubuntu or Debian VPS | DigitalOcean</a></li>
+<li><a href="https://istlsfastyet.com/" target="_blank">Is TLS Fast Yet?</a></li>
+<li><a href="https://www.wikiwand.com/en/Proxy_server#/Web_proxy_servers" target="_blank">Proxy server - Wikiwand</a></li>
+<li><a href="https://www.wikiwand.com/en/Webmaster" target="_blank">Webmaster - Wikiwand</a></li>
 </ul>
 
 <h1 id="key-word">Key Word</h1>
 
 <ul>
-<li>reverse proxy<br /></li>
-<li>Microservice<br /></li>
-<li>load balancing<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br /></li>
+<li>reverse proxy</li>
+<li>Microservice</li>
+<li>load balancing</li>
 </ul>
 
   </div>
@@ -353,6 +325,18 @@ proxy / localhost:4000 {
     
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+
+
+
 
 
 

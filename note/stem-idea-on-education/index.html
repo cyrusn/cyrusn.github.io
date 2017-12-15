@@ -11,49 +11,20 @@
   <title>STEM Idea on Education</title>
 
 
-  <meta name="description" content="Coding and Math
- Reference
- Statistic
- Engineering
- Some Idea from 青年會書院
- Ideas
- Model on STEM Education
- Resource
-  Coding and Math Reference  Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine
- UC Davis Center for Integrated Computing and STEM Education
- Zebra Puzzle - Wikiwand
- The Micro:bit Foundation is a global non-profit organisation making invention with technology fun for everyone!">
-  <meta property="og:description" content="Coding and Math
- Reference
- Statistic
- Engineering
- Some Idea from 青年會書院
- Ideas
- Model on STEM Education
- Resource
-  Coding and Math Reference  Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine
- UC Davis Center for Integrated Computing and STEM Education
- Zebra Puzzle - Wikiwand
- The Micro:bit Foundation is a global non-profit organisation making invention with technology fun for everyone!">
-  <meta name="twitter:description" content="Coding and Math
- Reference
- Statistic
- Engineering
- Some Idea from 青年會書院
- Ideas
- Model on STEM Education
- Resource
-  Coding and Math Reference  Computer Science (Not Just Coding) Needs a Bigger Role …">
+  <meta name="description" content="Coding and Math Reference Statistic Engineering Some Idea from 青年會書院 Ideas Model on STEM Education Resource  Coding and Math Reference  Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine UC Davis Center for Integrated Computing and STEM Education Zebra Puzzle - Wikiwand The Micro:bit Foundation is a global non-profit organisation making invention with technology fun for everyone!  Statistic  What is STEM Education?">
+  <meta property="og:description" content="Coding and Math Reference Statistic Engineering Some Idea from 青年會書院 Ideas Model on STEM Education Resource  Coding and Math Reference  Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine UC Davis Center for Integrated Computing and STEM Education Zebra Puzzle - Wikiwand The Micro:bit Foundation is a global non-profit organisation making invention with technology fun for everyone!  Statistic  What is STEM Education?">
+  <meta name="twitter:description" content="Coding and Math Reference Statistic Engineering Some Idea from 青年會書院 Ideas Model on STEM Education Resource  Coding and Math Reference  Computer Science (Not Just Coding) Needs a Bigger Role in STEM …">
 
 
 <meta name="author" content="CyrusN"/>
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
 <script src='/js/jquery-3.2.1.slim.min.js'></script>
 <script src='/js/popper.min.js'></script>
 <script src='/js/bootstrap.min.js' ></script>
-<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+
 
 
 <script src=' /js/lunr.min.js '></script>
@@ -62,7 +33,8 @@
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
-<script src="/js/main.js"></script>
+<script src='/js/main.js'></script>
+<script src='/js/helper.js'></script>
 
 
 <script>
@@ -81,7 +53,6 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
 
 
@@ -93,9 +64,9 @@ var Paginator = {}
 </head>
 <body>
   <div class="bg-light d-md-flex justify-content-center">
-    <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
-      href="https://cyrusn.github.io">
+      href='https://cyrusn.github.io'>
       CyrusN
     </a>
     <button
@@ -154,14 +125,14 @@ var Paginator = {}
         
       </ul>
     </div>
-    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
   </nav>
 </div>
 
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-success text-light">
+      <div class="modal-header bg-info text-light">
         <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="text-light">&times;</span>
@@ -174,9 +145,8 @@ var Paginator = {}
               <li><code>Space</code> to search</li>
               <li><code>Enter</code> to start navigate in results</li>
               <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list</li>
-              <li><code>J / K</code> can also scroll up and down in page</li>
-              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
+              <li><code>H / L</code> to navigate the page number</li>
               <li><code>[ / ]</code> to navigate the navbar</li>
           </ul>
         </p>
@@ -205,7 +175,6 @@ var Paginator = {}
   
 </small>
 
-
 <small>
 
   <a class="badge badge-secondary" href="/tags/education">education</a>
@@ -220,7 +189,6 @@ var Paginator = {}
 
 
 
-
   </p>
   <hr>
   <div id="content">
@@ -229,15 +197,14 @@ var Paginator = {}
 <!-- MarkdownTOC -->
 
 <ul>
-<li><a href="#coding-and-math">Coding and Math</a><br /></li>
-<li><a href="#reference">Reference</a><br /></li>
-<li><a href="#statistic">Statistic</a><br /></li>
-<li><a href="#engineering">Engineering</a><br /></li>
-<li><a href="#cymcac">Some Idea from 青年會書院</a><br /></li>
-<li><a href="#ideas">Ideas</a><br /></li>
-<li><a href="#model-on-stem-education">Model on STEM Education</a><br /></li>
-<li><a href="#resource">Resource</a><br />
-<br /></li>
+<li><a href="#coding-and-math">Coding and Math</a></li>
+<li><a href="#reference">Reference</a></li>
+<li><a href="#statistic">Statistic</a></li>
+<li><a href="#engineering">Engineering</a></li>
+<li><a href="#cymcac">Some Idea from 青年會書院</a></li>
+<li><a href="#ideas">Ideas</a></li>
+<li><a href="#model-on-stem-education">Model on STEM Education</a></li>
+<li><a href="#resource">Resource</a></li>
 </ul>
 
 <!-- /MarkdownTOC -->
@@ -247,100 +214,96 @@ var Paginator = {}
 <h1 id="reference">Reference</h1>
 
 <ul>
-<li><a href="https://edtechmagazine.com/k12/article/2016/10/computer-science-not-just-coding-needs-bigger-role-stem-education" target="_blank">Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine</a><br /></li>
-<li><a href="http://c-stem.ucdavis.edu/" target="_blank">UC Davis Center for Integrated Computing and STEM Education</a><br /></li>
-<li><a href="https://www.wikiwand.com/en/Zebra_Puzzle" target="_blank">Zebra Puzzle - Wikiwand</a><br /></li>
-<li><a href="http://microbit.org/" target="_blank">The Micro:bit Foundation is a global non-profit organisation making invention with technology fun for everyone!</a><br />
-<br /></li>
+<li><a href="https://edtechmagazine.com/k12/article/2016/10/computer-science-not-just-coding-needs-bigger-role-stem-education" target="_blank">Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine</a></li>
+<li><a href="http://c-stem.ucdavis.edu/" target="_blank">UC Davis Center for Integrated Computing and STEM Education</a></li>
+<li><a href="https://www.wikiwand.com/en/Zebra_Puzzle" target="_blank">Zebra Puzzle - Wikiwand</a></li>
+<li><a href="http://microbit.org/" target="_blank">The Micro:bit Foundation is a global non-profit organisation making invention with technology fun for everyone!</a></li>
 </ul>
 
 <h1 id="statistic">Statistic</h1>
 
 <ul>
-<li><a href="https://www.livescience.com/43296-what-is-stem-education.html" target="_blank">What is STEM Education?</a><br />
-<br /></li>
+<li><a href="https://www.livescience.com/43296-what-is-stem-education.html" target="_blank">What is STEM Education?</a></li>
 </ul>
 
 <h1 id="engineering">Engineering</h1>
 
 <ul>
-<li><a href="http://www.dummies.com/programming/electronics/basic-electronic-components-and-what-they-do/" target="_blank">Basic Electronic Components and What They Do - dummies</a><br /></li>
-<li><a href="https://www.build-electronic-circuits.com/how-transistors-work/" target="_blank">How Transistors Work - A Simple Explanation</a><br /></li>
-<li><img src="https://www.build-electronic-circuits.com/wp-content/uploads/2014/05/transistor-current-explanation.png" alt="transistor" /><br /></li>
-<li><a href="https://www.build-electronic-circuits.com/how-a-relay-works/" target="_blank">A Guide To How A Relay Works - Build Electronic Circuits</a><br /></li>
-<li><a href="http://fritzing.org/home/" target="_blank">Fritzing Fritzing</a><br /></li>
-<li><a href="https://www.youtube.com/watch?v=_fgWQ3TIhyE" target="_blank">Electronic Basics #19: I2C and how to use it - YouTube</a><br />
-<br /></li>
+<li><a href="http://www.dummies.com/programming/electronics/basic-electronic-components-and-what-they-do/" target="_blank">Basic Electronic Components and What They Do - dummies</a></li>
+<li><a href="https://www.build-electronic-circuits.com/how-transistors-work/" target="_blank">How Transistors Work - A Simple Explanation</a></li>
+<li><img src="https://www.build-electronic-circuits.com/wp-content/uploads/2014/05/transistor-current-explanation.png" alt="transistor" /></li>
+<li><a href="https://www.build-electronic-circuits.com/how-a-relay-works/" target="_blank">A Guide To How A Relay Works - Build Electronic Circuits</a></li>
+<li><a href="http://fritzing.org/home/" target="_blank">Fritzing Fritzing</a></li>
+<li><a href="https://www.youtube.com/watch?v=_fgWQ3TIhyE" target="_blank">Electronic Basics #19: I2C and how to use it - YouTube</a></li>
 </ul>
 
 <h1 id="cymcac">Some Idea from 青年會書院</h1>
 
 <ul>
-<li>PE, HE is the great media for implementation of STEM<br />
+<li>PE, HE is the great media for implementation of STEM
 
 <ul>
-<li>VR 眼鏡，360 3D camera, student rided a bicycle with the camera, and other student can watch in VR and ride in 跑步機<br /></li>
-<li>PE 心跳帶，跑步統計，Data colloction<br /></li>
-<li>RFID 收集跑圈時間<br /></li>
-<li>分子雪糕 in HE<br /></li>
+<li>VR 眼鏡，360 3D camera, student rided a bicycle with the camera, and other student can watch in VR and ride in 跑步機</li>
+<li>PE 心跳帶，跑步統計，Data colloction</li>
+<li>RFID 收集跑圈時間</li>
+<li>分子雪糕 in HE</li>
 </ul></li>
-<li>Others<br />
+<li>Others
 
 <ul>
-<li>AR in book, the video will show the book introduction<br /></li>
-<li>HE + Bio 水耕活動<br /></li>
-<li>滑翔機 =&gt; 飛幾遠 =&gt; 估算<br /></li>
+<li>AR in book, the video will show the book introduction</li>
+<li>HE + Bio 水耕活動</li>
+<li>滑翔機 =&gt; 飛幾遠 =&gt; 估算</li>
 </ul></li>
-<li>STEM Lab?<br /></li>
-<li>Digital Learning Common (數位學習共享空間)<br /></li>
-<li>環保飯堂 + STEM + 影音室<br />
+<li>STEM Lab?</li>
+<li>Digital Learning Common (數位學習共享空間)</li>
+<li>環保飯堂 + STEM + 影音室
 
 <ul>
-<li>3D Printing, 青書Cafe, food printing 立體食物打印機<br /></li>
-<li>Student Cafe<br /></li>
-<li><a href="https://www.digitaltrends.com/cool-tech/3d-food-printers-how-they-could-change-what-you-eat/" target="_blank">3D Food Printers: How They Could Change What You Eat | Digital Trends</a><br /></li>
+<li>3D Printing, 青書Cafe, food printing 立體食物打印機</li>
+<li>Student Cafe</li>
+<li><a href="https://www.digitaltrends.com/cool-tech/3d-food-printers-how-they-could-change-what-you-eat/" target="_blank">3D Food Printers: How They Could Change What You Eat | Digital Trends</a></li>
 </ul></li>
-<li>2D design =&gt; 3D design =&gt; 3D printing<br /></li>
-<li>tinkercad 3D 繪圖工具<br /></li>
-<li>如何照顧不同學習需要的學生<br /></li>
-<li>各活動設計，應有關連<br /></li>
-<li>活動設計應有深度，3D print 舊膠 vs print 野食？<br /></li>
-<li>student are makers<br />
+<li>2D design =&gt; 3D design =&gt; 3D printing</li>
+<li>tinkercad 3D 繪圖工具</li>
+<li>如何照顧不同學習需要的學生</li>
+<li>各活動設計，應有關連</li>
+<li>活動設計應有深度，3D print 舊膠 vs print 野食？</li>
+<li>student are makers
 
 <ul>
-<li>3D printing to make a camera mount, snap the view of moon<br /></li>
+<li>3D printing to make a camera mount, snap the view of moon</li>
 </ul></li>
-<li>F1 - F3 Micro:bit<br />
+<li>F1 - F3 Micro:bit
 
 <ul>
-<li>中一習作 Micro Bit to 計步器<br />
+<li>中一習作 Micro Bit to 計步器
 
 <ul>
-<li>Friction (physic)<br /></li>
-<li>m -&gt; km (math)<br /></li>
+<li>Friction (physic)</li>
+<li>m -&gt; km (math)</li>
 </ul></li>
-<li>F3 Sensor 濕度，𣺉水<br /></li>
+<li>F3 Sensor 濕度，𣺉水</li>
 </ul></li>
-<li>DIY Hologram<br />
+<li>DIY Hologram
 
 <ul>
-<li>平截頭體的應用<br /></li>
+<li>平截頭體的應用</li>
 </ul></li>
-<li>老師們要有共同願境<br /></li>
-<li>只有頭中尾三次Meeting<br />
+<li>老師們要有共同願境</li>
+<li>只有頭中尾三次Meeting
 
 <ul>
-<li>but whatsapp idea<br /></li>
-<li>Discussion<br /></li>
+<li>but whatsapp idea</li>
+<li>Discussion</li>
 </ul></li>
-<li>比同事時間及空間, they need to have time to think to develop too<br />
+<li>比同事時間及空間, they need to have time to think to develop too
 
 <ul>
-<li>老師才可以發展<br /></li>
-<li>能否突出老師們的長處?<br /></li>
+<li>老師才可以發展</li>
+<li>能否突出老師們的長處?</li>
 </ul></li>
-<li>IT Support / wifi<br />
-<br /></li>
+<li>IT Support / wifi</li>
 </ul>
 
 <h1 id="ideas">Ideas</h1>
@@ -348,150 +311,128 @@ var Paginator = {}
 <p>Can we have a syllabus for STEM? (For each form)</p>
 
 <ul>
-<li>Learning Programming &lt;=&gt; Problem Solving Skill<br />
+<li>Learning Programming &lt;=&gt; Problem Solving Skill
 
 <ul>
-<li>Software design<br /></li>
+<li>Software design</li>
 </ul></li>
-<li>For Loop and AP<br /></li>
-<li>Series / Sequence <div id="series"></div><br />
+<li>For Loop and AP</li>
+<li>Series / Sequence <div id="series"></div>
 
 <ul>
-<li>Eng<br /></li>
-<li>Programming<br />
+<li>Eng</li>
+<li>Programming
 
 <ul>
-<li>Recursive function<br /></li>
+<li>Recursive function</li>
 </ul></li>
-<li>Math<br /></li>
-<li>e.g.<br />
+<li>Math</li>
+<li>e.g.
 
 <ul>
-<li>fibonacci<br /></li>
-<li>Print all primes below 1,000,000,000<br /></li>
+<li>fibonacci</li>
+<li>Print all primes below 1,000,000,000</li>
 </ul></li>
 </ul></li>
-<li>Density (Made a submarine)<br />
+<li>Density (Made a submarine)
 
 <ul>
-<li>ratio on volume and area<br /></li>
-<li>Shape,<br /></li>
-<li>Engineering<br /></li>
-<li>用 raspberry pi 抽空氣<br /></li>
-<li>量度自己高度<br /></li>
-<li>with gyroscope to control balance<br /></li>
-<li>Sci<br /></li>
-<li>Concept of Density (Sinking and Floating)<br /></li>
+<li>ratio on volume and area</li>
+<li>Shape,</li>
+<li>Engineering</li>
+<li>用 raspberry pi 抽空氣</li>
+<li>量度自己高度</li>
+<li>with gyroscope to control balance</li>
+<li>Sci</li>
+<li>Concept of Density (Sinking and Floating)</li>
 </ul></li>
-<li>Starbucks (Ideas from TWGSS)<br />
+<li>Starbucks (Ideas from TWGSS)
 
 <ul>
-<li>隔熱墊<br /></li>
-<li>Shape<br /></li>
-<li>Surface Area<br /></li>
-<li>Thickness<br /></li>
+<li>隔熱墊</li>
+<li>Shape</li>
+<li>Surface Area</li>
+<li>Thickness</li>
 </ul></li>
-<li>潛望鏡活動 periscope (Ideas From Tak)<br />
+<li>潛望鏡活動 periscope (Ideas From Tak)
 
 <ul>
-<li>動手做設計個紙樣，紙樣要一塊過<br /></li>
-<li><a href="http://slidesplayer.com/slide/11598871/62/images/25/%E3%80%8A%E5%85%89%E3%80%8B%E2%80%944%E3%80%81%E5%85%89%E7%9A%84%E5%8F%8D%E5%B0%84+%E7%89%99%E8%86%8F%E7%9B%92+%E8%A7%82%E6%B5%8B%E5%AD%94+%E6%8F%92%E9%95%9C%E5%AD%94+45%E5%BA%A6%E8%A7%92%EF%BC%8C%E4%B8%8A%E4%B8%8B%E4%B8%A4%E5%9D%97%E9%95%9C%E9%9D%A2%E5%BF%85%E9%A1%BB%E5%B9%B3%E8%A1%8C%EF%BC%8C%E9%95%9C%E9%9D%A2%E8%A6%81%E7%9B%B8%E5%AF%B9%E3%80%82.jpg" target="_blank">《光》—4、光的反射+牙膏盒+观测孔+插镜孔+45度角，上下两块镜面必须平行，镜面要相对。.jpg (1024×768)</a><br /></li>
-<li>潛望鏡活動<br /></li>
+<li>動手做設計個紙樣，紙樣要一塊過</li>
+<li><a href="http://slidesplayer.com/slide/11598871/62/images/25/%E3%80%8A%E5%85%89%E3%80%8B%E2%80%944%E3%80%81%E5%85%89%E7%9A%84%E5%8F%8D%E5%B0%84+%E7%89%99%E8%86%8F%E7%9B%92+%E8%A7%82%E6%B5%8B%E5%AD%94+%E6%8F%92%E9%95%9C%E5%AD%94+45%E5%BA%A6%E8%A7%92%EF%BC%8C%E4%B8%8A%E4%B8%8B%E4%B8%A4%E5%9D%97%E9%95%9C%E9%9D%A2%E5%BF%85%E9%A1%BB%E5%B9%B3%E8%A1%8C%EF%BC%8C%E9%95%9C%E9%9D%A2%E8%A6%81%E7%9B%B8%E5%AF%B9%E3%80%82.jpg" target="_blank">《光》—4、光的反射+牙膏盒+观测孔+插镜孔+45度角，上下两块镜面必须平行，镜面要相对。.jpg (1024×768)</a></li>
+<li>潛望鏡活動</li>
 </ul></li>
-<li>大拍買<br />
+<li>大拍買
 
 <ul>
-<li>5 年拍買<br /></li>
-<li>貨品會depreciate or 增值<br /></li>
-<li>每人 random 有 task 要買一D野<br /></li>
-<li>買左野會開心D，要計埋 happiness<br /></li>
-<li>最後邊組最高分（最多錢又最開心）<br /></li>
+<li>5 年拍買</li>
+<li>貨品會depreciate or 增值</li>
+<li>每人 random 有 task 要買一D野</li>
+<li>買左野會開心D，要計埋 happiness</li>
+<li>最後邊組最高分（最多錢又最開心）</li>
 </ul></li>
-<li>Foldable<br />
+<li>Foldable
 
 <ul>
-<li>how to fold a skirt (occupy the minimum space)<br /></li>
-<li><a href="https://www.google.com.hk/search?q=how+to+paper+origami+collapsible&amp;newwindow=1&amp;safe=off&amp;tbm=isch&amp;source=iu&amp;pf=m&amp;ictx=1&amp;fir=xcOI1TO7-fmGVM%253A%252CTMiZSqjweYcF9M%252C_&amp;usg=__bxkryWVqGVsDjfwp3EJG8TRFcuo%3D&amp;sa=X&amp;ved=0ahUKEwjmjebikr3XAhVDtpQKHTJxAPMQ9QEIKzAA#imgrc=_" target="_blank">how to paper origami collapsible - Google Search</a><br /></li>
-<li>water rocket with collapsible parachute<br /></li>
-<li>with trajectory<br /></li>
-<li><a href="https://www.thingiverse.com/thing:294758" target="_blank">Water Rocket Parachute Deployment System by capella_ben - Thingiverse</a><br /></li>
-<li><a href="http://www.aircommandrockets.com/day98.htm" target="_blank">Air Command Water Rockets Flight Log - Day 98 - G2 nosecone</a><br /></li>
+<li>how to fold a skirt (occupy the minimum space)</li>
+<li><a href="https://www.google.com.hk/search?q=how+to+paper+origami+collapsible&amp;newwindow=1&amp;safe=off&amp;tbm=isch&amp;source=iu&amp;pf=m&amp;ictx=1&amp;fir=xcOI1TO7-fmGVM%253A%252CTMiZSqjweYcF9M%252C_&amp;usg=__bxkryWVqGVsDjfwp3EJG8TRFcuo%3D&amp;sa=X&amp;ved=0ahUKEwjmjebikr3XAhVDtpQKHTJxAPMQ9QEIKzAA#imgrc=_" target="_blank">how to paper origami collapsible - Google Search</a></li>
+<li>water rocket with collapsible parachute</li>
+<li>with trajectory</li>
+<li><a href="https://www.thingiverse.com/thing:294758" target="_blank">Water Rocket Parachute Deployment System by capella_ben - Thingiverse</a></li>
+<li><a href="http://www.aircommandrockets.com/day98.htm" target="_blank">Air Command Water Rockets Flight Log - Day 98 - G2 nosecone</a></li>
 </ul></li>
-<li>對換 =&gt; 數字的感覺，體溫，錢，大小<br /></li>
-<li>Rock Paper Scissors<br />
+<li>對換 =&gt; 數字的感覺，體溫，錢，大小</li>
+<li>Rock Paper Scissors
 
 <ul>
-<li>Round Down<br /></li>
-<li>AI, will do survey to study user habit, and will increase the weight to do the play<br /></li>
-<li>weighted mean<br /></li>
+<li>Round Down</li>
+<li>AI, will do survey to study user habit, and will increase the weight to do the play</li>
+<li>weighted mean</li>
 </ul></li>
-<li>厠紙筒<br />
+<li>厠紙筒
 
 <ul>
-<li>how to find the center or circle?<br /></li>
-<li>how to mark to 90 degree sector?<br /></li>
+<li>how to find the center or circle?</li>
+<li>how to mark to 90 degree sector?</li>
 </ul></li>
-<li>Drawing on trigonometric function with parametric form<br /></li>
-<li>using tangent method to draw a parabola and using this to find<br />
+<li>Drawing on trigonometric function with parametric form</li>
+<li>using tangent method to draw a parabola and using this to find
 
 <ul>
-<li>$\displaystyle h=\frac{\tan{\theta}}{4}$<br /></li>
+<li>$\displaystyle h=\frac{\tan{\theta}}{4}$</li>
 </ul></li>
-<li>Metronome and trigonometry<br />
+<li>Metronome and trigonometry
 
 <ul>
-<li><a href="https://prezi.com/xyjlb4sezgqv/trig-modeling-metronome/" target="_blank">Trig modeling- Metronome by Jing Rong Lu on Prezi</a><br />
-<br /></li>
+<li><a href="https://prezi.com/xyjlb4sezgqv/trig-modeling-metronome/" target="_blank">Trig modeling- Metronome by Jing Rong Lu on Prezi</a></li>
 </ul></li>
 </ul>
 
 <h1 id="model-on-stem-education">Model on STEM Education</h1>
 
 <ul>
-<li>What is the role of Math?<br />
+<li>What is the role of Math?
 
 <ul>
-<li>Solve Problem<br />
-<br /></li>
+<li>Solve Problem</li>
 </ul></li>
 </ul>
 
 <h1 id="resource">Resource</h1>
 
 <ul>
-<li>Free 3D printing App<br />
+<li>Free 3D printing App
 
 <ul>
-<li><a href="https://www.tinkercad.com/learn/" target="_blank">Learn | Tinkercad</a><br /></li>
+<li><a href="https://www.tinkercad.com/learn/" target="_blank">Learn | Tinkercad</a></li>
 </ul></li>
-<li>MR / AR<br /></li>
-<li>Draw Circuit<br />
+<li>MR / AR</li>
+<li>Draw Circuit
 
 <ul>
-<li><a href="http://fritzing.org/home/" target="_blank">Fritzing</a><br /></li>
+<li><a href="http://fritzing.org/home/" target="_blank">Fritzing</a></li>
 </ul></li>
-<li>Stereographic Projection<br /></li>
-<li>最速下降線 Steepest Descent Curve<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br /></li>
+<li>Stereographic Projection</li>
+<li>最速下降線 Steepest Descent Curve</li>
 </ul>
 
   </div>
@@ -525,6 +466,15 @@ var Paginator = {}
     
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
 
 
 
@@ -546,6 +496,9 @@ var Paginator = {}
   }
   renderMath()
 </script>
+
+
+
 
 
 

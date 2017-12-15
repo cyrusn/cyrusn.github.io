@@ -12,14 +12,12 @@
 
 
   <meta name="description" content="Create a new script in /etc/init.d/myscript.
-vi /etc/init.d/myscript  (Obviously it doesn&rsquo;t have to be called &ldquo;myscript&rdquo;.) In this script, do whatever you want to do. Perhaps just run the script you mentioned.
-#!/bin/sh /path/to/my/script.sh  Make it executable.
+vi /etc/init.d/myscript  (Obviously it doesn&rsquo;t have to be called &ldquo;myscript&rdquo;.) In this script, do whatever you want to do. Perhaps just run the script you mentioned. #!/bin/sh /path/to/my/script.sh  Make it executable.
 chmod 755 /etc/init.d/myscript  Configure the init system to run this script at startup.
 update-rc.d myscript defaults  ystem to run this script at startup.
 update-rc.d myscript defaults  ">
   <meta property="og:description" content="Create a new script in /etc/init.d/myscript.
-vi /etc/init.d/myscript  (Obviously it doesn&rsquo;t have to be called &ldquo;myscript&rdquo;.) In this script, do whatever you want to do. Perhaps just run the script you mentioned.
-#!/bin/sh /path/to/my/script.sh  Make it executable.
+vi /etc/init.d/myscript  (Obviously it doesn&rsquo;t have to be called &ldquo;myscript&rdquo;.) In this script, do whatever you want to do. Perhaps just run the script you mentioned. #!/bin/sh /path/to/my/script.sh  Make it executable.
 chmod 755 /etc/init.d/myscript  Configure the init system to run this script at startup.
 update-rc.d myscript defaults  ystem to run this script at startup.
 update-rc.d myscript defaults  ">
@@ -31,10 +29,11 @@ vi /etc/init.d/myscript  (Obviously it doesn&rsquo;t have to be called &ldquo;my
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
 <script src='/js/jquery-3.2.1.slim.min.js'></script>
 <script src='/js/popper.min.js'></script>
 <script src='/js/bootstrap.min.js' ></script>
-<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+
 
 
 <script src=' /js/lunr.min.js '></script>
@@ -43,7 +42,8 @@ vi /etc/init.d/myscript  (Obviously it doesn&rsquo;t have to be called &ldquo;my
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
-<script src="/js/main.js"></script>
+<script src='/js/main.js'></script>
+<script src='/js/helper.js'></script>
 
 
 <script>
@@ -62,7 +62,6 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
 
 
@@ -74,9 +73,9 @@ var Paginator = {}
 </head>
 <body>
   <div class="bg-light d-md-flex justify-content-center">
-    <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
-      href="https://cyrusn.github.io">
+      href='https://cyrusn.github.io'>
       CyrusN
     </a>
     <button
@@ -135,14 +134,14 @@ var Paginator = {}
         
       </ul>
     </div>
-    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
   </nav>
 </div>
 
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-success text-light">
+      <div class="modal-header bg-info text-light">
         <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="text-light">&times;</span>
@@ -155,9 +154,8 @@ var Paginator = {}
               <li><code>Space</code> to search</li>
               <li><code>Enter</code> to start navigate in results</li>
               <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list</li>
-              <li><code>J / K</code> can also scroll up and down in page</li>
-              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
+              <li><code>H / L</code> to navigate the page number</li>
               <li><code>[ / ]</code> to navigate the navbar</li>
           </ul>
         </p>
@@ -184,7 +182,6 @@ var Paginator = {}
   
 </small>
 
-
 <small>
 
   <a class="badge badge-secondary" href="/tags/linux">linux</a>
@@ -192,7 +189,6 @@ var Paginator = {}
   <a class="badge badge-secondary" href="/tags/startup">startup</a>
 
 </small>
-
 
 
 
@@ -204,7 +200,7 @@ var Paginator = {}
 <pre><code class="language-sh">vi /etc/init.d/myscript
 </code></pre>
 
-<p>(Obviously it doesn&rsquo;t have to be called &ldquo;myscript&rdquo;.) In this script, do whatever you want to do. Perhaps just run the script you mentioned.<br />
+<p>(Obviously it doesn&rsquo;t have to be called &ldquo;myscript&rdquo;.) In this script, do whatever you want to do. Perhaps just run the script you mentioned.
 <!-- more --></p>
 
 <pre><code class="language-sh">#!/bin/sh
@@ -257,6 +253,18 @@ var Paginator = {}
     
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+
+
+
 
 
 

@@ -23,10 +23,11 @@ The authentication …">
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
 <script src='/js/jquery-3.2.1.slim.min.js'></script>
 <script src='/js/popper.min.js'></script>
 <script src='/js/bootstrap.min.js' ></script>
-<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+
 
 
 <script src=' /js/lunr.min.js '></script>
@@ -35,7 +36,8 @@ The authentication …">
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
-<script src="/js/main.js"></script>
+<script src='/js/main.js'></script>
+<script src='/js/helper.js'></script>
 
 
 <script>
@@ -54,7 +56,6 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
 
 
@@ -66,9 +67,9 @@ var Paginator = {}
 </head>
 <body>
   <div class="bg-light d-md-flex justify-content-center">
-    <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
-      href="https://cyrusn.github.io">
+      href='https://cyrusn.github.io'>
       CyrusN
     </a>
     <button
@@ -127,14 +128,14 @@ var Paginator = {}
         
       </ul>
     </div>
-    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
   </nav>
 </div>
 
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-success text-light">
+      <div class="modal-header bg-info text-light">
         <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="text-light">&times;</span>
@@ -147,9 +148,8 @@ var Paginator = {}
               <li><code>Space</code> to search</li>
               <li><code>Enter</code> to start navigate in results</li>
               <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list</li>
-              <li><code>J / K</code> can also scroll up and down in page</li>
-              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
+              <li><code>H / L</code> to navigate the page number</li>
               <li><code>[ / ]</code> to navigate the navbar</li>
           </ul>
         </p>
@@ -176,7 +176,6 @@ var Paginator = {}
   
 </small>
 
-
 <small>
 
   <a class="badge badge-secondary" href="/tags/security">security</a>
@@ -186,7 +185,6 @@ var Paginator = {}
   <a class="badge badge-secondary" href="/tags/tls">TLS</a>
 
 </small>
-
 
 
 
@@ -208,43 +206,38 @@ var Paginator = {}
 </blockquote>
 
 <ul>
-<li><a href="https://www.imperialviolet.org/2010/06/25/overclocking-ssl.html" target="_blank">ImperialViolet - Overclocking SSL</a><br /></li>
-<li><a href="https://www.imperialviolet.org/2011/05/04/pinning.html" target="_blank">ImperialViolet - Public key pinning</a><br /></li>
-<li><a href="http://www.zytrax.com/tech/survival/ssl.html" target="_blank">Survival Guide - TLS/SSL and SSL (X.509) Certificates (CA-signed and Self-Signed)</a><br /></li>
-<li><a href="https://istlsfastyet.com/" target="_blank">Is TLS Fast Yet?</a><br /></li>
-<li><a href="https://bettercrypto.org/" target="_blank">BetterCrypto⋅org</a><br /></li>
-<li><a href="https://developers.google.com/web/updates/2015/09/HPKP-reporting-with-chrome-46" target="_blank">Rolling out Public Key Pinning with HPKP Reporting &ndash; Google Web Updates</a><br /></li>
-<li><a href="https://info.ssl.com/tls-handshake/" target="_blank">The SSL/TLS Handshake: an Overview – SSL Information and FAQ</a><br /></li>
-<li><a href="https://recompilermag.com/issues/issue-1/ssl-its-hard-to-do-right/" target="_blank">SSL: it&rsquo;s hard to do right | The Recompiler</a><br /></li>
-<li><a href="http://arstechnica.com/security/2014/01/how-the-nsa-may-have-put-a-backdoor-in-rsas-cryptography-a-technical-primer/" target="_blank">How the NSA (may have) put a backdoor in RSA&rsquo;s cryptography: A technical primer | Ars Technica</a><br /></li>
-<li><a href="http://arstechnica.com/business/2012/02/critics-slam-ssl-authority-for-minting-cert-used-to-impersonate-sites/" target="_blank">Critics slam SSL authority for minting certificate for impersonating sites | Ars Technica</a><br /></li>
-<li><a href="http://arstechnica.com/security/2009/12/how-to-get-set-with-a-secure-sertificate-for-free/" target="_blank">How to obtain and install an SSL/TLS certificate, for free | Ars Technica</a><br /></li>
-<li><a href="http://arstechnica.com/information-technology/2012/11/securing-your-web-server-with-ssltls/#p4" target="_blank">Web served, part 2: Securing things with SSL/TLS | Ars Technica</a><br />
-<br />
-<br /></li>
+<li><a href="https://www.imperialviolet.org/2010/06/25/overclocking-ssl.html" target="_blank">ImperialViolet - Overclocking SSL</a></li>
+<li><a href="https://www.imperialviolet.org/2011/05/04/pinning.html" target="_blank">ImperialViolet - Public key pinning</a></li>
+<li><a href="http://www.zytrax.com/tech/survival/ssl.html" target="_blank">Survival Guide - TLS/SSL and SSL (X.509) Certificates (CA-signed and Self-Signed)</a></li>
+<li><a href="https://istlsfastyet.com/" target="_blank">Is TLS Fast Yet?</a></li>
+<li><a href="https://bettercrypto.org/" target="_blank">BetterCrypto⋅org</a></li>
+<li><a href="https://developers.google.com/web/updates/2015/09/HPKP-reporting-with-chrome-46" target="_blank">Rolling out Public Key Pinning with HPKP Reporting &ndash; Google Web Updates</a></li>
+<li><a href="https://info.ssl.com/tls-handshake/" target="_blank">The SSL/TLS Handshake: an Overview – SSL Information and FAQ</a></li>
+<li><a href="https://recompilermag.com/issues/issue-1/ssl-its-hard-to-do-right/" target="_blank">SSL: it&rsquo;s hard to do right | The Recompiler</a></li>
+<li><a href="http://arstechnica.com/security/2014/01/how-the-nsa-may-have-put-a-backdoor-in-rsas-cryptography-a-technical-primer/" target="_blank">How the NSA (may have) put a backdoor in RSA&rsquo;s cryptography: A technical primer | Ars Technica</a></li>
+<li><a href="http://arstechnica.com/business/2012/02/critics-slam-ssl-authority-for-minting-cert-used-to-impersonate-sites/" target="_blank">Critics slam SSL authority for minting certificate for impersonating sites | Ars Technica</a></li>
+<li><a href="http://arstechnica.com/security/2009/12/how-to-get-set-with-a-secure-sertificate-for-free/" target="_blank">How to obtain and install an SSL/TLS certificate, for free | Ars Technica</a></li>
+<li><a href="http://arstechnica.com/information-technology/2012/11/securing-your-web-server-with-ssltls/#p4" target="_blank">Web served, part 2: Securing things with SSL/TLS | Ars Technica</a></li>
 </ul>
 
 <h1 id="hsts">HSTS</h1>
 
 <ul>
-<li><a href="https://hstspreload.appspot.com/" target="_blank">HTTP Strict Transport Security - Wikiwand</a>: always use HTTPS<br /></li>
-<li><a href="https://hstspreload.appspot.com/" target="_blank">HSTS Preload List Submission</a><br />
-<br /></li>
+<li><a href="https://hstspreload.appspot.com/" target="_blank">HTTP Strict Transport Security - Wikiwand</a>: always use HTTPS</li>
+<li><a href="https://hstspreload.appspot.com/" target="_blank">HSTS Preload List Submission</a></li>
 </ul>
 
 <h1 id="ssl-checkers">SSL checkers</h1>
 
 <ul>
-<li><a href="https://www.ssllabs.com/" target="_blank">Qualys SSL Labs</a><br /></li>
-<li><a href="https://www.digicert.com/help/" target="_blank">SSL Certificate Checker - Diagnostic Tool | DigiCert.com</a><br />
-<br /></li>
+<li><a href="https://www.ssllabs.com/" target="_blank">Qualys SSL Labs</a></li>
+<li><a href="https://www.digicert.com/help/" target="_blank">SSL Certificate Checker - Diagnostic Tool | DigiCert.com</a></li>
 </ul>
 
 <h1 id="perfect-forward-secrecy-pfs">Perfect Forward Secrecy (PFS)</h1>
 
 <ul>
-<li><a href="https://www.digicert.com/ssl-support/ssl-enabling-perfect-forward-secrecy.htm" target="_blank">SSL Enabling Forward Secrecy | DigiCert.com</a><br />
-<br /></li>
+<li><a href="https://www.digicert.com/ssl-support/ssl-enabling-perfect-forward-secrecy.htm" target="_blank">SSL Enabling Forward Secrecy | DigiCert.com</a></li>
 </ul>
 
 <h1 id="issues">Issues</h1>
@@ -254,147 +247,77 @@ var Paginator = {}
 <p>As it turns out, CA may not be trust-worthy after all. There are many instances of CA issuing fraudulent certificates (willingly or being hacked).</p>
 
 <ul>
-<li><a href="http://arstechnica.com/security/2011/03/how-the-comodo-certificate-fraud-calls-ca-trust-into-question/" target="_blank">How the Comodo certificate fraud calls CA trust into question | Ars Technica</a><br /></li>
-<li><a href="http://arstechnica.com/security/2015/03/google-warns-of-unauthorized-tls-certificates-trusted-by-almost-all-oses/" target="_blank">Google warns of unauthorized TLS certificates trusted by almost all OSes[Updated] | Ars Technica</a> <a href="http://arstechnica.com/security/2015/04/google-chrome-will-banish-chinese-certificate-authority-for-breach-of-trust/" target="_blank">Google Chrome will banish Chinese certificate authority for breach of trust | Ars Technica</a><br /></li>
-<li><a href="http://arstechnica.com/security/2011/08/earlier-this-year-an-iranian/" target="_blank">Another fraudulent certificate raises the same old questions about certificate authorities | Ars Technica</a><br />
-<br /></li>
+<li><a href="http://arstechnica.com/security/2011/03/how-the-comodo-certificate-fraud-calls-ca-trust-into-question/" target="_blank">How the Comodo certificate fraud calls CA trust into question | Ars Technica</a></li>
+<li><a href="http://arstechnica.com/security/2015/03/google-warns-of-unauthorized-tls-certificates-trusted-by-almost-all-oses/" target="_blank">Google warns of unauthorized TLS certificates trusted by almost all OSes[Updated] | Ars Technica</a> <a href="http://arstechnica.com/security/2015/04/google-chrome-will-banish-chinese-certificate-authority-for-breach-of-trust/" target="_blank">Google Chrome will banish Chinese certificate authority for breach of trust | Ars Technica</a></li>
+<li><a href="http://arstechnica.com/security/2011/08/earlier-this-year-an-iranian/" target="_blank">Another fraudulent certificate raises the same old questions about certificate authorities | Ars Technica</a></li>
 </ul>
 
 <h2 id="heartbleed-2014">Heartbleed (2014)</h2>
 
 <ul>
-<li><a href="http://heartbleed.com/" target="_blank">Heartbleed Bug</a><br /></li>
-<li><a href="http://akenn.org/blog/Heartbleed/" target="_blank">Heartbleed – Andrew Kennedy</a><br /></li>
-<li><a href="http://arstechnica.com/security/2014/04/critical-crypto-bug-exposes-yahoo-mail-passwords-russian-roulette-style/" target="_blank">Critical crypto bug exposes Yahoo Mail, other passwords Russian roulette-style | Ars Technica</a><br /></li>
-<li><a href="http://coderinaworldofcode.blogspot.hk/2014/04/my-heart-bleeds-for-openssl.html" target="_blank">Coder in a World of Code: My Heart Bleeds for OpenSSL</a><br />
-<br /></li>
+<li><a href="http://heartbleed.com/" target="_blank">Heartbleed Bug</a></li>
+<li><a href="http://akenn.org/blog/Heartbleed/" target="_blank">Heartbleed – Andrew Kennedy</a></li>
+<li><a href="http://arstechnica.com/security/2014/04/critical-crypto-bug-exposes-yahoo-mail-passwords-russian-roulette-style/" target="_blank">Critical crypto bug exposes Yahoo Mail, other passwords Russian roulette-style | Ars Technica</a></li>
+<li><a href="http://coderinaworldofcode.blogspot.hk/2014/04/my-heart-bleeds-for-openssl.html" target="_blank">Coder in a World of Code: My Heart Bleeds for OpenSSL</a></li>
 </ul>
 
 <h2 id="renegotiation-gap-2009">Renegotiation Gap (2009)</h2>
 
 <ul>
-<li><a href="http://soatruth.blogspot.hk/2009/12/really-understanding-ssltls.html" target="_blank">Truth in SOA: Really Understanding the SSL/TLS Vulnerability (Part 1)</a><br />
-<br /></li>
+<li><a href="http://soatruth.blogspot.hk/2009/12/really-understanding-ssltls.html" target="_blank">Truth in SOA: Really Understanding the SSL/TLS Vulnerability (Part 1)</a></li>
 </ul>
 
 <h1 id="let-s-encrypt">Let&rsquo;s Encrypt</h1>
 
 <ul>
-<li><a href="https://letsencrypt.org/" target="_blank">Let&rsquo;s Encrypt</a><br /></li>
-<li><a href="https://letsencrypt.org/howitworks/" target="_blank">How It Works</a><br /></li>
-<li><a href="https://letsencrypt.org/howitworks/technology/" target="_blank">Technology</a><br /></li>
-<li><a href="https://letsencrypt.org/2015/10/29/phishing-and-malware.html" target="_blank">The CA&rsquo;s Role in Fighting Phishing and Malware - Let&rsquo;s Encrypt - Free SSL/TLS Certificates</a><br /></li>
-<li><a href="https://community.letsencrypt.org/t/rate-limits-for-lets-encrypt/6769" target="_blank">Rate Limits for Let&rsquo;s Encrypt - Documentation - Let&rsquo;s Encrypt Community Support</a><br /></li>
-<li><a href="https://www.youtube.com/watch?v=Gas_sSB-5SU" target="_blank">Let&rsquo;s Encrypt Demo - YouTube</a><br /></li>
-<li><a href="https://scene-si.org/2016/01/23/generate-free-ssl-certificates-with-docker-and-letsencrypt/" target="_blank">Generate free SSL certificates with Docker and LetsEncrypt | Tit Petrič</a><br /></li>
-<li><a href="https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04" target="_blank">How To Secure Nginx with Let&rsquo;s Encrypt on Ubuntu 16.04 | DigitalOcean</a><br /></li>
-<li><a href="https://coolaj86.com/articles/lets-encrypt-with-haproxy/" target="_blank">Let&rsquo;s Encrypt with HAProxy</a><br /></li>
-<li><a href="https://coolaj86.com/articles/lets-encrypt-on-raspberry-pi/" target="_blank">Let&rsquo;s Encrypt on Raspberry Pi</a><br /></li>
-<li><a href="https://coolaj86.com/articles/adventures-in-haproxy-tcp-tls-https-ssh-openvpn/" target="_blank">adventures in haproxy: tcp, tls, https, ssh, openvpn</a><br /></li>
-<li><a href="https://tryingtobeawesome.com/letsencrypt/" target="_blank">LetsEncrypt on Nginx</a><br /></li>
-<li><a href="http://www.cyberciti.biz/faq/how-to-configure-nginx-with-free-lets-encrypt-ssl-certificate-on-debian-or-ubuntu-linux/" target="_blank">How to configure Nginx with free Let&rsquo;s Encrypt SSL certificate on Debian or Ubuntu Linux</a><br />
-<br /></li>
+<li><a href="https://letsencrypt.org/" target="_blank">Let&rsquo;s Encrypt</a></li>
+<li><a href="https://letsencrypt.org/howitworks/" target="_blank">How It Works</a></li>
+<li><a href="https://letsencrypt.org/howitworks/technology/" target="_blank">Technology</a></li>
+<li><a href="https://letsencrypt.org/2015/10/29/phishing-and-malware.html" target="_blank">The CA&rsquo;s Role in Fighting Phishing and Malware - Let&rsquo;s Encrypt - Free SSL/TLS Certificates</a></li>
+<li><a href="https://community.letsencrypt.org/t/rate-limits-for-lets-encrypt/6769" target="_blank">Rate Limits for Let&rsquo;s Encrypt - Documentation - Let&rsquo;s Encrypt Community Support</a></li>
+<li><a href="https://www.youtube.com/watch?v=Gas_sSB-5SU" target="_blank">Let&rsquo;s Encrypt Demo - YouTube</a></li>
+<li><a href="https://scene-si.org/2016/01/23/generate-free-ssl-certificates-with-docker-and-letsencrypt/" target="_blank">Generate free SSL certificates with Docker and LetsEncrypt | Tit Petrič</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04" target="_blank">How To Secure Nginx with Let&rsquo;s Encrypt on Ubuntu 16.04 | DigitalOcean</a></li>
+<li><a href="https://coolaj86.com/articles/lets-encrypt-with-haproxy/" target="_blank">Let&rsquo;s Encrypt with HAProxy</a></li>
+<li><a href="https://coolaj86.com/articles/lets-encrypt-on-raspberry-pi/" target="_blank">Let&rsquo;s Encrypt on Raspberry Pi</a></li>
+<li><a href="https://coolaj86.com/articles/adventures-in-haproxy-tcp-tls-https-ssh-openvpn/" target="_blank">adventures in haproxy: tcp, tls, https, ssh, openvpn</a></li>
+<li><a href="https://tryingtobeawesome.com/letsencrypt/" target="_blank">LetsEncrypt on Nginx</a></li>
+<li><a href="http://www.cyberciti.biz/faq/how-to-configure-nginx-with-free-lets-encrypt-ssl-certificate-on-debian-or-ubuntu-linux/" target="_blank">How to configure Nginx with free Let&rsquo;s Encrypt SSL certificate on Debian or Ubuntu Linux</a></li>
 </ul>
 
 <h2 id="clients">Clients</h2>
 
 <ul>
-<li><a href="https://github.com/letsencrypt/" target="_blank">letsencrypt</a><br /></li>
-<li><a href="https://certbot.eff.org/" target="_blank">Certbot</a><br /></li>
-<li><a href="https://hlandau.github.io/acme/" target="_blank">acmetool</a><br /></li>
-<li><a href="https://github.com/diafygi/acme-tiny" target="_blank">diafygi/acme-tiny: A tiny script to issue and renew TLS certs from Let&rsquo;s Encrypt</a><br /></li>
-<li><a href="https://github.com/Neilpang/le" target="_blank">Neilpang/le: Simplest shell script for LetsEncrypt free Certificate client</a><br /></li>
-<li><a href="https://github.com/xenolf/lego" target="_blank">xenolf/lego: Let&rsquo;s Encrypt client and ACME library written in Go</a> Used in Caddy<br /></li>
-<li><a href="https://github.com/Daplie/node-letsencrypt" target="_blank">Daplie/node-letsencrypt: letsencrypt for node.js</a><br /></li>
-<li><a href="https://github.com/DylanPiercey/auto-sni" target="_blank">DylanPiercey/auto-sni: Free, automated HTTPS for NodeJS made easy.</a><br />
-<br /></li>
+<li><a href="https://github.com/letsencrypt/" target="_blank">letsencrypt</a></li>
+<li><a href="https://certbot.eff.org/" target="_blank">Certbot</a></li>
+<li><a href="https://hlandau.github.io/acme/" target="_blank">acmetool</a></li>
+<li><a href="https://github.com/diafygi/acme-tiny" target="_blank">diafygi/acme-tiny: A tiny script to issue and renew TLS certs from Let&rsquo;s Encrypt</a></li>
+<li><a href="https://github.com/Neilpang/le" target="_blank">Neilpang/le: Simplest shell script for LetsEncrypt free Certificate client</a></li>
+<li><a href="https://github.com/xenolf/lego" target="_blank">xenolf/lego: Let&rsquo;s Encrypt client and ACME library written in Go</a> Used in Caddy</li>
+<li><a href="https://github.com/Daplie/node-letsencrypt" target="_blank">Daplie/node-letsencrypt: letsencrypt for node.js</a></li>
+<li><a href="https://github.com/DylanPiercey/auto-sni" target="_blank">DylanPiercey/auto-sni: Free, automated HTTPS for NodeJS made easy.</a></li>
 </ul>
 
 <h2 id="heroku">Heroku</h2>
 
 <ul>
-<li><a href="https://blog.heroku.com/archives/2016/5/18/announcing_heroku_free_ssl_beta_and_flexible_dyno_hours" target="_blank">Announcing Heroku Free SSL Beta and Flexible Dyno Hours | Heroku</a><br /></li>
-<li><a href="https://community.letsencrypt.org/t/lets-encrypt-and-heroku-solved/4272/18" target="_blank">Let&rsquo;s Encrypt and Heroku [Solved] - Server - Let&rsquo;s Encrypt Community Support</a><br /></li>
-<li><a href="http://collectiveidea.com/blog/archives/2016/01/12/lets-encrypt-with-a-rails-app-on-heroku/" target="_blank">Let&rsquo;s Encrypt with a Rails app on Heroku // Collective Idea | Crafting web and mobile software based in Holland, Michigan</a><br /></li>
-<li><a href="https://sikac.hu/use-let-s-encrypt-tls-certificate-on-heroku-65f853870d90#.ut542pcuk" target="_blank">Use Let&rsquo;s Encrypt TLS certificate on Heroku &ndash; Sikachu&rsquo;s Blog &ndash; Medium</a><br /></li>
-<li><a href="https://devcenter.heroku.com/articles/ssl-endpoint" target="_blank">SSL Endpoint | Heroku Dev Center</a><br /></li>
-<li><a href="https://robots.thoughtbot.com/set-up-cloudflare-free-ssl-on-heroku" target="_blank">Set up CloudFlare&rsquo;s free SSL on Heroku</a><br />
-<br /></li>
+<li><a href="https://blog.heroku.com/archives/2016/5/18/announcing_heroku_free_ssl_beta_and_flexible_dyno_hours" target="_blank">Announcing Heroku Free SSL Beta and Flexible Dyno Hours | Heroku</a></li>
+<li><a href="https://community.letsencrypt.org/t/lets-encrypt-and-heroku-solved/4272/18" target="_blank">Let&rsquo;s Encrypt and Heroku [Solved] - Server - Let&rsquo;s Encrypt Community Support</a></li>
+<li><a href="http://collectiveidea.com/blog/archives/2016/01/12/lets-encrypt-with-a-rails-app-on-heroku/" target="_blank">Let&rsquo;s Encrypt with a Rails app on Heroku // Collective Idea | Crafting web and mobile software based in Holland, Michigan</a></li>
+<li><a href="https://sikac.hu/use-let-s-encrypt-tls-certificate-on-heroku-65f853870d90#.ut542pcuk" target="_blank">Use Let&rsquo;s Encrypt TLS certificate on Heroku &ndash; Sikachu&rsquo;s Blog &ndash; Medium</a></li>
+<li><a href="https://devcenter.heroku.com/articles/ssl-endpoint" target="_blank">SSL Endpoint | Heroku Dev Center</a></li>
+<li><a href="https://robots.thoughtbot.com/set-up-cloudflare-free-ssl-on-heroku" target="_blank">Set up CloudFlare&rsquo;s free SSL on Heroku</a></li>
 </ul>
 
 <h1 id="standards">Standards</h1>
 
 <ul>
-<li><a href="http://tools.ietf.org/html/rfc2986" target="_blank">RFC 2986 - PKCS #10: Certification Request Syntax Specification Version 1.7</a><br /></li>
-<li><a href="http://tools.ietf.org/html/rfc3447" target="_blank">RFC 3447 - Public-Key Cryptography Standards (PKCS) #1: RSA Cryptography Specifications Version 2.1</a><br /></li>
-<li><a href="http://tools.ietf.org/html/rfc5958" target="_blank">RFC 5958 - Asymmetric Key Packages</a><br /></li>
-<li><a href="http://tools.ietf.org/html/rfc6101" target="_blank">RFC 6101 - The Secure Sockets Layer (SSL) Protocol Version 3.0</a><br /></li>
-<li><a href="https://tools.ietf.org/html/rfc7525" target="_blank">RFC 7525 - Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)</a><br /></li>
-<li><a href="http://tools.ietf.org/html/rfc7292" target="_blank">RFC 7292 - PKCS #12: Personal Information Exchange Syntax v1.1</a><br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br /></li>
+<li><a href="http://tools.ietf.org/html/rfc2986" target="_blank">RFC 2986 - PKCS #10: Certification Request Syntax Specification Version 1.7</a></li>
+<li><a href="http://tools.ietf.org/html/rfc3447" target="_blank">RFC 3447 - Public-Key Cryptography Standards (PKCS) #1: RSA Cryptography Specifications Version 2.1</a></li>
+<li><a href="http://tools.ietf.org/html/rfc5958" target="_blank">RFC 5958 - Asymmetric Key Packages</a></li>
+<li><a href="http://tools.ietf.org/html/rfc6101" target="_blank">RFC 6101 - The Secure Sockets Layer (SSL) Protocol Version 3.0</a></li>
+<li><a href="https://tools.ietf.org/html/rfc7525" target="_blank">RFC 7525 - Recommendations for Secure Use of Transport Layer Security (TLS) and Datagram Transport Layer Security (DTLS)</a></li>
+<li><a href="http://tools.ietf.org/html/rfc7292" target="_blank">RFC 7292 - PKCS #12: Personal Information Exchange Syntax v1.1</a></li>
 </ul>
 
   </div>
@@ -428,6 +351,18 @@ var Paginator = {}
     
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+
+
+
 
 
 

@@ -11,36 +11,22 @@
   <title>Web Authentication</title>
 
 
-  <meta name="description" content="Notes  Authentication in Golang with JWTs
- Cookies vs Tokens: The Definitive Guide
- The Ins and Outs of Token Based Authentication | Scotch  Enterprise APIs and OAuth: Have it All
- Secure your users&rsquo; passwords from the browser on
-  Authentication Protocols  Basic access authentication - Wikiwand
- Digest access authentication - Wikiwand
- Secure Remote Password protocol - Wikiwand
+  <meta name="description" content="Notes  Authentication in Golang with JWTs Cookies vs Tokens: The Definitive Guide The Ins and Outs of Token Based Authentication | Scotch  Enterprise APIs and OAuth: Have it All Secure your users&rsquo; passwords from the browser on  Authentication Protocols  Basic access authentication - Wikiwand Digest access authentication - Wikiwand Secure Remote Password protocol - Wikiwand
  Anatomy of a zero-knowledge web application - Clipperz, register your creations on the blockchain">
-  <meta property="og:description" content="Notes  Authentication in Golang with JWTs
- Cookies vs Tokens: The Definitive Guide
- The Ins and Outs of Token Based Authentication | Scotch  Enterprise APIs and OAuth: Have it All
- Secure your users&rsquo; passwords from the browser on
-  Authentication Protocols  Basic access authentication - Wikiwand
- Digest access authentication - Wikiwand
- Secure Remote Password protocol - Wikiwand
+  <meta property="og:description" content="Notes  Authentication in Golang with JWTs Cookies vs Tokens: The Definitive Guide The Ins and Outs of Token Based Authentication | Scotch  Enterprise APIs and OAuth: Have it All Secure your users&rsquo; passwords from the browser on  Authentication Protocols  Basic access authentication - Wikiwand Digest access authentication - Wikiwand Secure Remote Password protocol - Wikiwand
  Anatomy of a zero-knowledge web application - Clipperz, register your creations on the blockchain">
-  <meta name="twitter:description" content="Notes  Authentication in Golang with JWTs
- Cookies vs Tokens: The Definitive Guide
- The Ins and Outs of Token Based Authentication | Scotch  Enterprise APIs and OAuth: Have it All
- Secure your …">
+  <meta name="twitter:description" content="Notes  Authentication in Golang with JWTs Cookies vs Tokens: The Definitive Guide The Ins and Outs of Token Based Authentication | Scotch  Enterprise APIs and OAuth: Have it All Secure your …">
 
 
 <meta name="author" content="CyrusN"/>
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
 <script src='/js/jquery-3.2.1.slim.min.js'></script>
 <script src='/js/popper.min.js'></script>
 <script src='/js/bootstrap.min.js' ></script>
-<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+
 
 
 <script src=' /js/lunr.min.js '></script>
@@ -49,7 +35,8 @@
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
-<script src="/js/main.js"></script>
+<script src='/js/main.js'></script>
+<script src='/js/helper.js'></script>
 
 
 <script>
@@ -68,7 +55,6 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
 
 
@@ -80,9 +66,9 @@ var Paginator = {}
 </head>
 <body>
   <div class="bg-light d-md-flex justify-content-center">
-    <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
-      href="https://cyrusn.github.io">
+      href='https://cyrusn.github.io'>
       CyrusN
     </a>
     <button
@@ -141,14 +127,14 @@ var Paginator = {}
         
       </ul>
     </div>
-    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
   </nav>
 </div>
 
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-success text-light">
+      <div class="modal-header bg-info text-light">
         <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="text-light">&times;</span>
@@ -161,9 +147,8 @@ var Paginator = {}
               <li><code>Space</code> to search</li>
               <li><code>Enter</code> to start navigate in results</li>
               <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list</li>
-              <li><code>J / K</code> can also scroll up and down in page</li>
-              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
+              <li><code>H / L</code> to navigate the page number</li>
               <li><code>[ / ]</code> to navigate the navbar</li>
           </ul>
         </p>
@@ -190,7 +175,6 @@ var Paginator = {}
   
 </small>
 
-
 <small>
 
   <a class="badge badge-secondary" href="/tags/authentication">authentication</a>
@@ -205,7 +189,6 @@ var Paginator = {}
 
 
 
-
   </p>
   <hr>
   <div id="content">
@@ -214,19 +197,18 @@ var Paginator = {}
 <h1 id="notes">Notes</h1>
 
 <ul>
-<li><a href="https://auth0.com/blog/authentication-in-golang/" target="_blank">Authentication in Golang with JWTs</a><br /></li>
-<li><a href="https://auth0.com/blog/cookies-vs-tokens-definitive-guide/" target="_blank">Cookies vs Tokens: The Definitive Guide</a><br /></li>
-<li><a href="https://scotch.io/tutorials/the-ins-and-outs-of-token-based-authentication" target="_blank">The Ins and Outs of Token Based Authentication | Scotch</a> <!-- more --><br /></li>
-<li><a href="http://news.sys-con.com/node/2275857/print" target="_blank">Enterprise APIs and OAuth: Have it All</a><br /></li>
-<li><a href="https://coolaj86.com/articles/secure-your-users-passwords-from-the-browser-on/" target="_blank">Secure your users&rsquo; passwords from the browser on</a><br />
-<br /></li>
+<li><a href="https://auth0.com/blog/authentication-in-golang/" target="_blank">Authentication in Golang with JWTs</a></li>
+<li><a href="https://auth0.com/blog/cookies-vs-tokens-definitive-guide/" target="_blank">Cookies vs Tokens: The Definitive Guide</a></li>
+<li><a href="https://scotch.io/tutorials/the-ins-and-outs-of-token-based-authentication" target="_blank">The Ins and Outs of Token Based Authentication | Scotch</a> <!-- more --></li>
+<li><a href="http://news.sys-con.com/node/2275857/print" target="_blank">Enterprise APIs and OAuth: Have it All</a></li>
+<li><a href="https://coolaj86.com/articles/secure-your-users-passwords-from-the-browser-on/" target="_blank">Secure your users&rsquo; passwords from the browser on</a></li>
 </ul>
 
 <h2 id="authentication-protocols">Authentication Protocols</h2>
 
 <ul>
-<li><a href="http://www.wikiwand.com/en/Basic_access_authentication" target="_blank">Basic access authentication - Wikiwand</a><br /></li>
-<li><a href="http://www.wikiwand.com/en/Digest_access_authentication" target="_blank">Digest access authentication - Wikiwand</a><br /></li>
+<li><a href="http://www.wikiwand.com/en/Basic_access_authentication" target="_blank">Basic access authentication - Wikiwand</a></li>
+<li><a href="http://www.wikiwand.com/en/Digest_access_authentication" target="_blank">Digest access authentication - Wikiwand</a></li>
 
 <li><p><a href="http://www.wikiwand.com/en/Secure_Remote_Password_protocol" target="_blank">Secure Remote Password protocol - Wikiwand</a></p></li>
 
@@ -240,10 +222,8 @@ var Paginator = {}
 <p>Server generates session token and send to client via cookie. The session token acts as a bearer token and is used to look up login/session info in memory or datastore.</p>
 
 <ul>
-<li><a href="http://hueniverse.com/2015/07/08/on-securing-web-session-ids/" target="_blank">On Securing Web Session Ids | hueniverse</a><br /></li>
-<li><a href="https://github.com/expressjs/session" target="_blank">expressjs/session: Simple session middleware for Express</a><br />
-<br />
-<br /></li>
+<li><a href="http://hueniverse.com/2015/07/08/on-securing-web-session-ids/" target="_blank">On Securing Web Session Ids | hueniverse</a></li>
+<li><a href="https://github.com/expressjs/session" target="_blank">expressjs/session: Simple session middleware for Express</a></li>
 </ul>
 
 <h2 id="asymmetric-key">Asymmetric Key</h2>
@@ -263,75 +243,64 @@ var Paginator = {}
 </blockquote>
 
 <ul>
-<li><a href="https://scotch.io/tutorials/the-ins-and-outs-of-token-based-authentication" target="_blank">The Ins and Outs of Token Based Authentication | Scotch</a><br /></li>
-<li><a href="https://groups.google.com/forum/#!topic/nodejs/2zCXZ10jFbg" target="_blank">Best practices for token-based authentication in REST API - Google Groups.desktop</a><br /></li>
-<li><a href="https://stormpath.com/blog/token-auth-spa/" target="_blank">Token Based Authentication for Single Page Apps (SPAs) - Stormpath User Management API</a><br /></li>
-<li><a href="http://code.tutsplus.com/tutorials/token-based-authentication-with-angularjs-nodejs--cms-22543" target="_blank">Token-Based Authentication With AngularJS &amp; NodeJS - Tuts+ Code Tutorial</a><br /></li>
-
-<li><p><a href="http://sitr.us/2011/08/26/cookies-are-bad-for-you.html" target="_blank">Cookies are bad for you: Improving web application security - sitr.us</a></p></li>
-
-<li><p><a href="https://auth0.com/blog/2014/01/07/angularjs-authentication-with-cookies-vs-token/" target="_blank">Cookies vs Tokens. Getting auth right with Angular.JS</a></p></li>
-
-<li><p><a href="https://auth0.com/blog/2014/01/27/ten-things-you-should-know-about-tokens-and-cookies/" target="_blank">10 Things You Should Know about Tokens</a></p></li>
-
-<li><p><a href="http://cryto.net/~joepie91/blog/2016/06/13/stop-using-jwt-for-sessions/" target="_blank">Stop using JWT for sessions - joepie91&rsquo;s Ramblings</a></p></li>
-
-<li><p><a href="http://cryto.net/~joepie91/blog/2016/06/19/stop-using-jwt-for-sessions-part-2-why-your-solution-doesnt-work/" target="_blank">Stop using JWT for sessions, part 2: Why your solution doesn&rsquo;t work - joepie91&rsquo;s Ramblings</a></p></li>
-
-<li><p><a href="https://www.youtube.com/watch?list=PLQrl6x_e_AZG0RdzIYVns4eGFxUEF61Lw&amp;v=-usz7XqZikM" target="_blank">A Token Walks into a SPA - YouTube</a></p></li>
-
-<li><p><a href="https://github.com/hapijs/hapi-auth-cookie" target="_blank">hapijs/hapi-auth-cookie: Cookie authentication plugin</a> is actually a token based authentication</p></li>
-
-<li><p><a href="https://github.com/roblevintennis/passport-api-tokens" target="_blank">roblevintennis-passport-api-tokens · GitHub</a></p></li>
-
-<li><p><a href="https://developers.google.com/web/updates/2016/06/2-cookie-handoff?hl=en" target="_blank">Goodbye Short Sessions: a proposal for using service-workers to improve cookie management on the web | Web Updates - Google Developers</a></p></li>
+<li><a href="https://scotch.io/tutorials/the-ins-and-outs-of-token-based-authentication" target="_blank">The Ins and Outs of Token Based Authentication | Scotch</a></li>
+<li><a href="https://groups.google.com/forum/#!topic/nodejs/2zCXZ10jFbg" target="_blank">Best practices for token-based authentication in REST API - Google Groups.desktop</a></li>
+<li><a href="https://stormpath.com/blog/token-auth-spa/" target="_blank">Token Based Authentication for Single Page Apps (SPAs) - Stormpath User Management API</a></li>
+<li><a href="http://code.tutsplus.com/tutorials/token-based-authentication-with-angularjs-nodejs--cms-22543" target="_blank">Token-Based Authentication With AngularJS &amp; NodeJS - Tuts+ Code Tutorial</a></li>
+<li><a href="http://sitr.us/2011/08/26/cookies-are-bad-for-you.html" target="_blank">Cookies are bad for you: Improving web application security - sitr.us</a></li>
+<li><a href="https://auth0.com/blog/2014/01/07/angularjs-authentication-with-cookies-vs-token/" target="_blank">Cookies vs Tokens. Getting auth right with Angular.JS</a></li>
+<li><a href="https://auth0.com/blog/2014/01/27/ten-things-you-should-know-about-tokens-and-cookies/" target="_blank">10 Things You Should Know about Tokens</a></li>
+<li><a href="http://cryto.net/~joepie91/blog/2016/06/13/stop-using-jwt-for-sessions/" target="_blank">Stop using JWT for sessions - joepie91&rsquo;s Ramblings</a></li>
+<li><a href="http://cryto.net/~joepie91/blog/2016/06/19/stop-using-jwt-for-sessions-part-2-why-your-solution-doesnt-work/" target="_blank">Stop using JWT for sessions, part 2: Why your solution doesn&rsquo;t work - joepie91&rsquo;s Ramblings</a></li>
+<li><a href="https://www.youtube.com/watch?list=PLQrl6x_e_AZG0RdzIYVns4eGFxUEF61Lw&amp;v=-usz7XqZikM" target="_blank">A Token Walks into a SPA - YouTube</a></li>
+<li><a href="https://github.com/hapijs/hapi-auth-cookie" target="_blank">hapijs/hapi-auth-cookie: Cookie authentication plugin</a> is actually a token based authentication</li>
+<li><a href="https://github.com/roblevintennis/passport-api-tokens" target="_blank">roblevintennis-passport-api-tokens · GitHub</a></li>
+<li><a href="https://developers.google.com/web/updates/2016/06/2-cookie-handoff?hl=en" target="_blank">Goodbye Short Sessions: a proposal for using service-workers to improve cookie management on the web | Web Updates - Google Developers</a></li>
 </ul>
 
 <p>There are three ways to send your access token in a request.</p>
 
 <ul>
-<li>In an HTTP Authorization header (always works)<br /></li>
-<li>In the URL query string (only works with GET requests)<br /></li>
-<li>In the request body (only works for POST &amp; PUT when body is URL-encoded)<br />
-<br /></li>
+<li>In an HTTP Authorization header (always works)</li>
+<li>In the URL query string (only works with GET requests)</li>
+<li>In the request body (only works for POST &amp; PUT when body is URL-encoded)</li>
 </ul>
 
 <h3 id="bearer-token-clients">Bearer token clients</h3>
 
 <ul>
-<li><a href="https://github.com/auth0-blog/angular-token-auth/blob/master/auth.client.js" target="_blank">angular-token-auth/auth.client.js at master · auth0-blog/angular-token-auth</a><br /></li>
-<li><a href="https://github.com/talis/bearhug-angular" target="_blank">talis/bearhug-angular: Response interceptor for elegant bearer-token handling for angular&rsquo;s $http service</a><br /></li>
-<li><a href="https://github.com/IdentityModel/AuthorizationServer/blob/master/samples/Flows" target="_blank">AuthorizationServer/callback.cshtml at master · IdentityModel/AuthorizationServer</a><br /></li>
-<li><a href="https://github.com/sahat/satellizer" target="_blank">sahat/satellizer: Token-based AngularJS Authentication</a><br />
-<br /></li>
+<li><a href="https://github.com/auth0-blog/angular-token-auth/blob/master/auth.client.js" target="_blank">angular-token-auth/auth.client.js at master · auth0-blog/angular-token-auth</a></li>
+<li><a href="https://github.com/talis/bearhug-angular" target="_blank">talis/bearhug-angular: Response interceptor for elegant bearer-token handling for angular&rsquo;s $http service</a></li>
+<li><a href="https://github.com/IdentityModel/AuthorizationServer/blob/master/samples/Flows" target="_blank">AuthorizationServer/callback.cshtml at master · IdentityModel/AuthorizationServer</a></li>
+<li><a href="https://github.com/sahat/satellizer" target="_blank">sahat/satellizer: Token-based AngularJS Authentication</a></li>
 </ul>
 
 <h3 id="questions">Questions</h3>
 
 <p>Token based auth allows for RBAC (Role-Based Access Control), but other method can support RBAC as well (with a session lookup)</p>
 
-<p>replay attack with bearer token <a href="http://hueniverse.com/2010/09/15/oauth-2-0-without-signatures-is-bad-for-the-web/" target="_blank">OAuth 2.0 (without Signatures) is Bad for the Web | hueniverse</a><br />
-- <a href="http://hueniverse.com/2010/09/29/oauth-bearer-tokens-are-a-terrible-idea/" target="_blank">OAuth Bearer Tokens are a Terrible Idea | hueniverse</a><br />
-- <a href="https://github.com/auth0/node-auth0" target="_blank">auth0/node-auth0: Node.js client library for the Auth0 platform.</a><br />
-- <a href="https://github.com/auth0/node-auth0/tree/master/examples/nodejs-regular-webapp" target="_blank">node-auth0/examples/nodejs-regular-webapp at master · auth0/node-auth0</a><br />
-- <a href="https://github.com/auth0/node-auth0/tree/master/examples/nodejs-api" target="_blank">node-auth0/examples/nodejs-api at master · auth0/node-auth0</a><br />
-- <a href="https://github.com/auth0/cookie-jwt-auth" target="_blank">auth0/cookie-jwt-auth</a> why store back to cookie?<br />
-- <a href="https://github.com/auth0/spa-jwt-authentication-tutorial" target="_blank">auth0/spa-jwt-authentication-tutorial - JavaScript</a><br />
-- <a href="https://auth0.com/blog/2015/04/09/adding-authentication-to-your-react-flux-app/" target="_blank">Adding authentication to your React Flux app</a><br />
-- <a href="https://github.com/auth0/react-flux-jwt-authentication-sample" target="_blank">repo</a><br />
+<p>replay attack with bearer token <a href="http://hueniverse.com/2010/09/15/oauth-2-0-without-signatures-is-bad-for-the-web/" target="_blank">OAuth 2.0 (without Signatures) is Bad for the Web | hueniverse</a>
+- <a href="http://hueniverse.com/2010/09/29/oauth-bearer-tokens-are-a-terrible-idea/" target="_blank">OAuth Bearer Tokens are a Terrible Idea | hueniverse</a>
+- <a href="https://github.com/auth0/node-auth0" target="_blank">auth0/node-auth0: Node.js client library for the Auth0 platform.</a>
+- <a href="https://github.com/auth0/node-auth0/tree/master/examples/nodejs-regular-webapp" target="_blank">node-auth0/examples/nodejs-regular-webapp at master · auth0/node-auth0</a>
+- <a href="https://github.com/auth0/node-auth0/tree/master/examples/nodejs-api" target="_blank">node-auth0/examples/nodejs-api at master · auth0/node-auth0</a>
+- <a href="https://github.com/auth0/cookie-jwt-auth" target="_blank">auth0/cookie-jwt-auth</a> why store back to cookie?
+- <a href="https://github.com/auth0/spa-jwt-authentication-tutorial" target="_blank">auth0/spa-jwt-authentication-tutorial - JavaScript</a>
+- <a href="https://auth0.com/blog/2015/04/09/adding-authentication-to-your-react-flux-app/" target="_blank">Adding authentication to your React Flux app</a>
+- <a href="https://github.com/auth0/react-flux-jwt-authentication-sample" target="_blank">repo</a>
 - <a href="https://auth0.com/blog/2015/03/31/critical-vulnerabilities-in-json-web-token-libraries/" target="_blank">Critical vulnerabilities in JSON Web Token libraries</a></p>
 
 <h4 id="vs-oauth">vs OAuth</h4>
 
-<p>OAuth vs JWT vs OpenID OAuth2 token is opaque, JWT can be used  <a href="https://auth0.com/blog/2015/07/21/jwt-json-webtoken-logo/" target="_blank">JWT: 2 years later</a><br />
-- <a href="http://www.seedbox.com/en/blog/2015/06/05/oauth-2-vs-json-web-tokens-comment-securiser-un-api/" target="_blank">OAuth 2 VS JSON Web Tokens: How to secure an API - Seedbox Technologies | Les Technologies Seedbox</a><br />
-- <a href="http://litten.github.io/2013/08/11/brief-oauth/" target="_blank">谈谈OAuth1,OAuth2异同 | Litten的博客</a><br />
+<p>OAuth vs JWT vs OpenID OAuth2 token is opaque, JWT can be used  <a href="https://auth0.com/blog/2015/07/21/jwt-json-webtoken-logo/" target="_blank">JWT: 2 years later</a>
+- <a href="http://www.seedbox.com/en/blog/2015/06/05/oauth-2-vs-json-web-tokens-comment-securiser-un-api/" target="_blank">OAuth 2 VS JSON Web Tokens: How to secure an API - Seedbox Technologies | Les Technologies Seedbox</a>
+- <a href="http://litten.github.io/2013/08/11/brief-oauth/" target="_blank">谈谈OAuth1,OAuth2异同 | Litten的博客</a>
 - <a href="http://litten.github.io/2013/08/20/oauth-rabbit/" target="_blank">兔子，胡萝卜与OAuth的故事 | Litten的博客</a></p>
 
 <h3 id="single-sing-on-sso">Single Sing On (SSO)</h3>
 
 <ul>
-<li><a href="https://auth0.com/learn/how-to-implement-single-sign-on" target="_blank">Implement Single Sign On Authentication</a><br /></li>
+<li><a href="https://auth0.com/learn/how-to-implement-single-sign-on" target="_blank">Implement Single Sign On Authentication</a></li>
 
 <li><p><a href="https://auth0.com/lock" target="_blank">Lock: Single Sign On &amp; Token Based Authentication - Auth0</a></p></li>
 
@@ -343,8 +312,8 @@ var Paginator = {}
 <h3 id="oauth1">OAuth1</h3>
 
 <ul>
-<li><a href="http://oauthbible.com/" target="_blank">The OAuth Bible</a><br /></li>
-<li><a href="http://hueniverse.com/oauth/" target="_blank">OAuth | hueniverse</a><br /></li>
+<li><a href="http://oauthbible.com/" target="_blank">The OAuth Bible</a></li>
+<li><a href="http://hueniverse.com/oauth/" target="_blank">OAuth | hueniverse</a></li>
 
 <li><p>1.0 <a href="http://tools.ietf.org/html/rfc5849" target="_blank">RFC 5849 - The OAuth 1.0 Protocol</a></p></li>
 
@@ -354,54 +323,41 @@ var Paginator = {}
 <h3 id="oauth2">OAuth2</h3>
 
 <ul>
-<li><a href="http://www.wikiwand.com/en/OAuth" target="_blank">OAuth - Wikiwand</a><br /></li>
-<li><a href="http://oauthbible.com/" target="_blank">The OAuth Bible</a><br /></li>
-
-<li><p><a href="http://wiki.oauth.net/w/page/12238516/FrontPage" target="_blank">OAuth / FrontPage</a></p></li>
-
-<li><p><a href="http://oauth.net/" target="_blank">OAuth Community Site</a></p></li>
-
-<li><p>2.0 <a href="https://tools.ietf.org/html/rfc6749" target="_blank">RFC 6749 - The OAuth 2.0 Authorization Framework</a></p></li>
-
-<li><p><a href="http://tools.ietf.org/html/rfc6750" target="_blank">RFC 6750 - The OAuth 2.0 Authorization Framework: Bearer Token Usage</a></p></li>
-
-<li><p><a href="http://homakov.blogspot.com.ar/2012/08/oauth2-one-accesstoken-to-rule-them-all.html" target="_blank">Egor Homakov: OAuth2: One access_token To Rule Them All</a></p></li>
-
-<li><p><a href="http://hueniverse.com/category/openid/" target="_blank">OpenID | hueniverse</a></p></li>
-
-<li><p><a href="http://hueniverse.com/category/oauth/" target="_blank">OAuth | hueniverse</a></p></li>
-
-<li><p><a href="http://www.thebuzzmedia.com/designing-a-secure-rest-api-without-oauth-authentication/" target="_blank">Designing a Secure REST (Web) API without OAuth</a></p></li>
-
-<li><p>upload client public key (securely) to server (kind of like passwordless SSH)</p></li>
-
-<li><p><a href="https://github.com/dogeared/OZorkAuth" target="_blank">dogeared/OZorkAuth</a></p></li>
+<li><a href="http://www.wikiwand.com/en/OAuth" target="_blank">OAuth - Wikiwand</a></li>
+<li><a href="http://oauthbible.com/" target="_blank">The OAuth Bible</a></li>
+<li><a href="http://wiki.oauth.net/w/page/12238516/FrontPage" target="_blank">OAuth / FrontPage</a></li>
+<li><a href="http://oauth.net/" target="_blank">OAuth Community Site</a></li>
+<li><a href="https://tools.ietf.org/html/rfc6749" target="_blank">RFC 6749 - The OAuth 2.0 Authorization Framework</a></li>
+<li><a href="http://tools.ietf.org/html/rfc6750" target="_blank">RFC 6750 - The OAuth 2.0 Authorization Framework: Bearer Token Usage</a></li>
+<li><a href="http://homakov.blogspot.com.ar/2012/08/oauth2-one-accesstoken-to-rule-them-all.html" target="_blank">Egor Homakov: OAuth2: One access_token To Rule Them All</a></li>
+<li><a href="http://hueniverse.com/category/openid/" target="_blank">OpenID | hueniverse</a></li>
+<li><a href="http://hueniverse.com/category/oauth/" target="_blank">OAuth | hueniverse</a></li>
+<li><a href="http://www.thebuzzmedia.com/designing-a-secure-rest-api-without-oauth-authentication/" target="_blank">Designing a Secure REST (Web) API without OAuth</a></li>
+<li>upload client public key (securely) to server (kind of like passwordless SSH)</li>
+<li><a href="https://github.com/dogeared/OZorkAuth" target="_blank">dogeared/OZorkAuth</a></li>
 </ul>
 
 <h4 id="in-the-wild">In the Wild</h4>
 
 <ul>
-<li><a href="https://developer.github.com/v3/oauth/" target="_blank">OAuth | GitHub Developer Guide</a><br /></li>
-<li><a href="https://developers.google.com/identity/protocols/OAuth2" target="_blank">Using OAuth 2.0 to Access Google APIs | Google Identity Platform | Google Developers</a><br /></li>
-<li><a href="http://www.9bitstudios.com/2013/05/using-oauth-2-0-for-google-apis/" target="_blank">Using OAuth 2.0 for Google APIs | 9bit Studios</a><br />
-<br /></li>
+<li><a href="https://developer.github.com/v3/oauth/" target="_blank">OAuth | GitHub Developer Guide</a></li>
+<li><a href="https://developers.google.com/identity/protocols/OAuth2" target="_blank">Using OAuth 2.0 to Access Google APIs | Google Identity Platform | Google Developers</a></li>
+<li><a href="http://www.9bitstudios.com/2013/05/using-oauth-2-0-for-google-apis/" target="_blank">Using OAuth 2.0 for Google APIs | 9bit Studios</a></li>
 </ul>
 
 <h4 id="boo-oauth2">boo OAuth2</h4>
 
 <ul>
-<li><a href="https://vimeo.com/52882780" target="_blank">RealtimeConf - &ldquo;OAuth 2.0 - Looking Back and Moving On&rdquo; by Eran Hammer on Vimeo</a><br /></li>
-<li><a href="http://hueniverse.com/2012/07/26/oauth-2-0-and-the-road-to-hell/" target="_blank">OAuth 2.0 and the Road to Hell | hueniverse</a><br /></li>
-<li><a href="http://hueniverse.com/2012/07/30/on-leaving-oauth/" target="_blank">On Leaving OAuth | hueniverse</a><br /></li>
-<li><a href="http://www.thread-safe.com/2012/01/problem-with-oauth-for-authentication.html" target="_blank">The problem with OAuth for Authentication. | Thread Safe</a><br />
-<br /></li>
+<li><a href="https://vimeo.com/52882780" target="_blank">RealtimeConf - &ldquo;OAuth 2.0 - Looking Back and Moving On&rdquo; by Eran Hammer on Vimeo</a></li>
+<li><a href="http://hueniverse.com/2012/07/26/oauth-2-0-and-the-road-to-hell/" target="_blank">OAuth 2.0 and the Road to Hell | hueniverse</a></li>
+<li><a href="http://hueniverse.com/2012/07/30/on-leaving-oauth/" target="_blank">On Leaving OAuth | hueniverse</a></li>
+<li><a href="http://www.thread-safe.com/2012/01/problem-with-oauth-for-authentication.html" target="_blank">The problem with OAuth for Authentication. | Thread Safe</a></li>
 </ul>
 
 <h4 id="libraries">Libraries</h4>
 
 <ul>
-<li><a href="https://github.com/prose/gatekeeper" target="_blank">prose-gatekeeper · GitHub</a> passport hapi-bell<br />
-<br /></li>
+<li><a href="https://github.com/prose/gatekeeper" target="_blank">prose-gatekeeper · GitHub</a> passport hapi-bell</li>
 </ul>
 
 <p>And much more&hellip;</p>
@@ -409,15 +365,14 @@ var Paginator = {}
 <h3 id="jwt">JWT</h3>
 
 <ul>
-<li><a href="http://jwt.io" target="_blank">JWT</a> is the spec for how a <em>non-opaque token</em> should be created. This allows token receiver to parse the token and receive meta without database query.<br /></li>
-<li><a href="https://www.wikiwand.com/en/JSON_Web_Token" target="_blank">JSON Web Token - Wikiwand</a><br /></li>
-<li><a href="https://tools.ietf.org/html/rfc7515" target="_blank">RFC 7515 - JSON Web Signature (JWS)</a><br /></li>
-<li><a href="https://tools.ietf.org/html/rfc7516" target="_blank">RFC 7516 - JSON Web Encryption (JWE)</a><br /></li>
-<li><a href="https://tools.ietf.org/html/rfc7517" target="_blank">RFC 7517 - JSON Web Key (JWK)</a><br /></li>
-<li><a href="https://tools.ietf.org/html/rfc7518" target="_blank">RFC 7518 - JSON Web Algorithms (JWA)</a><br /></li>
-<li><a href="https://tools.ietf.org/html/rfc7519" target="_blank">RFC 7519 - JSON Web Token (JWT)</a><br /></li>
-<li><a href="https://tools.ietf.org/html/rfc7520" target="_blank">RFC 7520 - JOSE Cookbook</a><br />
-<br /></li>
+<li><a href="http://jwt.io" target="_blank">JWT</a> is the spec for how a <em>non-opaque token</em> should be created. This allows token receiver to parse the token and receive meta without database query.</li>
+<li><a href="https://www.wikiwand.com/en/JSON_Web_Token" target="_blank">JSON Web Token - Wikiwand</a></li>
+<li><a href="https://tools.ietf.org/html/rfc7515" target="_blank">RFC 7515 - JSON Web Signature (JWS)</a></li>
+<li><a href="https://tools.ietf.org/html/rfc7516" target="_blank">RFC 7516 - JSON Web Encryption (JWE)</a></li>
+<li><a href="https://tools.ietf.org/html/rfc7517" target="_blank">RFC 7517 - JSON Web Key (JWK)</a></li>
+<li><a href="https://tools.ietf.org/html/rfc7518" target="_blank">RFC 7518 - JSON Web Algorithms (JWA)</a></li>
+<li><a href="https://tools.ietf.org/html/rfc7519" target="_blank">RFC 7519 - JSON Web Token (JWT)</a></li>
+<li><a href="https://tools.ietf.org/html/rfc7520" target="_blank">RFC 7520 - JOSE Cookbook</a></li>
 </ul>
 
 <p>JWT = <code>header.claim.signature</code></p>
@@ -443,7 +398,7 @@ var encodedJWT = payload + &quot;.&quot; + signature;
 </code></pre>
 
 <ul>
-<li><a href="https://www.youtube.com/watch?v=eWUkxzyB1Rk" target="_blank">MNUG 2014.08.13 - Lightning talk: JWT: JSON Web Token - YouTube</a><br /></li>
+<li><a href="https://www.youtube.com/watch?v=eWUkxzyB1Rk" target="_blank">MNUG 2014.08.13 - Lightning talk: JWT: JSON Web Token - YouTube</a></li>
 
 <li><p><a href="https://www.youtube.com/watch?v=oXxbB5kv9OA&amp;feature=youtu.be" target="_blank">Introduction to JWT (JSON Web Token) - Securing apps &amp; services - YouTube</a></p></li>
 
@@ -453,12 +408,12 @@ var encodedJWT = payload + &quot;.&quot; + signature;
 <h1 id="demo-with-express">Demo with Express</h1>
 
 <ul>
-<li><a href="https://auth0.com/blog/2014/12/02/using-json-web-tokens-as-api-keys/" target="_blank">Using JSON Web Tokens as API Keys</a><br /></li>
-<li><a href="https://auth0.com/blog/2015/03/10/blacklist-json-web-token-api-keys/" target="_blank">Blacklisting JSON Web Token API Keys</a><br /></li>
-<li><a href="https://auth0.com/docs/refresh-token" target="_blank">Refresh Tokens</a><br /></li>
-<li><a href="https://github.com/auth0/node-jsonwebtoken" target="_blank">auth0/node-jsonwebtoken</a><br /></li>
-<li><a href="https://github.com/auth0/nginx-jwt" target="_blank">auth0/nginx-jwt</a><br /></li>
-<li><a href="https://github.com/auth0/jwt-as-api-keys" target="_blank">auth0/jwt-as-api-keys</a><br /></li>
+<li><a href="https://auth0.com/blog/2014/12/02/using-json-web-tokens-as-api-keys/" target="_blank">Using JSON Web Tokens as API Keys</a></li>
+<li><a href="https://auth0.com/blog/2015/03/10/blacklist-json-web-token-api-keys/" target="_blank">Blacklisting JSON Web Token API Keys</a></li>
+<li><a href="https://auth0.com/docs/refresh-token" target="_blank">Refresh Tokens</a></li>
+<li><a href="https://github.com/auth0/node-jsonwebtoken" target="_blank">auth0/node-jsonwebtoken</a></li>
+<li><a href="https://github.com/auth0/nginx-jwt" target="_blank">auth0/nginx-jwt</a></li>
+<li><a href="https://github.com/auth0/jwt-as-api-keys" target="_blank">auth0/jwt-as-api-keys</a></li>
 
 <li><p><a href="http://www.toptal.com/web/cookie-free-authentication-with-json-web-tokens-an-example-in-laravel-and-angularjs" target="_blank">JSON Web Token Tutorial: Example using AngularJS &amp; Laravel | Toptal</a> JWT primer, comparison with server based authentication <a href="https://github.com/ttkalec/laravel5-angular-jwt" target="_blank">ttkalec/laravel5-angular-jwt: Simple Laravel 5/Angular app that shows how to use the most basic JWT authentication</a></p></li>
 
@@ -478,7 +433,7 @@ var encodedJWT = payload + &quot;.&quot; + signature;
 <h1 id="jwt-primer-tips-for-security">JWT primer, tips for security</h1>
 
 <ul>
-<li><a href="https://stormpath.com/blog/build-secure-user-interfaces-using-jwts/" target="_blank">Build Secure User Interfaces Using JSON Web Tokens (JWTs) - Stormpath User Management API</a><br /></li>
+<li><a href="https://stormpath.com/blog/build-secure-user-interfaces-using-jwts/" target="_blank">Build Secure User Interfaces Using JSON Web Tokens (JWTs) - Stormpath User Management API</a></li>
 
 <li><p><a href="http://docs.stormpath.com/guides/token-management/" target="_blank">Using Stormpath for OAuth 2.0 and Access/Refresh Token Management - Stormpath</a></p></li>
 
@@ -488,120 +443,12 @@ var encodedJWT = payload + &quot;.&quot; + signature;
 <h3 id="oz">Oz</h3>
 
 <ul>
-<li><a href="http://hueniverse.com/2015/09/19/auth-to-see-the-wizard-or-i-wrote-an-oauth-replacement/" target="_blank">Auth to See the Wizard | hueniverse</a><br /></li>
-<li><a href="https://github.com/hueniverse/oz" target="_blank">hueniverse/oz: Web Authorization Protocol</a><br /></li>
-<li><a href="https://github.com/hueniverse/hawk" target="_blank">hueniverse/hawk</a><br /></li>
-<li><a href="http://blog.notmyidea.org/whats-hawk-and-how-to-use-it.html" target="_blank">What&rsquo;s Hawk and how to use it?</a><br /></li>
-<li><a href="https://github.com/geek/OAuth" target="_blank">geek/OAuth</a><br /></li>
-<li><a href="https://github.com/geek/oz" target="_blank">geek/oz: Web Authorization Protocol</a><br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br /></li>
+<li><a href="http://hueniverse.com/2015/09/19/auth-to-see-the-wizard-or-i-wrote-an-oauth-replacement/" target="_blank">Auth to See the Wizard | hueniverse</a></li>
+<li><a href="https://github.com/hueniverse/oz" target="_blank">hueniverse/oz: Web Authorization Protocol</a></li>
+<li><a href="https://github.com/hueniverse/hawk" target="_blank">hueniverse/hawk</a></li>
+<li><a href="http://blog.notmyidea.org/whats-hawk-and-how-to-use-it.html" target="_blank">What&rsquo;s Hawk and how to use it?</a></li>
+<li><a href="https://github.com/geek/OAuth" target="_blank">geek/OAuth</a></li>
+<li><a href="https://github.com/geek/oz" target="_blank">geek/oz: Web Authorization Protocol</a></li>
 </ul>
 
   </div>
@@ -635,6 +482,18 @@ var encodedJWT = payload + &quot;.&quot; + signature;
     
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+
+
+
 
 
 

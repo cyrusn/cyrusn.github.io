@@ -11,48 +11,20 @@
   <title>Reading List</title>
 
 
-  <meta name="description" content="Reading List  Ben Alman » Immediately-Invoked Function Expression (IIFE)
- This section demos loading different config depending on NODE_ENV.
- protecting-your-keys-from-github
- Papyros - Arch Linux.
- reSRC · RESTful Web Services
- Hub
- Demystifying Regular Expressions- YouTube Foundation of Apps
- TimeLine JS
- 淺談https
- Leesei&rsquo;s shell notes
- Command Line Basic
- dotfile
- angular-strap-scrollspy.js at master · mgcrea-angular-strap · GitHub
- javascript - Properly Handing Anchors in AngularStrap&rsquo;s ScrollSpy - Stack Overflow">
-  <meta property="og:description" content="Reading List  Ben Alman » Immediately-Invoked Function Expression (IIFE)
- This section demos loading different config depending on NODE_ENV.
- protecting-your-keys-from-github
- Papyros - Arch Linux.
- reSRC · RESTful Web Services
- Hub
- Demystifying Regular Expressions- YouTube Foundation of Apps
- TimeLine JS
- 淺談https
- Leesei&rsquo;s shell notes
- Command Line Basic
- dotfile
- angular-strap-scrollspy.js at master · mgcrea-angular-strap · GitHub
- javascript - Properly Handing Anchors in AngularStrap&rsquo;s ScrollSpy - Stack Overflow">
-  <meta name="twitter:description" content="Reading List  Ben Alman » Immediately-Invoked Function Expression (IIFE)
- This section demos loading different config depending on NODE_ENV.
- protecting-your-keys-from-github
- Papyros - Arch Linux. …">
+  <meta name="description" content="Reading List  Ben Alman » Immediately-Invoked Function Expression (IIFE) This section demos loading different config depending on NODE_ENV. protecting-your-keys-from-github Papyros - Arch Linux. reSRC · RESTful Web Services Hub Demystifying Regular Expressions- YouTube Foundation of Apps TimeLine JS 淺談https Leesei&rsquo;s shell notes Command Line Basic dotfile angular-strap-scrollspy.js at master · mgcrea-angular-strap · GitHub javascript - Properly Handing Anchors in AngularStrap&rsquo;s ScrollSpy - Stack Overflow ngScrollSpy by mg twitter bootstrap - How to implement a scrollspy in angular.">
+  <meta property="og:description" content="Reading List  Ben Alman » Immediately-Invoked Function Expression (IIFE) This section demos loading different config depending on NODE_ENV. protecting-your-keys-from-github Papyros - Arch Linux. reSRC · RESTful Web Services Hub Demystifying Regular Expressions- YouTube Foundation of Apps TimeLine JS 淺談https Leesei&rsquo;s shell notes Command Line Basic dotfile angular-strap-scrollspy.js at master · mgcrea-angular-strap · GitHub javascript - Properly Handing Anchors in AngularStrap&rsquo;s ScrollSpy - Stack Overflow ngScrollSpy by mg twitter bootstrap - How to implement a scrollspy in angular.">
+  <meta name="twitter:description" content="Reading List  Ben Alman » Immediately-Invoked Function Expression (IIFE) This section demos loading different config depending on NODE_ENV. protecting-your-keys-from-github Papyros - Arch Linux. reSRC …">
 
 
 <meta name="author" content="CyrusN"/>
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
 <script src='/js/jquery-3.2.1.slim.min.js'></script>
 <script src='/js/popper.min.js'></script>
 <script src='/js/bootstrap.min.js' ></script>
-<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+
 
 
 <script src=' /js/lunr.min.js '></script>
@@ -61,7 +33,8 @@
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
-<script src="/js/main.js"></script>
+<script src='/js/main.js'></script>
+<script src='/js/helper.js'></script>
 
 
 <script>
@@ -80,7 +53,6 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
 
 
@@ -92,9 +64,9 @@ var Paginator = {}
 </head>
 <body>
   <div class="bg-light d-md-flex justify-content-center">
-    <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
-      href="https://cyrusn.github.io">
+      href='https://cyrusn.github.io'>
       CyrusN
     </a>
     <button
@@ -153,14 +125,14 @@ var Paginator = {}
         
       </ul>
     </div>
-    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
   </nav>
 </div>
 
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-success text-light">
+      <div class="modal-header bg-info text-light">
         <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="text-light">&times;</span>
@@ -173,9 +145,8 @@ var Paginator = {}
               <li><code>Space</code> to search</li>
               <li><code>Enter</code> to start navigate in results</li>
               <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list</li>
-              <li><code>J / K</code> can also scroll up and down in page</li>
-              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
+              <li><code>H / L</code> to navigate the page number</li>
               <li><code>[ / ]</code> to navigate the navbar</li>
           </ul>
         </p>
@@ -212,38 +183,37 @@ var Paginator = {}
 <h1 id="reading-list">Reading List</h1>
 
 <ul>
-<li><a href="http://benalman.com/news/2010/11/immediately-invoked-function-expression/" target="_blank">Ben Alman » Immediately-Invoked Function Expression (IIFE)</a><br /></li>
-<li><a href="http://code.tutsplus.com/tutorials/protecting-your-keys-from-github--cms-23002" target="_blank">This section demos loading different config depending on NODE_ENV.</a><br /></li>
-<li><a href="http://code.tutsplus.com/tutorials/protecting-your-keys-from-github--cms-23002" target="_blank">protecting-your-keys-from-github</a><br /></li>
-<li><a href="http://papyros.io/" target="_blank">Papyros - Arch Linux.</a><br /></li>
-<li><a href="http://resrc.io/link/679/restful-web-services/" target="_blank">reSRC · RESTful Web Services</a><br /></li>
-<li><a href="https://hub.github.com/" target="_blank">Hub</a><br /></li>
-<li><a href="https://www.youtube.com/watch?v=EkluES9Rvak" target="_blank">Demystifying Regular Expressions- YouTube</a><!-- more --><br /></li>
-<li><a href="http://zurb.com/article/1362/foundation-for-apps-is-here" target="_blank">Foundation of Apps</a><br /></li>
-<li><a href="http://timeline.knightlab.com/" target="_blank">TimeLine JS</a><br /></li>
-<li><a href="http://err02.com/2014/10/31/HTTP/" target="_blank">淺談https</a><br /></li>
-<li><a href="http://leesei.github.io/2014/12/08/shell-notes/" target="_blank">Leesei&rsquo;s shell notes</a><br /></li>
-<li><a href="https://mkaz.com/2013/12/29/command-line-basics-and-tips/" target="_blank">Command Line Basic</a><br /></li>
-<li><a href="http://dotfiles.github.io/" target="_blank">dotfile</a><br /></li>
-<li><a href="https://github.com/mgcrea/angular-strap/blob/master/src/scrollspy/scrollspy.js" target="_blank">angular-strap-scrollspy.js at master · mgcrea-angular-strap · GitHub</a><br /></li>
-<li><a href="http://stackoverflow.com/questions/23160958/properly-handing-anchors-in-angularstraps-scrollspy" target="_blank">javascript - Properly Handing Anchors in AngularStrap&rsquo;s ScrollSpy - Stack Overflow</a><br /></li>
-<li><a href="http://mg.github.io/ngScrollSpy/" target="_blank">ngScrollSpy by mg</a><br /></li>
-<li><a href="http://stackoverflow.com/questions/17470370/how-to-implement-a-scrollspy-in-angular-js-the-right-way" target="_blank">twitter bootstrap - How to implement a scrollspy in angular.js the right way? - Stack Overflow</a><br /></li>
-<li><a href="http://alxhill.com/blog/articles/angular-scrollspy/" target="_blank">Using AngularJS to recreate Bootstrap&rsquo;s ScrollSpy - Alexander Hill | mallex();</a><br /></li>
-<li><a href="http://www.acnenomor.com/5385456p1/using-scrollspy-in-angularjs" target="_blank">Using ScrollSpy in AngularJS - acnenomor.com</a><br /></li>
-<li><a href="http://flowtype.org/" target="_blank">flowType</a><br /></li>
-<li><a href="https://github.com/NicoSantangelo/SublimeLinter-contrib-flow" target="_blank">SublimeLinter</a><br /></li>
-<li><a href="http://shitformakingwebsites.com/" target="_blank">shitformakingwebsites</a><br /></li>
-<li><a href="http://niftylettuce.com/posts/eskimo-rapid-mvp-node-boilerplate/" target="_blank">eskimo</a><br /></li>
-<li><a href="https://github.com/jaredhanson/electrolyte/blob/master/Makefile" target="_blank">electrolyte</a><br />
-<br /></li>
+<li><a href="http://benalman.com/news/2010/11/immediately-invoked-function-expression/" target="_blank">Ben Alman » Immediately-Invoked Function Expression (IIFE)</a></li>
+<li><a href="http://code.tutsplus.com/tutorials/protecting-your-keys-from-github--cms-23002" target="_blank">This section demos loading different config depending on NODE_ENV.</a></li>
+<li><a href="http://code.tutsplus.com/tutorials/protecting-your-keys-from-github--cms-23002" target="_blank">protecting-your-keys-from-github</a></li>
+<li><a href="http://papyros.io/" target="_blank">Papyros - Arch Linux.</a></li>
+<li><a href="http://resrc.io/link/679/restful-web-services/" target="_blank">reSRC · RESTful Web Services</a></li>
+<li><a href="https://hub.github.com/" target="_blank">Hub</a></li>
+<li><a href="https://www.youtube.com/watch?v=EkluES9Rvak" target="_blank">Demystifying Regular Expressions- YouTube</a><!-- more --></li>
+<li><a href="http://zurb.com/article/1362/foundation-for-apps-is-here" target="_blank">Foundation of Apps</a></li>
+<li><a href="http://timeline.knightlab.com/" target="_blank">TimeLine JS</a></li>
+<li><a href="http://err02.com/2014/10/31/HTTP/" target="_blank">淺談https</a></li>
+<li><a href="http://leesei.github.io/2014/12/08/shell-notes/" target="_blank">Leesei&rsquo;s shell notes</a></li>
+<li><a href="https://mkaz.com/2013/12/29/command-line-basics-and-tips/" target="_blank">Command Line Basic</a></li>
+<li><a href="http://dotfiles.github.io/" target="_blank">dotfile</a></li>
+<li><a href="https://github.com/mgcrea/angular-strap/blob/master/src/scrollspy/scrollspy.js" target="_blank">angular-strap-scrollspy.js at master · mgcrea-angular-strap · GitHub</a></li>
+<li><a href="http://stackoverflow.com/questions/23160958/properly-handing-anchors-in-angularstraps-scrollspy" target="_blank">javascript - Properly Handing Anchors in AngularStrap&rsquo;s ScrollSpy - Stack Overflow</a></li>
+<li><a href="http://mg.github.io/ngScrollSpy/" target="_blank">ngScrollSpy by mg</a></li>
+<li><a href="http://stackoverflow.com/questions/17470370/how-to-implement-a-scrollspy-in-angular-js-the-right-way" target="_blank">twitter bootstrap - How to implement a scrollspy in angular.js the right way? - Stack Overflow</a></li>
+<li><a href="http://alxhill.com/blog/articles/angular-scrollspy/" target="_blank">Using AngularJS to recreate Bootstrap&rsquo;s ScrollSpy - Alexander Hill | mallex();</a></li>
+<li><a href="http://www.acnenomor.com/5385456p1/using-scrollspy-in-angularjs" target="_blank">Using ScrollSpy in AngularJS - acnenomor.com</a></li>
+<li><a href="http://flowtype.org/" target="_blank">flowType</a></li>
+<li><a href="https://github.com/NicoSantangelo/SublimeLinter-contrib-flow" target="_blank">SublimeLinter</a></li>
+<li><a href="http://shitformakingwebsites.com/" target="_blank">shitformakingwebsites</a></li>
+<li><a href="http://niftylettuce.com/posts/eskimo-rapid-mvp-node-boilerplate/" target="_blank">eskimo</a></li>
+<li><a href="https://github.com/jaredhanson/electrolyte/blob/master/Makefile" target="_blank">electrolyte</a></li>
 </ul>
 
 <h1 id="archive">Archive</h1>
 
 <ul>
-<li><a href="http://www.quora.com/What-programming-languages-should-a-modern-day-programmer-have-in-his-her-arsenal" target="_blank">What-programming-languages-should-a-modern-day-programmer-have-in-his-her-arsenal</a><br /></li>
-<li><a href="https://github.com/gnab/remark" target="_blank">Remark JS</a><br /></li>
+<li><a href="http://www.quora.com/What-programming-languages-should-a-modern-day-programmer-have-in-his-her-arsenal" target="_blank">What-programming-languages-should-a-modern-day-programmer-have-in-his-her-arsenal</a></li>
+<li><a href="https://github.com/gnab/remark" target="_blank">Remark JS</a></li>
 </ul>
 
   </div>
@@ -277,6 +247,18 @@ var Paginator = {}
     
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+
+
+
 
 
 

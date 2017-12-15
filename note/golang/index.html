@@ -11,41 +11,22 @@
   <title>Golang Notes</title>
 
 
-  <meta name="description" content="Useful commands  update all packages go get -u all
-  Feautre  Embedding
-  Understanding Goroutine  Is golang goroutine a coroutine?
- Coroutine vs Continuation vs Generator
- Comparison with generators
-  MongoDB  mgo
- Painless Data Storage with MongoDB and Go
- Connecting to MongoDB with mgo and golang
-  Router  mux - Gorilla, the golang web toolkit
-  # Middleware">
-  <meta property="og:description" content="Useful commands  update all packages go get -u all
-  Feautre  Embedding
-  Understanding Goroutine  Is golang goroutine a coroutine?
- Coroutine vs Continuation vs Generator
- Comparison with generators
-  MongoDB  mgo
- Painless Data Storage with MongoDB and Go
- Connecting to MongoDB with mgo and golang
-  Router  mux - Gorilla, the golang web toolkit
-  # Middleware">
-  <meta name="twitter:description" content="Useful commands  update all packages go get -u all
-  Feautre  Embedding
-  Understanding Goroutine  Is golang goroutine a coroutine?
- Coroutine vs Continuation vs Generator
- Comparison with generators …">
+  <meta name="description" content="Useful commands  update all packages go get -u all  Feautre  Embedding  Understanding Goroutine  Is golang goroutine a coroutine? Coroutine vs Continuation vs Generator Comparison with generators  MongoDB  mgo Painless Data Storage with MongoDB and Go Connecting to MongoDB with mgo and golang  Router  mux - Gorilla, the golang web toolkit  # Middleware
+ justinas/alice: Painless middleware chaining for Go  Database Model Architecture  Go database/sql tutorial Practical Persistence in Go: Organising Database Access Practical Persistence in Go: SQL Databases How to use databases with Golang – Hacker Noon Architecture for a Golang Web App - Larry Price Trying Clean Architecture on Golang – Hacker Noon Applying The Clean Architecture to Go applications » The Log Book of Manuel Kiessling  Authentication  dgrijalva/jwt-go: Golang implementation of JSON Web Tokens (JWT) Golang Authentication Using JSON Web Tokens  Useful Package  PuerkitoBio/goquery: A little like that j-thing, only in Go.">
+  <meta property="og:description" content="Useful commands  update all packages go get -u all  Feautre  Embedding  Understanding Goroutine  Is golang goroutine a coroutine? Coroutine vs Continuation vs Generator Comparison with generators  MongoDB  mgo Painless Data Storage with MongoDB and Go Connecting to MongoDB with mgo and golang  Router  mux - Gorilla, the golang web toolkit  # Middleware
+ justinas/alice: Painless middleware chaining for Go  Database Model Architecture  Go database/sql tutorial Practical Persistence in Go: Organising Database Access Practical Persistence in Go: SQL Databases How to use databases with Golang – Hacker Noon Architecture for a Golang Web App - Larry Price Trying Clean Architecture on Golang – Hacker Noon Applying The Clean Architecture to Go applications » The Log Book of Manuel Kiessling  Authentication  dgrijalva/jwt-go: Golang implementation of JSON Web Tokens (JWT) Golang Authentication Using JSON Web Tokens  Useful Package  PuerkitoBio/goquery: A little like that j-thing, only in Go.">
+  <meta name="twitter:description" content="Useful commands  update all packages go get -u all  Feautre  Embedding  Understanding Goroutine  Is golang goroutine a coroutine? Coroutine vs Continuation vs Generator Comparison with generators …">
 
 
 <meta name="author" content="CyrusN"/>
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
 <script src='/js/jquery-3.2.1.slim.min.js'></script>
 <script src='/js/popper.min.js'></script>
 <script src='/js/bootstrap.min.js' ></script>
-<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+
 
 
 <script src=' /js/lunr.min.js '></script>
@@ -54,7 +35,8 @@
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
-<script src="/js/main.js"></script>
+<script src='/js/main.js'></script>
+<script src='/js/helper.js'></script>
 
 
 <script>
@@ -73,7 +55,6 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
 
 
@@ -85,9 +66,9 @@ var Paginator = {}
 </head>
 <body>
   <div class="bg-light d-md-flex justify-content-center">
-    <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
-      href="https://cyrusn.github.io">
+      href='https://cyrusn.github.io'>
       CyrusN
     </a>
     <button
@@ -146,14 +127,14 @@ var Paginator = {}
         
       </ul>
     </div>
-    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
   </nav>
 </div>
 
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-success text-light">
+      <div class="modal-header bg-info text-light">
         <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="text-light">&times;</span>
@@ -166,9 +147,8 @@ var Paginator = {}
               <li><code>Space</code> to search</li>
               <li><code>Enter</code> to start navigate in results</li>
               <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list</li>
-              <li><code>J / K</code> can also scroll up and down in page</li>
-              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
+              <li><code>H / L</code> to navigate the page number</li>
               <li><code>[ / ]</code> to navigate the navbar</li>
           </ul>
         </p>
@@ -195,13 +175,11 @@ var Paginator = {}
   
 </small>
 
-
 <small>
 
   <a class="badge badge-secondary" href="/tags/golang">golang</a>
 
 </small>
-
 
 
 
@@ -213,104 +191,76 @@ var Paginator = {}
 <h1 id="useful-commands">Useful commands</h1>
 
 <ul>
-<li>update all packages <code>go get -u all</code><br />
-<br /></li>
+<li>update all packages <code>go get -u all</code></li>
 </ul>
 
 <h1 id="feautre">Feautre</h1>
 
 <ul>
-<li><a href="https://golang.org/doc/effective_go.html#embedding" target="_blank">Embedding</a><br />
-<br /></li>
+<li><a href="https://golang.org/doc/effective_go.html#embedding" target="_blank">Embedding</a></li>
 </ul>
 
 <h1 id="understanding-goroutine">Understanding Goroutine</h1>
 
 <ul>
-<li><a href="http://stackoverflow.com/questions/18058164/is-/golang-goroutine-a-coroutine" target="_blank">Is golang goroutine a coroutine?</a><br /></li>
-<li><a href="http://stackoverflow.com/questions/715758/coroutine-vs-continuation-vs-generator" target="_blank">Coroutine vs Continuation vs Generator</a><br /></li>
-<li><a href="http://en.wikipedia.org/wiki/CoroutineComparison_with_generators" target="_blank">Comparison with generators</a><br />
-<br /></li>
+<li><a href="http://stackoverflow.com/questions/18058164/is-/golang-goroutine-a-coroutine" target="_blank">Is golang goroutine a coroutine?</a></li>
+<li><a href="http://stackoverflow.com/questions/715758/coroutine-vs-continuation-vs-generator" target="_blank">Coroutine vs Continuation vs Generator</a></li>
+<li><a href="http://en.wikipedia.org/wiki/CoroutineComparison_with_generators" target="_blank">Comparison with generators</a></li>
 </ul>
 
 <h1 id="mongodb">MongoDB</h1>
 
 <ul>
-<li><a href="https://labix.org/mgo" target="_blank">mgo</a><br /></li>
-<li><a href="http://spf13.com/presentation/MongoDB-and-Go/" target="_blank">Painless Data Storage with MongoDB and Go</a><br /></li>
-<li><a href="https://docs.compose.io/languages/golang.html" target="_blank">Connecting to MongoDB with mgo and golang</a><br />
-<br /></li>
+<li><a href="https://labix.org/mgo" target="_blank">mgo</a></li>
+<li><a href="http://spf13.com/presentation/MongoDB-and-Go/" target="_blank">Painless Data Storage with MongoDB and Go</a></li>
+<li><a href="https://docs.compose.io/languages/golang.html" target="_blank">Connecting to MongoDB with mgo and golang</a></li>
 </ul>
 
 <h1 id="router">Router</h1>
 
 <ul>
-<li><a href="http://www.gorillatoolkit.org/pkg/mux" target="_blank">mux - Gorilla, the golang web toolkit</a><br />
-<br /></li>
+<li><a href="http://www.gorillatoolkit.org/pkg/mux" target="_blank">mux - Gorilla, the golang web toolkit</a></li>
 </ul>
 
 <p># Middleware</p>
 
 <ul>
-<li><a href="https://github.com/justinas/alice" target="_blank">justinas/alice: Painless middleware chaining for Go</a><br />
-<br /></li>
+<li><a href="https://github.com/justinas/alice" target="_blank">justinas/alice: Painless middleware chaining for Go</a></li>
 </ul>
 
-<h1 id="sql-database">SQL Database</h1>
+<h1 id="database-model-architecture">Database Model Architecture</h1>
 
 <ul>
-<li><a href="http://go-database-sql.org/" target="_blank">Go database/sql tutorial</a><br /></li>
-<li><a href="http://www.alexedwards.net/blog/organising-database-access" target="_blank">Practical Persistence in Go: Organising Database Access</a><br /></li>
-<li><a href="http://www.alexedwards.net/blog/practical-persistence-sql" target="_blank">Practical Persistence in Go: SQL Databases</a><br />
-<br /></li>
+<li><a href="http://go-database-sql.org/" target="_blank">Go database/sql tutorial</a></li>
+<li><a href="http://www.alexedwards.net/blog/organising-database-access" target="_blank">Practical Persistence in Go: Organising Database Access</a></li>
+<li><a href="http://www.alexedwards.net/blog/practical-persistence-sql" target="_blank">Practical Persistence in Go: SQL Databases</a></li>
+<li><a href="https://hackernoon.com/how-to-work-with-databases-in-golang-33b002aa8c47" target="_blank">How to use databases with Golang – Hacker Noon</a></li>
+<li><a href="https://larry-price.com/blog/2015/06/25/architecture-for-a-golang-web-app/" target="_blank">Architecture for a Golang Web App - Larry Price</a></li>
+<li><a href="https://hackernoon.com/golang-clean-archithecture-efd6d7c43047" target="_blank">Trying Clean Architecture on Golang – Hacker Noon</a></li>
+<li><a href="http://manuel.kiessling.net/2012/09/28/applying-the-clean-architecture-to-go-applications/" target="_blank">Applying The Clean Architecture to Go applications » The Log Book of Manuel Kiessling</a></li>
 </ul>
 
 <h1 id="authentication">Authentication</h1>
 
 <ul>
-<li><a href="https://github.com/dgrijalva/jwt-go" target="_blank">dgrijalva/jwt-go: Golang implementation of JSON Web Tokens (JWT)</a><br /></li>
-<li><a href="https://dinosaurscode.xyz/go/2016/06/17/golang-jwt-authentication/" target="_blank">Golang Authentication Using JSON Web Tokens</a><br />
-<br /></li>
+<li><a href="https://github.com/dgrijalva/jwt-go" target="_blank">dgrijalva/jwt-go: Golang implementation of JSON Web Tokens (JWT)</a></li>
+<li><a href="https://dinosaurscode.xyz/go/2016/06/17/golang-jwt-authentication/" target="_blank">Golang Authentication Using JSON Web Tokens</a></li>
 </ul>
 
 <h1 id="useful-package">Useful Package</h1>
 
 <ul>
-<li><a href="https://github.com/PuerkitoBio/goquery" target="_blank">PuerkitoBio/goquery: A little like that j-thing, only in Go.</a><br /></li>
-<li><a href="https://godoc.org/golang.org/x/crypto/bcrypt" target="_blank">bcrypt - GoDoc</a><br />
-<br /></li>
+<li><a href="https://github.com/PuerkitoBio/goquery" target="_blank">PuerkitoBio/goquery: A little like that j-thing, only in Go.</a></li>
+<li><a href="https://godoc.org/golang.org/x/crypto/bcrypt" target="_blank">bcrypt - GoDoc</a></li>
 </ul>
 
 <h1 id="useful-resources">Useful Resources</h1>
 
 <ul>
-<li><a href="http://matthewbrown.io/2016/01/23/factory-pattern-in-golang/" target="_blank">The factory method pattern in Go. – Matthew Brown</a><br /></li>
-<li><a href="http://www.alexedwards.net/blog/organising-database-access" target="_blank">Practical Persistence in Go: Organising Database Access</a><br /></li>
-<li><a href="https://stackoverflow.com/questions/24341654/go-build-became-very-slow-after-installing-a-new-version-of-go" target="_blank">&ldquo;go build&rdquo; became very slow after installing a new version of Go - Stack Overflow</a><br /></li>
-<li><a href="https://paddy.io/posts/contexts-and-dependency-injection/" target="_blank">Contexts &amp; Dependency Injection</a><br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br /></li>
+<li><a href="http://matthewbrown.io/2016/01/23/factory-pattern-in-golang/" target="_blank">The factory method pattern in Go. – Matthew Brown</a></li>
+<li><a href="http://www.alexedwards.net/blog/organising-database-access" target="_blank">Practical Persistence in Go: Organising Database Access</a></li>
+<li><a href="https://stackoverflow.com/questions/24341654/go-build-became-very-slow-after-installing-a-new-version-of-go" target="_blank">&ldquo;go build&rdquo; became very slow after installing a new version of Go - Stack Overflow</a></li>
+<li><a href="https://paddy.io/posts/contexts-and-dependency-injection/" target="_blank">Contexts &amp; Dependency Injection</a></li>
 </ul>
 
   </div>
@@ -344,6 +294,18 @@ var Paginator = {}
     
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+
+
+
 
 
 

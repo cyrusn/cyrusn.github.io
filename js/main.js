@@ -10,10 +10,6 @@ $(document).ready(e => {
     .addClass('blockquote ml-5 px-4 py-2 lead text-justify border-secondary')
     .css('border-left', '6px solid')
   $('blockquote footer').addClass('blockquote-footer text-right')
-  // Enable HighlightJS
-  $('pre code').each(function (i, block) {
-    hljs.highlightBlock(block)
-  })
 })
 
 function listenKeys () {
@@ -49,10 +45,10 @@ function navigatee (keyCode, event) {
         }
       })
       break
-    case (keyCode === 78 && hasNext && !onFocus): // n
+    case (keyCode === 76 && hasNext && !onFocus): // l
       window.location.pathname = nextPage
       break
-    case (keyCode === 80 && hasPrev && !onFocus): // p
+    case (keyCode === 72 && hasPrev && !onFocus): // h
       window.location.pathname = prevPage
       break
     case (keyCode === 81 && !onFocus): // q

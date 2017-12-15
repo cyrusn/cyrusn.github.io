@@ -11,19 +11,22 @@
   <title>Jazz</title>
 
 
-  <meta name="description" content="function show (nav, id) { $(`#${nav}-${id}`).show() $(`#${nav}-link-${id}`).addClass(&#39;active&#39;) } function hide (nav, id) { $(`#${nav}-${id}`).hide() $(`#${nav}-link-${id}`).removeClass(&#39;active&#39;) } function select (nav, id) { if (nav === &#39;score&#39;) { show(&#39;score&#39;, id) hide(&#39;code&#39;, id) } else if (nav === &#39;code&#39;) { show(&#39;code&#39;, id) hide(&#39;score&#39;, id) } }  Score  Code    K: C &#34;Dm7&#34;[DCF]|&#34;G7&#34;[GBDF]|&#34;Cmaj7&#34;[CEGB]||   K: C &#34;Dm7&#34;[DCF]|&#34;G7&#34;[GBDF]|&#34;Cmaj7&#34;[CEGB]||      ABCJS.renderAbc(&#39;score-1&#39;, &#39;\nK: C\n\x22Dm7\x22[DCF]|\x22G7\x22[GBDF]|\x22Cmaj7\x22[CEGB]||\n&#39;, {}, { &#39;responsive&#39;: &#39;resize&#39;, &#39;add_classes&#39;: true }, { &#39;oneSvgPerLine&#39;: true })  This is the basic chord of jazz music.">
-  <meta property="og:description" content="function show (nav, id) { $(`#${nav}-${id}`).show() $(`#${nav}-link-${id}`).addClass(&#39;active&#39;) } function hide (nav, id) { $(`#${nav}-${id}`).hide() $(`#${nav}-link-${id}`).removeClass(&#39;active&#39;) } function select (nav, id) { if (nav === &#39;score&#39;) { show(&#39;score&#39;, id) hide(&#39;code&#39;, id) } else if (nav === &#39;code&#39;) { show(&#39;code&#39;, id) hide(&#39;score&#39;, id) } }  Score  Code    K: C &#34;Dm7&#34;[DCF]|&#34;G7&#34;[GBDF]|&#34;Cmaj7&#34;[CEGB]||   K: C &#34;Dm7&#34;[DCF]|&#34;G7&#34;[GBDF]|&#34;Cmaj7&#34;[CEGB]||      ABCJS.renderAbc(&#39;score-1&#39;, &#39;\nK: C\n\x22Dm7\x22[DCF]|\x22G7\x22[GBDF]|\x22Cmaj7\x22[CEGB]||\n&#39;, {}, { &#39;responsive&#39;: &#39;resize&#39;, &#39;add_classes&#39;: true }, { &#39;oneSvgPerLine&#39;: true })  This is the basic chord of jazz music.">
-  <meta name="twitter:description" content="function show (nav, id) { $(`#${nav}-${id}`).show() $(`#${nav}-link-${id}`).addClass(&#39;active&#39;) } function hide (nav, id) { $(`#${nav}-${id}`).hide() $(`#${nav}-link-${id}`).removeClass(&#39;active&#39;) } …">
+  <meta name="description" content=" Score   Code     K: C &#34;Dm7&#34;[DCF]|&#34;G7&#34;[GBDF]|&#34;Cmaj7&#34;[CEGB]||      K: C &#34;Dm7&#34;[DCF]|&#34;G7&#34;[GBDF]|&#34;Cmaj7&#34;[CEGB]||       const config = { &#39;responsive&#39;: &#39;resize&#39;, &#39;add_classes&#39;: true } ABCJS.renderAbc(&#39;abcjs-src-1&#39;, &#39;\nK: C\n\x22Dm7\x22[DCF]|\x22G7\x22[GBDF]|\x22Cmaj7\x22[CEGB]||\n&#39;, {}, config, { })  This is the basic chord of jazz music.
+References  Jazz harmony - Wikiwand  ">
+  <meta property="og:description" content=" Score   Code     K: C &#34;Dm7&#34;[DCF]|&#34;G7&#34;[GBDF]|&#34;Cmaj7&#34;[CEGB]||      K: C &#34;Dm7&#34;[DCF]|&#34;G7&#34;[GBDF]|&#34;Cmaj7&#34;[CEGB]||       const config = { &#39;responsive&#39;: &#39;resize&#39;, &#39;add_classes&#39;: true } ABCJS.renderAbc(&#39;abcjs-src-1&#39;, &#39;\nK: C\n\x22Dm7\x22[DCF]|\x22G7\x22[GBDF]|\x22Cmaj7\x22[CEGB]||\n&#39;, {}, config, { })  This is the basic chord of jazz music.
+References  Jazz harmony - Wikiwand  ">
+  <meta name="twitter:description" content=" Score   Code     K: C &#34;Dm7&#34;[DCF]|&#34;G7&#34;[GBDF]|&#34;Cmaj7&#34;[CEGB]||      K: C &#34;Dm7&#34;[DCF]|&#34;G7&#34;[GBDF]|&#34;Cmaj7&#34;[CEGB]||       const config = { &#39;responsive&#39;: &#39;resize&#39;, &#39;add_classes&#39;: true } …">
 
 
 <meta name="author" content="CyrusN"/>
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
 <script src='/js/jquery-3.2.1.slim.min.js'></script>
 <script src='/js/popper.min.js'></script>
 <script src='/js/bootstrap.min.js' ></script>
-<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+
 
 
 <script src=' /js/lunr.min.js '></script>
@@ -32,7 +35,8 @@
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
-<script src="/js/main.js"></script>
+<script src='/js/main.js'></script>
+<script src='/js/helper.js'></script>
 
 
 <script>
@@ -51,8 +55,8 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
+
 
 
 
@@ -61,13 +65,12 @@ var Paginator = {}
 
 
 
-
 </head>
 <body>
   <div class="bg-light d-md-flex justify-content-center">
-    <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
-      href="https://cyrusn.github.io">
+      href='https://cyrusn.github.io'>
       CyrusN
     </a>
     <button
@@ -126,14 +129,14 @@ var Paginator = {}
         
       </ul>
     </div>
-    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
   </nav>
 </div>
 
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-success text-light">
+      <div class="modal-header bg-info text-light">
         <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="text-light">&times;</span>
@@ -146,9 +149,8 @@ var Paginator = {}
               <li><code>Space</code> to search</li>
               <li><code>Enter</code> to start navigate in results</li>
               <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list</li>
-              <li><code>J / K</code> can also scroll up and down in page</li>
-              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
+              <li><code>H / L</code> to navigate the page number</li>
               <li><code>[ / ]</code> to navigate the navbar</li>
           </ul>
         </p>
@@ -186,65 +188,58 @@ var Paginator = {}
 
 
 
-<script>
-   
-  function show (nav, id) {
-    $(`#${nav}-${id}`).show()
-    $(`#${nav}-link-${id}`).addClass('active')
-  }
-  function hide (nav, id) {
-    $(`#${nav}-${id}`).hide()
-    $(`#${nav}-link-${id}`).removeClass('active')
-  }
 
-  function select (nav, id) {
-    if (nav === 'score') {
-      show('score', id)
-      hide('code', id)
-    } else if (nav === 'code') {
-      show('code', id)
-      hide('score', id)
-    }
-  }
+<div class="card mb-5" id="abcjs-1" data-children='.item-1'>
 
-</script>
-<div class="card mb-5">
   <div class="card-header">
-    <ul class="nav nav-tabs card-header-tabs">
+    <ul class="nav card-header-tabs">
       <li class="nav-item">
-        <button id='score-link-1' class="btn btn-link nav-link active" onclick="select('score', '1')">Score</button>
+        <a class="nav-link active" data-parent="#abcjs-1" data-toggle="collapse" href="#abcjs-score-1" aria-expanded="false" aria-controls="abcjs-score-1">
+          Score
+        </a>
       </li>
       <li class="nav-item">
-        <button id='code-link-1' class="btn btn-link nav-link" onclick="select('code', '1')">Code</button>
+        <a class="nav-link" data-parent="#abcjs-1" data-toggle="collapse" href="#abcjs-code-1" aria-expanded="false" aria-controls="abcjs-code=1">
+          Code
+        </a>
       </li>
     </ul>
   </div>
 
-  <div class='card-img' id='score-1'>
-  
+  <div class="item-1">
+    <div class="collapse show" id='abcjs-score-1' role="tabpanel">
+      <div class="px-md-5 d-block">
+        <div id="abcjs-src-1" class="card-img">
+          
 K: C
 "Dm7"[DCF]|"G7"[GBDF]|"Cmaj7"[CEGB]||
 
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="card-body" id='code-1' style="display: none;">
-    <div class="card-text">
-      <pre>
+  <div class="item-1">
+    <div class="collapse" id="abcjs-code-1" role="tabpanel">
+      <div class="card-body">
+        <pre>
 K: C
 "Dm7"[DCF]|"G7"[GBDF]|"Cmaj7"[CEGB]||
 </pre>
+      </div>
     </div>
   </div>
-</div>
 
+</div>
 
 <script>
    
-  ABCJS.renderAbc('score-1', '\nK: C\n\x22Dm7\x22[DCF]|\x22G7\x22[GBDF]|\x22Cmaj7\x22[CEGB]||\n', {}, {
+  const config = {
     'responsive': 'resize',
     'add_classes': true
-  }, {
-    'oneSvgPerLine': true
+  }
+
+  ABCJS.renderAbc('abcjs-src-1', '\nK: C\n\x22Dm7\x22[DCF]|\x22G7\x22[GBDF]|\x22Cmaj7\x22[CEGB]||\n', {}, config, {
   })
 </script>
 
@@ -254,7 +249,7 @@ K: C
 <h1 id="references">References</h1>
 
 <ul>
-<li><a href="https://www.wikiwand.com/en/Jazz_harmony" target="_blank">Jazz harmony - Wikiwand</a><br /></li>
+<li><a href="https://www.wikiwand.com/en/Jazz_harmony" target="_blank">Jazz harmony - Wikiwand</a></li>
 </ul>
 
   </div>
@@ -288,6 +283,18 @@ K: C
     
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+
+
+
 
 
 

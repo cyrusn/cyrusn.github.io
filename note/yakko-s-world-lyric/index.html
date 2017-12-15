@@ -11,42 +11,25 @@
   <title>Yakko&#39;s World Lyric</title>
 
 
-  <meta name="description" content="United States, Canada, Mexico, Panama
-Haiti, Jamaica, Peru,
-Republic Dominican, Cuba, Carribean
-Greenland, El Salvador too.
-Puerto Rico, Columbia, Venezuela
-Honduras, Guyana, and still,
-Guatemala, Bolivia, then Argentina
-And Ecuador, Chile, Brazil.
-Costa Rica, Belize, Nicaragua, Bermuda
-Bahamas, Tobago, San Juan,
-Paraguay, Uruguay, Surinam And French Guiana
-Barbados, and Guam.
-Norway, and Sweden, and Iceland, and Finland and
-Germany now ~ want peace,
-Switzerland, Austria, Czech, Slovakia">
-  <meta property="og:description" content="United States, Canada, Mexico, Panama
-Haiti, Jamaica, Peru,
-Republic Dominican, Cuba, Carribean
-Greenland, El Salvador too.
-Puerto Rico, Columbia, Venezuela
-Honduras, Guyana, and still,
-Guatemala, Bolivia, then Argentina
-And Ecuador, Chile, Brazil.
-Costa Rica, Belize, Nicaragua, Bermuda
-Bahamas, Tobago, San Juan,
-Paraguay, Uruguay, Surinam And French Guiana
-Barbados, and Guam.
-Norway, and Sweden, and Iceland, and Finland and
-Germany now ~ want peace,
-Switzerland, Austria, Czech, Slovakia">
-  <meta name="twitter:description" content="United States, Canada, Mexico, Panama
-Haiti, Jamaica, Peru,
-Republic Dominican, Cuba, Carribean
-Greenland, El Salvador too.
-Puerto Rico, Columbia, Venezuela
-Honduras, Guyana, and still,
+  <meta name="description" content="United States, Canada, Mexico, Panama Haiti, Jamaica, Peru,
+Republic Dominican, Cuba, Carribean Greenland, El Salvador too.
+Puerto Rico, Columbia, Venezuela Honduras, Guyana, and still,
+Guatemala, Bolivia, then Argentina And Ecuador, Chile, Brazil.
+Costa Rica, Belize, Nicaragua, Bermuda Bahamas, Tobago, San Juan,
+Paraguay, Uruguay, Surinam And French Guiana Barbados, and Guam.
+Norway, and Sweden, and Iceland, and Finland and Germany now ~ want peace,
+Switzerland, Austria, Czech, Slovakia Italy, Turkey, and Greece.">
+  <meta property="og:description" content="United States, Canada, Mexico, Panama Haiti, Jamaica, Peru,
+Republic Dominican, Cuba, Carribean Greenland, El Salvador too.
+Puerto Rico, Columbia, Venezuela Honduras, Guyana, and still,
+Guatemala, Bolivia, then Argentina And Ecuador, Chile, Brazil.
+Costa Rica, Belize, Nicaragua, Bermuda Bahamas, Tobago, San Juan,
+Paraguay, Uruguay, Surinam And French Guiana Barbados, and Guam.
+Norway, and Sweden, and Iceland, and Finland and Germany now ~ want peace,
+Switzerland, Austria, Czech, Slovakia Italy, Turkey, and Greece.">
+  <meta name="twitter:description" content="United States, Canada, Mexico, Panama Haiti, Jamaica, Peru,
+Republic Dominican, Cuba, Carribean Greenland, El Salvador too.
+Puerto Rico, Columbia, Venezuela Honduras, Guyana, and still,
 Guatemala, …">
 
 
@@ -54,10 +37,11 @@ Guatemala, …">
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
 <script src='/js/jquery-3.2.1.slim.min.js'></script>
 <script src='/js/popper.min.js'></script>
 <script src='/js/bootstrap.min.js' ></script>
-<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+
 
 
 <script src=' /js/lunr.min.js '></script>
@@ -66,7 +50,8 @@ Guatemala, …">
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
-<script src="/js/main.js"></script>
+<script src='/js/main.js'></script>
+<script src='/js/helper.js'></script>
 
 
 <script>
@@ -85,7 +70,6 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
 
 
@@ -97,9 +81,9 @@ var Paginator = {}
 </head>
 <body>
   <div class="bg-light d-md-flex justify-content-center">
-    <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
-      href="https://cyrusn.github.io">
+      href='https://cyrusn.github.io'>
       CyrusN
     </a>
     <button
@@ -158,14 +142,14 @@ var Paginator = {}
         
       </ul>
     </div>
-    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
   </nav>
 </div>
 
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-success text-light">
+      <div class="modal-header bg-info text-light">
         <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="text-light">&times;</span>
@@ -178,9 +162,8 @@ var Paginator = {}
               <li><code>Space</code> to search</li>
               <li><code>Enter</code> to start navigate in results</li>
               <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list</li>
-              <li><code>J / K</code> can also scroll up and down in page</li>
-              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
+              <li><code>H / L</code> to navigate the page number</li>
               <li><code>[ / ]</code> to navigate the navbar</li>
           </ul>
         </p>
@@ -207,7 +190,6 @@ var Paginator = {}
   
 </small>
 
-
 <small>
 
   <a class="badge badge-secondary" href="/tags/lyric">lyric</a>
@@ -215,7 +197,6 @@ var Paginator = {}
   <a class="badge badge-secondary" href="/tags/map">map</a>
 
 </small>
-
 
 
 
@@ -228,88 +209,88 @@ var Paginator = {}
  </div>
 
 
-<p>U<strong><em>nit</em></strong>ed States, <strong><em>Can</em></strong>ada, <strong><em>Me</em></strong>xico, <strong><em>Pa</em></strong>nama<br />
+<p>U<strong><em>nit</em></strong>ed States, <strong><em>Can</em></strong>ada, <strong><em>Me</em></strong>xico, <strong><em>Pa</em></strong>nama
 <strong><em>Hai</em></strong>ti, Ja<strong><em>mai</em></strong>ca, Pe<strong><em>ru</em></strong>,</p>
 
-<p>Re<strong><em>pub</em></strong>lic Do<strong><em>min</em></strong>ican, <strong><em>Cu</em></strong>ba, Car<strong><em>ri</em></strong>bean<br />
+<p>Re<strong><em>pub</em></strong>lic Do<strong><em>min</em></strong>ican, <strong><em>Cu</em></strong>ba, Car<strong><em>ri</em></strong>bean
 <strong><em>Green</em></strong>land, El <strong><em>Sal</em></strong>vador <strong><em>too</em></strong>.</p>
 
-<p><strong><em>Pue</em></strong>rto <strong><em>Ri</em></strong>co, Co<strong><em>lum</em></strong>bia, <strong><em>Ve</em></strong>nezu<strong><em>e</em></strong>la<br />
+<p><strong><em>Pue</em></strong>rto <strong><em>Ri</em></strong>co, Co<strong><em>lum</em></strong>bia, <strong><em>Ve</em></strong>nezu<strong><em>e</em></strong>la
 Hon<strong><em>du</em></strong>ras, Gu<strong><em>ya</em></strong>na, and <strong><em>still</em></strong>,</p>
 
-<p>Guate<strong><em>ma</em></strong>la, Bo<strong><em>li</em></strong>via, <strong><em>then</em></strong> Argen<strong><em>ti</em></strong>na<br />
+<p>Guate<strong><em>ma</em></strong>la, Bo<strong><em>li</em></strong>via, <strong><em>then</em></strong> Argen<strong><em>ti</em></strong>na
 And <strong><em>E</em></strong>cuador, <strong><em>Chi</em></strong>le, Bra<strong><em>zil</em></strong>.</p>
 
-<p><strong><em>Co</em></strong>sta <strong><em>Ri</em></strong>ca, Be<strong><em>li</em></strong>ze, Nica<strong><em>ra</em></strong>gua, Ber<strong><em>mu</em></strong>da<br />
+<p><strong><em>Co</em></strong>sta <strong><em>Ri</em></strong>ca, Be<strong><em>li</em></strong>ze, Nica<strong><em>ra</em></strong>gua, Ber<strong><em>mu</em></strong>da
 Ba<strong><em>ham</em></strong>as, To<strong><em>ba</em></strong>go, San <strong><em>Juan</em></strong>,</p>
 
-<p><strong><em>Pa</em></strong>raguay, <strong>U</strong>ruguay, <strong><em>Su</em></strong>rinam <strong><em>And</em></strong> French Gui<strong><em>an</em></strong>a<br />
+<p><strong><em>Pa</em></strong>raguay, <strong>U</strong>ruguay, <strong><em>Su</em></strong>rinam <strong><em>And</em></strong> French Gui<strong><em>an</em></strong>a
 Bar<strong><em>ba</em></strong>dos, and <strong><em>Guam</em></strong>.</p>
 
 <hr />
 
-<p><strong><em>Nor</em></strong>way, and S<strong><em>we</em></strong>den, and <strong><em>Ice</em></strong>land, and <strong><em>Fin</em></strong>land and<br />
+<p><strong><em>Nor</em></strong>way, and S<strong><em>we</em></strong>den, and <strong><em>Ice</em></strong>land, and <strong><em>Fin</em></strong>land and
 <strong><em>Ger</em></strong>many <strong><em>no</em></strong>w ~ want <strong><em>peace</em></strong>,</p>
 
-<p>S<strong><em>wit</em></strong>zerland, <strong><em>Au</em></strong>stria, <strong><em>Cze</em></strong>ch, Slo<strong><em>vak</em></strong>ia<br />
+<p>S<strong><em>wit</em></strong>zerland, <strong><em>Au</em></strong>stria, <strong><em>Cze</em></strong>ch, Slo<strong><em>vak</em></strong>ia
 <strong><em>It</em></strong>aly, <strong><em>Tur</em></strong>key, and <strong><em>Greece</em></strong>.</p>
 
-<p><strong><em>Po</em></strong>land, Ro<strong><em>man</em></strong>ia, S<strong><em>cot</em></strong>land, Al<strong><em>ban</em></strong>ia<br />
+<p><strong><em>Po</em></strong>land, Ro<strong><em>man</em></strong>ia, S<strong><em>cot</em></strong>land, Al<strong><em>ban</em></strong>ia
 <strong><em>Ir</em></strong>eland, <strong>Ru</strong>ssia, O<strong><em>man</em></strong>,</p>
 
-<p>Bul<strong><em>gar</em></strong>ia, Saudi A<strong><em>ra</em></strong>bia, <strong><em>Hun</em></strong>gary<br />
+<p>Bul<strong><em>gar</em></strong>ia, Saudi A<strong><em>ra</em></strong>bia, <strong><em>Hun</em></strong>gary
 <strong><em>Cy</em></strong>prus, I<strong><em>raq</em></strong>, and I<strong><em>ran</em></strong>.</p>
 
-<p><strong><em>There</em></strong>&rsquo;s <strong><em>Sy</em></strong>ria, <strong><em>Le</em></strong>banon, <strong><em>I</em></strong>srael, <strong><em>Jor</em></strong>dan Both<br />
+<p><strong><em>There</em></strong>&rsquo;s <strong><em>Sy</em></strong>ria, <strong><em>Le</em></strong>banon, <strong><em>I</em></strong>srael, <strong><em>Jor</em></strong>dan Both
 <strong><em>Ye</em></strong>mens, Ku<strong><em>wait</em></strong>, and Bah<strong><em>rain</em></strong>,</p>
 
-<p>The <strong><em>Ne</em></strong>therlands, <strong><em>Lu</em></strong>xembourg, <strong>Bel</strong>gium, and <strong><em>Por</em></strong>tugal<br />
+<p>The <strong><em>Ne</em></strong>therlands, <strong><em>Lu</em></strong>xembourg, <strong>Bel</strong>gium, and <strong><em>Por</em></strong>tugal
 <strong><em>France</em></strong>, England, <strong><em>Den</em></strong>mark, and <strong><em>Spain</em></strong>.</p>
 
 <hr />
 
-<p><strong><em>In</em></strong>dia, <strong><em>Pak</em></strong>istan, <strong>Bur</strong>ma, Af<strong><em>ghan</em></strong>istan<br />
+<p><strong><em>In</em></strong>dia, <strong><em>Pak</em></strong>istan, <strong>Bur</strong>ma, Af<strong><em>ghan</em></strong>istan
 <strong><em>Thai</em></strong>land, Ne<strong><em>pal</em></strong>, and Bhu<strong><em>tan</em></strong>,</p>
 
-<p><strong><em>Kam</em></strong>pu<strong><em>che</em></strong>a, Ma<strong><em>lay</em></strong>sia, then <strong><em>Ban</em></strong>gladesh <strong><em>A</em></strong>sia and<br />
+<p><strong><em>Kam</em></strong>pu<strong><em>che</em></strong>a, Ma<strong><em>lay</em></strong>sia, then <strong><em>Ban</em></strong>gladesh <strong><em>A</em></strong>sia and
 <strong><em>Chi</em></strong>na, Ko<strong><em>re</em></strong>a, Ja<strong><em>pan</em></strong>.</p>
 
-<p>Mon<strong><em>go</em></strong>lia, <strong><em>Laos</em></strong>, and Ti<strong><em>bet</em></strong>, Indo<strong><em>ne</em></strong>sia<br />
+<p>Mon<strong><em>go</em></strong>lia, <strong><em>Laos</em></strong>, and Ti<strong><em>bet</em></strong>, Indo<strong><em>ne</em></strong>sia
 The <strong><em>Phi</em></strong>lippine <strong><em>I</em></strong>slands, Tai<strong><em>wan</em></strong>,</p>
 
-<p>Sri <strong><em>Lan</em></strong>ka, New <strong><em>Gu</em></strong>inea, Su<strong><em>ma</em></strong>tra, New <strong><em>Zea</em></strong>land<br />
+<p>Sri <strong><em>Lan</em></strong>ka, New <strong><em>Gu</em></strong>inea, Su<strong><em>ma</em></strong>tra, New <strong><em>Zea</em></strong>land
 Then <strong><em>Bor</em></strong>neo, <strong><em>and</em></strong> Viet<strong><em>nam</em></strong>.</p>
 
-<p><strong><em>Tu</em></strong> ~ <strong><em>ni</em></strong>sia, Mo<strong><em>ro</em></strong>cco, U<strong><em>gan</em></strong>da, An<strong><em>go</em></strong>la<br />
+<p><strong><em>Tu</em></strong> ~ <strong><em>ni</em></strong>sia, Mo<strong><em>ro</em></strong>cco, U<strong><em>gan</em></strong>da, An<strong><em>go</em></strong>la
 Zim<strong><em>ba</em></strong>bwe, Dji<strong><em>bou</em></strong>ti, Bots<strong><em>wa</em></strong>na,</p>
 
-<p><strong><em>Mo</em></strong>zambique, <strong><em>Zam</em></strong>bia, S<strong><em>wa</em></strong>ziland, <strong><em>Gam</em></strong>bia<br />
+<p><strong><em>Mo</em></strong>zambique, <strong><em>Zam</em></strong>bia, S<strong><em>wa</em></strong>ziland, <strong><em>Gam</em></strong>bia
 <strong><em>Gui</em></strong>nea, Al<strong><em>ge</em></strong>ria, Gha<strong><em>na</em></strong>.</p>
 
 <hr />
 
-<p>Bu<strong><em>run</em></strong>di, Le<strong><em>so</em></strong>tho, and <strong><em>Ma</em></strong>lawi, <strong><em>To</em></strong>go<br />
+<p>Bu<strong><em>run</em></strong>di, Le<strong><em>so</em></strong>tho, and <strong><em>Ma</em></strong>lawi, <strong><em>To</em></strong>go
 The S<strong><em>pan</em></strong>ish Sa<strong><em>ha</em></strong>ra is gone,</p>
 
-<p><strong><em>Ni</em></strong>ger, Ni<strong><em>ge</em></strong>ria, <strong><em>Chad</em></strong>, and Li<strong><em>be</em></strong>ria<br />
+<p><strong><em>Ni</em></strong>ger, Ni<strong><em>ge</em></strong>ria, <strong><em>Chad</em></strong>, and Li<strong><em>be</em></strong>ria
 <strong><em>E</em></strong>gypt, Be<strong><em>nin</em></strong>, and Gabon.</p>
 
-<p><strong><em>Tan</em></strong>za<strong><em>ni</em></strong>a, So<strong><em>ma</em></strong>lia, <strong><em>Ken</em></strong>ya, and <strong><em>Ma</em></strong>li<br />
+<p><strong><em>Tan</em></strong>za<strong><em>ni</em></strong>a, So<strong><em>ma</em></strong>lia, <strong><em>Ken</em></strong>ya, and <strong><em>Ma</em></strong>li
 Si<strong><em>er</em></strong>ra Le<strong><em>one</em></strong>, and Al<strong><em>giers</em></strong>,</p>
 
-<p>Da<strong><em>ho</em></strong>mey, Na<strong><em>mi</em></strong>bia, <strong><em>Se</em></strong>negal, <strong><em>Li</em></strong>bya<br />
+<p>Da<strong><em>ho</em></strong>mey, Na<strong><em>mi</em></strong>bia, <strong><em>Se</em></strong>negal, <strong><em>Li</em></strong>bya
 <strong><em>Ca</em></strong>meroon, <strong><em>Con</em></strong>go, Zai<strong><em>re</em></strong>.</p>
 
-<p>E<strong><em>thio</em></strong>pia, <strong><em>Gui</em></strong>nea-Bis<strong><em>sau</em></strong>, Mada<strong>ga</strong>scar<br />
+<p>E<strong><em>thio</em></strong>pia, <strong><em>Gui</em></strong>nea-Bis<strong><em>sau</em></strong>, Mada<strong>ga</strong>scar
 <strong><em>Rwan</em></strong>da, Mah<strong><em>ore</em></strong>, and Cay<strong><em>man</em></strong>,</p>
 
 <p>Hong <strong><em>Kong</em></strong>, Abu <strong><em>Dha</em></strong>bi, Qa<strong><em>tar</em></strong>, Yugo<strong><em>sla</em></strong>via&hellip;</p>
 
-<p><strong>Crete</strong>, Mauri<strong><em>ta</em></strong>nia<br />
-<strong><em>Then</em></strong> Transyl<strong><em>via</em></strong>nia,<br />
+<p><strong>Crete</strong>, Mauri<strong><em>ta</em></strong>nia
+<strong><em>Then</em></strong> Transyl<strong><em>via</em></strong>nia,
 <strong><em>Mo</em></strong>naco, <strong><em>Liech</em></strong>tenstein</p>
 
-<p><strong><em>Mal</em></strong>ta, and <strong><em>Pa</em></strong>estine,<br />
+<p><strong><em>Mal</em></strong>ta, and <strong><em>Pa</em></strong>estine,
 <strong>Fi</strong>ji, Au<strong><em>str</em></strong>alia, Su<strong><em>dan</em></strong>.</p>
 
   </div>
@@ -343,6 +324,18 @@ Si<strong><em>er</em></strong>ra Le<strong><em>one</em></strong>, and Al<strong>
     
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+
+
+
 
 
 

@@ -11,36 +11,20 @@
   <title>Google Calendar for LPSS Colleagues</title>
 
 
-  <meta name="description" content="Add Calendar to mobile devices  Login your LiPing domain account in the web browser first
- Go to www.google.com
- username: lpXXX@liping.edu.hk
- password: please ask ITAV team if you didn’t get the password
-  Go to calendar view or press this link https://calendar.google.com/calendar
- Go to Other Calendar section and paste the link below to the box “Add a colleague’s calendar”
- liping.edu.hk_0jfuie399d0elvaac06k0hur8o@group.calendar.google.com
-   Then you will see the word “School Calendar” under the Other Calendar section.">
-  <meta property="og:description" content="Add Calendar to mobile devices  Login your LiPing domain account in the web browser first
- Go to www.google.com
- username: lpXXX@liping.edu.hk
- password: please ask ITAV team if you didn’t get the password
-  Go to calendar view or press this link https://calendar.google.com/calendar
- Go to Other Calendar section and paste the link below to the box “Add a colleague’s calendar”
- liping.edu.hk_0jfuie399d0elvaac06k0hur8o@group.calendar.google.com
-   Then you will see the word “School Calendar” under the Other Calendar section.">
-  <meta name="twitter:description" content="Add Calendar to mobile devices  Login your LiPing domain account in the web browser first
- Go to www.google.com
- username: lpXXX@liping.edu.hk
- password: please ask ITAV team if you didn’t get the …">
+  <meta name="description" content="Add Calendar to mobile devices  Login your LiPing domain account in the web browser first  Go to www.google.com username: lpXXX@liping.edu.hk password: please ask ITAV team if you didn’t get the password  Go to calendar view or press this link https://calendar.google.com/calendar Go to Other Calendar section and paste the link below to the box “Add a colleague’s calendar”  liping.edu.hk_0jfuie399d0elvaac06k0hur8o@group.calendar.google.com   Then you will see the word “School Calendar” under the Other Calendar section.">
+  <meta property="og:description" content="Add Calendar to mobile devices  Login your LiPing domain account in the web browser first  Go to www.google.com username: lpXXX@liping.edu.hk password: please ask ITAV team if you didn’t get the password  Go to calendar view or press this link https://calendar.google.com/calendar Go to Other Calendar section and paste the link below to the box “Add a colleague’s calendar”  liping.edu.hk_0jfuie399d0elvaac06k0hur8o@group.calendar.google.com   Then you will see the word “School Calendar” under the Other Calendar section.">
+  <meta name="twitter:description" content="Add Calendar to mobile devices  Login your LiPing domain account in the web browser first  Go to www.google.com username: lpXXX@liping.edu.hk password: please ask ITAV team if you didn’t get the …">
 
 
 <meta name="author" content="CyrusN"/>
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
 <script src='/js/jquery-3.2.1.slim.min.js'></script>
 <script src='/js/popper.min.js'></script>
 <script src='/js/bootstrap.min.js' ></script>
-<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+
 
 
 <script src=' /js/lunr.min.js '></script>
@@ -49,7 +33,8 @@
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
-<script src="/js/main.js"></script>
+<script src='/js/main.js'></script>
+<script src='/js/helper.js'></script>
 
 
 <script>
@@ -68,7 +53,6 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
 
 
@@ -80,9 +64,9 @@ var Paginator = {}
 </head>
 <body>
   <div class="bg-light d-md-flex justify-content-center">
-    <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
-      href="https://cyrusn.github.io">
+      href='https://cyrusn.github.io'>
       CyrusN
     </a>
     <button
@@ -141,14 +125,14 @@ var Paginator = {}
         
       </ul>
     </div>
-    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
   </nav>
 </div>
 
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-success text-light">
+      <div class="modal-header bg-info text-light">
         <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="text-light">&times;</span>
@@ -161,9 +145,8 @@ var Paginator = {}
               <li><code>Space</code> to search</li>
               <li><code>Enter</code> to start navigate in results</li>
               <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list</li>
-              <li><code>J / K</code> can also scroll up and down in page</li>
-              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
+              <li><code>H / L</code> to navigate the page number</li>
               <li><code>[ / ]</code> to navigate the navbar</li>
           </ul>
         </p>
@@ -190,7 +173,6 @@ var Paginator = {}
   
 </small>
 
-
 <small>
 
   <a class="badge badge-secondary" href="/tags/calendar">calendar</a>
@@ -203,7 +185,6 @@ var Paginator = {}
 
 
 
-
   </p>
   <hr>
   <div id="content">
@@ -212,55 +193,47 @@ var Paginator = {}
 <h1 id="add-calendar-to-mobile-devices">Add Calendar to mobile devices</h1>
 
 <ol>
-<li>Login your LiPing domain account in the web browser first<br />
+<li>Login your LiPing domain account in the web browser first
 
 <ul>
-<li>Go to <a href="www.google.com" target="_blank">www.google.com</a><br /></li>
-<li>username: lpXXX@liping.edu.hk<br /></li>
-<li>password: please ask ITAV team if you didn’t get the password<br /></li>
+<li>Go to <a href="www.google.com" target="_blank">www.google.com</a></li>
+<li>username: lpXXX@liping.edu.hk</li>
+<li>password: please ask ITAV team if you didn’t get the password</li>
 </ul></li>
-<li>Go to calendar view or press this link <a href="https://calendar.google.com/calendar" target="_blank">https://calendar.google.com/calendar</a><br /></li>
-<li>Go to Other Calendar section and paste the link below to the box “Add a colleague’s calendar”<br />
+<li>Go to calendar view or press this link <a href="https://calendar.google.com/calendar" target="_blank">https://calendar.google.com/calendar</a></li>
+<li>Go to Other Calendar section and paste the link below to the box “Add a colleague’s calendar”
 
 <ul>
-<li>liping.edu.hk_0jfuie399d0elvaac06k0hur8o@group.calendar.google.com<br /></li>
-<li><img src="./01.png" alt="image" /><br /></li>
+<li>liping.edu.hk_0jfuie399d0elvaac06k0hur8o@group.calendar.google.com</li>
+<li><img src="./01.png" alt="image" /></li>
 </ul></li>
-<li>Then you will see the word “School Calendar” under the Other Calendar section.<br /></li>
-<li>If you want to access the calendar through your mobile devices, go to the link below<br />
+<li>Then you will see the word “School Calendar” under the Other Calendar section.</li>
+<li>If you want to access the calendar through your mobile devices, go to the link below
 
 <ul>
-<li><a href="https://calendar.google.com/calendar/syncselect" target="_blank">https://calendar.google.com/calendar/syncselect</a><br /></li>
-<li>Check the box next to School Calendar (Read Only)<br /></li>
-<li>Press the save button after you checked the box<br /></li>
+<li><a href="https://calendar.google.com/calendar/syncselect" target="_blank">https://calendar.google.com/calendar/syncselect</a></li>
+<li>Check the box next to School Calendar (Read Only)</li>
+<li>Press the save button after you checked the box</li>
 </ul></li>
-<li>Add your <code>liping.edu.hk</code> Domain account to your mobile devices, you may find the instructions from the link below<br />
+<li>Add your <code>liping.edu.hk</code> Domain account to your mobile devices, you may find the instructions from the link below
 
 <ul>
-<li><a href="https://www.recovery-android.com/add-google-account-on-android.html" target="_blank">How to Add Google Account on Android Device</a><br /></li>
-<li><a href="http://www.imore.com/how-to-set-up-mail-contacts-calendars-iphone-ipad#Gmail" target="_blank">How to set up mail, contacts, and calendars on iPhone and iPad | iMore</a><br /></li>
+<li><a href="https://www.recovery-android.com/add-google-account-on-android.html" target="_blank">How to Add Google Account on Android Device</a></li>
+<li><a href="http://www.imore.com/how-to-set-up-mail-contacts-calendars-iphone-ipad#Gmail" target="_blank">How to set up mail, contacts, and calendars on iPhone and iPad | iMore</a></li>
 </ul></li>
-<li>Last but not least, contact the IT experts around you if you didn’t understand the sentences above.<br /></li>
-<li>Enjoy<br />
-<br /></li>
+<li>Last but not least, contact the IT experts around you if you didn’t understand the sentences above.</li>
+<li>Enjoy</li>
 </ol>
 
 <h1 id="p-s">P.S.</h1>
 
 <ul>
-<li>Events with the title started with a asterisk character (*) haven’t been confirmed the date.<br />
+<li>Events with the title started with a asterisk character (*) haven’t been confirmed the date.
 
 <ul>
-<li>i.e.  * Free Hall from HKDSE centre on 1 April 17<br /></li>
+<li>i.e.  * Free Hall from HKDSE centre on 1 April 17</li>
 </ul></li>
-<li>This is not an official calendar, please ref to school calendar sent by Jessica Kan for the most accurate one.<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br /></li>
+<li>This is not an official calendar, please ref to school calendar sent by Jessica Kan for the most accurate one.</li>
 </ul>
 
   </div>
@@ -294,6 +267,18 @@ var Paginator = {}
     
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+
+
+
 
 
 

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <title>Auth in Golang</title>
+
+
+  <meta name="description" content="Some examples about authentication in Golang with JWTs">
+  <meta property="og:description" content="Some examples about authentication in Golang with JWTs">
+  <meta name="twitter:description" content="Some examples about authentication in Golang with JWTs">
+
+
+<meta name="author" content="CyrusN"/>
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+<script src='/js/jquery-3.2.1.slim.min.js'></script>
+<script src='/js/popper.min.js'></script>
+<script src='/js/bootstrap.min.js' ></script>
+
+
+
+<script src=' /js/lunr.min.js '></script>
+
+
+<link rel="stylesheet" type="text/css" href='/css/style.css'>
+
+
+<script src='/js/main.js'></script>
+<script src='/js/helper.js'></script>
+
+
+<script>
+const pageKind = "page"
+const navLinks = ['/']
+
+  navLinks.push("\/note\/")
+
+  navLinks.push("\/project\/")
+
+  navLinks.push("\/slide\/")
+
+  navLinks.push("\/tags\/")
+
+  navLinks.push("\/page\/about\/")
+
+
+var Paginator = {}
+</script>
+
+
+
+
+
+
+
+</head>
+<body>
+  <div class="bg-light d-md-flex justify-content-center">
+  <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand text-center"
+      href='https://cyrusn.github.io'>
+      CyrusN
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Note" href="/note/">Note</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Project" href="/project/">Project</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Slide" href="/slide/">Slide</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Tags" href="/tags/">Tags</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="About" href="/page/about/">About</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
+  </nav>
+</div>
+
+<div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-info text-light">
+        <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body py-1">
+        <p class="text-secondary">
+          <ul class="list-unstyled">
+              <li><code>Q</code> to go home</li>
+              <li><code>Space</code> to search</li>
+              <li><code>Enter</code> to start navigate in results</li>
+              <li><code>Enter again</code> to go to selected page</li>
+              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
+              <li><code>H / L</code> to navigate the page number</li>
+              <li><code>[ / ]</code> to navigate the navbar</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container mt-2 mx-auto mb-4">
+    
+<h1 class="display-4 text-center">Auth in Golang</h1>
+<hr>
+<div class="mx-auto">
+  
+  <h3 class="text-muted">Some examples about authentication in Golang with JWTs</h3>
+  
+  
+  <p class="text-muted font-weight-bold">Created on 2017-12-12</p>
+  
+  
+  <p>
+    <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-secondary" href="/tags/golang">golang</a>
+
+  <a class="badge badge-secondary" href="/tags/auth">auth</a>
+
+  <a class="badge badge-secondary" href="/tags/login">login</a>
+
+</small>
+
+
+
+  </p>
+  <hr>
+  <div id="content">
+    
+
+<!-- MarkdownTOC -->
+
+<ul>
+<li><a href="#concept">Concept</a></li>
+<li><a href="#example">Example</a>
+
+<ul>
+<li><a href="#example-of-using-middleware">Example of using middleware</a></li>
+</ul></li>
+<li><a href="#reference">Reference</a></li>
+</ul>
+
+<!-- /MarkdownTOC -->
+
+<h1 id="concept">Concept</h1>
+
+<p>JWT have 3 session, <code>header</code>, <code>payload</code> and <code>signature</code>. Information are stored in payload session which can be read
+without authentication, therefore no secret information should be stored there. Server parses JWT token stored in header in every
+http request for authenticated.</p>
+
+<p>In server side, using middelware for <code>http.Handler</code> function if the request are involved with authentication. System can also store
+user information like username and scope in JWT payload session further usage.</p>
+
+<p>Client should store the given JWT token (return by login or auth request from server side) in header, so that server can validate
+JWT token in header for authentication.</p>
+
+<h1 id="example">Example</h1>
+
+<h2 id="example-of-using-middleware">Example of using middleware</h2>
+
+<p>Using middleware on http.handler with <a href="http://www.gorillatoolkit.org/pkg/mux" target="_blank"><strong>gorilla multiplexer</strong></a></p>
+
+<pre><code class="language-go">package main
+
+import &quot;github.com/gorilla/mux&quot;
+
+func main() {
+	r := mux.NewRouter()
+
+	// api that not need to get authentication
+	r.Handle(&quot;/&quot;, HomeHandler).Methods(&quot;GET&quot;)
+
+	// api that need to get authentication
+	r.Handle(&quot;/path/need/authentication&quot;, AuthMiddleware(SomeHandler)).Methods(&quot;GET&quot;)
+
+  srv := &amp;http.Server{
+    Handler:      r,
+    Addr:         &quot;127.0.0.1:8000&quot;,
+    // Good practice: enforce timeouts for servers you create!
+    WriteTimeout: 15 * time.Second,
+    ReadTimeout:  15 * time.Second,
+	}
+
+	log.Fatal(srv.ListenAndServe())
+}
+
+func AuthMiddleware(next http.Handler) http.Handler {
+  return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+    token := r.Header.Get(&quot;jwt-token&quot;)  // any key that client used to store jwt token
+
+		err := SomeCodeValidateJWTToken(token)
+		if err != nil {
+			fmt.Fprint(w, &quot;Unauthorized request&quot;)
+		} else {
+    	next.ServeHTTP(w, r) // ServeHTTP run execute next handler
+		}
+  })
+}
+
+func HomeHandler(w http.ResponseWriter, r *http.Request) {
+	// some code ...
+}
+
+func SomeHandler(w http.ResponseWriter, r *http.Request) {
+	// some code ...
+}
+</code></pre>
+
+<h1 id="reference">Reference</h1>
+
+<ul>
+<li><a href="https://jwt.io/" target="_blank">JSON Web Tokens - jwt.io</a></li>
+<li><a href="http://www.gorillatoolkit.org/pkg/mux" target="_blank">mux - Gorilla, the golang web toolkit</a></li>
+<li><a href="https://auth0.com/blog/authentication-in-golang/" target="_blank">Authentication in Golang with JWTs</a></li>
+<li>How to use mddleware in golang <code>http.Handler</code> - <a href="http://www.alexedwards.net/blog/a-recap-of-request-handling" target="_blank">A Recap of Request Handling in Go</a></li>
+</ul>
+
+  </div>
+</div>
+
+<hr>
+<div class="disqus-comments mx-auto px-5">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cyrusngithubio" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+
+    
+<link rel="stylesheet" href='/css/atom-one-dark.css'>
+<script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>

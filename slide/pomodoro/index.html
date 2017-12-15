@@ -1,19 +1,16 @@
 <!DOCTYPE html>
+<html>
 <head>
   <meta charset="utf-8">
   
-  <link rel="stylesheet" href="/css/remark.css">
+  <link rel="stylesheet" href='/css/remark.css'>
   <script src='/js/remark-latest.min.js'></script>
 
-  
-
-  
-
-
-
 </head>
+
 <body>
-  <textarea id="source">class: center, middle
+<textarea id="source">
+class: center, middle
 
 # 提升生產力及專注力
 ## GTD &amp; 蕃茄工作法
@@ -75,38 +72,34 @@
 [&amp;3]: http://www.moosti.com/
 [&amp;5]: https://en.wikipedia.org/wiki/Pomodoro_Technique
 [&amp;4]: https://en.wikipedia.org/wiki/Getting_Things_Done
-[image]: https://dl.dropboxusercontent.com/s/hs9jspievysiptw/flow.svg</textarea>
+[image]: https://dl.dropboxusercontent.com/s/hs9jspievysiptw/flow.svg
+</textarea>
+
+<script src='/js/helper.js'></script>
+<script>
   
+  
+  
+  const option = {}
+  const obj = Object.assign({}, {"highlight-lines":true,"highlight-style":"atom-one-dark","navigation":{"click":true,"scroll":false},"ratio":"4:3"}, "")
 
-  <script>
-    
-    
-    
-    const option = {}
-    const obj = Object.assign({}, {"highlight-lines":true,"highlight-style":"atom-one-dark","navigation":{"click":true,"scroll":false},"ratio":"4:3"}, "")
-
-    function dashToCamelCase (word) {
-      return word.split("-").map((arr, n) =>
-        ( n === 0 ) ? arr : (arr[0].toUpperCase() + arr.slice(1))
-        ).join("")
-    }
-
-    for (const key in obj) {
-      option[dashToCamelCase(key)] = obj[key]
-    }
-
-    
-    const slideshow = remark.create(option)
-    
-  </script>
+  for (const key in obj) {
+    option[dashToCamelCase(key)] = obj[key]
+  }
 
   
-  <script type="text/javascript">
-    document.onkeypress = ({which, keyCode} = window.event) => {
-      const charCode = (typeof which === 'number') ? which : keyCode
-      if (charCode === 113) {
-        window.location.href = '/'
-      }
+  const slideshow = remark.create(option)
+  
+</script>
+
+
+<script>
+  document.onkeypress = ({which, keyCode} = window.event) => {
+    const charCode = (typeof which === 'number') ? which : keyCode
+    if (charCode === 113) {
+      window.location.href = '/'
     }
-  </script>
+  }
+</script>
 </body>
+</html>

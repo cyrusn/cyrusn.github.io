@@ -7,10 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
     <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
-    <lastBuildDate>Wed, 29 Nov 2017 11:39:19 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 12 Dec 2017 11:51:54 +0800</lastBuildDate>
     
 	<atom:link href="https://cyrusn.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Auth in Golang</title>
+      <link>https://cyrusn.github.io/note/auth-in-golang/</link>
+      <pubDate>Tue, 12 Dec 2017 11:51:54 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/auth-in-golang/</guid>
+      <description>Concept Example  Example of using middleware  Reference  Concept JWT have 3 session, header, payload and signature. Information are stored in payload session which can be read without authentication, therefore no secret information should be stored there. Server parses JWT token stored in header in every http request for authenticated.
+In server side, using middelware for http.Handler function if the request are involved with authentication. System can also store user information like username and scope in JWT payload session further usage.</description>
+    </item>
+    
+    <item>
+      <title>Symposium on Individual Life Planning</title>
+      <link>https://cyrusn.github.io/slide/symposium-on-individual-life-planning/</link>
+      <pubDate>Wed, 06 Dec 2017 07:59:57 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/symposium-on-individual-life-planning/</guid>
+      <description> class: center middle inverse
+S.K.H. Li Ping Secondary School class: middle
+Useful Practices in Supporting Junior Secondary Students with Special Educational Needs </description>
+    </item>
+    
+    <item>
+      <title>Latex</title>
+      <link>https://cyrusn.github.io/note/latex/</link>
+      <pubDate>Tue, 05 Dec 2017 09:21:44 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/latex/</guid>
+      <description> Cheat Sheet  Download  Using displaystyle We can use \displaystyle to make font look better, here is the difference.
+ Add nothing or using \textstyle   The quadratic equation is $\textstyle x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}$
+  Using \displaystyle   The quadratic equation is $\displaystyle x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}$
+ </description>
+    </item>
+    
+    <item>
+      <title>Photography</title>
+      <link>https://cyrusn.github.io/note/photography/</link>
+      <pubDate>Tue, 05 Dec 2017 08:28:03 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/photography/</guid>
+      <description> Reference  超詳盡攝影教學！101個新手必學的攝影技巧 - 攝影入門 Fotobeginner.com  </description>
+    </item>
     
     <item>
       <title>ABCJS</title>
@@ -18,8 +60,7 @@
       <pubDate>Wed, 29 Nov 2017 11:39:19 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/abcjs/</guid>
-      <description>References  ABC Music Notation
-  Example - Lyrics  function show (nav, id) { $(`#${nav}-${id}`).show() $(`#${nav}-link-${id}`).addClass(&#39;active&#39;) } function hide (nav, id) { $(`#${nav}-${id}`).hide() $(`#${nav}-link-${id}`).removeClass(&#39;active&#39;) } function select (nav, id) { if (nav === &#39;score&#39;) { show(&#39;score&#39;, id) hide(&#39;code&#39;, id) } else if (nav === &#39;code&#39;) { show(&#39;code&#39;, id) hide(&#39;score&#39;, id) } }  Score  Code    X: 1 T: Misirlou C: N.Roubanis 1934 O: Greece M: 4/4 L: 1/8 K: Gm % |: &#34;</description>
+      <description>References  paulrosen/abcjs: javascript for rendering abc music notation ABC Music Notation  Example - Lyrics Score   Code     X: 1 T: Misirlou C: N.Roubanis 1934 O: Greece M: 4/4 L: 1/8 K: Gm % |: &#34;D&#34;D3 E ^F2 G2 | A3B ^c2BA | A8- | A8 | w: 1.~Mi-sir-lou mou i gli-kia sou ma-tia w: 2.~Mav-ro ma-ta Mi-sir-lou mou tre-lli | D3E ^F2G2 | A3B ^c2BA | A8- | A8 | w: Flo-ga m&#39;e-hi~i-na-psi mes tin kar-dia w: Ti zo-i m&#39;al-la-zo me-na fi-li      X: 1 T: Misirlou C: N.</description>
     </item>
     
     <item>
@@ -28,7 +69,7 @@
       <pubDate>Wed, 29 Nov 2017 11:29:10 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/backing-voice/</guid>
-      <description>黃金時代   function show (nav, id) { $(`#${nav}-${id}`).show() $(`#${nav}-link-${id}`).addClass(&#39;active&#39;) } function hide (nav, id) { $(`#${nav}-${id}`).hide() $(`#${nav}-link-${id}`).removeClass(&#39;active&#39;) } function select (nav, id) { if (nav === &#39;score&#39;) { show(&#39;score&#39;, id) hide(&#39;code&#39;, id) } else if (nav === &#39;code&#39;) { show(&#39;code&#39;, id) hide(&#39;score&#39;, id) } }  Score  Code    T: 黃金時代 K: D M: 4/4 L: 1/8 V:1 name=&#34;Vocal&#34; V:2 name=&#34;Chorus&#34; % [V:1] &#34;D&#34;dA/2A/2 -Ad &#34;</description>
+      <description>黃金時代 Score   Code     T: 黃金時代 K: D M: 4/4 L: 1/8 V:1 name=&#34;Vocal&#34; V:2 name=&#34;Chorus&#34; % [V:1] &#34;D&#34;dA/2A/2 -Ad &#34;A&#34;cA/2A/2 z2 |&#34;G&#34;Bd/2d/2 -dG &#34;A&#34;F2 E2| w: 你 和 誰 - 結 伴 前 來 是 否 比 - 我 精 采 [V:2] fd/2d/2 -df ec/2c/2 z2 |z8|      T: 黃金時代 K: D M: 4/4 L: 1/8 V:1 name=&#34;Vocal&#34; V:2 name=&#34;</description>
     </item>
     
     <item>
@@ -37,7 +78,8 @@
       <pubDate>Tue, 28 Nov 2017 21:28:46 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/jazz/</guid>
-      <description>function show (nav, id) { $(`#${nav}-${id}`).show() $(`#${nav}-link-${id}`).addClass(&#39;active&#39;) } function hide (nav, id) { $(`#${nav}-${id}`).hide() $(`#${nav}-link-${id}`).removeClass(&#39;active&#39;) } function select (nav, id) { if (nav === &#39;score&#39;) { show(&#39;score&#39;, id) hide(&#39;code&#39;, id) } else if (nav === &#39;code&#39;) { show(&#39;code&#39;, id) hide(&#39;score&#39;, id) } }  Score  Code    K: C &#34;Dm7&#34;[DCF]|&#34;G7&#34;[GBDF]|&#34;Cmaj7&#34;[CEGB]||   K: C &#34;Dm7&#34;[DCF]|&#34;G7&#34;[GBDF]|&#34;Cmaj7&#34;[CEGB]||      ABCJS.renderAbc(&#39;score-1&#39;, &#39;\nK: C\n\x22Dm7\x22[DCF]|\x22G7\x22[GBDF]|\x22Cmaj7\x22[CEGB]||\n&#39;, {}, { &#39;responsive&#39;: &#39;resize&#39;, &#39;add_classes&#39;: true }, { &#39;oneSvgPerLine&#39;: true })  This is the basic chord of jazz music.</description>
+      <description> Score   Code     K: C &#34;Dm7&#34;[DCF]|&#34;G7&#34;[GBDF]|&#34;Cmaj7&#34;[CEGB]||      K: C &#34;Dm7&#34;[DCF]|&#34;G7&#34;[GBDF]|&#34;Cmaj7&#34;[CEGB]||       const config = { &#39;responsive&#39;: &#39;resize&#39;, &#39;add_classes&#39;: true } ABCJS.renderAbc(&#39;abcjs-src-1&#39;, &#39;\nK: C\n\x22Dm7\x22[DCF]|\x22G7\x22[GBDF]|\x22Cmaj7\x22[CEGB]||\n&#39;, {}, config, { })  This is the basic chord of jazz music.
+References  Jazz harmony - Wikiwand  </description>
     </item>
     
     <item>
@@ -46,31 +88,7 @@
       <pubDate>Sat, 18 Nov 2017 01:47:41 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/graphql/</guid>
-      <description> Reference  The steady rise of GraphQL – freeCodeCamp
- Passage with alot of reference for GraphQL
-   </description>
-    </item>
-    
-    <item>
-      <title>Applying Web-based Resources</title>
-      <link>https://cyrusn.github.io/slide/applying_web_based_resources/</link>
-      <pubDate>Tue, 14 Nov 2017 10:55:10 +0800</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/slide/applying_web_based_resources/</guid>
-      <description>Agenda  About Me
- History (TimelineJS)
- Examples
- Mock Multiple Pathway
- Taiwan Further Study
-  To use or not to use
- Google Servies
- Google Form
-  Google Script
-  About Me  Math Major
- D in comp 102 (HKUST) Just before 2012 Tons of information SLP + OLE
-  Examples  Subject Selection System
- Mock Multiple Pathway
-  To use or not to use class: split-20</description>
+      <description> Reference  The steady rise of GraphQL – freeCodeCamp  Passage with alot of reference for GraphQL  graphql with go and postgresql  </description>
     </item>
     
     <item>
@@ -79,26 +97,7 @@
       <pubDate>Mon, 13 Nov 2017 08:43:26 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/software-design/</guid>
-      <description>SDD (Software design document) Template  TOC
- Introduction
- Purpose
- Scope
- Overview
-  System Overview
- System Architecture
- Architecture Design
- Decomposition Description
- Design Rationale
-  Data Design
- Data Description
- Data Dictionary
-  Component Design
- Human Interface Design
- Overview of User Interface
- Screen Images
- Screen Objects and Actions
-  Requirements Matrix
-  Cucumber and Gherkin  Writing Features - Gherkin Language — Behat 2.</description>
+      <description>SDD (Software design document) Template  TOC Introduction  Purpose Scope Overview  System Overview System Architecture  Architecture Design Decomposition Description Design Rationale  Data Design  Data Description Data Dictionary  Component Design Human Interface Design  Overview of User Interface Screen Images Screen Objects and Actions  Requirements Matrix  Cucumber and Gherkin  Writing Features - Gherkin Language — Behat 2.5.3 documentation Reference·Cucumber How To Write Well-Formed User Stories Business Analyst | User Stories and Use Cases - Don’t Use Both!</description>
     </item>
     
     <item>
@@ -108,20 +107,7 @@
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/introduction-to-raspberry-pi/</guid>
       <description>class: center middle inverse
-Introduction to Raspberry-Pi  Agenda  Raspberry Pi
- What is Raspberry-Pi
- Raspberry-Pi vs Audrino vs Microbit
- What is GPIO?
- Setup
- Introduction to 16 common sensors
- e.g. Blinking LED
- e.g. Blinking LED cont...
- Similar code in Scratch2?
- Programming Learning
- Top 10 Raspberry Pi Projects for Beginners
- Reference
- Thanks
-   class: center
+Introduction to Raspberry-Pi  Agenda  Raspberry Pi What is Raspberry-Pi Raspberry-Pi vs Audrino vs Microbit What is GPIO? Setup Introduction to 16 common sensors e.g. Blinking LED e.g. Blinking LED cont... Similar code in Scratch2? Programming Learning Top 10 Raspberry Pi Projects for Beginners Reference Thanks   class: center
 Raspberry Pi    RASPBERRY PI 3 MODEL B RASPBERRY PI ZERO W         More Powerful Much Lighter     What is Raspberry-Pi  A small and affordable computer that you can use to learn programming</description>
     </item>
     
@@ -132,12 +118,7 @@ Raspberry Pi    RASPBERRY PI 3 MODEL B RASPBERRY PI ZERO W         More Powerful
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/math-resources/</guid>
       <description> $$ \alpha $$
-Reference  資源下載 - 超研教育｜中學數學補習社｜Band 1補習學府｜補習課程｜暑期班
- CE, DSE Maths Pastpaper &amp;amp; Marking Scheme 歷屆試題 | 知新教育
- 學校沒有教的數學
- (Part 1-Q1-14) 2015 DSE 數學卷一長問題 Math Paper 1 應該暫時係最詳細既答案 - 經數樂園－學習變有趣～
- 數學補習 | 數學 2015 paper II 卷二 詳細答案 - Knight Mathematics 數學補習 - 中學專科數學補習社 - DSE數學 - IB/IGCSE/GCE - 自修生
-  </description>
+Reference  資源下載 - 超研教育｜中學數學補習社｜Band 1補習學府｜補習課程｜暑期班 CE, DSE Maths Pastpaper &amp;amp; Marking Scheme 歷屆試題 | 知新教育 學校沒有教的數學 (Part 1-Q1-14) 2015 DSE 數學卷一長問題 Math Paper 1 應該暫時係最詳細既答案 - 經數樂園－學習變有趣～ 數學補習 | 數學 2015 paper II 卷二 詳細答案 - Knight Mathematics 數學補習 - 中學專科數學補習社 - DSE數學 - IB/IGCSE/GCE - 自修生  </description>
     </item>
     
     <item>
@@ -146,9 +127,7 @@ Reference  資源下載 - 超研教育｜中學數學補習社｜Band 1補習學
       <pubDate>Wed, 18 Oct 2017 18:56:52 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/sublime-text/</guid>
-      <description> Plugin  Creating Sublime Text 3 Plugins - Part 1 | CNP
- Sublime Text - Plugin API Reference
-  </description>
+      <description> Plugin  Creating Sublime Text 3 Plugins - Part 1 | CNP Sublime Text - Plugin API Reference  </description>
     </item>
     
     <item>
@@ -157,10 +136,7 @@ Reference  資源下載 - 超研教育｜中學數學補習社｜Band 1補習學
       <pubDate>Mon, 16 Oct 2017 16:05:23 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/project/blink_led/</guid>
-      <description>  Introduction
- Setting
- Python Code
-  Introduction Making Blinking LED is just like writing a hello world programme in engineering.
+      <description>  Introduction Setting Python Code  Introduction Making Blinking LED is just like writing a hello world programme in engineering.
 Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GPIO.BCM) GPIO.set(LED, GPIO.OUT) GPIO.setwarnings(False) print(&amp;quot;Programme start.&amp;quot;) GPIO.output(LED, True) time.sleep(0.5) GPIO.output(LED, False) time.sleep(0.5) print(&amp;quot;Programme closed.&amp;quot;)  </description>
     </item>
     
@@ -170,8 +146,7 @@ Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GP
       <pubDate>Sat, 14 Oct 2017 21:38:03 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/python/</guid>
-      <description> Tools  Format String
-  </description>
+      <description> Tools  Format String  </description>
     </item>
     
     <item>
@@ -180,22 +155,7 @@ Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GP
       <pubDate>Tue, 19 Sep 2017 09:44:09 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/raspberry-pi/</guid>
-      <description>Setting
- Links
- Pin
- Examples
- Some Projects
- Some thoughts
- Setting brightness of Touch led
- Sensors
- Others
- Sensor HAT
- ADC (Analog to Digital Convertor)
-  Setting  Raspberry Pi Documentation
- Installation - Raspberry Pi Documentation
- VNC (Virtual Network Computing) - Raspberry Pi Documentation
- SSH (Secure Shell) - Raspberry Pi Documentation
- Passwordless SSH access - Raspberry Pi Documentation</description>
+      <description>Setting Links Pin Examples Some Projects Some thoughts Setting brightness of Touch led Sensors Others Sensor HAT ADC (Analog to Digital Convertor)  Setting  Raspberry Pi Documentation Installation - Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Sense HAT at Raspberry Pi GPIO Pinout  Links  5 Amazing Gadgets Built On Raspberry Pi - YouTube How to make a DIY Raspberry Pi Arcade Cabinet!</description>
     </item>
     
     <item>
@@ -204,21 +164,14 @@ Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GP
       <pubDate>Wed, 13 Sep 2017 21:31:16 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/yakko-s-world-lyric/</guid>
-      <description>United States, Canada, Mexico, Panama
-Haiti, Jamaica, Peru,
-Republic Dominican, Cuba, Carribean
-Greenland, El Salvador too.
-Puerto Rico, Columbia, Venezuela
-Honduras, Guyana, and still,
-Guatemala, Bolivia, then Argentina
-And Ecuador, Chile, Brazil.
-Costa Rica, Belize, Nicaragua, Bermuda
-Bahamas, Tobago, San Juan,
-Paraguay, Uruguay, Surinam And French Guiana
-Barbados, and Guam.
-Norway, and Sweden, and Iceland, and Finland and
-Germany now ~ want peace,
-Switzerland, Austria, Czech, Slovakia</description>
+      <description>United States, Canada, Mexico, Panama Haiti, Jamaica, Peru,
+Republic Dominican, Cuba, Carribean Greenland, El Salvador too.
+Puerto Rico, Columbia, Venezuela Honduras, Guyana, and still,
+Guatemala, Bolivia, then Argentina And Ecuador, Chile, Brazil.
+Costa Rica, Belize, Nicaragua, Bermuda Bahamas, Tobago, San Juan,
+Paraguay, Uruguay, Surinam And French Guiana Barbados, and Guam.
+Norway, and Sweden, and Iceland, and Finland and Germany now ~ want peace,
+Switzerland, Austria, Czech, Slovakia Italy, Turkey, and Greece.</description>
     </item>
     
     <item>
@@ -227,16 +180,7 @@ Switzerland, Austria, Czech, Slovakia</description>
       <pubDate>Tue, 05 Sep 2017 10:58:58 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/education/</guid>
-      <description>  學校課程持續更新
- STEM
- C&amp;amp;A
-  學校課程持續更新  學校課程持續更新
-  STEM  科學教育課程指引 (小一至中六)
- 數學教育課程指引 (小一至中六)
- 《推動STEM教育 — 發揮創意潛能》報告
- 科技教育課程指引 (小一至中六)
-  C&amp;amp;A  課程文件
-  </description>
+      <description>  學校課程持續更新 STEM C&amp;amp;A  學校課程持續更新  學校課程持續更新  STEM  科學教育課程指引 (小一至中六) 數學教育課程指引 (小一至中六) 《推動STEM教育 — 發揮創意潛能》報告 科技教育課程指引 (小一至中六)  C&amp;amp;A  課程文件  </description>
     </item>
     
     <item>
@@ -255,11 +199,7 @@ Switzerland, Austria, Czech, Slovakia</description>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/grammer/</guid>
       <description> English Grammer 101
-Tenses    Descibe future event  Will vs Going To Differences - GrammarBank
-  FANBOYS  Writing Compound Sentences Using FANBOYS
-  Participles  What are participles?
- Participial phrase
-  </description>
+Tenses    Descibe future event  Will vs Going To Differences - GrammarBank  FANBOYS  Writing Compound Sentences Using FANBOYS  Participles  What are participles? Participial phrase  </description>
     </item>
     
     <item>
@@ -268,9 +208,7 @@ Tenses    Descibe future event  Will vs Going To Differences - GrammarBank
       <pubDate>Sun, 20 Aug 2017 23:02:28 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/swimming/</guid>
-      <description> FreeStyle  3 Drills to Improve Freestyle Stroke | Swimming Lessons - YouTube
- Speedo&amp;rsquo;s Ultimate Guide to a Perfect Freestyle Swim Stroke! (Tutorial) - Presented by ProTriathlon - YouTube
-  </description>
+      <description> FreeStyle  3 Drills to Improve Freestyle Stroke | Swimming Lessons - YouTube Speedo&amp;rsquo;s Ultimate Guide to a Perfect Freestyle Swim Stroke! (Tutorial) - Presented by ProTriathlon - YouTube  </description>
     </item>
     
     <item>
@@ -279,14 +217,7 @@ Tenses    Descibe future event  Will vs Going To Differences - GrammarBank
       <pubDate>Sun, 09 Jul 2017 20:56:56 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/sql/</guid>
-      <description>Some of The Most Important SQL Commands  SELECT - extracts data from a database
- UPDATE - updates data in a database
- DELETE - deletes data from a database
- INSERT INTO - inserts new data into a database
- CREATE DATABASE - creates a new database
- ALTER DATABASE - modifies a database
- CREATE TABLE - creates a new table
- ALTER TABLE - modifies a table</description>
+      <description>Some of The Most Important SQL Commands  SELECT - extracts data from a database UPDATE - updates data in a database DELETE - deletes data from a database INSERT INTO - inserts new data into a database CREATE DATABASE - creates a new database ALTER DATABASE - modifies a database CREATE TABLE - creates a new table ALTER TABLE - modifies a table DROP TABLE - deletes a table CREATE INDEX - creates an index (search key) DROP INDEX - deletes an index  SQL PRIMARY KEY Constraint The PRIMARY KEY constraint uniquely identifies each record in a database table.</description>
     </item>
     
     <item>
@@ -295,9 +226,7 @@ Tenses    Descibe future event  Will vs Going To Differences - GrammarBank
       <pubDate>Sun, 09 Jul 2017 14:55:02 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/dyson/</guid>
-      <description> How to clean the Dyson V6 / DC59 Cordless Vacuum Cleaner - YouTube
- Dyson V6 Absolute and V6 Mattress - Washing the filters (Official Dyson video) - YouTube
-  </description>
+      <description> How to clean the Dyson V6 / DC59 Cordless Vacuum Cleaner - YouTube Dyson V6 Absolute and V6 Mattress - Washing the filters (Official Dyson video) - YouTube  </description>
     </item>
     
     <item>
@@ -306,18 +235,7 @@ Tenses    Descibe future event  Will vs Going To Differences - GrammarBank
       <pubDate>Tue, 20 Jun 2017 19:05:48 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/stem-idea-on-education/</guid>
-      <description>Coding and Math
- Reference
- Statistic
- Engineering
- Some Idea from 青年會書院
- Ideas
- Model on STEM Education
- Resource
-  Coding and Math Reference  Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine
- UC Davis Center for Integrated Computing and STEM Education
- Zebra Puzzle - Wikiwand
- The Micro:bit Foundation is a global non-profit organisation making invention with technology fun for everyone!</description>
+      <description>Coding and Math Reference Statistic Engineering Some Idea from 青年會書院 Ideas Model on STEM Education Resource  Coding and Math Reference  Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine UC Davis Center for Integrated Computing and STEM Education Zebra Puzzle - Wikiwand The Micro:bit Foundation is a global non-profit organisation making invention with technology fun for everyone!  Statistic  What is STEM Education?</description>
     </item>
     
     <item>
@@ -327,15 +245,7 @@ Tenses    Descibe future event  Will vs Going To Differences - GrammarBank
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/pcvpet/</guid>
       <description>Notes on PCVPET  Vocational Education in Hong Kong
- Blue Collar
- Why MTR always out of order?
- The Event of Langham Place
- Air Conditional / escalator
- only fill up 25% of needs
-  Is that because the lack development of Vocational Training?
- Hong Kong need technician
- Student need to find what they will devote in and capable of.
- Earn And Learn Scheme 3 days works and 3 days study</description>
+ Blue Collar Why MTR always out of order? The Event of Langham Place Air Conditional / escalator  only fill up 25% of needs  Is that because the lack development of Vocational Training? Hong Kong need technician Student need to find what they will devote in and capable of. Earn And Learn Scheme 3 days works and 3 days study Pages - VPETCITY Home  Simple Game</description>
     </item>
     
     <item>
@@ -344,18 +254,7 @@ Tenses    Descibe future event  Will vs Going To Differences - GrammarBank
       <pubDate>Thu, 25 May 2017 15:03:22 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/signal/</guid>
-      <description> How to Kill a Process from the Command Line | Linux.com | The source for Linux information
- depth first vs breath first
-  </description>
-    </item>
-    
-    <item>
-      <title>Task Warrior</title>
-      <link>https://cyrusn.github.io/note/taskwarrior/</link>
-      <pubDate>Sun, 21 May 2017 18:33:42 +0800</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/taskwarrior/</guid>
-      <description>Taskwarrior Taskwarrior - What&amp;rsquo;s next?</description>
+      <description> How to Kill a Process from the Command Line | Linux.com | The source for Linux information depth first vs breath first  </description>
     </item>
     
     <item>
@@ -364,14 +263,7 @@ Tenses    Descibe future event  Will vs Going To Differences - GrammarBank
       <pubDate>Fri, 19 May 2017 09:50:13 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/google-calendar/</guid>
-      <description>Add Calendar to mobile devices  Login your LiPing domain account in the web browser first
- Go to www.google.com
- username: lpXXX@liping.edu.hk
- password: please ask ITAV team if you didn’t get the password
-  Go to calendar view or press this link https://calendar.google.com/calendar
- Go to Other Calendar section and paste the link below to the box “Add a colleague’s calendar”
- liping.edu.hk_0jfuie399d0elvaac06k0hur8o@group.calendar.google.com
-   Then you will see the word “School Calendar” under the Other Calendar section.</description>
+      <description>Add Calendar to mobile devices  Login your LiPing domain account in the web browser first  Go to www.google.com username: lpXXX@liping.edu.hk password: please ask ITAV team if you didn’t get the password  Go to calendar view or press this link https://calendar.google.com/calendar Go to Other Calendar section and paste the link below to the box “Add a colleague’s calendar”  liping.edu.hk_0jfuie399d0elvaac06k0hur8o@group.calendar.google.com   Then you will see the word “School Calendar” under the Other Calendar section.</description>
     </item>
     
     <item>
@@ -390,19 +282,9 @@ Tenses    Descibe future event  Will vs Going To Differences - GrammarBank
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/pomodoro/</guid>
       <description>class: center, middle
-提升生產力及專注力 GTD &amp;amp; 蕃茄工作法 Reference  The Pomodoro Technique® - proudly developed by Francesco Cirillo | Cirillo Company
- David Allen&amp;rsquo;s Getting Things Done® Methodology
-  工作時間  平日每天約4小時
- 假日每天約6小時
- 合共：
-4hr x 5day + 6hr x 2day = 32 hrs
- 如何保持專注?
-  規劃  每科應用15分鐘回顧及整理當天所學
- 功課應盡早完成
- 每天用盡所有工作時間
-  流程 
-Why?  何時做 &amp;gt; 何時交
- 計時能令人集中</description>
+提升生產力及專注力 GTD &amp;amp; 蕃茄工作法 Reference  The Pomodoro Technique® - proudly developed by Francesco Cirillo | Cirillo Company David Allen&amp;rsquo;s Getting Things Done® Methodology  工作時間  平日每天約4小時 假日每天約6小時 合共： 4hr x 5day + 6hr x 2day = 32 hrs 如何保持專注?  規劃  每科應用15分鐘回顧及整理當天所學 功課應盡早完成 每天用盡所有工作時間  流程 
+Why?  何時做 &amp;gt; 何時交 計時能令人集中  e.g. 考試、測驗   .split-50[ .column[
+參考資料  Online Pomodoro Timer Pomodoro Technique Getting Things Done ]  .</description>
     </item>
     
     <item>
@@ -411,13 +293,7 @@ Why?  何時做 &amp;gt; 何時交
       <pubDate>Mon, 15 May 2017 23:13:25 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/taiwan-study/</guid>
-      <description>Useful Links  學士班適用簡章2017
- Q&amp;amp;A
- 來台就學費用估算
- 入學暨來臺相關規定
- 赴臺升學小冊子(新版).pdf
-  資格 「僑生」指海外出生連續居留迄今，或最近連續居留海外六年以上，並取得僑居地永久或長期居留證件回國就學之華裔學生。
-但就讀大學醫學、牙醫及中醫學系者，其連續居留年限為八年以上。</description>
+      <description>Useful Links  學士班適用簡章2017 Q&amp;amp;A 來台就學費用估算 入學暨來臺相關規定 赴臺升學小冊子(新版).pdf  資格 「僑生」指海外出生連續居留迄今，或最近連續居留海外六年以上，並取得僑居地永久或長期居留證件回國就學之華裔學生。 但就讀大學醫學、牙醫及中醫學系者，其連續居留年限為八年以上。</description>
     </item>
     
     <item>
@@ -426,27 +302,7 @@ Why?  何時做 &amp;gt; 何時交
       <pubDate>Mon, 15 May 2017 23:12:02 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/4&#43;1/</guid>
-      <description>JUPAS 各大學入學要求  4C+2X (3322+33)
- HKU
- CUHK
- HKUST
- PolyU
-  4C+2X (3322+22)
- CityU
-  4C+1X (2018年要求：3322+3)
- HKBU
-  4C+1X (3322+2)
- LU
- EdUHK
- OUHK
- SSSDP
-   Reference  JUPAS Website
-  Accept M as X  CityU
- CUHK
- PolyU
- HKUST
- HKU (部分課程)
-  HD / AD  基本入學要求：22 + 222</description>
+      <description> JUPAS 各大學入學要求  4C+2X (3322+33)  HKU CUHK HKUST PolyU  4C+2X (3322+22)  CityU  4C+1X (2018年要求：3322+3)  HKBU  4C+1X (3322+2)  LU EdUHK OUHK SSSDP   Reference  JUPAS Website  Accept M as X  CityU CUHK PolyU HKUST HKU (部分課程)  HD / AD  基本入學要求：22 + 222  Taiwan 個人申請  跟據校內成績、讀書計劃及師長推薦  聯合分發  中英數 ＋ 2科（包括通識），詳見下表。  Reference  香港學生適用簡章(PDF)   Mainland  內地免試招生  按個別內地大學收生準則而定 一般普通類別收生要求為4C (3322) 部分大學會提高要求（頂尖大學），只考慮修讀4C+2X的學生  Reference  內地部分高校免試招生香港學生計劃指南2016-17   </description>
     </item>
     
     <item>
@@ -455,9 +311,7 @@ Why?  何時做 &amp;gt; 何時交
       <pubDate>Mon, 15 May 2017 22:04:30 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/medicine/</guid>
-      <description>Relief of pain and inflammation beside Panadol
-- Celecoxib (痛博士 200mg)
-- mefenamic acid capsule 250mg (Ponstan GE)
+      <description>Relief of pain and inflammation beside Panadol - Celecoxib (痛博士 200mg) - mefenamic acid capsule 250mg (Ponstan GE)
  Mefenamic acid is used to treat painful conditions such as arthritis, pain associated with heavy menstrual bleeding, and pain after surgical operations.
  </description>
     </item>
@@ -468,15 +322,7 @@ Why?  何時做 &amp;gt; 何時交
       <pubDate>Mon, 15 May 2017 14:21:39 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/career-theory/</guid>
-      <description>Donal Super Theory  Super&amp;rsquo;s Career Development Theory - IResearchNet
- career-theory-model-super.pdf
- The Life Career Rainbow - Get a better work/life balance - Career Development from MindTools.com
-  Reference  LifeDesign.pdf
- Holland’s Theory of Career Choice | Career Key
- The Big Five Career Theories
- The Serious Leisure Perspective (SLP) - Welcome
- Careers and Career Information - CareerOneStop
- Free Personality Test | 16Personalities</description>
+      <description> Donal Super Theory  Super&amp;rsquo;s Career Development Theory - IResearchNet career-theory-model-super.pdf The Life Career Rainbow - Get a better work/life balance - Career Development from MindTools.com  Reference  LifeDesign.pdf Holland’s Theory of Career Choice | Career Key The Big Five Career Theories The Serious Leisure Perspective (SLP) - Welcome Careers and Career Information - CareerOneStop Free Personality Test | 16Personalities    </description>
     </item>
     
     <item>
@@ -485,8 +331,7 @@ Why?  何時做 &amp;gt; 何時交
       <pubDate>Fri, 12 May 2017 13:43:00 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/tmux/</guid>
-      <description>using tmux # list all session tmux ls # attach to session tmux attach -t sessionName # create new session tmux new -s sessionName # kill session tmux kill-session -t sessionName  navigate in tmux  Ctrl-b then [ then you can use your normal navigation keys to scroll around (eg. Up Arrow or PgDn).
- Press q to quit scroll mode.
+      <description>using tmux # list all session tmux ls # attach to session tmux attach -t sessionName # create new session tmux new -s sessionName # kill session tmux kill-session -t sessionName  navigate in tmux  Ctrl-b then [ then you can use your normal navigation keys to scroll around (eg. Up Arrow or PgDn). Press q to quit scroll mode.
  just quit terminal for exit the session</description>
     </item>
     
@@ -496,10 +341,7 @@ Why?  何時做 &amp;gt; 何時交
       <pubDate>Fri, 12 May 2017 20:26:30 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/linux-arch/</guid>
-      <description>References  Build a Killer Customized Arch Linux Installation (and Learn All About Linux in the Process)
- Installation guide - ArchWiki
- Antergos | Your Linux. Always Fresh. Never Frozen.
-   The purpose of Antergos is to provide a modern, elegant, and powerful operating system based on one of the best Linux distributions available, Arch Linux. Users need not be linux experts nor developers in order to use Antergos.</description>
+      <description>References  Build a Killer Customized Arch Linux Installation (and Learn All About Linux in the Process) Installation guide - ArchWiki Antergos | Your Linux. Always Fresh. Never Frozen.   The purpose of Antergos is to provide a modern, elegant, and powerful operating system based on one of the best Linux distributions available, Arch Linux. Users need not be linux experts nor developers in order to use Antergos. From long-time linux users to linux users of only a few months, Antergos is for everyone.</description>
     </item>
     
     <item>
@@ -509,8 +351,7 @@ Why?  何時做 &amp;gt; 何時交
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/create-startup-script-in-linux/</guid>
       <description>Create a new script in /etc/init.d/myscript.
-vi /etc/init.d/myscript  (Obviously it doesn&amp;rsquo;t have to be called &amp;ldquo;myscript&amp;rdquo;.) In this script, do whatever you want to do. Perhaps just run the script you mentioned.
-#!/bin/sh /path/to/my/script.sh  Make it executable.
+vi /etc/init.d/myscript  (Obviously it doesn&amp;rsquo;t have to be called &amp;ldquo;myscript&amp;rdquo;.) In this script, do whatever you want to do. Perhaps just run the script you mentioned. #!/bin/sh /path/to/my/script.sh  Make it executable.
 chmod 755 /etc/init.d/myscript  Configure the init system to run this script at startup.
 update-rc.d myscript defaults  ystem to run this script at startup.
 update-rc.d myscript defaults  </description>
@@ -541,8 +382,7 @@ To display both the kernel version and your system&amp;rsquo;s architecture (32-
       <pubDate>Sun, 09 Oct 2016 07:41:27 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/caddy/</guid>
-      <description> Installation # install caddy in linux commandline curl -fsSL https://getcaddy.com | bash -s search  Settng of Caddyfile for microservice TODO Make Caddy to serve https
-  </description>
+      <description> Installation # install caddy in linux commandline curl -fsSL https://getcaddy.com | bash -s search  Settng of Caddyfile for microservice TODO Make Caddy to serve https  </description>
     </item>
     
     <item>
@@ -551,11 +391,7 @@ To display both the kernel version and your system&amp;rsquo;s architecture (32-
       <pubDate>Fri, 07 Oct 2016 23:35:46 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/https-and-jwt/</guid>
-      <description> Links  Self-signed certificate - Wikiwand
- Let&amp;rsquo;s Encrypt - Free SSL/TLS Certificates
- JWT, JWS and JWE for Not So Dummies!
- JSON Web Token Series - YouTube
-  </description>
+      <description> Links  Self-signed certificate - Wikiwand Let&amp;rsquo;s Encrypt - Free SSL/TLS Certificates JWT, JWS and JWE for Not So Dummies! JSON Web Token Series - YouTube  </description>
     </item>
     
     <item>
@@ -564,10 +400,7 @@ To display both the kernel version and your system&amp;rsquo;s architecture (32-
       <pubDate>Fri, 07 Oct 2016 23:14:04 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/batch-download-youtube/</guid>
-      <description> Using youtube-dl and xargs cat &amp;lt;&amp;lt; EOF | xargs -I@ youtube-dl https://www.youtube.com/watch?v=@ YouTubeVideoID-1 YouTubeVideoID-2 YouTubeVideoID-3 EOF  Useful options  --extract-audio for download audio only
- --audio-format mp3 choose the audio format
- --audio-quality 2 set the audio quality, 0(best)-9(worst), (default 5)
-  </description>
+      <description> Using youtube-dl and xargs cat &amp;lt;&amp;lt; EOF | xargs -I@ youtube-dl https://www.youtube.com/watch?v=@ YouTubeVideoID-1 YouTubeVideoID-2 YouTubeVideoID-3 EOF  Useful options  --extract-audio for download audio only --audio-format mp3 choose the audio format --audio-quality 2 set the audio quality, 0(best)-9(worst), (default 5)  </description>
     </item>
     
     <item>
@@ -576,13 +409,7 @@ To display both the kernel version and your system&amp;rsquo;s architecture (32-
       <pubDate>Wed, 05 Oct 2016 00:23:42 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/web-authentication/</guid>
-      <description>Notes  Authentication in Golang with JWTs
- Cookies vs Tokens: The Definitive Guide
- The Ins and Outs of Token Based Authentication | Scotch  Enterprise APIs and OAuth: Have it All
- Secure your users&amp;rsquo; passwords from the browser on
-  Authentication Protocols  Basic access authentication - Wikiwand
- Digest access authentication - Wikiwand
- Secure Remote Password protocol - Wikiwand
+      <description>Notes  Authentication in Golang with JWTs Cookies vs Tokens: The Definitive Guide The Ins and Outs of Token Based Authentication | Scotch  Enterprise APIs and OAuth: Have it All Secure your users&amp;rsquo; passwords from the browser on  Authentication Protocols  Basic access authentication - Wikiwand Digest access authentication - Wikiwand Secure Remote Password protocol - Wikiwand
  Anatomy of a zero-knowledge web application - Clipperz, register your creations on the blockchain</description>
     </item>
     
@@ -592,10 +419,7 @@ To display both the kernel version and your system&amp;rsquo;s architecture (32-
       <pubDate>Tue, 04 Oct 2016 11:56:18 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/vim/</guid>
-      <description>VIM Basic  Vim Cheat Sheet - English
- VimGenius
- vimgifs
-  Some useful skills Update VIM Pathogen Plugin for i in ~/.vim/bundle/*; do git -C $i pull; done
+      <description>VIM Basic  Vim Cheat Sheet - English VimGenius vimgifs  Some useful skills Update VIM Pathogen Plugin for i in ~/.vim/bundle/*; do git -C $i pull; done
 Insert across multi-lines Select the lines you want to modify using Ctrl-v. Press: I: Insert before what&amp;rsquo;s selected. A: Append after what&amp;rsquo;s selected. c: Replace what&amp;rsquo;s selected. Type the new text. Press Esc to apply the changes to all selected lines.</description>
     </item>
     
@@ -615,8 +439,7 @@ Insert across multi-lines Select the lines you want to modify using Ctrl-v. Pres
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/nvalt-setting/</guid>
       <description>Custom Preview Theme
- Notational Velocity (nvALT) Custom Stylesheet and Markup HTML
-  </description>
+ Notational Velocity (nvALT) Custom Stylesheet and Markup HTML  </description>
     </item>
     
     <item>
@@ -627,14 +450,8 @@ Insert across multi-lines Select the lines you want to modify using Ctrl-v. Pres
       <guid>https://cyrusn.github.io/note/config-digtal-ocean-droplet-as-microservice/</guid>
       <description>Objective This page is a notes for setting apache server for my digital ocean droplet
 Setting Apache2  in file /etc/hosts
- change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS
-  change Port
- in file /etc/apache2/port.conf
- add ServerName localhost
- change the line listen *:80 to listen 127.0.0.1:4000
- disable other modules &amp;lt;IfModule ssl_module&amp;gt; and &amp;lt;IfModule mod_gnutls.c&amp;gt;
- in file /etc/apache2/site-enabled/000-default.conf
- change the line &amp;lt;VirtualHost *:80&amp;gt; to &amp;lt;VirtualHost localhost:4000&amp;gt;</description>
+ change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS  change Port
+ in file /etc/apache2/port.conf add ServerName localhost change the line listen *:80 to listen 127.0.0.1:4000 disable other modules &amp;lt;IfModule ssl_module&amp;gt; and &amp;lt;IfModule mod_gnutls.c&amp;gt; in file /etc/apache2/site-enabled/000-default.conf change the line &amp;lt;VirtualHost *:80&amp;gt; to &amp;lt;VirtualHost localhost:4000&amp;gt;  restart apache2</description>
     </item>
     
     <item>
@@ -673,8 +490,7 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
       <pubDate>Sat, 26 Mar 2016 12:31:11 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/digital-ocean/</guid>
-      <description>connect to console # prepare ssh keys first # login droplet ssh root@ip.of.the.droplet # to copy a file from B to A while logged into B scp /path/to/file username@a:/path/to/destination # to copy a file from B to A while logged into A scp username@b:/path/to/file /path/to/destination  perpare ssh key  How To Use SSH Keys with DigitalOcean Droplets | DigitalOcean
-  achieve  Save a snapshot and delete droplet</description>
+      <description> connect to console # prepare ssh keys first # login droplet ssh root@ip.of.the.droplet # to copy a file from B to A while logged into B scp /path/to/file username@a:/path/to/destination # to copy a file from B to A while logged into A scp username@b:/path/to/file /path/to/destination  perpare ssh key  How To Use SSH Keys with DigitalOcean Droplets | DigitalOcean  achieve  Save a snapshot and delete droplet restore droplet by the snapshot  Update Server&amp;rsquo;s Kernel  How To Update a DigitalOcean Server&amp;rsquo;s Kernel | DigitalOcean  </description>
     </item>
     
     <item>
@@ -683,9 +499,7 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
       <pubDate>Tue, 08 Dec 2015 08:35:55 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/leveldb/</guid>
-      <description>Links  Main Page
- [YouTube Introduction][levelDB]
-  [levelDB]: https://www.youtube.com/watch?v=sR7p_JbEip0) bEip0</description>
+      <description>Links  Main Page [YouTube Introduction][levelDB]  [levelDB]: https://www.youtube.com/watch?v=sR7p_JbEip0) bEip0</description>
     </item>
     
     <item>
@@ -694,13 +508,7 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
       <pubDate>Thu, 01 Oct 2015 13:32:12 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/macos-setting/</guid>
-      <description>Custom OSX  Remove shift key augmentation for Mission Control animation
- Enable the three finger drag in Accessibility
-  Terminal  Autocomplete echo &amp;quot;set completion-ignore-case On&amp;quot; &amp;gt;&amp;gt; ~/.inputrc
- install command line tools in XCode xcode-select --install
-  zsh  install .oh-my-zsh
- symlink for setting zsh
-  ## for installation of zsh ln -s Dropbox/MacSetting/Terminal/cyrusn ./.cyrusn ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zshrc ~/ ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom ~/ ## for installation of coreutil/.</description>
+      <description>Custom OSX  Remove shift key augmentation for Mission Control animation Enable the three finger drag in Accessibility  Terminal  Autocomplete echo &amp;quot;set completion-ignore-case On&amp;quot; &amp;gt;&amp;gt; ~/.inputrc install command line tools in XCode xcode-select --install  zsh  install .oh-my-zsh symlink for setting zsh  ## for installation of zsh ln -s Dropbox/MacSetting/Terminal/cyrusn ./.cyrusn ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zshrc ~/ ln -s ~/Dropbox/MacSetting/Terminal/zsh/.zsh-custom ~/ ## for installation of coreutil/.dir_colors ln -s ~/Dropbox/MacSetting/Terminal/coreutil/.</description>
     </item>
     
     <item>
@@ -709,8 +517,7 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
       <pubDate>Fri, 24 Jul 2015 23:02:19 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/alfred/</guid>
-      <description> How to use node on alfred workflow node&amp;lt;&amp;lt;-&amp;quot;code&amp;quot; // your code here // e.g. console.log(&amp;quot;hello world&amp;quot;); code  iTerm2 Integration curl --silent &#39;https://raw.githubusercontent.com/stuartcryan/custom-iterm-applescripts-for-alfred/master/custom_iterm_script_iterm_2.9.applescript&#39; | pbcopy   stuartcryan/custom-iterm-applescripts-for-alfred: Custom iTerm Applescripts for Alfred
-  </description>
+      <description> How to use node on alfred workflow node&amp;lt;&amp;lt;-&amp;quot;code&amp;quot; // your code here // e.g. console.log(&amp;quot;hello world&amp;quot;); code  iTerm2 Integration curl --silent &#39;https://raw.githubusercontent.com/stuartcryan/custom-iterm-applescripts-for-alfred/master/custom_iterm_script_iterm_2.9.applescript&#39; | pbcopy   stuartcryan/custom-iterm-applescripts-for-alfred: Custom iTerm Applescripts for Alfred  </description>
     </item>
     
     <item>
@@ -719,12 +526,7 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
       <pubDate>Mon, 29 Jun 2015 07:58:25 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/google-chrome-app/</guid>
-      <description> Links  Adblock Plus - Chrome Web Store
- Tampermonkey - Chrome Web Store
- Wikiwand: Wikipedia Modernized - Chrome Web Store
- Markdown Preview Plus - Chrome Web Store
- Postman - REST Client - Chrome Web Store
-  </description>
+      <description> Links  Adblock Plus - Chrome Web Store Tampermonkey - Chrome Web Store Wikiwand: Wikipedia Modernized - Chrome Web Store Markdown Preview Plus - Chrome Web Store Postman - REST Client - Chrome Web Store  </description>
     </item>
     
     <item>
@@ -733,16 +535,8 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
       <pubDate>Fri, 05 Jun 2015 08:53:37 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/programming-concept/</guid>
-      <description>Links
- leesei&amp;rsquo;s choice
- Naming
- What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?
-  [Programming Principal][pp]
- reference
-  Links  How to make your code self-documenting? | CodeUtopia
- Separation of concerns - Wikipedia
- Garbage in, garbage out - Wikiwand
-  leesei&amp;rsquo;s choice Naming  寫出黎就要俾名，俾名啲concept 就清楚，code 亦自然清楚</description>
+      <description>Links leesei&amp;rsquo;s choice  Naming What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?  [Programming Principal][pp] reference  Links  How to make your code self-documenting? | CodeUtopia Separation of concerns - Wikipedia Garbage in, garbage out - Wikiwand  leesei&amp;rsquo;s choice Naming  寫出黎就要俾名，俾名啲concept 就清楚，code 亦自然清楚
+ What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?</description>
     </item>
     
     <item>
@@ -754,9 +548,7 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
       <description> Usecase Include and Extend uml - What&amp;rsquo;s is the difference between include and extend in use case diagram? - Stack Overflow
 Example Amazon Application Use Case Diagram
 Creole in notes notes in plantuml support Creole language Creole (markup) - Wikiwand)
-Links  UML 2.0 Tutorial - YouTube
- Unified Modeling Language (UML) description
-  </description>
+Links  UML 2.0 Tutorial - YouTube Unified Modeling Language (UML) description  </description>
     </item>
     
     <item>
@@ -765,10 +557,7 @@ Links  UML 2.0 Tutorial - YouTube
       <pubDate>Wed, 27 May 2015 12:45:16 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/javascript-on-osascript/</guid>
-      <description>Example  JXA-Cookbook
- Apple Release Notes
- JavaScript for OS X Automation by Example
-  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle: &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[&amp;amp;0].activeTab; var result = &#39;[&#39; + activeTab.</description>
+      <description>Example  JXA-Cookbook Apple Release Notes JavaScript for OS X Automation by Example  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle: &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[&amp;amp;0].activeTab; var result = &#39;[&#39; + activeTab.title() + &#39;](&#39; + activeTab.</description>
     </item>
     
     <item>
@@ -777,30 +566,7 @@ Links  UML 2.0 Tutorial - YouTube
       <pubDate>Tue, 26 May 2015 23:41:04 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/reading-list/</guid>
-      <description>Reading List  Ben Alman » Immediately-Invoked Function Expression (IIFE)
- This section demos loading different config depending on NODE_ENV.
- protecting-your-keys-from-github
- Papyros - Arch Linux.
- reSRC · RESTful Web Services
- Hub
- Demystifying Regular Expressions- YouTube Foundation of Apps
- TimeLine JS
- 淺談https
- Leesei&amp;rsquo;s shell notes
- Command Line Basic
- dotfile
- angular-strap-scrollspy.js at master · mgcrea-angular-strap · GitHub
- javascript - Properly Handing Anchors in AngularStrap&amp;rsquo;s ScrollSpy - Stack Overflow</description>
-    </item>
-    
-    <item>
-      <title>Wordpress Notes</title>
-      <link>https://cyrusn.github.io/note/wordpress/</link>
-      <pubDate>Tue, 26 May 2015 11:19:29 +0000</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/wordpress/</guid>
-      <description>theme Child Themes « WordPress Codex
-migrate Moving WordPress « WordPress Codex</description>
+      <description>Reading List  Ben Alman » Immediately-Invoked Function Expression (IIFE) This section demos loading different config depending on NODE_ENV. protecting-your-keys-from-github Papyros - Arch Linux. reSRC · RESTful Web Services Hub Demystifying Regular Expressions- YouTube Foundation of Apps TimeLine JS 淺談https Leesei&amp;rsquo;s shell notes Command Line Basic dotfile angular-strap-scrollspy.js at master · mgcrea-angular-strap · GitHub javascript - Properly Handing Anchors in AngularStrap&amp;rsquo;s ScrollSpy - Stack Overflow ngScrollSpy by mg twitter bootstrap - How to implement a scrollspy in angular.</description>
     </item>
     
     <item>
@@ -809,7 +575,7 @@ migrate Moving WordPress « WordPress Codex</description>
       <pubDate>Sun, 24 May 2015 22:36:53 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/useful-command-line-tools/</guid>
-      <description>Basic Redirect operators # pipe echo &amp;quot;hello world&amp;quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &amp;quot;hello world&amp;quot; &amp;gt; test.txt # redirect the standard output result to file (append) echo &amp;quot;hello world&amp;quot; &amp;gt;&amp;gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed &#39;s/ /_/g&#39; &amp;lt; test.txt &amp;gt; test_1.txt # line input cat &amp;lt;&amp;lt; end heredoc&amp;gt; hello heredoc&amp;gt; world heredoc&amp;gt; end  Useful Commands Cheatsheet  d to show directory history</description>
+      <description>Basic Redirect operators # pipe echo &amp;quot;hello world&amp;quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &amp;quot;hello world&amp;quot; &amp;gt; test.txt # redirect the standard output result to file (append) echo &amp;quot;hello world&amp;quot; &amp;gt;&amp;gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed &#39;s/ /_/g&#39; &amp;lt; test.txt &amp;gt; test_1.txt # line input cat &amp;lt;&amp;lt; end heredoc&amp;gt; hello heredoc&amp;gt; world heredoc&amp;gt; end  Useful Commands Cheatsheet  d to show directory history  type cd -number or directly type the number to go to directory  !</description>
     </item>
     
     <item>
@@ -818,8 +584,7 @@ migrate Moving WordPress « WordPress Codex</description>
       <pubDate>Fri, 22 May 2015 17:20:27 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/hardware-architecture/</guid>
-      <description>Basic  Hardware Basics - YouTube
-  what is legacy FGA: &amp;ldquo;legacy&amp;rdquo; is not a pejorative. Do not use it as such.
+      <description>Basic  Hardware Basics - YouTube  what is legacy FGA: &amp;ldquo;legacy&amp;rdquo; is not a pejorative. Do not use it as such.
 BIOS POST -&amp;gt; BIOS -&amp;gt; MBR of boot partition -&amp;gt; Bootloader -&amp;gt; Kernel -&amp;gt; init/systemd -&amp;gt; shell/display manager -&amp;gt; startx/xinit
 UEFI Unified Extensible Firmware Interface - ArchWiki</description>
     </item>
@@ -830,12 +595,7 @@ UEFI Unified Extensible Firmware Interface - ArchWiki</description>
       <pubDate>Fri, 22 May 2015 11:50:04 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/google-app-script/</guid>
-      <description>Links  Apps Script | Google Developers
-  Using html request to send form response  open inspecter in google form (view version, not editable one)
- find the input Tag of the question and copy it&amp;rsquo;s name. The name look like entry.933828429
- replace the word view in the link to formResponse
- https://docs.google.com/forms/d/e/1FAIpQLSdC2RD1aD4W4duLGDjxsVFDGvJW6IUhhxsBGWiQlV7TU_w5LA/formResponse
-  add the query to the end of the link look like above</description>
+      <description>Links  Apps Script | Google Developers  Using html request to send form response  open inspecter in google form (view version, not editable one) find the input Tag of the question and copy it&amp;rsquo;s name. The name look like entry.933828429 replace the word view in the link to formResponse  https://docs.google.com/forms/d/e/1FAIpQLSdC2RD1aD4W4duLGDjxsVFDGvJW6IUhhxsBGWiQlV7TU_w5LA/formResponse  add the query to the end of the link look like above  ?entry.933828429=Hello%20World where %20 mean space  if you need another question&amp;rsquo;s response, use &amp;amp; as seperator, like below.</description>
     </item>
     
     <item>
@@ -853,14 +613,10 @@ UEFI Unified Extensible Firmware Interface - ArchWiki</description>
       <pubDate>Sun, 10 May 2015 01:29:03 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/draw-more-work-less/</guid>
-      <description>[Some Links][some-links]
- [from leesei][from-leesei]
- [Text based tools][text-based-tools]
- [GUI Tools][gui-tools]
-   Some Links UML | leesei&amp;rsquo;s notebook Draw More, Work Less | [self employed] Draw More, Work Less PlantUML Mermaid
+      <description>[Some Links][some-links] [from leesei][from-leesei]  [Text based tools][text-based-tools] [GUI Tools][gui-tools]   Some Links UML | leesei&amp;rsquo;s notebook Draw More, Work Less | [self employed] Draw More, Work Less PlantUML Mermaid
 from leesei Unified Modeling Language (UML) Business Process Model and Notation (BPMN) is very similar to activity diagram. YANG Central
 Allen Holub&amp;rsquo;s UML Quick Reference
-Text based tools I used to use the GUI tool Dia.</description>
+Text based tools I used to use the GUI tool Dia. But it was very buggy and no longer updated.</description>
     </item>
     
     <item>
@@ -880,17 +636,7 @@ slidedown/slidedown</description>
       <pubDate>Sun, 10 May 2015 01:26:51 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/react/</guid>
-      <description>API notes and example  Top-Level API
- Component API
- Component Specs and ifecycle
- Tags and Attributes
- Event System
-  Ref Links Concept  React | A JavaScript library for building user interfaces
- Reactive MVC and the Virtual DOM &amp;ndash; Futurice
- ReactJS For Stupid People
- Component Interop With React And Custom Elements
- Josh Haberman: React Demystified
- Intro to the React Framework | Nettuts+</description>
+      <description>API notes and example  Top-Level API Component API Component Specs and ifecycle Tags and Attributes Event System  Ref Links Concept  React | A JavaScript library for building user interfaces Reactive MVC and the Virtual DOM &amp;ndash; Futurice ReactJS For Stupid People Component Interop With React And Custom Elements Josh Haberman: React Demystified Intro to the React Framework | Nettuts+ Integrating React and Flux with Angular  Tutorial  Learning React.</description>
     </item>
     
     <item>
@@ -899,15 +645,7 @@ slidedown/slidedown</description>
       <pubDate>Sun, 10 May 2015 01:22:16 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/basic-cs-knowledge/</guid>
-      <description>打底班  Programming Languages - YouTube
- Hardware Basics - YouTube
- Operating System Basics - YouTube
-  Free Courses  Coursera - Free Online Courses From Top Universities
-  JavaScript  JavaScript Not Working? Here are 10 Common JavaScript Problems | Toptal
- Learn All The Nodes
- Node Tuts // leesei: 我兩年前都係睇 Pedro，佢最近拍過晒
- JSConf - YouTube // leesei: 好很多，太舊唔洗睇
-  property, protoypal inheritance  JavaScript: proto</description>
+      <description>打底班  Programming Languages - YouTube Hardware Basics - YouTube Operating System Basics - YouTube  Free Courses  Coursera - Free Online Courses From Top Universities  JavaScript  JavaScript Not Working? Here are 10 Common JavaScript Problems | Toptal Learn All The Nodes Node Tuts // leesei: 我兩年前都係睇 Pedro，佢最近拍過晒 JSConf - YouTube // leesei: 好很多，太舊唔洗睇  property, protoypal inheritance  JavaScript: proto Object properties in JavaScript Properties in JavaScript: definition versus assignment JavaScript terminology: the two prototypes JavaScript properties: inheritance and enumerability JavaScript inheritance by example JavaScript inheritance: beyond the basics (video) Property assignment and the prototype chain A closer look at _.</description>
     </item>
     
     <item>
@@ -916,17 +654,7 @@ slidedown/slidedown</description>
       <pubDate>Sun, 10 May 2015 00:58:17 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/hapijs/</guid>
-      <description> HapiJS  hapi.js
- Tutorials
- Example: Hapi Mongoose Angular
-  Plugin  Plugin
- hapi-auth-basic
- hapi-session-mongo
- hapi-auth-cookie
- Best Practice Project Structure · Issue #2479 · hapijs/hapi
-  Reference  hapi-playground
-  My Notes  How to set CORS
-  // set CORS enable for all routes server.connection({ routes: { cors: { headers: [true], credentials: true } } });  </description>
+      <description> HapiJS  hapi.js Tutorials Example: Hapi Mongoose Angular  Plugin  Plugin hapi-auth-basic hapi-session-mongo hapi-auth-cookie Best Practice Project Structure · Issue #2479 · hapijs/hapi  Reference  hapi-playground  My Notes  How to set CORS  // set CORS enable for all routes server.connection({ routes: { cors: { headers: [true], credentials: true } } });  </description>
     </item>
     
     <item>
@@ -955,16 +683,10 @@ Use HTML Code and Javascript TimelineJS</description>
       <pubDate>Sun, 10 May 2015 00:47:48 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/swift/</guid>
-      <description>Start Developing iOS / OSX Apps The Swift Programming Language (Swift 2.2): About Swift
-Start Developing iOS Apps (Swift): Jump Right In
+      <description> Start Developing iOS / OSX Apps The Swift Programming Language (Swift 2.2): About Swift Start Developing iOS Apps (Swift): Jump Right In
 ICON for iOS Development 23,500 Icons - Free Download | Icons8
-Basic Keywords Control Flow  where (A switch case can use a where clause to check for additional conditions.)
-  Computed Properties  lazy
- get
- set
- willSet
- didSet
-  ## Instance Methods</description>
+Basic Keywords Control Flow  where (A switch case can use a where clause to check for additional conditions.)  Computed Properties  lazy get set willSet didSet  ## Instance Methods
+ self static mutating  Subscript  subscript  Inheritance  override super  Initialization  init convenience required  Deinitialization  deinit unowned  Type Casting  is as  Extension  extension  Protocols  protocol  Generic  Where Clauses  Access Control  public internal private  Summary of the Grammar Using Swift with Cocoa and Objective-C  attribute import @objc @IBOutlet @IBAction @IBDesignable strong weak  </description>
     </item>
     
     <item>
@@ -973,11 +695,7 @@ Basic Keywords Control Flow  where (A switch case can use a where clause to chec
       <pubDate>Sun, 10 May 2015 00:47:45 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/slidedownhtml-presentation/</guid>
-      <description> Slide Down  example
- github
-  RevealJS  RevealJS
- Pandoc
-  # pandoc convert md to RevealJS html pandoc -s --mathjax -i -t revealjs SLIDES.md -o example.html  </description>
+      <description> Slide Down  example github  RevealJS  RevealJS Pandoc  # pandoc convert md to RevealJS html pandoc -s --mathjax -i -t revealjs SLIDES.md -o example.html  </description>
     </item>
     
     <item>
@@ -986,18 +704,7 @@ Basic Keywords Control Flow  where (A switch case can use a where clause to chec
       <pubDate>Sun, 10 May 2015 00:47:40 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/project-and-todo/</guid>
-      <description> Install Script for My Mac  咁就寫做install script 放埋響個Terminal repo度啦
- 再加埋repo 條link 響個post
- 咁就同人地寫啲technical blog 一樣了 pull and 行install script 寫個script git pull oh-my-zsh同setup symlink
-  Google Analytics &amp;amp; Webmaster  reference
- post 個sitemap.xml 俾google 做index
- reference
-  Learn Basic Python Scripting counsellingSystem  nodejs
- golang
-  assembly code － MIPS  睇下去到低層個電腦做緊乜就可
- Instruction set
- MIPS assembly language
-  </description>
+      <description> Install Script for My Mac  咁就寫做install script 放埋響個Terminal repo度啦 再加埋repo 條link 響個post 咁就同人地寫啲technical blog 一樣了 pull and 行install script 寫個script git pull oh-my-zsh同setup symlink  Google Analytics &amp;amp; Webmaster  reference post 個sitemap.xml 俾google 做index reference  Learn Basic Python Scripting counsellingSystem  nodejs golang  assembly code － MIPS  睇下去到低層個電腦做緊乜就可 Instruction set MIPS assembly language  </description>
     </item>
     
     <item>
@@ -1006,18 +713,9 @@ Basic Keywords Control Flow  where (A switch case can use a where clause to chec
       <pubDate>Sun, 10 May 2015 00:47:23 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/alumni-webpage/</guid>
-      <description> Referece － Sticky Footer
-－ responsive-utilities
-Reminder  Don&amp;rsquo;t use bootstrap.js, use ui-bootstrap.js instead.
- jQuery is no longer useful
- ui-bootstrap.collapse
- beware the crash between collapse=&amp;quot;isCollapsed&amp;quot; and class=&amp;quot;visible-xs&amp;quot;
- use ui-bootstrap.dropdown
-   Leesei Suggestion  每次test isHide 唔好
- 響tagNames 加個`active field (boolean)
- 可以navbarTag onclick (jqlite 嘢) update active state ve field (boolean)
- 可以navbarTag onclick (jqlite 嘢) update active state
-  </description>
+      <description> Referece － Sticky Footer － responsive-utilities
+Reminder  Don&amp;rsquo;t use bootstrap.js, use ui-bootstrap.js instead. jQuery is no longer useful ui-bootstrap.collapse
+ beware the crash between collapse=&amp;quot;isCollapsed&amp;quot; and class=&amp;quot;visible-xs&amp;quot; use ui-bootstrap.dropdown   Leesei Suggestion  每次test isHide 唔好 響tagNames 加個`active field (boolean) 可以navbarTag onclick (jqlite 嘢) update active state ve field (boolean) 可以navbarTag onclick (jqlite 嘢) update active state  </description>
     </item>
     
     <item>
@@ -1035,13 +733,9 @@ Reminder  Don&amp;rsquo;t use bootstrap.js, use ui-bootstrap.js instead.
       <pubDate>Sun, 10 May 2015 00:47:16 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/mongoose.js-and-mongodb/</guid>
-      <description>Custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的
- 可以令 _id 有意思,
- e.g. studentSchema, use regno as custom _id
- e.g. teacherSchema, use teacherInitial as custom _id
-  use uuid if you need to have id before add new stuff
- e.g. attachmentSchema, need the id to rename the attachment before saving to database.
-   Schema.ObjectId  if no need to use custom _id then use Schema.</description>
+      <description>Custom _id  你schema 有 _id mongo 就唔同你gen, 亦唔可以用 Schema.ObjectId 做ref, 會認唔到type 的 可以令 _id 有意思,
+ e.g. studentSchema, use regno as custom _id e.g. teacherSchema, use teacherInitial as custom _id  use uuid if you need to have id before add new stuff
+ e.g. attachmentSchema, need the id to rename the attachment before saving to database.   Schema.ObjectId  if no need to use custom _id then use Schema.</description>
     </item>
     
     <item>
@@ -1050,18 +744,14 @@ Reminder  Don&amp;rsquo;t use bootstrap.js, use ui-bootstrap.js instead.
       <pubDate>Sun, 10 May 2015 00:47:15 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/polymer/</guid>
-      <description>Bower - Search
- Custom Elements - A Web Components Gallery for Modern Web Apps
- Google Web Components
- PolymerLabs · GitHub
- Web Components Catalog - Component Kitchen
+      <description>Bower - Search Custom Elements - A Web Components Gallery for Modern Web Apps Google Web Components PolymerLabs · GitHub Web Components Catalog - Component Kitchen
  寫響htm 叫declarative style, 用C/javascript 嗰啲叫imperative style
  declarative 易睇易明，但唔應該放logic
  angular 個template system 都有少少logic的 ng-if, ng-style, ng-show 都係做switching
  放個route definition 我個人接受唔到
  不過如果個route table 係獨立一個html define 我又okay 喎，咁佢就同一個json 等效
  我應該係接受唔到route definition 同view element inline
-  Copy By Value Vs By reference  | By value | By reference  &amp;mdash;&amp;mdash;- | &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;- | &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-</description>
+  Copy By Value Vs By reference  | By value | By reference  &amp;mdash;&amp;mdash;- | &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;- | &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;- Copy | The value is actually copied; there are two distinct, independent copies.</description>
     </item>
     
     <item>
@@ -1070,20 +760,11 @@ Reminder  Don&amp;rsquo;t use bootstrap.js, use ui-bootstrap.js instead.
       <pubDate>Sun, 10 May 2015 00:47:13 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/learning-progress/</guid>
-      <description>Computer Science Knowledge  big O
- Codecademy
-  Javascript  RPS exercise
- jsbooks
- Effective JavaScript 68 Specific Ways to Harness the Power of JavaScript
- Learning about iife, closure, lazy evaluation,
- iife reference
-  The Art of readable Coding
+      <description>Computer Science Knowledge  big O Codecademy  Javascript  RPS exercise jsbooks Effective JavaScript 68 Specific Ways to Harness the Power of JavaScript
+ Learning about iife, closure, lazy evaluation, iife reference  The Art of readable Coding
  Eloquent Javascript
   phantom.js for automate login the webpage
- leesei CTF example
- casperjs
- phantomjs
-  AngularJS  Understanding AngularJS – Simple Example</description>
+ leesei CTF example casperjs phantomjs  AngularJS  Understanding AngularJS – Simple Example AngularJS Fundamentals In 60-ish Minutes A Better Way to Learn AngularJS  Node.</description>
     </item>
     
     <item>
@@ -1093,9 +774,7 @@ Reminder  Don&amp;rsquo;t use bootstrap.js, use ui-bootstrap.js instead.
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/url-shortener-and-qr-code-generator/</guid>
       <description>Installation npm install -g goo.gl
-Google API OAuth for shortening a batch of links, create project for URL Shortener API. you will get 1,000,000 requests/day for FREE QR Code to a link  reference
- https://chart.googleapis.com/chart?chs=200x200&amp;amp;cht=qr&amp;amp;chl= + the link you need
-  Google Form Prefill https://docs.google.com/forms/d/Form_ID/viewform?entry.Q1_ID=Q1_ANS&amp;amp;entry.Q2_ID=Q2_ANS... 2_ID=Q2_ANS&amp;hellip;2_ID=Q2_ANS...\ ID=Q2_ANS&amp;hellip;ID=Q2_ANS... `</description>
+Google API OAuth for shortening a batch of links, create project for URL Shortener API. you will get 1,000,000 requests/day for FREE QR Code to a link  reference https://chart.googleapis.com/chart?chs=200x200&amp;amp;cht=qr&amp;amp;chl= + the link you need  Google Form Prefill https://docs.google.com/forms/d/Form_ID/viewform?entry.Q1_ID=Q1_ANS&amp;amp;entry.Q2_ID=Q2_ANS... 2_ID=Q2_ANS&amp;hellip;2_ID=Q2_ANS...\ ID=Q2_ANS&amp;hellip;ID=Q2_ANS... `</description>
     </item>
     
     <item>
@@ -1104,16 +783,8 @@ Google API OAuth for shortening a batch of links, create project for URL Shorten
       <pubDate>Sun, 10 May 2015 00:46:38 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/golang/</guid>
-      <description>Useful commands  update all packages go get -u all
-  Feautre  Embedding
-  Understanding Goroutine  Is golang goroutine a coroutine?
- Coroutine vs Continuation vs Generator
- Comparison with generators
-  MongoDB  mgo
- Painless Data Storage with MongoDB and Go
- Connecting to MongoDB with mgo and golang
-  Router  mux - Gorilla, the golang web toolkit
-  # Middleware</description>
+      <description>Useful commands  update all packages go get -u all  Feautre  Embedding  Understanding Goroutine  Is golang goroutine a coroutine? Coroutine vs Continuation vs Generator Comparison with generators  MongoDB  mgo Painless Data Storage with MongoDB and Go Connecting to MongoDB with mgo and golang  Router  mux - Gorilla, the golang web toolkit  # Middleware
+ justinas/alice: Painless middleware chaining for Go  Database Model Architecture  Go database/sql tutorial Practical Persistence in Go: Organising Database Access Practical Persistence in Go: SQL Databases How to use databases with Golang – Hacker Noon Architecture for a Golang Web App - Larry Price Trying Clean Architecture on Golang – Hacker Noon Applying The Clean Architecture to Go applications » The Log Book of Manuel Kiessling  Authentication  dgrijalva/jwt-go: Golang implementation of JSON Web Tokens (JWT) Golang Authentication Using JSON Web Tokens  Useful Package  PuerkitoBio/goquery: A little like that j-thing, only in Go.</description>
     </item>
     
     <item>
@@ -1122,12 +793,41 @@ Google API OAuth for shortening a batch of links, create project for URL Shorten
       <pubDate>Sun, 10 May 2015 00:46:36 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/gitbook/</guid>
-      <description>  Gitbook
- Modern book format and toolchain using Git and Markdown
-  Useful Plugins  katex
- sectionx
- responsive-iframes
-  </description>
+      <description>  Gitbook Modern book format and toolchain using Git and Markdown  Useful Plugins  katex sectionx responsive-iframes  </description>
+    </item>
+    
+    <item>
+      <title>豬腳薑烹調方法</title>
+      <link>https://cyrusn.github.io/note/pigs-feet-ginger/</link>
+      <pubDate>Sat, 26 Apr 2014 00:50:22 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/pigs-feet-ginger/</guid>
+      <description>豬腳薑烹調方法 每斤薑最少要一斤甜醋才能浸過面，所以5斤薑一定要5斤甜醋才足夠。 器材: 瓦煲首選，新瓦煲應用水浸過夜，然後再用。瓦煲的容量，5斤薑及5斤醋最小也要用10斤瓦煲 (未計豬腳及雞蛋) 。如用10斤薑及10斤醋自然最小也要用20斤瓦煲 (未計豬腳及雞蛋) ，如此類推。
+材料： 悅和特級甜醋，薑，豬腳，雞蛋，悅和黑糯米醋，鹽。婦女產後補身應用老薑，平常食用可用籽薑 (即煲即食) 。購買豬腳時應選擇可靠的肉檔，採用新鮮嫩豬手。
+準備工作：刮薑，烘乾 刮薑時薑用小刀去皮後，用水冲淨，拍裂小許，晒乾至爽身或用小量油、鹽於鑊中慢火煎乾，備用。婦女坐月時薑皮也可留起煲水抹身驅風。
+ 清洗薑身表面。 將薑皮清理乾清。 婦女坐月時薑皮可用留起煲水抹身。 把薑件拍扁備用。 晒乾至爽身或將薑件落鑊慢火，小油，小鹽，烘乾。  烹調方法： 浸薑醋－先用甜醋煮薑。把炒好的薑件放入瓦煲內，砌好然後再加入甜醋。反之如先落甜醋然後落薑，因薑是浮水的，甜醋末必能蓋過薑面。
+烹調要點： 起火用中火 (文火) ，太大火會將瓦煲煮裂，煲滾後，調至小火，繼續煲45分至60分後熄火，蓋好放屋內陰秋涼處，夏天每7至10天再煲滾一次，秋涼或冬天可10至15天再煲一次，滾後15分鐘立即熄火，如是大概煲兩至叁次後至小孩出世後備用。
+豬腳薑： 將已煮好的薑醋加入豬腳及雞蛋。此時根據個人的喜好，加入適量的腳手或豬腳，但要留意豬脚及豬手均要飛水去油，雞蛋煮熟後去殼，連同豬腳一齊燜腍可即食用。
+特級甜醋味道適中，適合一般家庭的口味，但如煲次數太多，水份及酸味揮發，薑醋會愈煲愈甜，此時可加入本廠的黑糯米醋，調至個人口味，重新煲滾即可食用。</description>
+    </item>
+    
+    <item>
+      <title>炒米茶</title>
+      <link>https://cyrusn.github.io/note/chao-mi-cha/</link>
+      <pubDate>Fri, 18 Apr 2014 00:44:01 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/chao-mi-cha/</guid>
+      <description>炒米茶 其實炒米茶(代茶)的作用, 是加強新陳代謝, 紓緩身體不適情況,另外產婦大多有胃寒情況,經常口淡淡,若果飲用一般滾水會增加口淡感覺, 容易出現作悶, 若不斷喝水, 就很容易出現胃脹.尿頻.便秘.腳水腫情況, 飲用代茶則可改善情況.所以產婦一般都會飲用代茶至滿月為止!!
+先說說用料&amp;hellip;
+炒米: 可以用：白米、紅米、糙米、黑糯米(會較前者為補)，全部一齊撈埋炒都可以，只選其一亦可! 不過建議如果是夏季出生的寶寶媽, 其實也不需太補, 否則會太過燥熱呢! 恐怕虛不受補呢!
+材料：  炒米 陳皮 (順產可以轉用薑) 元肉 杞子 淮山 黑豆 (餵人奶媽媽可以加黑豆去炒, 因為黑豆可以增加奶量, 不過一定要清晒惡露先好飲,因為黑豆好補血) 南棗 (順產適用)  注意事項
+ 紅棗、當歸勿用，因會旺血 陳皮越耐、越多年越好，建議用7年以上既陳皮，咁就唔駛去囊，因為去囊要沉水15分鐘後再用匙刮去囊，咁樣一齊入茶包袋好易會令到其他材料濕哂而變壞。 順產用薑建議飲時先加，唔好一齊入茶包袋，因為會令到其他材料濕哂而變壞。 所有材料都唔需要洗，保持乾爽，到飲用既時候，過一次熱水後，第二次既熱水就可以焗15分鐘飲得，每一包炒米茶可以返焗2-3次。  份量隨心： 炒米(2湯匙西式果d匙)、陳皮(隨心)、圓肉(5粒)、杞子(隨心)
+第一日：炒米（泰國紅米）＋ 陳皮 (順產可以用薑)
+第二日：炒米（泰國紅米）＋ 陳皮 ＋ 圓肉
+第三日直至坐完月：炒米（泰國紅米）＋ 陳皮 ＋ 圓肉 ＋ 杞子 (開刀生者適用)
+第四日直至坐完月：炒米（泰國紅米）＋ 陳皮 ＋ 圓肉 ＋ 杞子 ＋ 南棗（順產生者適用）
+開刀生B者, 只需要 &amp;ldquo;第一日、第二日、第三日&amp;rdquo; 順產生B者, 可整哂 &amp;ldquo;第一日、第二日、第三日、第四日&amp;rdquo;
+整好後入密實袋壓走多餘空氣, 收好係放係雪櫃就可以架啦, 到入院既時候記得帶埋去醫院就okay。</description>
     </item>
     
     <item>
@@ -1137,8 +837,7 @@ Google API OAuth for shortening a batch of links, create project for URL Shorten
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/page/about/</guid>
       <description>CyrusN is a math teacher in Hong Kong, eager to learn more in programming.
- A teacher has two jobs. Fill young minds with knowledge, yes. But more important, give those minds a compass so that that knowledge doesn&amp;rsquo;t go to waste.
-From the movie: Mr Holland&amp;rsquo;s Opus
+ A teacher has two jobs. Fill young minds with knowledge, yes. But more important, give those minds a compass so that that knowledge doesn&amp;rsquo;t go to waste. From the movie: Mr Holland&amp;rsquo;s Opus
  </description>
     </item>
     

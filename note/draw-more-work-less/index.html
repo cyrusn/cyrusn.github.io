@@ -11,37 +11,26 @@
   <title>Draw More Work Less</title>
 
 
-  <meta name="description" content="[Some Links][some-links]
- [from leesei][from-leesei]
- [Text based tools][text-based-tools]
- [GUI Tools][gui-tools]
-   Some Links UML | leesei&rsquo;s notebook Draw More, Work Less | [self employed] Draw More, Work Less PlantUML Mermaid
+  <meta name="description" content="[Some Links][some-links] [from leesei][from-leesei]  [Text based tools][text-based-tools] [GUI Tools][gui-tools]   Some Links UML | leesei&rsquo;s notebook Draw More, Work Less | [self employed] Draw More, Work Less PlantUML Mermaid
 from leesei Unified Modeling Language (UML) Business Process Model and Notation (BPMN) is very similar to activity diagram. YANG Central
 Allen Holub&rsquo;s UML Quick Reference
-Text based tools I used to use the GUI tool Dia.">
-  <meta property="og:description" content="[Some Links][some-links]
- [from leesei][from-leesei]
- [Text based tools][text-based-tools]
- [GUI Tools][gui-tools]
-   Some Links UML | leesei&rsquo;s notebook Draw More, Work Less | [self employed] Draw More, Work Less PlantUML Mermaid
+Text based tools I used to use the GUI tool Dia. But it was very buggy and no longer updated.">
+  <meta property="og:description" content="[Some Links][some-links] [from leesei][from-leesei]  [Text based tools][text-based-tools] [GUI Tools][gui-tools]   Some Links UML | leesei&rsquo;s notebook Draw More, Work Less | [self employed] Draw More, Work Less PlantUML Mermaid
 from leesei Unified Modeling Language (UML) Business Process Model and Notation (BPMN) is very similar to activity diagram. YANG Central
 Allen Holub&rsquo;s UML Quick Reference
-Text based tools I used to use the GUI tool Dia.">
-  <meta name="twitter:description" content="[Some Links][some-links]
- [from leesei][from-leesei]
- [Text based tools][text-based-tools]
- [GUI Tools][gui-tools]
-   Some Links UML | leesei&rsquo;s notebook Draw More, Work Less | [self employed] …">
+Text based tools I used to use the GUI tool Dia. But it was very buggy and no longer updated.">
+  <meta name="twitter:description" content="[Some Links][some-links] [from leesei][from-leesei]  [Text based tools][text-based-tools] [GUI Tools][gui-tools]   Some Links UML | leesei&rsquo;s notebook Draw More, Work Less | [self employed] Draw …">
 
 
 <meta name="author" content="CyrusN"/>
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
 <script src='/js/jquery-3.2.1.slim.min.js'></script>
 <script src='/js/popper.min.js'></script>
 <script src='/js/bootstrap.min.js' ></script>
-<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+
 
 
 <script src=' /js/lunr.min.js '></script>
@@ -50,7 +39,8 @@ Text based tools I used to use the GUI tool Dia.">
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
-<script src="/js/main.js"></script>
+<script src='/js/main.js'></script>
+<script src='/js/helper.js'></script>
 
 
 <script>
@@ -69,7 +59,6 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
 
 
@@ -81,9 +70,9 @@ var Paginator = {}
 </head>
 <body>
   <div class="bg-light d-md-flex justify-content-center">
-    <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
-      href="https://cyrusn.github.io">
+      href='https://cyrusn.github.io'>
       CyrusN
     </a>
     <button
@@ -142,14 +131,14 @@ var Paginator = {}
         
       </ul>
     </div>
-    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-success" data-toggle="modal" data-target="#tipsModal">tips</button>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
   </nav>
 </div>
 
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-success text-light">
+      <div class="modal-header bg-info text-light">
         <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="text-light">&times;</span>
@@ -162,9 +151,8 @@ var Paginator = {}
               <li><code>Space</code> to search</li>
               <li><code>Enter</code> to start navigate in results</li>
               <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list</li>
-              <li><code>J / K</code> can also scroll up and down in page</li>
-              <li><code>N / P</code> to navigate the page number</li>
+              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
+              <li><code>H / L</code> to navigate the page number</li>
               <li><code>[ / ]</code> to navigate the navbar</li>
           </ul>
         </p>
@@ -191,7 +179,6 @@ var Paginator = {}
   
 </small>
 
-
 <small>
 
   <a class="badge badge-secondary" href="/tags/plantuml">plantuml</a>
@@ -199,7 +186,6 @@ var Paginator = {}
   <a class="badge badge-secondary" href="/tags/uml">uml</a>
 
 </small>
-
 
 
 
@@ -211,13 +197,12 @@ var Paginator = {}
 <!-- MarkdownTOC -->
 
 <ul>
-<li>[Some Links][some-links]<br /></li>
-<li>[from leesei][from-leesei]<br />
+<li>[Some Links][some-links]</li>
+<li>[from leesei][from-leesei]
 
 <ul>
-<li>[Text based tools][text-based-tools]<br /></li>
-<li>[GUI Tools][gui-tools]<br />
-<br /></li>
+<li>[Text based tools][text-based-tools]</li>
+<li>[GUI Tools][gui-tools]</li>
 </ul></li>
 </ul>
 
@@ -242,10 +227,9 @@ var Paginator = {}
 <p>I am frustrated with the UI diagram apps:</p>
 
 <ul>
-<li>layout of components takes time<br /></li>
-<li>it is difficult to modify the diagrams in UI (especially for batch operations, e.g. rename, grouping)<br /></li>
-<li>application lock-in becaused of the saved file format<br />
-<br /></li>
+<li>layout of components takes time</li>
+<li>it is difficult to modify the diagrams in UI (especially for batch operations, e.g. rename, grouping)</li>
+<li>application lock-in becaused of the saved file format</li>
 </ul>
 
 <p>So I focused on tools that provides a DSL for drawing UML from plain text. Candidates are (ranked according to the criteria below):</p>
@@ -315,14 +299,13 @@ var Paginator = {}
 <p>I ended up choosing PlantUML because:</p>
 
 <ul>
-<li>the syntax is more familiar and flexible<br /></li>
-<li>active development<br /></li>
-<li>generates beautiful diagrams<br /></li>
-<li>styleable<br /></li>
-<li>supports more diagram types<br /></li>
-<li>easy to setup<br /></li>
-<li>binings to more projects indicates widespread usage<br />
-<br /></li>
+<li>the syntax is more familiar and flexible</li>
+<li>active development</li>
+<li>generates beautiful diagrams</li>
+<li>styleable</li>
+<li>supports more diagram types</li>
+<li>easy to setup</li>
+<li>binings to more projects indicates widespread usage</li>
 </ul>
 
 <p>BTW, blockdiag would be the first runner up. It also features several unique diagram types.</p>
@@ -336,48 +319,13 @@ var Paginator = {}
 <h2 id="gui-tools">GUI Tools</h2>
 
 <ul>
-<li><a href="http://gaphor.sourceforge.net/download.php" target="_blank">Gaphor UML Modelling</a> (Python)<br /></li>
-<li><a href="http://www.umlet.com/" target="_blank">UMLet - Free UML Tool for Fast UML Diagrams</a><br /></li>
-<li><a href="http://argouml.tigris.org/" target="_blank">ArgoUML</a><br /></li>
-<li><a href="http://alexdp.free.fr/violetumleditor/page.php" target="_blank">Violet UML Editor : easy to use, completely free</a><br /></li>
-<li><a href="https://chrome.google.com/webstore/detail/lucidchart-diagrams-deskt/djejicklhojeokkfmdelnempiecmdomj?hl=en" target="_blank">Lucidchart Diagrams - Desktop - Chrome Web Store</a><br /></li>
-<li><a href="https://chrome.google.com/webstore/detail/gliffy-diagrams/bhmicilclplefnflapjmnngmkkkkpfad?hl=en" target="_blank">Gliffy Diagrams - Chrome Web Storše</a><br /></li>
-<li><a href="https://chrome.google.com/webstore/detail/sketchboardio/bgafhjpdkfjfmmjbebbdckolonomaoil?hl=en" target="_blank">Sketchboard.io - Chrome Web Store</a><br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br /></li>
+<li><a href="http://gaphor.sourceforge.net/download.php" target="_blank">Gaphor UML Modelling</a> (Python)</li>
+<li><a href="http://www.umlet.com/" target="_blank">UMLet - Free UML Tool for Fast UML Diagrams</a></li>
+<li><a href="http://argouml.tigris.org/" target="_blank">ArgoUML</a></li>
+<li><a href="http://alexdp.free.fr/violetumleditor/page.php" target="_blank">Violet UML Editor : easy to use, completely free</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/lucidchart-diagrams-deskt/djejicklhojeokkfmdelnempiecmdomj?hl=en" target="_blank">Lucidchart Diagrams - Desktop - Chrome Web Store</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/gliffy-diagrams/bhmicilclplefnflapjmnngmkkkkpfad?hl=en" target="_blank">Gliffy Diagrams - Chrome Web Storše</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/sketchboardio/bgafhjpdkfjfmmjbebbdckolonomaoil?hl=en" target="_blank">Sketchboard.io - Chrome Web Store</a></li>
 </ul>
 
   </div>
@@ -411,6 +359,18 @@ var Paginator = {}
     
 <link rel="stylesheet" href='/css/atom-one-dark.css'>
 <script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+
+
+
 
 
 
