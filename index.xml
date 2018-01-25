@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
     <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
-    <lastBuildDate>Tue, 12 Dec 2017 11:51:54 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jan 2018 17:53:47 +0800</lastBuildDate>
     
 	<atom:link href="https://cyrusn.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tutorial on Google Script</title>
+      <link>https://cyrusn.github.io/slide/tutorial-on-google-script/</link>
+      <pubDate>Thu, 25 Jan 2018 17:53:47 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/tutorial-on-google-script/</guid>
+      <description>class: center, middle, bg-info, text-light
+Tutorial on Google Script Cyrus Ngan Objectives - Mock Interview Workshop  Create a google form Application for Mock Interview Workshop  User can choose his / her name in a list .text-info[if we run out of time, we will stop here]  User can apply at most .mark[5 courses] for the mock interview  User should enter Course ID in JUPAS User should enter link of the course information  10 pages slide to complete the simple tutorial  Begin with the End in Mind .</description>
+    </item>
     
     <item>
       <title>Auth in Golang</title>
@@ -28,7 +38,7 @@ In server side, using middelware for http.Handler function if the request are in
       <pubDate>Wed, 06 Dec 2017 07:59:57 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/symposium-on-individual-life-planning/</guid>
-      <description> class: center middle inverse
+      <description> class: center middle bg-info text-light
 S.K.H. Li Ping Secondary School class: middle
 Useful Practices in Supporting Junior Secondary Students with Special Educational Needs </description>
     </item>
@@ -78,7 +88,7 @@ Useful Practices in Supporting Junior Secondary Students with Special Educationa
       <pubDate>Tue, 28 Nov 2017 21:28:46 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/jazz/</guid>
-      <description> Score   Code     K: C &#34;Dm7&#34;[DCF]|&#34;G7&#34;[GBDF]|&#34;Cmaj7&#34;[CEGB]||      K: C &#34;Dm7&#34;[DCF]|&#34;G7&#34;[GBDF]|&#34;Cmaj7&#34;[CEGB]||       const config = { &#39;responsive&#39;: &#39;resize&#39;, &#39;add_classes&#39;: true } ABCJS.renderAbc(&#39;abcjs-src-1&#39;, &#39;\nK: C\n\x22Dm7\x22[DCF]|\x22G7\x22[GBDF]|\x22Cmaj7\x22[CEGB]||\n&#39;, {}, config, { })  This is the basic chord of jazz music.
+      <description> Score   Code     K: C &#34;Dm7&#34;[DCF]|&#34;G7&#34;[GBDF]|&#34;Cmaj7&#34;[CEGB]||      K: C &#34;Dm7&#34;[DCF]|&#34;G7&#34;[GBDF]|&#34;Cmaj7&#34;[CEGB]||       ABCJS.renderAbc(&#39;abcjs-src-1&#39;, &#39;\nK: C\n\x22Dm7\x22[DCF]|\x22G7\x22[GBDF]|\x22Cmaj7\x22[CEGB]||\n&#39;, {}, { &#39;responsive&#39;: &#39;resize&#39;, &#39;add_classes&#39;: true }, { })  This is the basic chord of jazz music.
 References  Jazz harmony - Wikiwand  </description>
     </item>
     
@@ -89,6 +99,16 @@ References  Jazz harmony - Wikiwand  </description>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/graphql/</guid>
       <description> Reference  The steady rise of GraphQL – freeCodeCamp  Passage with alot of reference for GraphQL  graphql with go and postgresql  </description>
+    </item>
+    
+    <item>
+      <title>Applying Web-based Resources</title>
+      <link>https://cyrusn.github.io/slide/applying_web_based_resources/</link>
+      <pubDate>Tue, 14 Nov 2017 10:55:10 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/applying_web_based_resources/</guid>
+      <description>class: center, middle, bg-info, text-light
+Applying Web-based Resource Cyrus Ngan @ LPSS cyrusn.github.io Agenda  About Me Suggestion CaLP Homepage Sharing experiences on using Google services Google Form 模擬升學出路選填 How Google Services help? Google Calendar Any Other Combination? Our own system Anymore? TL;DR Free resources  About Me  Math Major 2012 .badge.badge-warning[HKCEE] ➞ .badge.badge-danger[HKDSE] Tons of information My best friend is a .text-danger[programmer]  Suggestion  Recruitment Creativity  class: middle center bg-dark text-light</description>
     </item>
     
     <item>
@@ -106,9 +126,9 @@ References  Jazz harmony - Wikiwand  </description>
       <pubDate>Fri, 03 Nov 2017 11:17:14 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/introduction-to-raspberry-pi/</guid>
-      <description>class: center middle inverse
+      <description>class: center middle bg-dark text-light
 Introduction to Raspberry-Pi  Agenda  Raspberry Pi What is Raspberry-Pi Raspberry-Pi vs Audrino vs Microbit What is GPIO? Setup Introduction to 16 common sensors e.g. Blinking LED e.g. Blinking LED cont... Similar code in Scratch2? Programming Learning Top 10 Raspberry Pi Projects for Beginners Reference Thanks   class: center
-Raspberry Pi    RASPBERRY PI 3 MODEL B RASPBERRY PI ZERO W         More Powerful Much Lighter     What is Raspberry-Pi  A small and affordable computer that you can use to learn programming</description>
+Raspberry Pi    RASPBERRY PI 3 MODEL B RASPBERRY PI ZERO W         More Powerful Much Lighter     What is Raspberry-Pi .</description>
     </item>
     
     <item>
@@ -118,7 +138,7 @@ Raspberry Pi    RASPBERRY PI 3 MODEL B RASPBERRY PI ZERO W         More Powerful
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/math-resources/</guid>
       <description> $$ \alpha $$
-Reference  資源下載 - 超研教育｜中學數學補習社｜Band 1補習學府｜補習課程｜暑期班 CE, DSE Maths Pastpaper &amp;amp; Marking Scheme 歷屆試題 | 知新教育 學校沒有教的數學 (Part 1-Q1-14) 2015 DSE 數學卷一長問題 Math Paper 1 應該暫時係最詳細既答案 - 經數樂園－學習變有趣～ 數學補習 | 數學 2015 paper II 卷二 詳細答案 - Knight Mathematics 數學補習 - 中學專科數學補習社 - DSE數學 - IB/IGCSE/GCE - 自修生  </description>
+Reference  資源下載 - 超研教育｜中學數學補習社｜Band 1補習學府｜補習課程｜暑期班 CE, DSE Maths Pastpaper &amp;amp; Marking Scheme 歷屆試題 | 知新教育 學校沒有教的數學 (Part 1-Q1-14) 2015 DSE 數學卷一長問題 Math Paper 1 應該暫時係最詳細既答案 - 經數樂園－學習變有趣～  Past Paper ans  數學補習 | 數學 2015 paper II 卷二 詳細答案 - Knight Mathematics 數學補習 - 中學專科數學補習社 - DSE數學 - IB/IGCSE/GCE - 自修生 CE and DSE Maths Marking Scheme – mathspercyyeung  </description>
     </item>
     
     <item>
@@ -146,7 +166,7 @@ Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GP
       <pubDate>Sat, 14 Oct 2017 21:38:03 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/python/</guid>
-      <description> Tools  Format String  </description>
+      <description> Tools  Format String  Games  The Python Challenge  </description>
     </item>
     
     <item>
@@ -235,7 +255,7 @@ Tenses    Descibe future event  Will vs Going To Differences - GrammarBank  FANB
       <pubDate>Tue, 20 Jun 2017 19:05:48 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/stem-idea-on-education/</guid>
-      <description>Coding and Math Reference Statistic Engineering Some Idea from 青年會書院 Ideas Model on STEM Education Resource  Coding and Math Reference  Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine UC Davis Center for Integrated Computing and STEM Education Zebra Puzzle - Wikiwand The Micro:bit Foundation is a global non-profit organisation making invention with technology fun for everyone!  Statistic  What is STEM Education?</description>
+      <description>STEM chanllege Coding and Math Reference Statistic Engineering Some Idea from 青年會書院 Ideas Model on STEM Education Resource  STEM chanllege  making stuff  make a plane, it can fly as long as possible. make a bridge, it can weigh as heavy as possible. make a phone, it can talk as far as possible  Solve some puzzle  decode an encrypted message    Coding and Math Reference  Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine UC Davis Center for Integrated Computing and STEM Education Zebra Puzzle - Wikiwand The Micro:bit Foundation is a global non-profit organisation making invention with technology fun for everyone!</description>
     </item>
     
     <item>

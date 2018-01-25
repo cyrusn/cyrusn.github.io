@@ -5,12 +5,14 @@
   
   <link rel="stylesheet" href='/css/remark.css'>
   <script src='/js/remark-latest.min.js'></script>
+  <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+
 
 </head>
 
-<body>
-<textarea id="source">
-class: center middle inverse
+<body class="text-dark">
+<div id="source">
+class: center middle bg-dark text-light
 
 # Introduction to Raspberry-Pi
 
@@ -49,9 +51,11 @@ class: center
 ---
 # What is Raspberry-Pi
 
-&gt; A small and affordable computer that you can use to learn programming
+.blockquote-info[
+&gt;  A small and affordable computer that you can use to learn programming
+]
 
-- Linux base .red[**Single Board Computer**] with `wifi`, `bluebooth`, `LAN`, `HDMI` etc ...
+- Linux base .text-danger[**Single Board Computer**] with `wifi`, `bluebooth`, `LAN`, `HDMI` etc ...
 - All files in Pi are store in a microSD card.
 - Programme with  `Python`, `Scratch`, `JavaScript`, `Golang`...
 - Run in Raspbian OS
@@ -92,12 +96,17 @@ class: center
 
 # Introduction to 16 common sensors
 
+.w-50.mx-auto[
 [![16sensors][&amp;06]][&amp;06]
+]
 
 ---
 class: center
 # e.g. Blinking LED
+
+.mh-75.mx-auto[
 ![blink_led][&amp;08]
+]
 
 ---
 # e.g. Blinking LED cont...
@@ -127,12 +136,14 @@ print(&#34;Programme closed.&#34;)
 class: center
 # Similar code in Scratch2?
 
+.overflow.h-75[
 ![scratch_example][&amp;09]
+]
 
 ---
 # Programming Learning
 
-### The 5 Basic Concepts of any Programming Language
+## The 5 Basic Concepts of any Programming Language
 .footnote[
 - [Programming Elements][&amp;10]
 ]
@@ -183,7 +194,7 @@ class: center middle
 [&amp;10]: https://howtoprogramwithjava.com/programming-101-the-5-basic-concepts-of-any-programming-language/
 [&amp;11]: https://lifehacker.com/top-10-raspberry-pi-projects-for-beginners-1791002723
 
-</textarea>
+</div>
 
 <script src='/js/helper.js'></script>
 <script>
@@ -191,7 +202,7 @@ class: center middle
   
   
   const option = {}
-  const obj = Object.assign({}, {"highlight-lines":true,"highlight-style":"atom-one-dark","navigation":{"click":true,"scroll":false},"ratio":"4:3"}, {"ratio":"16:9"})
+  const obj = Object.assign({}, {"highlight-lines":true,"highlight-style":"atom-one-dark","navigation":{"scroll":false},"ratio":"4:3"}, {"ratio":"16:9"})
 
   for (const key in obj) {
     option[dashToCamelCase(key)] = obj[key]
@@ -210,6 +221,7 @@ class: center middle
       window.location.href = '/'
     }
   }
+  document.getElementsByTagName('a').map(a => a.setAttribute('target', '_blank'))
 </script>
 </body>
 </html>

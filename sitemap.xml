@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cyrusn.github.io/slide/tutorial-on-google-script/</loc>
+    <lastmod>2018-01-25T17:53:47+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cyrusn.github.io/note/auth-in-golang/</loc>
     <lastmod>2017-12-12T11:51:54+08:00</lastmod>
   </url>
@@ -40,6 +45,11 @@
   <url>
     <loc>https://cyrusn.github.io/note/graphql/</loc>
     <lastmod>2017-11-18T01:47:41+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/slide/applying_web_based_resources/</loc>
+    <lastmod>2017-11-14T10:55:10+08:00</lastmod>
   </url>
   
   <url>
@@ -408,6 +418,12 @@
   </url>
   
   <url>
+    <loc>https://cyrusn.github.io/tags/100hr/</loc>
+    <lastmod>2017-11-14T10:55:10+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://cyrusn.github.io/tags/1x/</loc>
     <lastmod>2017-05-15T23:12:02+08:00</lastmod>
     <priority>0</priority>
@@ -491,7 +507,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/tags/career/</loc>
-    <lastmod>2017-05-27T10:57:07+08:00</lastmod>
+    <lastmod>2017-11-14T10:55:10+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -669,6 +685,12 @@
   </url>
   
   <url>
+    <loc>https://cyrusn.github.io/tags/hkacmgm/</loc>
+    <lastmod>2017-11-14T10:55:10+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://cyrusn.github.io/tags/httpie/</loc>
     <lastmod>2015-05-24T22:36:53+00:00</lastmod>
     <priority>0</priority>
@@ -832,7 +854,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/</loc>
-    <lastmod>2017-12-12T11:51:54+08:00</lastmod>
+    <lastmod>2018-01-25T17:53:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -962,6 +984,12 @@
   </url>
   
   <url>
+    <loc>https://cyrusn.github.io/tags/scope/</loc>
+    <lastmod>2017-11-14T10:55:10+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://cyrusn.github.io/tags/score/</loc>
     <lastmod>2017-11-29T11:39:19+08:00</lastmod>
     <priority>0</priority>
@@ -1017,7 +1045,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/slide/</loc>
-    <lastmod>2017-12-06T07:59:57+08:00</lastmod>
+    <lastmod>2018-01-25T17:53:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1053,7 +1081,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/tags/</loc>
-    <lastmod>2017-05-15T23:12:02+08:00</lastmod>
+    <lastmod>2017-11-14T10:55:10+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1132,6 +1160,12 @@
   <url>
     <loc>https://cyrusn.github.io/tags/web-token/</loc>
     <lastmod>2016-10-05T00:23:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/websocket/</loc>
+    <lastmod>2015-05-10T00:46:38+00:00</lastmod>
     <priority>0</priority>
   </url>
   
