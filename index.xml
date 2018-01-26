@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
     <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
-    <lastBuildDate>Thu, 25 Jan 2018 17:53:47 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jan 2018 10:55:10 +0800</lastBuildDate>
     
 	<atom:link href="https://cyrusn.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Applying Web-based Resources</title>
+      <link>https://cyrusn.github.io/slide/applying_web_based_resources/</link>
+      <pubDate>Fri, 26 Jan 2018 10:55:10 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/applying_web_based_resources/</guid>
+      <description>class: center, middle, bg-info, text-light
+Applying Web-based Resource Cyrus Ngan @ LPSS cyrusn.github.io Agenda  About Me Career and Life Planning Committee Um &amp;hellip; IT Support .badge.badge-warning[vs] Problem solver 命運係掌握係自己手 CaLP Homepage Sharing experiences on using Google services Google Form Examples 在學證明書 (Testimonial) 申報活動 Google Services 模擬升學出路選填 How Google Services help? Google Calendar Other projects TL;DR Free resources  About Me Cyrus Ngan  .badge.badge-info[@LPSS]  Careers Master Math Teacher Exco of HKACMGM  Math Major My best friend is a .</description>
+    </item>
     
     <item>
       <title>Tutorial on Google Script</title>
@@ -99,16 +109,6 @@ References  Jazz harmony - Wikiwand  </description>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/graphql/</guid>
       <description> Reference  The steady rise of GraphQL – freeCodeCamp  Passage with alot of reference for GraphQL  graphql with go and postgresql  </description>
-    </item>
-    
-    <item>
-      <title>Applying Web-based Resources</title>
-      <link>https://cyrusn.github.io/slide/applying_web_based_resources/</link>
-      <pubDate>Tue, 14 Nov 2017 10:55:10 +0800</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/slide/applying_web_based_resources/</guid>
-      <description>class: center, middle, bg-info, text-light
-Applying Web-based Resource Cyrus Ngan @ LPSS cyrusn.github.io Agenda  About Me Suggestion CaLP Homepage Sharing experiences on using Google services Google Form 模擬升學出路選填 How Google Services help? Google Calendar Any Other Combination? Our own system Anymore? TL;DR Free resources  About Me  Math Major 2012 .badge.badge-warning[HKCEE] ➞ .badge.badge-danger[HKDSE] Tons of information My best friend is a .text-danger[programmer]  Suggestion  Recruitment Creativity  class: middle center bg-dark text-light</description>
     </item>
     
     <item>
