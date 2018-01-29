@@ -23,14 +23,31 @@ class: center, middle, bg-info, text-light
 - Create a google form
 - Application for Mock Interview Workshop 
   - `User` can choose his / her name in a list
-  - .text-info[if we run out of time, we will stop here]
 - User can apply at most .mark[***5 courses***] for the mock interview
   1. `User` should enter Course ID in JUPAS
   1. `User` should enter link of the course information
 - 10 pages slide to complete the simple tutorial
 
 ---
+class: center middle bg-dark text-light
+# Prerequiste
+## JavaScript
+
+---
+# Free resources
+## Start from scratch
+- [Harvard University CS50.tv][&amp;3]
+- [Codecademy][&amp;4]
+  &#43; HTML (3Hrs) .badge.badge-info[Create Webpage]
+  &#43; CSS (11hrs) .badge.badge-info[Style Webpage]
+  &#43; JavaScript (5hrs) .badge.badge-danger[Interaction with Webpage]
+  &#43; Command Line (3hrs) .badge.badge-info[Navigate in Unix system]
+- [freeCodeCamp][&amp;5]
+
+
+---
 # Begin with the End in Mind
+## Final product
 
 .overflow.h-75[
 
@@ -106,6 +123,7 @@ function fullRun() {
 ```
 ]
 
+
 ---
 class: row
 
@@ -117,9 +135,6 @@ class: row
 .col[
 - Open Google drive
 - .text-danger[**Copy**] the link of the google form
-- Open API reference
-  &#43; `Help` -&gt; `API reference`
-  &#43; [Forms Service | Google Developers][&amp;1]
 ]
 
 ---
@@ -135,7 +150,11 @@ class: row
 
 .col-9[
 - Open script editor
-- Insert the following code before the `function myFunction () {}`
+- Open API reference
+  &#43; `Help` -&gt; `API reference`
+  &#43; [Forms Service | Google Developers][&amp;1]
+  &#43; You may find all API in this documentation
+- Insert the following code **before** the `function myFunction () {}`
 
 ``` js
 var form = FormApp.openByUrl(&#39;paste_the_link_of_the_form_here&#39;)
@@ -178,8 +197,8 @@ function printTitle() {
 
 ```
 
-- Go to `View` and `Logs` to see the log message
-- Printing title is not really useful, let&#39;s resume!
+- Go to `View` and `Logs` to see the log message.
+- Printing title is not really fun, let&#39;s resume!
 
 ]
 
@@ -450,17 +469,6 @@ Run the `fullRun` function and go to the form to see the result.
 ---
 class: center middle bg-dark text-light
 # What do you think?
-
----
-# Free resources
-## Start from scratch
-- [Harvard University CS50.tv][&amp;3]
-- [Codecademy][&amp;4]
-  &#43; HTML (3Hrs) .badge.badge-info[Create Webpage]
-  &#43; CSS (11hrs) .badge.badge-info[Style Webpage]
-  &#43; JavaScript (5hrs) .badge.badge-danger[Interaction with Webpage]
-  &#43; Command Line (3hrs) .badge.badge-info[Navigate in Unix system]
-- [freeCodeCamp][&amp;5]
 
 ---
 class: center middle

@@ -19,7 +19,7 @@
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/applying_web_based_resources/</guid>
       <description>class: center, middle, bg-info, text-light
-Applying Web-based Resource Cyrus Ngan @ LPSS cyrusn.github.io Agenda  About Me Career and Life Planning Committee Um &amp;hellip; IT Support .badge.badge-warning[vs] Problem solver 命運係掌握係自己手 CaLP Homepage Sharing experiences on using Google services Google Form Examples 在學證明書 (Testimonial) 申報活動 Google Services 模擬升學出路選填 How Google Services help? Google Calendar Other projects TL;DR Free resources  About Me Cyrus Ngan  .badge.badge-info[@LPSS]  Careers Master Math Teacher Exco of HKACMGM  Math Major My best friend is a .</description>
+Applying Web-based Resource Cyrus Ngan @ LPSS cyrusn.github.io Agenda  About Me Career and Life Planning Committee Um &amp;hellip; IT Support .badge.badge-warning[vs] Problem solver 命運係掌握係自己手 CaLP Homepage Sharing experiences on using Google services Google Form Examples 在學證明書 (Testimonial) 申報活動 Google Services 模擬升學出路選填 How Google Services help? Google Calendar Other projects TL;DR Free resources Other useful application  About Me Cyrus Ngan  .badge.badge-info[@LPSS]  Careers Master Math Teacher Exco of HKACMGM  Math Major My best friend is a .</description>
     </item>
     
     <item>
@@ -29,7 +29,7 @@ Applying Web-based Resource Cyrus Ngan @ LPSS cyrusn.github.io Agenda  About Me 
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/tutorial-on-google-script/</guid>
       <description>class: center, middle, bg-info, text-light
-Tutorial on Google Script Cyrus Ngan Objectives - Mock Interview Workshop  Create a google form Application for Mock Interview Workshop  User can choose his / her name in a list .text-info[if we run out of time, we will stop here]  User can apply at most .mark[5 courses] for the mock interview  User should enter Course ID in JUPAS User should enter link of the course information  10 pages slide to complete the simple tutorial  Begin with the End in Mind .</description>
+Tutorial on Google Script Cyrus Ngan Objectives - Mock Interview Workshop  Create a google form Application for Mock Interview Workshop  User can choose his / her name in a list  User can apply at most .mark[5 courses] for the mock interview  User should enter Course ID in JUPAS User should enter link of the course information  10 pages slide to complete the simple tutorial  class: center middle bg-dark text-light</description>
     </item>
     
     <item>
@@ -301,10 +301,9 @@ Tenses    Descibe future event  Will vs Going To Differences - GrammarBank  FANB
       <pubDate>Tue, 16 May 2017 00:17:50 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/pomodoro/</guid>
-      <description>class: center, middle
-提升生產力及專注力 GTD &amp;amp; 蕃茄工作法 Reference  The Pomodoro Technique® - proudly developed by Francesco Cirillo | Cirillo Company David Allen&amp;rsquo;s Getting Things Done® Methodology  工作時間  平日每天約4小時 假日每天約6小時 合共： 4hr x 5day + 6hr x 2day = 32 hrs 如何保持專注?  規劃  每科應用15分鐘回顧及整理當天所學 功課應盡早完成 每天用盡所有工作時間  流程 
-Why?  何時做 &amp;gt; 何時交 計時能令人集中  e.g. 考試、測驗   .split-50[ .column[
-參考資料  Online Pomodoro Timer Pomodoro Technique Getting Things Done ]  .</description>
+      <description>class: center middle bg-info text-light
+提升生產力及專注力 GTD &amp;amp; 蕃茄工作法 Reference  The Pomodoro Technique® - proudly developed by Francesco Cirillo | Cirillo Company David Allen&amp;rsquo;s Getting Things Done® Methodology  工作時間  平日每天約4小時 假日每天約6小時 合共： 4hr x 5day + 6hr x 2day = 32 hrs 如何保持專注?  規劃  每科應用15分鐘回顧及整理當天所學 功課應盡早完成 每天用盡所有工作時間  流程 .overflow.h-75[  ]
+Why?  何時做 &amp;gt; 何時交 計時能令人集中  e.g. 考試、測驗   .row[ .</description>
     </item>
     
     <item>
