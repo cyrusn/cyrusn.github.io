@@ -18,11 +18,6 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/slide/symposium-on-individual-life-planning/</loc>
-    <lastmod>2017-12-06T07:59:57+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://cyrusn.github.io/note/latex/</loc>
     <lastmod>2017-12-05T09:21:44+08:00</lastmod>
   </url>
@@ -58,6 +53,11 @@
   </url>
   
   <url>
+    <loc>https://cyrusn.github.io/note/life_design/</loc>
+    <lastmod>2017-11-08T19:09:49+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cyrusn.github.io/slide/introduction-to-raspberry-pi/</loc>
     <lastmod>2017-11-03T11:17:14+08:00</lastmod>
   </url>
@@ -65,11 +65,6 @@
   <url>
     <loc>https://cyrusn.github.io/note/math-resources/</loc>
     <lastmod>2017-10-20T14:32:46+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/note/sublime-text/</loc>
-    <lastmod>2017-10-18T18:56:52+08:00</lastmod>
   </url>
   
   <url>
@@ -133,18 +128,8 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/note/signal/</loc>
-    <lastmod>2017-05-25T15:03:22+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://cyrusn.github.io/note/google-calendar/</loc>
     <lastmod>2017-05-19T09:50:13+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/note/osi-model/</loc>
-    <lastmod>2017-05-19T08:12:48+08:00</lastmod>
   </url>
   
   <url>
@@ -178,18 +163,13 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/note/linux-arch/</loc>
-    <lastmod>2017-05-12T20:26:30+08:00</lastmod>
+    <loc>https://cyrusn.github.io/post/download-youtube-in-batch/</loc>
+    <lastmod>2017-04-27T23:14:04+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://cyrusn.github.io/note/create-startup-script-in-linux/</loc>
     <lastmod>2016-10-21T12:43:34+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/note/mysql/</loc>
-    <lastmod>2016-10-18T10:39:13+00:00</lastmod>
   </url>
   
   <url>
@@ -208,11 +188,6 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/note/batch-download-youtube/</loc>
-    <lastmod>2016-10-07T23:14:04+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://cyrusn.github.io/note/web-authentication/</loc>
     <lastmod>2016-10-05T00:23:42+00:00</lastmod>
   </url>
@@ -225,11 +200,6 @@
   <url>
     <loc>https://cyrusn.github.io/note/docker/</loc>
     <lastmod>2016-09-30T23:06:22+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/note/nvalt-setting/</loc>
-    <lastmod>2016-09-29T16:23:18+00:00</lastmod>
   </url>
   
   <url>
@@ -258,11 +228,6 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/note/leveldb/</loc>
-    <lastmod>2015-12-08T08:35:55+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://cyrusn.github.io/note/macos-setting/</loc>
     <lastmod>2015-10-01T13:32:12+00:00</lastmod>
   </url>
@@ -283,18 +248,8 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/note/uml/</loc>
-    <lastmod>2015-05-28T15:21:07+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://cyrusn.github.io/note/javascript-on-osascript/</loc>
     <lastmod>2015-05-27T12:45:16+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/note/reading-list/</loc>
-    <lastmod>2015-05-26T23:41:04+00:00</lastmod>
   </url>
   
   <url>
@@ -310,11 +265,6 @@
   <url>
     <loc>https://cyrusn.github.io/note/google-app-script/</loc>
     <lastmod>2015-05-22T11:50:04+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/note/hashbang/</loc>
-    <lastmod>2015-05-21T12:47:20+00:00</lastmod>
   </url>
   
   <url>
@@ -338,18 +288,8 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/note/hapijs/</loc>
-    <lastmod>2015-05-10T00:58:17+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://cyrusn.github.io/note/git/</loc>
     <lastmod>2015-05-10T00:52:39+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/note/using-timeline-js-in-history-lesson/</loc>
-    <lastmod>2015-05-10T00:47:53+00:00</lastmod>
   </url>
   
   <url>
@@ -358,43 +298,8 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/note/slidedownhtml-presentation/</loc>
-    <lastmod>2015-05-10T00:47:45+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/note/project-and-todo/</loc>
-    <lastmod>2015-05-10T00:47:40+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/note/alumni-webpage/</loc>
-    <lastmod>2015-05-10T00:47:23+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/note/monokai-color-code/</loc>
-    <lastmod>2015-05-10T00:47:19+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://cyrusn.github.io/note/mongoose.js-and-mongodb/</loc>
     <lastmod>2015-05-10T00:47:16+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/note/polymer/</loc>
-    <lastmod>2015-05-10T00:47:15+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/note/learning-progress/</loc>
-    <lastmod>2015-05-10T00:47:13+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/note/url-shortener-and-qr-code-generator/</loc>
-    <lastmod>2015-05-10T00:46:40+00:00</lastmod>
   </url>
   
   <url>
@@ -458,12 +363,6 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/tags/angularjs/</loc>
-    <lastmod>2015-05-10T00:47:23+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://cyrusn.github.io/tags/apache/</loc>
     <lastmod>2016-09-29T08:31:57+00:00</lastmod>
     <priority>0</priority>
@@ -472,12 +371,6 @@
   <url>
     <loc>https://cyrusn.github.io/tags/app/</loc>
     <lastmod>2015-06-29T07:58:25+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/tags/arch/</loc>
-    <lastmod>2017-05-12T20:26:30+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -494,12 +387,6 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/tags/bootstrap/</loc>
-    <lastmod>2015-05-10T00:47:23+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://cyrusn.github.io/tags/calendar/</loc>
     <lastmod>2017-05-19T09:50:13+08:00</lastmod>
     <priority>0</priority>
@@ -508,6 +395,12 @@
   <url>
     <loc>https://cyrusn.github.io/tags/career/</loc>
     <lastmod>2018-01-26T10:55:10+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/careers/</loc>
+    <lastmod>2017-11-08T19:09:49+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -535,8 +428,14 @@
   </url>
   
   <url>
+    <loc>https://cyrusn.github.io/tags/counseling/</loc>
+    <lastmod>2017-11-08T19:09:49+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://cyrusn.github.io/tags/database/</loc>
-    <lastmod>2015-12-08T08:35:55+00:00</lastmod>
+    <lastmod>2015-05-10T00:47:16+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -679,18 +578,6 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/tags/hapijs/</loc>
-    <lastmod>2015-05-10T00:58:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/tags/hashbang/</loc>
-    <lastmod>2015-05-21T12:47:20+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://cyrusn.github.io/tags/hkacmgm/</loc>
     <lastmod>2018-01-26T10:55:10+08:00</lastmod>
     <priority>0</priority>
@@ -717,12 +604,6 @@
   <url>
     <loc>https://cyrusn.github.io/tags/iot/</loc>
     <lastmod>2017-09-19T09:44:09+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/tags/javascript/</loc>
-    <lastmod>2015-12-08T08:35:55+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -759,18 +640,6 @@
   <url>
     <loc>https://cyrusn.github.io/tags/kill/</loc>
     <lastmod>2015-05-24T22:36:53+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/tags/killall/</loc>
-    <lastmod>2017-05-25T15:03:22+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/tags/leveldb/</loc>
-    <lastmod>2015-12-08T08:35:55+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -835,12 +704,6 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/tags/mysql/</loc>
-    <lastmod>2016-10-18T10:39:13+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://cyrusn.github.io/tags/normal-form/</loc>
     <lastmod>2017-07-09T20:56:56+08:00</lastmod>
     <priority>0</priority>
@@ -849,12 +712,6 @@
   <url>
     <loc>https://cyrusn.github.io/tags/normalization/</loc>
     <lastmod>2017-07-09T20:56:56+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/tags/note-taking/</loc>
-    <lastmod>2016-09-29T16:23:18+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -873,12 +730,6 @@
   <url>
     <loc>https://cyrusn.github.io/tags/osascript/</loc>
     <lastmod>2015-05-27T12:45:16+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/tags/osi/</loc>
-    <lastmod>2017-05-19T08:12:48+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -918,20 +769,14 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/tags/polymer/</loc>
-    <lastmod>2015-05-10T00:47:15+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://cyrusn.github.io/tags/pomodoro/</loc>
     <lastmod>2017-05-16T00:17:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/tags/process/</loc>
-    <lastmod>2017-05-25T15:03:22+08:00</lastmod>
+    <loc>https://cyrusn.github.io/post/</loc>
+    <lastmod>2017-04-27T23:14:04+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1026,38 +871,14 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/tags/shortener/</loc>
-    <lastmod>2015-05-10T00:46:40+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/tags/signal/</loc>
-    <lastmod>2017-05-25T15:03:22+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://cyrusn.github.io/tags/slide/</loc>
     <lastmod>2015-05-10T00:52:39+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/tags/slidedown/</loc>
-    <lastmod>2015-05-10T00:47:45+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://cyrusn.github.io/slide/</loc>
     <lastmod>2018-01-26T10:55:10+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/tags/sql/</loc>
-    <lastmod>2016-10-18T10:39:13+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1098,20 +919,8 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/tags/tcp/</loc>
-    <lastmod>2017-05-19T08:12:48+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://cyrusn.github.io/tags/terminal/</loc>
     <lastmod>2015-05-24T22:36:53+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/tags/timelinejs/</loc>
-    <lastmod>2015-05-10T00:47:53+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1135,7 +944,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/tags/top/</loc>
-    <lastmod>2017-05-25T15:03:22+08:00</lastmod>
+    <lastmod>2015-05-24T22:36:53+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1146,14 +955,8 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/tags/udp/</loc>
-    <lastmod>2017-05-19T08:12:48+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://cyrusn.github.io/tags/uml/</loc>
-    <lastmod>2015-05-28T15:21:07+00:00</lastmod>
+    <lastmod>2015-05-10T01:29:03+00:00</lastmod>
     <priority>0</priority>
   </url>
   

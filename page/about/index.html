@@ -41,6 +41,8 @@
 const pageKind = "page"
 const navLinks = ['/']
 
+  navLinks.push("\/post\/")
+
   navLinks.push("\/note\/")
 
   navLinks.push("\/project\/")
@@ -82,6 +84,14 @@ var Paginator = {}
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Post" href="/post/">Post</a>
+        </li>
+        
         
 
         
@@ -178,7 +188,7 @@ var Paginator = {}
   </p>
   <hr>
   <div id="content">
-    <p>CyrusN is a math teacher in Hong Kong, eager to learn more in programming.</p>
+    <p><a href="mailto:cyrusncy@gmail.com" target="_blank">CyrusN</a> is a math teacher in Hong Kong, eager to learn more in programming.</p>
 
 <blockquote>
 <p>A teacher has two jobs. Fill young minds with knowledge, yes. But more important, give those minds a compass so that that knowledge doesn&rsquo;t go to waste.

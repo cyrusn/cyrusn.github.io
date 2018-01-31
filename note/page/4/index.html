@@ -38,6 +38,8 @@
 const pageKind = "section"
 const navLinks = ['/']
 
+  navLinks.push("\/post\/")
+
   navLinks.push("\/note\/")
 
   navLinks.push("\/project\/")
@@ -79,6 +81,14 @@ var Paginator = {}
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Post" href="/post/">Post</a>
+        </li>
+        
         
 
         
@@ -217,12 +227,6 @@ var Paginator = {}
       </li>
       
       
-      
-      
-      
-      
-      
-      
 
       <li class="page-item " aria-label="Next">
         <a class="text-muted page-link" href="/note/page/5/">
@@ -231,7 +235,7 @@ var Paginator = {}
       </li>
       
       <li class="page-item ">
-        <a class="text-muted page-link" href="/note/page/8/" aria-label="Last" title="8">
+        <a class="text-muted page-link" href="/note/page/6/" aria-label="Last" title="6">
           <span aria-hidden="true">&raquo;&raquo;</span>
         </a>
       </li>
@@ -248,131 +252,13 @@ var Paginator = {}
       class="list-group-item list-group-item-action list-group-item-light active">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
-          <a class="text-light" href="/note/create-startup-script-in-linux/">Create Startup Script in Linux</a>
-        </h6>
-        <small>2016-10-21</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-light" href="/note/create-startup-script-in-linux/">/note/create-startup-script-in-linux/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-secondary" href="/tags/linux">linux</a>
-
-  <a class="badge badge-secondary" href="/tags/startup">startup</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-1'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/mysql/">MySQL Notes</a>
-        </h6>
-        <small>2016-10-18</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/mysql/">/note/mysql/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-secondary" href="/tags/mysql">mysql</a>
-
-  <a class="badge badge-secondary" href="/tags/sql">sql</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-2'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/update-digital-ocean-kernel/">Update Digital Ocean Kernel</a>
-        </h6>
-        <small>2016-10-11</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/update-digital-ocean-kernel/">/note/update-digital-ocean-kernel/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-secondary" href="/tags/digitalocean">digitalocean</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-3'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/caddy/">Caddy Notes</a>
-        </h6>
-        <small>2016-10-09</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/caddy/">/note/caddy/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-4'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/https-and-jwt/">HTTPS and JWT</a>
+          <a class="text-light" href="/note/https-and-jwt/">HTTPS and JWT</a>
         </h6>
         <small>2016-10-07</small>
       </div>
       <div class='mb-0'>
         <small>
-          <a class="text-muted" href="/note/https-and-jwt/">/note/https-and-jwt/</a>
+          <a class="text-light" href="/note/https-and-jwt/">/note/https-and-jwt/</a>
         </small>
       </div>
       <small>
@@ -392,31 +278,7 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-5'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/batch-download-youtube/">Batch Download YouTube</a>
-        </h6>
-        <small>2016-10-07</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/batch-download-youtube/">/note/batch-download-youtube/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-6'
+      id='list-1'
       class="list-group-item list-group-item-action list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -452,7 +314,7 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-7'
+      id='list-2'
       class="list-group-item list-group-item-action list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -484,7 +346,7 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-8'
+      id='list-3'
       class="list-group-item list-group-item-action list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -514,17 +376,17 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-9'
+      id='list-4'
       class="list-group-item list-group-item-action list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
-          <a class="text-muted" href="/note/nvalt-setting/">NVAlt Setting</a>
+          <a class="text-muted" href="/note/config-digtal-ocean-droplet-as-microservice/">Config Digital Ocean Droplet as Microservice</a>
         </h6>
         <small>2016-09-29</small>
       </div>
       <div class='mb-0'>
         <small>
-          <a class="text-muted" href="/note/nvalt-setting/">/note/nvalt-setting/</a>
+          <a class="text-muted" href="/note/config-digtal-ocean-droplet-as-microservice/">/note/config-digtal-ocean-droplet-as-microservice/</a>
         </small>
       </div>
       <small>
@@ -535,7 +397,171 @@ var Paginator = {}
 
 <small>
 
-  <a class="badge badge-secondary" href="/tags/note-taking">note-taking</a>
+  <a class="badge badge-secondary" href="/tags/apache">apache</a>
+
+  <a class="badge badge-secondary" href="/tags/ssl">SSL</a>
+
+  <a class="badge badge-secondary" href="/tags/tls">TLS</a>
+
+  <a class="badge badge-secondary" href="/tags/tmux">tmux</a>
+
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-5'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/how-to-convert-pngs-to-gif/">How to convert images to gif</a>
+        </h6>
+        <small>2016-09-26</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-muted" href="/note/how-to-convert-pngs-to-gif/">/note/how-to-convert-pngs-to-gif/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-secondary" href="/tags/imagemagick">imagemagick</a>
+
+  <a class="badge badge-secondary" href="/tags/productivity">productivity</a>
+
+  <a class="badge badge-secondary" href="/tags/gif">gif</a>
+
+  <a class="badge badge-secondary" href="/tags/convert">convert</a>
+
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-6'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/open-ssl/">Open SSL</a>
+        </h6>
+        <small>2016-09-25</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-muted" href="/note/open-ssl/">/note/open-ssl/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-7'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/ssl-tls/">SSL TLS</a>
+        </h6>
+        <small>2016-09-25</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-muted" href="/note/ssl-tls/">/note/ssl-tls/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-secondary" href="/tags/security">security</a>
+
+  <a class="badge badge-secondary" href="/tags/ssl">SSL</a>
+
+  <a class="badge badge-secondary" href="/tags/tls">TLS</a>
+
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-8'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/digital-ocean/">Digital Ocean Notes</a>
+        </h6>
+        <small>2016-03-26</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-muted" href="/note/digital-ocean/">/note/digital-ocean/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-secondary" href="/tags/do">do</a>
+
+  <a class="badge badge-secondary" href="/tags/scp">scp</a>
+
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-9'
+      class="list-group-item list-group-item-action list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/macos-setting/">macos Setting Notes</a>
+        </h6>
+        <small>2015-10-01</small>
+      </div>
+      <div class='mb-0'>
+        <small>
+          <a class="text-muted" href="/note/macos-setting/">/note/macos-setting/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-secondary" href="/tags/macos">macos</a>
+
+  <a class="badge badge-secondary" href="/tags/setting">setting</a>
 
 </small>
 
