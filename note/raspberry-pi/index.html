@@ -11,9 +11,9 @@
   <title>Raspberry Pi</title>
 
 
-  <meta name="description" content="Setting Links Pin Examples Some Projects Some thoughts Setting brightness of Touch led Sensors Others Sensor HAT ADC (Analog to Digital Convertor)  Setting  Raspberry Pi Documentation Installation - Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Sense HAT at Raspberry Pi GPIO Pinout  Links  5 Amazing Gadgets Built On Raspberry Pi - YouTube How to make a DIY Raspberry Pi Arcade Cabinet!">
-  <meta property="og:description" content="Setting Links Pin Examples Some Projects Some thoughts Setting brightness of Touch led Sensors Others Sensor HAT ADC (Analog to Digital Convertor)  Setting  Raspberry Pi Documentation Installation - Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Sense HAT at Raspberry Pi GPIO Pinout  Links  5 Amazing Gadgets Built On Raspberry Pi - YouTube How to make a DIY Raspberry Pi Arcade Cabinet!">
-  <meta name="twitter:description" content="Setting Links Pin Examples Some Projects Some thoughts Setting brightness of Touch led Sensors Others Sensor HAT ADC (Analog to Digital Convertor)  Setting  Raspberry Pi Documentation Installation - …">
+  <meta name="description" content="Setting  Setting for OTG mode Autostart  Pin Examples Links Some Projects Some thoughts Setting brightness of Touch led Sensors Others Sensor HAT ADC (Analog to Digital Convertor)  Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setting for OTG mode  add the following text to /boot/config.">
+  <meta property="og:description" content="Setting  Setting for OTG mode Autostart  Pin Examples Links Some Projects Some thoughts Setting brightness of Touch led Sensors Others Sensor HAT ADC (Analog to Digital Convertor)  Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setting for OTG mode  add the following text to /boot/config.">
+  <meta name="twitter:description" content="Setting  Setting for OTG mode Autostart  Pin Examples Links Some Projects Some thoughts Setting brightness of Touch led Sensors Others Sensor HAT ADC (Analog to Digital Convertor)  Setting  Raspberry …">
 
 
 <meta name="author" content="CyrusN"/>
@@ -207,10 +207,15 @@ var Paginator = {}
 <!-- MarkdownTOC -->
 
 <ul>
-<li><a href="#setting">Setting</a></li>
-<li><a href="#links">Links</a></li>
+<li><a href="#setting">Setting</a>
+
+<ul>
+<li><a href="#setting-for-otg-mode">Setting for OTG mode</a></li>
+<li><a href="#autostart">Autostart</a></li>
+</ul></li>
 <li><a href="#pin">Pin</a></li>
 <li><a href="#examples">Examples</a></li>
+<li><a href="#links">Links</a></li>
 <li><a href="#some-projects">Some Projects</a></li>
 <li><a href="#some-thoughts">Some thoughts</a></li>
 <li><a href="#setting-brightness-of-touch-led">Setting brightness of Touch led</a></li>
@@ -226,24 +231,69 @@ var Paginator = {}
 
 <ul>
 <li><a href="https://www.raspberrypi.org/documentation/" target="_blank">Raspberry Pi Documentation</a></li>
-<li><a href="https://www.raspberrypi.org/documentation/installation/" target="_blank">Installation - Raspberry Pi Documentation</a></li>
 <li><a href="https://www.raspberrypi.org/documentation/remote-access/vnc/" target="_blank">VNC (Virtual Network Computing) - Raspberry Pi Documentation</a></li>
 <li><a href="https://www.raspberrypi.org/documentation/remote-access/ssh/" target="_blank">SSH (Secure Shell) - Raspberry Pi Documentation</a></li>
 <li><a href="https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md" target="_blank">Passwordless SSH access - Raspberry Pi Documentation</a></li>
-<li><a href="https://pinout.xyz/pinout/sense_hat" target="_blank">Sense HAT at Raspberry Pi GPIO Pinout</a></li>
+<li><a href="https://learn.adafruit.com/turning-your-raspberry-pi-zero-into-a-usb-gadget/ethernet-gadget" target="_blank">Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System</a></li>
 </ul>
 
-<h1 id="links">Links</h1>
+<h2 id="setting-for-otg-mode">Setting for OTG mode</h2>
+
+<ol>
+<li><p>add the following text to <code>/boot/config.txt</code></p>
+
+<pre><code class="language-sh"># Enable OTG mode
+dtoverlay=dwc2
+</code></pre></li>
+
+<li><p>Save the config.txt file as plain text and then open up cmdline.txt After <code>rootwait</code> (the last word on the first line) add a space and then <code>modules-load=dwc2,g_ether</code></p></li>
+
+<li><p>Create an empty file named as <code>ssh.txt</code> in <code>/boot</code></p></li>
+
+<li><p>connect to your pi through ssh</p>
+
+<pre><code class="language-sh"># default password is raspberrypi
+ssh pi@raspberrypi.local
+</code></pre></li>
+
+<li><p>Setup for locale, add following text in <code>/etc/default/locale</code></p>
+
+<pre><code class="language-sh">LC_CTYPE=&quot;en_US.UTF-8&quot;
+LC_ALL=&quot;en_US.UTF-8&quot;
+LANG=&quot;en_US.UTF-8&quot;
+</code></pre></li>
+
+<li><p>setup wifi sharing, copy the following code to <code>/etc/network/interfaces</code></p>
+
+<pre><code class="language-sh">auto lo usb0
+allow-hotplug usb0
+iface usb0 inet manual
+</code></pre></li>
+</ol>
 
 <ul>
-<li><a href="https://www.youtube.com/watch?v=z_CbNqfa84Y" target="_blank">5 Amazing Gadgets Built On Raspberry Pi - YouTube</a></li>
-<li><a href="https://www.youtube.com/watch?v=NUmrwvQ0reI" target="_blank">How to make a DIY Raspberry Pi Arcade Cabinet! - YouTube</a></li>
-<li><a href="https://www.youtube.com/watch?v=Pfc031OlED8" target="_blank">PSP Raspberry PI 3 HDMI LCD RetroPie PSPi - YouTube</a></li>
-<li><a href="https://www.youtube.com/watch?v=9YhTOUu06EY" target="_blank">Top 10 Coolest Raspberry Pi Projects - YouTube</a></li>
-<li><a href="https://lifehacker.com/top-10-raspberry-pi-projects-for-beginners-1791002723" target="_blank">Top 10 Raspberry Pi Projects for Beginners</a></li>
-<li><a href="https://www.google.com.hk/search?newwindow=1&amp;safe=off&amp;q=L298&amp;oq=L298&amp;gs_l=psy-ab.3..0i67k1l4j0i7i30k1l2j0i67k1j0j0i67k1j0.11553.14128.0.14632.4.4.0.0.0.0.68.238.4.4.0....0...1.1.64.psy-ab..0.4.238...33i160k1j35i39k1.0.HB1FVyvf0Co" target="_blank">L298 - Google Search</a></li>
-<li><a href="https://www.element14.com/community/docs/DOC-78156/l/raspberry-pi-7-touchscreen-display" target="_blank">Raspberry Pi: Launch Python Script on Startup: 8 Steps</a></li>
-<li><a href="https://www.pcmarket.com.hk/2017/09/15/%E6%B7%BA%E8%AB%87%E9%9B%BB%E8%B7%AF%E6%9D%BF-microbit-vs-arduino-vs-raspberry-pi/" target="_blank">淺談電路板　micro:bit vs Arduino vs Raspberry Pi淺談電路板　micro:bit vs Arduino vs Raspberry Pi - PCM</a></li>
+<li><a href="https://learn.adafruit.com/turning-your-raspberry-pi-zero-into-a-usb-gadget/ethernet-tweaks" target="_blank">Ethernet Tweaks | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System</a></li>
+</ul>
+
+<h2 id="autostart">Autostart</h2>
+
+<p>Use <code>sudo crontab -e</code> to set autostart programme</p>
+
+<pre><code class="language-sh">@reboot python /home/pi/MyScript.py &amp;
+</code></pre>
+
+<p>This tells Cron that every boot (or reboot or start-up) we want to run Python with the script MyScript.py.
+The “&amp;” at the end of the line means the command is run in the background and it won’t stop the system booting up as before.</p>
+
+<p>To kill the job</p>
+
+<pre><code class="language-sh">ps aux | grep /home/pi/MyScript.py
+</code></pre>
+
+<p><code>sudo kill pid_show_in_ps</code></p>
+
+<ul>
+<li><a href="https://www.raspberrypi-spy.co.uk/2013/07/running-a-python-script-at-boot-using-cron/" target="_blank">Running A Python Script At Boot Using Cron</a></li>
 </ul>
 
 <h1 id="pin">Pin</h1>
@@ -253,6 +303,7 @@ var Paginator = {}
 
 <ul>
 <li><a href="https://www.raspberrypi.org/documentation/usage/gpio-plus-and-raspi2/README.md" target="_blank">GPIO: Models A+, B+, Raspberry Pi 2 B and Raspberry Pi 3 B - Raspberry Pi Documentation</a></li>
+<li><a href="https://pinout.xyz/pinout/sense_hat" target="_blank">Sense HAT at Raspberry Pi GPIO Pinout</a></li>
 <li><a href="https://pinout.xyz/" target="_blank">Raspberry Pi GPIO Pinout</a></li>
 </ul>
 
@@ -265,9 +316,26 @@ var Paginator = {}
 <li><a href="https://www.modmypi.com/blog/hc-sr04-ultrasonic-range-sensor-on-the-raspberry-pi" target="_blank">ModMyPi | HC-SR04 Ultrasonic Range Sensor on the Raspberry Pi</a></li>
 </ul>
 
+<h1 id="links">Links</h1>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=NUmrwvQ0reI" target="_blank">How to make a DIY Raspberry Pi Arcade Cabinet! - YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=Pfc031OlED8" target="_blank">PSP Raspberry PI 3 HDMI LCD RetroPie PSPi - YouTube</a></li>
+<li><a href="https://www.pcmarket.com.hk/2017/09/15/%E6%B7%BA%E8%AB%87%E9%9B%BB%E8%B7%AF%E6%9D%BF-microbit-vs-arduino-vs-raspberry-pi/" target="_blank">淺談電路板　micro:bit vs Arduino vs Raspberry Pi淺談電路板　micro:bit vs Arduino vs Raspberry Pi - PCM</a></li>
+<li><a href="https://www.raspberrypi.org/forums/viewtopic.php?f=72&amp;t=61949" target="_blank">USB (DWC) Enumeration ? - Raspberry Pi Forums</a></li>
+<li><a href="https://gist.github.com/gbaman/50b6cca61dd1c3f88f41" target="_blank">Simple guide for setting up OTG modes on the Raspberry Pi Zero</a></li>
+<li><a href="https://www.electronicshub.org/raspberry-pi-basic-setup-without-monitor-keyboard-headless-setup/" target="_blank">Raspberry Pi – Basic Setup without Monitor and Keyboard (Headless Setup)</a></li>
+<li><a href="https://www.youtube.com/watch?v=z_CbNqfa84Y" target="_blank">5 Amazing Gadgets Built On Raspberry Pi - YouTube</a></li>
+</ul>
+
 <h1 id="some-projects">Some Projects</h1>
 
 <ul>
+<li><a href="https://projects.raspberrypi.org/en/" target="_blank">Projects | Raspberry Pi Projects</a></li>
+<li><a href="https://www.youtube.com/watch?v=9YhTOUu06EY" target="_blank">Top 10 Coolest Raspberry Pi Projects - YouTube</a></li>
+<li><a href="https://lifehacker.com/top-10-raspberry-pi-projects-for-beginners-1791002723" target="_blank">Top 10 Raspberry Pi Projects for Beginners</a></li>
+<li><a href="http://www.instructables.com/id/DIY-Raspberry-Pi-Indoor-Outdoor-Webcam/?utm_source=newsletter&amp;utm_medium=email" target="_blank">DIY Raspberry Pi Indoor Outdoor Webcam: 9 Steps (with Pictures)</a></li>
+<li><a href="https://www.raspberrypi.org/forums/viewtopic.php?f=43&amp;t=60829" target="_blank">Daylight IR photography - Raspberry Pi Forums</a></li>
 <li><a href="https://www.rs-online.com/designspark/plug-and-play-iot-with-the-pi-sense-hat" target="_blank">Plug and Play IoT with the Pi Sense HAT</a></li>
 <li><a href="https://lifehacker.com/the-simplest-way-to-build-a-raspberry-pi-powered-amazon-1794218212" target="_blank">The Simplest Way to Build A Raspberry Pi-Powered Amazon Echo</a></li>
 <li><a href="https://github.com/alexa/alexa-avs-sample-app/wiki/Raspberry-Pi" target="_blank">Raspberry Pi · alexa/alexa-avs-sample-app Wiki</a></li>

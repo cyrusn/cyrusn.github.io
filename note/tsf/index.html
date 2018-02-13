@@ -197,20 +197,20 @@ var Paginator = {}
   <hr>
   <div id="content">
     <pre><code class="language-js">var students = [{
-  name: &quot;foo&quot;,
-  clazz: &quot;4A&quot; 
-}, {  
-  name: &quot;world&quot;,
-  clazz: &quot;4B&quot; 
+  name: 'foo',
+  clazz: '4A'
 }, {
-  name: &quot;bar&quot;,
-  clazz: &quot;4B&quot;
+  name: 'world',
+  clazz: '4B'
 }, {
-  name: &quot;hello&quot;,
-  clazz: &quot;4C&quot;
+  name: 'bar',
+  clazz: '4B'
+}, {
+  name: 'hello',
+  clazz: '4C'
 }]
 
-var clazzes = [&quot;4B&quot;, &quot;4C&quot;]
+var clazzes = ['4B', '4C']
 
 clazzes.forEach(function (clazz) {
   students.filter(createFilterFunction(clazz)).forEach(logName)
@@ -219,7 +219,7 @@ clazzes.forEach(function (clazz) {
 function createFilterFunction (clazz) {
   // return filterFunction
   return function (student) {
-    return student.clazz == clazz
+    return student.clazz === clazz
   }
 }
 
