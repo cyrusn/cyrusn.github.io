@@ -8,9 +8,10 @@ title: swimming
 
 # FreeStyle
 
-- [3 Drills to Improve Freestyle Stroke | Swimming Lessons - YouTube][&1]
-- [Speedo's Ultimate Guide to a Perfect Freestyle Swim Stroke! (Tutorial) - Presented by ProTriathlon - YouTube][&2]
+- [3 Drills to Improve Freestyle Stroke | Swimming Lessons - YouTube][@1]
+- [Speedo's Ultimate Guide to a Perfect Freestyle Swim Stroke! (Tutorial) - Presented by ProTriathlon - YouTube][@2]
 
+<!-- reference links -->
 
-[&1]: https://www.youtube.com/watch?v=1WciZerjGoU
-[&2]: https://www.youtube.com/watch?v=4E9O2Iz4WwE
+[@1]: https://www.youtube.com/watch?v=1WciZerjGoU
+[@2]: https://www.youtube.com/watch?v=4E9O2Iz4WwE

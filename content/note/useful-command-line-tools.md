@@ -3,17 +3,51 @@ title: Useful Command Line Tools
 date: '2015-05-24 22:36:53'
 tags:
   - commandline
-  - terminal
   - httpie
   - jq
-  - zsh
-  - redirect
-  - xargs
-  - wild card
-  - pt
   - kill
+  - pt
+  - redirect
+  - terminal
   - top
+  - wild card
+  - xargs
+  - youtube-dl
+  - zsh
 ---
+
+{{< tooltip "hello" "[ok](#)">}}
+
+# TOC
+<!-- MarkdownTOC -->
+
+- [Basic](#basic)
+  - [Redirect operators](#redirect-operators)
+- [Useful Commands](#useful-commands)
+  - [zsh](#zsh)
+  - [tr](#tr)
+  - [copydir](#copydir)
+  - [qlmanage](#qlmanage)
+  - [airport](#airport)
+  - [pgrep and pkill](#pgrep-and-pkill)
+  - [shutdown](#shutdown)
+  - [textutil](#textutil)
+  - [xargs](#xargs)
+  - [Find files and delete them](#find-files-and-delete-them)
+- [Powerful tools](#powerful-tools)
+  - [ImageMagick \(convert\)](#imagemagick-convert)
+  - [ffmpeg](#ffmpeg)
+  - [http-server](#http-server)
+  - [youtube-dl](#youtube-dl)
+  - [pt](#pt)
+  - [Pandoc](#pandoc)
+  - [http](#http)
+  - [jq](#jq)
+  - [top](#top)
+  - [osx metadata](#osx-metadata)
+
+<!-- /MarkdownTOC -->
+
 
 # Basic
 
@@ -42,19 +76,27 @@ heredoc> end
 
 # Useful Commands
 
-## [Cheatsheet](http://floss.zoomquiet.io/data/20120129165222/index.html)
-
+## zsh
+- [Cheatsheet][@01]
 - `d` to show directory history
   - type `cd -number` or directly type the `number` to go to directory
 - `!:n-m` get the attribute from n to m of last command
 - `!!` to get the last command
 - `!*` to get the argz of last command
-- [zsh tip](http://www.zzapper.co.uk/zshtips.html)
+- [zsh tip][@02]
+- [zsh - Table of Contents][@03]
 
-## Links
-- [zsh - Table of Contents](http://www.cs.elte.hu/zsh-manual/zsh_toc.html)
+## tr
+
+> translate or delete characters
+
+```sh
+# replace "space character" to "+"
+echo "hello world" | tr "[:blank:]" "+"
+```
 
 ## copydir
+> Custom Command: `copydir` to copy current directory to clipboard
 
 ```sh
 function copydir {
@@ -62,10 +104,8 @@ function copydir {
 }
 ```
 
-- `copydir` to copy current directory to clipboard
 
 ## qlmanage
-
 ```sh
 # Quick-look a file from the command line
 alias ql='qlmanage -p'
@@ -80,11 +120,9 @@ alias ql='qlmanage -p'
 Scan your local wireless environment from the command line
 
 ## pgrep and pkill
-
 Find or signal a program or process by name
 
 ## shutdown
-
 Restart the Mac
 
 ```sh
@@ -95,8 +133,7 @@ $ shutdown -r now
 
 Convert between various text file formats
 
-## Xargs
-
+## xargs
 Granted, I often `xargs` at CLI to do the looping (KYLee):
 ```sh
 # simple use case
@@ -113,8 +150,6 @@ cat file | xargs -I@ echo @
 ```
 
 ## Find files and delete them
-
-# can use * as wild card
 ``` sh
 $ find . -name "FILE-TO-FIND" -exec rm -rf {} \;
 ```
@@ -122,10 +157,7 @@ $ find . -name "FILE-TO-FIND" -exec rm -rf {} \;
 # Powerful tools
 
 ## ImageMagick (convert)
-
-[ImageMagick](http://www.imagemagick.org/script/command-line-processing.php)
-
-> Use ImageMagick to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.
+> Use [ImageMagick][@04] to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.
 
 ```sh
 convert image.jpg image.png
@@ -140,49 +172,63 @@ $ rename 's/\.html$/\.php/' *.html
 ```
 
 ## ffmpeg
-
-[ffmpeg](https://www.ffmpeg.org/) A complete, cross-platform solution to record, convert and stream audio and video.
+> [ffmpeg][@05] A complete, cross-platform solution to record, convert and stream audio and video.
 
 ```sh
 # -i mean input_file
 $ ffmpeg -i input.mp4 output.avi
 ```
 
-## [http-server](https://www.npmjs.com/package/http-server)
+## http-server
+> [http-server][@06] is a simple, zero-configuration command-line http server. It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, local development, and learning.
 
-> http-server is a simple, zero-configuration command-line http server. It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, local development, and learning.
+## youtube-dl
+> [youtube-dl][@07] is a small command-line program to download videos from YouTube.com and a few more sites.
+>
+> - [Example | Download YouTube in batch]({{< ref "post/download-youtube-in-batch" >}})
 
-## [youtube-dl](http://rg3.github.io/youtube-dl/)
+## pt
+> A code search tool similar to ack and the_silver_searcher(ag). It supports multi platforms and multi encodings.
+>
+> - [Platinum Searcher][@08]
 
-- youtube-dl is a small command-line program to download videos from YouTube.com and a few more sites.
-
-## [Platinum Searcher](https://github.com/monochromegane/the_platinum_searcher)
-
-- A code search tool similar to ack and the_silver_searcher(ag). It supports multi platforms and multi encodings.
-
-```sh
-$ pt
-```
-
-## [Pandoc](http://johnmacfarlane.net/pandoc/index.html)
-
-- [examples](http://johnmacfarlane.net/pandoc/demos.html)
+## Pandoc
+- [Pandoc][@09]
+- [examples][@10]
 - a universal document converter
 
-## osx metadata
-
-[mac OS X mdfind, mdutil, mdls, mdimport. file metadata utilities](http://real-world-systems.com/docs/mdfind.1.html)
-
-## [HTTPie – command line HTTP client](https://httpie.org/)
-
+## http
+- [HTTPie – command line HTTP client][@12]
 ```sh
 # install
 brew install httpie
 ```
 
-## [jq](https://stedolan.github.io/jq/)
+## jq
+> Command-line JSON processor. It's also very handy tool to parse JSON like `lodash`
 
-- `http -b url | jq .name`
+- [jq][@13]
+- `echo '{"name": "CyrusN"}'| jq .name`
+- `http` is commandline version of [postman](https://www.getpostman.com/)
 
 ## top
-using `top` command to kill running process
+> using `top` command to kill running process
+
+## osx metadata
+- [mac OS X mdfind, mdutil, mdls, mdimport. file metadata utilities][@11]
+
+<!-- reference links -->
+
+[@01]: http://floss.zoomquiet.io/data/20120129165222/index.html
+[@02]: http://www.zzapper.co.uk/zshtips.html
+[@03]: http://www.cs.elte.hu/zsh-manual/zsh_toc.html
+[@04]: http://www.imagemagick.org/script/command-line-processing.php
+[@05]: https://www.ffmpeg.org/
+[@06]: https://www.npmjs.com/package/http-server
+[@07]: http://rg3.github.io/youtube-dl/
+[@08]: https://github.com/monochromegane/the_platinum_searcher
+[@09]: http://johnmacfarlane.net/pandoc/index.html
+[@10]: http://johnmacfarlane.net/pandoc/demos.html
+[@11]: http://real-world-systems.com/docs/mdfind.1.html
+[@12]: https://httpie.org/
+[@13]: https://stedolan.github.io/jq/

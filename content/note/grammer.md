@@ -10,21 +10,23 @@ tags:
 English Grammer 101
 
 # Tenses
-- ![tensesTable](./tenses-table.png)
+- ![tensesTable][@1]
 
 # Descibe future event
-- [Will vs Going To Differences - GrammarBank][&1]
+- [Will vs Going To Differences - GrammarBank][@2]
 
 # FANBOYS
-- [Writing Compound Sentences Using FANBOYS][&2]
+- [Writing Compound Sentences Using FANBOYS][@3]
 
 
 # Participles
-- [What are participles?][&3]
-- [Participial phrase][&4]
+- [What are participles?][@4]
+- [Participial phrase][@5]
 
+<!-- reference links -->
 
-[&1]: http://www.grammarbank.com/will-vs-going-to.html
-[&2]: http://www.csus.edu/owl/index/sent/fanboys.htm
-[&3]: https://www.englishgrammar.org/participles/
-[&4]: http://www.paperrater.com/page/participial-phrase
+[@1]: ./tenses-table.png
+[@2]: http://www.grammarbank.com/will-vs-going-to.html
+[@3]: http://www.csus.edu/owl/index/sent/fanboys.htm
+[@4]: https://www.englishgrammar.org/participles/
+[@5]: http://www.paperrater.com/page/participial-phrase

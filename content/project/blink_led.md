@@ -23,7 +23,7 @@ Making Blinking LED is just like writing a hello world programme in engineering.
 
 # Setting
 
-![setting][&1]
+![setting][@1]
 
 
 # Python Code
@@ -43,6 +43,6 @@ time.sleep(0.5)
 GPIO.output(LED, False)
 time.sleep(0.5)
 print("Programme closed.")
-``` 
+```
 
-[&1]: ./simple-led-setting.png
+[@1]: ./simple-led-setting.png

@@ -4,7 +4,9 @@ subtitle: 'Stay Hungry, Stay Foolish.'
 comments: false
 ---
 
-CyrusN is a math teacher in Hong Kong, eager to learn more in programming.
+[CyrusN](mailto:cyrusncy@gmail.com) is a math teacher in Hong Kong, eager to learn more in programming.
 
 > A teacher has two jobs. Fill young minds with knowledge, yes. But more important, give those minds a compass so that that knowledge doesn't go to waste.
 > <footer>From the movie: <cite>Mr Holland's Opus</cite></footer>
+ 
+

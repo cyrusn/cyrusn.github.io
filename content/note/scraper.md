@@ -6,4 +6,8 @@ subtitle: ""
 tags:
 ---
 
-- [Web Scraper](http://webscraper.io/)
+- [Web Scraper][@1]
+
+<!-- reference links -->
+
+[@1]: http://webscraper.io/

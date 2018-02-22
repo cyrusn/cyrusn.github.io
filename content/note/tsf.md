@@ -9,20 +9,20 @@ tags:
 
 ``` js
 var students = [{
-  name: "foo",
-  clazz: "4A" 
-}, {  
-  name: "world",
-  clazz: "4B" 
+  name: 'foo',
+  clazz: '4A'
 }, {
-  name: "bar",
-  clazz: "4B"
+  name: 'world',
+  clazz: '4B'
 }, {
-  name: "hello",
-  clazz: "4C"
+  name: 'bar',
+  clazz: '4B'
+}, {
+  name: 'hello',
+  clazz: '4C'
 }]
 
-var clazzes = ["4B", "4C"]
+var clazzes = ['4B', '4C']
 
 clazzes.forEach(function (clazz) {
   students.filter(createFilterFunction(clazz)).forEach(logName)
@@ -31,7 +31,7 @@ clazzes.forEach(function (clazz) {
 function createFilterFunction (clazz) {
   // return filterFunction
   return function (student) {
-    return student.clazz == clazz
+    return student.clazz === clazz
   }
 }
 

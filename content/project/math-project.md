@@ -1,6 +1,6 @@
 ---
 date: 2017-10-09T18:16:47+08:00
-title: "Math Project"
+title: "Math Project Competition"
 draft: true
 subtitle: ""
 tags:
@@ -46,9 +46,10 @@ tags:
   + thickness
   + volume
 - how birds collapse its wing
-- [Negative Poisson's ratio][&1]
-- [(110) Pinterest](https://www.pinterest.com/pin/625578204460750191/)
+- [Negative Poisson's ratio][@1]
+- [(110) Pinterest][@2]
 
+<!-- reference links -->
 
-
-[&1]: http://silver.neep.wisc.edu/~lakes/Poisson.html
+[@1]: http://silver.neep.wisc.edu/~lakes/Poisson.html
+[@2]: https://www.pinterest.com/pin/625578204460750191/

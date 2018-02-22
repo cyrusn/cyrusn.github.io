@@ -8,7 +8,7 @@ tags:
 
 # Custom OSX
 
-- [Remove shift key augmentation for Mission Control animation](http://apple.stackexchange.com/questions/66433/remove-shift-key-augmentation-for-mission-control-animation#answer-115698)
+- [Remove shift key augmentation for Mission Control animation][@1]
 - Enable the three finger drag in _Accessibility_
 
 # Terminal
@@ -18,7 +18,7 @@ tags:
 
 ## zsh
 
-- [install .oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+- [install .oh-my-zsh][@2]
 - symlink for setting zsh
 
 ```sh
@@ -90,3 +90,7 @@ ln -s ~/Dropbox/MacSetting/sublimetext/User  ./
 # custom setting on osx
 
 - set terminal color theme
+
+
+[@1]: http://apple.stackexchange.com/questions/66433/remove-shift-key-augmentation-for-mission-control-animation#answer-115698
+[@2]: https://github.com/robbyrussell/oh-my-zsh

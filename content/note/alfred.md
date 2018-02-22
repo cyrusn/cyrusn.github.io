@@ -21,10 +21,11 @@ code
 curl --silent 'https://raw.githubusercontent.com/stuartcryan/custom-iterm-applescripts-for-alfred/master/custom_iterm_script_iterm_2.9.applescript' | pbcopy
 ```
 
-- [stuartcryan/custom-iterm-applescripts-for-alfred: Custom iTerm Applescripts for Alfred][&1]
+- [stuartcryan/custom-iterm-applescripts-for-alfred: Custom iTerm Applescripts for Alfred][@1]
 
-![image][&2]
+![image][@2]
 
+<!-- reference links -->
 
-[&1]: https://github.com/stuartcryan/custom-iterm-applescripts-for-alfred
-[&2]: https://camo.githubusercontent.com/21089022b858e00d25a1b70ab1467c1308c4cf3e/687474703a2f2f692e696d6775722e636f6d2f6e3356444f386c2e676966
+[@1]: https://github.com/stuartcryan/custom-iterm-applescripts-for-alfred
+[@2]: https://camo.githubusercontent.com/21089022b858e00d25a1b70ab1467c1308c4cf3e/687474703a2f2f692e696d6775722e636f6d2f6e3356444f386c2e676966

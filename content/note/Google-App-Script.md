@@ -6,7 +6,7 @@ tags:
 ---
 
 # Links
-- [Apps Script | Google Developers][&1]
+- [Apps Script | Google Developers][@1]
 
 # Using html request to send form response
 - open inspecter in google form (view version, not editable one)
@@ -22,5 +22,6 @@ tags:
 - this is the complete example
   + `https://docs.google.com/forms/d/e/1FAIpQLSdC2RD1aD4W4duLGDjxsVFDGvJW6IUhhxsBGWiQlV7TU_w5LA/formResponse?ifq&entry.204155988=Cyrus%20Ngan&entry.544002008=foo&submit=Submit`
 
+<!-- reference links -->
 
-[&1]: https://developers.google.com/apps-script/reference/
+[@1]: https://developers.google.com/apps-script/reference/

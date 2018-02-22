@@ -65,9 +65,11 @@ FULL (OUTER) JOIN: Return all records when there is a match in either left or ri
 
 | inner             | left            | right             | full            |
 | :---------------: | :-------------: | :---------------: | :-------------: |
-| ![inner][&1]       | ![left][&2]      | ![right][&3]       | ![full][&4]      |
+| ![inner][@1]      | ![left][@2]     | ![right][@3]      | ![full][@4]     |
 
-[&1]: https://www.w3schools.com/sql/img_innerjoin.gif
-[&2]: https://www.w3schools.com/sql/img_leftjoin.gif
-[&3]: https://www.w3schools.com/sql/img_rightjoin.gif
-[&4]: https://www.w3schools.com/sql/img_fulljoin.gif
+<!-- reference links -->
+
+[@1]: https://www.w3schools.com/sql/img_innerjoin.gif
+[@2]: https://www.w3schools.com/sql/img_leftjoin.gif
+[@3]: https://www.w3schools.com/sql/img_rightjoin.gif
+[@4]: https://www.w3schools.com/sql/img_fulljoin.gif

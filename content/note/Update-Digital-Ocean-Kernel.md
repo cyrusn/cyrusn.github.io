@@ -26,4 +26,9 @@ sudo do-release-upgrade
 
 # Reference
 
-[How To Upgrade to Ubuntu 16.04 LTS | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-upgrade-to-ubuntu-16-04-lts) [How To Update a DigitalOcean Server's Kernel | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-update-a-digitalocean-server-s-kernel)
+[How To Upgrade to Ubuntu 16.04 LTS | DigitalOcean][@1] [How To Update a DigitalOcean Server's Kernel | DigitalOcean][@2]
+
+<!-- reference links -->
+
+[@1]: https://www.digitalocean.com/community/tutorials/how-to-upgrade-to-ubuntu-16-04-lts
+[@2]: https://www.digitalocean.com/community/tutorials/how-to-update-a-digitalocean-server-s-kernel

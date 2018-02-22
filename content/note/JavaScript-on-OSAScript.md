@@ -30,7 +30,7 @@ function run(argz) {
   var app = Application.currentApplication();
   app.includeStandardAdditions = true;
   var Chrome = Application('Google Chrome');
-  var activeTab = Chrome.windows[&0].activeTab;
+  var activeTab = Chrome.windows[@0].activeTab;
   var result = '[' + activeTab.title() + '](' + activeTab.url() + ')';
   app.setTheClipboardTo(result)
   return result
@@ -42,7 +42,7 @@ function run(argz) {
 // email link of Google Chrome active tab
 function run(argz){
   var Chrome = Application('Google Chrome');
-  var activeTab = Chrome.windows[&0].activeTab;
+  var activeTab = Chrome.windows[@0].activeTab;
 
   var title: activeTab.title();
   var url = activeTab.url();

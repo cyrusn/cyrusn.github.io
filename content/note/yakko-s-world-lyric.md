@@ -33,7 +33,7 @@ Bar***ba***dos, and ***Guam***.
 ---
 
 ***Nor***way, and S***we***den, and ***Ice***land, and ***Fin***land and
-***Ger***many ***no***w ~ want ***peace***,
+***Ger***many ***no***w ~ one ***piece***,
 
 S***wit***zerland, ***Au***stria, ***Cze***ch, Slo***vak***ia
 ***It***aly, ***Tur***key, and ***Greece***.
@@ -52,21 +52,23 @@ The ***Ne***therlands, ***Lu***xembourg, **Bel**gium, and ***Por***tugal
 
 ---
 
-***In***dia, ***Pak***istan, **Bur**ma, Af***ghan***istan
-***Thai***land, Ne***pal***, and Bhu***tan***,
+***In***dia, ***Pak***istan, **Bur**ma, 
+{{< tooltip "Af***ghan***istan," "/æfˈɡænəstɑːn/" >}} ***Thai***land, Ne***pal***, and Bhu***tan***,
 
 
-***Kam***pu***che***a, Ma***lay***sia, then ***Ban***gladesh ***A***sia and
+***Kam***pu***che***a, Ma***lay***sia, then {{< tooltip "***Ban***gladesh" "/ˌbæŋɡləˈdeʃ/" >}} ***A***sia and
 ***Chi***na, Ko***re***a, Ja***pan***.
 
-Mon***go***lia, ***Laos***, and Ti***bet***, Indo***ne***sia
+Mon***go***lia, ***Laos***, and 
+{{< tooltip "Ti***bet***" "/tɪˈbet/" >}}
+, Indo***ne***sia
 The ***Phi***lippine ***I***slands, Tai***wan***,
 
 Sri ***Lan***ka, New ***Gu***inea, Su***ma***tra, New ***Zea***land
 Then ***Bor***neo, ***and*** Viet***nam***.
 
 ***Tu*** ~ ***ni***sia, Mo***ro***cco, U***gan***da, An***go***la
-Zim***ba***bwe, Dji***bou***ti, Bots***wa***na,
+Zim***ba***bwe, {{< tooltip "Dji***bou***ti" "/dʒəˈbuːti, dʒɪˈbuːti/" >}} , Bots***wa***na,
 
 ***Mo***zambique, ***Zam***bia, S***wa***ziland, ***Gam***bia
 ***Gui***nea, Al***ge***ria, Gha***na***.
@@ -85,14 +87,16 @@ Si***er***ra Le***one***, and Al***giers***,
 Da***ho***mey, Na***mi***bia, ***Se***negal, ***Li***bya
 ***Ca***meroon, ***Con***go, Zai***re***.
 
-E***thio***pia, ***Gui***nea-Bis***sau***, Mada**ga**scar
+{{< tooltip "E***thio***pia" "ˌiːθiˈəʊpiə" >}}, ***Gui***nea-Bis***sau***, Mada**ga**scar
 ***Rwan***da, Mah***ore***, and Cay***man***,
 
 Hong ***Kong***, Abu ***Dha***bi, Qa***tar***, Yugo***sla***via...
 
 **Crete**, Mauri***ta***nia
 ***Then*** Transyl***via***nia,
-***Mo***naco, ***Liech***tenstein
+***Mo***naco, {{< tooltip "***Liech***tenstein" "/ˈlɪktənstaɪn/" >}}
 
 ***Mal***ta, and ***Pa***estine,
 **Fi**ji, Au***str***alia, Su***dan***.
+
+<!-- Flat 12, 3/F, Block G, Telford Gardens, 33 Wai Yip Street, Kowloon Bay, Kowloon, Hong Kong -->

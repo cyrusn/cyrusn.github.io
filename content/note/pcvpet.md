@@ -17,7 +17,7 @@ title: Notes on PCVEPT Course
     - Hong Kong need technician
   - Student need to find what they will devote in and capable of.
   - Earn And Learn Scheme 3 days works and 3 days study
-  - [Pages - VPETCITY Home][&1]
+  - [Pages - VPETCITY Home][@1]
 
 
 - Simple Game
@@ -35,5 +35,6 @@ title: Notes on PCVEPT Course
   - 我要做Boss
   - Good Show
 
+<!-- reference links -->
 
-[&1]: https://sharepoint.vtc.edu.hk/vpetcity/Pages/Home.aspx
+[@1]: https://sharepoint.vtc.edu.hk/vpetcity/Pages/Home.aspx

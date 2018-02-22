@@ -2,21 +2,22 @@
 date: 2017-05-16T00:17:50+08:00
 title: 提升生產力及專注力
 subtitle: ""
+RemarkOption:
+    ratio: "16:9"
 tags:
   - GTD
   - Pomodoro
   - tomato
 ---
-class: center, middle
+class: center middle bg-info text-light
 
 # 提升生產力及專注力
 ## GTD & 蕃茄工作法
 
 ---
 # Reference
-- [The Pomodoro Technique® - proudly developed by Francesco Cirillo | Cirillo Company][&1]
-- [David Allen's Getting Things Done® Methodology][&2]
-
+- [The Pomodoro Technique® - proudly developed by Francesco Cirillo | Cirillo Company][@1]
+- [David Allen's Getting Things Done® Methodology][@2]
 
 ---
 # 工作時間
@@ -35,7 +36,9 @@ class: center, middle
 ---
 # 流程
 
-[![image]][image]
+.overflow.h-75[
+[![workflow]][@3]
+]
 
 ---
 # Why?
@@ -45,28 +48,27 @@ class: center, middle
 
 ---
 
-.split-50[
-.column[
+.row[
+.col-6[
 # 參考資料
 
-- [Online Pomodoro Timer][&3]
-- [Pomodoro Technique][&5]
-- [Getting Things Done][&4]
+- [Online Pomodoro Timer][@4]
+- [Pomodoro Technique][@5]
+- [Getting Things Done][@6]
 ]
 
-.column[
+.col-6[
 # *keywords*:
 - `pomodoro`
 - `tomato`
 - `timer`
 - `technique`
 - `getting things done`
-]
-]
+]]
 
-[&1]: https://cirillocompany.de/pages/pomodoro-technique
-[&2]: http://gettingthingsdone.com/
-[&3]: http://www.moosti.com/
-[&5]: https://en.wikipedia.org/wiki/Pomodoro_Technique
-[&4]: https://en.wikipedia.org/wiki/Getting_Things_Done
-[image]: https://dl.dropboxusercontent.com/s/hs9jspievysiptw/flow.svg
+[@1]: https://cirillocompany.de/pages/pomodoro-technique
+[@2]: http://gettingthingsdone.com/
+[@3]: https://dl.dropboxusercontent.com/s/hs9jspievysiptw/flow.svg
+[@4]: http://www.moosti.com/
+[@5]: https://en.wikipedia.org/wiki/Pomodoro_Technique
+[@6]: https://en.wikipedia.org/wiki/Getting_Things_Done

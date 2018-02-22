@@ -8,9 +8,9 @@ tags:
 
 # VIM Basic
 
-- [Vim Cheat Sheet - English][&1]
-- [VimGenius][&2]
-- [vimgifs][&3]
+- [Vim Cheat Sheet - English][@1]
+- [VimGenius][@2]
+- [vimgifs][@3]
 
 # Some useful skills
 
@@ -27,8 +27,8 @@ Select the lines you want to modify using `Ctrl-v`. Press: `I`: Insert before wh
 
 # VIM Plugin
 
-- [vim-pathogen][&4]
-- [Vim Awesome][&5]
+- [vim-pathogen][@4]
+- [Vim Awesome][@5]
 
 # My installed Plugins
 
@@ -43,8 +43,10 @@ Select the lines you want to modify using `Ctrl-v`. Press: `I`: Insert before wh
 - tagbar
 - vim-colors-solarized
 
-[&1]: http://vim.rtorr.com/
-[&2]: http://vimgenius.com/
-[&3]: https://vimgifs.com/
-[&4]: https://github.com/tpope/vim-pathogen
-[&5]: http://vimawesome.com/
+<!-- reference links -->
+
+[@1]: http://vim.rtorr.com/
+[@2]: http://vimgenius.com/
+[@3]: https://vimgifs.com/
+[@4]: https://github.com/tpope/vim-pathogen
+[@5]: http://vimawesome.com/

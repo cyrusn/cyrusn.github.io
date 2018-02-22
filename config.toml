@@ -9,7 +9,8 @@ paginate = 10
 disqusShortname = "cyrusngithubio"
 
 [blackfriday]
-  extensions = ["hardLineBreak"]
+  hrefTargetBlank = true
+  # extensions = ["hardLineBreak"]
 
 [Params]
   subtitle = "My Notes"
@@ -22,13 +23,16 @@ disqusShortname = "cyrusngithubio"
   search = true
   showHint = true
 
+[Params.mermaidOption]
+  theme = 'neutral'
+
 [Params.RemarkOption]
   highlight-lines = true
-  highlight-style = "monokai"
+  highlight-style = "atom-one-dark"
   ratio = "4:3"
   [Params.RemarkOption.navigation]
       scroll = false
-      click = true
+      # click = true
 
 [Author]
   name = "CyrusN"
@@ -37,6 +41,11 @@ disqusShortname = "cyrusngithubio"
   facebook = "cyrusncy"
   twitter = "cyrusncy"
 
+[[menu.main]]
+    name = "Post"
+    identifier = "post"
+    url = "/post/"
+    weight = 2
 
 [[menu.main]]
     name = "Note"

@@ -7,21 +7,19 @@ tags:
 ---
 
 # Start Developing iOS / OSX Apps
-[The Swift Programming Language (Swift 2.2): About Swift](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/)
-[Start Developing iOS Apps (Swift): Jump Right In](https://developer.apple.com/library/ios/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html#//apple_ref/doc/uid/TP40015214-CH2-SW1)
+[The Swift Programming Language (Swift 2.2): About Swift][@01]
+[Start Developing iOS Apps (Swift): Jump Right In][@02]
 
 # ICON for iOS Development
-
-
-[23,500 Icons - Free Download | Icons8](https://icons8.com/web-app/new-icons/all)
+[23,500 Icons - Free Download | Icons8][@03]
 
 # Basic Keywords
 
-## [Control Flow](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/ControlFlow.html#//apple_ref/doc/uid/TP40014097-CH9-XID_191)
+## [Control Flow][@04]
 
 - where (A `switch` case can use a `where` clause to check for additional conditions.)
 
-## [Computed Properties](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Properties.html#//)
+## [Computed Properties][@05]
 
 - lazy
 - get
@@ -31,58 +29,58 @@ tags:
 
 <!-- more -->
 
- ## [Instance Methods](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Methods.html#//)
+ ## [Instance Methods][@06]
 
 - self
 - static
 - mutating
 
-## [Subscript](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Subscripts.html#//)
+## [Subscript][@07]
 
 - subscript
 
-## [Inheritance](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Inheritance.html#//apple_ref/doc/uid/TP40014097-CH17-XID_297)
+## [Inheritance][@08]
 
 - override
 - super
 
-## [Initialization](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Initialization.html#//)
+## [Initialization][@09]
 
 - init
 - convenience
 - required
 
-## [Deinitialization](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Deinitialization.html#//apple_ref/doc/uid/TP40014097-CH19-XID_220)
+## [Deinitialization][@10]
 
 - deinit
 - unowned
 
-## [Type Casting](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/TypeCasting.html#//apple_ref/doc/uid/TP40014097-CH22-XID_498)
+## [Type Casting][@11]
 
 - is
 - as
 
-## [Extension](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Extensions.html#//apple_ref/doc/uid/TP40014097-CH24-XID_229)
+## [Extension][@12]
 
 - extension
 
-## [Protocols](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Protocols.html#//apple_ref/doc/uid/TP40014097-CH25-XID_390)
+## [Protocols][@13]
 
 - protocol
 
-## [Generic](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Generics.html#//apple_ref/doc/uid/TP40014097-CH26-XID_275)
+## [Generic][@14]
 
 - Where Clauses
 
-## [Access Control](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/AccessControl.html#//apple_ref/doc/uid/TP40014097-CH41-XID_29)
+## [Access Control][@15]
 
 - public
 - internal
 - private
 
-## [Summary of the Grammar](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/zzSummaryOfTheGrammar.html#//apple_ref/doc/uid/TP40014097-CH38-XID_1131)
+## [Summary of the Grammar][@16]
 
-## [Using Swift with Cocoa and Objective-C](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216-CH2-XID_0)
+## [Using Swift with Cocoa and Objective-C][@17]
 
 - **_attribute_**
 - import
@@ -92,3 +90,23 @@ tags:
 - @IBDesignable
 - strong
 - weak
+
+<!-- reference links -->
+
+[@01]: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/
+[@02]: https://developer.apple.com/library/ios/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html#//apple_ref/doc/uid/TP40015214-CH2-SW1
+[@03]: https://icons8.com/web-app/new-icons/all
+[@04]: https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/ControlFlow.html#//apple_ref/doc/uid/TP40014097-CH9-XID_191
+[@05]: https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Properties.html#//
+[@06]: https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Methods.html#//
+[@07]: https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Subscripts.html#//
+[@08]: https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Inheritance.html#//apple_ref/doc/uid/TP40014097-CH17-XID_297
+[@09]: https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Initialization.html#//
+[@10]: https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Deinitialization.html#//apple_ref/doc/uid/TP40014097-CH19-XID_220
+[@11]: https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/TypeCasting.html#//apple_ref/doc/uid/TP40014097-CH22-XID_498
+[@12]: https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Extensions.html#//apple_ref/doc/uid/TP40014097-CH24-XID_229
+[@13]: https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Protocols.html#//apple_ref/doc/uid/TP40014097-CH25-XID_390
+[@14]: https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Generics.html#//apple_ref/doc/uid/TP40014097-CH26-XID_275
+[@15]: https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/AccessControl.html#//apple_ref/doc/uid/TP40014097-CH41-XID_29
+[@16]: https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/zzSummaryOfTheGrammar.html#//apple_ref/doc/uid/TP40014097-CH38-XID_1131
+[@17]: https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216-CH2-XID_0
