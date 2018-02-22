@@ -168,15 +168,18 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<h1 class="display-4 text-center">Auth in Golang</h1>
-<hr>
 <div class="mx-auto">
   
-  <h3 class="text-muted">Some examples about authentication in Golang with JWTs</h3>
+  <h1 class="display-4 pb-0">Auth in Golang</h1>
+  
+
+  
+  <h2 class="text-muted pt-0">Some examples about authentication in Golang with JWTs</h2>
+  
+
   
   
-  <p class="text-muted font-weight-bold">Created on 2017-12-12</p>
-  
+
   
   <p>
     <small>
@@ -198,7 +201,15 @@ var Paginator = {}
 
 
   </p>
-  <hr>
+
+  
+  
+  <small class="text-muted font-weight-bold">Created on 2017-12-12</small>
+  
+
+</div>
+<hr>
+<div class="mx-auto">
   <div id="content">
     
 
@@ -239,13 +250,13 @@ JWT token in header for authentication.</p>
 import &quot;github.com/gorilla/mux&quot;
 
 func main() {
-	r := mux.NewRouter()
+  r := mux.NewRouter()
 
-	// api that not need to get authentication
-	r.Handle(&quot;/&quot;, HomeHandler).Methods(&quot;GET&quot;)
+  // api that not need to get authentication
+  r.Handle(&quot;/&quot;, HomeHandler).Methods(&quot;GET&quot;)
 
-	// api that need to get authentication
-	r.Handle(&quot;/path/need/authentication&quot;, AuthMiddleware(SomeHandler)).Methods(&quot;GET&quot;)
+  // api that need to get authentication
+  r.Handle(&quot;/path/need/authentication&quot;, AuthMiddleware(SomeHandler)).Methods(&quot;GET&quot;)
 
   srv := &amp;http.Server{
     Handler:      r,
@@ -253,30 +264,30 @@ func main() {
     // Good practice: enforce timeouts for servers you create!
     WriteTimeout: 15 * time.Second,
     ReadTimeout:  15 * time.Second,
-	}
+  }
 
-	log.Fatal(srv.ListenAndServe())
+  log.Fatal(srv.ListenAndServe())
 }
 
 func AuthMiddleware(next http.Handler) http.Handler {
   return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
     token := r.Header.Get(&quot;jwt-token&quot;)  // any key that client used to store jwt token
 
-		err := SomeCodeValidateJWTToken(token)
-		if err != nil {
-			fmt.Fprint(w, &quot;Unauthorized request&quot;)
-		} else {
-    	next.ServeHTTP(w, r) // ServeHTTP run execute next handler
-		}
+    err := SomeCodeValidateJWTToken(token)
+    if err != nil {
+      fmt.Fprint(w, &quot;Unauthorized request&quot;)
+    } else {
+      next.ServeHTTP(w, r) // ServeHTTP run execute next handler
+    }
   })
 }
 
 func HomeHandler(w http.ResponseWriter, r *http.Request) {
-	// some code ...
+  // some code ...
 }
 
 func SomeHandler(w http.ResponseWriter, r *http.Request) {
-	// some code ...
+  // some code ...
 }
 </code></pre>
 
@@ -288,6 +299,8 @@ func SomeHandler(w http.ResponseWriter, r *http.Request) {
 <li><a href="https://auth0.com/blog/authentication-in-golang/" target="_blank">Authentication in Golang with JWTs</a></li>
 <li>How to use mddleware in golang <code>http.Handler</code> - <a href="http://www.alexedwards.net/blog/a-recap-of-request-handling" target="_blank">A Recap of Request Handling in Go</a></li>
 </ul>
+
+<!-- reference links -->
 
   </div>
 </div>

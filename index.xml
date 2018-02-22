@@ -29,7 +29,7 @@ Teaching Plan of Periscpe CyrusN Background  55 mins Target: F3 No of students: 
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/applying_web_based_resources/</guid>
       <description>class: center, middle, bg-info, text-light
-Applying Web-based Resource Cyrus Ngan @ LPSS cyrusn.github.io Agenda  About Me Career and Life Planning Committee Um &amp;hellip; IT Support .badge.badge-warning[vs] Problem solver 命運係掌握係自己手 CaLP Homepage Sharing experiences on using Google services Google Form Examples 在學證明書 (Testimonial) 申報活動 Google Services 模擬升學出路選填 How Google Services help? Google Calendar Other projects TL;DR Free resources Other useful application  About Me Cyrus Ngan  .badge.badge-info[@LPSS]  Careers Master Math Teacher Exco of HKACMGM  Math Major My best friend is a .</description>
+Applying Web-based Resource Cyrus Ngan @ LPSS [cyrusn.github.io][] Agenda  About Me Career and Life Planning Committee Um &amp;hellip; IT Support .badge.badge-warning[vs] Problem solver 命運係掌握係自己手 CaLP Homepage Sharing experiences on using Google services Google Form Examples 在學證明書 (Testimonial) 申報活動 Google Services 模擬升學出路選填 How Google Services help? Google Calendar Other projects TL;DR Free resources Other useful application  About Me Cyrus Ngan  .badge.badge-info[@LPSS]  Careers Master Math Teacher Exco of HKACMGM  Math Major My best friend is a .</description>
     </item>
     
     <item>
@@ -176,7 +176,7 @@ Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GP
       <pubDate>Tue, 19 Sep 2017 09:44:09 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/raspberry-pi/</guid>
-      <description>Setting  Setting for OTG mode Autostart  Pin Examples Links Some Projects Some thoughts Setting brightness of Touch led Sensors Others Sensor HAT ADC (Analog to Digital Convertor)  Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setting for OTG mode  add the following text to /boot/config.</description>
+      <description>Setting  Setting for OTG mode Add ssh public key Update and install useful command Install oh-my-zsh and my custom theme Config .zshrc  Autostart Pin Examples Links Some Projects Some thoughts Setting brightness of Touch led Sensors Others Sensor HAT ADC (Analog to Digital Convertor)  Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setting for OTG mode  add the following text to /boot/config.</description>
     </item>
     
     <item>
@@ -285,7 +285,7 @@ Tenses    Descibe future event  Will vs Going To Differences - GrammarBank  FANB
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/pomodoro/</guid>
       <description>class: center middle bg-info text-light
-提升生產力及專注力 GTD &amp;amp; 蕃茄工作法 Reference  The Pomodoro Technique® - proudly developed by Francesco Cirillo | Cirillo Company David Allen&amp;rsquo;s Getting Things Done® Methodology  工作時間  平日每天約4小時 假日每天約6小時 合共： 4hr x 5day + 6hr x 2day = 32 hrs 如何保持專注?  規劃  每科應用15分鐘回顧及整理當天所學 功課應盡早完成 每天用盡所有工作時間  流程 .overflow.h-75[  ]
+提升生產力及專注力 GTD &amp;amp; 蕃茄工作法 Reference  The Pomodoro Technique® - proudly developed by Francesco Cirillo | Cirillo Company David Allen&amp;rsquo;s Getting Things Done® Methodology  工作時間  平日每天約4小時 假日每天約6小時 合共： 4hr x 5day + 6hr x 2day = 32 hrs 如何保持專注?  規劃  每科應用15分鐘回顧及整理當天所學 功課應盡早完成 每天用盡所有工作時間  流程 .overflow.h-75[ ![workflow] ]
 Why?  何時做 &amp;gt; 何時交 計時能令人集中  e.g. 考試、測驗   .row[ .</description>
     </item>
     
@@ -295,7 +295,7 @@ Why?  何時做 &amp;gt; 何時交 計時能令人集中  e.g. 考試、測驗  
       <pubDate>Mon, 15 May 2017 23:13:25 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/taiwan-study/</guid>
-      <description>Useful Links  學士班適用簡章2017 Q&amp;amp;A 來台就學費用估算 入學暨來臺相關規定 赴臺升學小冊子(新版).pdf  資格 「僑生」指海外出生連續居留迄今，或最近連續居留海外六年以上，並取得僑居地永久或長期居留證件回國就學之華裔學生。 但就讀大學醫學、牙醫及中醫學系者，其連續居留年限為八年以上。</description>
+      <description>Useful Links  學士班適用簡章2017 Q&amp;amp;A 來台就學費用估算 入學暨來臺相關規定 赴臺升學小冊子(新版).pdf.pdf)  資格 「僑生」指海外出生連續居留迄今，或最近連續居留海外六年以上，並取得僑居地永久或長期居留證件回國就學之華裔學生。 但就讀大學醫學、牙醫及中醫學系者，其連續居留年限為八年以上。</description>
     </item>
     
     <item>
@@ -305,17 +305,6 @@ Why?  何時做 &amp;gt; 何時交 計時能令人集中  e.g. 考試、測驗  
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/4&#43;1/</guid>
       <description> JUPAS 各大學入學要求  4C+2X (3322+33)  HKU CUHK HKUST PolyU  4C+2X (3322+22)  CityU  4C+1X (2018年要求：3322+3)  HKBU  4C+1X (3322+2)  LU EdUHK OUHK SSSDP   Reference  JUPAS Website  Accept M as X  CityU CUHK PolyU HKUST HKU (部分課程)  HD / AD  基本入學要求：22 + 222  Taiwan 個人申請  跟據校內成績、讀書計劃及師長推薦  聯合分發  中英數 ＋ 2科（包括通識），詳見下表。  Reference  香港學生適用簡章(PDF)   Mainland  內地免試招生  按個別內地大學收生準則而定 一般普通類別收生要求為4C (3322) 部分大學會提高要求（頂尖大學），只考慮修讀4C+2X的學生  Reference  內地部分高校免試招生香港學生計劃指南2016-17   </description>
-    </item>
-    
-    <item>
-      <title>Medicine</title>
-      <link>https://cyrusn.github.io/note/medicine/</link>
-      <pubDate>Mon, 15 May 2017 22:04:30 +0800</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/medicine/</guid>
-      <description>Relief of pain and inflammation beside Panadol - Celecoxib (痛博士 200mg) - mefenamic acid capsule 250mg (Ponstan GE)
- Mefenamic acid is used to treat painful conditions such as arthritis, pain associated with heavy menstrual bleeding, and pain after surgical operations.
- </description>
     </item>
     
     <item>
@@ -500,7 +489,7 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
       <pubDate>Fri, 05 Jun 2015 08:53:37 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/programming-concept/</guid>
-      <description>Links leesei&amp;rsquo;s choice  Naming What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?  [Programming Principal][pp] reference  Links  How to make your code self-documenting? | CodeUtopia Separation of concerns - Wikipedia Garbage in, garbage out - Wikiwand  leesei&amp;rsquo;s choice Naming  寫出黎就要俾名，俾名啲concept 就清楚，code 亦自然清楚
+      <description>Links leesei&amp;rsquo;s choice  Naming What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?  Programming Principal reference  Links  How to make your code self-documenting? | CodeUtopia Separation of concerns - Wikipedia Garbage in, garbage out - Wikiwand  leesei&amp;rsquo;s choice Naming  寫出黎就要俾名，俾名啲concept 就清楚，code 亦自然清楚
  What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?</description>
     </item>
     
@@ -510,7 +499,7 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
       <pubDate>Wed, 27 May 2015 12:45:16 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/javascript-on-osascript/</guid>
-      <description>Example  JXA-Cookbook Apple Release Notes JavaScript for OS X Automation by Example  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle: &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[&amp;amp;0].activeTab; var result = &#39;[&#39; + activeTab.title() + &#39;](&#39; + activeTab.</description>
+      <description>Example  JXA-Cookbook Apple Release Notes JavaScript for OS X Automation by Example  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle: &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[@0].activeTab; var result = &#39;[&#39; + activeTab.title() + &#39;](&#39; + activeTab.</description>
     </item>
     
     <item>
@@ -519,7 +508,7 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
       <pubDate>Sun, 24 May 2015 22:36:53 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/useful-command-line-tools/</guid>
-      <description>Basic Redirect operators # pipe echo &amp;quot;hello world&amp;quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &amp;quot;hello world&amp;quot; &amp;gt; test.txt # redirect the standard output result to file (append) echo &amp;quot;hello world&amp;quot; &amp;gt;&amp;gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed &#39;s/ /_/g&#39; &amp;lt; test.txt &amp;gt; test_1.txt # line input cat &amp;lt;&amp;lt; end heredoc&amp;gt; hello heredoc&amp;gt; world heredoc&amp;gt; end  Useful Commands Cheatsheet  d to show directory history  type cd -number or directly type the number to go to directory  !</description>
+      <description>hello  TOC  Basic  Redirect operators  Useful Commands  zsh tr copydir qlmanage airport pgrep and pkill shutdown textutil xargs Find files and delete them  Powerful tools  ImageMagick (convert) ffmpeg http-server youtube-dl pt Pandoc http jq top osx metadata   Basic Redirect operators # pipe echo &amp;quot;hello world&amp;quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &amp;quot;hello world&amp;quot; &amp;gt; test.</description>
     </item>
     
     <item>
@@ -548,7 +537,7 @@ UEFI Unified Extensible Firmware Interface - ArchWiki</description>
       <pubDate>Sun, 10 May 2015 01:29:03 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/draw-more-work-less/</guid>
-      <description>[Some Links][some-links] [from leesei][from-leesei]  [Text based tools][text-based-tools] [GUI Tools][gui-tools]   Some Links UML | leesei&amp;rsquo;s notebook Draw More, Work Less | [self employed] Draw More, Work Less PlantUML Mermaid
+      <description>Some Links from leesei  Text based tools GUI Tools   Some Links UML | leesei&amp;rsquo;s notebook Draw More, Work Less | [self employed] Draw More, Work Less PlantUML Mermaid
 from leesei Unified Modeling Language (UML) Business Process Model and Notation (BPMN) is very similar to activity diagram. YANG Central
 Allen Holub&amp;rsquo;s UML Quick Reference
 Text based tools I used to use the GUI tool Dia. But it was very buggy and no longer updated.</description>

@@ -11,8 +11,8 @@
   <title>JavaScript on OSAScript</title>
 
 
-  <meta name="description" content="Example  JXA-Cookbook Apple Release Notes JavaScript for OS X Automation by Example  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle: &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[&amp;0].activeTab; var result = &#39;[&#39; &#43; activeTab.title() &#43; &#39;](&#39; &#43; activeTab.">
-  <meta property="og:description" content="Example  JXA-Cookbook Apple Release Notes JavaScript for OS X Automation by Example  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle: &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[&amp;0].activeTab; var result = &#39;[&#39; &#43; activeTab.title() &#43; &#39;](&#39; &#43; activeTab.">
+  <meta name="description" content="Example  JXA-Cookbook Apple Release Notes JavaScript for OS X Automation by Example  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle: &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[@0].activeTab; var result = &#39;[&#39; &#43; activeTab.title() &#43; &#39;](&#39; &#43; activeTab.">
+  <meta property="og:description" content="Example  JXA-Cookbook Apple Release Notes JavaScript for OS X Automation by Example  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle: &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[@0].activeTab; var result = &#39;[&#39; &#43; activeTab.title() &#43; &#39;](&#39; &#43; activeTab.">
   <meta name="twitter:description" content="Example  JXA-Cookbook Apple Release Notes JavaScript for OS X Automation by Example  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); …">
 
 
@@ -168,13 +168,14 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<h1 class="display-4 text-center">JavaScript on OSAScript</h1>
-<hr>
 <div class="mx-auto">
   
+  <h1 class="display-4 pb-0">JavaScript on OSAScript</h1>
   
-  <p class="text-muted font-weight-bold">Created on 2015-05-27</p>
+
   
+  
+
   
   <p>
     <small>
@@ -194,7 +195,15 @@ var Paginator = {}
 
 
   </p>
-  <hr>
+
+  
+  
+  <small class="text-muted font-weight-bold">Created on 2015-05-27</small>
+  
+
+</div>
+<hr>
+<div class="mx-auto">
   <div id="content">
     
 
@@ -222,7 +231,7 @@ function run(argz) {
   var app = Application.currentApplication();
   app.includeStandardAdditions = true;
   var Chrome = Application('Google Chrome');
-  var activeTab = Chrome.windows[&amp;0].activeTab;
+  var activeTab = Chrome.windows[@0].activeTab;
   var result = '[' + activeTab.title() + '](' + activeTab.url() + ')';
   app.setTheClipboardTo(result)
   return result
@@ -233,7 +242,7 @@ function run(argz) {
 // email link of Google Chrome active tab
 function run(argz){
   var Chrome = Application('Google Chrome');
-  var activeTab = Chrome.windows[&amp;0].activeTab;
+  var activeTab = Chrome.windows[@0].activeTab;
 
   var title: activeTab.title();
   var url = activeTab.url();

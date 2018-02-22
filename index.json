@@ -333,17 +333,6 @@
   "index": 30,
   "kind": "page",
   "type": "note",
-  "uri": "https://cyrusn.github.io/note/medicine/",
-  "filename": "medicine",
-  "draft": false,
-  "date": "2017-05-15",
-  "title": "Medicine",
-  "tags": []
-},
-{
-  "index": 31,
-  "kind": "page",
-  "type": "note",
   "uri": "https://cyrusn.github.io/note/career-theory/",
   "filename": "career-theory",
   "draft": false,
@@ -352,7 +341,7 @@
   "tags": ["education", "career", "life planning", "donald super"]
 },
 {
-  "index": 32,
+  "index": 31,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/tmux/",
@@ -363,7 +352,7 @@
   "tags": ["tmux"]
 },
 {
-  "index": 33,
+  "index": 32,
   "kind": "page",
   "type": "post",
   "uri": "https://cyrusn.github.io/post/download-youtube-in-batch/",
@@ -374,7 +363,7 @@
   "tags": []
 },
 {
-  "index": 34,
+  "index": 33,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/create-startup-script-in-linux/",
@@ -385,7 +374,7 @@
   "tags": ["linux", "startup"]
 },
 {
-  "index": 35,
+  "index": 34,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/update-digital-ocean-kernel/",
@@ -396,7 +385,7 @@
   "tags": ["digitalocean"]
 },
 {
-  "index": 36,
+  "index": 35,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/caddy/",
@@ -407,7 +396,7 @@
   "tags": []
 },
 {
-  "index": 37,
+  "index": 36,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/https-and-jwt/",
@@ -418,7 +407,7 @@
   "tags": ["https"]
 },
 {
-  "index": 38,
+  "index": 37,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/web-authentication/",
@@ -429,7 +418,7 @@
   "tags": ["authentication", "jwt", "security", "web-token"]
 },
 {
-  "index": 39,
+  "index": 38,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/vim/",
@@ -440,7 +429,7 @@
   "tags": ["editor", "vim"]
 },
 {
-  "index": 40,
+  "index": 39,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/docker/",
@@ -451,7 +440,7 @@
   "tags": ["docker"]
 },
 {
-  "index": 41,
+  "index": 40,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/config-digtal-ocean-droplet-as-microservice/",
@@ -462,7 +451,7 @@
   "tags": ["apache", "ssl", "tls", "tmux"]
 },
 {
-  "index": 42,
+  "index": 41,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/how-to-convert-pngs-to-gif/",
@@ -473,7 +462,7 @@
   "tags": ["imagemagick", "productivity", "gif", "convert"]
 },
 {
-  "index": 43,
+  "index": 42,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/open-ssl/",
@@ -484,7 +473,7 @@
   "tags": []
 },
 {
-  "index": 44,
+  "index": 43,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/ssl-tls/",
@@ -495,7 +484,7 @@
   "tags": ["security", "ssl", "tls"]
 },
 {
-  "index": 45,
+  "index": 44,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/digital-ocean/",
@@ -506,7 +495,7 @@
   "tags": ["do", "scp"]
 },
 {
-  "index": 46,
+  "index": 45,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/macos-setting/",
@@ -517,7 +506,7 @@
   "tags": ["macos", "setting"]
 },
 {
-  "index": 47,
+  "index": 46,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/alfred/",
@@ -528,7 +517,7 @@
   "tags": ["productivity", "alfred"]
 },
 {
-  "index": 48,
+  "index": 47,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/google-chrome-app/",
@@ -539,7 +528,7 @@
   "tags": ["google", "chrome", "app"]
 },
 {
-  "index": 49,
+  "index": 48,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/programming-concept/",
@@ -550,7 +539,7 @@
   "tags": ["productivity"]
 },
 {
-  "index": 50,
+  "index": 49,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/javascript-on-osascript/",
@@ -561,7 +550,7 @@
   "tags": ["macos", "osascript"]
 },
 {
-  "index": 51,
+  "index": 50,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/useful-command-line-tools/",
@@ -569,10 +558,10 @@
   "draft": false,
   "date": "2015-05-24",
   "title": "Useful Command Line Tools",
-  "tags": ["commandline", "terminal", "httpie", "jq", "zsh", "redirect", "xargs", "wild card", "pt", "kill", "top"]
+  "tags": ["commandline", "httpie", "jq", "kill", "pt", "redirect", "terminal", "top", "wild card", "xargs", "youtube-dl", "zsh"]
 },
 {
-  "index": 52,
+  "index": 51,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/hardware-architecture/",
@@ -583,7 +572,7 @@
   "tags": []
 },
 {
-  "index": 53,
+  "index": 52,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/google-app-script/",
@@ -594,7 +583,7 @@
   "tags": ["google script"]
 },
 {
-  "index": 54,
+  "index": 53,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/draw-more-work-less/",
@@ -605,7 +594,7 @@
   "tags": ["plantuml", "uml"]
 },
 {
-  "index": 55,
+  "index": 54,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/tools-on-programming/",
@@ -616,7 +605,7 @@
   "tags": []
 },
 {
-  "index": 56,
+  "index": 55,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/react/",
@@ -627,7 +616,7 @@
   "tags": ["react", "redux"]
 },
 {
-  "index": 57,
+  "index": 56,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/basic-cs-knowledge/",
@@ -638,7 +627,7 @@
   "tags": []
 },
 {
-  "index": 58,
+  "index": 57,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/git/",
@@ -649,7 +638,7 @@
   "tags": ["git", "github", "slide"]
 },
 {
-  "index": 59,
+  "index": 58,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/swift/",
@@ -660,7 +649,7 @@
   "tags": ["macos", "swift"]
 },
 {
-  "index": 60,
+  "index": 59,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/mongoose.js-and-mongodb/",
@@ -671,7 +660,7 @@
   "tags": ["database", "mongodb", "mongoose"]
 },
 {
-  "index": 61,
+  "index": 60,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/golang/",
@@ -682,7 +671,7 @@
   "tags": ["golang", "websocket"]
 },
 {
-  "index": 62,
+  "index": 61,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/gitbook/",
@@ -693,7 +682,7 @@
   "tags": ["gitbook"]
 },
 {
-  "index": 63,
+  "index": 62,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/pigs-feet-ginger/",
@@ -704,7 +693,7 @@
   "tags": ["recipe"]
 },
 {
-  "index": 64,
+  "index": 63,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/chao-mi-cha/",
@@ -715,7 +704,7 @@
   "tags": ["recipe"]
 },
 {
-  "index": 65,
+  "index": 64,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/100hr/",
@@ -726,7 +715,7 @@
   "tags": []
 },
 {
-  "index": 66,
+  "index": 65,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/1x/",
@@ -737,7 +726,7 @@
   "tags": []
 },
 {
-  "index": 67,
+  "index": 66,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/2x/",
@@ -748,7 +737,7 @@
   "tags": []
 },
 {
-  "index": 68,
+  "index": 67,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/abcjs/",
@@ -759,7 +748,7 @@
   "tags": []
 },
 {
-  "index": 69,
+  "index": 68,
   "kind": "page",
   "type": "page",
   "uri": "https://cyrusn.github.io/page/about/",
@@ -770,7 +759,7 @@
   "tags": []
 },
 {
-  "index": 70,
+  "index": 69,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/activity/",
@@ -781,7 +770,7 @@
   "tags": []
 },
 {
-  "index": 71,
+  "index": 70,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/alfred/",
@@ -792,7 +781,7 @@
   "tags": []
 },
 {
-  "index": 72,
+  "index": 71,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/apache/",
@@ -803,7 +792,7 @@
   "tags": []
 },
 {
-  "index": 73,
+  "index": 72,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/app/",
@@ -814,7 +803,7 @@
   "tags": []
 },
 {
-  "index": 74,
+  "index": 73,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/auth/",
@@ -825,7 +814,7 @@
   "tags": []
 },
 {
-  "index": 75,
+  "index": 74,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/authentication/",
@@ -836,7 +825,7 @@
   "tags": []
 },
 {
-  "index": 76,
+  "index": 75,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/calendar/",
@@ -847,7 +836,7 @@
   "tags": []
 },
 {
-  "index": 77,
+  "index": 76,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/career/",
@@ -858,7 +847,7 @@
   "tags": []
 },
 {
-  "index": 78,
+  "index": 77,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/careers/",
@@ -869,7 +858,7 @@
   "tags": []
 },
 {
-  "index": 79,
+  "index": 78,
   "kind": "taxonomyTerm",
   "type": "categories",
   "uri": "https://cyrusn.github.io/categories/",
@@ -880,7 +869,7 @@
   "tags": []
 },
 {
-  "index": 80,
+  "index": 79,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/chrome/",
@@ -891,7 +880,7 @@
   "tags": []
 },
 {
-  "index": 81,
+  "index": 80,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/commandline/",
@@ -902,7 +891,7 @@
   "tags": []
 },
 {
-  "index": 82,
+  "index": 81,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/convert/",
@@ -913,7 +902,7 @@
   "tags": []
 },
 {
-  "index": 83,
+  "index": 82,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/counseling/",
@@ -924,7 +913,7 @@
   "tags": []
 },
 {
-  "index": 84,
+  "index": 83,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/database/",
@@ -935,7 +924,7 @@
   "tags": []
 },
 {
-  "index": 85,
+  "index": 84,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/design/",
@@ -946,7 +935,7 @@
   "tags": []
 },
 {
-  "index": 86,
+  "index": 85,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/digitalocean/",
@@ -957,7 +946,7 @@
   "tags": []
 },
 {
-  "index": 87,
+  "index": 86,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/do/",
@@ -968,7 +957,7 @@
   "tags": []
 },
 {
-  "index": 88,
+  "index": 87,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/docker/",
@@ -979,7 +968,7 @@
   "tags": []
 },
 {
-  "index": 89,
+  "index": 88,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/donald-super/",
@@ -990,7 +979,7 @@
   "tags": []
 },
 {
-  "index": 90,
+  "index": 89,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/dse/",
@@ -1001,7 +990,7 @@
   "tags": []
 },
 {
-  "index": 91,
+  "index": 90,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/editor/",
@@ -1012,7 +1001,7 @@
   "tags": []
 },
 {
-  "index": 92,
+  "index": 91,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/education/",
@@ -1023,7 +1012,7 @@
   "tags": []
 },
 {
-  "index": 93,
+  "index": 92,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/electronics/",
@@ -1034,7 +1023,7 @@
   "tags": []
 },
 {
-  "index": 94,
+  "index": 93,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/engineering/",
@@ -1045,7 +1034,7 @@
   "tags": []
 },
 {
-  "index": 95,
+  "index": 94,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/english/",
@@ -1056,7 +1045,7 @@
   "tags": []
 },
 {
-  "index": 96,
+  "index": 95,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/freestyle/",
@@ -1067,7 +1056,7 @@
   "tags": []
 },
 {
-  "index": 97,
+  "index": 96,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/gif/",
@@ -1078,7 +1067,7 @@
   "tags": []
 },
 {
-  "index": 98,
+  "index": 97,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/git/",
@@ -1089,7 +1078,7 @@
   "tags": []
 },
 {
-  "index": 99,
+  "index": 98,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/gitbook/",
@@ -1100,7 +1089,7 @@
   "tags": []
 },
 {
-  "index": 100,
+  "index": 99,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/github/",
@@ -1111,7 +1100,7 @@
   "tags": []
 },
 {
-  "index": 101,
+  "index": 100,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/golang/",
@@ -1122,7 +1111,7 @@
   "tags": []
 },
 {
-  "index": 102,
+  "index": 101,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/google/",
@@ -1133,7 +1122,7 @@
   "tags": []
 },
 {
-  "index": 103,
+  "index": 102,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/google-form/",
@@ -1144,7 +1133,7 @@
   "tags": []
 },
 {
-  "index": 104,
+  "index": 103,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/google-script/",
@@ -1155,7 +1144,7 @@
   "tags": []
 },
 {
-  "index": 105,
+  "index": 104,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/grammer/",
@@ -1166,7 +1155,7 @@
   "tags": []
 },
 {
-  "index": 106,
+  "index": 105,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/graphql/",
@@ -1177,7 +1166,7 @@
   "tags": []
 },
 {
-  "index": 107,
+  "index": 106,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/gtd/",
@@ -1188,7 +1177,7 @@
   "tags": []
 },
 {
-  "index": 108,
+  "index": 107,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/hkacmgm/",
@@ -1199,7 +1188,7 @@
   "tags": []
 },
 {
-  "index": 109,
+  "index": 108,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/httpie/",
@@ -1210,7 +1199,7 @@
   "tags": []
 },
 {
-  "index": 110,
+  "index": 109,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/https/",
@@ -1221,7 +1210,7 @@
   "tags": []
 },
 {
-  "index": 111,
+  "index": 110,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/imagemagick/",
@@ -1232,7 +1221,7 @@
   "tags": []
 },
 {
-  "index": 112,
+  "index": 111,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/iot/",
@@ -1243,7 +1232,7 @@
   "tags": []
 },
 {
-  "index": 113,
+  "index": 112,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/jq/",
@@ -1254,7 +1243,7 @@
   "tags": []
 },
 {
-  "index": 114,
+  "index": 113,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/js/",
@@ -1265,7 +1254,7 @@
   "tags": []
 },
 {
-  "index": 115,
+  "index": 114,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/jupas/",
@@ -1276,7 +1265,7 @@
   "tags": []
 },
 {
-  "index": 116,
+  "index": 115,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/jwt/",
@@ -1287,7 +1276,7 @@
   "tags": []
 },
 {
-  "index": 117,
+  "index": 116,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/katex/",
@@ -1298,7 +1287,7 @@
   "tags": []
 },
 {
-  "index": 118,
+  "index": 117,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/kill/",
@@ -1309,7 +1298,7 @@
   "tags": []
 },
 {
-  "index": 119,
+  "index": 118,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/life-planning/",
@@ -1320,7 +1309,7 @@
   "tags": []
 },
 {
-  "index": 120,
+  "index": 119,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/linux/",
@@ -1331,7 +1320,7 @@
   "tags": []
 },
 {
-  "index": 121,
+  "index": 120,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/login/",
@@ -1342,7 +1331,7 @@
   "tags": []
 },
 {
-  "index": 122,
+  "index": 121,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/lpss/",
@@ -1353,7 +1342,7 @@
   "tags": []
 },
 {
-  "index": 123,
+  "index": 122,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/lyric/",
@@ -1364,7 +1353,7 @@
   "tags": []
 },
 {
-  "index": 124,
+  "index": 123,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/macos/",
@@ -1375,7 +1364,7 @@
   "tags": []
 },
 {
-  "index": 125,
+  "index": 124,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/map/",
@@ -1386,7 +1375,7 @@
   "tags": []
 },
 {
-  "index": 126,
+  "index": 125,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/mongodb/",
@@ -1397,7 +1386,7 @@
   "tags": []
 },
 {
-  "index": 127,
+  "index": 126,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/mongoose/",
@@ -1408,7 +1397,7 @@
   "tags": []
 },
 {
-  "index": 128,
+  "index": 127,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/music/",
@@ -1419,7 +1408,7 @@
   "tags": []
 },
 {
-  "index": 129,
+  "index": 128,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/normal-form/",
@@ -1430,7 +1419,7 @@
   "tags": []
 },
 {
-  "index": 130,
+  "index": 129,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/normalization/",
@@ -1441,7 +1430,7 @@
   "tags": []
 },
 {
-  "index": 131,
+  "index": 130,
   "kind": "home",
   "type": "page",
   "uri": "https://cyrusn.github.io/",
@@ -1452,7 +1441,7 @@
   "tags": []
 },
 {
-  "index": 132,
+  "index": 131,
   "kind": "section",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/",
@@ -1463,7 +1452,7 @@
   "tags": []
 },
 {
-  "index": 133,
+  "index": 132,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/osascript/",
@@ -1474,7 +1463,7 @@
   "tags": []
 },
 {
-  "index": 134,
+  "index": 133,
   "kind": "section",
   "type": "page",
   "uri": "https://cyrusn.github.io/page/",
@@ -1485,7 +1474,7 @@
   "tags": []
 },
 {
-  "index": 135,
+  "index": 134,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/past-paper/",
@@ -1496,7 +1485,7 @@
   "tags": []
 },
 {
-  "index": 136,
+  "index": 135,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/photography/",
@@ -1507,7 +1496,7 @@
   "tags": []
 },
 {
-  "index": 137,
+  "index": 136,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/pi/",
@@ -1518,7 +1507,7 @@
   "tags": []
 },
 {
-  "index": 138,
+  "index": 137,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/plantuml/",
@@ -1529,7 +1518,7 @@
   "tags": []
 },
 {
-  "index": 139,
+  "index": 138,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/policy/",
@@ -1540,7 +1529,7 @@
   "tags": []
 },
 {
-  "index": 140,
+  "index": 139,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/pomodoro/",
@@ -1551,7 +1540,7 @@
   "tags": []
 },
 {
-  "index": 141,
+  "index": 140,
   "kind": "section",
   "type": "post",
   "uri": "https://cyrusn.github.io/post/",
@@ -1562,7 +1551,7 @@
   "tags": []
 },
 {
-  "index": 142,
+  "index": 141,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/productivity/",
@@ -1573,7 +1562,7 @@
   "tags": []
 },
 {
-  "index": 143,
+  "index": 142,
   "kind": "section",
   "type": "project",
   "uri": "https://cyrusn.github.io/project/",
@@ -1584,7 +1573,7 @@
   "tags": []
 },
 {
-  "index": 144,
+  "index": 143,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/pt/",
@@ -1595,7 +1584,7 @@
   "tags": []
 },
 {
-  "index": 145,
+  "index": 144,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/raspberry/",
@@ -1606,7 +1595,7 @@
   "tags": []
 },
 {
-  "index": 146,
+  "index": 145,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/raspberrypi/",
@@ -1617,7 +1606,7 @@
   "tags": []
 },
 {
-  "index": 147,
+  "index": 146,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/react/",
@@ -1628,7 +1617,7 @@
   "tags": []
 },
 {
-  "index": 148,
+  "index": 147,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/recipe/",
@@ -1639,7 +1628,7 @@
   "tags": []
 },
 {
-  "index": 149,
+  "index": 148,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/redirect/",
@@ -1650,7 +1639,7 @@
   "tags": []
 },
 {
-  "index": 150,
+  "index": 149,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/redux/",
@@ -1661,7 +1650,7 @@
   "tags": []
 },
 {
-  "index": 151,
+  "index": 150,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/scope/",
@@ -1672,7 +1661,7 @@
   "tags": []
 },
 {
-  "index": 152,
+  "index": 151,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/score/",
@@ -1683,7 +1672,7 @@
   "tags": []
 },
 {
-  "index": 153,
+  "index": 152,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/scp/",
@@ -1694,7 +1683,7 @@
   "tags": []
 },
 {
-  "index": 154,
+  "index": 153,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/secondment/",
@@ -1705,7 +1694,7 @@
   "tags": []
 },
 {
-  "index": 155,
+  "index": 154,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/security/",
@@ -1716,7 +1705,7 @@
   "tags": []
 },
 {
-  "index": 156,
+  "index": 155,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/setting/",
@@ -1727,7 +1716,7 @@
   "tags": []
 },
 {
-  "index": 157,
+  "index": 156,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/slide/",
@@ -1738,7 +1727,7 @@
   "tags": []
 },
 {
-  "index": 158,
+  "index": 157,
   "kind": "section",
   "type": "slide",
   "uri": "https://cyrusn.github.io/slide/",
@@ -1749,7 +1738,7 @@
   "tags": []
 },
 {
-  "index": 159,
+  "index": 158,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/ssl/",
@@ -1760,7 +1749,7 @@
   "tags": []
 },
 {
-  "index": 160,
+  "index": 159,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/startup/",
@@ -1771,7 +1760,7 @@
   "tags": []
 },
 {
-  "index": 161,
+  "index": 160,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/stem/",
@@ -1782,7 +1771,7 @@
   "tags": []
 },
 {
-  "index": 162,
+  "index": 161,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/swift/",
@@ -1793,7 +1782,7 @@
   "tags": []
 },
 {
-  "index": 163,
+  "index": 162,
   "kind": "taxonomyTerm",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/",
@@ -1804,7 +1793,7 @@
   "tags": []
 },
 {
-  "index": 164,
+  "index": 163,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/taiwan-study/",
@@ -1815,7 +1804,7 @@
   "tags": []
 },
 {
-  "index": 165,
+  "index": 164,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/terminal/",
@@ -1826,7 +1815,7 @@
   "tags": []
 },
 {
-  "index": 166,
+  "index": 165,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/tls/",
@@ -1837,7 +1826,7 @@
   "tags": []
 },
 {
-  "index": 167,
+  "index": 166,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/tmux/",
@@ -1848,7 +1837,7 @@
   "tags": []
 },
 {
-  "index": 168,
+  "index": 167,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/tomato/",
@@ -1859,7 +1848,7 @@
   "tags": []
 },
 {
-  "index": 169,
+  "index": 168,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/top/",
@@ -1870,7 +1859,7 @@
   "tags": []
 },
 {
-  "index": 170,
+  "index": 169,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/tutorial/",
@@ -1881,7 +1870,7 @@
   "tags": []
 },
 {
-  "index": 171,
+  "index": 170,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/uml/",
@@ -1892,7 +1881,7 @@
   "tags": []
 },
 {
-  "index": 172,
+  "index": 171,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/vim/",
@@ -1903,7 +1892,7 @@
   "tags": []
 },
 {
-  "index": 173,
+  "index": 172,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/vpet/",
@@ -1914,7 +1903,7 @@
   "tags": []
 },
 {
-  "index": 174,
+  "index": 173,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/web-token/",
@@ -1925,7 +1914,7 @@
   "tags": []
 },
 {
-  "index": 175,
+  "index": 174,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/websocket/",
@@ -1936,7 +1925,7 @@
   "tags": []
 },
 {
-  "index": 176,
+  "index": 175,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/wild-card/",
@@ -1947,7 +1936,7 @@
   "tags": []
 },
 {
-  "index": 177,
+  "index": 176,
   "kind": "taxonomy",
   "type": "tags",
   "uri": "https://cyrusn.github.io/tags/xargs/",
@@ -1955,6 +1944,17 @@
   "draft": false,
   "date": "2015-05-24",
   "title": "Xargs",
+  "tags": []
+},
+{
+  "index": 177,
+  "kind": "taxonomy",
+  "type": "tags",
+  "uri": "https://cyrusn.github.io/tags/youtube-dl/",
+  "filename": "",
+  "draft": false,
+  "date": "2015-05-24",
+  "title": "Youtube Dl",
   "tags": []
 },
 {
