@@ -8,6 +8,9 @@ pygmentCodeFences = true
 paginate = 10
 disqusShortname = "cyrusngithubio"
 
+# Enable GitInfo feature
+enableGitInfo = true
+
 [blackfriday]
   hrefTargetBlank = true
   # extensions = ["hardLineBreak"]
