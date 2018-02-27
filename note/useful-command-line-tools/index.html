@@ -11,9 +11,9 @@
   <title>Useful Command Line Tools</title>
 
 
-  <meta name="description" content="hello  TOC  Basic  Redirect operators  Useful Commands  zsh tr copydir qlmanage airport pgrep and pkill shutdown textutil xargs Find files and delete them  Powerful tools  ImageMagick (convert) ffmpeg http-server youtube-dl pt Pandoc http jq top osx metadata   Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.">
-  <meta property="og:description" content="hello  TOC  Basic  Redirect operators  Useful Commands  zsh tr copydir qlmanage airport pgrep and pkill shutdown textutil xargs Find files and delete them  Powerful tools  ImageMagick (convert) ffmpeg http-server youtube-dl pt Pandoc http jq top osx metadata   Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.">
-  <meta name="twitter:description" content="hello  TOC  Basic  Redirect operators  Useful Commands  zsh tr copydir qlmanage airport pgrep and pkill shutdown textutil xargs Find files and delete them  Powerful tools  ImageMagick (convert) ffmpeg …">
+  <meta name="description" content="TOC  Basic  Redirect operators Create multiple files or folders  Useful Commands  zsh tr copydir qlmanage airport pgrep and pkill shutdown textutil xargs Find files and delete them tmux ImageMagick (convert) ffmpeg http-server youtube-dl pt Pandoc http caddy jq top osx metadata   Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.">
+  <meta property="og:description" content="TOC  Basic  Redirect operators Create multiple files or folders  Useful Commands  zsh tr copydir qlmanage airport pgrep and pkill shutdown textutil xargs Find files and delete them tmux ImageMagick (convert) ffmpeg http-server youtube-dl pt Pandoc http caddy jq top osx metadata   Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.">
+  <meta name="twitter:description" content="TOC  Basic  Redirect operators Create multiple files or folders  Useful Commands  zsh tr copydir qlmanage airport pgrep and pkill shutdown textutil xargs Find files and delete them tmux ImageMagick …">
 
 
 <meta name="author" content="CyrusN"/>
@@ -214,23 +214,21 @@ var Paginator = {}
 
 
 
+    
+    
+     <br>
+      <small>
+        <span class="badge badge-info">Created on 2015-05-24</span>
+        <span class="badge badge-info">Last Modified 2015-05-24</span>
+      </small>
+    
   </p>
-
-  
-  
-  <small class="text-muted font-weight-bold">Created on 2015-05-24</small>
-  
 
 </div>
 <hr>
 <div class="mx-auto">
   <div id="content">
     
-
-<span class="d-inline-block" data-toggle='tooltip' title='ok'>
-  hello
-</span>
-
 
 <h1 id="toc">TOC</h1>
 
@@ -241,6 +239,7 @@ var Paginator = {}
 
 <ul>
 <li><a href="#redirect-operators">Redirect operators</a></li>
+<li><a href="#create-multiple-files-or-folders">Create multiple files or folders</a></li>
 </ul></li>
 <li><a href="#useful-commands">Useful Commands</a>
 
@@ -255,10 +254,7 @@ var Paginator = {}
 <li><a href="#textutil">textutil</a></li>
 <li><a href="#xargs">xargs</a></li>
 <li><a href="#find-files-and-delete-them">Find files and delete them</a></li>
-</ul></li>
-<li><a href="#powerful-tools">Powerful tools</a>
-
-<ul>
+<li><a href="#tmux">tmux</a></li>
 <li><a href="#imagemagick-convert">ImageMagick (convert)</a></li>
 <li><a href="#ffmpeg">ffmpeg</a></li>
 <li><a href="#http-server">http-server</a></li>
@@ -266,6 +262,7 @@ var Paginator = {}
 <li><a href="#pt">pt</a></li>
 <li><a href="#pandoc">Pandoc</a></li>
 <li><a href="#http">http</a></li>
+<li><a href="#caddy">caddy</a></li>
 <li><a href="#jq">jq</a></li>
 <li><a href="#top">top</a></li>
 <li><a href="#osx-metadata">osx metadata</a></li>
@@ -296,6 +293,20 @@ cat &lt;&lt; end
 heredoc&gt; hello
 heredoc&gt; world
 heredoc&gt; end
+</code></pre>
+
+<h2 id="create-multiple-files-or-folders">Create multiple files or folders</h2>
+
+<pre><code class="language-sh">mkdir sa{1..50}
+
+# -p, --parents
+#        no error if existing, make parent directories as needed
+mkdir -p sa{1..50}/sax{1..50}
+mkdir {a-z}12345 
+mkdir {1,2,3}
+mkdir test{01..10}
+mkdir -p `date '+%y%m%d'`/{1,2,3} 
+mkdir -p $USER/{1,2,3} 
 </code></pre>
 
 <h1 id="useful-commands">Useful Commands</h1>
@@ -345,7 +356,7 @@ alias ql='qlmanage -p'
 
 <h2 id="airport">airport</h2>
 
-<pre><code class="language-sh">    sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/sbin/airport
+<pre><code class="language-sh">sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/sbin/airport
 </code></pre>
 
 <p>Scan your local wireless environment from the command line</p>
@@ -358,7 +369,10 @@ alias ql='qlmanage -p'
 
 <p>Restart the Mac</p>
 
-<pre><code class="language-sh">$ shutdown -r now
+<pre><code class="language-sh">shutdown -r now
+# or
+
+reboot
 </code></pre>
 
 <h2 id="textutil">textutil</h2>
@@ -387,7 +401,15 @@ cat file | xargs -I@ echo @
 <pre><code class="language-sh">$ find . -name &quot;FILE-TO-FIND&quot; -exec rm -rf {} \;
 </code></pre>
 
-<h1 id="powerful-tools">Powerful tools</h1>
+<h2 id="tmux">tmux</h2>
+
+<blockquote>
+<p>tmux is a terminal multiplexer. It lets you switch easily between several programs in one terminal, detach them (they keep running in the background) and reattach them to a different terminal.</p>
+
+<ul>
+<li><a href="https://cyrusn.github.io/note/tmux/" target="_blank">tmux notes</a></li>
+</ul>
+</blockquote>
 
 <h2 id="imagemagick-convert">ImageMagick (convert)</h2>
 
@@ -395,14 +417,24 @@ cat file | xargs -I@ echo @
 <p>Use <a href="http://www.imagemagick.org/script/command-line-processing.php" target="_blank">ImageMagick</a> to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.</p>
 </blockquote>
 
-<pre><code class="language-sh">convert image.jpg image.png
+<pre><code class="language-sh"># Example 1: convert image's format
+convert image.jpg image.png
 </code></pre>
 
-<pre><code class="language-sh"># It is sometimes convenient to resize an image as they are read. Suppose you have hundreds of large JPEG images you want to convert to a sequence of PNG thumbails:
+<pre><code class="language-sh"># Example 2: resize an image
+# It is sometimes convenient to resize an image as they are read.
+# Suppose you have hundreds of large JPEG images you want to convert
+# to a sequence of PNG thumbails:
 convert '*.jpg' -resize 120x120 thumbnail%03d.png
 # rename file batchly
 
 $ rename 's/\.html$/\.php/' *.html
+</code></pre>
+
+<pre><code class="language-sh"># Example 3: convert images to gif
+# convert 1.jpg, 2.jpg, 3.jpg, 4.jpg, and 5.jpg
+# in your current directory to a GIF animation.
+magick *.jpg images.gif
 </code></pre>
 
 <h2 id="ffmpeg">ffmpeg</h2>
@@ -451,13 +483,27 @@ $ ffmpeg -i input.mp4 output.avi
 
 <h2 id="http">http</h2>
 
-<ul>
-<li><p><a href="https://httpie.org/" target="_blank">HTTPie – command line HTTP client</a></p>
+<blockquote>
+<p><a href="https://httpie.org/" target="_blank">HTTPie – command line HTTP client</a></p>
+</blockquote>
 
 <pre><code class="language-sh"># install
 brew install httpie
-</code></pre></li>
+</code></pre>
+
+<h2 id="caddy">caddy</h2>
+
+<blockquote>
+<p><a href="https://caddyserver.com/" target="_blank">caddy</a> is the HTTP/2 web server with automatic HTTPS.</p>
+
+<h3 id="features">features</h3>
+
+<ul>
+<li>proxy server</li>
+<li>websocket server</li>
+<li>redirect address</li>
 </ul>
+</blockquote>
 
 <h2 id="jq">jq</h2>
 

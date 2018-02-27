@@ -70,7 +70,7 @@ In server side, using middelware for http.Handler function if the request are in
       <pubDate>Tue, 05 Dec 2017 08:28:03 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/photography/</guid>
-      <description> Reference  超詳盡攝影教學！101個新手必學的攝影技巧 - 攝影入門 Fotobeginner.com  </description>
+      <description> TOC  Be a Better Photographer in 45 mins Exposure Triangle Metering Reference  Be a Better Photographer in 45 mins     Exposure Triangle   Metering     Reference  超詳盡攝影教學！101個新手必學的攝影技巧 - 攝影入門 Fotobeginner.com 9 Top Photography Composition Rules You Need To Know A Picture To Show You Clearly The Effects of Aperture, Shutter Speed and ISO On Images  </description>
     </item>
     
     <item>
@@ -508,7 +508,7 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
       <pubDate>Sun, 24 May 2015 22:36:53 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/useful-command-line-tools/</guid>
-      <description>hello  TOC  Basic  Redirect operators  Useful Commands  zsh tr copydir qlmanage airport pgrep and pkill shutdown textutil xargs Find files and delete them  Powerful tools  ImageMagick (convert) ffmpeg http-server youtube-dl pt Pandoc http jq top osx metadata   Basic Redirect operators # pipe echo &amp;quot;hello world&amp;quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &amp;quot;hello world&amp;quot; &amp;gt; test.</description>
+      <description>TOC  Basic  Redirect operators Create multiple files or folders  Useful Commands  zsh tr copydir qlmanage airport pgrep and pkill shutdown textutil xargs Find files and delete them tmux ImageMagick (convert) ffmpeg http-server youtube-dl pt Pandoc http caddy jq top osx metadata   Basic Redirect operators # pipe echo &amp;quot;hello world&amp;quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &amp;quot;hello world&amp;quot; &amp;gt; test.</description>
     </item>
     
     <item>
