@@ -16,13 +16,12 @@ tags:
   - zsh
 ---
 
-{{< tooltip "hello" "[ok](#)">}}
-
 # TOC
 <!-- MarkdownTOC -->
 
 - [Basic](#basic)
   - [Redirect operators](#redirect-operators)
+  - [Create multiple files or folders](#create-multiple-files-or-folders)
 - [Useful Commands](#useful-commands)
   - [zsh](#zsh)
   - [tr](#tr)
@@ -34,7 +33,7 @@ tags:
   - [textutil](#textutil)
   - [xargs](#xargs)
   - [Find files and delete them](#find-files-and-delete-them)
-- [Powerful tools](#powerful-tools)
+  - [tmux](#tmux)
   - [ImageMagick \(convert\)](#imagemagick-convert)
   - [ffmpeg](#ffmpeg)
   - [http-server](#http-server)
@@ -42,6 +41,7 @@ tags:
   - [pt](#pt)
   - [Pandoc](#pandoc)
   - [http](#http)
+  - [caddy](#caddy)
   - [jq](#jq)
   - [top](#top)
   - [osx metadata](#osx-metadata)
@@ -72,6 +72,20 @@ cat << end
 heredoc> hello
 heredoc> world
 heredoc> end
+```
+
+## Create multiple files or folders
+```sh
+mkdir sa{1..50}
+
+# -p, --parents
+#        no error if existing, make parent directories as needed
+mkdir -p sa{1..50}/sax{1..50}
+mkdir {a-z}12345 
+mkdir {1,2,3}
+mkdir test{01..10}
+mkdir -p `date '+%y%m%d'`/{1,2,3} 
+mkdir -p $USER/{1,2,3} 
 ```
 
 # Useful Commands
@@ -114,7 +128,7 @@ alias ql='qlmanage -p'
 ## airport
 
 ```sh
-    sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/sbin/airport
+sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/sbin/airport
 ```
 
 Scan your local wireless environment from the command line
@@ -126,7 +140,10 @@ Find or signal a program or process by name
 Restart the Mac
 
 ```sh
-$ shutdown -r now
+shutdown -r now
+# or
+
+reboot
 ```
 
 ## textutil
@@ -154,21 +171,35 @@ cat file | xargs -I@ echo @
 $ find . -name "FILE-TO-FIND" -exec rm -rf {} \;
 ```
 
-# Powerful tools
+## tmux
+> tmux is a terminal multiplexer. It lets you switch easily between several programs in one terminal, detach them (they keep running in the background) and reattach them to a different terminal. 
+> 
+> - [tmux notes]({{<ref "note/tmux">}})
 
 ## ImageMagick (convert)
 > Use [ImageMagick][@04] to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.
 
 ```sh
+# Example 1: convert image's format
 convert image.jpg image.png
 ```
 
 ```sh
-# It is sometimes convenient to resize an image as they are read. Suppose you have hundreds of large JPEG images you want to convert to a sequence of PNG thumbails:
+# Example 2: resize an image
+# It is sometimes convenient to resize an image as they are read.
+# Suppose you have hundreds of large JPEG images you want to convert
+# to a sequence of PNG thumbails:
 convert '*.jpg' -resize 120x120 thumbnail%03d.png
 # rename file batchly
 
 $ rename 's/\.html$/\.php/' *.html
+```
+
+```sh
+# Example 3: convert images to gif
+# convert 1.jpg, 2.jpg, 3.jpg, 4.jpg, and 5.jpg
+# in your current directory to a GIF animation.
+magick *.jpg images.gif
 ```
 
 ## ffmpeg
@@ -198,11 +229,20 @@ $ ffmpeg -i input.mp4 output.avi
 - a universal document converter
 
 ## http
-- [HTTPie – command line HTTP client][@12]
+> [HTTPie – command line HTTP client][@12]
+
 ```sh
 # install
 brew install httpie
 ```
+
+## caddy
+> [caddy](https://caddyserver.com/) is the HTTP/2 web server with automatic HTTPS.
+> 
+> ### features
+> - proxy server
+> - websocket server
+> - redirect address
 
 ## jq
 > Command-line JSON processor. It's also very handy tool to parse JSON like `lodash`
