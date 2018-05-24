@@ -2,6 +2,8 @@
 title: "Applying Web-based Resources"
 date: 2018-01-26T10:55:10+08:00
 draft: false
+abcjs: true
+mermaid: true
 remarkOption:
   ratio: 16:9
   Navigation:
@@ -19,7 +21,7 @@ class: center, middle, bg-info, text-light
 # Applying Web-based Resource
 <hr class="bg-light">
 ## Cyrus Ngan @ LPSS
-### [cyrusn.github.io][]
+### [cyrusn.github.io][@01]
 
 ---
 # Agenda
@@ -47,7 +49,7 @@ class: center, middle, bg-info, text-light
 <!-- /MarkdownTOC -->
 
 ---
-# About Me
+# About Me <i class="fas fa-user"></i>
 
 ## Cyrus Ngan
 -  .badge.badge-info[@LPSS]
@@ -94,8 +96,8 @@ class: middle center bg-dark text-light
 
 ---
 # CaLP Homepage
-- [聖公會李炳中學 | 生涯規劃部][@01]
-- [Facebook | 聖公會李炳中學﹣生涯規劃部][@02]
+- [聖公會李炳中學 | 生涯規劃部][@02]
+- [Facebook | 聖公會李炳中學﹣生涯規劃部][@03]
 
 ---
 class: middle bg-dark text-light
@@ -114,10 +116,10 @@ class: middle bg-dark text-light
 ---
 # Examples
 
-- [模擬面試工作坊][@03]
-- [在學證明書 (Testimonial) 申報活動][@04]
-- [中六臺灣升學讀書計劃及自傳寫作][@05]
-- [模擬升學出路選填][@06]
+- [模擬面試工作坊][@04]
+- [在學證明書 (Testimonial) 申報活動][@05]
+- [中六臺灣升學讀書計劃及自傳寫作][@06]
+- [模擬升學出路選填][@07]
 
 ---
 # 在學證明書 (Testimonial) 申報活動
@@ -136,7 +138,7 @@ class: middle bg-dark text-light
 
 .col-5[
 .overflow.h-75.mx-auto.border[
-![testimonail][@07]
+![testimonail][@08]
 ]]]
 
 ---
@@ -144,18 +146,17 @@ class: middle bg-dark text-light
 They are not standalone, you can orchestrate them by .text-danger[Google Script].
 
 .d-flex.flex-row[
-.p-2[[![spreadsheet][@08]](https://developers.google.com/apps-script/reference/spreadsheet/)]
-.p-2[[![document][@09]](https://developers.google.com/apps-script/reference/document/)]
-.p-2[[![slides][@10]](https://developers.google.com/apps-script/reference/slides/)]
-.p-2[[![forms][@11]](https://developers.google.com/apps-script/reference/forms/)]
-.p-2[[![drive][@12]](https://developers.google.com/apps-script/reference/drive/)]
-.p-2[[![gmail][@13]](https://developers.google.com/apps-script/reference/gmail/)]
-.p-2[[![calendar][@14]](https://developers.google.com/apps-script/reference/calendar/)]
-.p-2[[![contacts][@15]](https://developers.google.com/apps-script/reference/contacts/)]
-.p-2[[![maps][@16]](https://developers.google.com/apps-script/reference/maps/)]
-.p-2[[![language][@17]](https://developers.google.com/apps-script/reference/language/)]
+.p-2[[![spreadsheet][@09-img]][@09-url]]
+.p-2[[![document][@10-img]][@10-url]]
+.p-2[[![slides][@11-img]][@11-url]]
+.p-2[[![forms][@12-img]][@12-url]]
+.p-2[[![drive][@13-img]][@13-url]]
+.p-2[[![gmail][@14-img]][@14-url]]
+.p-2[[![calendar][@15-img]][@15-url]]
+.p-2[[![contacts][@16-img]][@16-url]]
+.p-2[[![maps][@17-img]][@17-url]]
+.p-2[[![language][@18-img]][@18-url]]
 ]
-
 
 
 ---
@@ -174,17 +175,34 @@ They are not standalone, you can orchestrate them by .text-danger[Google Script]
 ]
 
 .col-6[
-| Date |        Event         |
-|------|----------------------|
-| Aug  | 中六級第一次考試     |
-| Sep  | 派發8月考試成績      |
-| Sep  | 升學出路志向表       |
-| Oct  | 生涯規劃輔導 3 / CII |
-| Nov  | 生涯規劃輔導 4       |
-| Jan  | 模擬考試             |
-| Feb  | 生涯規劃輔導 5       |
+| Date |             Event             |
+|------|-------------------------------|
+| Aug  | 中六級第一次考試              |
+| Sep  | 派發8月考試成績               |
+| Sep  | 升學出路志向表                |
+| Oct  | 生涯規劃輔導 3 / 事業興趣測驗 |
+| Nov  | 生涯規劃輔導 4                |
+| Jan  | 模擬考試                      |
+| Feb  | 生涯規劃輔導 5                |
 
 ]]
+
+---
+class: center middle medium
+
+# 模擬升學出路選填
+
+<div class="mermaid">
+graph TB
+  A("6月出路選填")
+  B("8月考試成績")
+  C("10月生涯規劃輔導<br>(派發模擬升學結果)")
+  D("11~1月完成各系統報名程序")
+
+  A --> C
+  B --> C
+  C --> |"跟進"| D
+</div>
 
 ---
 # How Google Services help?
@@ -202,86 +220,92 @@ They are not standalone, you can orchestrate them by .text-danger[Google Script]
 
 .col-5[
 .overflow.h-75.mx-auto.border[
-![multipathway][@18]
+![multipathway][@19]
 ]]]
 
 ---
 # Google Calendar
-- [CaLP 2017-18 Calendar - Google Sheets][@19]
+- [CaLP 2017-18 Calendar - Google Sheets][@20]
 
 <iframe src="https://calendar.google.com/calendar/embed?title=F1%20-%20F6%20Schedules&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=liping.edu.hk_urfir3sscv3oejlhja4d94tk5k%40group.calendar.google.com&amp;color=%23182C57&amp;src=liping.edu.hk_6p82i74fds3dp5omlc1g4b4jgc%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=Asia%2FHong_Kong" style="border-width:0" width="100%" height="70%" frameborder="0" scrolling="no"></iframe>
 
-
-
 ---
 # Other projects
-- [Subject Selection System][@20]
-- [eDictation system][@21]
+- [Subject Selection System][@21]
+- [eDictation system][@22]
 - A lineup programme
-- [F6-revision-topics · GitBook][@22]
+- [F6-revision-topics · GitBook][@23]
 
 
 ---
 class: center middle bg-primary text-light
 # TL;DR
-## [Tutorial on Google Script][@23]
+## [Tutorial on Google Script][@24]
 
 ---
 # Free resources
 ## Start from scratch
-- [Harvard University CS50.tv][@24]
-- [Codecademy][@25]
+- [Harvard University CS50.tv][@25]
+- [Codecademy][@26]
   + HTML (3Hrs) .badge.badge-info[Create Webpage]
   + CSS (11hrs) .badge.badge-info[Style Webpage]
   + JavaScript (5hrs) .badge.badge-danger[Interaction with Webpage]
   + Command Line (3hrs) .badge.badge-info[Navigate in Unix system]
-- [freeCodeCamp][@26]
-- [Apps Script | Google Developers][@27]
+- [freeCodeCamp][@27]
+- [Apps Script | Google Developers][@28]
 
 ---
 # Other useful application
-- [1Password][@28]
-- [DigitalOcean: Cloud Computing, Simplicity at Scale][@29]
-- [Timeline][@30]
-- [WordPress.com: Create a free website or blog][@31]
-
-
+- [1Password][@29]
+- [DigitalOcean: Cloud Computing, Simplicity at Scale][@30]
+- [Timeline][@31]
+- [WordPress.com: Create a free website or blog][@32]
 
 ---
 class: center middle
 ## .text-danger[♥] Thanks .text-danger[♥]
 
+<!-- reference links -->
 
-<!-- reference -->
-
-[@01]: https://careers.liping.edu.hk/
-[@02]: https://www.facebook.com/skhlpss.calp/
-[@03]: https://docs.google.com/forms/d/e/1FAIpQLSf1ANiffgRkdcDGqreNCUaWj_yslJqeSGAOwn14QcLzOATUXQ/viewform
-[@04]: https://docs.google.com/forms/u/1/d/e/1FAIpQLSdrLlYG0_nv2ysgySRRdg467FywRhs2aMO9Fmm9O5lXdiTudQ/viewform
-[@05]: https://careers.liping.edu.hk/taiwan-individual/
-[@06]: https://docs.google.com/forms/d/e/1FAIpQLSfCGaNOWY7Bw0rWNDEDnEkzkzEMXyCxBGRwouM8ELXZj2b5Ag/viewform
-[@07]: ./testimonail.png
-[@08]: https://www.gstatic.com/images/branding/product/2x/sheets_48dp.png
-[@09]: https://www.gstatic.com/images/branding/product/2x/docs_48dp.png
-[@10]: https://www.gstatic.com/images/branding/product/2x/slides_48dp.png
-[@11]: https://www.gstatic.com/images/branding/product/2x/forms_48dp.png
-[@12]: https://www.gstatic.com/images/branding/product/2x/drive_48dp.png
-[@13]: https://www.gstatic.com/images/branding/product/2x/gmail_48dp.png
-[@14]: https://www.gstatic.com/images/branding/product/2x/calendar_48dp.png
-[@15]: https://www.gstatic.com/images/branding/product/2x/contacts_48dp.png
-[@16]: https://www.gstatic.com/images/branding/product/2x/maps_48dp.png
-[@17]: https://www.gstatic.com/images/branding/product/2x/translate_48dp.png
-[@18]: ./mock-multipathway.png
-[@19]: https://docs.google.com/spreadsheets/d/e/2PACX-1vRpv2Kz8S0gEZYQcvv3zC8A2db-NmyZhQjksdxgccNobfPXQNYO5DvAr2xFNNLh1dDOk6wtdHGVZqMu/pubhtml
-[@20]: https://careers.liping.edu.hk/ss
-[@21]: https://careers.liping.edu.hk/edict/
-[@22]: https://www.gitbook.com/book/lpss/f6-revision-topics/details
-[@23]: ../tutorial-on-google-script
-[@24]: http://cs50.tv/2017/fall/
-[@25]: https://www.codecademy.com/learn
-[@26]: https://www.freecodecamp.org/
-[@27]: https://developers.google.com/apps-script/
-[@28]: https://1password.com/
-[@29]: https://www.digitalocean.com/
-[@30]: https://timeline.knightlab.com/
-[@31]: https://wordpress.com/
+[@01]: cyrusn.github.io
+[@02]: https://careers.liping.edu.hk/
+[@03]: https://www.facebook.com/skhlpss.calp/
+[@04]: https://docs.google.com/forms/d/e/1FAIpQLSf1ANiffgRkdcDGqreNCUaWj_yslJqeSGAOwn14QcLzOATUXQ/viewform
+[@05]: https://docs.google.com/forms/u/1/d/e/1FAIpQLSdrLlYG0_nv2ysgySRRdg467FywRhs2aMO9Fmm9O5lXdiTudQ/viewform
+[@06]: https://careers.liping.edu.hk/taiwan-individual/
+[@07]: https://docs.google.com/forms/d/e/1FAIpQLSfCGaNOWY7Bw0rWNDEDnEkzkzEMXyCxBGRwouM8ELXZj2b5Ag/viewform
+[@08]: ./testimonail.png
+[@09-img]: https://www.gstatic.com/images/branding/product/2x/sheets_48dp.png
+[@09-url]: https://developers.google.com/apps-script/reference/spreadsheet/
+[@10-img]: https://www.gstatic.com/images/branding/product/2x/docs_48dp.png
+[@10-url]: https://developers.google.com/apps-script/reference/document/
+[@11-img]: https://www.gstatic.com/images/branding/product/2x/slides_48dp.png
+[@11-url]: https://developers.google.com/apps-script/reference/slides/
+[@12-img]: https://www.gstatic.com/images/branding/product/2x/forms_48dp.png
+[@12-url]: https://developers.google.com/apps-script/reference/forms/
+[@13-img]: https://www.gstatic.com/images/branding/product/2x/drive_48dp.png
+[@13-url]: https://developers.google.com/apps-script/reference/drive/
+[@14-img]: https://www.gstatic.com/images/branding/product/2x/gmail_48dp.png
+[@14-url]: https://developers.google.com/apps-script/reference/gmail/
+[@15-img]: https://www.gstatic.com/images/branding/product/2x/calendar_48dp.png
+[@15-url]: https://developers.google.com/apps-script/reference/calendar/
+[@16-img]: https://www.gstatic.com/images/branding/product/2x/contacts_48dp.png
+[@16-url]: https://developers.google.com/apps-script/reference/contacts/
+[@17-img]: https://www.gstatic.com/images/branding/product/2x/maps_48dp.png
+[@17-url]: https://developers.google.com/apps-script/reference/maps/
+[@18-img]: https://www.gstatic.com/images/branding/product/2x/translate_48dp.png
+[@18-url]: https://developers.google.com/apps-script/reference/language/
+[@19]: ./mock-multipathway.png
+[@20]: https://docs.google.com/spreadsheets/d/e/2PACX-1vRpv2Kz8S0gEZYQcvv3zC8A2db-NmyZhQjksdxgccNobfPXQNYO5DvAr2xFNNLh1dDOk6wtdHGVZqMu/pubhtml
+[@21]: https://careers.liping.edu.hk/ss
+[@22]: https://careers.liping.edu.hk/edict/
+[@23]: https://www.gitbook.com/book/lpss/f6-revision-topics/details
+[@24]: ../tutorial-on-google-script
+[@25]: http://cs50.tv/2017/fall/
+[@26]: https://www.codecademy.com/learn
+[@27]: https://www.freecodecamp.org/
+[@28]: https://developers.google.com/apps-script/
+[@29]: https://1password.com/
+[@30]: https://www.digitalocean.com/
+[@31]: https://timeline.knightlab.com/
+[@32]: https://wordpress.com/

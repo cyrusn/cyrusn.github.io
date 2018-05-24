@@ -16,7 +16,9 @@ tags:
 
 # Questions
 ## Q1. Role Models
-<div class="alert alert-warning"><b>Objective:</b> Identify adjectives that describe a client’s construction and conception of self.</div>
+<div class="alert alert-warning">
+  <b>Objective:</b> Identify adjectives that describe a client’s construction and conception of self.
+</div>
 
 > 你細個有咩好深刻好特別又記得既人，你幾欣賞，對你都幾大影響既人。
 
@@ -95,10 +97,15 @@ tags:
 - 你認唔認同 ...
 - 好豐富呀多謝你
 - 對你黎講 ... 有幾重要
+- Good to let students prioritise the importances
+- 1 - 10分，1分係最消極，10分係最積極，你會點評分呢？
 
 # Reminder
 - Round up and round up
 - Rephase client's feeling
+- Don't give opinion, let them tell you
+  + e.g. ~~我都覺得係咁~~ 你覺得係點呢？
+- 要注意有沒有related to careers
 
 # Reference
 - [LifeDesign.pdf][@1]

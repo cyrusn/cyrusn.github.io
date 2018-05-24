@@ -11,6 +11,11 @@ tags:
 ---
 
 
+# Model
+- TPACK
+- SMAR
+- [Microsoft PowerPoint - 宣道會陳朱素華紀念中學-SetoWS_CoE_20170221_public (for EDB Web)][@1]
+
 # Curriculum design
 - first year
     + learning
@@ -60,6 +65,7 @@ Which topic should be included in the curriculum for students whose age are 12 -
 - Probability
 - Logic (True False Table, how to do addition by using logic operator)
 - Basic knowledge on ratio, rate, area and volume
+- Mathematic Modelling
 
 ## Others
 - Creativity
@@ -84,3 +90,7 @@ Which topic should be included in the curriculum for students whose age are 12 -
 - Hook up sensors for taking various measurements
 - Attach different displays, such as an LED matrix
 - Create dynamic projects with Raspberry Pi and Arduino
+
+<!-- reference links -->
+
+[@1]: http://www.edb.gov.hk/attachment/tc/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/CoE/pdp201617/PDP2017-CASWCMC.pdf

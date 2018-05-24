@@ -99,6 +99,8 @@ mkdir -p $USER/{1,2,3}
 - `!*` to get the argz of last command
 - [zsh tip][@02]
 - [zsh - Table of Contents][@03]
+- [Customizing your shell prompt][@04]
+- [man page zshmisc section 1](http://www.manpagez.com/man/1/zshmisc/)
 
 ## tr
 
@@ -174,10 +176,10 @@ $ find . -name "FILE-TO-FIND" -exec rm -rf {} \;
 ## tmux
 > tmux is a terminal multiplexer. It lets you switch easily between several programs in one terminal, detach them (they keep running in the background) and reattach them to a different terminal. 
 > 
-> - [tmux notes]({{<ref "note/tmux">}})
+> - [tmux notes][@05]
 
 ## ImageMagick (convert)
-> Use [ImageMagick][@04] to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.
+> Use [ImageMagick][@06] to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.
 
 ```sh
 # Example 1: convert image's format
@@ -203,7 +205,7 @@ magick *.jpg images.gif
 ```
 
 ## ffmpeg
-> [ffmpeg][@05] A complete, cross-platform solution to record, convert and stream audio and video.
+> [ffmpeg][@07] A complete, cross-platform solution to record, convert and stream audio and video.
 
 ```sh
 # -i mean input_file
@@ -211,25 +213,25 @@ $ ffmpeg -i input.mp4 output.avi
 ```
 
 ## http-server
-> [http-server][@06] is a simple, zero-configuration command-line http server. It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, local development, and learning.
+> [http-server][@08] is a simple, zero-configuration command-line http server. It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, local development, and learning.
 
 ## youtube-dl
-> [youtube-dl][@07] is a small command-line program to download videos from YouTube.com and a few more sites.
+> [youtube-dl][@09] is a small command-line program to download videos from YouTube.com and a few more sites.
 >
-> - [Example | Download YouTube in batch]({{< ref "post/download-youtube-in-batch" >}})
+> - [Example | Download YouTube in batch][@10]
 
 ## pt
 > A code search tool similar to ack and the_silver_searcher(ag). It supports multi platforms and multi encodings.
 >
-> - [Platinum Searcher][@08]
+> - [Platinum Searcher][@11]
 
 ## Pandoc
-- [Pandoc][@09]
-- [examples][@10]
+- [Pandoc][@12]
+- [examples][@13]
 - a universal document converter
 
 ## http
-> [HTTPie – command line HTTP client][@12]
+> [HTTPie – command line HTTP client][@14]
 
 ```sh
 # install
@@ -237,7 +239,7 @@ brew install httpie
 ```
 
 ## caddy
-> [caddy](https://caddyserver.com/) is the HTTP/2 web server with automatic HTTPS.
+> [caddy][@15] is the HTTP/2 web server with automatic HTTPS.
 > 
 > ### features
 > - proxy server
@@ -247,28 +249,33 @@ brew install httpie
 ## jq
 > Command-line JSON processor. It's also very handy tool to parse JSON like `lodash`
 
-- [jq][@13]
+- [jq][@16]
 - `echo '{"name": "CyrusN"}'| jq .name`
-- `http` is commandline version of [postman](https://www.getpostman.com/)
+- `http` is commandline version of [postman][@17]
 
 ## top
 > using `top` command to kill running process
 
 ## osx metadata
-- [mac OS X mdfind, mdutil, mdls, mdimport. file metadata utilities][@11]
+- [mac OS X mdfind, mdutil, mdls, mdimport. file metadata utilities][@18]
 
 <!-- reference links -->
 
 [@01]: http://floss.zoomquiet.io/data/20120129165222/index.html
 [@02]: http://www.zzapper.co.uk/zshtips.html
 [@03]: http://www.cs.elte.hu/zsh-manual/zsh_toc.html
-[@04]: http://www.imagemagick.org/script/command-line-processing.php
-[@05]: https://www.ffmpeg.org/
-[@06]: https://www.npmjs.com/package/http-server
-[@07]: http://rg3.github.io/youtube-dl/
-[@08]: https://github.com/monochromegane/the_platinum_searcher
-[@09]: http://johnmacfarlane.net/pandoc/index.html
-[@10]: http://johnmacfarlane.net/pandoc/demos.html
-[@11]: http://real-world-systems.com/docs/mdfind.1.html
-[@12]: https://httpie.org/
-[@13]: https://stedolan.github.io/jq/
+[@04]: http://www.nparikh.org/unix/prompt.php
+[@05]: {{<ref "note/tmux">}}
+[@06]: http://www.imagemagick.org/script/command-line-processing.php
+[@07]: https://www.ffmpeg.org/
+[@08]: https://www.npmjs.com/package/http-server
+[@09]: http://rg3.github.io/youtube-dl/
+[@10]: {{< ref "post/download-youtube-in-batch" >}}
+[@11]: https://github.com/monochromegane/the_platinum_searcher
+[@12]: http://johnmacfarlane.net/pandoc/index.html
+[@13]: http://johnmacfarlane.net/pandoc/demos.html
+[@14]: https://httpie.org/
+[@15]: https://caddyserver.com/
+[@16]: https://stedolan.github.io/jq/
+[@17]: https://www.getpostman.com/
+[@18]: http://real-world-systems.com/docs/mdfind.1.html

@@ -14,31 +14,58 @@ tags:
 
 <!-- MarkdownTOC  -->
 
-- [TaiPo](#taipo)
-  - [2018-02-01 \(Tue\)](#2018-02-01-tue)
-  - [2017-12-01 \(Fri\)](#2017-12-01-fri)
-  - [2018-01-05 \(Fri\)](#2018-01-05-fri)
-- [Choi Hung](#choi-hung)
-  - [2018-01-11 \(Thu\)](#2018-01-11-thu)
-  - [2017-11-30 \(Thu\)](#2017-11-30-thu)
+- Tang King Po
+  - 2018-03-26 \(Mon\)
+- TaiPo
+  - 2018-02-01 \(Tue\)
+  - 2017-12-01 \(Fri\)
+  - 2018-01-05 \(Fri\)
+- Choi Hung
+  - 2018-01-11 \(Thu\)
+  - 2017-11-30 \(Thu\)
 - [ST Paul](#SPC)
-  - [2017-11-28 \(Tue\)](#2017-11-28-tue)
-  - [2017-11-14 \(Tue\)](#2017-11-14-tue)
-  - [2017-10-31 \(Tue\)](#2017-10-31-tue)
-- [TWGSS](#twgss)
-  - [2018-02-02 \(Fri\)](#2018-02-02-fri)
-  - [2017-10-06 \(Fri\)](#2017-10-06-fri)
+  - 2018-04-10 \(Tue\)
+  - 2018-03-20 \(Tue\)
+  - 2018-02-27 \(Tue\)
+  - 2017-11-28 \(Tue\)
+  - 2017-11-14 \(Tue\)
+  - 2017-10-31 \(Tue\)
+- TWGSS
+  - 2018-03-27 \(Tue\)
+  - 2018-02-02 \(Fri\)
+  - 2017-10-06 \(Fri\)
+    - S2 Development
+    - S3 Development
 - [孫方中書院](#sfcc)
-  - [2018-01-18 \(Thu\)](#2018-01-18-thu)
-  - [2017-12-19 \(Tue\)](#2017-12-19-tue)
-  - [2017-09-22 \(Fri\)](#2017-09-22-fri)
+  - 2018-05-14 \(Mon\)
+  - 2018-05-04 \(Fri\)
+  - 2018-01-18 \(Thu\)
+  - 2017-12-19 \(Tue\)
+  - 2017-09-22 \(Fri\)
 - [吳祥川](#twgss)
-- [Schedule](#schedule)
-  - [Sept-Oct](#sept-oct)
-  - [Nov-Dec](#nov-dec)
-  - [Jan-Feb](#jan-feb)
+- Schedule
+  - Sept-Oct
+  - Nov-Dec
+  - Jan-Feb
+- Mar - Apr
+- May - Jun
 
 <!-- /MarkdownTOC -->
+
+# Tang King Po
+## 2018-03-26 (Mon)
+- 剛好統測完
+- 全等及相似
+- Percentage
+  + increase 10% then decrease 10%
+  + Use timeline to think about percentage
+- after percentage => 對稱變換估算
+- students don't get used to setup and solve equation
+- Plickers + Flipped classroom
+- Parents Education
+- 認真備課 ／ 學生重視測驗成績
+- 議課
+  + 
 
 # TaiPo
 ## 2018-02-01 (Tue)
@@ -99,6 +126,70 @@ tags:
   + if student can't derive the equation, then give them the cue card
 
 # ST Paul{#SPC}
+## 2018-04-10 (Tue)
+- congruent triangle (Class observation)
+
+
+| Type | is unique |
+|------|-----------|
+| AA   |           |
+| AS   |           |
+| SA   |           |
+| SS   |           |
+
+
+| Type | is unique |
+|------|-----------|
+| AAA  |           |
+| AAS  |           |
+| ASA  |           |
+| SAA  |           |
+| SSA  |           |
+| SAS  |           |
+| ASS  |           |
+| SSS  |           |
+
+減少 instructions, 讓學生發揮
+
+
+- annual sharing powerpoint
+  + Understanding the questions
+  + losen constraints
+  + further investigate / make conclusion / apply math model / revise
+
+
+## 2018-03-20 (Tue)
+- 於presentation 中應加入規劃既部分
+  + how to choose topic for introducing STEM / mathematics modeling
+  + no of activities
+  + F1 students as a starting level
+  + planning
+    * learning objective
+    * conceptualize
+    * students' abilities
+- recap
+  + what we expect students can get in the activities
+    * water bucket
+      - 漏水 -> per volume -> or per second
+      - handle rate / ratio
+      - open questions
+      - draw graph
+      - can consider => evaporation
+      - assumption (constant rate)
+    * A4 box
+    * ~~selling orange~~ but not all classes have finished it
+      - what kind of factors do affect the prices
+    * facilitate students to use math language to present
+    * uncertainty is most difficult part and make teacher feel unconfortable
+      - quit depend on teacher's experiences / background
+    * 由學生建構知識
+      - activities should relate to learning outcome
+
+## 2018-02-27 (Tue)
+- Evaluation
+  + 發展方向有無需要更進
+- Polar Coordinate
+  
 ## 2017-11-28 (Tue)
 - talk about estimation, area and volume
 - Mainly focus on mathematically modeling
@@ -186,6 +277,22 @@ Estimation
 - 鞋印 vs 高度
 
 # TWGSS
+## 2018-03-27 (Tue)
+- F2 Mathematics (2C)
+- Golden ratio and Silver ratio
+  + clear learning objective?
+  + Use polling system to let students choose 
+    * which rectangle they like most.
+      - Raise the interest of students to the topic
+    * Mona lisa
+      - But the picture is distorted, which may not a good example
+  + Watching YouTube in lesson
+    * why not ask student watch it at home?
+  + Art lesson or Math lesson? 
+  + should we ask students to speak english without "ley ley ley" 
+  + cater for learner diversity
+  + conclusion
+
 ## 2018-02-02 (Fri)
 - Google Classroom
   + to collect student's HW.
@@ -245,6 +352,27 @@ Estimation
   + Math
 
 # 孫方中書院{#sfcc}
+## 2018-05-14 (Mon) 
+- Lesson Observation (DT)
+  + 學生能安靚學習
+  + 正視、俯視、側視
+  + 利用 Google Class 收集學生功課 
+  + 認識投影圖的基本原埋
+  + Fusion 360 的基本操作
+  + 利用 [Kahoot.it](Kahoot.it) 溫習如何使用 Fusion 360
+    * 學生投入學習。
+    * 低分的同學是拒絕學習、還是不懂，他們會否被忽略？如何識別
+
+
+## 2018-05-04 (Fri)
+- lesson review
+  + Excel to organise data (ICT)
+  + Enginering for making a distilation column
+  + find the flow rate (math)
+  + Students didn't make a right calculation yet
+  + Students can bring their own material to see the abilities
+* ICT - Line follower
+
 ## 2018-01-18 (Thu)
 - Building a bridge with folded paper
 
@@ -353,9 +481,40 @@ Estimation
 | 2018-01-09 (Tue) | WD   | DL   | EDB          |
 | 2018-01-11 (Thu) | PM   | SV   | Choi Hung    |
 | 2018-01-18 (Thu) | PM   | SV   | 孫方中       |
+| 2018-01-23 (Tue) | AM   | DL   | EDB          |
+| 2018-01-23 (Tue) | PM   | SV   | 真光女書院   |
 | 2018-01-26 (Fri) | PM   | DL   | EDB          |
-| 2018-01-30 (Tue) | WD   | SV   | EDB          |
+| 2018-01-30 (Tue) | WD   | DL   | EDB          |
 | 2018-02-01 (Fri) | PM   | SV   | 大埔區中學   |
 | 2018-02-02 (Fri) | PM   | SV   | TWGSS        |
+| 2018-02-06 (Tue) | WD   | DL   | EDB          |
+| 2018-02-13 (Tue) | AM   | DL   | EDB          |
+| 2018-02-13 (Tue) | PM   | LC   | Kowloon Tong |
+| 2018-02-20 (Tue) | WD   | DL   | EDB          |
+| 2018-02-27 (Tue) | AM   | DL   | EDB          |
+| 2018-02-27 (Tue) | PM   | SV   | ST Paul      |
 
+# Mar - Apr
+| Date             | Time | Task | Location     |
+| :--------------: | :-:  | :-:  | :----------: |
+| 2018-03-06 (Tue) | AM   | DL   | EDB          |
+| 2018-03-06 (Tue) | PM   | LC   | Kowloon Tong |
+| 2018-03-20 (Tue) | AM   | DL   | EDB          |
+| 2018-03-20 (Tue) | PM   | SV   | ST Paul      |
+| 2018-03-26 (Mon) | PM   | SV   | Tang King Po |
+| 2018-03-27 (Tue) | AM   | LO   | TWGSS        |
+| 2018-03-27 (Tue) | PM   | LC   | Kowloon Tong |
+| 2018-04-10 (Tue) | AM   | DL   | EDB          |
+| 2018-04-10 (Tue) | PM   | SV   | ST Paul      |
+| 2018-04-17 (Tue) | AM   | LO   | LPSS         |
+| 2018-04-17 (Tue) | PM   | DL   | EDB          |
+| 2018-04-24 (Tue) | AM   | LO   | 孫方中       |
+| 2018-04-24 (Tue) | PM   | DL   | EDB          |
 
+# May - Jun
+| Date             | Time | Task | Location     |
+| :--------------: | :-:  | :-:  | :----------: |
+| 2018-05-04 (Fri) | AM   | LO   | ST Paul      |
+| 2018-05-04 (Tue) | PM   | SV   | 孫方中       |
+| 2018-05-14 (Mon) | AM   | SV   | 孫方中       |
+|                  |      |      |              |

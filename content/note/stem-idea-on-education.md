@@ -10,15 +10,16 @@ tags:
 ---
 <!-- MarkdownTOC -->
 
-- [STEM chanllege](#stem-chanllege)
-- [Coding and Math](#coding-and-math)
-- [Reference](#reference)
-- [Statistic](#statistic)
-- [Engineering](#engineering)
+- STEM chanllege
+- Innovative Ideas \(Think by Discipline\)
+- Coding and Math
+- Reference
+- Statistic
+- Engineering
 - [Some Idea from 青年會書院](#cymcac)
-- [Ideas](#ideas)
-- [Model on STEM Education](#model-on-stem-education)
-- [Resource](#resource)
+- Ideas
+- Model on STEM Education
+- Resource
 
 <!-- /MarkdownTOC -->
 
@@ -29,29 +30,45 @@ tags:
   + make a phone, it can talk as far as possible
 - Solve some puzzle
   + decode an encrypted message
-  + 
+
+# Innovative Ideas (Think by Discipline)
+- Health
+  + Elderly Care
+  + Smart Home
+  + Smoke Detector
+  + falling Detector
+  + Silent Detector
+  + Bionics Eyes
+- Climate Change Challenge / Envoirnment
+  + typhoon disaster
+  + Sewage Handling
+  + Extreme Heat / Cold
+  + Bio Disel
+  + storm surges
+  + terrential rains
+  + Prevent 4D Jobs (Dull, Dirty, Dangerous)
 
 
 # Coding and Math
 
 # Reference
-- [Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine][@01]
-- [UC Davis Center for Integrated Computing and STEM Education][@02]
-- [Zebra Puzzle - Wikiwand][@03]
-- [The Micro:bit Foundation is a global non-profit organisation making invention with technology fun for everyone!][@04]
+- [Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine](https://edtechmagazine.com/k12/article/2016/10/computer-science-not-just-coding-needs-bigger-role-stem-education)
+- [UC Davis Center for Integrated Computing and STEM Education](http://c-stem.ucdavis.edu/)
+- [Zebra Puzzle - Wikiwand](https://www.wikiwand.com/en/Zebra_Puzzle)
+- [The Micro:bit Foundation is a global non-profit organisation making invention with technology fun for everyone!](http://microbit.org/)
 
 # Statistic
-- [What is STEM Education?][@05]
+- [What is STEM Education?](https://www.livescience.com/43296-what-is-stem-education.html)
 
 # Engineering
-- [Basic Electronic Components and What They Do - dummies][@06]
-- [How Transistors Work - A Simple Explanation][@07]
-- ![transistor][@08]
-- [A Guide To How A Relay Works - Build Electronic Circuits][@09]
-- [Fritzing Fritzing][@10]
-- [Electronic Basics #19: I2C and how to use it - YouTube][@11]
-- [(1) Manu Prakash: A 50-cent microscope that folds like origami - YouTube][@12]
-- [Google Cardboard – Google VR][@13]
+- [Basic Electronic Components and What They Do - dummies](http://www.dummies.com/programming/electronics/basic-electronic-components-and-what-they-do/)
+- [How Transistors Work - A Simple Explanation](https://www.build-electronic-circuits.com/how-transistors-work/)
+- ![transistor](https://www.build-electronic-circuits.com/wp-content/uploads/2014/05/transistor-current-explanation.png)
+- [A Guide To How A Relay Works - Build Electronic Circuits](https://www.build-electronic-circuits.com/how-a-relay-works/)
+- [Fritzing Fritzing](http://fritzing.org/home/)
+- [Electronic Basics #19: I2C and how to use it - YouTube](https://www.youtube.com/watch?v=_fgWQ3TIhyE)
+- [(1) Manu Prakash: A 50-cent microscope that folds like origami - YouTube](https://www.youtube.com/watch?v=h8cF5QPPmWU)
+- [Google Cardboard – Google VR](https://vr.google.com/cardboard/)
 
 
 # Some Idea from 青年會書院{#cymcac}
@@ -69,7 +86,7 @@ tags:
 - 環保飯堂 + STEM + 影音室
     - 3D Printing, 青書Cafe, food printing 立體食物打印機
     - Student Cafe
-    - [3D Food Printers: How They Could Change What You Eat | Digital Trends][@14]
+    - [3D Food Printers: How They Could Change What You Eat | Digital Trends](https://www.digitaltrends.com/cool-tech/3d-food-printers-how-they-could-change-what-you-eat/)
 - 2D design => 3D design => 3D printing
 - tinkercad 3D 繪圖工具
 - 如何照顧不同學習需要的學生
@@ -131,7 +148,7 @@ Can we have a syllabus for STEM? (For each form)
   + Thickness
 - 潛望鏡活動 periscope (Ideas From Tak)
   + 動手做設計個紙樣，紙樣要一塊過
-  + [《光》—4、光的反射+牙膏盒+观测孔+插镜孔+45度角，上下两块镜面必须平行，镜面要相对。.jpg (1024×768)][@15]
+  + [《光》—4、光的反射+牙膏盒+观测孔+插镜孔+45度角，上下两块镜面必须平行，镜面要相对。.jpg (1024×768)](http://slidesplayer.com/slide/11598871/62/images/25/%E3%80%8A%E5%85%89%E3%80%8B%E2%80%944%E3%80%81%E5%85%89%E7%9A%84%E5%8F%8D%E5%B0%84+%E7%89%99%E8%86%8F%E7%9B%92+%E8%A7%82%E6%B5%8B%E5%AD%94+%E6%8F%92%E9%95%9C%E5%AD%94+45%E5%BA%A6%E8%A7%92%EF%BC%8C%E4%B8%8A%E4%B8%8B%E4%B8%A4%E5%9D%97%E9%95%9C%E9%9D%A2%E5%BF%85%E9%A1%BB%E5%B9%B3%E8%A1%8C%EF%BC%8C%E9%95%9C%E9%9D%A2%E8%A6%81%E7%9B%B8%E5%AF%B9%E3%80%82.jpg)
   + 潛望鏡活動
 - 大拍買
   + 5 年拍買
@@ -141,11 +158,11 @@ Can we have a syllabus for STEM? (For each form)
   + 最後邊組最高分（最多錢又最開心）
 - Foldable 
   + how to fold a skirt (occupy the minimum space)
-  + [how to paper origami collapsible - Google Search][@16]
+  + [how to paper origami collapsible - Google Search](https://www.google.com.hk/search?q=how+to+paper+origami+collapsible&newwindow=1&safe=off&tbm=isch&source=iu&pf=m&ictx=1&fir=xcOI1TO7-fmGVM%253A%252CTMiZSqjweYcF9M%252C_&usg=__bxkryWVqGVsDjfwp3EJG8TRFcuo%3D&sa=X&ved=0ahUKEwjmjebikr3XAhVDtpQKHTJxAPMQ9QEIKzAA#imgrc=_)
   + water rocket with collapsible parachute
     * with trajectory
-    * [Water Rocket Parachute Deployment System by capella_ben - Thingiverse][@17]
-    * [Air Command Water Rockets Flight Log - Day 98 - G2 nosecone][@18]
+    * [Water Rocket Parachute Deployment System by capella_ben - Thingiverse](https://www.thingiverse.com/thing:294758)
+    * [Air Command Water Rockets Flight Log - Day 98 - G2 nosecone](http://www.aircommandrockets.com/day98.htm)
 - 對換 => 數字的感覺，體溫，錢，大小
 - Rock Paper Scissors
   + Round Down
@@ -158,7 +175,14 @@ Can we have a syllabus for STEM? (For each form)
 - using tangent method to draw a parabola and using this to find
   + $\displaystyle h=\frac{\tan{\theta}}{4}$
 - Metronome and trigonometry
-  + [Trig modeling- Metronome by Jing Rong Lu on Prezi][@19]
+  + [Trig modeling- Metronome by Jing Rong Lu on Prezi](https://prezi.com/xyjlb4sezgqv/trig-modeling-metronome/)
+- Balance Bird
+  + [(4) How to make a self balancing bird - YouTube](https://www.youtube.com/watch?v=q29ok6xKKXM)
+  + [how to make a balance bird - Google Search](https://www.google.com.hk/search?q=how+to+make+a+balance+bird&newwindow=1&safe=off&tbm=isch&tbo=u&source=univ&sa=X&ved=0ahUKEwjo4pSvl-jZAhWBw7wKHRDRA9wQsAQIMA&biw=1264&bih=704)
+  + [(4) SB - DIY | Scratch Building Balancing Bird - Center of Mass (Physics) - YouTube](https://www.youtube.com/watch?v=puSfwKc2rqg)
+  + [How To Make A Balancing Butterfly - YouTube](https://www.youtube.com/watch?v=REKhAG52GIE)
+  + [Balancing Heart Bird - YouTube](https://www.youtube.com/watch?v=MLTUAMwQBqE)
+  + [Balancing bird origami tutorial - YouTube](https://www.youtube.com/watch?v=r6xY1fkqacM)
 
 # Model on STEM Education
 - What is the role of Math?
@@ -166,40 +190,13 @@ Can we have a syllabus for STEM? (For each form)
 
 # Resource
 - Free 3D printing App
-    + [Learn | Tinkercad][@20]
+    + [Learn | Tinkercad](https://www.tinkercad.com/learn/)
 - MR / AR
 - Draw Circuit
-    + [Fritzing][@21]
+    + [Fritzing](http://fritzing.org/home/)
 - Stereographic Projection
 - 最速下降線 Steepest Descent Curve
-- [Colored Shadows: Light & Color Science Activity | Exploratorium Teacher Institute Project][@22]
-- [(168) Pinterest][@23]
-- [Hopscotch][@24]
+- [Colored Shadows: Light & Color Science Activity | Exploratorium Teacher Institute Project](https://www.exploratorium.edu/snacks/colored-shadows?media=7601)
+- [(168) Pinterest](https://www.pinterest.com/aahandson/diy-science-projects/?lp=true)
+- [Hopscotch](https://www.gethopscotch.com/)
 - Students should write learning journel / note taking skill
-
-<!-- reference links -->
-
-[@01]: https://edtechmagazine.com/k12/article/2016/10/computer-science-not-just-coding-needs-bigger-role-stem-education
-[@02]: http://c-stem.ucdavis.edu/
-[@03]: https://www.wikiwand.com/en/Zebra_Puzzle
-[@04]: http://microbit.org/
-[@05]: https://www.livescience.com/43296-what-is-stem-education.html
-[@06]: http://www.dummies.com/programming/electronics/basic-electronic-components-and-what-they-do/
-[@07]: https://www.build-electronic-circuits.com/how-transistors-work/
-[@08]: https://www.build-electronic-circuits.com/wp-content/uploads/2014/05/transistor-current-explanation.png
-[@09]: https://www.build-electronic-circuits.com/how-a-relay-works/
-[@10]: http://fritzing.org/home/
-[@11]: https://www.youtube.com/watch?v=_fgWQ3TIhyE
-[@12]: https://www.youtube.com/watch?v=h8cF5QPPmWU
-[@13]: https://vr.google.com/cardboard/
-[@14]: https://www.digitaltrends.com/cool-tech/3d-food-printers-how-they-could-change-what-you-eat/
-[@15]: http://slidesplayer.com/slide/11598871/62/images/25/%E3%80%8A%E5%85%89%E3%80%8B%E2%80%944%E3%80%81%E5%85%89%E7%9A%84%E5%8F%8D%E5%B0%84+%E7%89%99%E8%86%8F%E7%9B%92+%E8%A7%82%E6%B5%8B%E5%AD%94+%E6%8F%92%E9%95%9C%E5%AD%94+45%E5%BA%A6%E8%A7%92%EF%BC%8C%E4%B8%8A%E4%B8%8B%E4%B8%A4%E5%9D%97%E9%95%9C%E9%9D%A2%E5%BF%85%E9%A1%BB%E5%B9%B3%E8%A1%8C%EF%BC%8C%E9%95%9C%E9%9D%A2%E8%A6%81%E7%9B%B8%E5%AF%B9%E3%80%82.jpg
-[@16]: https://www.google.com.hk/search?q=how+to+paper+origami+collapsible&newwindow=1&safe=off&tbm=isch&source=iu&pf=m&ictx=1&fir=xcOI1TO7-fmGVM%253A%252CTMiZSqjweYcF9M%252C_&usg=__bxkryWVqGVsDjfwp3EJG8TRFcuo%3D&sa=X&ved=0ahUKEwjmjebikr3XAhVDtpQKHTJxAPMQ9QEIKzAA#imgrc=_
-[@17]: https://www.thingiverse.com/thing:294758
-[@18]: http://www.aircommandrockets.com/day98.htm
-[@19]: https://prezi.com/xyjlb4sezgqv/trig-modeling-metronome/
-[@20]: https://www.tinkercad.com/learn/
-[@21]: http://fritzing.org/home/
-[@22]: https://www.exploratorium.edu/snacks/colored-shadows?media=7601
-[@23]: https://www.pinterest.com/aahandson/diy-science-projects/?lp=true
-[@24]: https://www.gethopscotch.com/

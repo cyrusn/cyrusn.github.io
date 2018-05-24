@@ -98,11 +98,11 @@ class: center
 ]
 
 ---
-class: center
+class: center middle
 # e.g. Blinking LED
 
-.mh-75.mx-auto[
-![blink_led][@08]
+.img-50.mx-auto[
+  ![blink_led][@08]
 ]
 
 ---
@@ -188,7 +188,7 @@ class: center middle
 [@05]: https://pinout.xyz/
 [@06]: https://pinout.xyz/
 [@07]: https://www.jakartanotebook.com/images/products/68/181/22325/1/raspberry-pi-3-and-raspberry-pi-2-model-b-16-kinds-of-sensor-5.jpg
-[@08]: https://www.raspinews.com/wp-content/uploads/2017/06/Blinking-LED-Raspberry-Pi-Wiring-768x597-1.png
+[@08]: https://circuitdigest.com/sites/default/files/circuitdiagram_mic/raspberry-pi-blinking-led-circuit-diagram.jpg
 [@09]: ./scratch_example.png
 [@10]: http://theory.uwinnipeg.ca/programming/node3.html
 [@11]: https://lifehacker.com/top-10-raspberry-pi-projects-for-beginners-1791002723

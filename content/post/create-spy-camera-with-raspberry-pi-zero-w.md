@@ -14,9 +14,10 @@ tags:
 
 <!-- MarkdownTOC -->
 
-- [Ingredient](#ingredient)
-  - [Difference between Camera and NoIR Camera](#difference-between-camera-and-noir-camera)
-- [Using `RPi-Cam-Web-Interface` package](#using-rpi-cam-web-interface-package)
+- Ingredient
+  - Difference between Camera and NoIR Camera
+- Using `RPi-Cam-Web-Interface` package
+- [](#Using RPi IR-Cut Camera@8)
 
 <!-- /MarkdownTOC -->
 
@@ -39,6 +40,10 @@ on / off by providing voltage, like [this][@5].
 # Using `RPi-Cam-Web-Interface` package
 - [RPi-Cam-Web-Interface - eLinux.org][@7]
 
+
+# [Using RPi IR-Cut Camera][@8]
+> RPi IR-CUT Camera默认工作在常规模式。 执行命令：`sudo nano /boot/config.txt`，在最后一行加入`disable_camera_led=1`，保存并重启树莓派后Camera将工作在夜视模式。 如需恢复到常规模式，只需删除`disable_camera_led=1`，保存并重启树莓派即可。 如需灵活控制显示模式，可通过树莓派的GPIO接口连接到以下位置，通过改变GPIO的电平来切换不同的模式（高电平为常规模式，低电平为夜视模式）。
+
 <!-- reference links -->
 
 [@1]: https://www.raspberrypi.org/products/raspberry-pi-zero-w/
@@ -48,3 +53,4 @@ on / off by providing voltage, like [this][@5].
 [@5]: http://www.waveshare.net/wiki/RPi_IR-CUT_Camera
 [@6]: https://pimylifeup.com/raspberry-pi-camera-vs-noir-camera/
 [@7]: https://elinux.org/RPi-Cam-Web-Interface
+[@8]: http://www.waveshare.net/wiki/RPi_IR-CUT_Camera
