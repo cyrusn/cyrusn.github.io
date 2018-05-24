@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gtd on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/gtd/</link>
+    <description>Recent content in Gtd on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Tue, 16 May 2017 00:17:50 +0800</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/gtd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>提升生產力及專注力</title>
+      <link>https://cyrusn.github.io/slide/pomodoro/</link>
+      <pubDate>Tue, 16 May 2017 00:17:50 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/pomodoro/</guid>
+      <description>class: center middle bg-info text-light
+提升生產力及專注力 GTD &amp;amp; 蕃茄工作法 Reference  The Pomodoro Technique® - proudly developed by Francesco Cirillo | Cirillo Company David Allen&amp;rsquo;s Getting Things Done® Methodology  工作時間  平日每天約4小時 假日每天約6小時 合共： 4hr x 5day + 6hr x 2day = 32 hrs 如何保持專注?  規劃  每科應用15分鐘回顧及整理當天所學 功課應盡早完成 每天用盡所有工作時間  流程 .overflow.h-75[ ![workflow] ]
+Why?  何時做 &amp;gt; 何時交 計時能令人集中  e.g. 考試、測驗   .row[ .</description>
+    </item>
+    
+  </channel>
+</rss>

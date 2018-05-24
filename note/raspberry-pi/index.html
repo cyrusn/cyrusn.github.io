@@ -11,9 +11,9 @@
   <title>Raspberry Pi</title>
 
 
-  <meta name="description" content="Setting  Setting for OTG mode Add ssh public key Update and install useful command Install oh-my-zsh and my custom theme Config .zshrc  Autostart Pin Examples Links Some Projects Some thoughts Setting brightness of Touch led Sensors Others Sensor HAT ADC (Analog to Digital Convertor)  Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setting for OTG mode  add the following text to /boot/config.">
-  <meta property="og:description" content="Setting  Setting for OTG mode Add ssh public key Update and install useful command Install oh-my-zsh and my custom theme Config .zshrc  Autostart Pin Examples Links Some Projects Some thoughts Setting brightness of Touch led Sensors Others Sensor HAT ADC (Analog to Digital Convertor)  Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setting for OTG mode  add the following text to /boot/config.">
-  <meta name="twitter:description" content="Setting  Setting for OTG mode Add ssh public key Update and install useful command Install oh-my-zsh and my custom theme Config .zshrc  Autostart Pin Examples Links Some Projects Some thoughts Setting …">
+  <meta name="description" content="Setting  Setup for a new Pi 3 model B Setting for OTG mode Add ssh public key  Recommanded software packages  Installation Configuration of zsh Install oh-my-zsh and my custom theme Config .zshrc  Autostart Pin Examples Links Some Projects Some thoughts Setting brightness of Touch led Sensors Others  Using Raspberry Pi to control servo  Sensor HAT ADC (Analog to Digital Convertor)  Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setup for a new Pi 3 model B First, you have to follow the installation guide written by raspberrypi.">
+  <meta property="og:description" content="Setting  Setup for a new Pi 3 model B Setting for OTG mode Add ssh public key  Recommanded software packages  Installation Configuration of zsh Install oh-my-zsh and my custom theme Config .zshrc  Autostart Pin Examples Links Some Projects Some thoughts Setting brightness of Touch led Sensors Others  Using Raspberry Pi to control servo  Sensor HAT ADC (Analog to Digital Convertor)  Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setup for a new Pi 3 model B First, you have to follow the installation guide written by raspberrypi.">
+  <meta name="twitter:description" content="Setting  Setup for a new Pi 3 model B Setting for OTG mode Add ssh public key  Recommanded software packages  Installation Configuration of zsh Install oh-my-zsh and my custom theme Config .zshrc …">
 
 
 <meta name="author" content="CyrusN"/>
@@ -24,6 +24,15 @@
 <script src='/js/jquery-3.2.1.slim.min.js'></script>
 <script src='/js/popper.min.js'></script>
 <script src='/js/bootstrap.min.js' ></script>
+
+
+
+<script>
+  FontAwesomeConfig = {
+    searchPseudoElements: true
+  }
+</script>
+<script defer src=' /js/fontawesome-all.min.js '></script>
 
 
 
@@ -41,9 +50,9 @@
 const pageKind = "page"
 const navLinks = ['/']
 
-  navLinks.push("\/post\/")
-
   navLinks.push("\/note\/")
+
+  navLinks.push("\/post\/")
 
   navLinks.push("\/project\/")
 
@@ -89,7 +98,7 @@ var Paginator = {}
         
         
         <li class="nav-item">
-          <a class="nav-link" title="Post" href="/post/">Post</a>
+          <a class="nav-link" title="Note" href="/note/">Note</a>
         </li>
         
         
@@ -97,7 +106,7 @@ var Paginator = {}
         
         
         <li class="nav-item">
-          <a class="nav-link" title="Note" href="/note/">Note</a>
+          <a class="nav-link" title="Post" href="/post/">Post</a>
         </li>
         
         
@@ -170,7 +179,7 @@ var Paginator = {}
     
 <div class="mx-auto">
   
-  <h1 class="display-4 pb-0">Raspberry Pi</h1>
+  <h1 class="title">Raspberry Pi</h1>
   
 
   
@@ -216,15 +225,21 @@ var Paginator = {}
   <div id="content">
     
 
-<!-- MarkdownTOC -->
+<!-- MarkdownTOC autolink=true -->
 
 <ul>
 <li><a href="#setting">Setting</a>
 
 <ul>
+<li><a href="#setup-for-a-new-pi-3-model-b">Setup for a new Pi 3 model B</a></li>
 <li><a href="#setting-for-otg-mode">Setting for OTG mode</a></li>
 <li><a href="#add-ssh-public-key">Add ssh public key</a></li>
-<li><a href="#update-and-install-useful-command">Update and install useful command</a></li>
+</ul></li>
+<li><a href="#recommanded-software-packages">Recommanded software packages</a>
+
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#configuration-of-zsh">Configuration of <code>zsh</code></a></li>
 <li><a href="#install-oh-my-zsh-and-my-custom-theme">Install <code>oh-my-zsh</code> and my custom theme</a></li>
 <li><a href="#config-zshrc">Config <code>.zshrc</code></a></li>
 </ul></li>
@@ -236,7 +251,11 @@ var Paginator = {}
 <li><a href="#some-thoughts">Some thoughts</a></li>
 <li><a href="#setting-brightness-of-touch-led">Setting brightness of Touch led</a></li>
 <li><a href="#sensors">Sensors</a></li>
-<li><a href="#others">Others</a></li>
+<li><a href="#others">Others</a>
+
+<ul>
+<li><a href="#using-raspberry-pi-to-control-servo">Using Raspberry Pi to control servo</a></li>
+</ul></li>
 <li><a href="#sensor-hat">Sensor HAT</a></li>
 <li><a href="#adc-analog-to-digital-convertor">ADC (Analog to Digital Convertor)</a></li>
 </ul>
@@ -252,6 +271,13 @@ var Paginator = {}
 <li><a href="https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md" target="_blank">Passwordless SSH access - Raspberry Pi Documentation</a></li>
 <li><a href="https://learn.adafruit.com/turning-your-raspberry-pi-zero-into-a-usb-gadget/ethernet-gadget" target="_blank">Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System</a></li>
 </ul>
+
+<h2 id="setup-for-a-new-pi-3-model-b">Setup for a new Pi 3 model B</h2>
+
+<p>First, you have to follow the installation guide written by raspberrypi.org,
+here is the <a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md" target="_blank">link</a>. After installation of Raspbian OS, the pi is basically
+set, run <code>sudo apt-get upgrade</code> in terminal to keep all availabe packages and
+OS up to date. See <a href="#recommanded-software-packages">Recommanded Software Packages</a> session</p>
 
 <h2 id="setting-for-otg-mode">Setting for OTG mode</h2>
 
@@ -321,15 +347,31 @@ network={
 <li>paste the ssh public key to <code>authorized_keys</code> (mostly the key store in <code>~/.ssh/id_rsa.pub</code> )</li>
 </ul>
 
-<h2 id="update-and-install-useful-command">Update and install useful command</h2>
+<h1 id="recommanded-software-packages">Recommanded software packages</h1>
+
+<p>Before the installation, first run the following command to update and upgrade the
+packages and OS</p>
 
 <pre><code class="language-sh">sudo apt-get update
 sudo apt-get upgrade
-
-sudo apt-get install vim zsh git
 </code></pre>
 
-<h2 id="install-oh-my-zsh-and-my-custom-theme">Install <code>oh-my-zsh</code> and my custom theme</h2>
+<h2 id="installation">Installation</h2>
+
+<p>Here is the list of useful software packages suggested to install to your PI</p>
+
+<ul>
+<li>vim</li>
+<li>git</li>
+<li>zsh</li>
+</ul>
+
+<pre><code class="language-sh">sudo apt-get install vim zsh git
+</code></pre>
+
+<h2 id="configuration-of-zsh">Configuration of <code>zsh</code></h2>
+
+<h3 id="install-oh-my-zsh-and-my-custom-theme">Install <code>oh-my-zsh</code> and my custom theme</h3>
 
 <pre><code class="language-sh">sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
 </code></pre>
@@ -339,7 +381,7 @@ cd .zsh-custom/themes
 curl -O https://raw.githubusercontent.com/cyrusn/cyrusn-terminal-setting/master/zsh-custom/themes/cyrusn.zsh-theme
 </code></pre>
 
-<h2 id="config-zshrc">Config <code>.zshrc</code></h2>
+<h3 id="config-zshrc">Config <code>.zshrc</code></h3>
 
 <pre><code class="language-sh">ZSH_THEME=&quot;cyrusn&quot;
 export UPDATE_ZSH_DAYS=13
@@ -412,13 +454,15 @@ The “&amp;” at the end of the line means the command is run in the backgroun
 <li><a href="https://projects.raspberrypi.org/en/" target="_blank">Projects | Raspberry Pi Projects</a></li>
 <li><a href="https://www.youtube.com/watch?v=9YhTOUu06EY" target="_blank">Top 10 Coolest Raspberry Pi Projects - YouTube</a></li>
 <li><a href="https://lifehacker.com/top-10-raspberry-pi-projects-for-beginners-1791002723" target="_blank">Top 10 Raspberry Pi Projects for Beginners</a></li>
-<li><a href="http://www.instructables.com/id/DIY-Raspberry-Pi-Indoor-Outdoor-Webcam/?utm_source=newsletter&amp;utm_medium=email" target="_blank">DIY Raspberry Pi Indoor Outdoor Webcam: 9 Steps (with Pictures)</a></li>
+<li><a href="http://www.instructables.com/id/DIY-Raspberry-Pi-Indoor-Outdoor-Webcam/?utm_source=newsletter&amp;utm_medium=email" target="_blank">DIY Raspberry Pi Indoor Outdoor Webcam: 9 Steps (with Picturesres)</a></li>
 <li><a href="https://www.raspberrypi.org/forums/viewtopic.php?f=43&amp;t=60829" target="_blank">Daylight IR photography - Raspberry Pi Forums</a></li>
 <li><a href="https://www.rs-online.com/designspark/plug-and-play-iot-with-the-pi-sense-hat" target="_blank">Plug and Play IoT with the Pi Sense HAT</a></li>
 <li><a href="https://lifehacker.com/the-simplest-way-to-build-a-raspberry-pi-powered-amazon-1794218212" target="_blank">The Simplest Way to Build A Raspberry Pi-Powered Amazon Echo</a></li>
 <li><a href="https://github.com/alexa/alexa-avs-sample-app/wiki/Raspberry-Pi" target="_blank">Raspberry Pi · alexa/alexa-avs-sample-app Wiki</a></li>
 <li><a href="http://www.instructables.com/id/Control-Raspberry-Pi-GPIO-With-Amazon-Echo-and-Pyt/" target="_blank">Control Raspberry Pi GPIO With Amazon Echo and Python: 11 Steps (with Pictures)</a></li>
 <li><a href="https://magicmirror.builders/" target="_blank">MagicMirror²</a></li>
+<li><a href="https://circuitdigest.com/microcontroller-projects/raspberry-pi-line-follower-robot" target="_blank">Raspberry Pi Based Line Follower Robot with Python Code</a></li>
+<li><a href="/note/retropie">RetroPie</a></li>
 </ul>
 
 <h1 id="some-thoughts">Some thoughts</h1>
@@ -469,6 +513,15 @@ while True:
 
 <ul>
 <li><a href="http://www.instructables.com/id/Raspberry-Pi-Launch-Python-script-on-startup/" target="_blank">Resistor Color Codes | Color Codes | Electronics Textbook</a></li>
+</ul>
+
+<h2 id="using-raspberry-pi-to-control-servo">Using Raspberry Pi to control servo</h2>
+
+<ul>
+<li>Usng Pulse modulation to control a servo</li>
+<li><a href="https://www.youtube.com/watch?v=N5QmZ92uvUo" target="_blank">Servo control using Raspberry Pi. - YouTube</a></li>
+<li><a href="http://raspi.tv/2013/rpi-gpio-0-5-2a-now-has-software-pwm-how-to-use-it" target="_blank">RPi.GPIO 0.5.2a now has software PWM – How to use it – RasPi.TV</a></li>
+<li><a href="https://www.electronics-tutorials.ws/blog/pulse-width-modulation.html" target="_blank">Pulse Width Modulation Used for Motor Control</a></li>
 </ul>
 
 <h1 id="sensor-hat">Sensor HAT</h1>

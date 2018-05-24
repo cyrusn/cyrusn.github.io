@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pi on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/pi/</link>
+    <description>Recent content in Pi on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Fri, 03 Nov 2017 11:17:14 +0800</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/pi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction to Raspberry Pi</title>
+      <link>https://cyrusn.github.io/slide/introduction-to-raspberry-pi/</link>
+      <pubDate>Fri, 03 Nov 2017 11:17:14 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/introduction-to-raspberry-pi/</guid>
+      <description>class: center middle bg-dark text-light
+Introduction to Raspberry-Pi  Agenda  Raspberry Pi What is Raspberry-Pi Raspberry-Pi vs Audrino vs Microbit What is GPIO? Setup Introduction to 16 common sensors e.g. Blinking LED e.g. Blinking LED cont... Similar code in Scratch2? Programming Learning Top 10 Raspberry Pi Projects for Beginners Reference Thanks   class: center
+Raspberry Pi    RASPBERRY PI 3 MODEL B RASPBERRY PI ZERO W         More Powerful Much Lighter     What is Raspberry-Pi .</description>
+    </item>
+    
+    <item>
+      <title>Blink Led</title>
+      <link>https://cyrusn.github.io/project/blink_led/</link>
+      <pubDate>Mon, 16 Oct 2017 16:05:23 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/project/blink_led/</guid>
+      <description>  Introduction Setting Python Code  Introduction Making Blinking LED is just like writing a hello world programme in engineering.
+Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GPIO.BCM) GPIO.set(LED, GPIO.OUT) GPIO.setwarnings(False) print(&amp;quot;Programme start.&amp;quot;) GPIO.output(LED, True) time.sleep(0.5) GPIO.output(LED, False) time.sleep(0.5) print(&amp;quot;Programme closed.&amp;quot;)  </description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi</title>
+      <link>https://cyrusn.github.io/note/raspberry-pi/</link>
+      <pubDate>Tue, 19 Sep 2017 09:44:09 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/raspberry-pi/</guid>
+      <description>Setting  Setup for a new Pi 3 model B Setting for OTG mode Add ssh public key  Recommanded software packages  Installation Configuration of zsh Install oh-my-zsh and my custom theme Config .zshrc  Autostart Pin Examples Links Some Projects Some thoughts Setting brightness of Touch led Sensors Others  Using Raspberry Pi to control servo  Sensor HAT ADC (Analog to Digital Convertor)  Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setup for a new Pi 3 model B First, you have to follow the installation guide written by raspberrypi.</description>
+    </item>
+    
+  </channel>
+</rss>

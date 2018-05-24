@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/git/</link>
+    <description>Recent content in Git on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Sun, 10 May 2015 00:52:39 +0000</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Git Notes</title>
+      <link>https://cyrusn.github.io/note/git/</link>
+      <pubDate>Sun, 10 May 2015 00:52:39 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/git/</guid>
+      <description>start a new repo $ git init # add repo $ git remote add origin https://github.com/user/repo.git  change existing repo $ git remote rm origin $ git remote add origin https://github.com/user/repo.git  create a new branch and merge # on latest commit $ git checkout -b &amp;lt;branch_name&amp;gt; # create new branch # do you work $ git commit -a # edit the commit log as details as possible $ git checkout master $ git merge &amp;lt;branch_name&amp;gt; # double check everything, if ok then push.</description>
+    </item>
+    
+  </channel>
+</rss>

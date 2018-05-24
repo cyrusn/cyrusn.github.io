@@ -27,6 +27,15 @@
 
 
 
+<script>
+  FontAwesomeConfig = {
+    searchPseudoElements: true
+  }
+</script>
+<script defer src=' /js/fontawesome-all.min.js '></script>
+
+
+
 <script src=' /js/lunr.min.js '></script>
 
 
@@ -41,9 +50,9 @@
 const pageKind = "page"
 const navLinks = ['/']
 
-  navLinks.push("\/post\/")
-
   navLinks.push("\/note\/")
+
+  navLinks.push("\/post\/")
 
   navLinks.push("\/project\/")
 
@@ -89,7 +98,7 @@ var Paginator = {}
         
         
         <li class="nav-item">
-          <a class="nav-link" title="Post" href="/post/">Post</a>
+          <a class="nav-link" title="Note" href="/note/">Note</a>
         </li>
         
         
@@ -97,7 +106,7 @@ var Paginator = {}
         
         
         <li class="nav-item">
-          <a class="nav-link" title="Note" href="/note/">Note</a>
+          <a class="nav-link" title="Post" href="/post/">Post</a>
         </li>
         
         
@@ -170,7 +179,7 @@ var Paginator = {}
     
 <div class="mx-auto">
   
-  <h1 class="display-4 pb-0">Useful Command Line Tools</h1>
+  <h1 class="title">Useful Command Line Tools</h1>
   
 
   
@@ -219,7 +228,7 @@ var Paginator = {}
      <br>
       <small>
         <span class="badge badge-info">Created on 2015-05-24</span>
-        <span class="badge badge-info">Last Modified 2015-05-24</span>
+        <span class="badge badge-info">Last Modified 2018-02-27</span>
       </small>
     
   </p>
@@ -325,6 +334,8 @@ mkdir -p $USER/{1,2,3}
 <li><code>!*</code> to get the argz of last command</li>
 <li><a href="http://www.zzapper.co.uk/zshtips.html" target="_blank">zsh tip</a></li>
 <li><a href="http://www.cs.elte.hu/zsh-manual/zsh_toc.html" target="_blank">zsh - Table of Contents</a></li>
+<li><a href="http://www.nparikh.org/unix/prompt.php" target="_blank">Customizing your shell prompt</a></li>
+<li><a href="http://www.manpagez.com/man/1/zshmisc/" target="_blank">man page zshmisc section 1</a></li>
 </ul>
 
 <h2 id="tr">tr</h2>

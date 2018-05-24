@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Do on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/do/</link>
+    <description>Recent content in Do on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Sat, 26 Mar 2016 12:31:11 +0000</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/do/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Digital Ocean Notes</title>
+      <link>https://cyrusn.github.io/note/digital-ocean/</link>
+      <pubDate>Sat, 26 Mar 2016 12:31:11 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/digital-ocean/</guid>
+      <description> connect to console # prepare ssh keys first # login droplet ssh root@ip.of.the.droplet # to copy a file from B to A while logged into B scp /path/to/file username@a:/path/to/destination # to copy a file from B to A while logged into A scp username@b:/path/to/file /path/to/destination  perpare ssh key  How To Use SSH Keys with DigitalOcean Droplets | DigitalOcean  achieve  Save a snapshot and delete droplet restore droplet by the snapshot  Update Server&amp;rsquo;s Kernel  How To Update a DigitalOcean Server&amp;rsquo;s Kernel | DigitalOcean  </description>
+    </item>
+    
+  </channel>
+</rss>

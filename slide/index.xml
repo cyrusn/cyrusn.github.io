@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slides on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/slide/</link>
+    <description>Recent content in Slides on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Tue, 13 Feb 2018 10:23:22 +0800</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/slide/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Teaching Plan of Periscope</title>
+      <link>https://cyrusn.github.io/slide/periscope-teaching-plan/</link>
+      <pubDate>Tue, 13 Feb 2018 10:23:22 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/periscope-teaching-plan/</guid>
+      <description>class: middle center text-light bg-info
+Teaching Plan of Periscpe CyrusN Background  55 mins Target: F3 No of students: 26  Objective  鏡像反射定律 加強學生利用平面圖展示立體圖形  例如可用開展讓學生更能了解  了解直角等腰三角形的.text-danger[斜邊與高]的比例 $\sqrt{2}:1$  有助學生了解三角的特別角  增潤知識  A 系紙的長闊比為 $\sqrt{2}:1$   $\sqrt{2}:1$ （白銀比例）的應用  A4 紙的長闊比 白銀比例 - Wikipedia  A4 紙的長闊比  長：297mm 濶：210mm Ratio:  $\displaystyle \frac{297}{210}=1.41 (3 sig. fig.)$   Making of .overflow[ ]</description>
+    </item>
+    
+    <item>
+      <title>Applying Web-based Resources</title>
+      <link>https://cyrusn.github.io/slide/applying_web_based_resources/</link>
+      <pubDate>Fri, 26 Jan 2018 10:55:10 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/applying_web_based_resources/</guid>
+      <description>class: center, middle, bg-info, text-light
+Applying Web-based Resource Cyrus Ngan @ LPSS cyrusn.github.io Agenda  About Me Career and Life Planning Committee Um &amp;hellip; IT Support .badge.badge-warning[vs] Problem solver 命運係掌握係自己手 CaLP Homepage Sharing experiences on using Google services Google Form Examples 在學證明書 (Testimonial) 申報活動 Google Services 模擬升學出路選填 How Google Services help? Google Calendar Other projects TL;DR Free resources Other useful application  About Me  Cyrus Ngan  .badge.badge-info[@LPSS]  Careers Master Math Teacher Exco of HKACMGM  Math Major My best friend is a .</description>
+    </item>
+    
+    <item>
+      <title>Tutorial on Google Script</title>
+      <link>https://cyrusn.github.io/slide/tutorial-on-google-script/</link>
+      <pubDate>Thu, 25 Jan 2018 17:53:47 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/tutorial-on-google-script/</guid>
+      <description>class: center, middle, bg-info, text-light
+Tutorial on Google Script Cyrus Ngan Objectives - Mock Interview Workshop  Create a google form Application for Mock Interview Workshop  User can choose his / her name in a list  User can apply at most .mark[5 courses] for the mock interview  User should enter Course ID in JUPAS User should enter link of the course information  10 pages slide to complete the simple tutorial  class: center middle bg-dark text-light</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Raspberry Pi</title>
+      <link>https://cyrusn.github.io/slide/introduction-to-raspberry-pi/</link>
+      <pubDate>Fri, 03 Nov 2017 11:17:14 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/introduction-to-raspberry-pi/</guid>
+      <description>class: center middle bg-dark text-light
+Introduction to Raspberry-Pi  Agenda  Raspberry Pi What is Raspberry-Pi Raspberry-Pi vs Audrino vs Microbit What is GPIO? Setup Introduction to 16 common sensors e.g. Blinking LED e.g. Blinking LED cont... Similar code in Scratch2? Programming Learning Top 10 Raspberry Pi Projects for Beginners Reference Thanks   class: center
+Raspberry Pi    RASPBERRY PI 3 MODEL B RASPBERRY PI ZERO W         More Powerful Much Lighter     What is Raspberry-Pi .</description>
+    </item>
+    
+    <item>
+      <title>提升生產力及專注力</title>
+      <link>https://cyrusn.github.io/slide/pomodoro/</link>
+      <pubDate>Tue, 16 May 2017 00:17:50 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/pomodoro/</guid>
+      <description>class: center middle bg-info text-light
+提升生產力及專注力 GTD &amp;amp; 蕃茄工作法 Reference  The Pomodoro Technique® - proudly developed by Francesco Cirillo | Cirillo Company David Allen&amp;rsquo;s Getting Things Done® Methodology  工作時間  平日每天約4小時 假日每天約6小時 合共： 4hr x 5day + 6hr x 2day = 32 hrs 如何保持專注?  規劃  每科應用15分鐘回顧及整理當天所學 功課應盡早完成 每天用盡所有工作時間  流程 .overflow.h-75[ ![workflow] ]
+Why?  何時做 &amp;gt; 何時交 計時能令人集中  e.g. 考試、測驗   .row[ .</description>
+    </item>
+    
+  </channel>
+</rss>

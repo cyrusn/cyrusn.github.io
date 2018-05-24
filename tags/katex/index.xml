@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Katex on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/katex/</link>
+    <description>Recent content in Katex on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Tue, 05 Dec 2017 09:21:44 +0800</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/katex/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Latex</title>
+      <link>https://cyrusn.github.io/note/latex/</link>
+      <pubDate>Tue, 05 Dec 2017 09:21:44 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/latex/</guid>
+      <description> Cheat Sheet  Download  Using displaystyle We can use \displaystyle to make font look better, here is the difference.
+ Add nothing or using \textstyle   The quadratic equation is $\textstyle x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}$
+  Using \displaystyle   The quadratic equation is $\displaystyle x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}$
+ </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>React on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/react/</link>
+    <description>Recent content in React on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Sun, 10 May 2015 01:26:51 +0000</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/react/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>React Notes</title>
+      <link>https://cyrusn.github.io/note/react/</link>
+      <pubDate>Sun, 10 May 2015 01:26:51 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/react/</guid>
+      <description>API notes and example  Top-Level API Component API Component Specs and ifecycle Tags and Attributes Event System  Ref Links Concept  React | A JavaScript library for building user interfaces Reactive MVC and the Virtual DOM &amp;ndash; Futurice ReactJS For Stupid People Component Interop With React And Custom Elements Josh Haberman: React Demystified Intro to the React Framework | Nettuts+ Integrating React and Flux with Angular  Tutorial  Learning React.</description>
+    </item>
+    
+  </channel>
+</rss>

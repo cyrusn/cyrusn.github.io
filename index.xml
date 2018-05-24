@@ -29,7 +29,7 @@ Teaching Plan of Periscpe CyrusN Background  55 mins Target: F3 No of students: 
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/applying_web_based_resources/</guid>
       <description>class: center, middle, bg-info, text-light
-Applying Web-based Resource Cyrus Ngan @ LPSS [cyrusn.github.io][] Agenda  About Me Career and Life Planning Committee Um &amp;hellip; IT Support .badge.badge-warning[vs] Problem solver 命運係掌握係自己手 CaLP Homepage Sharing experiences on using Google services Google Form Examples 在學證明書 (Testimonial) 申報活動 Google Services 模擬升學出路選填 How Google Services help? Google Calendar Other projects TL;DR Free resources Other useful application  About Me Cyrus Ngan  .badge.badge-info[@LPSS]  Careers Master Math Teacher Exco of HKACMGM  Math Major My best friend is a .</description>
+Applying Web-based Resource Cyrus Ngan @ LPSS cyrusn.github.io Agenda  About Me Career and Life Planning Committee Um &amp;hellip; IT Support .badge.badge-warning[vs] Problem solver 命運係掌握係自己手 CaLP Homepage Sharing experiences on using Google services Google Form Examples 在學證明書 (Testimonial) 申報活動 Google Services 模擬升學出路選填 How Google Services help? Google Calendar Other projects TL;DR Free resources Other useful application  About Me  Cyrus Ngan  .badge.badge-info[@LPSS]  Careers Master Math Teacher Exco of HKACMGM  Math Major My best friend is a .</description>
     </item>
     
     <item>
@@ -125,7 +125,7 @@ References  Jazz harmony - Wikiwand  </description>
       <pubDate>Wed, 08 Nov 2017 19:09:49 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/life_design/</guid>
-      <description>Introduction  定訂是次會面的目標 以下落黎我會好似記者咁去訪問你，有D問題，你隨意去諗答案，唔駛有壓力  Questions Q1. Role Models Objective: Identify adjectives that describe a client’s construction and conception of self.  你細個有咩好深刻好特別又記得既人，你幾欣賞，對你都幾大影響既人。
+      <description>Introduction  定訂是次會面的目標 以下落黎我會好似記者咁去訪問你，有D問題，你隨意去諗答案，唔駛有壓力  Questions Q1. Role Models Objective: Identify adjectives that describe a client’s construction and conception of self.   你細個有咩好深刻好特別又記得既人，你幾欣賞，對你都幾大影響既人。
   Summarise 你既感受 仲大無 D 人你諗起？ 仲有無邊 D 人你想講？ 你點形容呢個人 點樣形容佢對你身上既影響 佢地有咩共通點 佢地呢D生命既特質，同你有無D相似  Q2. Magazines, Television,Websites Objective: Identify the types of environments and activities that interest the client.   不如我地去第二條囉，你有無D咩鐘意既雜誌、網站、電視節目呀，你經常去睇？
   有咩覺得咁吸引？ 我睇到你好享受...，你總結一下你既興趣係咩？  Q3. Favorite Story Objective: Understand the stories or cultural scripts that a client may be using to envision the transition outcome.</description>
     </item>
@@ -167,7 +167,8 @@ Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GP
       <pubDate>Sat, 14 Oct 2017 21:38:03 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/python/</guid>
-      <description> Tools  Format String  Games  The Python Challenge  </description>
+      <description> Tools  Format String  Games  Programming Fundamentals: 15 Puzzle Game - (In Python) The Python Challenge  pyqt  Riverbank | Software | PyQt | What is PyQt?  tkinter  Forget tkinter, which is designed 20 years ago
+  Tkinter object-oriented app example Introduction to GUI programming with tkinter — Object-Oriented Programming in Python 1 documentation  </description>
     </item>
     
     <item>
@@ -176,7 +177,7 @@ Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GP
       <pubDate>Tue, 19 Sep 2017 09:44:09 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/raspberry-pi/</guid>
-      <description>Setting  Setting for OTG mode Add ssh public key Update and install useful command Install oh-my-zsh and my custom theme Config .zshrc  Autostart Pin Examples Links Some Projects Some thoughts Setting brightness of Touch led Sensors Others Sensor HAT ADC (Analog to Digital Convertor)  Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setting for OTG mode  add the following text to /boot/config.</description>
+      <description>Setting  Setup for a new Pi 3 model B Setting for OTG mode Add ssh public key  Recommanded software packages  Installation Configuration of zsh Install oh-my-zsh and my custom theme Config .zshrc  Autostart Pin Examples Links Some Projects Some thoughts Setting brightness of Touch led Sensors Others  Using Raspberry Pi to control servo  Sensor HAT ADC (Analog to Digital Convertor)  Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setup for a new Pi 3 model B First, you have to follow the installation guide written by raspberrypi.</description>
     </item>
     
     <item>
@@ -256,7 +257,7 @@ Tenses    Descibe future event  Will vs Going To Differences - GrammarBank  FANB
       <pubDate>Tue, 20 Jun 2017 19:05:48 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/stem-idea-on-education/</guid>
-      <description>STEM chanllege Coding and Math Reference Statistic Engineering Some Idea from 青年會書院 Ideas Model on STEM Education Resource  STEM chanllege  making stuff  make a plane, it can fly as long as possible. make a bridge, it can weigh as heavy as possible. make a phone, it can talk as far as possible  Solve some puzzle  decode an encrypted message    Coding and Math Reference  Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine UC Davis Center for Integrated Computing and STEM Education Zebra Puzzle - Wikiwand The Micro:bit Foundation is a global non-profit organisation making invention with technology fun for everyone!</description>
+      <description>STEM chanllege Innovative Ideas (Think by Discipline) Coding and Math Reference Statistic Engineering Some Idea from 青年會書院 Ideas Model on STEM Education Resource  STEM chanllege  making stuff  make a plane, it can fly as long as possible. make a bridge, it can weigh as heavy as possible. make a phone, it can talk as far as possible  Solve some puzzle  decode an encrypted message   Innovative Ideas (Think by Discipline)  Health  Elderly Care Smart Home Smoke Detector falling Detector Silent Detector Bionics Eyes  Climate Change Challenge / Envoirnment  typhoon disaster Sewage Handling Extreme Heat / Cold Bio Disel storm surges terrential rains Prevent 4D Jobs (Dull, Dirty, Dangerous)   Coding and Math Reference  Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine UC Davis Center for Integrated Computing and STEM Education Zebra Puzzle - Wikiwand The Micro:bit Foundation is a global non-profit organisation making invention with technology fun for everyone!</description>
     </item>
     
     <item>

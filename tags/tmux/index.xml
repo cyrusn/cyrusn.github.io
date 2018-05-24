@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tmux on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/tmux/</link>
+    <description>Recent content in Tmux on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Fri, 12 May 2017 13:43:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/tmux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>tmux Notes</title>
+      <link>https://cyrusn.github.io/note/tmux/</link>
+      <pubDate>Fri, 12 May 2017 13:43:00 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/tmux/</guid>
+      <description>using tmux # list all session tmux ls # attach to session tmux attach -t sessionName # create new session tmux new -s sessionName # kill session tmux kill-session -t sessionName  navigate in tmux  Ctrl-b then [ then you can use your normal navigation keys to scroll around (eg. Up Arrow or PgDn). Press q to quit scroll mode.
+ just quit terminal for exit the session</description>
+    </item>
+    
+    <item>
+      <title>Config Digital Ocean Droplet as Microservice</title>
+      <link>https://cyrusn.github.io/note/config-digtal-ocean-droplet-as-microservice/</link>
+      <pubDate>Thu, 29 Sep 2016 08:31:57 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/config-digtal-ocean-droplet-as-microservice/</guid>
+      <description>Objective This page is a notes for setting apache server for my digital ocean droplet
+Setting Apache2  in file /etc/hosts
+ change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS  change Port
+ in file /etc/apache2/port.conf add ServerName localhost change the line listen *:80 to listen 127.0.0.1:4000 disable other modules &amp;lt;IfModule ssl_module&amp;gt; and &amp;lt;IfModule mod_gnutls.c&amp;gt; in file /etc/apache2/site-enabled/000-default.conf change the line &amp;lt;VirtualHost *:80&amp;gt; to &amp;lt;VirtualHost localhost:4000&amp;gt;  restart apache2</description>
+    </item>
+    
+  </channel>
+</rss>

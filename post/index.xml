@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/post/</link>
+    <description>Recent content in Posts on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Thu, 27 Apr 2017 23:14:04 +0000</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Download YouTube in batch</title>
+      <link>https://cyrusn.github.io/post/download-youtube-in-batch/</link>
+      <pubDate>Thu, 27 Apr 2017 23:14:04 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/post/download-youtube-in-batch/</guid>
+      <description>Table of Content  youtube-dl Homebrew - The missing package manager for macOS How to navigate in terminal?  Example:  Using the youtube-dl command Conclusion TL;DR  Useful options   youtube-dl Sometime I have to download many YouTube videos or songs, if you are using mac or linux, youtube-dl would be a very handy and useful tool to get the job done. youtube-dl is a command-line interface application which the plain text environment may deter you to give a try, but once you can get used to it, you will find that using command-line application somehow are much easier than GUI (Graphical User Interface) application.</description>
+    </item>
+    
+  </channel>
+</rss>

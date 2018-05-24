@@ -11,13 +11,13 @@
   <title>Life Design Counseling</title>
 
 
-  <meta name="description" content="Introduction  定訂是次會面的目標 以下落黎我會好似記者咁去訪問你，有D問題，你隨意去諗答案，唔駛有壓力  Questions Q1. Role Models Objective: Identify adjectives that describe a client’s construction and conception of self.  你細個有咩好深刻好特別又記得既人，你幾欣賞，對你都幾大影響既人。
+  <meta name="description" content="Introduction  定訂是次會面的目標 以下落黎我會好似記者咁去訪問你，有D問題，你隨意去諗答案，唔駛有壓力  Questions Q1. Role Models Objective: Identify adjectives that describe a client’s construction and conception of self.   你細個有咩好深刻好特別又記得既人，你幾欣賞，對你都幾大影響既人。
   Summarise 你既感受 仲大無 D 人你諗起？ 仲有無邊 D 人你想講？ 你點形容呢個人 點樣形容佢對你身上既影響 佢地有咩共通點 佢地呢D生命既特質，同你有無D相似  Q2. Magazines, Television,Websites Objective: Identify the types of environments and activities that interest the client.   不如我地去第二條囉，你有無D咩鐘意既雜誌、網站、電視節目呀，你經常去睇？
   有咩覺得咁吸引？ 我睇到你好享受...，你總結一下你既興趣係咩？  Q3. Favorite Story Objective: Understand the stories or cultural scripts that a client may be using to envision the transition outcome.">
-  <meta property="og:description" content="Introduction  定訂是次會面的目標 以下落黎我會好似記者咁去訪問你，有D問題，你隨意去諗答案，唔駛有壓力  Questions Q1. Role Models Objective: Identify adjectives that describe a client’s construction and conception of self.  你細個有咩好深刻好特別又記得既人，你幾欣賞，對你都幾大影響既人。
+  <meta property="og:description" content="Introduction  定訂是次會面的目標 以下落黎我會好似記者咁去訪問你，有D問題，你隨意去諗答案，唔駛有壓力  Questions Q1. Role Models Objective: Identify adjectives that describe a client’s construction and conception of self.   你細個有咩好深刻好特別又記得既人，你幾欣賞，對你都幾大影響既人。
   Summarise 你既感受 仲大無 D 人你諗起？ 仲有無邊 D 人你想講？ 你點形容呢個人 點樣形容佢對你身上既影響 佢地有咩共通點 佢地呢D生命既特質，同你有無D相似  Q2. Magazines, Television,Websites Objective: Identify the types of environments and activities that interest the client.   不如我地去第二條囉，你有無D咩鐘意既雜誌、網站、電視節目呀，你經常去睇？
   有咩覺得咁吸引？ 我睇到你好享受...，你總結一下你既興趣係咩？  Q3. Favorite Story Objective: Understand the stories or cultural scripts that a client may be using to envision the transition outcome.">
-  <meta name="twitter:description" content="Introduction  定訂是次會面的目標 以下落黎我會好似記者咁去訪問你，有D問題，你隨意去諗答案，唔駛有壓力  Questions Q1. Role Models Objective: Identify adjectives that describe a client’s construction and conception of self.  你細個有咩好深刻好特別又記得既人，你幾欣 …">
+  <meta name="twitter:description" content="Introduction  定訂是次會面的目標 以下落黎我會好似記者咁去訪問你，有D問題，你隨意去諗答案，唔駛有壓力  Questions Q1. Role Models Objective: Identify adjectives that describe a client’s construction and conception of self.   你細個有咩好深刻好特別又記得既人，你幾 …">
 
 
 <meta name="author" content="CyrusN"/>
@@ -28,6 +28,15 @@
 <script src='/js/jquery-3.2.1.slim.min.js'></script>
 <script src='/js/popper.min.js'></script>
 <script src='/js/bootstrap.min.js' ></script>
+
+
+
+<script>
+  FontAwesomeConfig = {
+    searchPseudoElements: true
+  }
+</script>
+<script defer src=' /js/fontawesome-all.min.js '></script>
 
 
 
@@ -45,9 +54,9 @@
 const pageKind = "page"
 const navLinks = ['/']
 
-  navLinks.push("\/post\/")
-
   navLinks.push("\/note\/")
+
+  navLinks.push("\/post\/")
 
   navLinks.push("\/project\/")
 
@@ -93,7 +102,7 @@ var Paginator = {}
         
         
         <li class="nav-item">
-          <a class="nav-link" title="Post" href="/post/">Post</a>
+          <a class="nav-link" title="Note" href="/note/">Note</a>
         </li>
         
         
@@ -101,7 +110,7 @@ var Paginator = {}
         
         
         <li class="nav-item">
-          <a class="nav-link" title="Note" href="/note/">Note</a>
+          <a class="nav-link" title="Post" href="/post/">Post</a>
         </li>
         
         
@@ -174,7 +183,7 @@ var Paginator = {}
     
 <div class="mx-auto">
   
-  <h1 class="display-4 pb-0">Life Design Counseling</h1>
+  <h1 class="title">Life Design Counseling</h1>
   
 
   
@@ -223,7 +232,9 @@ var Paginator = {}
 
 <h2 id="q1-role-models">Q1. Role Models</h2>
 
-<div class="alert alert-warning"><b>Objective:</b> Identify adjectives that describe a client’s construction and conception of self.</div>
+<div class="alert alert-warning">
+  <b>Objective:</b> Identify adjectives that describe a client’s construction and conception of self.
+</div>
 
 <blockquote>
 <p>你細個有咩好深刻好特別又記得既人，你幾欣賞，對你都幾大影響既人。</p>
@@ -327,6 +338,8 @@ var Paginator = {}
 <li>你認唔認同 ...</li>
 <li>好豐富呀多謝你</li>
 <li>對你黎講 ... 有幾重要</li>
+<li>Good to let students prioritise the importances</li>
+<li>1 - 10分，1分係最消極，10分係最積極，你會點評分呢？</li>
 </ul>
 
 <h1 id="reminder">Reminder</h1>
@@ -334,6 +347,12 @@ var Paginator = {}
 <ul>
 <li>Round up and round up</li>
 <li>Rephase client's feeling</li>
+<li>Don't give opinion, let them tell you
+
+<ul>
+<li>e.g. <del>我都覺得係咁</del> 你覺得係點呢？</li>
+</ul></li>
+<li>要注意有沒有related to careers</li>
 </ul>
 
 <h1 id="reference">Reference</h1>

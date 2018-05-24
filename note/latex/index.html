@@ -34,6 +34,15 @@
 
 
 
+<script>
+  FontAwesomeConfig = {
+    searchPseudoElements: true
+  }
+</script>
+<script defer src=' /js/fontawesome-all.min.js '></script>
+
+
+
 <script src=' /js/lunr.min.js '></script>
 
 
@@ -48,9 +57,9 @@
 const pageKind = "page"
 const navLinks = ['/']
 
-  navLinks.push("\/post\/")
-
   navLinks.push("\/note\/")
+
+  navLinks.push("\/post\/")
 
   navLinks.push("\/project\/")
 
@@ -96,7 +105,7 @@ var Paginator = {}
         
         
         <li class="nav-item">
-          <a class="nav-link" title="Post" href="/post/">Post</a>
+          <a class="nav-link" title="Note" href="/note/">Note</a>
         </li>
         
         
@@ -104,7 +113,7 @@ var Paginator = {}
         
         
         <li class="nav-item">
-          <a class="nav-link" title="Note" href="/note/">Note</a>
+          <a class="nav-link" title="Post" href="/post/">Post</a>
         </li>
         
         
@@ -177,7 +186,7 @@ var Paginator = {}
     
 <div class="mx-auto">
   
-  <h1 class="display-4 pb-0">Latex</h1>
+  <h1 class="title">Latex</h1>
   
 
   

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google Script on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/google-script/</link>
+    <description>Recent content in Google Script on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Thu, 25 Jan 2018 17:53:47 +0800</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/google-script/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tutorial on Google Script</title>
+      <link>https://cyrusn.github.io/slide/tutorial-on-google-script/</link>
+      <pubDate>Thu, 25 Jan 2018 17:53:47 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/tutorial-on-google-script/</guid>
+      <description>class: center, middle, bg-info, text-light
+Tutorial on Google Script Cyrus Ngan Objectives - Mock Interview Workshop  Create a google form Application for Mock Interview Workshop  User can choose his / her name in a list  User can apply at most .mark[5 courses] for the mock interview  User should enter Course ID in JUPAS User should enter link of the course information  10 pages slide to complete the simple tutorial  class: center middle bg-dark text-light</description>
+    </item>
+    
+    <item>
+      <title>Google App Script</title>
+      <link>https://cyrusn.github.io/note/google-app-script/</link>
+      <pubDate>Fri, 22 May 2015 11:50:04 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/google-app-script/</guid>
+      <description>Links  Apps Script | Google Developers  Using html request to send form response  open inspecter in google form (view version, not editable one) find the input Tag of the question and copy it&amp;rsquo;s name. The name look like entry.933828429 replace the word view in the link to formResponse  https://docs.google.com/forms/d/e/1FAIpQLSdC2RD1aD4W4duLGDjxsVFDGvJW6IUhhxsBGWiQlV7TU_w5LA/formResponse  add the query to the end of the link look like above  ?entry.933828429=Hello%20World where %20 mean space  if you need another question&amp;rsquo;s response, use &amp;amp; as seperator, like below.</description>
+    </item>
+    
+  </channel>
+</rss>

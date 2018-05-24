@@ -27,6 +27,15 @@
 
 
 
+<script>
+  FontAwesomeConfig = {
+    searchPseudoElements: true
+  }
+</script>
+<script defer src=' /js/fontawesome-all.min.js '></script>
+
+
+
 <script src=' /js/lunr.min.js '></script>
 
 
@@ -41,9 +50,9 @@
 const pageKind = "page"
 const navLinks = ['/']
 
-  navLinks.push("\/post\/")
-
   navLinks.push("\/note\/")
+
+  navLinks.push("\/post\/")
 
   navLinks.push("\/project\/")
 
@@ -91,7 +100,7 @@ var Paginator = {}
         
         
         <li class="nav-item">
-          <a class="nav-link" title="Post" href="/post/">Post</a>
+          <a class="nav-link" title="Note" href="/note/">Note</a>
         </li>
         
         
@@ -99,7 +108,7 @@ var Paginator = {}
         
         
         <li class="nav-item">
-          <a class="nav-link" title="Note" href="/note/">Note</a>
+          <a class="nav-link" title="Post" href="/post/">Post</a>
         </li>
         
         
@@ -172,11 +181,11 @@ var Paginator = {}
     
 <div class="mx-auto">
   
-  <h1 class="display-4 pb-0">Backing Voice</h1>
+  <h1 class="title">Backing Voice</h1>
   
 
   
-  <h2 class="text-muted pt-0">Some notes on backing voice</h2>
+  <h2 class="text-muted font-weight-bold">Some notes on backing voice</h2>
   
 
   
@@ -253,7 +262,7 @@ V:1 name="Vocal"
 V:2 name="Chorus"
 %
 [V:1] "D"dA/2A/2 -Ad "A"cA/2A/2 z2 |"G"Bd/2d/2 -dG "A"F2 E2|
-w: 你 和 誰 - 結 伴 前 來 是 否 比 - 我 精 采 
+w: 你 和 誰 - 結 伴 前 來 是 否 比 - 我 精 采
 [V:2] fd/2d/2 -df ec/2c/2 z2 |z8|
 
         </div>
@@ -273,7 +282,7 @@ V:1 name="Vocal"
 V:2 name="Chorus"
 %
 [V:1] "D"dA/2A/2 -Ad "A"cA/2A/2 z2 |"G"Bd/2d/2 -dG "A"F2 E2|
-w: 你 和 誰 - 結 伴 前 來 是 否 比 - 我 精 采 
+w: 你 和 誰 - 結 伴 前 來 是 否 比 - 我 精 采
 [V:2] fd/2d/2 -df ec/2c/2 z2 |z8|
 </pre>
       </div>
@@ -285,7 +294,7 @@ w: 你 和 誰 - 結 伴 前 來 是 否 比 - 我 精 采
 <script>
    
 
-  ABCJS.renderAbc('abcjs-src-1', '\nT: 黃金時代\nK: D\nM: 4\/4\nL: 1\/8\nV:1 name=\x22Vocal\x22\nV:2 name=\x22Chorus\x22\n%\n[V:1] \x22D\x22dA\/2A\/2 -Ad \x22A\x22cA\/2A\/2 z2 |\x22G\x22Bd\/2d\/2 -dG \x22A\x22F2 E2|\nw: 你 和 誰 - 結 伴 前 來 是 否 比 - 我 精 采 \n[V:2] fd\/2d\/2 -df ec\/2c\/2 z2 |z8|\n', {}, {
+  ABCJS.renderAbc('abcjs-src-1', '\nT: 黃金時代\nK: D\nM: 4\/4\nL: 1\/8\nV:1 name=\x22Vocal\x22\nV:2 name=\x22Chorus\x22\n%\n[V:1] \x22D\x22dA\/2A\/2 -Ad \x22A\x22cA\/2A\/2 z2 |\x22G\x22Bd\/2d\/2 -dG \x22A\x22F2 E2|\nw: 你 和 誰 - 結 伴 前 來 是 否 比 - 我 精 采\n[V:2] fd\/2d\/2 -df ec\/2c\/2 z2 |z8|\n', {}, {
     'responsive': 'resize',
     'add_classes': true
   }, {

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Productivity on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/productivity/</link>
+    <description>Recent content in Productivity on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Mon, 26 Sep 2016 07:46:28 +0000</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to convert images to gif</title>
+      <link>https://cyrusn.github.io/note/how-to-convert-pngs-to-gif/</link>
+      <pubDate>Mon, 26 Sep 2016 07:46:28 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/how-to-convert-pngs-to-gif/</guid>
+      <description> install imagemagick through homebrew $ brew install imagemagick  convert pngs to gif with 2 second per frame $ convert -delay 200 *.png converted.gif  </description>
+    </item>
+    
+    <item>
+      <title>Alfred Notes</title>
+      <link>https://cyrusn.github.io/note/alfred/</link>
+      <pubDate>Fri, 24 Jul 2015 23:02:19 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/alfred/</guid>
+      <description> How to use node on alfred workflow node&amp;lt;&amp;lt;-&amp;quot;code&amp;quot; // your code here // e.g. console.log(&amp;quot;hello world&amp;quot;); code  iTerm2 Integration curl --silent &#39;https://raw.githubusercontent.com/stuartcryan/custom-iterm-applescripts-for-alfred/master/custom_iterm_script_iterm_2.9.applescript&#39; | pbcopy   stuartcryan/custom-iterm-applescripts-for-alfred: Custom iTerm Applescripts for Alfred  </description>
+    </item>
+    
+    <item>
+      <title>Programming Concept</title>
+      <link>https://cyrusn.github.io/note/programming-concept/</link>
+      <pubDate>Fri, 05 Jun 2015 08:53:37 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/programming-concept/</guid>
+      <description>Links leesei&amp;rsquo;s choice  Naming What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?  Programming Principal reference  Links  How to make your code self-documenting? | CodeUtopia Separation of concerns - Wikipedia Garbage in, garbage out - Wikiwand  leesei&amp;rsquo;s choice Naming  寫出黎就要俾名，俾名啲concept 就清楚，code 亦自然清楚
+ What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?</description>
+    </item>
+    
+  </channel>
+</rss>

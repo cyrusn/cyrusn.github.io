@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/security/</link>
+    <description>Recent content in Security on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Wed, 05 Oct 2016 00:23:42 +0000</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Web Authentication</title>
+      <link>https://cyrusn.github.io/note/web-authentication/</link>
+      <pubDate>Wed, 05 Oct 2016 00:23:42 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/web-authentication/</guid>
+      <description>Notes  Authentication in Golang with JWTs Cookies vs Tokens: The Definitive Guide The Ins and Outs of Token Based Authentication | Scotch  Enterprise APIs and OAuth: Have it All Secure your users&amp;rsquo; passwords from the browser on  Authentication Protocols  Basic access authentication - Wikiwand Digest access authentication - Wikiwand Secure Remote Password protocol - Wikiwand
+ Anatomy of a zero-knowledge web application - Clipperz, register your creations on the blockchain</description>
+    </item>
+    
+    <item>
+      <title>SSL TLS</title>
+      <link>https://cyrusn.github.io/note/ssl-tls/</link>
+      <pubDate>Sun, 25 Sep 2016 21:27:54 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/ssl-tls/</guid>
+      <description>Transport Layer Security (TLS) and its predecessor, Secure Sockets Layer (SSL), are cryptographic protocols designed to provide communications security over a computer network.
+The authentication relied on Certificate Authorities (CA) and a public key infrastructure using X.509 certificates. The server register with a CA and sign its public key with the key of CA for a fee. The client, after receiving the public key from server, verifies it with the CA.</description>
+    </item>
+    
+  </channel>
+</rss>

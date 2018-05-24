@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>English on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/english/</link>
+    <description>Recent content in English on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Mon, 04 Sep 2017 07:48:04 +0800</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Grammer</title>
+      <link>https://cyrusn.github.io/note/grammer/</link>
+      <pubDate>Mon, 04 Sep 2017 07:48:04 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/grammer/</guid>
+      <description> English Grammer 101
+Tenses    Descibe future event  Will vs Going To Differences - GrammarBank  FANBOYS  Writing Compound Sentences Using FANBOYS  Participles  What are participles? Participial phrase  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Secondment on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/secondment/</link>
+    <description>Recent content in Secondment on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Tue, 05 Sep 2017 10:58:58 +0800</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/secondment/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Education</title>
+      <link>https://cyrusn.github.io/note/education/</link>
+      <pubDate>Tue, 05 Sep 2017 10:58:58 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/education/</guid>
+      <description>  學校課程持續更新 STEM C&amp;amp;A  學校課程持續更新  學校課程持續更新  STEM  科學教育課程指引 (小一至中六) 數學教育課程指引 (小一至中六) 《推動STEM教育 — 發揮創意潛能》報告 科技教育課程指引 (小一至中六)  C&amp;amp;A  課程文件  </description>
+    </item>
+    
+  </channel>
+</rss>

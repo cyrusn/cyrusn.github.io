@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Normalization on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/normalization/</link>
+    <description>Recent content in Normalization on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Sun, 09 Jul 2017 20:56:56 +0800</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/normalization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>sql</title>
+      <link>https://cyrusn.github.io/note/sql/</link>
+      <pubDate>Sun, 09 Jul 2017 20:56:56 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/sql/</guid>
+      <description>Some of The Most Important SQL Commands  SELECT - extracts data from a database UPDATE - updates data in a database DELETE - deletes data from a database INSERT INTO - inserts new data into a database CREATE DATABASE - creates a new database ALTER DATABASE - modifies a database CREATE TABLE - creates a new table ALTER TABLE - modifies a table DROP TABLE - deletes a table CREATE INDEX - creates an index (search key) DROP INDEX - deletes an index  SQL PRIMARY KEY Constraint The PRIMARY KEY constraint uniquely identifies each record in a database table.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/tutorial/</link>
+    <description>Recent content in Tutorial on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Thu, 25 Jan 2018 17:53:47 +0800</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tutorial on Google Script</title>
+      <link>https://cyrusn.github.io/slide/tutorial-on-google-script/</link>
+      <pubDate>Thu, 25 Jan 2018 17:53:47 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/tutorial-on-google-script/</guid>
+      <description>class: center, middle, bg-info, text-light
+Tutorial on Google Script Cyrus Ngan Objectives - Mock Interview Workshop  Create a google form Application for Mock Interview Workshop  User can choose his / her name in a list  User can apply at most .mark[5 courses] for the mock interview  User should enter Course ID in JUPAS User should enter link of the course information  10 pages slide to complete the simple tutorial  class: center middle bg-dark text-light</description>
+    </item>
+    
+  </channel>
+</rss>

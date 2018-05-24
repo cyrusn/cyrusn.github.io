@@ -36,6 +36,15 @@ vi /etc/init.d/myscript  (Obviously it doesn&rsquo;t have to be called &ldquo;my
 
 
 
+<script>
+  FontAwesomeConfig = {
+    searchPseudoElements: true
+  }
+</script>
+<script defer src=' /js/fontawesome-all.min.js '></script>
+
+
+
 <script src=' /js/lunr.min.js '></script>
 
 
@@ -50,9 +59,9 @@ vi /etc/init.d/myscript  (Obviously it doesn&rsquo;t have to be called &ldquo;my
 const pageKind = "page"
 const navLinks = ['/']
 
-  navLinks.push("\/post\/")
-
   navLinks.push("\/note\/")
+
+  navLinks.push("\/post\/")
 
   navLinks.push("\/project\/")
 
@@ -98,7 +107,7 @@ var Paginator = {}
         
         
         <li class="nav-item">
-          <a class="nav-link" title="Post" href="/post/">Post</a>
+          <a class="nav-link" title="Note" href="/note/">Note</a>
         </li>
         
         
@@ -106,7 +115,7 @@ var Paginator = {}
         
         
         <li class="nav-item">
-          <a class="nav-link" title="Note" href="/note/">Note</a>
+          <a class="nav-link" title="Post" href="/post/">Post</a>
         </li>
         
         
@@ -179,7 +188,7 @@ var Paginator = {}
     
 <div class="mx-auto">
   
-  <h1 class="display-4 pb-0">Create Startup Script in Linux</h1>
+  <h1 class="title">Create Startup Script in Linux</h1>
   
 
   

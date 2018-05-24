@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/design/</link>
+    <description>Recent content in Design on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Mon, 13 Nov 2017 08:43:26 +0800</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Software Design</title>
+      <link>https://cyrusn.github.io/note/software-design/</link>
+      <pubDate>Mon, 13 Nov 2017 08:43:26 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/software-design/</guid>
+      <description>SDD (Software design document) Template  TOC Introduction  Purpose Scope Overview  System Overview System Architecture  Architecture Design Decomposition Description Design Rationale  Data Design  Data Description Data Dictionary  Component Design Human Interface Design  Overview of User Interface Screen Images Screen Objects and Actions  Requirements Matrix  Cucumber and Gherkin  Writing Features - Gherkin Language — Behat 2.5.3 documentation Reference·Cucumber How To Write Well-Formed User Stories Business Analyst | User Stories and Use Cases - Don’t Use Both!</description>
+    </item>
+    
+  </channel>
+</rss>

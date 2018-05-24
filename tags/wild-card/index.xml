@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wild Card on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/wild-card/</link>
+    <description>Recent content in Wild Card on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Sun, 24 May 2015 22:36:53 +0000</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/wild-card/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Useful Command Line Tools</title>
+      <link>https://cyrusn.github.io/note/useful-command-line-tools/</link>
+      <pubDate>Sun, 24 May 2015 22:36:53 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/useful-command-line-tools/</guid>
+      <description>TOC  Basic  Redirect operators Create multiple files or folders  Useful Commands  zsh tr copydir qlmanage airport pgrep and pkill shutdown textutil xargs Find files and delete them tmux ImageMagick (convert) ffmpeg http-server youtube-dl pt Pandoc http caddy jq top osx metadata   Basic Redirect operators # pipe echo &amp;quot;hello world&amp;quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &amp;quot;hello world&amp;quot; &amp;gt; test.</description>
+    </item>
+    
+  </channel>
+</rss>

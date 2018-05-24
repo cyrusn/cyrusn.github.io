@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gif on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/gif/</link>
+    <description>Recent content in Gif on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Mon, 26 Sep 2016 07:46:28 +0000</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/gif/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to convert images to gif</title>
+      <link>https://cyrusn.github.io/note/how-to-convert-pngs-to-gif/</link>
+      <pubDate>Mon, 26 Sep 2016 07:46:28 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/how-to-convert-pngs-to-gif/</guid>
+      <description> install imagemagick through homebrew $ brew install imagemagick  convert pngs to gif with 2 second per frame $ convert -delay 200 *.png converted.gif  </description>
+    </item>
+    
+  </channel>
+</rss>

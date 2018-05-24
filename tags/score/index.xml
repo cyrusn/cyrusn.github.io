@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Score on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/score/</link>
+    <description>Recent content in Score on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Wed, 29 Nov 2017 11:39:19 +0800</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/score/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ABCJS</title>
+      <link>https://cyrusn.github.io/note/abcjs/</link>
+      <pubDate>Wed, 29 Nov 2017 11:39:19 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/abcjs/</guid>
+      <description>References  paulrosen/abcjs: javascript for rendering abc music notation ABC Music Notation  Example - Lyrics Score   Code     X: 1 T: Misirlou C: N.Roubanis 1934 O: Greece M: 4/4 L: 1/8 K: Gm % |: &#34;D&#34;D3 E ^F2 G2 | A3B ^c2BA | A8- | A8 | w: 1.~Mi-sir-lou mou i gli-kia sou ma-tia w: 2.~Mav-ro ma-ta Mi-sir-lou mou tre-lli | D3E ^F2G2 | A3B ^c2BA | A8- | A8 | w: Flo-ga m&#39;e-hi~i-na-psi mes tin kar-dia w: Ti zo-i m&#39;al-la-zo me-na fi-li      X: 1 T: Misirlou C: N.</description>
+    </item>
+    
+  </channel>
+</rss>

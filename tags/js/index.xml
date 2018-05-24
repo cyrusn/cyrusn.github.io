@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Js on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/js/</link>
+    <description>Recent content in Js on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Mon, 04 Sep 2017 17:09:38 +0800</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>TSF</title>
+      <link>https://cyrusn.github.io/note/tsf/</link>
+      <pubDate>Mon, 04 Sep 2017 17:09:38 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/tsf/</guid>
+      <description>var students = [{ name: &#39;foo&#39;, clazz: &#39;4A&#39; }, { name: &#39;world&#39;, clazz: &#39;4B&#39; }, { name: &#39;bar&#39;, clazz: &#39;4B&#39; }, { name: &#39;hello&#39;, clazz: &#39;4C&#39; }] var clazzes = [&#39;4B&#39;, &#39;4C&#39;] clazzes.forEach(function (clazz) { students.filter(createFilterFunction(clazz)).forEach(logName) }) function createFilterFunction (clazz) { // return filterFunction return function (student) { return student.clazz === clazz } } function logName (student) { console.log(student.name) }  </description>
+    </item>
+    
+  </channel>
+</rss>

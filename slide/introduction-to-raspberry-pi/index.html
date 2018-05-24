@@ -5,7 +5,21 @@
   
   <link rel="stylesheet" href='/css/remark.css'>
   <script src='/js/remark-latest.min.js'></script>
+  
   <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+<script src='/js/jquery-3.2.1.slim.min.js'></script>
+<script src='/js/popper.min.js'></script>
+<script src='/js/bootstrap.min.js' ></script>
+
+
+  <script src='/js/helper.js'></script>
+  
+  <script>
+  FontAwesomeConfig = {
+    searchPseudoElements: true
+  }
+</script>
+<script defer src=' /js/fontawesome-all.min.js '></script>
 
 
 </head>
@@ -101,11 +115,11 @@ class: center
 ]
 
 ---
-class: center
+class: center middle
 # e.g. Blinking LED
 
-.mh-75.mx-auto[
-![blink_led][@08]
+.img-50.mx-auto[
+  ![blink_led][@08]
 ]
 
 ---
@@ -191,30 +205,35 @@ class: center middle
 [@05]: https://pinout.xyz/
 [@06]: https://pinout.xyz/
 [@07]: https://www.jakartanotebook.com/images/products/68/181/22325/1/raspberry-pi-3-and-raspberry-pi-2-model-b-16-kinds-of-sensor-5.jpg
-[@08]: https://www.raspinews.com/wp-content/uploads/2017/06/Blinking-LED-Raspberry-Pi-Wiring-768x597-1.png
+[@08]: https://circuitdigest.com/sites/default/files/circuitdiagram_mic/raspberry-pi-blinking-led-circuit-diagram.jpg
 [@09]: ./scratch_example.png
 [@10]: http://theory.uwinnipeg.ca/programming/node3.html
 [@11]: https://lifehacker.com/top-10-raspberry-pi-projects-for-beginners-1791002723
 
 </div>
 
-<script src='/js/helper.js'></script>
+
 
 <script>
   
   
   
   const option = {}
-  const obj = Object.assign({}, {"highlight-lines":true,"highlight-style":"atom-one-dark","navigation":{"scroll":false},"ratio":"4:3"}, {"ratio":"16:9"})
+  const remarkOption = Object.assign({}, {"highlight-lines":true,"highlight-style":"atom-one-dark","navigation":{"scroll":false},"ratio":"4:3"}, {"ratio":"16:9"})
 
-  for (const key in obj) {
-    option[dashToCamelCase(key)] = obj[key]
+  for (const key in remarkOption) {
+    option[dashToCamelCase(key)] = remarkOption[key]
   }
 
   
   const slideshow = remark.create(option)
   
 </script>
+
+
+
+
+
 
 
 <script>
@@ -224,7 +243,13 @@ class: center middle
       window.location.href = '/'
     }
   }
+
   document.getElementsByTagName('a').map(a => a.setAttribute('target', '_blank'))
+
+  $("a:not(a:has(img))").prepend('<i class="fas fa-link fa-xs"></i><span>&nbsp;</span>');
+
 </script>
+
 </body>
+
 </html>
