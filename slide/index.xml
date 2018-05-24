@@ -7,10 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
     <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
-    <lastBuildDate>Tue, 13 Feb 2018 10:23:22 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 24 May 2018 19:59:24 +0800</lastBuildDate>
     
 	<atom:link href="https://cyrusn.github.io/slide/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My RemarkJS CSS</title>
+      <link>https://cyrusn.github.io/slide/remarkjs/</link>
+      <pubDate>Thu, 24 May 2018 19:59:24 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/remarkjs/</guid>
+      <description>class: center middle bg-primary text-light
+RemarkJS - CSS Guide Hugo Theme | Notebook-Searcher Background  class: center middle bg-primary text-light  Center list .blockquote-info[ &amp;gt; ### Guide &amp;gt; Use .fit-content.mx-auto to create a centered list ]
+.center[
+Example .fit-content.mx-auto[ - apple - orange - pear ] ]
+class: center
+This is normal image But the image is too .text-danger[big] class: center
+img-100 class to set max width to 100% .</description>
+    </item>
     
     <item>
       <title>Teaching Plan of Periscope</title>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <link rel="stylesheet" href='/css/remark.css'>
+  <script src='/js/remark-latest.min.js'></script>
+  
+  <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+<script src='/js/jquery-3.2.1.slim.min.js'></script>
+<script src='/js/popper.min.js'></script>
+<script src='/js/bootstrap.min.js' ></script>
+
+
+  <script src='/js/helper.js'></script>
+  
+  <script>
+  FontAwesomeConfig = {
+    searchPseudoElements: true
+  }
+</script>
+<script defer src=' /js/fontawesome-all.min.js '></script>
+
+
+</head>
+
+<body class="text-dark">
+<div id="source">
+class: center middle bg-primary text-light
+# RemarkJS - CSS Guide
+&lt;hr class=&#34;bg-light&#34;&gt;
+## [Hugo Theme | Notebook-Searcher](https://github.com/cyrusn/notebook-searcher)
+
+---
+# Background
+
+- `class: center middle bg-primary text-light` 
+
+---
+# Center list
+.blockquote-info[
+&gt; ### Guide
+&gt; Use `.fit-content.mx-auto` to create a centered list
+]
+
+.center[
+# Example
+.fit-content.mx-auto[
+- apple
+- orange
+- pear
+]
+]
+
+
+---
+class: center
+# This is normal image
+But the image is too .text-danger[**big**]
+![image][@1]
+
+---
+class: center
+
+# `img-100` class to set max width to 100%
+.img-100[![image][@1]]
+
+---
+class: center
+
+# `img-75` class to set max width to 75%
+.img-75[![image][@1]]
+
+---
+# Also available on ...
+- `img-50`
+- `img-25`
+
+---
+class: center
+
+# `overflow` can make the image overflow
+
+Use together with `.img-100` and `h-75` can produce a nice overflowed image
+
+.img-100.overflow.h-75[
+![image][@1]
+]
+
+---
+# Blockquote
+
+.blockquote-primary[
+&gt; ### blockquote
+&gt; This is primary blockquote&#39;s content.
+]
+
+# Syntax
+``` md
+.blockquote-primary[
+&gt; #### blockquote
+&gt; This is primary blockquote&#39;s content.
+]
+```
+
+Other available color: `primary`, `secondary`, `success`, `info`, `warning`, `danger`, `light`, `dark`
+
+---
+# Two Column
+.row[
+.col-6[
+- This is column 1
+  &#43; apple
+  &#43; orange
+]
+
+.col-6[
+- This is column 2
+  &#43; alpha
+  &#43; beta
+  &#43; see syntax on next page
+]
+]
+---
+# Syntax for two column
+``` md
+.row[
+.col-6[
+- This is column 1
+  &#43; apple
+  &#43; orange
+]
+
+.col-6[
+- This is column 2
+  &#43; alpha
+  &#43; beta
+]
+]
+```
+
+---
+class: row
+
+.col-3.bg-light.sidebar[
+### Sidebar
+- alpha
+- beta
+- gammer
+]
+
+.col-9[
+## Syntax 
+
+```md
+class: row
+
+.col-3.bg-light.sidebar[
+### Sidebar
+- alpha
+- beta
+- gammer
+]
+
+.col-9[
+This is the syntax 
+...
+]
+```
+]
+
+---
+# Footnote
+
+This is example.sup[1] of footnote.sup[2], here is google.com.sup[3]
+.footnote[
+1. Hello! World.
+2. see syntax on next page
+3. https://google.com
+]
+
+## Syntax
+``` md
+This is example.sup[1] of footnote.sup[2], here is google.com.sup[3]
+.footnote[
+1. Hello! World.
+2. see syntax on next page
+3. https://google.com
+]
+```
+ 
+---
+class: center middle bg-info text-light
+
+# .text-danger[♥] Thanks .text-danger[♥]
+
+&lt;!-- reference links --&gt;
+
+[@1]: https://www.globallandscapesforum.org/wp-content/uploads/2017/11/situgunung-flipped-1600.jpg
+
+</div>
+
+
+
+<script>
+  
+  
+  
+  const option = {}
+  const remarkOption = Object.assign({}, {"highlight-lines":true,"highlight-style":"atom-one-dark","navigation":{"scroll":false},"ratio":"4:3"}, {"ratio":"16:9"})
+
+  for (const key in remarkOption) {
+    option[dashToCamelCase(key)] = remarkOption[key]
+  }
+
+  
+  const slideshow = remark.create(option)
+  
+</script>
+
+
+
+
+
+
+
+<script>
+  document.onkeypress = ({which, keyCode} = window.event) => {
+    const charCode = (typeof which === 'number') ? which : keyCode
+    if (charCode === 113) {
+      window.location.href = '/'
+    }
+  }
+
+  document.getElementsByTagName('a').map(a => a.setAttribute('target', '_blank'))
+
+  $("a:not(a:has(img))").prepend('<i class="fas fa-link fa-xs"></i><span>&nbsp;</span>');
+
+</script>
+
+</body>
+
+</html>
