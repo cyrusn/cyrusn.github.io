@@ -64,6 +64,7 @@ const navLinks = ['/']
 
 
 var Paginator = {}
+
 </script>
 
 
@@ -73,7 +74,9 @@ var Paginator = {}
 
 
 </head>
-<body>
+  
+  <body data-spy="scroll" data-target="#TableOfContents">
+  
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -177,17 +180,21 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<div class="mx-auto">
+<div class="mx-auto row">
   
-  <h1 class="title">Caddy Notes</h1>
-  
-
-  
+  <div class="col-9">
   
 
-  
-  <p>
-    <small>
+    
+    <h1 class="display-3 pb-0">Caddy Notes</h1>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
   
   
   
@@ -195,21 +202,18 @@ var Paginator = {}
 
 
 
-    
-    
-     <br>
-      <small>
-        <span class="badge badge-info">Created on 2016-10-09</span>
-        <span class="badge badge-info">Last Modified 2017-05-13</span>
-      </small>
-    
-  </p>
-
-</div>
-<hr>
-<div class="mx-auto">
-  <div id="content">
-    
+      
+      
+       <br>
+        <small>
+          <span class="badge badge-info">Created on 2016-10-09</span>
+          <span class="badge badge-info">Last Modified 2017-05-13</span>
+        </small>
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        
 
 <h1 id="installation">Installation</h1>
 
@@ -225,7 +229,19 @@ curl -fsSL https://getcaddy.com | bash -s search
 <li><label><input type="checkbox" disabled class="task-list-item"> Make Caddy to serve https</label></li>
 </ul>
 
+    </div>
   </div>
+  
+  <aside class="col-3 sticky-top h-100 py-2">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#settng-of-caddyfile-for-microservice">Settng of Caddyfile for microservice</a></li>
+<li><a href="#todo">TODO</a></li>
+</ul>
+</nav>
+  </aside>
+  
 </div>
 
 <hr>

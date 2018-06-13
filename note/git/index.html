@@ -64,6 +64,7 @@ const navLinks = ['/']
 
 
 var Paginator = {}
+
 </script>
 
 
@@ -73,7 +74,9 @@ var Paginator = {}
 
 
 </head>
-<body>
+  
+  <body data-spy="scroll" data-target="#TableOfContents">
+  
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -177,17 +180,21 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<div class="mx-auto">
+<div class="mx-auto row">
   
-  <h1 class="title">Git Notes</h1>
-  
-
-  
+  <div class="col-9">
   
 
-  
-  <p>
-    <small>
+    
+    <h1 class="display-3 pb-0">Git Notes</h1>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
   
   
   
@@ -205,21 +212,18 @@ var Paginator = {}
 
 
 
-    
-    
-     <br>
-      <small>
-        <span class="badge badge-info">Created on 2015-05-10</span>
-        <span class="badge badge-info">Last Modified 2018-02-23</span>
-      </small>
-    
-  </p>
-
-</div>
-<hr>
-<div class="mx-auto">
-  <div id="content">
-    
+      
+      
+       <br>
+        <small>
+          <span class="badge badge-info">Created on 2015-05-10</span>
+          <span class="badge badge-info">Last Modified 2018-02-23</span>
+        </small>
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        
 
 <h1 id="start-a-new-repo">start a new repo</h1>
 
@@ -327,7 +331,29 @@ $ git merge master &lt;branch_name&gt;
 
 <!-- reference links -->
 
+    </div>
   </div>
+  
+  <aside class="col-3 sticky-top h-100 py-2">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#start-a-new-repo">start a new repo</a></li>
+<li><a href="#change-existing-repo">change existing repo</a></li>
+<li><a href="#create-a-new-branch-and-merge">create a new branch and merge</a></li>
+<li><a href="#amendment">amendment</a></li>
+<li><a href="#gitignore">gitignore</a></li>
+<li><a href="#undo-changes">undo changes</a></li>
+<li><a href="#git-merge-and-rebase">git merge and rebase</a>
+<ul>
+<li><a href="#difference-between-merge-and-rebase">difference between <code>merge</code> and <code>rebase</code></a></li>
+</ul></li>
+<li><a href="#git-difftool">git difftool</a></li>
+<li><a href="#add-badges-to-github">add badges to github</a></li>
+<li><a href="#reference">Reference</a></li>
+</ul>
+</nav>
+  </aside>
+  
 </div>
 
 <hr>

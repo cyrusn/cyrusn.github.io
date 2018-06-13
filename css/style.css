@@ -1,13 +1,17 @@
 html {
-  font-size: large;
+  font-size: medium;
 }
 
 body {
   width: 100%;
+  position: relative;
 }
 
-.container {
-  max-width: 50rem;
+
+#TableOfContents .active {
+  border-left: 3px solid;
+  border-radius: 1px;
+  background-color: inherit !important;
 }
 
 h1, h2, h3 {

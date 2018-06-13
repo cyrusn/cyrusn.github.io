@@ -66,6 +66,7 @@ const navLinks = ['/']
 
 
 var Paginator = {}
+
 </script>
 
 
@@ -75,7 +76,9 @@ var Paginator = {}
 
 
 </head>
-<body>
+  
+  <body data-spy="scroll" data-target="#TableOfContents">
+  
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -179,17 +182,21 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<div class="mx-auto">
+<div class="mx-auto row">
   
-  <h1 class="title">Programming Concept</h1>
-  
-
-  
+  <div class="col-9">
   
 
-  
-  <p>
-    <small>
+    
+    <h1 class="display-3 pb-0">Programming Concept</h1>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
   
   
   
@@ -203,34 +210,31 @@ var Paginator = {}
 
 
 
-    
-    
-     <br>
-      <small>
-        <span class="badge badge-info">Created on 2015-06-05</span>
-        <span class="badge badge-info">Last Modified 2018-02-23</span>
-      </small>
-    
-  </p>
-
-</div>
-<hr>
-<div class="mx-auto">
-  <div id="content">
-    
+      
+      
+       <br>
+        <small>
+          <span class="badge badge-info">Created on 2015-06-05</span>
+          <span class="badge badge-info">Last Modified 2018-02-23</span>
+        </small>
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        
 
 <!-- MarkdownTOC -->
 
 <ul>
-<li><a href="#links">Links</a></li>
-<li><a href="#leeseis-choice">leesei&rsquo;s choice</a>
+<li>Links</li>
+<li>leesei&rsquo;s choice
 
 <ul>
-<li><a href="#naming">Naming</a></li>
-<li><a href="#what-can-i-learn-right-now-in-just-10-minutes-that-could-be-useful-for-the-rest-of-my-programming-career">What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?</a></li>
+<li>Naming</li>
+<li>What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?</li>
 </ul></li>
 <li><a href="#pp">Programming Principal</a></li>
-<li><a href="#reference">reference</a></li>
+<li>reference</li>
 </ul>
 
 <!-- /MarkdownTOC -->
@@ -315,7 +319,24 @@ var Paginator = {}
 
 <!-- reference links -->
 
+    </div>
   </div>
+  
+  <aside class="col-3 sticky-top h-100 py-2">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#links">Links</a></li>
+<li><a href="#leesei-s-choice">leesei&rsquo;s choice</a>
+<ul>
+<li><a href="#naming">Naming</a></li>
+<li><a href="#what-can-i-learn-right-now-in-just-10-minutes-that-could-be-useful-for-the-rest-of-my-programming-career">What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?</a></li>
+</ul></li>
+<li><a href="#pp">Programming Principal</a></li>
+<li><a href="#reference">reference</a></li>
+</ul>
+</nav>
+  </aside>
+  
 </div>
 
 <hr>

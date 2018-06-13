@@ -18,7 +18,7 @@
       <pubDate>Tue, 19 Sep 2017 09:44:09 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/raspberry-pi/</guid>
-      <description>Setting  Setup for a new Pi 3 model B Setting for OTG mode Add ssh public key  Recommanded software packages  Installation Configuration of zsh Install oh-my-zsh and my custom theme Config .zshrc  Autostart Pin Examples Links Some Projects Some thoughts Setting brightness of Touch led Sensors Others  Using Raspberry Pi to control servo  Sensor HAT ADC (Analog to Digital Convertor)  Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setup for a new Pi 3 model B First, you have to follow the installation guide written by raspberrypi.</description>
+      <description>Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setup for a new Pi 3 model B First, you have to follow the installation guide written by raspberrypi.org, here is the link. After installation of Raspbian OS, the pi is basically set, run sudo apt-get upgrade in terminal to keep all availabe packages and OS up to date.</description>
     </item>
     
   </channel>

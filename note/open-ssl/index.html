@@ -68,6 +68,7 @@ const navLinks = ['/']
 
 
 var Paginator = {}
+
 </script>
 
 
@@ -77,7 +78,9 @@ var Paginator = {}
 
 
 </head>
-<body>
+  
+  <body>
+  
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -181,17 +184,21 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<div class="mx-auto">
+<div class="mx-auto row">
   
-  <h1 class="title">Open SSL</h1>
-  
-
-  
+  <div class="mx-md-5 px-md-5">
   
 
-  
-  <p>
-    <small>
+    
+    <h1 class="display-3 pb-0">Open SSL</h1>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
   
   
   
@@ -199,21 +206,18 @@ var Paginator = {}
 
 
 
-    
-    
-     <br>
-      <small>
-        <span class="badge badge-info">Created on 2016-09-25</span>
-        <span class="badge badge-info">Last Modified 2018-02-23</span>
-      </small>
-    
-  </p>
-
-</div>
-<hr>
-<div class="mx-auto">
-  <div id="content">
-    
+      
+      
+       <br>
+        <small>
+          <span class="badge badge-info">Created on 2016-09-25</span>
+          <span class="badge badge-info">Last Modified 2018-02-23</span>
+        </small>
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        
 
 <p><a href="https://www.openssl.org/" target="_blank">OpenSSL</a> is a toolkit for the TLS and SSL. <a href="https://www.sslshopper.com/article-most-common-openssl-commands.html" target="_blank">The Most Common OpenSSL Commands</a> <!-- more --></p>
 
@@ -288,7 +292,9 @@ openssl s_client -connect 10.6.64.170:443 -state -msg
 
 <!-- reference links -->
 
+    </div>
   </div>
+  
 </div>
 
 <hr>

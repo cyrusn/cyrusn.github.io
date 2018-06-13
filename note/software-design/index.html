@@ -64,6 +64,7 @@ const navLinks = ['/']
 
 
 var Paginator = {}
+
 </script>
 
 
@@ -73,7 +74,9 @@ var Paginator = {}
 
 
 </head>
-<body>
+  
+  <body data-spy="scroll" data-target="#TableOfContents">
+  
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -177,27 +180,31 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<div class="mx-auto">
+<div class="mx-auto row">
   
-  <h1 class="title">Software Design</h1>
-  
-
-  
-  <h2 class="text-muted font-weight-bold">Substances over from</h2>
+  <div class="col-9">
   
 
-  
-  
     
-    <blockquote class="mb-0 lead">
-      Ideas on teaching secondary school students to learn software design. How about writing SDD?
-    </blockquote>
+    <h1 class="display-3 pb-0">Software Design</h1>
     
-  
 
-  
-  <p>
-    <small>
+    
+    <h2 class="text-muted font-weight-bold">Substances over from</h2>
+    
+
+    
+    
+      
+      <blockquote class="mb-0 lead">
+        Ideas on teaching secondary school students to learn software design. How about writing SDD?
+      </blockquote>
+      
+    
+
+    
+    <p>
+      <small>
   
   
   
@@ -211,21 +218,18 @@ var Paginator = {}
 
 
 
-    
-    
-     <br>
-      <small>
-        <span class="badge badge-info">Created on 2017-11-13</span>
-        <span class="badge badge-info">Last Modified 2018-02-23</span>
-      </small>
-    
-  </p>
-
-</div>
-<hr>
-<div class="mx-auto">
-  <div id="content">
-    
+      
+      
+       <br>
+        <small>
+          <span class="badge badge-info">Created on 2017-11-13</span>
+          <span class="badge badge-info">Last Modified 2018-02-23</span>
+        </small>
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        
 
 <h1 id="sdd-software-design-document-template">SDD (Software design document) Template</h1>
 
@@ -301,7 +305,25 @@ var Paginator = {}
 
 <!-- reference links -->
 
+    </div>
   </div>
+  
+  <aside class="col-3 sticky-top h-100 py-2">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#sdd-software-design-document-template">SDD (Software design document) Template</a></li>
+<li><a href="#cucumber-and-gherkin">Cucumber and Gherkin</a>
+<ul>
+<li><a href="#references">References</a></li>
+</ul></li>
+<li><a href="#sdd">SDD</a>
+<ul>
+<li><a href="#cucumber-and-gherkin-1">Cucumber and Gherkin</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+  
 </div>
 
 <hr>

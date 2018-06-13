@@ -64,6 +64,7 @@ const navLinks = ['/']
 
 
 var Paginator = {}
+
 </script>
 
 
@@ -73,7 +74,9 @@ var Paginator = {}
 
 
 </head>
-<body>
+  
+  <body data-spy="scroll" data-target="#TableOfContents">
+  
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -177,17 +180,21 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<div class="mx-auto">
+<div class="mx-auto row">
   
-  <h1 class="title">Docker</h1>
-  
-
-  
+  <div class="col-9">
   
 
-  
-  <p>
-    <small>
+    
+    <h1 class="display-3 pb-0">Docker</h1>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
   
   
   
@@ -201,25 +208,28 @@ var Paginator = {}
 
 
 
-    
-    
-     <br>
-      <small>
-        <span class="badge badge-info">Created on 2016-09-30</span>
-        <span class="badge badge-info">Last Modified 2018-02-23</span>
-      </small>
-    
-  </p>
-
-</div>
-<hr>
-<div class="mx-auto">
-  <div id="content">
-    <p><a href="https://www.docker.com/" target="_blank">Docker - Build, Ship, and Run Any App, Anywhere</a></p>
+      
+      
+       <br>
+        <small>
+          <span class="badge badge-info">Created on 2016-09-30</span>
+          <span class="badge badge-info">Last Modified 2018-02-23</span>
+        </small>
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        <p><a href="https://www.docker.com/" target="_blank">Docker - Build, Ship, and Run Any App, Anywhere</a></p>
 
 <!-- reference links -->
 
+    </div>
   </div>
+  
+  <aside class="col-3 sticky-top h-100 py-2">
+      
+  </aside>
+  
 </div>
 
 <hr>

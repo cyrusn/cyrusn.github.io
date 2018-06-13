@@ -64,6 +64,7 @@ const navLinks = ['/']
 
 
 var Paginator = {}
+
 </script>
 
 
@@ -73,7 +74,9 @@ var Paginator = {}
 
 
 </head>
-<body>
+  
+  <body>
+  
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -177,21 +180,25 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<div class="mx-auto">
+<div class="mx-auto row">
   
-  <h1 class="title">TSF</h1>
-  
-
-  
-  <h2 class="text-muted font-weight-bold">Notes to TSF</h2>
+  <div class="mx-md-5 px-md-5">
   
 
-  
-  
+    
+    <h1 class="display-3 pb-0">TSF</h1>
+    
 
-  
-  <p>
-    <small>
+    
+    <h2 class="text-muted font-weight-bold">Notes to TSF</h2>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
   
   
   
@@ -205,21 +212,18 @@ var Paginator = {}
 
 
 
-    
-    
-     <br>
-      <small>
-        <span class="badge badge-info">Created on 2017-09-04</span>
-        <span class="badge badge-info">Last Modified 2018-02-23</span>
-      </small>
-    
-  </p>
-
-</div>
-<hr>
-<div class="mx-auto">
-  <div id="content">
-    <pre><code class="language-js">var students = [{
+      
+      
+       <br>
+        <small>
+          <span class="badge badge-info">Created on 2017-09-04</span>
+          <span class="badge badge-info">Last Modified 2018-02-23</span>
+        </small>
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        <pre><code class="language-js">var students = [{
   name: 'foo',
   clazz: '4A'
 }, {
@@ -253,7 +257,9 @@ function logName (student) {
 
 </code></pre>
 
+    </div>
   </div>
+  
 </div>
 
 <hr>

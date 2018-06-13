@@ -64,6 +64,7 @@ const navLinks = ['/']
 
 
 var Paginator = {}
+
 </script>
 
 
@@ -73,7 +74,9 @@ var Paginator = {}
 
 
 </head>
-<body>
+  
+  <body data-spy="scroll" data-target="#TableOfContents">
+  
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -177,17 +180,21 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<div class="mx-auto">
+<div class="mx-auto row">
   
-  <h1 class="title">Career Theory</h1>
-  
-
-  
+  <div class="col-9">
   
 
-  
-  <p>
-    <small>
+    
+    <h1 class="display-3 pb-0">Career Theory</h1>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
   
   
   
@@ -207,21 +214,18 @@ var Paginator = {}
 
 
 
-    
-    
-     <br>
-      <small>
-        <span class="badge badge-info">Created on 2017-05-15</span>
-        <span class="badge badge-info">Last Modified 2018-02-23</span>
-      </small>
-    
-  </p>
-
-</div>
-<hr>
-<div class="mx-auto">
-  <div id="content">
-    
+      
+      
+       <br>
+        <small>
+          <span class="badge badge-info">Created on 2017-05-15</span>
+          <span class="badge badge-info">Last Modified 2018-02-23</span>
+        </small>
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        
 
 <h1 id="donal-super-theory">Donal Super Theory</h1>
 
@@ -250,7 +254,18 @@ var Paginator = {}
 
 <!-- reference links -->
 
+    </div>
   </div>
+  
+  <aside class="col-3 sticky-top h-100 py-2">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#donal-super-theory">Donal Super Theory</a></li>
+<li><a href="#reference">Reference</a></li>
+</ul>
+</nav>
+  </aside>
+  
 </div>
 
 <hr>

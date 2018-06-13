@@ -64,6 +64,7 @@ const navLinks = ['/']
 
 
 var Paginator = {}
+
 </script>
 
 
@@ -73,7 +74,9 @@ var Paginator = {}
 
 
 </head>
-<body>
+  
+  <body data-spy="scroll" data-target="#TableOfContents">
+  
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -177,17 +180,21 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<div class="mx-auto">
+<div class="mx-auto row">
   
-  <h1 class="title">Useful Command Line Tools</h1>
-  
-
-  
+  <div class="col-9">
   
 
-  
-  <p>
-    <small>
+    
+    <h1 class="display-3 pb-0">Useful Command Line Tools</h1>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
   
   
   
@@ -223,58 +230,55 @@ var Paginator = {}
 
 
 
-    
-    
-     <br>
-      <small>
-        <span class="badge badge-info">Created on 2015-05-24</span>
-        <span class="badge badge-info">Last Modified 2018-05-24</span>
-      </small>
-    
-  </p>
-
-</div>
-<hr>
-<div class="mx-auto">
-  <div id="content">
-    
+      
+      
+       <br>
+        <small>
+          <span class="badge badge-info">Created on 2015-05-24</span>
+          <span class="badge badge-info">Last Modified 2018-05-24</span>
+        </small>
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        
 
 <h1 id="toc">TOC</h1>
 
 <!-- MarkdownTOC -->
 
 <ul>
-<li><a href="#basic">Basic</a>
+<li>Basic
 
 <ul>
-<li><a href="#redirect-operators">Redirect operators</a></li>
-<li><a href="#create-multiple-files-or-folders">Create multiple files or folders</a></li>
+<li>Redirect operators</li>
+<li>Create multiple files or folders</li>
 </ul></li>
-<li><a href="#useful-commands">Useful Commands</a>
+<li>Useful Commands
 
 <ul>
-<li><a href="#zsh">zsh</a></li>
-<li><a href="#tr">tr</a></li>
-<li><a href="#copydir">copydir</a></li>
-<li><a href="#qlmanage">qlmanage</a></li>
-<li><a href="#airport">airport</a></li>
-<li><a href="#pgrep-and-pkill">pgrep and pkill</a></li>
-<li><a href="#shutdown">shutdown</a></li>
-<li><a href="#textutil">textutil</a></li>
-<li><a href="#xargs">xargs</a></li>
-<li><a href="#find-files-and-delete-them">Find files and delete them</a></li>
-<li><a href="#tmux">tmux</a></li>
-<li><a href="#imagemagick-convert">ImageMagick (convert)</a></li>
-<li><a href="#ffmpeg">ffmpeg</a></li>
-<li><a href="#http-server">http-server</a></li>
-<li><a href="#youtube-dl">youtube-dl</a></li>
-<li><a href="#pt">pt</a></li>
-<li><a href="#pandoc">Pandoc</a></li>
-<li><a href="#http">http</a></li>
-<li><a href="#caddy">caddy</a></li>
-<li><a href="#jq">jq</a></li>
-<li><a href="#top">top</a></li>
-<li><a href="#osx-metadata">osx metadata</a></li>
+<li>zsh</li>
+<li>tr</li>
+<li>copydir</li>
+<li>qlmanage</li>
+<li>airport</li>
+<li>pgrep and pkill</li>
+<li>shutdown</li>
+<li>textutil</li>
+<li>xargs</li>
+<li>Find files and delete them</li>
+<li>tmux</li>
+<li>ImageMagick (convert)</li>
+<li>ffmpeg</li>
+<li>http-server</li>
+<li>youtube-dl</li>
+<li>pt</li>
+<li>Pandoc</li>
+<li>http</li>
+<li>caddy</li>
+<li>jq</li>
+<li>top</li>
+<li>osx metadata</li>
 </ul></li>
 </ul>
 
@@ -542,7 +546,50 @@ brew install httpie
 
 <!-- reference links -->
 
+    </div>
   </div>
+  
+  <aside class="col-3 sticky-top h-100 py-2">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#toc">TOC</a></li>
+<li><a href="#basic">Basic</a>
+<ul>
+<li><a href="#redirect-operators">Redirect operators</a></li>
+<li><a href="#create-multiple-files-or-folders">Create multiple files or folders</a></li>
+</ul></li>
+<li><a href="#useful-commands">Useful Commands</a>
+<ul>
+<li><a href="#zsh">zsh</a></li>
+<li><a href="#tr">tr</a></li>
+<li><a href="#copydir">copydir</a></li>
+<li><a href="#qlmanage">qlmanage</a></li>
+<li><a href="#airport">airport</a></li>
+<li><a href="#pgrep-and-pkill">pgrep and pkill</a></li>
+<li><a href="#shutdown">shutdown</a></li>
+<li><a href="#textutil">textutil</a></li>
+<li><a href="#xargs">xargs</a></li>
+<li><a href="#find-files-and-delete-them">Find files and delete them</a></li>
+<li><a href="#tmux">tmux</a></li>
+<li><a href="#imagemagick-convert">ImageMagick (convert)</a></li>
+<li><a href="#ffmpeg">ffmpeg</a></li>
+<li><a href="#http-server">http-server</a></li>
+<li><a href="#youtube-dl">youtube-dl</a></li>
+<li><a href="#pt">pt</a></li>
+<li><a href="#pandoc">Pandoc</a></li>
+<li><a href="#http">http</a></li>
+<li><a href="#caddy">caddy</a>
+<ul>
+<li><a href="#features">features</a></li>
+</ul></li>
+<li><a href="#jq">jq</a></li>
+<li><a href="#top">top</a></li>
+<li><a href="#osx-metadata">osx metadata</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+  
 </div>
 
 <hr>

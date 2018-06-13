@@ -64,6 +64,7 @@ const navLinks = ['/']
 
 
 var Paginator = {}
+
 </script>
 
 
@@ -75,7 +76,9 @@ var Paginator = {}
 
 
 </head>
-<body>
+  
+  <body data-spy="scroll" data-target="#TableOfContents">
+  
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -179,21 +182,25 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<div class="mx-auto">
+<div class="mx-auto row">
   
-  <h1 class="title">Backing Voice</h1>
-  
-
-  
-  <h2 class="text-muted font-weight-bold">Some notes on backing voice</h2>
+  <div class="col-9">
   
 
-  
-  
+    
+    <h1 class="display-3 pb-0">Backing Voice</h1>
+    
 
-  
-  <p>
-    <small>
+    
+    <h2 class="text-muted font-weight-bold">Some notes on backing voice</h2>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
   
   
     <span class="badge badge-warning">abcjs</span>
@@ -211,21 +218,18 @@ var Paginator = {}
 
 
 
-    
-    
-     <br>
-      <small>
-        <span class="badge badge-info">Created on 2017-11-29</span>
-        <span class="badge badge-info">Last Modified 2018-05-24</span>
-      </small>
-    
-  </p>
-
-</div>
-<hr>
-<div class="mx-auto">
-  <div id="content">
-    
+      
+      
+       <br>
+        <small>
+          <span class="badge badge-info">Created on 2017-11-29</span>
+          <span class="badge badge-info">Last Modified 2018-05-24</span>
+        </small>
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        
 
 <h1 id="黃金時代">黃金時代</h1>
 
@@ -302,7 +306,17 @@ w: 你 和 誰 - 結 伴 前 來 是 否 比 - 我 精 采
 </script>
 
 
+    </div>
   </div>
+  
+  <aside class="col-3 sticky-top h-100 py-2">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#黃金時代">黃金時代</a></li>
+</ul>
+</nav>
+  </aside>
+  
 </div>
 
 <hr>

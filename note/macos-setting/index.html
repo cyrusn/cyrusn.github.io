@@ -64,6 +64,7 @@ const navLinks = ['/']
 
 
 var Paginator = {}
+
 </script>
 
 
@@ -73,7 +74,9 @@ var Paginator = {}
 
 
 </head>
-<body>
+  
+  <body data-spy="scroll" data-target="#TableOfContents">
+  
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -177,17 +180,21 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<div class="mx-auto">
+<div class="mx-auto row">
   
-  <h1 class="title">macos Setting Notes</h1>
-  
-
-  
+  <div class="col-9">
   
 
-  
-  <p>
-    <small>
+    
+    <h1 class="display-3 pb-0">macos Setting Notes</h1>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
   
   
   
@@ -203,21 +210,18 @@ var Paginator = {}
 
 
 
-    
-    
-     <br>
-      <small>
-        <span class="badge badge-info">Created on 2015-10-01</span>
-        <span class="badge badge-info">Last Modified 2018-02-23</span>
-      </small>
-    
-  </p>
-
-</div>
-<hr>
-<div class="mx-auto">
-  <div id="content">
-    
+      
+      
+       <br>
+        <small>
+          <span class="badge badge-info">Created on 2015-10-01</span>
+          <span class="badge badge-info">Last Modified 2018-02-23</span>
+        </small>
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        
 
 <h1 id="custom-osx">Custom OSX</h1>
 
@@ -307,7 +311,42 @@ ln -s ~/Dropbox/MacSetting/sublimetext/User  ./
 <li>set terminal color theme</li>
 </ul>
 
+    </div>
   </div>
+  
+  <aside class="col-3 sticky-top h-100 py-2">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#custom-osx">Custom OSX</a></li>
+<li><a href="#terminal">Terminal</a>
+<ul>
+<li><a href="#zsh">zsh</a>
+<ul>
+<li><a href="#for-further-customisation">for further customisation</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#homebrew-package">homebrew package</a>
+<ul>
+<li><a href="#my-automatic-script-for-installation-homebrew-package">my automatic script for installation homebrew package</a></li>
+</ul></li>
+<li><a href="#nodejs-setting">Nodejs Setting</a>
+<ul>
+<li><a href="#set-the-bin-folder-in-home">set the bin folder in <code>${HOME}</code></a></li>
+<li><a href="#find-all-global-packages-for-install">Find all global packages for install</a>
+<ul>
+<li><a href="#npm-list-g">npm list -g</a></li>
+</ul></li>
+<li><a href="#export-path-at-bashrc-or-zshrc-or-equivalent">export path at <code>.bashrc</code> or <code>.zshrc</code> or equivalent</a></li>
+</ul></li>
+<li><a href="#create-symlink">create symlink</a>
+<ul>
+<li><a href="#sublimetext">sublimeText</a></li>
+</ul></li>
+<li><a href="#custom-setting-on-osx">custom setting on osx</a></li>
+</ul>
+</nav>
+  </aside>
+  
 </div>
 
 <hr>

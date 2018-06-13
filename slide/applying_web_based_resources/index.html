@@ -147,7 +147,7 @@ class: middle bg-dark text-light
 ]
 
 .col-5[
-.overflow.h-75.mx-auto.border[
+.overflow.h-75.img-100.mx-auto.border[
 ![testimonail][@08]
 ]]]
 
@@ -387,10 +387,12 @@ class: center middle
     }
   }
 
+
   document.getElementsByTagName('a').map(a => a.setAttribute('target', '_blank'))
 
-  $("a:not(a:has(img))").prepend('<i class="fas fa-link fa-xs"></i><span>&nbsp;</span>');
-
+  $('a:not(a:has(img))').prepend(
+    '<i class="fas fa-link fa-xs"></i><span>&nbsp;</span>'
+  )
 </script>
 
 </body>

@@ -71,6 +71,7 @@ const navLinks = ['/']
 
 
 var Paginator = {}
+
 </script>
 
 
@@ -80,7 +81,9 @@ var Paginator = {}
 
 
 </head>
-<body>
+  
+  <body data-spy="scroll" data-target="#TableOfContents">
+  
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -184,17 +187,21 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<div class="mx-auto">
+<div class="mx-auto row">
   
-  <h1 class="title">Swift Notes</h1>
-  
-
-  
+  <div class="col-9">
   
 
-  
-  <p>
-    <small>
+    
+    <h1 class="display-3 pb-0">Swift Notes</h1>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
   
   
   
@@ -210,21 +217,18 @@ var Paginator = {}
 
 
 
-    
-    
-     <br>
-      <small>
-        <span class="badge badge-info">Created on 2015-05-10</span>
-        <span class="badge badge-info">Last Modified 2018-02-23</span>
-      </small>
-    
-  </p>
-
-</div>
-<hr>
-<div class="mx-auto">
-  <div id="content">
-    
+      
+      
+       <br>
+        <small>
+          <span class="badge badge-info">Created on 2015-05-10</span>
+          <span class="badge badge-info">Last Modified 2018-02-23</span>
+        </small>
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        
 
 <h1 id="start-developing-ios-osx-apps">Start Developing iOS / OSX Apps</h1>
 
@@ -341,7 +345,34 @@ var Paginator = {}
 
 <!-- reference links -->
 
+    </div>
   </div>
+  
+  <aside class="col-3 sticky-top h-100 py-2">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#start-developing-ios-osx-apps">Start Developing iOS / OSX Apps</a></li>
+<li><a href="#icon-for-ios-development">ICON for iOS Development</a></li>
+<li><a href="#basic-keywords">Basic Keywords</a>
+<ul>
+<li><a href="#control-flow-04"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/ControlFlow.html#//apple_ref/doc/uid/TP40014097-CH9-XID_191" target="_blank">Control Flow</a></a></li>
+<li><a href="#computed-properties-05"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Properties.html#//" target="_blank">Computed Properties</a></a></li>
+<li><a href="#subscript-07"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Subscripts.html#//" target="_blank">Subscript</a></a></li>
+<li><a href="#inheritance-08"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Inheritance.html#//apple_ref/doc/uid/TP40014097-CH17-XID_297" target="_blank">Inheritance</a></a></li>
+<li><a href="#initialization-09"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Initialization.html#//" target="_blank">Initialization</a></a></li>
+<li><a href="#deinitialization-10"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Deinitialization.html#//apple_ref/doc/uid/TP40014097-CH19-XID_220" target="_blank">Deinitialization</a></a></li>
+<li><a href="#type-casting-11"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/TypeCasting.html#//apple_ref/doc/uid/TP40014097-CH22-XID_498" target="_blank">Type Casting</a></a></li>
+<li><a href="#extension-12"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Extensions.html#//apple_ref/doc/uid/TP40014097-CH24-XID_229" target="_blank">Extension</a></a></li>
+<li><a href="#protocols-13"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Protocols.html#//apple_ref/doc/uid/TP40014097-CH25-XID_390" target="_blank">Protocols</a></a></li>
+<li><a href="#generic-14"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Generics.html#//apple_ref/doc/uid/TP40014097-CH26-XID_275" target="_blank">Generic</a></a></li>
+<li><a href="#access-control-15"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/AccessControl.html#//apple_ref/doc/uid/TP40014097-CH41-XID_29" target="_blank">Access Control</a></a></li>
+<li><a href="#summary-of-the-grammar-16"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/zzSummaryOfTheGrammar.html#//apple_ref/doc/uid/TP40014097-CH38-XID_1131" target="_blank">Summary of the Grammar</a></a></li>
+<li><a href="#using-swift-with-cocoa-and-objective-c-17"><a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216-CH2-XID_0" target="_blank">Using Swift with Cocoa and Objective-C</a></a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+  
 </div>
 
 <hr>

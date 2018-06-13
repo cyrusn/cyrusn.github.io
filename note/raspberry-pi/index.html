@@ -11,9 +11,9 @@
   <title>Raspberry Pi</title>
 
 
-  <meta name="description" content="Setting  Setup for a new Pi 3 model B Setting for OTG mode Add ssh public key  Recommanded software packages  Installation Configuration of zsh Install oh-my-zsh and my custom theme Config .zshrc  Autostart Pin Examples Links Some Projects Some thoughts Setting brightness of Touch led Sensors Others  Using Raspberry Pi to control servo  Sensor HAT ADC (Analog to Digital Convertor)  Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setup for a new Pi 3 model B First, you have to follow the installation guide written by raspberrypi.">
-  <meta property="og:description" content="Setting  Setup for a new Pi 3 model B Setting for OTG mode Add ssh public key  Recommanded software packages  Installation Configuration of zsh Install oh-my-zsh and my custom theme Config .zshrc  Autostart Pin Examples Links Some Projects Some thoughts Setting brightness of Touch led Sensors Others  Using Raspberry Pi to control servo  Sensor HAT ADC (Analog to Digital Convertor)  Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setup for a new Pi 3 model B First, you have to follow the installation guide written by raspberrypi.">
-  <meta name="twitter:description" content="Setting  Setup for a new Pi 3 model B Setting for OTG mode Add ssh public key  Recommanded software packages  Installation Configuration of zsh Install oh-my-zsh and my custom theme Config .zshrc …">
+  <meta name="description" content="Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setup for a new Pi 3 model B First, you have to follow the installation guide written by raspberrypi.org, here is the link. After installation of Raspbian OS, the pi is basically set, run sudo apt-get upgrade in terminal to keep all availabe packages and OS up to date.">
+  <meta property="og:description" content="Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setup for a new Pi 3 model B First, you have to follow the installation guide written by raspberrypi.org, here is the link. After installation of Raspbian OS, the pi is basically set, run sudo apt-get upgrade in terminal to keep all availabe packages and OS up to date.">
+  <meta name="twitter:description" content="Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation …">
 
 
 <meta name="author" content="CyrusN"/>
@@ -64,6 +64,7 @@ const navLinks = ['/']
 
 
 var Paginator = {}
+
 </script>
 
 
@@ -73,7 +74,9 @@ var Paginator = {}
 
 
 </head>
-<body>
+  
+  <body data-spy="scroll" data-target="#TableOfContents">
+  
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -177,17 +180,21 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<div class="mx-auto">
+<div class="mx-auto row">
   
-  <h1 class="title">Raspberry Pi</h1>
-  
-
-  
+  <div class="col-9">
   
 
-  
-  <p>
-    <small>
+    
+    <h1 class="display-3 pb-0">Raspberry Pi</h1>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
   
   
   
@@ -209,58 +216,18 @@ var Paginator = {}
 
 
 
-    
-    
-     <br>
-      <small>
-        <span class="badge badge-info">Created on 2017-09-19</span>
-        <span class="badge badge-info">Last Modified 2018-05-24</span>
-      </small>
-    
-  </p>
-
-</div>
-<hr>
-<div class="mx-auto">
-  <div id="content">
-    
-
-<!-- MarkdownTOC autolink=true -->
-
-<ul>
-<li><a href="#setting">Setting</a>
-
-<ul>
-<li><a href="#setup-for-a-new-pi-3-model-b">Setup for a new Pi 3 model B</a></li>
-<li><a href="#setting-for-otg-mode">Setting for OTG mode</a></li>
-<li><a href="#add-ssh-public-key">Add ssh public key</a></li>
-</ul></li>
-<li><a href="#recommanded-software-packages">Recommanded software packages</a>
-
-<ul>
-<li><a href="#installation">Installation</a></li>
-<li><a href="#configuration-of-zsh">Configuration of <code>zsh</code></a></li>
-<li><a href="#install-oh-my-zsh-and-my-custom-theme">Install <code>oh-my-zsh</code> and my custom theme</a></li>
-<li><a href="#config-zshrc">Config <code>.zshrc</code></a></li>
-</ul></li>
-<li><a href="#autostart">Autostart</a></li>
-<li><a href="#pin">Pin</a></li>
-<li><a href="#examples">Examples</a></li>
-<li><a href="#links">Links</a></li>
-<li><a href="#some-projects">Some Projects</a></li>
-<li><a href="#some-thoughts">Some thoughts</a></li>
-<li><a href="#setting-brightness-of-touch-led">Setting brightness of Touch led</a></li>
-<li><a href="#sensors">Sensors</a></li>
-<li><a href="#others">Others</a>
-
-<ul>
-<li><a href="#using-raspberry-pi-to-control-servo">Using Raspberry Pi to control servo</a></li>
-</ul></li>
-<li><a href="#sensor-hat">Sensor HAT</a></li>
-<li><a href="#adc-analog-to-digital-convertor">ADC (Analog to Digital Convertor)</a></li>
-</ul>
-
-<!-- /MarkdownTOC -->
+      
+      
+       <br>
+        <small>
+          <span class="badge badge-info">Created on 2017-09-19</span>
+          <span class="badge badge-info">Last Modified 2018-05-24</span>
+        </small>
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        
 
 <h1 id="setting">Setting</h1>
 
@@ -538,9 +505,54 @@ while True:
 <li><a href="https://learn.adafruit.com/raspberry-pi-analog-to-digital-converters/mcp3008" target="_blank">MCP3008 | Raspberry Pi Analog to Digital Converters | Adafruit Learning System</a></li>
 </ul>
 
+<h1 id="reference">Reference</h1>
+
+<ul>
+<li><a href="https://www.slideshare.net/raspberrypi-tw/gpio-gameconsolestarterkit" target="_blank">用Raspberry Pi學GPIO - 自己做遊戲機</a></li>
+</ul>
+
 <!-- reference links -->
 
+    </div>
   </div>
+  
+  <aside class="col-3 sticky-top h-100 py-2">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#setting">Setting</a>
+<ul>
+<li><a href="#setup-for-a-new-pi-3-model-b">Setup for a new Pi 3 model B</a></li>
+<li><a href="#setting-for-otg-mode">Setting for OTG mode</a></li>
+<li><a href="#add-ssh-public-key">Add ssh public key</a></li>
+</ul></li>
+<li><a href="#recommanded-software-packages">Recommanded software packages</a>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#configuration-of-zsh">Configuration of <code>zsh</code></a>
+<ul>
+<li><a href="#install-oh-my-zsh-and-my-custom-theme">Install <code>oh-my-zsh</code> and my custom theme</a></li>
+<li><a href="#config-zshrc">Config <code>.zshrc</code></a></li>
+</ul></li>
+</ul></li>
+<li><a href="#autostart">Autostart</a></li>
+<li><a href="#pin">Pin</a></li>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#links">Links</a></li>
+<li><a href="#some-projects">Some Projects</a></li>
+<li><a href="#some-thoughts">Some thoughts</a></li>
+<li><a href="#setting-brightness-of-touch-led">Setting brightness of Touch led</a></li>
+<li><a href="#sensors">Sensors</a></li>
+<li><a href="#others">Others</a>
+<ul>
+<li><a href="#using-raspberry-pi-to-control-servo">Using Raspberry Pi to control servo</a></li>
+</ul></li>
+<li><a href="#sensor-hat">Sensor HAT</a></li>
+<li><a href="#adc-analog-to-digital-convertor">ADC (Analog to Digital Convertor)</a></li>
+<li><a href="#reference">Reference</a></li>
+</ul>
+</nav>
+  </aside>
+  
 </div>
 
 <hr>

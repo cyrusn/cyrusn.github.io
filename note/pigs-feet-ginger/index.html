@@ -77,6 +77,7 @@ const navLinks = ['/']
 
 
 var Paginator = {}
+
 </script>
 
 
@@ -86,7 +87,9 @@ var Paginator = {}
 
 
 </head>
-<body>
+  
+  <body data-spy="scroll" data-target="#TableOfContents">
+  
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -190,17 +193,21 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<div class="mx-auto">
+<div class="mx-auto row">
   
-  <h1 class="title">豬腳薑烹調方法</h1>
-  
-
-  
+  <div class="col-9">
   
 
-  
-  <p>
-    <small>
+    
+    <h1 class="display-3 pb-0">豬腳薑烹調方法</h1>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
   
   
   
@@ -214,21 +221,18 @@ var Paginator = {}
 
 
 
-    
-    
-     <br>
-      <small>
-        <span class="badge badge-info">Created on 2014-04-26</span>
-        <span class="badge badge-info">Last Modified 2018-02-23</span>
-      </small>
-    
-  </p>
-
-</div>
-<hr>
-<div class="mx-auto">
-  <div id="content">
-    
+      
+      
+       <br>
+        <small>
+          <span class="badge badge-info">Created on 2014-04-26</span>
+          <span class="badge badge-info">Last Modified 2018-02-23</span>
+        </small>
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        
 
 <p><img src="/img/pigs-feet-ginger.jpeg" alt="photo" /></p>
 
@@ -272,7 +276,28 @@ var Paginator = {}
 
 <!-- reference links -->
 
+    </div>
   </div>
+  
+  <aside class="col-3 sticky-top h-100 py-2">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#豬腳薑烹調方法">豬腳薑烹調方法</a>
+<ul>
+<li><a href="#每斤薑最少要一斤甜醋才能浸過面-所以5斤薑一定要5斤甜醋才足夠">每斤薑最少要一斤甜醋才能浸過面，所以5斤薑一定要5斤甜醋才足夠。</a>
+<ul>
+<li><a href="#器材">器材:</a></li>
+<li><a href="#材料">材料：</a></li>
+<li><a href="#準備工作-刮薑-烘乾">準備工作：刮薑，烘乾</a></li>
+<li><a href="#烹調方法">烹調方法：</a></li>
+<li><a href="#烹調要點">烹調要點：</a></li>
+<li><a href="#豬腳薑">豬腳薑：</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+  
 </div>
 
 <hr>

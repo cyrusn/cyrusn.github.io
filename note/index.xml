@@ -40,7 +40,7 @@ In server side, using middelware for http.Handler function if the request are in
       <pubDate>Tue, 05 Dec 2017 08:28:03 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/photography/</guid>
-      <description> TOC  Be a Better Photographer in 45 mins Exposure Triangle Metering Reference  Be a Better Photographer in 45 mins     Exposure Triangle   Metering     Reference  超詳盡攝影教學！101個新手必學的攝影技巧 - 攝影入門 Fotobeginner.com 9 Top Photography Composition Rules You Need To Know A Picture To Show You Clearly The Effects of Aperture, Shutter Speed and ISO On Images  </description>
+      <description> Be a Better Photographer in 45 mins     Exposure Triangle   Metering     Reference  超詳盡攝影教學！101個新手必學的攝影技巧 - 攝影入門 Fotobeginner.com 9 Top Photography Composition Rules You Need To Know A Picture To Show You Clearly The Effects of Aperture, Shutter Speed and ISO On Images  </description>
     </item>
     
     <item>
@@ -97,7 +97,7 @@ References  Jazz harmony - Wikiwand  </description>
       <guid>https://cyrusn.github.io/note/life_design/</guid>
       <description>Introduction  定訂是次會面的目標 以下落黎我會好似記者咁去訪問你，有D問題，你隨意去諗答案，唔駛有壓力  Questions Q1. Role Models Objective: Identify adjectives that describe a client’s construction and conception of self.   你細個有咩好深刻好特別又記得既人，你幾欣賞，對你都幾大影響既人。
   Summarise 你既感受 仲大無 D 人你諗起？ 仲有無邊 D 人你想講？ 你點形容呢個人 點樣形容佢對你身上既影響 佢地有咩共通點 佢地呢D生命既特質，同你有無D相似  Q2. Magazines, Television,Websites Objective: Identify the types of environments and activities that interest the client.   不如我地去第二條囉，你有無D咩鐘意既雜誌、網站、電視節目呀，你經常去睇？
-  有咩覺得咁吸引？ 我睇到你好享受...，你總結一下你既興趣係咩？  Q3. Favorite Story Objective: Understand the stories or cultural scripts that a client may be using to envision the transition outcome.</description>
+  有咩覺得咁吸引？ 我睇到你好享受&amp;hellip;，你總結一下你既興趣係咩？  Q3. Favorite Story Objective: Understand the stories or cultural scripts that a client may be using to envision the transition outcome.</description>
     </item>
     
     <item>
@@ -116,7 +116,7 @@ Reference  資源下載 - 超研教育｜中學數學補習社｜Band 1補習學
       <pubDate>Sat, 14 Oct 2017 21:38:03 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/python/</guid>
-      <description> Tools  Format String  Games  Programming Fundamentals: 15 Puzzle Game - (In Python) The Python Challenge  pyqt  Riverbank | Software | PyQt | What is PyQt?  tkinter  Forget tkinter, which is designed 20 years ago
+      <description> Tools  Format String  Games  Programming Fundamentals: 15 Puzzle Game - (In Python) The Python Challenge  pyqt  Riverbank | Software | PyQt | What is PyQt? PyQt Tutorial Python Programming Tutorials Intro/basic GUI - PyQt with Python GUI Programming tutorial - YouTube Tetris in PyQt5  tkinter (legacy)  Forget tkinter, which is designed 20 years ago
   Tkinter object-oriented app example Introduction to GUI programming with tkinter — Object-Oriented Programming in Python 1 documentation  </description>
     </item>
     
@@ -126,7 +126,7 @@ Reference  資源下載 - 超研教育｜中學數學補習社｜Band 1補習學
       <pubDate>Tue, 19 Sep 2017 09:44:09 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/raspberry-pi/</guid>
-      <description>Setting  Setup for a new Pi 3 model B Setting for OTG mode Add ssh public key  Recommanded software packages  Installation Configuration of zsh Install oh-my-zsh and my custom theme Config .zshrc  Autostart Pin Examples Links Some Projects Some thoughts Setting brightness of Touch led Sensors Others  Using Raspberry Pi to control servo  Sensor HAT ADC (Analog to Digital Convertor)  Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setup for a new Pi 3 model B First, you have to follow the installation guide written by raspberrypi.</description>
+      <description>Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setup for a new Pi 3 model B First, you have to follow the installation guide written by raspberrypi.org, here is the link. After installation of Raspbian OS, the pi is basically set, run sudo apt-get upgrade in terminal to keep all availabe packages and OS up to date.</description>
     </item>
     
     <item>
@@ -136,7 +136,7 @@ Reference  資源下載 - 超研教育｜中學數學補習社｜Band 1補習學
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/yakko-s-world-lyric/</guid>
       <description>United States, Canada, Mexico, Panama Haiti, Jamaica, Peru,
-Republic Dominican, Cuba, Carribean Greenland, El Salvador too.
+Republic Dominican, Cuba, Carribbean Greenland, El Salvador too.
 Puerto Rico, Columbia, Venezuela Honduras, Guyana, and still,
 Guatemala, Bolivia, then Argentina And Ecuador, Chile, Brazil.
 Costa Rica, Belize, Nicaragua, Bermuda Bahamas, Tobago, San Juan,
@@ -467,10 +467,10 @@ UEFI Unified Extensible Firmware Interface - ArchWiki</description>
       <pubDate>Sun, 10 May 2015 01:29:03 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/draw-more-work-less/</guid>
-      <description>Some Links from leesei  Text based tools GUI Tools   Some Links UML | leesei&amp;rsquo;s notebook Draw More, Work Less | [self employed] Draw More, Work Less PlantUML Mermaid
+      <description>Some Links from leesei  Text based tools GaaS (graph as a service) GUI Tools   Some Links UML | leesei&amp;rsquo;s notebook Draw More, Work Less | [self employed] Draw More, Work Less PlantUML Mermaid
 from leesei Unified Modeling Language (UML) Business Process Model and Notation (BPMN) is very similar to activity diagram. YANG Central
 Allen Holub&amp;rsquo;s UML Quick Reference
-Text based tools I used to use the GUI tool Dia. But it was very buggy and no longer updated.</description>
+Text based tools I used to use the GUI tool Dia.</description>
     </item>
     
     <item>

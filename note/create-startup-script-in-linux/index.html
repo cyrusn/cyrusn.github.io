@@ -73,6 +73,7 @@ const navLinks = ['/']
 
 
 var Paginator = {}
+
 </script>
 
 
@@ -82,7 +83,9 @@ var Paginator = {}
 
 
 </head>
-<body>
+  
+  <body data-spy="scroll" data-target="#TableOfContents">
+  
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -186,17 +189,21 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<div class="mx-auto">
+<div class="mx-auto row">
   
-  <h1 class="title">Create Startup Script in Linux</h1>
-  
-
-  
+  <div class="col-9">
   
 
-  
-  <p>
-    <small>
+    
+    <h1 class="display-3 pb-0">Create Startup Script in Linux</h1>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
   
   
   
@@ -212,21 +219,18 @@ var Paginator = {}
 
 
 
-    
-    
-     <br>
-      <small>
-        <span class="badge badge-info">Created on 2016-10-21</span>
-        <span class="badge badge-info">Last Modified 2017-08-23</span>
-      </small>
-    
-  </p>
-
-</div>
-<hr>
-<div class="mx-auto">
-  <div id="content">
-    <p>Create a new script in /etc/init.d/myscript.</p>
+      
+      
+       <br>
+        <small>
+          <span class="badge badge-info">Created on 2016-10-21</span>
+          <span class="badge badge-info">Last Modified 2017-08-23</span>
+        </small>
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        <p>Create a new script in /etc/init.d/myscript.</p>
 
 <pre><code class="language-sh">vi /etc/init.d/myscript
 </code></pre>
@@ -253,7 +257,13 @@ var Paginator = {}
 <pre><code class="language-sh">update-rc.d myscript defaults
 </code></pre>
 
+    </div>
   </div>
+  
+  <aside class="col-3 sticky-top h-100 py-2">
+      
+  </aside>
+  
 </div>
 
 <hr>

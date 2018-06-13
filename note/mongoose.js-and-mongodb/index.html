@@ -69,6 +69,7 @@ const navLinks = ['/']
 
 
 var Paginator = {}
+
 </script>
 
 
@@ -78,7 +79,9 @@ var Paginator = {}
 
 
 </head>
-<body>
+  
+  <body data-spy="scroll" data-target="#TableOfContents">
+  
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -182,17 +185,21 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<div class="mx-auto">
+<div class="mx-auto row">
   
-  <h1 class="title">Mongoose.js and MongoDB</h1>
-  
-
-  
+  <div class="col-9">
   
 
-  
-  <p>
-    <small>
+    
+    <h1 class="display-3 pb-0">Mongoose.js and MongoDB</h1>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
   
   
   
@@ -210,21 +217,18 @@ var Paginator = {}
 
 
 
-    
-    
-     <br>
-      <small>
-        <span class="badge badge-info">Created on 2015-05-10</span>
-        <span class="badge badge-info">Last Modified 2017-05-16</span>
-      </small>
-    
-  </p>
-
-</div>
-<hr>
-<div class="mx-auto">
-  <div id="content">
-    
+      
+      
+       <br>
+        <small>
+          <span class="badge badge-info">Created on 2015-05-10</span>
+          <span class="badge badge-info">Last Modified 2017-05-16</span>
+        </small>
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        
 
 <h1 id="custom-id">Custom <code>_id</code></h1>
 
@@ -278,7 +282,21 @@ var Previleged = 6
 role: { type: Int, min: Teacher, max: Previleged}
 </code></pre>
 
+    </div>
   </div>
+  
+  <aside class="col-3 sticky-top h-100 py-2">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#custom-id">Custom <code>_id</code></a></li>
+<li><a href="#schema-objectid">Schema.ObjectId</a></li>
+<li><a href="#type-string-vs-string"><code>[{type: string}]</code> vs <code>[String]</code></a></li>
+<li><a href="#autoindex-versionkey">autoIndex &amp; versionKey</a></li>
+<li><a href="#use-variable-as-a-number">Use variable as a number</a></li>
+</ul>
+</nav>
+  </aside>
+  
 </div>
 
 <hr>

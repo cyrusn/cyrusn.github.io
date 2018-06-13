@@ -72,6 +72,7 @@ const navLinks = ['/']
 
 
 var Paginator = {}
+
 </script>
 
 
@@ -81,7 +82,9 @@ var Paginator = {}
 
 
 </head>
-<body>
+  
+  <body data-spy="scroll" data-target="#TableOfContents">
+  
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -185,17 +188,21 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<div class="mx-auto">
+<div class="mx-auto row">
   
-  <h1 class="title">Config Digital Ocean Droplet as Microservice</h1>
-  
-
-  
+  <div class="col-9">
   
 
-  
-  <p>
-    <small>
+    
+    <h1 class="display-3 pb-0">Config Digital Ocean Droplet as Microservice</h1>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
   
   
   
@@ -215,21 +222,18 @@ var Paginator = {}
 
 
 
-    
-    
-     <br>
-      <small>
-        <span class="badge badge-info">Created on 2016-09-29</span>
-        <span class="badge badge-info">Last Modified 2018-02-23</span>
-      </small>
-    
-  </p>
-
-</div>
-<hr>
-<div class="mx-auto">
-  <div id="content">
-    
+      
+      
+       <br>
+        <small>
+          <span class="badge badge-info">Created on 2016-09-29</span>
+          <span class="badge badge-info">Last Modified 2018-02-23</span>
+        </small>
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        
 
 <h1 id="objective">Objective</h1>
 
@@ -327,7 +331,26 @@ proxy / localhost:4000 {
 
 <!-- reference links -->
 
+    </div>
   </div>
+  
+  <aside class="col-3 sticky-top h-100 py-2">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#objective">Objective</a></li>
+<li><a href="#setting">Setting</a>
+<ul>
+<li><a href="#apache2">Apache2</a></li>
+<li><a href="#wordpress">Wordpress</a></li>
+<li><a href="#caddy-server">Caddy Server</a></li>
+</ul></li>
+<li><a href="#todo">TODO</a></li>
+<li><a href="#reference">Reference</a></li>
+<li><a href="#key-word">Key Word</a></li>
+</ul>
+</nav>
+  </aside>
+  
 </div>
 
 <hr>

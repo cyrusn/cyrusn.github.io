@@ -64,6 +64,7 @@ const navLinks = ['/']
 
 
 var Paginator = {}
+
 </script>
 
 
@@ -73,7 +74,9 @@ var Paginator = {}
 
 
 </head>
-<body>
+  
+  <body data-spy="scroll" data-target="#TableOfContents">
+  
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -177,17 +180,21 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<div class="mx-auto">
+<div class="mx-auto row">
   
-  <h1 class="title">Dyson Washing</h1>
-  
-
-  
+  <div class="col-9">
   
 
-  
-  <p>
-    <small>
+    
+    <h1 class="display-3 pb-0">Dyson Washing</h1>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
   
   
   
@@ -195,28 +202,31 @@ var Paginator = {}
 
 
 
-    
-    
-     <br>
-      <small>
-        <span class="badge badge-info">Created on 2017-07-09</span>
-        <span class="badge badge-info">Last Modified 2018-02-23</span>
-      </small>
-    
-  </p>
-
-</div>
-<hr>
-<div class="mx-auto">
-  <div id="content">
-    <ul>
+      
+      
+       <br>
+        <small>
+          <span class="badge badge-info">Created on 2017-07-09</span>
+          <span class="badge badge-info">Last Modified 2018-02-23</span>
+        </small>
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        <ul>
 <li><a href="https://www.youtube.com/watch?v=TsuxZVDEryM" target="_blank">How to clean the Dyson V6 / DC59 Cordless Vacuum Cleaner - YouTube</a></li>
 <li><a href="https://www.youtube.com/watch?v=Gxi6w7uMkF4" target="_blank">Dyson V6 Absolute and V6 Mattress - Washing the filters (Official Dyson video) - YouTube</a></li>
 </ul>
 
 <!-- reference links -->
 
+    </div>
   </div>
+  
+  <aside class="col-3 sticky-top h-100 py-2">
+      
+  </aside>
+  
 </div>
 
 <hr>

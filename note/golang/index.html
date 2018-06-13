@@ -66,6 +66,7 @@ const navLinks = ['/']
 
 
 var Paginator = {}
+
 </script>
 
 
@@ -75,7 +76,9 @@ var Paginator = {}
 
 
 </head>
-<body>
+  
+  <body data-spy="scroll" data-target="#TableOfContents">
+  
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -179,17 +182,21 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<div class="mx-auto">
+<div class="mx-auto row">
   
-  <h1 class="title">Golang Notes</h1>
-  
-
-  
+  <div class="col-9">
   
 
-  
-  <p>
-    <small>
+    
+    <h1 class="display-3 pb-0">Golang Notes</h1>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
   
   
   
@@ -205,21 +212,18 @@ var Paginator = {}
 
 
 
-    
-    
-     <br>
-      <small>
-        <span class="badge badge-info">Created on 2015-05-10</span>
-        <span class="badge badge-info">Last Modified 2018-02-23</span>
-      </small>
-    
-  </p>
-
-</div>
-<hr>
-<div class="mx-auto">
-  <div id="content">
-    
+      
+      
+       <br>
+        <small>
+          <span class="badge badge-info">Created on 2015-05-10</span>
+          <span class="badge badge-info">Last Modified 2018-02-23</span>
+        </small>
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        
 
 <h1 id="useful-commands">Useful commands</h1>
 
@@ -303,11 +307,31 @@ var Paginator = {}
 <ul>
 <li><a href="https://scotch.io/bar-talk/build-a-realtime-chat-server-with-go-and-websockets" target="_blank">Build a Realtime Chat Server With Go and WebSockets ― Scotch</a></li>
 <li><a href="https://www.jonathan-petitcolas.com/2015/01/27/playing-with-websockets-in-go.html" target="_blank">Playing with websockets in Go - Jonathan Petitcolas</a></li>
+<li><a href="https://outcrawl.com/realtime-collaborative-drawing-go/" target="_blank">Building a Real-time Collaborative Drawing App in Go - Outcrawl</a></li>
 </ul>
 
 <!-- reference links -->
 
+    </div>
   </div>
+  
+  <aside class="col-3 sticky-top h-100 py-2">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#useful-commands">Useful commands</a></li>
+<li><a href="#feautre">Feautre</a></li>
+<li><a href="#understanding-goroutine">Understanding Goroutine</a></li>
+<li><a href="#mongodb">MongoDB</a></li>
+<li><a href="#router">Router</a></li>
+<li><a href="#database-model-architecture">Database Model Architecture</a></li>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#useful-package">Useful Package</a></li>
+<li><a href="#useful-resources">Useful Resources</a></li>
+<li><a href="#websocket">Websocket</a></li>
+</ul>
+</nav>
+  </aside>
+  
 </div>
 
 <hr>

@@ -64,6 +64,7 @@ const navLinks = ['/']
 
 
 var Paginator = {}
+
 </script>
 
 
@@ -75,7 +76,9 @@ var Paginator = {}
 
 
 </head>
-<body>
+  
+  <body data-spy="scroll" data-target="#TableOfContents">
+  
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -179,21 +182,25 @@ var Paginator = {}
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<div class="mx-auto">
+<div class="mx-auto row">
   
-  <h1 class="title">ABCJS</h1>
-  
-
-  
-  <h2 class="text-muted font-weight-bold">Note for abc music notation</h2>
+  <div class="col-9">
   
 
-  
-  
+    
+    <h1 class="display-3 pb-0">ABCJS</h1>
+    
 
-  
-  <p>
-    <small>
+    
+    <h2 class="text-muted font-weight-bold">Note for abc music notation</h2>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
   
   
     <span class="badge badge-warning">abcjs</span>
@@ -215,21 +222,18 @@ var Paginator = {}
 
 
 
-    
-    
-     <br>
-      <small>
-        <span class="badge badge-info">Created on 2017-11-29</span>
-        <span class="badge badge-info">Last Modified 2018-02-23</span>
-      </small>
-    
-  </p>
-
-</div>
-<hr>
-<div class="mx-auto">
-  <div id="content">
-    
+      
+      
+       <br>
+        <small>
+          <span class="badge badge-info">Created on 2017-11-29</span>
+          <span class="badge badge-info">Last Modified 2018-02-23</span>
+        </small>
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        
 
 <h1 id="references">References</h1>
 
@@ -426,7 +430,19 @@ Q:"Alla breve"
 
 <!-- reference links -->
 
+    </div>
   </div>
+  
+  <aside class="col-3 sticky-top h-100 py-2">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#references">References</a></li>
+<li><a href="#example-lyrics">Example - Lyrics</a></li>
+<li><a href="#example-voices">Example - Voices</a></li>
+</ul>
+</nav>
+  </aside>
+  
 </div>
 
 <hr>
