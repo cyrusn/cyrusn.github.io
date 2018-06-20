@@ -306,6 +306,19 @@ network={
 }
 </code></pre>
 
+<h2 id="change-user-name">Change User name</h2>
+
+<ol>
+<li>set root password <code>sudo passwd root</code></li>
+<li>set boot option to <em>console</em> in <code>sudo raspi-config</code></li>
+<li>login with root user and password you just set in (1)</li>
+<li><code>usermod -l newname pi</code></li>
+<li><code>usermod -m -d /home/newname newname</code> &lt;- rename home folder</li>
+<li>set password for newname <code>sudo passwd newname</code></li>
+<li>set boot option to <em>Desktop (auto login)</em> in <code>sudo raspi-config</code></li>
+<li><code>reboot</code></li>
+</ol>
+
 <h2 id="add-ssh-public-key">Add ssh public key</h2>
 
 <ul>
@@ -516,13 +529,14 @@ while True:
     </div>
   </div>
   
-  <aside class="col-3 sticky-top h-100 py-2">
+  <div class="col-3 sticky-top h-100 py-2 border-left pr-0 pl-0">
       <nav id="TableOfContents">
 <ul>
 <li><a href="#setting">Setting</a>
 <ul>
 <li><a href="#setup-for-a-new-pi-3-model-b">Setup for a new Pi 3 model B</a></li>
 <li><a href="#setting-for-otg-mode">Setting for OTG mode</a></li>
+<li><a href="#change-user-name">Change User name</a></li>
 <li><a href="#add-ssh-public-key">Add ssh public key</a></li>
 </ul></li>
 <li><a href="#recommanded-software-packages">Recommanded software packages</a>
@@ -551,7 +565,7 @@ while True:
 <li><a href="#reference">Reference</a></li>
 </ul>
 </nav>
-  </aside>
+  </div>
   
 </div>
 

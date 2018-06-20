@@ -255,13 +255,13 @@
   "index": 21,
   "kind": "page",
   "type": "note",
-  "uri": "https://cyrusn.github.io/note/grammer/",
-  "filename": "grammer",
+  "uri": "https://cyrusn.github.io/note/grammar/",
+  "filename": "grammar",
   "draft": false,
   "date": "2017-09-04",
-  "lastmod": "2018-02-23",
-  "title": "Grammer",
-  "tags": ["english", "grammer"]
+  "lastmod": "2017-09-04",
+  "title": "Grammar",
+  "tags": ["english", "grammar"]
 },
 {
   "index": 22,
@@ -1147,7 +1147,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-09-04",
-  "lastmod": "2018-02-23",
+  "lastmod": "2017-09-04",
   "title": "English",
   "tags": []
 },
@@ -1263,12 +1263,12 @@
   "index": 105,
   "kind": "taxonomy",
   "type": "tags",
-  "uri": "https://cyrusn.github.io/tags/grammer/",
+  "uri": "https://cyrusn.github.io/tags/grammar/",
   "filename": "",
   "draft": false,
   "date": "2017-09-04",
-  "lastmod": "2018-02-23",
-  "title": "Grammer",
+  "lastmod": "2017-09-04",
+  "title": "Grammar",
   "tags": []
 },
 {

@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <title>Grammar</title>
+
+
+  <meta name="description" content="English grammar 101
+Tenses     Present Tenses in English Simple present tense  The simple present tense is one of several forms of present tense in English. It is used to describe habits, unchanging situations, general truths, and fixed arrangements. The simple present tense is simple to form. Just use the base form of the verb: (I take, you take, we take, they take) The 3rd person singular takes an -s at the end.">
+  <meta property="og:description" content="English grammar 101
+Tenses     Present Tenses in English Simple present tense  The simple present tense is one of several forms of present tense in English. It is used to describe habits, unchanging situations, general truths, and fixed arrangements. The simple present tense is simple to form. Just use the base form of the verb: (I take, you take, we take, they take) The 3rd person singular takes an -s at the end.">
+  <meta name="twitter:description" content="English grammar 101
+Tenses     Present Tenses in English Simple present tense  The simple present tense is one of several forms of present tense in English. It is used to describe habits, unchanging …">
+
+
+<meta name="author" content="CyrusN"/>
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+<script src='/js/jquery-3.2.1.slim.min.js'></script>
+<script src='/js/popper.min.js'></script>
+<script src='/js/bootstrap.min.js' ></script>
+
+
+
+<script>
+  FontAwesomeConfig = {
+    searchPseudoElements: true
+  }
+</script>
+<script defer src=' /js/fontawesome-all.min.js '></script>
+
+
+
+<script src=' /js/lunr.min.js '></script>
+
+
+<link rel="stylesheet" type="text/css" href='/css/style.css'>
+
+
+<script src='/js/main.js'></script>
+<script src='/js/helper.js'></script>
+
+
+<script>
+const pageKind = "page"
+const navLinks = ['/']
+
+  navLinks.push("\/note\/")
+
+  navLinks.push("\/post\/")
+
+  navLinks.push("\/project\/")
+
+  navLinks.push("\/slide\/")
+
+  navLinks.push("\/tags\/")
+
+  navLinks.push("\/page\/about\/")
+
+
+var Paginator = {}
+
+</script>
+
+
+
+
+
+
+
+</head>
+  
+  <body data-spy="scroll" data-target="#TableOfContents">
+  
+  <div class="bg-light d-md-flex justify-content-center">
+  <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand text-center"
+      href='https://cyrusn.github.io'>
+      CyrusN
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Note" href="/note/">Note</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Post" href="/post/">Post</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Project" href="/project/">Project</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Slide" href="/slide/">Slide</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Tags" href="/tags/">Tags</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="About" href="/page/about/">About</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
+  </nav>
+</div>
+
+<div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-info text-light">
+        <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body py-1">
+        <p class="text-secondary">
+          <ul class="list-unstyled">
+              <li><code>Q</code> to go home</li>
+              <li><code>Space</code> to search</li>
+              <li><code>Enter</code> to start navigate in results</li>
+              <li><code>Enter again</code> to go to selected page</li>
+              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
+              <li><code>H / L</code> to navigate the page number</li>
+              <li><code>[ / ]</code> to navigate the navbar</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container mt-2 mx-auto mb-4 text-dark">
+    
+<div class="mx-auto row">
+  
+  <div class="col-9">
+  
+
+    
+    <h1 class="display-3 pb-0">Grammar</h1>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-secondary" href="/tags/english">english</a>
+
+  <a class="badge badge-secondary" href="/tags/grammar">grammar</a>
+
+</small>
+
+
+
+      
+      
+       <br>
+        <small>
+          <span class="badge badge-info">Created on 2017-09-04</span>
+          <span class="badge badge-info">Last Modified 2017-09-04</span>
+        </small>
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        
+
+<p>English grammar 101</p>
+
+<h1 id="tenses">Tenses</h1>
+
+<ul>
+<li><img src="./tenses-table.png" alt="tensesTable" /></li>
+<li><a href="http://www.luizotaviobarros.com/2011/09/timelines-verb-tenses.html" target="_blank"><img src="./timelines.jpg" alt="timeline" /></a></li>
+</ul>
+
+<h2 id="present-tenses-in-english">Present Tenses in English</h2>
+
+<h3 id="simple-present-tense">Simple present tense</h3>
+
+<blockquote>
+<p>The simple present tense is one of several forms of present tense in English. It is used to describe habits, unchanging situations, general truths, and fixed arrangements. The simple present tense is simple to form. Just use the base form of the verb: (I take, you take, we take, they take) The 3rd person singular takes an -s at the end. (he takes, she takes)</p>
+</blockquote>
+
+<ul>
+<li>To express habits, general truths, repeated actions or unchanging situations, emotions and wishes:
+
+<ul>
+<li>I smoke (habit); I work in London (unchanging situation); London is a large city (general truth)</li>
+</ul></li>
+<li>To give instructions or directions:
+
+<ul>
+<li>You walk for two hundred meters, then you turn left.</li>
+</ul></li>
+<li>To express fixed arrangements, present or future:
+
+<ul>
+<li>Your exam starts at 09.00</li>
+</ul></li>
+<li>To express future time, after some conjunctions: after, when, before, as soon as, until:
+
+<ul>
+<li>He&rsquo;ll give it to you when you come next Saturday.</li>
+</ul></li>
+</ul>
+
+<h3 id="present-continuous-tense">Present continuous tense</h3>
+
+<blockquote>
+<p>As with all tenses in English, the speaker&rsquo;s attitude is as important as the time of the action or event. When someone uses the present continuous, they are thinking about something that is unfinished or incomplete</p>
+</blockquote>
+
+<ul>
+<li>to describe an action that is going on at this moment:
+
+<ul>
+<li>You are using the Internet. You are studying English grammar.</li>
+</ul></li>
+<li>to describe an action that is going on during this period of time or a trend:
+
+<ul>
+<li>Are you still working for the same company? More and more people are becoming vegetarian.</li>
+</ul></li>
+<li>to describe an action or event in the future, which has already been planned or prepared:
+
+<ul>
+<li>We&rsquo;re going on holiday tomorrow. I&rsquo;m meeting my boyfriend tonight. Are they visiting you next winter?</li>
+</ul></li>
+<li>to describe a temporary event or situation:
+
+<ul>
+<li>He usually plays the drums, but he&rsquo;s playing bass guitar tonight. The weather forecast was good, but it&rsquo;s raining at the moment.</li>
+</ul></li>
+<li>with &ldquo;always, forever, constantly&rdquo;, to describe and emphasise a continuing series of repeated actions:
+
+<ul>
+<li>Harry and Sally are always arguing! You&rsquo;re constantly complaining about your mother-in-law!</li>
+</ul></li>
+</ul>
+
+<h2 id="past-tenses-in-english">Past Tenses in English</h2>
+
+<h3 id="simple-past-tense">Simple past tense</h3>
+
+<blockquote>
+<p>The simple past tense, sometimes called the preterite, is used to talk about a completed action in a time before now. The simple past is the basic form of past tense in English. The time of the action can be in the recent past or the distant past and action duration is not important.</p>
+</blockquote>
+
+<ul>
+<li>frequency: often, sometimes, always
+
+<ul>
+<li>I sometimes walked home at lunchtime.</li>
+<li>I often brought my lunch to school.</li>
+</ul></li>
+<li>a definite point in time: last week, when I was a child, yesterday, six weeks ago
+
+<ul>
+<li>We saw a good film last week.</li>
+<li>Yesterday, I arrived in Geneva.</li>
+<li>She finished her work atseven o&rsquo;clock</li>
+<li>I went to the theatre last night</li>
+</ul></li>
+<li>an indefinite point in time: the other day, ages ago, a long time ago
+
+<ul>
+<li>People lived in caves a long time ago.</li>
+<li>She played the piano when she was a child.</li>
+</ul></li>
+</ul>
+
+<h3 id="past-continuous-tense">Past continuous tense</h3>
+
+<blockquote>
+<p>The past continuous describes actions or events in a time before now, which began in the past and is still going on at the time of speaking. In other words, it expresses an unfinished or incomplete action in the past.</p>
+</blockquote>
+
+<ul>
+<li>Often, to describe the background in a story written in the past tense
+
+<ul>
+<li>&ldquo;The sun was shining and the birds were singing as the elephant came out of the jungle.</li>
+<li>The other animals were relaxing in the shade of the trees, but the elephant moved very quickly.</li>
+<li>She was looking for her baby, and she didn&rsquo;t notice the hunter who was watching her through his binoculars.</li>
+<li>When the shot rang out, she was running towards the river&hellip;&rdquo;</li>
+</ul></li>
+<li>to describe an unfinished action that was interrupted by another event or action
+
+<ul>
+<li>&ldquo;I was having a beautiful dream when the alarm clock rang.&rdquo;</li>
+</ul></li>
+<li>to express a change of mind
+
+<ul>
+<li>&ldquo;I was going to spend the day at the beach but I&rsquo;ve decided to get my homework done instead.&rdquo;
+with &lsquo;wonder&rsquo;, to make a very polite request</li>
+<li>&ldquo;I was wondering if you could baby-sit for me tonight.&rdquo;</li>
+</ul></li>
+</ul>
+
+<h2 id="perfect-tenses-in-english">Perfect Tenses in English</h2>
+
+<h3 id="present-perfect-tense">Present perfect tense</h3>
+
+<blockquote>
+<p>The present perfect is used to indicate a link between the present and the past. The time of the action is before now but not specified, and we are often more interested in the result than in the action itself.</p>
+</blockquote>
+
+<ul>
+<li>An action or situation that started in the past and continues in the present.
+
+<ul>
+<li>I have lived in Bristol since 1984 (= and I still do.)</li>
+</ul></li>
+<li>An action performed during a period that has not yet finished.
+
+<ul>
+<li>She has been to the cinema twice this week (= and the week isn&rsquo;t over yet.)</li>
+</ul></li>
+<li>A repeated action in an unspecified period between the past and now.
+
+<ul>
+<li>We have visited Portugal several times.</li>
+</ul></li>
+<li>An action that was completed in the very recent past, expressed by &lsquo;just&rsquo;.
+
+<ul>
+<li>I have just finished my work.</li>
+</ul></li>
+<li>An action when the time is not important.
+
+<ul>
+<li>He has read &lsquo;War and Peace&rsquo;. (= the result of his reading is important)</li>
+</ul></li>
+</ul>
+
+<h3 id="present-perfect-continuous">Present perfect continuous</h3>
+
+<blockquote>
+<p>The present perfect continuous is used to refer to an unspecified time between &lsquo;before now&rsquo; and &lsquo;now&rsquo;. The speaker is thinking about something that started but perhaps did not finish in that period of time. He/she is interested in the process as well as the result, and this process may still be going on, or may have just finished.</p>
+</blockquote>
+
+<ul>
+<li><p>ACTIONS THAT STARTED IN THE PAST AND CONTINUE IN THE PRESENT</p>
+
+<ul>
+<li>She has been waiting for you all day (= and she&rsquo;s still waiting now).</li>
+<li>I&rsquo;ve been working on this report since eight o&rsquo;clock this morning (= and I still haven&rsquo;t finished it).</li>
+<li>They have been travelling since last October (= and they&rsquo;re not home yet).</li>
+</ul></li>
+
+<li><p>ACTIONS THAT HAVE JUST FINISHED, BUT WE ARE INTERESTED IN THE RESULTS</p>
+
+<ul>
+<li>She has been cooking since last night (= and the food on the table looks delicious).</li>
+<li>It&rsquo;s been raining (= and the streets are still wet).</li>
+<li>Someone&rsquo;s been eating my chips (= half of them have gone).</li>
+</ul></li>
+</ul>
+
+<h3 id="past-perfect">Past perfect</h3>
+
+<blockquote>
+<p>The past perfect refers to a time earlier than before now. It is used to make it clear that one event happened before another in the past. It does not matter which event is mentioned first - the tense makes it clear which one happened first.</p>
+</blockquote>
+
+<p>In these examples, Event A is the event that happened first and Event B is the second or more recent event:</p>
+
+<table>
+<thead>
+<tr>
+<th>Event A</th>
+<th>Event B</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>John had gone out</td>
+<td>when I arrived in the office.</td>
+</tr>
+
+<tr>
+<td>I had saved my document</td>
+<td>before the computer crashed.</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th>Event B</th>
+<th>Event A</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>When they arrived</td>
+<td>we had already started cooking.</td>
+</tr>
+
+<tr>
+<td>He was very tired</td>
+<td>because he hadn&rsquo;t slept well.</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+<p><strong>Just</strong> is used with the past perfect to refer to an event that was only a short time earlier than before now, e.g.</p>
+</blockquote>
+
+<ul>
+<li>The train had just left when I arrived at the station.</li>
+<li>She had just left the room   when the police arrived.</li>
+<li>I had just put the washing out when it started to rain.</li>
+</ul>
+
+<h3 id="past-perfect-continuous">Past perfect continuous</h3>
+
+<blockquote>
+<p>The past perfect continuous corresponds to the present perfect continuous, but with reference to a time earlier than &lsquo;before now&rsquo;. As with the present perfect continuous, we are more interested in the process.</p>
+</blockquote>
+
+<ul>
+<li>Had you been waiting long before the taxi arrived?</li>
+<li>We had been trying to open the door for five minutes when Jane found her key.</li>
+<li>It had been raining hard for several hours and the streets were very wet.</li>
+<li>Her friends had been thinking of calling the police when she walked in.</li>
+</ul>
+
+<blockquote>
+<p>This form is also used in reported speech. It is the equivalent of the past continuous and the present perfect continuous in direct speech:</p>
+</blockquote>
+
+<ul>
+<li>Jane said, &ldquo;I have been gardening all afternoon.&rdquo; = Jane said she had been gardening all afternoon.</li>
+<li>When the police questioned him, John said, &ldquo;I was working late in the office that night.&rdquo; = When - the police questioned him, John told them he had been working late in the office that night.</li>
+</ul>
+
+<h3 id="future-perfect">Future perfect</h3>
+
+<blockquote>
+<p>The future perfect tense refers to a completed action in the future. When we use this tense we are projecting ourselves forward into the future and looking back at an action that will be completed some time later than now. It is most often used with a time expression.</p>
+</blockquote>
+
+<ul>
+<li>I will have been here for six months on June 23rd.</li>
+<li>By the time you read this I will have left.</li>
+<li>You will have finished your report by this time next week.</li>
+<li>Won&rsquo;t they have arrived by 5:00?</li>
+<li>Will you have eaten when I pick you up?</li>
+</ul>
+
+<h3 id="future-perfect-continuous">Future perfect continuous</h3>
+
+<blockquote>
+<p>Like the future perfect simple, this form is used to project ourselves forward in time and to look back. It refers to events or actions that are currently unfinished but will be finished at some future time. It is most often used with a time expression.</p>
+</blockquote>
+
+<ul>
+<li>I will have been waiting here for three hours by six o&rsquo;clock.</li>
+<li>By 2001 I will have been living in London for sixteen years.</li>
+<li>When I finish this course, I will have been learning English for twenty years.</li>
+<li>Next year I will have been working here for four years.</li>
+<li>When I come at 6:00, will you have been practicing long?</li>
+</ul>
+
+<h2 id="future-tenses-in-english">Future Tenses in English</h2>
+
+<h3 id="simple-future-tense">Simple future tense</h3>
+
+<blockquote>
+<p>The simple future refers to a time later than now, and expresses facts or certainty. In this case there is no &lsquo;attitude&rsquo;.</p>
+</blockquote>
+
+<ul>
+<li>To predict a future event:
+
+<ul>
+<li>It will rain tomorrow.</li>
+</ul></li>
+<li>With I or We, to express a spontaneous decision:
+
+<ul>
+<li>I&rsquo;ll pay for the tickets by credit card.</li>
+</ul></li>
+<li>To express willingness:
+
+<ul>
+<li>I&rsquo;ll do the washing-up.</li>
+<li>He&rsquo;ll carry your bag for you.</li>
+</ul></li>
+<li>In the negative form, to express unwillingness:
+
+<ul>
+<li>The baby won&rsquo;t eat his soup.</li>
+<li>I won&rsquo;t leave until I&rsquo;ve seen the manager!</li>
+</ul></li>
+<li>With I in the interrogative form using &ldquo;shall&rdquo;, to make an offer:
+
+<ul>
+<li>Shall I open the window?</li>
+</ul></li>
+<li>With we in the interrogative form using &ldquo;shall&rdquo;, to make a suggestion:
+
+<ul>
+<li>Shall we go to the cinema tonight?</li>
+</ul></li>
+<li>With I in the interrogative form using &ldquo;shall&rdquo;, to ask for advice or instructions:
+
+<ul>
+<li>What shall I tell the boss about this money?</li>
+</ul></li>
+<li>With you, to give orders:
+
+<ul>
+<li>You will do exactly as I say.</li>
+</ul></li>
+<li>With you in the interrogative form, to give an invitation:
+
+<ul>
+<li>Will you come to the dance with me?</li>
+<li>Will you marry me?</li>
+</ul></li>
+</ul>
+
+<h3 id="future-continuous-tense">Future continuous tense</h3>
+
+<blockquote>
+<p>The future continuous refers to an unfinished action or event that will be in progress at a time later than now. The future continuous is used for quite a few different purposes.</p>
+</blockquote>
+
+<ul>
+<li>The future continuous can be used to project ourselves into the future.
+
+<ul>
+<li>This time next week I will be sun-bathing in Bali.</li>
+<li>By Christmas I will be skiing like a pro.</li>
+<li>Just think, next Monday you will be working in your new job.</li>
+</ul></li>
+<li>The future continuous can be used for predicting or guessing about future events.
+
+<ul>
+<li>He&rsquo;ll be coming to the meeting, I expect.</li>
+<li>I guess you&rsquo;ll be feeling thirsty after working in the sun.</li>
+<li>You&rsquo;ll be missing the sunshine once you&rsquo;re back in England.</li>
+<li>In the interrogative form, the future continuous can be used to ask politely for information about the future.</li>
+</ul></li>
+<li>Will you be bringing your friend to the pub tonight?
+
+<ul>
+<li>Will Jim be coming with us?</li>
+<li>Will she be going to the party tonight?</li>
+<li>Will I be sleeping in this room?</li>
+</ul></li>
+<li>The future continuous can be used to refer to continuous events that we expect to happen in the future.
+
+<ul>
+<li>I&rsquo;ll be seeing Jim at the conference next week.</li>
+<li>When he is in Australia he will be staying with friends.</li>
+<li>I&rsquo;ll be eating with Jane this evening so I can tell her.</li>
+</ul></li>
+<li>When combined with still, the future continuous refers to events that are already happening now and that we expect to continue some time into the future.
+
+<ul>
+<li>In an hour I&rsquo;ll still be ironing my clothes.</li>
+<li>Tomorrow he&rsquo;ll still be suffering from his cold.</li>
+<li>Next year will she still be wearing a size six?</li>
+<li>Won&rsquo;t stock prices still be falling in the morning?</li>
+<li>Unfortunately, sea levels will still be rising in 20 years.</li>
+</ul></li>
+</ul>
+
+<h1 id="descibe-future-event">Descibe future event</h1>
+
+<ul>
+<li><a href="http://www.grammarbank.com/will-vs-going-to.html" target="_blank">Will vs Going To Differences - GrammarBank</a></li>
+</ul>
+
+<h1 id="fanboys">FANBOYS</h1>
+
+<ul>
+<li><a href="http://www.csus.edu/owl/index/sent/fanboys.htm" target="_blank">Writing Compound Sentences Using FANBOYS</a></li>
+</ul>
+
+<h1 id="participles">Participles</h1>
+
+<ul>
+<li><a href="https://www.englishgrammar.org/participles/" target="_blank">What are participles?</a></li>
+<li><a href="http://www.paperrater.com/page/participial-phrase" target="_blank">Participial phrase</a></li>
+</ul>
+
+<h1 id="reference">Reference</h1>
+
+<!-- reference links -->
+
+    </div>
+  </div>
+  
+  <div class="col-3 sticky-top h-100 py-2 border-left pr-0 pl-0">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#tenses">Tenses</a>
+<ul>
+<li><a href="#present-tenses-in-english">Present Tenses in English</a>
+<ul>
+<li><a href="#simple-present-tense">Simple present tense</a></li>
+<li><a href="#present-continuous-tense">Present continuous tense</a></li>
+</ul></li>
+<li><a href="#past-tenses-in-english">Past Tenses in English</a>
+<ul>
+<li><a href="#simple-past-tense">Simple past tense</a></li>
+<li><a href="#past-continuous-tense">Past continuous tense</a></li>
+</ul></li>
+<li><a href="#perfect-tenses-in-english">Perfect Tenses in English</a>
+<ul>
+<li><a href="#present-perfect-tense">Present perfect tense</a></li>
+<li><a href="#present-perfect-continuous">Present perfect continuous</a></li>
+<li><a href="#past-perfect">Past perfect</a></li>
+<li><a href="#past-perfect-continuous">Past perfect continuous</a></li>
+<li><a href="#future-perfect">Future perfect</a></li>
+<li><a href="#future-perfect-continuous">Future perfect continuous</a></li>
+</ul></li>
+<li><a href="#future-tenses-in-english">Future Tenses in English</a>
+<ul>
+<li><a href="#simple-future-tense">Simple future tense</a></li>
+<li><a href="#future-continuous-tense">Future continuous tense</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#descibe-future-event">Descibe future event</a></li>
+<li><a href="#fanboys">FANBOYS</a></li>
+<li><a href="#participles">Participles</a></li>
+<li><a href="#reference">Reference</a></li>
+</ul>
+</nav>
+  </div>
+  
+</div>
+
+<hr>
+<div class="disqus-comments mx-auto px-5">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cyrusngithubio" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+
+    
+<link rel="stylesheet" href='/css/atom-one-dark.css'>
+<script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>
