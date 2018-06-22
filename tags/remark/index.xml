@@ -18,13 +18,8 @@
       <pubDate>Thu, 24 May 2018 19:59:24 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/remarkjs/</guid>
-      <description>class: center middle bg-primary text-light
-RemarkJS - CSS Guide Hugo Theme | Notebook-Searcher Background  class: center middle bg-primary text-light  Center list .blockquote-info[ &amp;gt; ### Guide &amp;gt; Use .fit-content.mx-auto to create a centered list ]
-.center[
-Example .fit-content.mx-auto[ - apple - orange - pear ] ]
-class: center
-This is normal image But the image is too .text-danger[big] class: center
-img-100 class to set max width to 100% .</description>
+      <description>Agenda  Background Center list Example This is normal image img-100 class to set max width to 100% img-75 class to set max width to 75% Also available on &amp;hellip; overflow can make the image overflow Blockquote Syntax Two Column Syntax for two column Footnote  class: center middle bg-primary text-light
+RemarkJS - CSS Guide Hugo Theme | Notebook-Searcher Background  class: center middle bg-primary text-light  Center list .</description>
     </item>
     
   </channel>
