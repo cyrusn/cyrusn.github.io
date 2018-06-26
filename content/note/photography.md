@@ -2,6 +2,7 @@
 title: "Photography"
 subtitle: ""
 draft: false
+toc: true
 date: 2017-12-05T08:28:03+08:00
 katex: false
 abcjs: false
@@ -10,16 +11,6 @@ description:
 tags:
   - photography
 ---
-
-# TOC
-<!-- MarkdownTOC -->
-
-- [Be a Better Photographer in 45 mins](#be-a-better-photographer-in-45-mins)
-- [Exposure Triangle](#exposure-triangle)
-- [Metering](#metering)
-- [Reference](#reference)
-
-<!-- /MarkdownTOC -->
 
 # Be a Better Photographer in 45 mins
 {{< youtube WXdAX0No2hM >}}

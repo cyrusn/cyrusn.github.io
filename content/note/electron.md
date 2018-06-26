@@ -1,6 +1,7 @@
 ---
 title: "Electron"
 subtitle: 
+toc: true
 description: "Build cross platform desktop apps with JavaScript, HTML, and CSS"
 draft: true
 katex: false

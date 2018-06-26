@@ -1,6 +1,7 @@
 ---
 title: JavaScript on OSAScript
 date: '2015-05-27 12:45:16'
+toc: true
 tags:
   - macos
   - osascript

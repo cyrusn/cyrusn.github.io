@@ -2,6 +2,7 @@
 title: "Backing Voice"
 subtitle: "Some notes on backing voice"
 katex: true
+toc: true
 abcjs: true
 date: 2017-11-29T11:29:10+08:00
 description:

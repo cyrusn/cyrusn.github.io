@@ -1,6 +1,7 @@
 ---
 date: 2017-10-20T14:32:46+08:00
 title: "Math Resources"
+toc: true
 katex: true
 subtitle: ""
 tags:

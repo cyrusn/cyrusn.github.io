@@ -1,6 +1,7 @@
 ---
 title: Useful Command Line Tools
 date: '2015-05-24 22:36:53'
+toc: true
 tags:
   - commandline
   - httpie
@@ -19,32 +20,32 @@ tags:
 # TOC
 <!-- MarkdownTOC -->
 
-- [Basic](#basic)
-  - [Redirect operators](#redirect-operators)
-  - [Create multiple files or folders](#create-multiple-files-or-folders)
-- [Useful Commands](#useful-commands)
-  - [zsh](#zsh)
-  - [tr](#tr)
-  - [copydir](#copydir)
-  - [qlmanage](#qlmanage)
-  - [airport](#airport)
-  - [pgrep and pkill](#pgrep-and-pkill)
-  - [shutdown](#shutdown)
-  - [textutil](#textutil)
-  - [xargs](#xargs)
-  - [Find files and delete them](#find-files-and-delete-them)
-  - [tmux](#tmux)
-  - [ImageMagick \(convert\)](#imagemagick-convert)
-  - [ffmpeg](#ffmpeg)
-  - [http-server](#http-server)
-  - [youtube-dl](#youtube-dl)
-  - [pt](#pt)
-  - [Pandoc](#pandoc)
-  - [http](#http)
-  - [caddy](#caddy)
-  - [jq](#jq)
-  - [top](#top)
-  - [osx metadata](#osx-metadata)
+- Basic
+  - Redirect operators
+  - Create multiple files or folders
+- Useful Commands
+  - zsh
+  - tr
+  - copydir
+  - qlmanage
+  - airport
+  - pgrep and pkill
+  - shutdown
+  - textutil
+  - xargs
+  - Find files and delete them
+  - tmux
+  - ImageMagick \(convert\)
+  - ffmpeg
+  - http-server
+  - youtube-dl
+  - pt
+  - Pandoc
+  - http
+  - caddy
+  - jq
+  - top
+  - osx metadata
 
 <!-- /MarkdownTOC -->
 

@@ -3,6 +3,7 @@ draft: true
 title: Secondment
 date: 2017-09-22T15:02:03+08:00
 subtitle: Secondment Note for 1718
+toc: true
 katex: true
 description: This is a note for any IDEAS coming from secondment.
 tags:
@@ -10,49 +11,26 @@ tags:
   - edb
 ---
 
-# TOC
-
-<!-- MarkdownTOC  -->
-
-- Tang King Po
-  - 2018-03-26 \(Mon\)
-- TaiPo
-  - 2018-02-01 \(Tue\)
-  - 2017-12-01 \(Fri\)
-  - 2018-01-05 \(Fri\)
-- Choi Hung
-  - 2018-01-11 \(Thu\)
-  - 2017-11-30 \(Thu\)
-- [ST Paul](#SPC)
-  - 2018-04-10 \(Tue\)
-  - 2018-03-20 \(Tue\)
-  - 2018-02-27 \(Tue\)
-  - 2017-11-28 \(Tue\)
-  - 2017-11-14 \(Tue\)
-  - 2017-10-31 \(Tue\)
-- TWGSS
-  - 2018-03-27 \(Tue\)
-  - 2018-02-02 \(Fri\)
-  - 2017-10-06 \(Fri\)
-    - S2 Development
-    - S3 Development
-- [孫方中書院](#sfcc)
-  - 2018-05-14 \(Mon\)
-  - 2018-05-04 \(Fri\)
-  - 2018-01-18 \(Thu\)
-  - 2017-12-19 \(Tue\)
-  - 2017-09-22 \(Fri\)
-- [吳祥川](#twgss)
-- Schedule
-  - Sept-Oct
-  - Nov-Dec
-  - Jan-Feb
-- Mar - Apr
-- May - Jun
-
-<!-- /MarkdownTOC -->
-
 # Tang King Po
+## 2018-06-19 (Tue)
+- 加強課領導
+  + 訂立方向及目標
+  + 賦權展能
+    * 縱向發展
+    * 橫向發展
+    * 協作學習文化
+    * 分層工作紙（星、月、日，不同難度）
+  + 運用數據回饋學與校
+    * 分析學習難點
+    * 教學影片  
+  + 教學內容、教學法及教學模式、評估
+    * 制訂內容綱要
+    * 目標、實踐、成功準則
+      - desmo
+      - [edpuzzle](https://edpuzzle.com/)
+      - Google Classroom
+  + $(-2)^{3}$
+
 ## 2018-03-26 (Mon)
 - 剛好統測完
 - 全等及相似
@@ -126,9 +104,15 @@ tags:
   + if student can't derive the equation, then give them the cue card
 
 # ST Paul{#SPC}
-## 2018-04-10 (Tue)
-- congruent triangle (Class observation)
+## 2018-05-29 (Tue)
+- contruct reasoning
+  + students out of task
+  + students seem understand the theory before lesson
+  + Mr Poon, more playful
+- 
 
+## 2018-04-10 (Tue)
+- congruent triangle (class observation)
 
 | Type | is unique |
 |------|-----------|
@@ -136,7 +120,6 @@ tags:
 | AS   |           |
 | SA   |           |
 | SS   |           |
-
 
 | Type | is unique |
 |------|-----------|
@@ -149,14 +132,11 @@ tags:
 | ASS  |           |
 | SSS  |           |
 
-減少 instructions, 讓學生發揮
-
-
+- 減少 instructions, 讓學生發揮
 - annual sharing powerpoint
   + Understanding the questions
   + losen constraints
   + further investigate / make conclusion / apply math model / revise
-
 
 ## 2018-03-20 (Tue)
 - 於presentation 中應加入規劃既部分
@@ -497,6 +477,7 @@ Estimation
 # Mar - Apr
 | Date             | Time | Task | Location     |
 | :--------------: | :-:  | :-:  | :----------: |
+| 2018-03-05 (Fri) | PM   | SV   | 大埔區中學   |
 | 2018-03-06 (Tue) | AM   | DL   | EDB          |
 | 2018-03-06 (Tue) | PM   | LC   | Kowloon Tong |
 | 2018-03-20 (Tue) | AM   | DL   | EDB          |
@@ -517,4 +498,7 @@ Estimation
 | 2018-05-04 (Fri) | AM   | LO   | ST Paul      |
 | 2018-05-04 (Tue) | PM   | SV   | 孫方中       |
 | 2018-05-14 (Mon) | AM   | SV   | 孫方中       |
-|                  |      |      |              |
+| 2018-05-24 (Thu) | PM   | LC   | EDB          |
+| 2018-05-29 (Tue) | AM   | DL   | EDB          |
+| 2018-05-29 (Tue) | PM   | SV   | ST Paul      |
+| 2018-06-19 (Tue) | AM   | SV   | Tang King Po            |

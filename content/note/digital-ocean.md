@@ -1,6 +1,7 @@
 ---
 title: Digital Ocean Notes
 date: '2016-03-26 12:31:11'
+toc: true
 tags:
   - do
   - scp

@@ -1,9 +1,10 @@
 ---
 title: "STEM Curriculum for Hong Kong"
 subtitle: "For junior secondary students"
+description: This note is for jotting ideas about how to design a curriculum for STEM education on secondary school for Hong Kong
+toc: true
 draft: true
 date: 2017-11-17T15:15:27+08:00
-description: This note is for jotting ideas about how to design a curriculum for STEM education on secondary school for Hong Kong
 tags:
   - STEM
   - curriculum
@@ -14,7 +15,7 @@ tags:
 # Model
 - TPACK
 - SMAR
-- [Microsoft PowerPoint - 宣道會陳朱素華紀念中學-SetoWS_CoE_20170221_public (for EDB Web)][@1]
+- [SetoWS_CoE_20170221_public (for EDB Web)][@1]
 
 # Curriculum design
 - first year

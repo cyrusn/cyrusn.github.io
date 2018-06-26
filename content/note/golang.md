@@ -1,6 +1,7 @@
 ---
 title: Golang Notes
 date: '2015-05-10 00:46:38'
+toc: true
 tags:
   - golang
   - websocket
@@ -66,6 +67,8 @@ tags:
 # Websocket
 - [Build a Realtime Chat Server With Go and WebSockets ― Scotch][@27]
 - [Playing with websockets in Go - Jonathan Petitcolas][@28]
+- [Building a Real-time Collaborative Drawing App in Go - Outcrawl][@29]
+
 
 <!-- reference links -->
 
@@ -97,3 +100,4 @@ tags:
 [@26]: https://medium.com/@matryer/context-keys-in-go-5312346a868d
 [@27]: https://scotch.io/bar-talk/build-a-realtime-chat-server-with-go-and-websockets
 [@28]: https://www.jonathan-petitcolas.com/2015/01/27/playing-with-websockets-in-go.html
+[@29]: https://outcrawl.com/realtime-collaborative-drawing-go/

@@ -1,6 +1,7 @@
 ---
 title: Alfred Notes
 date: '2015-07-24 23:02:19'
+toc: true
 tags:
   - productivity
   - alfred

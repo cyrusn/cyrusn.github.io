@@ -1,6 +1,7 @@
 ---
 title: "Education"
 date: 2017-09-05T10:58:58+08:00
+toc: true
 subtitle: ""
 tags:
   - policy
@@ -28,6 +29,9 @@ tags:
 
 # C&A{#curriculum-and-assessment}
 - [課程文件][@6]
+- [專案名稱：][@7]
+- [read_attach.php][@8]
+
 
 <!-- reference links -->
 
@@ -37,3 +41,5 @@ tags:
 [@4]: http://www.edb.gov.hk/attachment/tc/curriculum-development/renewal/STEM_Education_Report_Chi_20170303.pdf
 [@5]: http://www.edb.gov.hk/attachment/en/curriculum-development/renewal/TE/TE_KLACG_eng_draft_2017_05.pdf
 [@6]: http://www.edb.gov.hk/tc/curriculum-development/kla/ma/curr/index2.html
+[@7]: http://tldc.ttu.edu.tw/ezfiles/79/1079/img/305/847881594.pdf
+[@8]: http://blog.ncue.edu.tw/sys/lib/read_attach.php?id=4321

@@ -1,6 +1,7 @@
 ---
 title: Git Notes
 date: '2015-05-10 00:52:39'
+toc: true
 tags:
   - git
   - github

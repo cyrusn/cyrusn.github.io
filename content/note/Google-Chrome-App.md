@@ -1,6 +1,7 @@
 ---
 title: Google Chrome App
 date: '2015-06-29 07:58:25'
+toc: true
 tags:
   - google
   - chrome

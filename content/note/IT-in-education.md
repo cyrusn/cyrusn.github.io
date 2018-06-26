@@ -2,6 +2,7 @@
 title: "IT in Education"
 subtitle: ""
 description:
+toc: true
 draft: true
 katex: false
 mermaid: false

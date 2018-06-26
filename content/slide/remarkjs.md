@@ -2,17 +2,39 @@
 title: "My RemarkJS CSS"
 subtitle: ""
 description:
-draft: true
+draft: false
 remarkOption: 
   ratio: 16:9
+  Navigation:
+    scroll: false
+    click: true
 date: 2018-05-24T19:59:24+08:00
 tags:
+  - remark
 
 ---
+
+# Agenda
+- Background
+- Center list
+- Example
+- This is normal image
+- `img-100` class to set max width to 100%
+- `img-75` class to set max width to 75%
+- Also available on ...
+- `overflow` can make the image overflow
+- Blockquote
+- Syntax
+- Two Column
+- Syntax for two column
+- Footnote
+
+---
+
 class: center middle bg-primary text-light
 # RemarkJS - CSS Guide
 <hr class="bg-light">
-## CyrusN
+## [Hugo Theme | Notebook-Searcher](https://github.com/cyrusn/notebook-searcher)
 
 ---
 # Background
@@ -39,7 +61,7 @@ class: center middle bg-primary text-light
 ---
 class: center
 # This is normal image
-But the image is too **big**
+But the image is too .text-danger[**big**]
 ![image][@1]
 
 ---
@@ -64,7 +86,7 @@ class: center
 
 # `overflow` can make the image overflow
 
-Use together with `.img-100` and `h-75` can produce a better overflow image
+Use together with `.img-100` and `h-75` can produce a nice overflowed image
 
 .img-100.overflow.h-75[
 ![image][@1]
@@ -72,8 +94,6 @@ Use together with `.img-100` and `h-75` can produce a better overflow image
 
 ---
 # Blockquote
-
-Using `.blockquote-primary` can  
 
 .blockquote-primary[
 > ### blockquote
@@ -83,7 +103,8 @@ Using `.blockquote-primary` can
 # Syntax
 ``` md
 .blockquote-primary[
-> this is primary blockquote
+> #### blockquote
+> This is primary blockquote's content.
 ]
 ```
 
@@ -165,7 +186,12 @@ This is example.sup[1] of footnote.sup[2], here is google.com.sup[3]
 
 ## Syntax
 ``` md
-This is example of footnote.sup[1] .footnote[1: see syntax on next page]
+This is example.sup[1] of footnote.sup[2], here is google.com.sup[3]
+.footnote[
+1. Hello! World.
+2. see syntax on next page
+3. https://google.com
+]
 ```
  
 ---

@@ -1,6 +1,7 @@
 ---
 title: Google calendar for LPSS colleagues
 subtitle: ""
+toc: true
 date: 2017-05-19T09:50:13+08:00
 tags:
   - calendar

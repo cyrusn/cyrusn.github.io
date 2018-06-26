@@ -1,12 +1,13 @@
 ---
 title: "ABCJS"
 subtitle: "Note for abc music notation"
+toc: true
 date: 2017-11-29T11:39:19+08:00
 abcjs: true
 katex: true
 description:
 tags:
-  - ABCJS
+  - abcjs
   - score
   - music
 ---

@@ -12,7 +12,7 @@ U***nit***ed States, ***Can***ada, ***Me***xico, ***Pa***nama
 ***Hai***ti, Ja***mai***ca, Pe***ru***, 
 
 
-Re***pub***lic Do***min***ican, ***Cu***ba, Car***ri***bean
+Re***pub***lic Do***min***ican, ***Cu***ba, Car***rib***bean
 ***Green***land, El ***Sal***vador ***too***.
 
 
@@ -45,7 +45,7 @@ Bul***gar***ia, Saudi A***ra***bia, ***Hun***gary
 ***Cy***prus, I***raq***, and I***ran***.
 
 ***There***'s ***Sy***ria, ***Le***banon, ***I***srael, ***Jor***dan Both
-***Ye***mens, Ku***wait***, and Bah***rain***,
+***Ye***men, Ku***wait***, and Bah***rain***,
 
 The ***Ne***therlands, ***Lu***xembourg, **Bel**gium, and ***Por***tugal
 ***France***, England, ***Den***mark, and ***Spain***.
@@ -96,7 +96,6 @@ Hong ***Kong***, Abu ***Dha***bi, Qa***tar***, Yugo***sla***via...
 ***Then*** Transyl***via***nia,
 ***Mo***naco, {{< tooltip "***Liech***tenstein" "/ˈlɪktənstaɪn/" >}}
 
-***Mal***ta, and ***Pa***estine,
+***Mal***ta, and ***Pal***estine,
 **Fi**ji, Au***str***alia, Su***dan***.
 
-<!-- Flat 12, 3/F, Block G, Telford Gardens, 33 Wai Yip Street, Kowloon Bay, Kowloon, Hong Kong -->

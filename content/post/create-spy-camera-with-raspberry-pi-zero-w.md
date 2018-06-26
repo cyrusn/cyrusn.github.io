@@ -10,18 +10,6 @@ date: 2018-02-13T18:51:28+08:00
 tags:
 ---
 
-# Table of Content
-
-<!-- MarkdownTOC -->
-
-- Ingredient
-  - Difference between Camera and NoIR Camera
-- Using `RPi-Cam-Web-Interface` package
-- [](#Using RPi IR-Cut Camera@8)
-
-<!-- /MarkdownTOC -->
-
-
 # Ingredient
 - [Raspberry Pi Zero W][@1]
 - [Camera][@2] / [NoIR Camera][@3]

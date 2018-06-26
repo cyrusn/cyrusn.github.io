@@ -2,6 +2,7 @@
 title: "Jazz"
 subtitle: ""
 abcjs: true
+toc: true
 date: 2017-11-28T21:28:46+08:00
 description:
 tags:

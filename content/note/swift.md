@@ -1,6 +1,7 @@
 ---
 title: Swift Notes
 date: '2015-05-10 00:47:48'
+toc: true
 tags:
   - macos
   - swift

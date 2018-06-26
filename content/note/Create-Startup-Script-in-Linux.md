@@ -1,6 +1,7 @@
 ---
 title: Create Startup Script in Linux
 date: '2016-10-21 12:43:34'
+toc: true
 tags:
   - linux
   - startup

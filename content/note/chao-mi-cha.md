@@ -2,6 +2,7 @@
 title: "炒米茶"
 subtitle: ""
 description:
+toc: true
 draft: false
 katex: false
 mermaid: false

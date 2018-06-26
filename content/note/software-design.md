@@ -3,6 +3,7 @@ title: "Software Design"
 subtitle: "Substances over from"
 date: 2017-11-13T08:43:26+08:00
 description: Ideas on teaching secondary school students to learn software design. How about writing SDD?
+toc: true
 tags:
     - design
 ---

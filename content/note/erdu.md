@@ -1,6 +1,7 @@
 ---
 title: "Erdu"
 subtitle: ""
+toc: true
 description:
 draft: true
 katex: false

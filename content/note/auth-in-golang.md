@@ -2,6 +2,7 @@
 title: "Auth in Golang"
 subtitle: "Some examples about authentication in Golang with JWTs"
 description:
+toc: true
 draft: false
 katex: false
 mermaid: false
@@ -15,10 +16,10 @@ tags:
 
 <!-- MarkdownTOC -->
 
-- [Concept](#concept)
-- [Example](#example)
-  - [Example of using middleware](#example-of-using-middleware)
-- [Reference](#reference)
+- Concept
+- Example
+  - Example of using middleware
+- Reference
 
 <!-- /MarkdownTOC -->
 

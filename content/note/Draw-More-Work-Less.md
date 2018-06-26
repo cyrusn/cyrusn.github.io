@@ -1,6 +1,7 @@
 ---
 title: Draw More Work Less
 date: '2015-05-10 01:29:03'
+toc: true
 tags:
   - plantuml
   - uml
@@ -8,10 +9,11 @@ tags:
 
 <!-- MarkdownTOC -->
 
-- [Some Links](#some-links)
-- [from leesei](#from-leesei)
-  - [Text based tools](#text-based-tools)
-  - [GUI Tools](#gui-tools)
+- Some Links
+- from leesei
+  - Text based tools
+    - GaaS \(graph as a service\)
+  - GUI Tools
 
 <!-- /MarkdownTOC -->
 

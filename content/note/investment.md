@@ -1,6 +1,7 @@
 ---
 date: 2017-10-03T23:02:29+08:00
 title: "Investment"
+toc: true
 draft: true
 subtitle: ""
 tags:
@@ -8,10 +9,10 @@ tags:
 
 <!-- MarkdownTOC -->
 
-- [Stock](#stock)
-- [Bond](#bond)
-- [Others](#others)
-- [Reading List](#reading-list)
+- Stock
+- Bond
+- Others
+- Reading List
 
 <!-- /MarkdownTOC -->
 

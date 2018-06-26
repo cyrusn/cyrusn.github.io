@@ -137,7 +137,7 @@ class: middle bg-dark text-light
 ]
 
 .col-5[
-.overflow.h-75.mx-auto.border[
+.overflow.h-75.img-100.mx-auto.border[
 ![testimonail][@08]
 ]]]
 
@@ -219,7 +219,7 @@ graph TB
 ]
 
 .col-5[
-.overflow.h-75.mx-auto.border[
+.overflow.h-75.img-100.mx-auto.border[
 ![multipathway][@19]
 ]]]
 

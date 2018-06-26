@@ -1,5 +1,6 @@
 ---
 title: Hardware Architecture
+toc: true
 date: '2015-05-22 17:20:27'
 ---
 

@@ -2,6 +2,7 @@
 date: 2017-10-31T15:03:45+08:00
 title: "Alexa"
 subtitle: "Amazon - Echo Dot"
+toc: true
 draft: true
 discription: "A notes about the programming on Alexa."
 tags:
@@ -13,7 +14,7 @@ tags:
 
 <!-- MarkdownTOC -->
 
-- [Alexa](#alexa)
+- Alexa
 
 <!-- /MarkdownTOC -->
 

@@ -2,6 +2,7 @@
 title: "Assessment"
 subtitle: ""
 description:
+toc: true
 draft: true
 katex: false
 mermaid: false

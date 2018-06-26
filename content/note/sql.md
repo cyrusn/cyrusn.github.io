@@ -1,6 +1,7 @@
 ---
 date: 2017-07-09T20:56:56+08:00
 subtitle: ""
+toc: true
 tags:
   - normalization
   - normal form

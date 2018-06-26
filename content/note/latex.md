@@ -1,6 +1,7 @@
 ---
 title: "Latex"
 subtitle: ""
+toc: true
 description:
 draft: false
 katex: true

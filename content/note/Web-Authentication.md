@@ -1,6 +1,7 @@
 ---
 title: Web Authentication
 date: '2016-10-05 00:23:42'
+toc: true
 tags:
   - authentication
   - jwt

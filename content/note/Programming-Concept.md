@@ -1,18 +1,19 @@
 ---
 title: Programming Concept
 date: '2015-06-05 08:53:37'
+toc: true
 tags:
   - productivity
 ---
 
 <!-- MarkdownTOC -->
 
-- [Links](#links)
-- [leesei's choice](#leeseis-choice)
-  - [Naming](#naming)
-  - [What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?](#what-can-i-learn-right-now-in-just-10-minutes-that-could-be-useful-for-the-rest-of-my-programming-career)
+- Links
+- leesei's choice
+  - Naming
+  - What can I learn right now in just 10 minutes that could be useful for the rest of my programming career?
 - [Programming Principal](#pp)
-- [reference](#reference)
+- reference
 
 <!-- /MarkdownTOC -->
 

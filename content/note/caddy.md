@@ -1,6 +1,7 @@
 ---
 title: Caddy Notes
 date: '2016-10-09 07:41:27'
+toc: true
 ---
 
 # Installation

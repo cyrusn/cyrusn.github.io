@@ -1,6 +1,7 @@
 ---
 title: macos Setting Notes
 date: '2015-10-01 13:32:12'
+toc: true
 tags:
   - macos
   - setting

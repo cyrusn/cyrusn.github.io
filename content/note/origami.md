@@ -2,6 +2,7 @@
 title: "Origami"
 subtitle: ""
 description:
+toc: true
 draft: true
 katex: false
 mermaid: false
@@ -10,6 +11,7 @@ date: 2018-03-13T10:26:36+08:00
 tags:
 ---
 
+# Reference
 - [【DIY Guide】最強旋轉紙陀螺摺法、紙張選擇及旋轉原理！Paper Spinner - YouTube][@1]
 - [Easy Seamless Pyramid - YouTube][@2]
 - [Origami - How To Make An Origami Elephant - YouTube][@3]

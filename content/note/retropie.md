@@ -1,6 +1,7 @@
 ---
 title: "RetroPie"
 subtitle: ""
+toc: true
 description:
 draft: true
 katex: false
@@ -22,6 +23,8 @@ tags:
 # Setup 8bitdo controller
 - [8Bitdo - RetroPie Docs][@5]
 - [!! READ THIS FIRST !! - RetroPie Forum][@6]
+- [8Bitdo Zero How to Setup in Retropie 4.2 – RobbysWeb.com](http://robbysweb.com/8bitdo-zero-setup-retropie-4-2/)
+
 
 <!-- reference links -->
 
