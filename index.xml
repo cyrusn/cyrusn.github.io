@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
     <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
-    <lastBuildDate>Thu, 24 May 2018 19:59:24 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 26 Jun 2018 21:10:39 +0800</lastBuildDate>
     
 	<atom:link href="https://cyrusn.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Raspberry Pi Setup</title>
+      <link>https://cyrusn.github.io/post/raspberry-pi-setup/</link>
+      <pubDate>Tue, 26 Jun 2018 21:10:39 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/post/raspberry-pi-setup/</guid>
+      <description>Setup for a new Pi Download the latest version of Raspbian Stretch and download Etcher app to flash the raspbian image to SD card. Plug the flashed SD card to your raspberry and power it on.
+Update and upgrade Open terminal app and run the following command to update and upgrade the packages and OS.
+sudo apt-get update sudo apt-get upgrade  Config the localisation options Run sudo raspi-config for changing the following settings.</description>
+    </item>
     
     <item>
       <title>My RemarkJS CSS</title>
@@ -187,7 +198,10 @@ Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GP
       <pubDate>Tue, 19 Sep 2017 09:44:09 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/raspberry-pi/</guid>
-      <description>Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setup for a new Pi 3 model B First, you have to follow the installation guide written by raspberrypi.org, here is the link. After installation of Raspbian OS, the pi is basically set, run sudo apt-get upgrade in terminal to keep all availabe packages and OS up to date.</description>
+      <description>Basic setting  Setup guide for raspberry pi  Setting for OTG mode for pi zero Guide  add the following text to /boot/config.txt
+# Enable OTG mode dtoverlay=dwc2  Save the config.txt file as plain text and then open up cmdline.txt After rootwait (the last word on the first line) add a space and then modules-load=dwc2,g_ether
+ Create an empty file named as ssh.txt in /boot
+ connect to your pi through ssh</description>
     </item>
     
     <item>
@@ -212,7 +226,7 @@ Switzerland, Austria, Czech, Slovakia Italy, Turkey, and Greece.</description>
       <pubDate>Tue, 05 Sep 2017 10:58:58 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/education/</guid>
-      <description>  學校課程持續更新 STEM C&amp;amp;A  學校課程持續更新  學校課程持續更新  STEM  科學教育課程指引 (小一至中六) 數學教育課程指引 (小一至中六) 《推動STEM教育 — 發揮創意潛能》報告 科技教育課程指引 (小一至中六)  C&amp;amp;A  課程文件  </description>
+      <description>  學校課程持續更新 STEM C&amp;amp;A  學校課程持續更新  學校課程持續更新  STEM  科學教育課程指引 (小一至中六) 數學教育課程指引 (小一至中六) 《推動STEM教育 — 發揮創意潛能》報告 科技教育課程指引 (小一至中六)  C&amp;amp;A  課程文件 專案名稱： read_attach.php  </description>
     </item>
     
     <item>

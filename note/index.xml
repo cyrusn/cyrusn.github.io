@@ -126,7 +126,10 @@ Reference  資源下載 - 超研教育｜中學數學補習社｜Band 1補習學
       <pubDate>Tue, 19 Sep 2017 09:44:09 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/raspberry-pi/</guid>
-      <description>Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setup for a new Pi 3 model B First, you have to follow the installation guide written by raspberrypi.org, here is the link. After installation of Raspbian OS, the pi is basically set, run sudo apt-get upgrade in terminal to keep all availabe packages and OS up to date.</description>
+      <description>Basic setting  Setup guide for raspberry pi  Setting for OTG mode for pi zero Guide  add the following text to /boot/config.txt
+# Enable OTG mode dtoverlay=dwc2  Save the config.txt file as plain text and then open up cmdline.txt After rootwait (the last word on the first line) add a space and then modules-load=dwc2,g_ether
+ Create an empty file named as ssh.txt in /boot
+ connect to your pi through ssh</description>
     </item>
     
     <item>
@@ -151,7 +154,7 @@ Switzerland, Austria, Czech, Slovakia Italy, Turkey, and Greece.</description>
       <pubDate>Tue, 05 Sep 2017 10:58:58 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/education/</guid>
-      <description>  學校課程持續更新 STEM C&amp;amp;A  學校課程持續更新  學校課程持續更新  STEM  科學教育課程指引 (小一至中六) 數學教育課程指引 (小一至中六) 《推動STEM教育 — 發揮創意潛能》報告 科技教育課程指引 (小一至中六)  C&amp;amp;A  課程文件  </description>
+      <description>  學校課程持續更新 STEM C&amp;amp;A  學校課程持續更新  學校課程持續更新  STEM  科學教育課程指引 (小一至中六) 數學教育課程指引 (小一至中六) 《推動STEM教育 — 發揮創意潛能》報告 科技教育課程指引 (小一至中六)  C&amp;amp;A  課程文件 專案名稱： read_attach.php  </description>
     </item>
     
     <item>

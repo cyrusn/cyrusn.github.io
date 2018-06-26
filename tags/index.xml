@@ -492,7 +492,7 @@
     <item>
       <title>Linux</title>
       <link>https://cyrusn.github.io/tags/linux/</link>
-      <pubDate>Tue, 19 Sep 2017 09:44:09 +0800</pubDate>
+      <pubDate>Tue, 26 Jun 2018 21:10:39 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/tags/linux/</guid>
       <description></description>
@@ -675,6 +675,15 @@
       <pubDate>Fri, 03 Nov 2017 11:17:14 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/tags/raspberry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi</title>
+      <link>https://cyrusn.github.io/tags/raspberry-pi/</link>
+      <pubDate>Tue, 26 Jun 2018 21:10:39 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/tags/raspberry-pi/</guid>
       <description></description>
     </item>
     

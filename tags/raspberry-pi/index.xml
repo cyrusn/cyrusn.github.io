@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raspberry Pi on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/raspberry-pi/</link>
+    <description>Recent content in Raspberry Pi on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Tue, 26 Jun 2018 21:10:39 +0800</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Raspberry Pi Setup</title>
+      <link>https://cyrusn.github.io/post/raspberry-pi-setup/</link>
+      <pubDate>Tue, 26 Jun 2018 21:10:39 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/post/raspberry-pi-setup/</guid>
+      <description>Setup for a new Pi Download the latest version of Raspbian Stretch and download Etcher app to flash the raspbian image to SD card. Plug the flashed SD card to your raspberry and power it on.
+Update and upgrade Open terminal app and run the following command to update and upgrade the packages and OS.
+sudo apt-get update sudo apt-get upgrade  Config the localisation options Run sudo raspi-config for changing the following settings.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -10,7 +10,7 @@ body {
 #TableOfContents {
   font-size: smaller;
   overflow-y: hidden;
-  max-height: 95vh;
+  height: 100vh;
 }
 
 #TableOfContents .active {
@@ -22,7 +22,7 @@ body {
 }
 
 h1, h2, h3 {
-  padding-top: 1.5rem;
+  padding-top: 1rem;
 }
 
 .ipa {
@@ -42,4 +42,10 @@ blockquote > p {
 
 blockquote > footer {
   margin-top: 1rem;
+}
+
+code {
+    padding: .2rem .4rem;
+    background-color: #f8f9fa;
+    border-radius: .2rem;
 }

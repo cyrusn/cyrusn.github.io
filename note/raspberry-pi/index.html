@@ -11,9 +11,16 @@
   <title>Raspberry Pi</title>
 
 
-  <meta name="description" content="Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setup for a new Pi 3 model B First, you have to follow the installation guide written by raspberrypi.org, here is the link. After installation of Raspbian OS, the pi is basically set, run sudo apt-get upgrade in terminal to keep all availabe packages and OS up to date.">
-  <meta property="og:description" content="Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System  Setup for a new Pi 3 model B First, you have to follow the installation guide written by raspberrypi.org, here is the link. After installation of Raspbian OS, the pi is basically set, run sudo apt-get upgrade in terminal to keep all availabe packages and OS up to date.">
-  <meta name="twitter:description" content="Setting  Raspberry Pi Documentation VNC (Virtual Network Computing) - Raspberry Pi Documentation SSH (Secure Shell) - Raspberry Pi Documentation Passwordless SSH access - Raspberry Pi Documentation …">
+  <meta name="description" content="Basic setting  Setup guide for raspberry pi  Setting for OTG mode for pi zero Guide  add the following text to /boot/config.txt
+# Enable OTG mode dtoverlay=dwc2  Save the config.txt file as plain text and then open up cmdline.txt After rootwait (the last word on the first line) add a space and then modules-load=dwc2,g_ether
+ Create an empty file named as ssh.txt in /boot
+ connect to your pi through ssh">
+  <meta property="og:description" content="Basic setting  Setup guide for raspberry pi  Setting for OTG mode for pi zero Guide  add the following text to /boot/config.txt
+# Enable OTG mode dtoverlay=dwc2  Save the config.txt file as plain text and then open up cmdline.txt After rootwait (the last word on the first line) add a space and then modules-load=dwc2,g_ether
+ Create an empty file named as ssh.txt in /boot
+ connect to your pi through ssh">
+  <meta name="twitter:description" content="Basic setting  Setup guide for raspberry pi  Setting for OTG mode for pi zero Guide  add the following text to /boot/config.txt
+# Enable OTG mode dtoverlay=dwc2  Save the config.txt file as plain text …">
 
 
 <meta name="author" content="CyrusN"/>
@@ -147,8 +154,9 @@ var Paginator = {}
         
       </ul>
     </div>
-
-    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
+    <form class="form-inline">
+      <button type="button" class="mx-2 d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
+    </form>
   </nav>
 </div>
 
@@ -183,10 +191,10 @@ var Paginator = {}
     
 <div class="mx-auto row">
   
-  <div class="col-lg-10 col-12">
+  <div class="col-xl-10 col-12">
   
     
-    <h1 class="display-3 pb-0">Raspberry Pi</h1>
+    <h1 class="display-4">Raspberry Pi</h1>
     
 
     
@@ -202,15 +210,15 @@ var Paginator = {}
 
 <small>
 
-  <a class="badge badge-secondary" href="/tags/iot">iot</a>
+  <a class="badge badge-warning" href="/tags/iot">iot</a>
 
-  <a class="badge badge-secondary" href="/tags/stem">stem</a>
+  <a class="badge badge-warning" href="/tags/stem">stem</a>
 
-  <a class="badge badge-secondary" href="/tags/linux">linux</a>
+  <a class="badge badge-warning" href="/tags/linux">linux</a>
 
-  <a class="badge badge-secondary" href="/tags/raspberry">raspberry</a>
+  <a class="badge badge-warning" href="/tags/raspberry">raspberry</a>
 
-  <a class="badge badge-secondary" href="/tags/pi">pi</a>
+  <a class="badge badge-warning" href="/tags/pi">pi</a>
 
 </small>
 
@@ -229,24 +237,15 @@ var Paginator = {}
     <div class="mx-auto" id="content">
         
 
-<h1 id="setting">Setting</h1>
+<h1 id="basic-setting">Basic setting</h1>
 
 <ul>
-<li><a href="https://www.raspberrypi.org/documentation/" target="_blank">Raspberry Pi Documentation</a></li>
-<li><a href="https://www.raspberrypi.org/documentation/remote-access/vnc/" target="_blank">VNC (Virtual Network Computing) - Raspberry Pi Documentation</a></li>
-<li><a href="https://www.raspberrypi.org/documentation/remote-access/ssh/" target="_blank">SSH (Secure Shell) - Raspberry Pi Documentation</a></li>
-<li><a href="https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md" target="_blank">Passwordless SSH access - Raspberry Pi Documentation</a></li>
-<li><a href="https://learn.adafruit.com/turning-your-raspberry-pi-zero-into-a-usb-gadget/ethernet-gadget" target="_blank">Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System</a></li>
+<li><a href="/post/raspberry-pi-setup">Setup guide for raspberry pi</a></li>
 </ul>
 
-<h2 id="setup-for-a-new-pi-3-model-b">Setup for a new Pi 3 model B</h2>
+<h1 id="setting-for-otg-mode-for-pi-zero">Setting for OTG mode for pi zero</h1>
 
-<p>First, you have to follow the installation guide written by raspberrypi.org,
-here is the <a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md" target="_blank">link</a>. After installation of Raspbian OS, the pi is basically
-set, run <code>sudo apt-get upgrade</code> in terminal to keep all availabe packages and
-OS up to date. See <a href="#recommanded-software-packages">Recommanded Software Packages</a> session</p>
-
-<h2 id="setting-for-otg-mode">Setting for OTG mode</h2>
+<h2 id="guide">Guide</h2>
 
 <ol>
 <li><p>add the following text to <code>/boot/config.txt</code></p>
@@ -306,19 +305,6 @@ network={
 }
 </code></pre>
 
-<h2 id="change-user-name">Change User name</h2>
-
-<ol>
-<li>set root password <code>sudo passwd root</code></li>
-<li>set boot option to <em>console</em> in <code>sudo raspi-config</code></li>
-<li>login with root user and password you just set in (1)</li>
-<li><code>usermod -l newname pi</code></li>
-<li><code>usermod -m -d /home/newname newname</code> &lt;- rename home folder</li>
-<li>set password for newname <code>sudo passwd newname</code></li>
-<li>set boot option to <em>Desktop (auto login)</em> in <code>sudo raspi-config</code></li>
-<li><code>reboot</code></li>
-</ol>
-
 <h2 id="add-ssh-public-key">Add ssh public key</h2>
 
 <ul>
@@ -326,54 +312,6 @@ network={
 <li>create <code>authorized_keys</code> file</li>
 <li>paste the ssh public key to <code>authorized_keys</code> (mostly the key store in <code>~/.ssh/id_rsa.pub</code> )</li>
 </ul>
-
-<h1 id="recommanded-software-packages">Recommanded software packages</h1>
-
-<p>Before the installation, first run the following command to update and upgrade the
-packages and OS</p>
-
-<pre><code class="language-sh">sudo apt-get update
-sudo apt-get upgrade
-</code></pre>
-
-<h2 id="installation">Installation</h2>
-
-<p>Here is the list of useful software packages suggested to install to your PI</p>
-
-<ul>
-<li>vim</li>
-<li>git</li>
-<li>zsh</li>
-</ul>
-
-<pre><code class="language-sh">sudo apt-get install vim zsh git
-</code></pre>
-
-<h2 id="configuration-of-zsh">Configuration of <code>zsh</code></h2>
-
-<h3 id="install-oh-my-zsh-and-my-custom-theme">Install <code>oh-my-zsh</code> and my custom theme</h3>
-
-<pre><code class="language-sh">sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
-</code></pre>
-
-<pre><code class="language-sh">mkdir -p .zsh-custom/themes
-cd .zsh-custom/themes
-curl -O https://raw.githubusercontent.com/cyrusn/cyrusn-terminal-setting/master/zsh-custom/themes/cyrusn.zsh-theme
-</code></pre>
-
-<h3 id="config-zshrc">Config <code>.zshrc</code></h3>
-
-<pre><code class="language-sh">ZSH_THEME=&quot;cyrusn&quot;
-export UPDATE_ZSH_DAYS=13
-plugins=(
-  git
-  z
-)
-
-ZSH_CUSTOM=/$HOME/.zsh-custom
-
-alias ls='ls --classify -ahNF --group-directories-first --color=auto --time-style=+&quot;%e/%m/%y %T&quot; --group-directories-first'
-</code></pre>
 
 <h1 id="autostart">Autostart</h1>
 
@@ -443,29 +381,12 @@ The “&amp;” at the end of the line means the command is run in the backgroun
 <li><a href="https://magicmirror.builders/" target="_blank">MagicMirror²</a></li>
 <li><a href="https://circuitdigest.com/microcontroller-projects/raspberry-pi-line-follower-robot" target="_blank">Raspberry Pi Based Line Follower Robot with Python Code</a></li>
 <li><a href="/note/retropie">RetroPie</a></li>
+<li><a href="https://www.pyimagesearch.com/2018/04/30/a-fun-hands-on-deep-learning-project-for-beginners-students-and-hobbyists/" target="_blank">A fun, hands-on deep learning project for beginners, students, and hobbyists - PyImageSearch</a></li>
 </ul>
 
 <h1 id="some-thoughts">Some thoughts</h1>
 
 <p>&ldquo;Blinking LED&rdquo; is just like writing an &ldquo;hello world&rdquo; programme in physical computing.</p>
-
-<h1 id="setting-brightness-of-touch-led">Setting brightness of Touch led</h1>
-
-<ul>
-<li><a href="https://www.element14.com/community/docs/DOC-78156/l/raspberry-pi-7-touchscreen-display" target="_blank">Raspberry Pi 7” Touchscreen Display | element14 | Raspberry Pi Accessories</a></li>
-</ul>
-
-<pre><code class="language-sh"># and to turn it off:
-echo 0 &gt; /sys/class/backlight/rpi_backlight/bl_power
-</code></pre>
-
-<pre><code class="language-sh"># the brightness can be adjusted using:
-echo 1 &gt; /sys/class/backlight/rpi_backlight/bl_power
-</code></pre>
-
-<pre><code class="language-sh"># where n is some value between 0 and 255.
-echo n &gt; /sys/class/backlight/rpi_backlight/brightness
-</code></pre>
 
 <h1 id="sensors">Sensors</h1>
 
@@ -522,31 +443,24 @@ while True:
 
 <ul>
 <li><a href="https://www.slideshare.net/raspberrypi-tw/gpio-gameconsolestarterkit" target="_blank">用Raspberry Pi學GPIO - 自己做遊戲機</a></li>
+<li><a href="https://www.raspberrypi.org/documentation/" target="_blank">Raspberry Pi Documentation</a></li>
+<li><a href="https://www.raspberrypi.org/documentation/remote-access/vnc/" target="_blank">VNC (Virtual Network Computing) - Raspberry Pi Documentation</a></li>
+<li><a href="https://www.raspberrypi.org/documentation/remote-access/ssh/" target="_blank">SSH (Secure Shell) - Raspberry Pi Documentation</a></li>
+<li><a href="https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md" target="_blank">Passwordless SSH access - Raspberry Pi Documentation</a></li>
+<li><a href="https://learn.adafruit.com/turning-your-raspberry-pi-zero-into-a-usb-gadget/ethernet-gadget" target="_blank">Ethernet Gadget | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System</a></li>
 </ul>
-
-<!-- reference links -->
 
     </div>
   </div>
   
-  <div class="d-none col-lg-2 d-lg-block sticky-top h-100 py-2 border-left px-0">
+  <div class="d-none col-xl-2 d-xl-block sticky-top h-100 py-2 border-left px-0">
       <nav id="TableOfContents">
 <ul>
-<li><a href="#setting">Setting</a>
+<li><a href="#basic-setting">Basic setting</a></li>
+<li><a href="#setting-for-otg-mode-for-pi-zero">Setting for OTG mode for pi zero</a>
 <ul>
-<li><a href="#setup-for-a-new-pi-3-model-b">Setup for a new Pi 3 model B</a></li>
-<li><a href="#setting-for-otg-mode">Setting for OTG mode</a></li>
-<li><a href="#change-user-name">Change User name</a></li>
+<li><a href="#guide">Guide</a></li>
 <li><a href="#add-ssh-public-key">Add ssh public key</a></li>
-</ul></li>
-<li><a href="#recommanded-software-packages">Recommanded software packages</a>
-<ul>
-<li><a href="#installation">Installation</a></li>
-<li><a href="#configuration-of-zsh">Configuration of <code>zsh</code></a>
-<ul>
-<li><a href="#install-oh-my-zsh-and-my-custom-theme">Install <code>oh-my-zsh</code> and my custom theme</a></li>
-<li><a href="#config-zshrc">Config <code>.zshrc</code></a></li>
-</ul></li>
 </ul></li>
 <li><a href="#autostart">Autostart</a></li>
 <li><a href="#pin">Pin</a></li>
@@ -554,7 +468,6 @@ while True:
 <li><a href="#links">Links</a></li>
 <li><a href="#some-projects">Some Projects</a></li>
 <li><a href="#some-thoughts">Some thoughts</a></li>
-<li><a href="#setting-brightness-of-touch-led">Setting brightness of Touch led</a></li>
 <li><a href="#sensors">Sensors</a></li>
 <li><a href="#others">Others</a>
 <ul>
@@ -595,7 +508,7 @@ while True:
 
 
     
-<link rel="stylesheet" href='/css/atom-one-dark.css'>
+<link rel="stylesheet" href='/css/solarized-dark.css'>
 <script src='/js/highlight.pack.js'></script>
 <script>
    
