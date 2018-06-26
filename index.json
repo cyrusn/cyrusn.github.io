@@ -2,8 +2,8 @@
 {
   "index": 0,
   "kind": "page",
-  "type": "post",
-  "uri": "https://cyrusn.github.io/post/raspberry-pi-setup/",
+  "type": "note",
+  "uri": "https://cyrusn.github.io/note/raspberry-pi-setup/",
   "filename": "raspberry-pi-setup",
   "draft": false,
   "date": "2018-06-26",
@@ -19,7 +19,7 @@
   "filename": "remarkjs",
   "draft": false,
   "date": "2018-05-24",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "My RemarkJS CSS",
   "tags": ["remark"]
 },
@@ -43,7 +43,7 @@
   "filename": "applying_web_based_resources",
   "draft": false,
   "date": "2018-01-26",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Applying Web-based Resources",
   "tags": ["100hr", "scope", "career", "hkacmgm"]
 },
@@ -67,7 +67,7 @@
   "filename": "auth-in-golang",
   "draft": false,
   "date": "2017-12-12",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Auth in Golang",
   "tags": ["golang", "auth", "login"]
 },
@@ -79,7 +79,7 @@
   "filename": "latex",
   "draft": false,
   "date": "2017-12-05",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Latex",
   "tags": ["katex"]
 },
@@ -91,7 +91,7 @@
   "filename": "photography",
   "draft": false,
   "date": "2017-12-05",
-  "lastmod": "2018-02-25",
+  "lastmod": "2018-06-26",
   "title": "Photography",
   "tags": ["photography"]
 },
@@ -103,7 +103,7 @@
   "filename": "abcjs",
   "draft": false,
   "date": "2017-11-29",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "ABCJS",
   "tags": ["abcjs", "score", "music"]
 },
@@ -115,7 +115,7 @@
   "filename": "backing-voice",
   "draft": false,
   "date": "2017-11-29",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Backing Voice",
   "tags": ["abcjs"]
 },
@@ -127,7 +127,7 @@
   "filename": "jazz",
   "draft": false,
   "date": "2017-11-28",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Jazz",
   "tags": []
 },
@@ -139,7 +139,7 @@
   "filename": "graphQL",
   "draft": false,
   "date": "2017-11-18",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "GraphQL",
   "tags": ["graphql"]
 },
@@ -151,7 +151,7 @@
   "filename": "software-design",
   "draft": false,
   "date": "2017-11-13",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Software Design",
   "tags": ["design"]
 },
@@ -163,7 +163,7 @@
   "filename": "life_design",
   "draft": false,
   "date": "2017-11-08",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Life Design Counseling",
   "tags": ["careers", "counseling"]
 },
@@ -187,7 +187,7 @@
   "filename": "math-resources",
   "draft": false,
   "date": "2017-10-20",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Math Resources",
   "tags": ["past paper"]
 },
@@ -211,7 +211,7 @@
   "filename": "python",
   "draft": false,
   "date": "2017-10-14",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Python",
   "tags": []
 },
@@ -223,7 +223,7 @@
   "filename": "raspberry-pi",
   "draft": false,
   "date": "2017-09-19",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Raspberry Pi",
   "tags": ["iot", "stem", "linux", "raspberry", "pi"]
 },
@@ -235,7 +235,7 @@
   "filename": "yakko-s-world-lyric",
   "draft": false,
   "date": "2017-09-13",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Yakko&#39;s World Lyric",
   "tags": ["lyric", "map"]
 },
@@ -247,7 +247,7 @@
   "filename": "education",
   "draft": false,
   "date": "2017-09-05",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Education",
   "tags": ["policy", "secondment"]
 },
@@ -271,7 +271,7 @@
   "filename": "grammar",
   "draft": false,
   "date": "2017-09-04",
-  "lastmod": "2017-09-04",
+  "lastmod": "2018-06-26",
   "title": "Grammar",
   "tags": ["english", "grammar"]
 },
@@ -295,7 +295,7 @@
   "filename": "sql",
   "draft": false,
   "date": "2017-07-09",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "sql",
   "tags": ["normalization", "normal form"]
 },
@@ -307,7 +307,7 @@
   "filename": "dyson",
   "draft": false,
   "date": "2017-07-09",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Dyson Washing",
   "tags": []
 },
@@ -319,7 +319,7 @@
   "filename": "stem-idea-on-education",
   "draft": false,
   "date": "2017-06-20",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "STEM Idea on Education",
   "tags": ["education", "electronics", "engineering", "activity"]
 },
@@ -331,7 +331,7 @@
   "filename": "pcvpet",
   "draft": false,
   "date": "2017-05-27",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Notes on PCVEPT Course",
   "tags": ["career", "vpet"]
 },
@@ -343,7 +343,7 @@
   "filename": "google-calendar",
   "draft": false,
   "date": "2017-05-19",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Google calendar for LPSS colleagues",
   "tags": ["calendar", "google", "lpss"]
 },
@@ -379,7 +379,7 @@
   "filename": "4+1",
   "draft": false,
   "date": "2017-05-15",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "4C+1X 升學考慮",
   "tags": ["1x", "2x", "jupas", "taiwan study", "dse"]
 },
@@ -391,7 +391,7 @@
   "filename": "career-theory",
   "draft": false,
   "date": "2017-05-15",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Career Theory",
   "tags": ["education", "career", "life planning", "donald super"]
 },
@@ -427,7 +427,7 @@
   "filename": "Create-Startup-Script-in-Linux",
   "draft": false,
   "date": "2016-10-21",
-  "lastmod": "2017-08-23",
+  "lastmod": "2018-06-26",
   "title": "Create Startup Script in Linux",
   "tags": ["linux", "startup"]
 },
@@ -451,7 +451,7 @@
   "filename": "caddy",
   "draft": false,
   "date": "2016-10-09",
-  "lastmod": "2017-05-13",
+  "lastmod": "2018-06-26",
   "title": "Caddy Notes",
   "tags": []
 },
@@ -463,7 +463,7 @@
   "filename": "HTTPS-and-JWT",
   "draft": false,
   "date": "2016-10-07",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "HTTPS and JWT",
   "tags": ["https"]
 },
@@ -475,7 +475,7 @@
   "filename": "Web-Authentication",
   "draft": false,
   "date": "2016-10-05",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Web Authentication",
   "tags": ["authentication", "jwt", "security", "web-token"]
 },
@@ -499,7 +499,7 @@
   "filename": "Docker",
   "draft": false,
   "date": "2016-09-30",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Docker",
   "tags": ["docker"]
 },
@@ -511,7 +511,7 @@
   "filename": "Config-Digtal-Ocean-Droplet-as-Microservice",
   "draft": false,
   "date": "2016-09-29",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Config Digital Ocean Droplet as Microservice",
   "tags": ["apache", "ssl", "tls", "tmux"]
 },
@@ -523,7 +523,7 @@
   "filename": "how-to-convert-pngs-to-gif",
   "draft": false,
   "date": "2016-09-26",
-  "lastmod": "2017-05-16",
+  "lastmod": "2018-06-26",
   "title": "How to convert images to gif",
   "tags": ["imagemagick", "productivity", "gif", "convert"]
 },
@@ -559,7 +559,7 @@
   "filename": "digital-ocean",
   "draft": false,
   "date": "2016-03-26",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Digital Ocean Notes",
   "tags": ["do", "scp"]
 },
@@ -571,7 +571,7 @@
   "filename": "macos-setting",
   "draft": false,
   "date": "2015-10-01",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "macos Setting Notes",
   "tags": ["macos", "setting"]
 },
@@ -583,7 +583,7 @@
   "filename": "alfred",
   "draft": false,
   "date": "2015-07-24",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Alfred Notes",
   "tags": ["productivity", "alfred"]
 },
@@ -595,7 +595,7 @@
   "filename": "Google-Chrome-App",
   "draft": false,
   "date": "2015-06-29",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Google Chrome App",
   "tags": ["google", "chrome", "app"]
 },
@@ -607,7 +607,7 @@
   "filename": "Programming-Concept",
   "draft": false,
   "date": "2015-06-05",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Programming Concept",
   "tags": ["productivity"]
 },
@@ -619,7 +619,7 @@
   "filename": "JavaScript-on-OSAScript",
   "draft": false,
   "date": "2015-05-27",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "JavaScript on OSAScript",
   "tags": ["macos", "osascript"]
 },
@@ -631,7 +631,7 @@
   "filename": "useful-command-line-tools",
   "draft": false,
   "date": "2015-05-24",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Useful Command Line Tools",
   "tags": ["commandline", "httpie", "jq", "kill", "pt", "redirect", "terminal", "top", "wild card", "xargs", "youtube-dl", "zsh"]
 },
@@ -643,7 +643,7 @@
   "filename": "Hardware-Architecture",
   "draft": false,
   "date": "2015-05-22",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Hardware Architecture",
   "tags": []
 },
@@ -655,7 +655,7 @@
   "filename": "Google-App-Script",
   "draft": false,
   "date": "2015-05-22",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Google App Script",
   "tags": ["google script"]
 },
@@ -667,7 +667,7 @@
   "filename": "Draw-More-Work-Less",
   "draft": false,
   "date": "2015-05-10",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Draw More Work Less",
   "tags": ["plantuml", "uml"]
 },
@@ -703,7 +703,7 @@
   "filename": "Basic-CS-Knowledge",
   "draft": false,
   "date": "2015-05-10",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Basic CS Knowledge",
   "tags": []
 },
@@ -715,7 +715,7 @@
   "filename": "git",
   "draft": false,
   "date": "2015-05-10",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Git Notes",
   "tags": ["git", "github", "slide"]
 },
@@ -727,7 +727,7 @@
   "filename": "swift",
   "draft": false,
   "date": "2015-05-10",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Swift Notes",
   "tags": ["macos", "swift"]
 },
@@ -739,7 +739,7 @@
   "filename": "Mongoose.js-and-MongoDB",
   "draft": false,
   "date": "2015-05-10",
-  "lastmod": "2017-05-16",
+  "lastmod": "2018-06-26",
   "title": "Mongoose.js and MongoDB",
   "tags": ["database", "mongodb", "mongoose"]
 },
@@ -751,7 +751,7 @@
   "filename": "golang",
   "draft": false,
   "date": "2015-05-10",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Golang Notes",
   "tags": ["golang", "websocket"]
 },
@@ -763,7 +763,7 @@
   "filename": "Gitbook",
   "draft": false,
   "date": "2015-05-10",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Gitbook Notes",
   "tags": ["gitbook"]
 },
@@ -775,7 +775,7 @@
   "filename": "pigs-feet-ginger",
   "draft": false,
   "date": "2014-04-26",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "豬腳薑烹調方法",
   "tags": ["recipe"]
 },
@@ -787,7 +787,7 @@
   "filename": "chao-mi-cha",
   "draft": false,
   "date": "2014-04-18",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "炒米茶",
   "tags": ["recipe"]
 },
@@ -799,7 +799,7 @@
   "filename": "",
   "draft": false,
   "date": "2018-01-26",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "100hr",
   "tags": []
 },
@@ -811,7 +811,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-05-15",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "1x",
   "tags": []
 },
@@ -823,7 +823,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-05-15",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "2x",
   "tags": []
 },
@@ -835,7 +835,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-11-29",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Abcjs",
   "tags": []
 },
@@ -859,7 +859,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-06-20",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Activity",
   "tags": []
 },
@@ -871,7 +871,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-07-24",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Alfred",
   "tags": []
 },
@@ -883,7 +883,7 @@
   "filename": "",
   "draft": false,
   "date": "2016-09-29",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Apache",
   "tags": []
 },
@@ -895,7 +895,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-06-29",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "App",
   "tags": []
 },
@@ -907,7 +907,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-12-12",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Auth",
   "tags": []
 },
@@ -919,7 +919,7 @@
   "filename": "",
   "draft": false,
   "date": "2016-10-05",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Authentication",
   "tags": []
 },
@@ -931,7 +931,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-05-19",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Calendar",
   "tags": []
 },
@@ -943,7 +943,7 @@
   "filename": "",
   "draft": false,
   "date": "2018-01-26",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Career",
   "tags": []
 },
@@ -955,7 +955,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-11-08",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Careers",
   "tags": []
 },
@@ -979,7 +979,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-06-29",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Chrome",
   "tags": []
 },
@@ -991,7 +991,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-24",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Commandline",
   "tags": []
 },
@@ -1003,7 +1003,7 @@
   "filename": "",
   "draft": false,
   "date": "2016-09-26",
-  "lastmod": "2017-05-16",
+  "lastmod": "2018-06-26",
   "title": "Convert",
   "tags": []
 },
@@ -1015,7 +1015,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-11-08",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Counseling",
   "tags": []
 },
@@ -1027,7 +1027,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-10",
-  "lastmod": "2017-05-16",
+  "lastmod": "2018-06-26",
   "title": "Database",
   "tags": []
 },
@@ -1039,7 +1039,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-11-13",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Design",
   "tags": []
 },
@@ -1063,7 +1063,7 @@
   "filename": "",
   "draft": false,
   "date": "2016-03-26",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Do",
   "tags": []
 },
@@ -1075,7 +1075,7 @@
   "filename": "",
   "draft": false,
   "date": "2016-09-30",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Docker",
   "tags": []
 },
@@ -1087,7 +1087,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-05-15",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Donald Super",
   "tags": []
 },
@@ -1099,7 +1099,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-05-15",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Dse",
   "tags": []
 },
@@ -1123,7 +1123,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-06-20",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Education",
   "tags": []
 },
@@ -1135,7 +1135,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-06-20",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Electronics",
   "tags": []
 },
@@ -1147,7 +1147,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-06-20",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Engineering",
   "tags": []
 },
@@ -1159,7 +1159,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-09-04",
-  "lastmod": "2017-09-04",
+  "lastmod": "2018-06-26",
   "title": "English",
   "tags": []
 },
@@ -1183,7 +1183,7 @@
   "filename": "",
   "draft": false,
   "date": "2016-09-26",
-  "lastmod": "2017-05-16",
+  "lastmod": "2018-06-26",
   "title": "Gif",
   "tags": []
 },
@@ -1195,7 +1195,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-10",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Git",
   "tags": []
 },
@@ -1207,7 +1207,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-10",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Gitbook",
   "tags": []
 },
@@ -1219,7 +1219,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-10",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Github",
   "tags": []
 },
@@ -1231,7 +1231,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-12-12",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Golang",
   "tags": []
 },
@@ -1243,7 +1243,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-05-19",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Google",
   "tags": []
 },
@@ -1279,7 +1279,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-09-04",
-  "lastmod": "2017-09-04",
+  "lastmod": "2018-06-26",
   "title": "Grammar",
   "tags": []
 },
@@ -1291,7 +1291,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-11-18",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Graphql",
   "tags": []
 },
@@ -1315,7 +1315,7 @@
   "filename": "",
   "draft": false,
   "date": "2018-01-26",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Hkacmgm",
   "tags": []
 },
@@ -1327,7 +1327,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-24",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Httpie",
   "tags": []
 },
@@ -1339,7 +1339,7 @@
   "filename": "",
   "draft": false,
   "date": "2016-10-07",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Https",
   "tags": []
 },
@@ -1351,7 +1351,7 @@
   "filename": "",
   "draft": false,
   "date": "2016-09-26",
-  "lastmod": "2017-05-16",
+  "lastmod": "2018-06-26",
   "title": "Imagemagick",
   "tags": []
 },
@@ -1363,7 +1363,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-09-19",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Iot",
   "tags": []
 },
@@ -1375,7 +1375,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-24",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Jq",
   "tags": []
 },
@@ -1399,7 +1399,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-05-15",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Jupas",
   "tags": []
 },
@@ -1411,7 +1411,7 @@
   "filename": "",
   "draft": false,
   "date": "2016-10-05",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Jwt",
   "tags": []
 },
@@ -1423,7 +1423,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-12-05",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Katex",
   "tags": []
 },
@@ -1435,7 +1435,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-24",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Kill",
   "tags": []
 },
@@ -1447,7 +1447,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-05-15",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Life Planning",
   "tags": []
 },
@@ -1471,7 +1471,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-12-12",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Login",
   "tags": []
 },
@@ -1483,7 +1483,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-05-19",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Lpss",
   "tags": []
 },
@@ -1495,7 +1495,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-09-13",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Lyric",
   "tags": []
 },
@@ -1507,7 +1507,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-10-01",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Macos",
   "tags": []
 },
@@ -1519,7 +1519,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-09-13",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Map",
   "tags": []
 },
@@ -1531,7 +1531,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-10",
-  "lastmod": "2017-05-16",
+  "lastmod": "2018-06-26",
   "title": "Mongodb",
   "tags": []
 },
@@ -1543,7 +1543,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-10",
-  "lastmod": "2017-05-16",
+  "lastmod": "2018-06-26",
   "title": "Mongoose",
   "tags": []
 },
@@ -1555,7 +1555,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-11-29",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Music",
   "tags": []
 },
@@ -1567,7 +1567,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-07-09",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Normal Form",
   "tags": []
 },
@@ -1579,7 +1579,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-07-09",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Normalization",
   "tags": []
 },
@@ -1602,8 +1602,8 @@
   "uri": "https://cyrusn.github.io/note/",
   "filename": "",
   "draft": false,
-  "date": "2017-12-12",
-  "lastmod": "2018-02-23",
+  "date": "2018-06-26",
+  "lastmod": "2018-06-26",
   "title": "Notes",
   "tags": []
 },
@@ -1615,7 +1615,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-27",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Osascript",
   "tags": []
 },
@@ -1639,7 +1639,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-10-20",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Past Paper",
   "tags": []
 },
@@ -1651,7 +1651,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-12-05",
-  "lastmod": "2018-02-25",
+  "lastmod": "2018-06-26",
   "title": "Photography",
   "tags": []
 },
@@ -1675,7 +1675,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-10",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Plantuml",
   "tags": []
 },
@@ -1687,7 +1687,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-09-05",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Policy",
   "tags": []
 },
@@ -1710,8 +1710,8 @@
   "uri": "https://cyrusn.github.io/post/",
   "filename": "",
   "draft": false,
-  "date": "2018-06-26",
-  "lastmod": "2018-06-26",
+  "date": "2017-04-27",
+  "lastmod": "2018-02-23",
   "title": "Posts",
   "tags": []
 },
@@ -1723,7 +1723,7 @@
   "filename": "",
   "draft": false,
   "date": "2016-09-26",
-  "lastmod": "2017-05-16",
+  "lastmod": "2018-06-26",
   "title": "Productivity",
   "tags": []
 },
@@ -1747,7 +1747,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-24",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Pt",
   "tags": []
 },
@@ -1807,7 +1807,7 @@
   "filename": "",
   "draft": false,
   "date": "2014-04-26",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Recipe",
   "tags": []
 },
@@ -1819,7 +1819,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-24",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Redirect",
   "tags": []
 },
@@ -1843,7 +1843,7 @@
   "filename": "",
   "draft": false,
   "date": "2018-05-24",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Remark",
   "tags": []
 },
@@ -1855,7 +1855,7 @@
   "filename": "",
   "draft": false,
   "date": "2018-01-26",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Scope",
   "tags": []
 },
@@ -1867,7 +1867,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-11-29",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Score",
   "tags": []
 },
@@ -1879,7 +1879,7 @@
   "filename": "",
   "draft": false,
   "date": "2016-03-26",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Scp",
   "tags": []
 },
@@ -1891,7 +1891,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-09-05",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Secondment",
   "tags": []
 },
@@ -1903,7 +1903,7 @@
   "filename": "",
   "draft": false,
   "date": "2016-10-05",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Security",
   "tags": []
 },
@@ -1915,7 +1915,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-10-01",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Setting",
   "tags": []
 },
@@ -1927,7 +1927,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-10",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Slide",
   "tags": []
 },
@@ -1939,7 +1939,7 @@
   "filename": "",
   "draft": false,
   "date": "2018-05-24",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Slides",
   "tags": []
 },
@@ -1951,7 +1951,7 @@
   "filename": "",
   "draft": false,
   "date": "2016-09-29",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Ssl",
   "tags": []
 },
@@ -1963,7 +1963,7 @@
   "filename": "",
   "draft": false,
   "date": "2016-10-21",
-  "lastmod": "2017-08-23",
+  "lastmod": "2018-06-26",
   "title": "Startup",
   "tags": []
 },
@@ -1975,7 +1975,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-09-19",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Stem",
   "tags": []
 },
@@ -1987,7 +1987,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-10",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Swift",
   "tags": []
 },
@@ -1999,7 +1999,7 @@
   "filename": "",
   "draft": false,
   "date": "2018-01-26",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Tags",
   "tags": []
 },
@@ -2023,7 +2023,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-24",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Terminal",
   "tags": []
 },
@@ -2035,7 +2035,7 @@
   "filename": "",
   "draft": false,
   "date": "2016-09-29",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Tls",
   "tags": []
 },
@@ -2071,7 +2071,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-24",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Top",
   "tags": []
 },
@@ -2095,7 +2095,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-10",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Uml",
   "tags": []
 },
@@ -2119,7 +2119,7 @@
   "filename": "",
   "draft": false,
   "date": "2017-05-27",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Vpet",
   "tags": []
 },
@@ -2131,7 +2131,7 @@
   "filename": "",
   "draft": false,
   "date": "2016-10-05",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Web Token",
   "tags": []
 },
@@ -2143,7 +2143,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-10",
-  "lastmod": "2018-02-23",
+  "lastmod": "2018-06-26",
   "title": "Websocket",
   "tags": []
 },
@@ -2155,7 +2155,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-24",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Wild Card",
   "tags": []
 },
@@ -2167,7 +2167,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-24",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Xargs",
   "tags": []
 },
@@ -2179,7 +2179,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-24",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Youtube Dl",
   "tags": []
 },
@@ -2191,7 +2191,7 @@
   "filename": "",
   "draft": false,
   "date": "2015-05-24",
-  "lastmod": "2018-05-24",
+  "lastmod": "2018-06-26",
   "title": "Zsh",
   "tags": []
 }]

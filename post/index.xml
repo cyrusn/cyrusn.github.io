@@ -7,21 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
     <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
-    <lastBuildDate>Tue, 26 Jun 2018 21:10:39 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 27 Apr 2017 23:14:04 +0000</lastBuildDate>
     
 	<atom:link href="https://cyrusn.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Raspberry Pi Setup</title>
-      <link>https://cyrusn.github.io/post/raspberry-pi-setup/</link>
-      <pubDate>Tue, 26 Jun 2018 21:10:39 +0800</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/raspberry-pi-setup/</guid>
-      <description>Setup for a new Pi Download the latest version of Raspbian Stretch and download Etcher app to flash the raspbian image to SD card. Plug the flashed SD card to your raspberry and power it on.
-Update and upgrade Open terminal app and run the following command to update and upgrade the packages and OS.
-sudo apt-get update sudo apt-get upgrade  Config the localisation options Run sudo raspi-config for changing the following settings.</description>
-    </item>
     
     <item>
       <title>Download YouTube in batch</title>

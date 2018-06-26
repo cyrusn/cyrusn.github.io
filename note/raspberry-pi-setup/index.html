@@ -8,12 +8,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-  <title>Auth in Golang</title>
+  <title>Raspberry Pi Setup</title>
 
 
-  <meta name="description" content="Some examples about authentication in Golang with JWTs">
-  <meta property="og:description" content="Some examples about authentication in Golang with JWTs">
-  <meta name="twitter:description" content="Some examples about authentication in Golang with JWTs">
+  <meta name="description" content="A guide for setup a new raspberry pi">
+  <meta property="og:description" content="A guide for setup a new raspberry pi">
+  <meta name="twitter:description" content="A guide for setup a new raspberry pi">
 
 
 <meta name="author" content="CyrusN"/>
@@ -187,11 +187,11 @@ var Paginator = {}
   <div class="col-xl-10 col-12">
   
     
-    <h1 class="display-4">Auth in Golang</h1>
+    <h1 class="display-4">Raspberry Pi Setup</h1>
     
 
     
-    <h2 class="text-muted font-weight-bold pt-0">Some examples about authentication in Golang with JWTs</h2>
+    <h2 class="text-muted font-weight-bold pt-0">A guide for setup a new raspberry pi</h2>
     
 
     
@@ -207,11 +207,9 @@ var Paginator = {}
 
 <small>
 
-  <a class="badge badge-warning" href="/tags/golang">golang</a>
+  <a class="badge badge-warning" href="/tags/raspberry-pi">raspberry pi</a>
 
-  <a class="badge badge-warning" href="/tags/auth">auth</a>
-
-  <a class="badge badge-warning" href="/tags/login">login</a>
+  <a class="badge badge-warning" href="/tags/linux">linux</a>
 
 </small>
 
@@ -221,7 +219,7 @@ var Paginator = {}
       
        <br>
         <small>
-          <span class="badge badge-info">Created on 2017-12-12</span>
+          <span class="badge badge-info">Created on 2018-06-26</span>
           <span class="badge badge-info">Last Modified 2018-06-26</span>
         </small>
       
@@ -230,92 +228,105 @@ var Paginator = {}
     <div class="mx-auto" id="content">
         
 
-<!-- MarkdownTOC -->
+<h1 id="setup-for-a-new-pi">Setup for a new Pi</h1>
 
-<ul>
-<li>Concept</li>
-<li>Example
+<p>Download the latest version of <a href="https://www.raspberrypi.org/downloads/raspbian/" target="_blank">Raspbian Stretch</a> and download <a href="https://etcher.io/?ref=etcher_update" target="_blank">Etcher app</a> to flash the raspbian image to SD card. Plug the flashed SD card to your raspberry and power it on.</p>
 
-<ul>
-<li>Example of using middleware</li>
-</ul></li>
-<li>Reference</li>
-</ul>
+<h1 id="update-and-upgrade">Update and upgrade</h1>
 
-<!-- /MarkdownTOC -->
+<p>Open terminal app and run the following command to update and upgrade the packages and OS.</p>
 
-<h1 id="concept">Concept</h1>
-
-<p>JWT have 3 session, <code>header</code>, <code>payload</code> and <code>signature</code>. Information are stored in payload session which can be read
-without authentication, therefore no secret information should be stored there. Server parses JWT token stored in header in every
-http request for authenticated.</p>
-
-<p>In server side, using middelware for <code>http.Handler</code> function if the request are involved with authentication. System can also store
-user information like username and scope in JWT payload session further usage.</p>
-
-<p>Client should store the given JWT token (return by login or auth request from server side) in header, so that server can validate
-JWT token in header for authentication.</p>
-
-<h1 id="example">Example</h1>
-
-<h2 id="example-of-using-middleware">Example of using middleware</h2>
-
-<p>Using middleware on http.handler with <a href="http://www.gorillatoolkit.org/pkg/mux" target="_blank"><strong>gorilla multiplexer</strong></a></p>
-
-<pre><code class="language-go">package main
-
-import &quot;github.com/gorilla/mux&quot;
-
-func main() {
-  r := mux.NewRouter()
-
-  // api that not need to get authentication
-  r.Handle(&quot;/&quot;, HomeHandler).Methods(&quot;GET&quot;)
-
-  // api that need to get authentication
-  r.Handle(&quot;/path/need/authentication&quot;, AuthMiddleware(SomeHandler)).Methods(&quot;GET&quot;)
-
-  srv := &amp;http.Server{
-    Handler:      r,
-    Addr:         &quot;127.0.0.1:8000&quot;,
-    // Good practice: enforce timeouts for servers you create!
-    WriteTimeout: 15 * time.Second,
-    ReadTimeout:  15 * time.Second,
-  }
-
-  log.Fatal(srv.ListenAndServe())
-}
-
-func AuthMiddleware(next http.Handler) http.Handler {
-  return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-    token := r.Header.Get(&quot;jwt-token&quot;)  // any key that client used to store jwt token
-
-    err := SomeCodeValidateJWTToken(token)
-    if err != nil {
-      fmt.Fprint(w, &quot;Unauthorized request&quot;)
-    } else {
-      next.ServeHTTP(w, r) // ServeHTTP run execute next handler
-    }
-  })
-}
-
-func HomeHandler(w http.ResponseWriter, r *http.Request) {
-  // some code ...
-}
-
-func SomeHandler(w http.ResponseWriter, r *http.Request) {
-  // some code ...
-}
+<pre><code class="language-sh">sudo apt-get update
+sudo apt-get upgrade
 </code></pre>
 
-<h1 id="reference">Reference</h1>
+<h1 id="config-the-localisation-options">Config the localisation options</h1>
+
+<p>Run <code>sudo raspi-config</code> for changing the following settings.
+- locale
+- time zone
+- keyboard layout (US Internation)
+- wifi country</p>
+
+<h1 id="change-username">Change username</h1>
+
+<ol>
+<li>set root password <code>sudo passwd root</code></li>
+<li>set boot option to <strong><em>console</em></strong> in <code>sudo raspi-config</code></li>
+<li>login with root user and password you just set in step 1</li>
+<li><code>usermod -l newname pi</code></li>
+<li><code>usermod -m -d /home/newname newname</code> &lt;- rename home folder</li>
+<li>set password for newname <code>sudo passwd newname</code></li>
+<li>set boot option to <em>Desktop (auto login)</em> in <code>sudo raspi-config</code></li>
+<li><code>reboot</code></li>
+</ol>
+
+<h1 id="installation-of-packages">Installation of packages</h1>
+
+<p>Here is the list of useful packages suggested to install to your pi</p>
 
 <ul>
-<li><a href="https://jwt.io/" target="_blank">JSON Web Tokens - jwt.io</a></li>
-<li><a href="http://www.gorillatoolkit.org/pkg/mux" target="_blank">mux - Gorilla, the golang web toolkit</a></li>
-<li><a href="https://auth0.com/blog/authentication-in-golang/" target="_blank">Authentication in Golang with JWTs</a></li>
-<li>How to use mddleware in golang <code>http.Handler</code> - <a href="http://www.alexedwards.net/blog/a-recap-of-request-handling" target="_blank">A Recap of Request Handling in Go</a></li>
+<li>vim</li>
+<li>git</li>
+<li>zsh</li>
 </ul>
+
+<pre><code class="language-sh">sudo apt-get install vim zsh git
+</code></pre>
+
+<h1 id="basic-zsh-config">Basic <code>zsh</code> config</h1>
+
+<h2 id="install-oh-my-zsh">Install <code>oh-my-zsh</code></h2>
+
+<pre><code class="language-sh">sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
+</code></pre>
+
+<h2 id="custom-theme">Custom theme</h2>
+
+<pre><code class="language-sh">mkdir -p ~/.zsh-custom/themes &amp;&amp; cd &quot;$_&quot;
+curl -O https://raw.githubusercontent.com/cyrusn/cyrusn-terminal-setting/master/zsh-custom/themes/cyrusn.zsh-theme 
+</code></pre>
+
+<h2 id="setting-in-zshrc">Setting in <code>.zshrc</code></h2>
+
+<pre><code class="language-sh">ZSH_THEME=&quot;cyrusn&quot;
+export UPDATE_ZSH_DAYS=13
+plugins=(
+  git
+  z
+)
+
+ZSH_CUSTOM=/$HOME/.zsh-custom
+
+alias ls='ls --classify -ahNF --group-directories-first --color=auto --time-style=+&quot;%e/%m/%y %T&quot;'
+</code></pre>
+
+<h1 id="setting-for-touch-led">Setting for Touch led</h1>
+
+<h2 id="rotation">Rotation</h2>
+
+<pre><code class="language-sh"># lcd_rotate=0 Normal 
+# lcd_rotate=1 90 degrees 
+# lcd_rotate=2 180 degrees 
+# lcd_rotate=3 270 degrees 
+# ask sh to run the string as programme
+sudo sh -c 'echo &quot;lcd_rotate=2&quot; &gt;&gt; /boot/config.txt'
+
+# or rotate for hdmi display
+sudo sh -c 'echo &quot;display_rotate=2&quot; &gt;&gt; /boot/config.txt'
+</code></pre>
+
+<h2 id="brightness">brightness</h2>
+
+<pre><code class="language-sh"># turn it on
+echo 0 &gt; /sys/class/backlight/rpi_backlight/bl_power
+
+# and off
+echo 1 &gt; /sys/class/backlight/rpi_backlight/bl_power
+
+# where n is some value between 0 and 255
+echo n &gt; /sys/class/backlight/rpi_backlight/brightness
+</code></pre>
 
 <!-- reference links -->
 
@@ -325,12 +336,22 @@ func SomeHandler(w http.ResponseWriter, r *http.Request) {
   <div class="d-none col-xl-2 d-xl-block sticky-top h-100 py-2 border-left px-0">
       <nav id="TableOfContents">
 <ul>
-<li><a href="#concept">Concept</a></li>
-<li><a href="#example">Example</a>
+<li><a href="#setup-for-a-new-pi">Setup for a new Pi</a></li>
+<li><a href="#update-and-upgrade">Update and upgrade</a></li>
+<li><a href="#config-the-localisation-options">Config the localisation options</a></li>
+<li><a href="#change-username">Change username</a></li>
+<li><a href="#installation-of-packages">Installation of packages</a></li>
+<li><a href="#basic-zsh-config">Basic <code>zsh</code> config</a>
 <ul>
-<li><a href="#example-of-using-middleware">Example of using middleware</a></li>
+<li><a href="#install-oh-my-zsh">Install <code>oh-my-zsh</code></a></li>
+<li><a href="#custom-theme">Custom theme</a></li>
+<li><a href="#setting-in-zshrc">Setting in <code>.zshrc</code></a></li>
 </ul></li>
-<li><a href="#reference">Reference</a></li>
+<li><a href="#setting-for-touch-led">Setting for Touch led</a>
+<ul>
+<li><a href="#rotation">Rotation</a></li>
+<li><a href="#brightness">brightness</a></li>
+</ul></li>
 </ul>
 </nav>
   </div>
