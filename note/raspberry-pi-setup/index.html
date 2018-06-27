@@ -187,6 +187,7 @@ var Paginator = {}
   <div class="col-xl-10 col-12">
   
     
+
     <h1 class="display-4">Raspberry Pi Setup</h1>
     
 
@@ -243,9 +244,9 @@ sudo apt-get upgrade
 <h1 id="config-the-localisation-options">Config the localisation options</h1>
 
 <p>Run <code>sudo raspi-config</code> for changing the following settings.
-- locale
+- locale (zh-HK UTF, english UTF)
 - time zone
-- keyboard layout (US Internation)
+- keyboard layout (English US)
 - wifi country</p>
 
 <h1 id="change-username">Change username</h1>
@@ -328,6 +329,35 @@ echo 1 &gt; /sys/class/backlight/rpi_backlight/bl_power
 echo n &gt; /sys/class/backlight/rpi_backlight/brightness
 </code></pre>
 
+<h1 id="using-openbox">Using openbox</h1>
+
+<p>to maximise and undecorate the application window by default.</p>
+
+<p>Use text editor to open <code>~/.config/openbox/lxde-pi-rc.xml</code>. Scroll to bottom and add the following code within <code>&lt;applications&gt;&lt;/applications&gt;</code> tag.</p>
+
+<pre><code class="language-xml">&lt;!-- 
+  This is an example to let LXTerminal open with undecorated mode
+  and maximize the screen by default
+--&gt;
+&lt;application name='lxterminal'&gt;
+  &lt;decor&gt;no&lt;/decor&gt;
+  &lt;maximized&gt;yes&lt;/maximized&gt;
+&lt;/application&gt;
+</code></pre>
+
+<h1 id="install-chinese-input-method">Install chinese input method</h1>
+
+<pre><code class="language-sh">sudo apt-get install scim scim-gtk2-immodule scim-tables-zh
+</code></pre>
+
+<p>Now you can run scim-setup and configure SCIM after reboot.</p>
+
+<h1 id="references">References</h1>
+
+<ul>
+<li><a href="http://www.robos.org/sections/chinese/cangjie.html#install" target="_blank">The Cangjie Input Method</a></li>
+</ul>
+
 <!-- reference links -->
 
     </div>
@@ -352,6 +382,9 @@ echo n &gt; /sys/class/backlight/rpi_backlight/brightness
 <li><a href="#rotation">Rotation</a></li>
 <li><a href="#brightness">brightness</a></li>
 </ul></li>
+<li><a href="#using-openbox">Using openbox</a></li>
+<li><a href="#install-chinese-input-method">Install chinese input method</a></li>
+<li><a href="#references">References</a></li>
 </ul>
 </nav>
   </div>

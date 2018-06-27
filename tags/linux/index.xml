@@ -29,7 +29,7 @@ sudo apt-get update sudo apt-get upgrade  Config the localisation options Run su
       <pubDate>Tue, 19 Sep 2017 09:44:09 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/raspberry-pi/</guid>
-      <description>Basic setting  Setup guide for raspberry pi  Setting for OTG mode for pi zero Guide  add the following text to /boot/config.txt
+      <description>Basic setting  Setup guide for raspberry pi  Setting for OTG mode for pi zero instruction  add the following text to /boot/config.txt
 # Enable OTG mode dtoverlay=dwc2  Save the config.txt file as plain text and then open up cmdline.txt After rootwait (the last word on the first line) add a space and then modules-load=dwc2,g_ether
  Create an empty file named as ssh.txt in /boot
  connect to your pi through ssh</description>
