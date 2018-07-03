@@ -27,9 +27,8 @@ slidedown/slidedown">
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
-<script src='/js/jquery-3.2.1.slim.min.js'></script>
-<script src='/js/popper.min.js'></script>
-<script src='/js/bootstrap.min.js' ></script>
+<script src='/js/jquery.slim.min.js'></script>
+<script src='/js/bootstrap.bundle.min.js' ></script>
 
 
 
@@ -48,6 +47,7 @@ slidedown/slidedown">
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
+<script src='/js/keycodes.js'></script>
 <script src='/js/main.js'></script>
 <script src='/js/helper.js'></script>
 
@@ -70,7 +70,6 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
 
 
@@ -80,9 +79,7 @@ var Paginator = {}
 
 
 </head>
-  
-  <body>
-  
+  <body data-spy="scroll" data-target="#TableOfContents">
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -189,12 +186,9 @@ var Paginator = {}
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
 <div class="mx-auto row">
-  
-  
-  <div>
-  
-    
+  <div class="col-xl-10 col-12">
 
+    
     <h1 class="display-4">Tools on Programming</h1>
     
 
@@ -232,7 +226,9 @@ var Paginator = {}
 
     </div>
   </div>
-  
+  <div class="d-none col-xl-2 d-xl-block sticky-top h-100 py-2 border-left px-0">
+      
+  </div>
 </div>
 
 <hr>
@@ -261,7 +257,7 @@ var Paginator = {}
 
 
     
-<link rel="stylesheet" href='/css/solarized-dark.css'>
+<link rel="stylesheet" href='/css/highlightjs/solarized-dark.css'>
 <script src='/js/highlight.pack.js'></script>
 <script>
    

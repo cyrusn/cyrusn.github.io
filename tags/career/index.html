@@ -18,9 +18,8 @@
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
-<script src='/js/jquery-3.2.1.slim.min.js'></script>
-<script src='/js/popper.min.js'></script>
-<script src='/js/bootstrap.min.js' ></script>
+<script src='/js/jquery.slim.min.js'></script>
+<script src='/js/bootstrap.bundle.min.js' ></script>
 
 
 
@@ -39,6 +38,7 @@
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
+<script src='/js/keycodes.js'></script>
 <script src='/js/main.js'></script>
 <script src='/js/helper.js'></script>
 
@@ -61,7 +61,6 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
 
 
@@ -71,9 +70,7 @@ var Paginator = {}
 
 
 </head>
-  
-  <body>
-  
+  <body data-spy="scroll" data-target="#TableOfContents">
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -187,7 +184,7 @@ var Paginator = {}
 
 
   <div>
-    <div class="list-group mx-auto w-75">
+    <div class="list-style list-group mx-auto w-75">
       
       <div
       id='list-0'
@@ -213,13 +210,13 @@ var Paginator = {}
 
 <small>
 
-  <a class="badge badge-warning" href="/tags/100hr">100hr</a>
+  <a class="badge badge-info" href="/tags/100hr">100hr</a>
 
-  <a class="badge badge-warning" href="/tags/scope">scope</a>
+  <a class="badge badge-info" href="/tags/scope">scope</a>
 
-  <a class="badge badge-warning" href="/tags/career">career</a>
+  <a class="badge badge-info" href="/tags/career">career</a>
 
-  <a class="badge badge-warning" href="/tags/hkacmgm">hkacmgm</a>
+  <a class="badge badge-info" href="/tags/hkacmgm">hkacmgm</a>
 
 </small>
 
@@ -249,9 +246,9 @@ var Paginator = {}
 
 <small>
 
-  <a class="badge badge-warning" href="/tags/career">career</a>
+  <a class="badge badge-info" href="/tags/career">career</a>
 
-  <a class="badge badge-warning" href="/tags/vpet">vpet</a>
+  <a class="badge badge-info" href="/tags/vpet">vpet</a>
 
 </small>
 
@@ -281,13 +278,13 @@ var Paginator = {}
 
 <small>
 
-  <a class="badge badge-warning" href="/tags/education">education</a>
+  <a class="badge badge-info" href="/tags/education">education</a>
 
-  <a class="badge badge-warning" href="/tags/career">career</a>
+  <a class="badge badge-info" href="/tags/career">career</a>
 
-  <a class="badge badge-warning" href="/tags/life-planning">life planning</a>
+  <a class="badge badge-info" href="/tags/life-planning">life planning</a>
 
-  <a class="badge badge-warning" href="/tags/donald-super">donald super</a>
+  <a class="badge badge-info" href="/tags/donald-super">donald super</a>
 
 </small>
 
@@ -317,9 +314,9 @@ var Paginator = {}
 
 <small>
 
-  <a class="badge badge-warning" href="/tags/taiwan-study">taiwan study</a>
+  <a class="badge badge-info" href="/tags/taiwan-study">taiwan study</a>
 
-  <a class="badge badge-warning" href="/tags/career">career</a>
+  <a class="badge badge-info" href="/tags/career">career</a>
 
 </small>
 
@@ -332,7 +329,7 @@ var Paginator = {}
 <script type="text/javascript">
    
   
-  $('#list-0').find('.badge-secondary').toggleClass('badge-light badge-secondary')
+  $('#list-0').find('.badge-info').toggleClass('badge-light badge-info')
 
   
   Paginator = {
@@ -346,7 +343,7 @@ var Paginator = {}
 
 
     
-<link rel="stylesheet" href='/css/solarized-dark.css'>
+<link rel="stylesheet" href='/css/highlightjs/solarized-dark.css'>
 <script src='/js/highlight.pack.js'></script>
 <script>
    

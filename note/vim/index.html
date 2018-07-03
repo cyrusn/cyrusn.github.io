@@ -11,12 +11,11 @@
   <title>VIM Notes</title>
 
 
-  <meta name="description" content="VIM Basic  Vim Cheat Sheet - English VimGenius vimgifs  Some useful skills Update VIM Pathogen Plugin for i in ~/.vim/bundle/*; do git -C $i pull; done
+  <meta name="description" content="VIM Basic  amix/vimrc: The ultimate Vim configuration: vimrc Vim Cheat Sheet - English VimGenius vimgifs  Some useful skills Update VIM Pathogen Plugin for i in ~/.vim/bundle/*; do git -C $i pull; done
 Insert across multi-lines Select the lines you want to modify using Ctrl-v. Press: I: Insert before what&rsquo;s selected. A: Append after what&rsquo;s selected. c: Replace what&rsquo;s selected. Type the new text. Press Esc to apply the changes to all selected lines.">
-  <meta property="og:description" content="VIM Basic  Vim Cheat Sheet - English VimGenius vimgifs  Some useful skills Update VIM Pathogen Plugin for i in ~/.vim/bundle/*; do git -C $i pull; done
+  <meta property="og:description" content="VIM Basic  amix/vimrc: The ultimate Vim configuration: vimrc Vim Cheat Sheet - English VimGenius vimgifs  Some useful skills Update VIM Pathogen Plugin for i in ~/.vim/bundle/*; do git -C $i pull; done
 Insert across multi-lines Select the lines you want to modify using Ctrl-v. Press: I: Insert before what&rsquo;s selected. A: Append after what&rsquo;s selected. c: Replace what&rsquo;s selected. Type the new text. Press Esc to apply the changes to all selected lines.">
-  <meta name="twitter:description" content="VIM Basic  Vim Cheat Sheet - English VimGenius vimgifs  Some useful skills Update VIM Pathogen Plugin for i in ~/.vim/bundle/*; do git -C $i pull; done
-Insert across multi-lines Select the lines you …">
+  <meta name="twitter:description" content="VIM Basic  amix/vimrc: The ultimate Vim configuration: vimrc Vim Cheat Sheet - English VimGenius vimgifs  Some useful skills Update VIM Pathogen Plugin for i in ~/.vim/bundle/*; do git -C $i pull; …">
 
 
 <meta name="author" content="CyrusN"/>
@@ -24,9 +23,8 @@ Insert across multi-lines Select the lines you …">
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
-<script src='/js/jquery-3.2.1.slim.min.js'></script>
-<script src='/js/popper.min.js'></script>
-<script src='/js/bootstrap.min.js' ></script>
+<script src='/js/jquery.slim.min.js'></script>
+<script src='/js/bootstrap.bundle.min.js' ></script>
 
 
 
@@ -45,6 +43,7 @@ Insert across multi-lines Select the lines you …">
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
+<script src='/js/keycodes.js'></script>
 <script src='/js/main.js'></script>
 <script src='/js/helper.js'></script>
 
@@ -67,7 +66,6 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
 
 
@@ -77,9 +75,7 @@ var Paginator = {}
 
 
 </head>
-  
-  <body>
-  
+  <body data-spy="scroll" data-target="#TableOfContents">
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -186,12 +182,9 @@ var Paginator = {}
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
 <div class="mx-auto row">
-  
-  
-  <div>
-  
-    
+  <div class="col-xl-10 col-12">
 
+    
     <h1 class="display-4">VIM Notes</h1>
     
 
@@ -208,9 +201,9 @@ var Paginator = {}
 
 <small>
 
-  <a class="badge badge-warning" href="/tags/editor">editor</a>
+  <a class="badge badge-info" href="/tags/editor">editor</a>
 
-  <a class="badge badge-warning" href="/tags/vim">vim</a>
+  <a class="badge badge-info" href="/tags/vim">vim</a>
 
 </small>
 
@@ -232,6 +225,7 @@ var Paginator = {}
 <h1 id="vim-basic">VIM Basic</h1>
 
 <ul>
+<li><a href="https://github.com/amix/vimrc" target="_blank">amix/vimrc: The ultimate Vim configuration: vimrc</a></li>
 <li><a href="http://vim.rtorr.com/" target="_blank">Vim Cheat Sheet - English</a></li>
 <li><a href="http://vimgenius.com/" target="_blank">VimGenius</a></li>
 <li><a href="https://vimgifs.com/" target="_blank">vimgifs</a></li>
@@ -258,26 +252,24 @@ var Paginator = {}
 <li><a href="http://vimawesome.com/" target="_blank">Vim Awesome</a></li>
 </ul>
 
-<h1 id="my-installed-plugins">My installed Plugins</h1>
-
-<ul>
-<li>ctrlp</li>
-<li>emmet</li>
-<li>nerdtree</li>
-<li>vim-airline</li>
-<li>vim-go</li>
-<li>vim-airline-themes</li>
-<li>vim-snippets</li>
-<li>syntastic</li>
-<li>tagbar</li>
-<li>vim-colors-solarized</li>
-</ul>
-
 <!-- reference links -->
 
     </div>
   </div>
-  
+  <div class="d-none col-xl-2 d-xl-block sticky-top h-100 py-2 border-left px-0">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#vim-basic">VIM Basic</a></li>
+<li><a href="#some-useful-skills">Some useful skills</a>
+<ul>
+<li><a href="#update-vim-pathogen-plugin">Update VIM Pathogen Plugin</a></li>
+<li><a href="#insert-across-multi-lines">Insert across multi-lines</a></li>
+<li><a href="#search-and-replace">Search and replace</a></li>
+</ul></li>
+<li><a href="#vim-plugin">VIM Plugin</a></li>
+</ul>
+</nav>
+  </div>
 </div>
 
 <hr>
@@ -306,7 +298,7 @@ var Paginator = {}
 
 
     
-<link rel="stylesheet" href='/css/solarized-dark.css'>
+<link rel="stylesheet" href='/css/highlightjs/solarized-dark.css'>
 <script src='/js/highlight.pack.js'></script>
 <script>
    

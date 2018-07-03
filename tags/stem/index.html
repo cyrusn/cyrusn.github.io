@@ -18,9 +18,8 @@
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
-<script src='/js/jquery-3.2.1.slim.min.js'></script>
-<script src='/js/popper.min.js'></script>
-<script src='/js/bootstrap.min.js' ></script>
+<script src='/js/jquery.slim.min.js'></script>
+<script src='/js/bootstrap.bundle.min.js' ></script>
 
 
 
@@ -39,6 +38,7 @@
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
+<script src='/js/keycodes.js'></script>
 <script src='/js/main.js'></script>
 <script src='/js/helper.js'></script>
 
@@ -61,7 +61,6 @@ const navLinks = ['/']
 
 
 var Paginator = {}
-
 </script>
 
 
@@ -71,9 +70,7 @@ var Paginator = {}
 
 
 </head>
-  
-  <body>
-  
+  <body data-spy="scroll" data-target="#TableOfContents">
   <div class="bg-light d-md-flex justify-content-center">
   <nav class="navbar navbar-expand-md navbar-light">
     <a class="navbar-brand text-center"
@@ -187,7 +184,7 @@ var Paginator = {}
 
 
   <div>
-    <div class="list-group mx-auto w-75">
+    <div class="list-style list-group mx-auto w-75">
       
       <div
       id='list-0'
@@ -211,15 +208,15 @@ var Paginator = {}
 
 <small>
 
-  <a class="badge badge-warning" href="/tags/iot">iot</a>
+  <a class="badge badge-info" href="/tags/iot">iot</a>
 
-  <a class="badge badge-warning" href="/tags/stem">stem</a>
+  <a class="badge badge-info" href="/tags/stem">stem</a>
 
-  <a class="badge badge-warning" href="/tags/linux">linux</a>
+  <a class="badge badge-info" href="/tags/linux">linux</a>
 
-  <a class="badge badge-warning" href="/tags/raspberry">raspberry</a>
+  <a class="badge badge-info" href="/tags/raspberry">raspberry</a>
 
-  <a class="badge badge-warning" href="/tags/pi">pi</a>
+  <a class="badge badge-info" href="/tags/pi">pi</a>
 
 </small>
 
@@ -232,7 +229,7 @@ var Paginator = {}
 <script type="text/javascript">
    
   
-  $('#list-0').find('.badge-secondary').toggleClass('badge-light badge-secondary')
+  $('#list-0').find('.badge-info').toggleClass('badge-light badge-info')
 
   
   Paginator = {
@@ -246,7 +243,7 @@ var Paginator = {}
 
 
     
-<link rel="stylesheet" href='/css/solarized-dark.css'>
+<link rel="stylesheet" href='/css/highlightjs/solarized-dark.css'>
 <script src='/js/highlight.pack.js'></script>
 <script>
    

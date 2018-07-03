@@ -18,7 +18,7 @@
       <pubDate>Tue, 04 Oct 2016 11:56:18 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/vim/</guid>
-      <description>VIM Basic  Vim Cheat Sheet - English VimGenius vimgifs  Some useful skills Update VIM Pathogen Plugin for i in ~/.vim/bundle/*; do git -C $i pull; done
+      <description>VIM Basic  amix/vimrc: The ultimate Vim configuration: vimrc Vim Cheat Sheet - English VimGenius vimgifs  Some useful skills Update VIM Pathogen Plugin for i in ~/.vim/bundle/*; do git -C $i pull; done
 Insert across multi-lines Select the lines you want to modify using Ctrl-v. Press: I: Insert before what&amp;rsquo;s selected. A: Append after what&amp;rsquo;s selected. c: Replace what&amp;rsquo;s selected. Type the new text. Press Esc to apply the changes to all selected lines.</description>
     </item>
     

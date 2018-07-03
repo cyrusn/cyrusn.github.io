@@ -189,7 +189,7 @@ Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GP
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/python/</guid>
       <description> Tools  Format String  Games  Programming Fundamentals: 15 Puzzle Game - (In Python) The Python Challenge  pyqt  Riverbank | Software | PyQt | What is PyQt? PyQt Tutorial Python Programming Tutorials Intro/basic GUI - PyQt with Python GUI Programming tutorial - YouTube Tetris in PyQt5  tkinter (legacy)  Forget tkinter, which is designed 20 years ago
-  Tkinter object-oriented app example Introduction to GUI programming with tkinter — Object-Oriented Programming in Python 1 documentation  </description>
+  Tkinter object-oriented app example Introduction to GUI programming with tkinter — Object-Oriented Programming in Python 1 documentation  References  Python 3 Module of the Week — PyMOTW 3 Python Tutorials – Real Python  </description>
     </item>
     
     <item>
@@ -417,7 +417,7 @@ To display both the kernel version and your system&amp;rsquo;s architecture (32-
       <pubDate>Tue, 04 Oct 2016 11:56:18 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/vim/</guid>
-      <description>VIM Basic  Vim Cheat Sheet - English VimGenius vimgifs  Some useful skills Update VIM Pathogen Plugin for i in ~/.vim/bundle/*; do git -C $i pull; done
+      <description>VIM Basic  amix/vimrc: The ultimate Vim configuration: vimrc Vim Cheat Sheet - English VimGenius vimgifs  Some useful skills Update VIM Pathogen Plugin for i in ~/.vim/bundle/*; do git -C $i pull; done
 Insert across multi-lines Select the lines you want to modify using Ctrl-v. Press: I: Insert before what&amp;rsquo;s selected. A: Append after what&amp;rsquo;s selected. c: Replace what&amp;rsquo;s selected. Type the new text. Press Esc to apply the changes to all selected lines.</description>
     </item>
     
@@ -689,7 +689,7 @@ Basic Keywords Control Flow  where (A switch case can use a where clause to chec
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/page/about/</guid>
       <description>CyrusN is a math teacher in Hong Kong, eager to learn more in programming.
- A teacher has two jobs. Fill young minds with knowledge, yes. But more important, give those minds a compass so that the knowledge doesn&amp;rsquo;t go to waste. From the movie: Mr Holland&amp;rsquo;s Opus
+ A teacher has two jobs. Fill young minds with knowledge, yes. But more important, give those minds a compass so that the knowledge doesn&amp;rsquo;t go to waste. From the movie: Mr Holland&amp;rsquo;s Opus 
  </description>
     </item>
     

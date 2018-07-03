@@ -1,7 +1,6 @@
 /* global $ window Paginator navLinks pageKind */
 $(document).ready(e => {
   listenKeys()
-
   $('[data-toggle="tooltip"]').tooltip({
     html: true
   })
@@ -26,9 +25,12 @@ $(document).ready(e => {
 
   // scroll overflowed toc to 1/3 of window height
   $(window).on('activate.bs.scrollspy', function () {
-    let x = $('li > a.active').last().position()
-    let h = $(window).height()
-    $('#TableOfContents').scrollTop(x.top - h / 3)
+    // trigger only #TableOfContents is found
+    if ($('#TableOfContents').length) {
+      let pos = $('li > a.active').last().position()
+      let h = $(window).height()
+      $('#TableOfContents').scrollTop(pos.top - h / 3)
+    }
   })
 })
 
@@ -49,7 +51,7 @@ function navigate (keyCode, event) {
   const {hasNext, hasPrev, nextPage, prevPage} = Paginator
 
   switch (true) {
-    case (keyCode === 221 && !onFocus): // ]
+    case (keyCode === keycodes(']') && !onFocus): // ]
       navLinks.forEach((link, key, array) => {
         if (link === window.location.pathname) {
           const index = (key + 1) % navLinks.length
@@ -57,7 +59,7 @@ function navigate (keyCode, event) {
         }
       })
       break
-    case (keyCode === 219 && !onFocus): // [
+    case (keyCode === keycodes('[') && !onFocus):
       navLinks.forEach((link, key, array) => {
         if (link === window.location.pathname) {
           const index = (key + navLinks.length - 1) % navLinks.length
@@ -65,16 +67,16 @@ function navigate (keyCode, event) {
         }
       })
       break
-    case ((keyCode === 76 || keyCode === 39) && hasNext && !onFocus): // l
+    case ((keyCode === keycodes('l')) && hasNext && !onFocus):
       window.location.pathname = nextPage
       break
-    case ((keyCode === 72 || keyCode === 37) && hasPrev && !onFocus): // h
+    case ((keyCode === keycodes('h')) && hasPrev && !onFocus):
       window.location.pathname = prevPage
       break
-    case (keyCode === 81 && !onFocus): // q
+    case (keyCode === keycodes('q') && !onFocus):
       window.location.href = '/'
       break
-    case ((keyCode === 74 || keyCode === 40) && !onFocus): // j
+    case ((keyCode === keycodes('j')) && !onFocus):
       if (pageKind === 'page') {
         scrollPage('down', 80)
       } else {
@@ -89,7 +91,7 @@ function navigate (keyCode, event) {
         scrollActiveListToCenter()
       }
       break
-    case ((keyCode === 75 || keyCode === 38) && !onFocus): // k
+    case ((keyCode === keycodes('k')) && !onFocus):
       if (pageKind === 'page') {
         scrollPage('up', 80)
       } else {
@@ -104,20 +106,20 @@ function navigate (keyCode, event) {
         scrollActiveListToCenter()
       }
       break
-    case (keyCode === 32 && !onFocus): // "space"
+    case (keyCode === keycodes('space') && !onFocus):
       event.preventDefault()
       if (isDisabled) {
         searchBox.prop('disabled', false)
         searchBox.focus()
       }
       break
-    case (keyCode === 13 && !onFocus): // enter
+    case (keyCode === keycodes('enter') && !onFocus):
       const link = $('.list-group-item.active a').attr('href')
       if (link) {
         window.location.href = link
       }
       break
-    case (keyCode === 13): // enter
+    case (keyCode === keycodes('enter')): // enter
       event.preventDefault()
       if (!isDisabled) {
         searchBox.prop('disabled', true)
@@ -140,15 +142,15 @@ function toggleActive (el) {
   el.toggleClass('active')
 
   const arr = [{
-    from: '.text-muted, .text-light',
-    to: 'text-muted text-light'
+    target: '.text-muted, .text-light',
+    clazz: 'text-muted text-light'
   }, {
-    from: '.badge-secondary, .badge-light',
-    to: 'badge-secondary badge-light'
+    target: '.badge-info, .badge-light',
+    clazz: 'badge-info badge-light'
   }]
 
-  arr.forEach(({from, to}) => {
-    el.find(from).toggleClass(to)
+  arr.forEach(({target, clazz}) => {
+    el.find(target).toggleClass(clazz)
   })
 }
 
