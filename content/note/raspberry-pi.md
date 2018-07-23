@@ -14,7 +14,7 @@ tags:
 - [Setup guide for raspberry pi](/note/raspberry-pi-setup)
 
 # Setting for OTG mode for pi zero
-## Guide
+## instruction
 
 1. add the following text to `/boot/config.txt`
 ```sh
@@ -131,6 +131,14 @@ ps aux | grep /home/pi/MyScript.py
 - [Raspberry Pi Based Line Follower Robot with Python Code](https://circuitdigest.com/microcontroller-projects/raspberry-pi-line-follower-robot)
 - [RetroPie](/note/retropie)
 - [A fun, hands-on deep learning project for beginners, students, and hobbyists - PyImageSearch](https://www.pyimagesearch.com/2018/04/30/a-fun-hands-on-deep-learning-project-for-beginners-students-and-hobbyists/)
+- [Top 8 IDEs for Raspberry Pi - Open Source For You](https://opensourceforu.com/2017/06/top-ides-raspberry-pi/)
+- [Build Actuator app for controlling Illumination with Raspberry Pi 3 | Packt Hub](https://hub.packtpub.com/build-actuator-application-with-raspberry-pi-3/)
+- [piPrint: Raspberry Pi 3D Printer - YouTube](https://www.youtube.com/watch?v=JW6yJvLF7Jk)
+- [10+ Classic Games You Can Run on Raspberry Pi Without Emulators](https://www.makeuseof.com/tag/classic-games-raspberry-pi-without-emulators/)
+- [STICKY: GAMES LIST: Games That Work On The Pi - Raspberry Pi Forums](https://www.raspberrypi.org/forums/viewtopic.php?t=51794)
+- 避開emulator, apt-get 到通常licence 都okay, 可以去project homepage 睇睇
+- recommend Pydance, DOOM/Quake
+- [Raspberry Pi - Blynk - YouTube](https://www.youtube.com/watch?v=O6q7soSepeU)
 
 
 # Some thoughts

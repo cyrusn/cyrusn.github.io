@@ -11,7 +11,7 @@ date: 2018-03-06T14:40:04+08:00
 tags:
 ---
 
-![基礎教育課程指引－ 聚焦‧深化‧持續（小一至小六）- 分章5][@1]
+![基礎教育課程指引－ 聚焦‧深化‧持續（小一至小六）- 分章5](https://cd.edb.gov.hk/becg/tchinese/images/fig5-2.jpg)
 
 - Assessment of Learning
 - Assessment for Learning
@@ -25,7 +25,7 @@ tags:
 - IT for Assessment (電子評估)
   + Google Classroom
   + Plickers
-  + [Kahoot][@2]
+  + [Kahoot](https://kahoot.it)
 - 提升評估素養
   + 學習目標
   + 多元評估
@@ -34,12 +34,5 @@ tags:
 ## 分層課業系列的課堂
 
 # Referene
-- [Basic Education Curriculum Guide][@3]
-- [課程發展][@4]
-
-<!-- reference links -->
-
-[@1]: https://cd.edb.gov.hk/becg/tchinese/images/fig5-2.jpg
-[@2]: https://kahoot.it
-[@3]: https://cd.edb.gov.hk/becg/tchinese/index-2.html
-[@4]: http://www.edb.gov.hk/tc/curriculum-development/index.html
+- [Basic Education Curriculum Guide](https://cd.edb.gov.hk/becg/tchinese/index-2.html)
+- [課程發展](http://www.edb.gov.hk/tc/curriculum-development/index.html)

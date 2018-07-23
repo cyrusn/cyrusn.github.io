@@ -3,23 +3,7 @@ title: Download YouTube in batch
 date: '2017-04-27 23:14:04'
 ---
 
-# Table of Content
-
-<!-- MarkdownTOC -->
-
-- [`youtube-dl`](#youtube-dl)
-- [Homebrew - The missing package manager for macOS](#homebrew)
-- [How to navigate in terminal?](#how-to-navigate-in-terminal)
-  - [Example:](#example)
-- [Using the `youtube-dl` command](#using-the-youtube-dl-command)
-- [Conclusion](#conclusion)
-- [TL;DR](#tldr)
-  - [Useful options](#useful-options)
-
-<!-- /MarkdownTOC -->
-
-
-# `youtube-dl`
+# youtube-dl
 Sometime I have to download many YouTube videos or songs, if you are using mac or linux,
 `youtube-dl` would be a very handy and useful tool to get the job done. `youtube-dl` 
 is a command-line interface application which the plain text environment may deter you to

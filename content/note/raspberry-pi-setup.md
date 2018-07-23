@@ -25,9 +25,9 @@ sudo apt-get upgrade
 
 # Config the localisation options
 Run `sudo raspi-config` for changing the following settings.
-- locale
+- locale (zh-HK UTF, english UTF)
 - time zone
-- keyboard layout (US Internation)
+- keyboard layout (English US)
 - wifi country
 
 # Change username
@@ -108,8 +108,34 @@ echo 1 > /sys/class/backlight/rpi_backlight/bl_power
 echo n > /sys/class/backlight/rpi_backlight/brightness
 ```
 
+# Using openbox
+Using openbox to maximise and undecorate the application window by default.
+
+Use text editor to open `~/.config/openbox/lxde-pi-rc.xml`. Scroll to bottom and add the following code within `<applications></applications>` tag.
+
+``` xml
+<!-- 
+  This is an example to let LXTerminal open with undecorated mode
+  and maximize the screen by default
+-->
+<application name='lxterminal'>
+  <decor>no</decor>
+  <maximized>yes</maximized>
+</application>
+```
+
+# Install chinese input method
+``` sh
+sudo apt-get install scim scim-gtk2-immodule scim-tables-zh
+```
+
+Now you can run scim-setup and configure SCIM after reboot.
+
+# References
+- [The Cangjie Input Method][@3]
+
 <!-- reference links -->
 
 [@1]: https://www.raspberrypi.org/downloads/raspbian/
 [@2]: https://etcher.io/?ref=etcher_update
-[@3]: https://www.element14.com/community/docs/DOC-78156/l/raspberry-pi-7-touchscreen-display
+[@3]: http://www.robos.org/sections/chinese/cangjie.html#install

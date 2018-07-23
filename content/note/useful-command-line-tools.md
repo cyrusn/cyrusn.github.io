@@ -10,45 +10,13 @@ tags:
   - pt
   - redirect
   - terminal
+  - tmux
   - top
   - wild card
   - xargs
   - youtube-dl
   - zsh
 ---
-
-# TOC
-<!-- MarkdownTOC -->
-
-- Basic
-  - Redirect operators
-  - Create multiple files or folders
-- Useful Commands
-  - zsh
-  - tr
-  - copydir
-  - qlmanage
-  - airport
-  - pgrep and pkill
-  - shutdown
-  - textutil
-  - xargs
-  - Find files and delete them
-  - tmux
-  - ImageMagick \(convert\)
-  - ffmpeg
-  - http-server
-  - youtube-dl
-  - pt
-  - Pandoc
-  - http
-  - caddy
-  - jq
-  - top
-  - osx metadata
-
-<!-- /MarkdownTOC -->
-
 
 # Basic
 
@@ -176,8 +144,29 @@ $ find . -name "FILE-TO-FIND" -exec rm -rf {} \;
 
 ## tmux
 > tmux is a terminal multiplexer. It lets you switch easily between several programs in one terminal, detach them (they keep running in the background) and reattach them to a different terminal. 
-> 
-> - [tmux notes][@05]
+
+
+```sh
+# list all session
+tmux ls
+
+# attach to session
+tmux attach -t sessionName
+
+# create new session
+tmux new -s sessionName
+
+# kill session
+tmux kill-session -t sessionName
+```
+
+### navigate in tmux
+
+- `Ctrl-b` then `[` then you can use your normal navigation keys to scroll around (eg. Up Arrow or PgDn).
+- Press `q` to quit scroll mode.
+
+- just quit terminal for exit the session
+
 
 ## ImageMagick (convert)
 > Use [ImageMagick][@06] to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.
@@ -266,7 +255,6 @@ brew install httpie
 [@02]: http://www.zzapper.co.uk/zshtips.html
 [@03]: http://www.cs.elte.hu/zsh-manual/zsh_toc.html
 [@04]: http://www.nparikh.org/unix/prompt.php
-[@05]: {{<ref "note/tmux">}}
 [@06]: http://www.imagemagick.org/script/command-line-processing.php
 [@07]: https://www.ffmpeg.org/
 [@08]: https://www.npmjs.com/package/http-server

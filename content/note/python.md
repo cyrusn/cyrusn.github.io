@@ -29,6 +29,10 @@ tags:
 - [Tkinter object-oriented app example][@09]
 - [Introduction to GUI programming with tkinter — Object-Oriented Programming in Python 1 documentation][@10]
 
+# References
+- [Python 3 Module of the Week — PyMOTW 3](https://pymotw.com/3/)
+- [Python Tutorials – Real Python](https://realpython.com/)
+
 <!-- reference links -->
 
 [@01]: https://pyformat.info/
