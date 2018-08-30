@@ -8,15 +8,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-  <title>Notebook | CyrusN</title>
+  <title>Create Spy Camera With Raspberry Pi Zero W</title>
 
 
-  <meta name="description" content="title: &ldquo;Create Spy Camera With Raspberry Pi Zero W&rdquo; subtitle: &ldquo;&rdquo; description: draft: true katex: false mermaid: false abcjs: false date: 2018-02-13T18:51:28&#43;08:00
-tags: Table of Content  Ingredient  Difference between Camera and NoIR Camera  Using RPi-Cam-Web-Interface package  Ingredient  Raspberry Pi Zero W Camera / NoIR Camera Raspberry Pi Zero Case SD Card (16G) USB Data Cable  Difference between Camera and NoIR Camera It is nearly the same but the IR filter, mean that NoIR can perform better in night but the image will look weired in day light.">
-  <meta property="og:description" content="title: &ldquo;Create Spy Camera With Raspberry Pi Zero W&rdquo; subtitle: &ldquo;&rdquo; description: draft: true katex: false mermaid: false abcjs: false date: 2018-02-13T18:51:28&#43;08:00
-tags: Table of Content  Ingredient  Difference between Camera and NoIR Camera  Using RPi-Cam-Web-Interface package  Ingredient  Raspberry Pi Zero W Camera / NoIR Camera Raspberry Pi Zero Case SD Card (16G) USB Data Cable  Difference between Camera and NoIR Camera It is nearly the same but the IR filter, mean that NoIR can perform better in night but the image will look weired in day light.">
-  <meta name="twitter:description" content="title: &ldquo;Create Spy Camera With Raspberry Pi Zero W&rdquo; subtitle: &ldquo;&rdquo; description: draft: true katex: false mermaid: false abcjs: false date: 2018-02-13T18:51:28&#43;08:00
-tags: Table …">
+  <meta name="description" content="Ingredient  Raspberry Pi Zero W Camera / NoIR Camera Raspberry Pi Zero Case SD Card (16G) USB Data Cable  Difference between Camera and NoIR Camera It is nearly the same but the IR filter, mean that NoIR can perform better in night but the image will look weired in day light. There are some camera can switch the IR filter on / off by providing voltage, like this.">
+  <meta property="og:description" content="Ingredient  Raspberry Pi Zero W Camera / NoIR Camera Raspberry Pi Zero Case SD Card (16G) USB Data Cable  Difference between Camera and NoIR Camera It is nearly the same but the IR filter, mean that NoIR can perform better in night but the image will look weired in day light. There are some camera can switch the IR filter on / off by providing voltage, like this.">
+  <meta name="twitter:description" content="Ingredient  Raspberry Pi Zero W Camera / NoIR Camera Raspberry Pi Zero Case SD Card (16G) USB Data Cable  Difference between Camera and NoIR Camera It is nearly the same but the IR filter, mean that …">
 
 
 <meta name="author" content="CyrusN"/>
@@ -24,9 +21,17 @@ tags: Table …">
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
-<script src='/js/jquery-3.2.1.slim.min.js'></script>
-<script src='/js/popper.min.js'></script>
-<script src='/js/bootstrap.min.js' ></script>
+<script src='/js/jquery.slim.min.js'></script>
+<script src='/js/bootstrap.bundle.min.js' ></script>
+
+
+
+<script>
+  FontAwesomeConfig = {
+    searchPseudoElements: true
+  }
+</script>
+<script defer src=' /js/fontawesome-all.min.js '></script>
 
 
 
@@ -36,17 +41,23 @@ tags: Table …">
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
+<script src='/js/keycodes.js'></script>
 <script src='/js/main.js'></script>
+
+
 <script src='/js/helper.js'></script>
 
 
 <script>
+
+
+
 const pageKind = "page"
 const navLinks = ['/']
 
-  navLinks.push("\/post\/")
-
   navLinks.push("\/note\/")
+
+  navLinks.push("\/post\/")
 
   navLinks.push("\/project\/")
 
@@ -67,9 +78,9 @@ var Paginator = {}
 
 
 </head>
-<body>
-  <div class="bg-light d-md-flex justify-content-center">
-  <nav class="navbar navbar-expand-md navbar-light">
+  <body data-spy="scroll" data-target="#TableOfContents">
+  <div class="bg-light d-sm-flex justify-content-center">
+  <nav class="navbar navbar-expand-sm navbar-light">
     <a class="navbar-brand text-center"
       href='https://cyrusn.github.io'>
       CyrusN
@@ -92,7 +103,7 @@ var Paginator = {}
         
         
         <li class="nav-item">
-          <a class="nav-link" title="Post" href="/post/">Post</a>
+          <a class="nav-link" title="Note" href="/note/">Note</a>
         </li>
         
         
@@ -100,7 +111,7 @@ var Paginator = {}
         
         
         <li class="nav-item">
-          <a class="nav-link" title="Note" href="/note/">Note</a>
+          <a class="nav-link" title="Post" href="/post/">Post</a>
         </li>
         
         
@@ -137,11 +148,10 @@ var Paginator = {}
         
         
       </ul>
-    </div>
-    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
-  </nav>
-</div>
-
+      
+<form class="form-inline">
+  <button type="button" class="mx-2 d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
+</form>
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -154,13 +164,13 @@ var Paginator = {}
       <div class="modal-body py-1">
         <p class="text-secondary">
           <ul class="list-unstyled">
-              <li><code>Q</code> to go home</li>
-              <li><code>Space</code> to search</li>
-              <li><code>Enter</code> to start navigate in results</li>
-              <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
-              <li><code>H / L</code> to navigate the page number</li>
-              <li><code>[ / ]</code> to navigate the navbar</li>
+              <li><kbd>q</kbd> to go home</li>
+              <li><kbd>Space</kbd> to search</li>
+              <li><kbd>Enter</kbd> to switch from search to list navigation</li>
+              <li><kbd>Enter</kbd> to go to selected page</li>
+              <li><kbd>j / k</kbd> to navigate the list</li>
+              <li><kbd>h / l</kbd> to navigate the pages in list</li>
+              <li><kbd>[ / ]</kbd> to navigate the navbar</li>
           </ul>
         </p>
       </div>
@@ -168,58 +178,54 @@ var Paginator = {}
   </div>
 </div>
 
+    </div>
+  </nav>
+</div>
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
-<h1 class="display-4 text-center"></h1>
-<hr>
-<div class="mx-auto">
+<div class="mx-auto row">
   
+  <div class="col-xl-10 col-12">
   
-  <p class="text-muted font-weight-bold">Created on 0001-01-01</p>
-  
-  
-  <p>
-    <small>
+    
+    <h1 class="display-4">Create Spy Camera With Raspberry Pi Zero W</h1>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
   
   
   
 </small>
 
+<small>
+
+  <a class="badge badge-info" href="/tags/stem">stem</a>
+
+  <a class="badge badge-info" href="/tags/rpi">rpi</a>
+
+</small>
 
 
-  </p>
-  <hr>
-  <div id="content">
-    
 
-<hr />
+      
+      
+        <br>
+<small>
+  <span class="badge badge-success">Created on 2018-02-13</span>
+  <span class="badge badge-success">Last Modified 2018-06-26</span>
+</small>
 
-<p>title: &ldquo;Create Spy Camera With Raspberry Pi Zero W&rdquo;
-subtitle: &ldquo;&rdquo;
-description:
-draft: true
-katex: false
-mermaid: false
-abcjs: false
-date: 2018-02-13T18:51:28+08:00</p>
-
-<h2 id="tags">tags:</h2>
-
-<h1 id="table-of-content">Table of Content</h1>
-
-<!-- MarkdownTOC -->
-
-<ul>
-<li><a href="#ingredient">Ingredient</a>
-
-<ul>
-<li><a href="#difference-between-camera-and-noir-camera">Difference between Camera and NoIR Camera</a></li>
-</ul></li>
-<li><a href="#using-rpi-cam-web-interface-package">Using <code>RPi-Cam-Web-Interface</code> package</a></li>
-</ul>
-
-<!-- /MarkdownTOC -->
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        
 
 <h1 id="ingredient">Ingredient</h1>
 
@@ -248,7 +254,31 @@ on / off by providing voltage, like <a href="http://www.waveshare.net/wiki/RPi_I
 <li><a href="https://elinux.org/RPi-Cam-Web-Interface" target="_blank">RPi-Cam-Web-Interface - eLinux.org</a></li>
 </ul>
 
+<h1 id="using-rpi-ir-cut-camera-8"><a href="http://www.waveshare.net/wiki/RPi_IR-CUT_Camera" target="_blank">Using RPi IR-Cut Camera</a></h1>
+
+<blockquote>
+<p>RPi IR-CUT Camera默认工作在常规模式。 执行命令：<code>sudo nano /boot/config.txt</code>，在最后一行加入<code>disable_camera_led=1</code>，保存并重启树莓派后Camera将工作在夜视模式。 如需恢复到常规模式，只需删除<code>disable_camera_led=1</code>，保存并重启树莓派即可。 如需灵活控制显示模式，可通过树莓派的GPIO接口连接到以下位置，通过改变GPIO的电平来切换不同的模式（高电平为常规模式，低电平为夜视模式）。</p>
+</blockquote>
+
+<!-- reference links -->
+
+    </div>
   </div>
+
+  
+  <div class="d-none col-xl-2 d-xl-block sticky-top h-100 py-2 border-left px-0">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#ingredient">Ingredient</a>
+<ul>
+<li><a href="#difference-between-camera-and-noir-camera">Difference between Camera and NoIR Camera</a></li>
+</ul></li>
+<li><a href="#using-rpi-cam-web-interface-package">Using <code>RPi-Cam-Web-Interface</code> package</a></li>
+<li><a href="#using-rpi-ir-cut-camera-8"><a href="http://www.waveshare.net/wiki/RPi_IR-CUT_Camera" target="_blank">Using RPi IR-Cut Camera</a></a></li>
+</ul>
+</nav>
+  </div>
+  
 </div>
 
 <hr>
@@ -277,7 +307,7 @@ on / off by providing voltage, like <a href="http://www.waveshare.net/wiki/RPi_I
 
 
     
-<link rel="stylesheet" href='/css/atom-one-dark.css'>
+<link rel="stylesheet" href='/css/highlightjs/solarized-dark.css'>
 <script src='/js/highlight.pack.js'></script>
 <script>
    

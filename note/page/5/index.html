@@ -40,10 +40,15 @@
 
 <script src='/js/keycodes.js'></script>
 <script src='/js/main.js'></script>
+
+
 <script src='/js/helper.js'></script>
 
 
 <script>
+
+
+
 const pageKind = "section"
 const navLinks = ['/']
 
@@ -71,8 +76,8 @@ var Paginator = {}
 
 </head>
   <body data-spy="scroll" data-target="#TableOfContents">
-  <div class="bg-light d-md-flex justify-content-center">
-  <nav class="navbar navbar-expand-md navbar-light">
+  <div class="bg-light d-sm-flex justify-content-center">
+  <nav class="navbar navbar-expand-sm navbar-light">
     <a class="navbar-brand text-center"
       href='https://cyrusn.github.io'>
       CyrusN
@@ -140,13 +145,10 @@ var Paginator = {}
         
         
       </ul>
-    </div>
-    <form class="form-inline">
-      <button type="button" class="mx-2 d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
-    </form>
-  </nav>
-</div>
-
+      
+<form class="form-inline">
+  <button type="button" class="mx-2 d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
+</form>
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -159,13 +161,13 @@ var Paginator = {}
       <div class="modal-body py-1">
         <p class="text-secondary">
           <ul class="list-unstyled">
-              <li><code>Q</code> to go home</li>
-              <li><code>Space</code> to search</li>
-              <li><code>Enter</code> to start navigate in results</li>
-              <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
-              <li><code>H / L</code> to navigate the page number</li>
-              <li><code>[ / ]</code> to navigate the navbar</li>
+              <li><kbd>q</kbd> to go home</li>
+              <li><kbd>Space</kbd> to search</li>
+              <li><kbd>Enter</kbd> to switch from search to list navigation</li>
+              <li><kbd>Enter</kbd> to go to selected page</li>
+              <li><kbd>j / k</kbd> to navigate the list</li>
+              <li><kbd>h / l</kbd> to navigate the pages in list</li>
+              <li><kbd>[ / ]</kbd> to navigate the navbar</li>
           </ul>
         </p>
       </div>
@@ -173,6 +175,9 @@ var Paginator = {}
   </div>
 </div>
 
+    </div>
+  </nav>
+</div>
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
@@ -259,13 +264,161 @@ var Paginator = {}
       class="list-group-item list-group-item-light active">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
-          <a class="text-light" href="/note/alfred/">Alfred Notes</a>
+          <a class="text-light" href="/note/useful-command-line-tools/">Useful Command Line Tools</a>
+        </h6>
+        <small>2018-07-23</small>
+      </div>
+      <div class='d-flex mb-0 justify-content-between'>
+        <small>
+          <a class="text-light" href="/note/useful-command-line-tools/">/note/useful-command-line-tools/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-info" href="/tags/commandline">commandline</a>
+
+  <a class="badge badge-info" href="/tags/httpie">httpie</a>
+
+  <a class="badge badge-info" href="/tags/jq">jq</a>
+
+  <a class="badge badge-info" href="/tags/kill">kill</a>
+
+  <a class="badge badge-info" href="/tags/pt">pt</a>
+
+  <a class="badge badge-info" href="/tags/redirect">redirect</a>
+
+  <a class="badge badge-info" href="/tags/terminal">terminal</a>
+
+  <a class="badge badge-info" href="/tags/tmux">tmux</a>
+
+  <a class="badge badge-info" href="/tags/top">top</a>
+
+  <a class="badge badge-info" href="/tags/wild-card">wild card</a>
+
+  <a class="badge badge-info" href="/tags/xargs">xargs</a>
+
+  <a class="badge badge-info" href="/tags/youtube-dl">youtube-dl</a>
+
+  <a class="badge badge-info" href="/tags/zsh">zsh</a>
+
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-1'
+      class="list-group-item list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/programming-concept/">Programming Concept</a>
         </h6>
         <small>2018-06-26</small>
       </div>
       <div class='d-flex mb-0 justify-content-between'>
         <small>
-          <a class="text-light" href="/note/alfred/">/note/alfred/</a>
+          <a class="text-muted" href="/note/programming-concept/">/note/programming-concept/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-info" href="/tags/productivity">productivity</a>
+
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-2'
+      class="list-group-item list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/javascript-on-osascript/">JavaScript on OSAScript</a>
+        </h6>
+        <small>2018-06-26</small>
+      </div>
+      <div class='d-flex mb-0 justify-content-between'>
+        <small>
+          <a class="text-muted" href="/note/javascript-on-osascript/">/note/javascript-on-osascript/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-info" href="/tags/macos">macos</a>
+
+  <a class="badge badge-info" href="/tags/osascript">osascript</a>
+
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-3'
+      class="list-group-item list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/macos-setting/">macos Setting Notes</a>
+        </h6>
+        <small>2018-06-26</small>
+      </div>
+      <div class='d-flex mb-0 justify-content-between'>
+        <small>
+          <a class="text-muted" href="/note/macos-setting/">/note/macos-setting/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-info" href="/tags/macos">macos</a>
+
+  <a class="badge badge-info" href="/tags/setting">setting</a>
+
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-4'
+      class="list-group-item list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/alfred/">Alfred Notes</a>
+        </h6>
+        <small>2018-06-26</small>
+      </div>
+      <div class='d-flex mb-0 justify-content-between'>
+        <small>
+          <a class="text-muted" href="/note/alfred/">/note/alfred/</a>
         </small>
       </div>
       <small>
@@ -287,7 +440,7 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-1'
+      id='list-5'
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -321,17 +474,17 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-2'
+      id='list-6'
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
-          <a class="text-muted" href="/note/programming-concept/">Programming Concept</a>
+          <a class="text-muted" href="/note/digital-ocean/">Digital Ocean Notes</a>
         </h6>
         <small>2018-06-26</small>
       </div>
       <div class='d-flex mb-0 justify-content-between'>
         <small>
-          <a class="text-muted" href="/note/programming-concept/">/note/programming-concept/</a>
+          <a class="text-muted" href="/note/digital-ocean/">/note/digital-ocean/</a>
         </small>
       </div>
       <small>
@@ -342,7 +495,9 @@ var Paginator = {}
 
 <small>
 
-  <a class="badge badge-info" href="/tags/productivity">productivity</a>
+  <a class="badge badge-info" href="/tags/do">do</a>
+
+  <a class="badge badge-info" href="/tags/scp">scp</a>
 
 </small>
 
@@ -351,91 +506,7 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-3'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/javascript-on-osascript/">JavaScript on OSAScript</a>
-        </h6>
-        <small>2018-06-26</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/note/javascript-on-osascript/">/note/javascript-on-osascript/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/macos">macos</a>
-
-  <a class="badge badge-info" href="/tags/osascript">osascript</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-4'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/useful-command-line-tools/">Useful Command Line Tools</a>
-        </h6>
-        <small>2018-06-26</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/note/useful-command-line-tools/">/note/useful-command-line-tools/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/commandline">commandline</a>
-
-  <a class="badge badge-info" href="/tags/httpie">httpie</a>
-
-  <a class="badge badge-info" href="/tags/jq">jq</a>
-
-  <a class="badge badge-info" href="/tags/kill">kill</a>
-
-  <a class="badge badge-info" href="/tags/pt">pt</a>
-
-  <a class="badge badge-info" href="/tags/redirect">redirect</a>
-
-  <a class="badge badge-info" href="/tags/terminal">terminal</a>
-
-  <a class="badge badge-info" href="/tags/top">top</a>
-
-  <a class="badge badge-info" href="/tags/wild-card">wild card</a>
-
-  <a class="badge badge-info" href="/tags/xargs">xargs</a>
-
-  <a class="badge badge-info" href="/tags/youtube-dl">youtube-dl</a>
-
-  <a class="badge badge-info" href="/tags/zsh">zsh</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-5'
+      id='list-7'
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -459,79 +530,17 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-6'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/google-app-script/">Google App Script</a>
-        </h6>
-        <small>2018-06-26</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/note/google-app-script/">/note/google-app-script/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/google-script">google script</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-7'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/draw-more-work-less/">Draw More Work Less</a>
-        </h6>
-        <small>2018-06-26</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/note/draw-more-work-less/">/note/draw-more-work-less/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/plantuml">plantuml</a>
-
-  <a class="badge badge-info" href="/tags/uml">uml</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
       id='list-8'
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
-          <a class="text-muted" href="/note/tools-on-programming/">Tools on Programming</a>
+          <a class="text-muted" href="/note/open-ssl/">Open SSL</a>
         </h6>
         <small>2018-02-23</small>
       </div>
       <div class='d-flex mb-0 justify-content-between'>
         <small>
-          <a class="text-muted" href="/note/tools-on-programming/">/note/tools-on-programming/</a>
+          <a class="text-muted" href="/note/open-ssl/">/note/open-ssl/</a>
         </small>
       </div>
       <small>
@@ -549,13 +558,13 @@ var Paginator = {}
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
-          <a class="text-muted" href="/note/react/">React Notes</a>
+          <a class="text-muted" href="/note/ssl-tls/">SSL TLS</a>
         </h6>
         <small>2018-02-23</small>
       </div>
       <div class='d-flex mb-0 justify-content-between'>
         <small>
-          <a class="text-muted" href="/note/react/">/note/react/</a>
+          <a class="text-muted" href="/note/ssl-tls/">/note/ssl-tls/</a>
         </small>
       </div>
       <small>
@@ -566,9 +575,11 @@ var Paginator = {}
 
 <small>
 
-  <a class="badge badge-info" href="/tags/react">react</a>
+  <a class="badge badge-info" href="/tags/security">security</a>
 
-  <a class="badge badge-info" href="/tags/redux">redux</a>
+  <a class="badge badge-info" href="/tags/ssl">SSL</a>
+
+  <a class="badge badge-info" href="/tags/tls">TLS</a>
 
 </small>
 
@@ -583,6 +594,7 @@ var Paginator = {}
   
   $('#list-0').find('.badge-info').toggleClass('badge-light badge-info')
 
+  
   
   Paginator = {
     hasNext:  true ,

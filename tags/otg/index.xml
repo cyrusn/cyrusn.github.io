@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Otg on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/otg/</link>
+    <description>Recent content in Otg on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Thu, 23 Aug 2018 14:11:49 +0800</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/otg/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Raspberry Pi Zero OTG Mode</title>
+      <link>https://cyrusn.github.io/note/raspberry-pi-zero-otg-mode/</link>
+      <pubDate>Thu, 23 Aug 2018 14:11:49 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/raspberry-pi-zero-otg-mode/</guid>
+      <description>Setting for OTG mode for pi zero instruction  add the following text to /boot/config.txt
+# Enable OTG mode dtoverlay=dwc2  Save the config.txt file as plain text and then open up cmdline.txt After rootwait (the last word on the first line) add a space and then modules-load=dwc2,g_ether
+ Create an empty file named as ssh.txt in /boot
+ connect to your pi through ssh
+# default password is raspberry ssh pi@raspberrypi.</description>
+    </item>
+    
+  </channel>
+</rss>

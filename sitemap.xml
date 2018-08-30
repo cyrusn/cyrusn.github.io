@@ -3,12 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cyrusn.github.io/note/raspberry-pi-zero-otg-mode/</loc>
+    <lastmod>2018-08-23T14:11:49+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/note/input-and-output/</loc>
+    <lastmod>2018-07-16T21:08:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/note/stem_for_kids/</loc>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cyrusn.github.io/note/raspberry-pi-setup/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://cyrusn.github.io/slide/remarkjs/</loc>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/note/retropie/</loc>
+    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/post/create-spy-camera-with-raspberry-pi-zero-w/</loc>
     <lastmod>2018-06-26T23:44:07+08:00</lastmod>
   </url>
   
@@ -63,6 +88,11 @@
   </url>
   
   <url>
+    <loc>https://cyrusn.github.io/note/stem_curriculum/</loc>
+    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cyrusn.github.io/note/software-design/</loc>
     <lastmod>2018-06-26T23:44:07+08:00</lastmod>
   </url>
@@ -89,12 +119,12 @@
   
   <url>
     <loc>https://cyrusn.github.io/note/python/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://cyrusn.github.io/note/raspberry-pi/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
   </url>
   
   <url>
@@ -168,13 +198,8 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/note/tmux/</loc>
-    <lastmod>2017-05-13T13:56:45+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://cyrusn.github.io/post/download-youtube-in-batch/</loc>
-    <lastmod>2018-02-23T02:35:57+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
   </url>
   
   <url>
@@ -214,7 +239,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/note/config-digtal-ocean-droplet-as-microservice/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
   </url>
   
   <url>
@@ -264,7 +289,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/note/useful-command-line-tools/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
   </url>
   
   <url>
@@ -283,11 +308,6 @@
   </url>
   
   <url>
-    <loc>https://cyrusn.github.io/note/tools-on-programming/</loc>
-    <lastmod>2018-02-23T02:35:57+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://cyrusn.github.io/note/react/</loc>
     <lastmod>2018-02-23T02:35:57+08:00</lastmod>
   </url>
@@ -299,11 +319,6 @@
   
   <url>
     <loc>https://cyrusn.github.io/note/git/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/note/swift/</loc>
     <lastmod>2018-06-26T23:44:07+08:00</lastmod>
   </url>
   
@@ -351,6 +366,12 @@
   </url>
   
   <url>
+    <loc>https://cyrusn.github.io/tags/8bitdo/</loc>
+    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://cyrusn.github.io/tags/abcjs/</loc>
     <lastmod>2018-06-26T23:44:07+08:00</lastmod>
     <priority>0</priority>
@@ -358,7 +379,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/page/about/</loc>
-    <lastmod>2018-02-23T02:35:57+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
   </url>
   
   <url>
@@ -375,7 +396,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/tags/apache/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -394,6 +415,12 @@
   <url>
     <loc>https://cyrusn.github.io/tags/authentication/</loc>
     <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/bmp280/</loc>
+    <lastmod>2018-07-16T21:08:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -428,7 +455,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/tags/commandline/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -440,6 +467,12 @@
   
   <url>
     <loc>https://cyrusn.github.io/tags/counseling/</loc>
+    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/curriculum/</loc>
     <lastmod>2018-06-26T23:44:07+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -596,13 +629,19 @@
   
   <url>
     <loc>https://cyrusn.github.io/tags/httpie/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cyrusn.github.io/tags/https/</loc>
     <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/i2c/</loc>
+    <lastmod>2018-07-16T21:08:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -620,7 +659,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/tags/jq/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -650,7 +689,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/tags/kill/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -662,7 +701,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/tags/linux/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -709,6 +748,12 @@
   </url>
   
   <url>
+    <loc>https://cyrusn.github.io/tags/mpu6050/</loc>
+    <lastmod>2018-07-16T21:08:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://cyrusn.github.io/tags/music/</loc>
     <lastmod>2018-06-26T23:44:07+08:00</lastmod>
     <priority>0</priority>
@@ -728,13 +773,13 @@
   
   <url>
     <loc>https://cyrusn.github.io/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-08-23T14:11:49+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cyrusn.github.io/note/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-08-23T14:11:49+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -745,8 +790,14 @@
   </url>
   
   <url>
+    <loc>https://cyrusn.github.io/tags/otg/</loc>
+    <lastmod>2018-08-23T14:11:49+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://cyrusn.github.io/page/</loc>
-    <lastmod>2018-02-23T02:35:57+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -788,7 +839,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/post/</loc>
-    <lastmod>2018-02-23T02:35:57+08:00</lastmod>
+    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -806,7 +857,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/tags/pt/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -818,7 +869,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/tags/raspberry-pi/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -842,7 +893,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/tags/redirect/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -854,6 +905,12 @@
   
   <url>
     <loc>https://cyrusn.github.io/tags/remark/</loc>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/tags/rpi/</loc>
     <lastmod>2018-06-26T23:44:07+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -889,6 +946,12 @@
   </url>
   
   <url>
+    <loc>https://cyrusn.github.io/tags/sensor/</loc>
+    <lastmod>2018-07-16T21:08:06+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://cyrusn.github.io/tags/setting/</loc>
     <lastmod>2018-06-26T23:44:07+08:00</lastmod>
     <priority>0</priority>
@@ -902,13 +965,13 @@
   
   <url>
     <loc>https://cyrusn.github.io/slide/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cyrusn.github.io/tags/ssl/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -920,13 +983,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/tags/stem/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cyrusn.github.io/tags/swift/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-08-23T14:11:49+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -944,19 +1001,19 @@
   
   <url>
     <loc>https://cyrusn.github.io/tags/terminal/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cyrusn.github.io/tags/tls/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cyrusn.github.io/tags/tmux/</loc>
-    <lastmod>2017-05-13T13:56:45+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -968,7 +1025,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/tags/top/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1010,25 +1067,25 @@
   
   <url>
     <loc>https://cyrusn.github.io/tags/wild-card/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cyrusn.github.io/tags/xargs/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cyrusn.github.io/tags/youtube-dl/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cyrusn.github.io/tags/zsh/</loc>
-    <lastmod>2018-06-26T23:44:07+08:00</lastmod>
+    <lastmod>2018-07-23T17:43:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   

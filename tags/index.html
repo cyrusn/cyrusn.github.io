@@ -40,10 +40,15 @@
 
 <script src='/js/keycodes.js'></script>
 <script src='/js/main.js'></script>
+
+
 <script src='/js/helper.js'></script>
 
 
 <script>
+
+
+
 const pageKind = "taxonomyTerm"
 const navLinks = ['/']
 
@@ -71,8 +76,8 @@ var Paginator = {}
 
 </head>
   <body data-spy="scroll" data-target="#TableOfContents">
-  <div class="bg-light d-md-flex justify-content-center">
-  <nav class="navbar navbar-expand-md navbar-light">
+  <div class="bg-light d-sm-flex justify-content-center">
+  <nav class="navbar navbar-expand-sm navbar-light">
     <a class="navbar-brand text-center"
       href='https://cyrusn.github.io'>
       CyrusN
@@ -140,13 +145,10 @@ var Paginator = {}
         
         
       </ul>
-    </div>
-    <form class="form-inline">
-      <button type="button" class="mx-2 d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
-    </form>
-  </nav>
-</div>
-
+      
+<form class="form-inline">
+  <button type="button" class="mx-2 d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
+</form>
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -159,13 +161,13 @@ var Paginator = {}
       <div class="modal-body py-1">
         <p class="text-secondary">
           <ul class="list-unstyled">
-              <li><code>Q</code> to go home</li>
-              <li><code>Space</code> to search</li>
-              <li><code>Enter</code> to start navigate in results</li>
-              <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
-              <li><code>H / L</code> to navigate the page number</li>
-              <li><code>[ / ]</code> to navigate the navbar</li>
+              <li><kbd>q</kbd> to go home</li>
+              <li><kbd>Space</kbd> to search</li>
+              <li><kbd>Enter</kbd> to switch from search to list navigation</li>
+              <li><kbd>Enter</kbd> to go to selected page</li>
+              <li><kbd>j / k</kbd> to navigate the list</li>
+              <li><kbd>h / l</kbd> to navigate the pages in list</li>
+              <li><kbd>[ / ]</kbd> to navigate the navbar</li>
           </ul>
         </p>
       </div>
@@ -173,6 +175,9 @@ var Paginator = {}
   </div>
 </div>
 
+    </div>
+  </nav>
+</div>
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
@@ -183,16 +188,16 @@ var Paginator = {}
     
     <div class="mx-auto text-justify">
       
+      <a class="badge badge-pill badge-secondary" href="/tags/stem" >
+        stem <span class="badge badge-light">11 </span>
+      </a>
+      
       <a class="badge badge-pill badge-secondary" href="/tags/career" >
         career <span class="badge badge-light">4 </span>
       </a>
       
       <a class="badge badge-pill badge-secondary" href="/tags/linux" >
         linux <span class="badge badge-light">3 </span>
-      </a>
-      
-      <a class="badge badge-pill badge-secondary" href="/tags/macos" >
-        macos <span class="badge badge-light">3 </span>
       </a>
       
       <a class="badge badge-pill badge-secondary" href="/tags/pi" >
@@ -225,6 +230,14 @@ var Paginator = {}
       
       <a class="badge badge-pill badge-secondary" href="/tags/google-script" >
         google-script <span class="badge badge-light">2 </span>
+      </a>
+      
+      <a class="badge badge-pill badge-secondary" href="/tags/iot" >
+        iot <span class="badge badge-light">2 </span>
+      </a>
+      
+      <a class="badge badge-pill badge-secondary" href="/tags/macos" >
+        macos <span class="badge badge-light">2 </span>
       </a>
       
       <a class="badge badge-pill badge-secondary" href="/tags/recipe" >
@@ -263,6 +276,10 @@ var Paginator = {}
         2x <span class="badge badge-light">1 </span>
       </a>
       
+      <a class="badge badge-pill badge-secondary" href="/tags/8bitdo" >
+        8bitdo <span class="badge badge-light">1 </span>
+      </a>
+      
       <a class="badge badge-pill badge-secondary" href="/tags/activity" >
         activity <span class="badge badge-light">1 </span>
       </a>
@@ -287,6 +304,10 @@ var Paginator = {}
         authentication <span class="badge badge-light">1 </span>
       </a>
       
+      <a class="badge badge-pill badge-secondary" href="/tags/bmp280" >
+        bmp280 <span class="badge badge-light">1 </span>
+      </a>
+      
       <a class="badge badge-pill badge-secondary" href="/tags/calendar" >
         calendar <span class="badge badge-light">1 </span>
       </a>
@@ -309,6 +330,10 @@ var Paginator = {}
       
       <a class="badge badge-pill badge-secondary" href="/tags/counseling" >
         counseling <span class="badge badge-light">1 </span>
+      </a>
+      
+      <a class="badge badge-pill badge-secondary" href="/tags/curriculum" >
+        curriculum <span class="badge badge-light">1 </span>
       </a>
       
       <a class="badge badge-pill badge-secondary" href="/tags/database" >
@@ -403,12 +428,12 @@ var Paginator = {}
         https <span class="badge badge-light">1 </span>
       </a>
       
-      <a class="badge badge-pill badge-secondary" href="/tags/imagemagick" >
-        imagemagick <span class="badge badge-light">1 </span>
+      <a class="badge badge-pill badge-secondary" href="/tags/i2c" >
+        i2c <span class="badge badge-light">1 </span>
       </a>
       
-      <a class="badge badge-pill badge-secondary" href="/tags/iot" >
-        iot <span class="badge badge-light">1 </span>
+      <a class="badge badge-pill badge-secondary" href="/tags/imagemagick" >
+        imagemagick <span class="badge badge-light">1 </span>
       </a>
       
       <a class="badge badge-pill badge-secondary" href="/tags/jq" >
@@ -463,6 +488,10 @@ var Paginator = {}
         mongoose <span class="badge badge-light">1 </span>
       </a>
       
+      <a class="badge badge-pill badge-secondary" href="/tags/mpu6050" >
+        mpu6050 <span class="badge badge-light">1 </span>
+      </a>
+      
       <a class="badge badge-pill badge-secondary" href="/tags/music" >
         music <span class="badge badge-light">1 </span>
       </a>
@@ -477,6 +506,10 @@ var Paginator = {}
       
       <a class="badge badge-pill badge-secondary" href="/tags/osascript" >
         osascript <span class="badge badge-light">1 </span>
+      </a>
+      
+      <a class="badge badge-pill badge-secondary" href="/tags/otg" >
+        otg <span class="badge badge-light">1 </span>
       </a>
       
       <a class="badge badge-pill badge-secondary" href="/tags/past-paper" >
@@ -527,6 +560,10 @@ var Paginator = {}
         remark <span class="badge badge-light">1 </span>
       </a>
       
+      <a class="badge badge-pill badge-secondary" href="/tags/rpi" >
+        rpi <span class="badge badge-light">1 </span>
+      </a>
+      
       <a class="badge badge-pill badge-secondary" href="/tags/scope" >
         scope <span class="badge badge-light">1 </span>
       </a>
@@ -543,6 +580,10 @@ var Paginator = {}
         secondment <span class="badge badge-light">1 </span>
       </a>
       
+      <a class="badge badge-pill badge-secondary" href="/tags/sensor" >
+        sensor <span class="badge badge-light">1 </span>
+      </a>
+      
       <a class="badge badge-pill badge-secondary" href="/tags/setting" >
         setting <span class="badge badge-light">1 </span>
       </a>
@@ -553,14 +594,6 @@ var Paginator = {}
       
       <a class="badge badge-pill badge-secondary" href="/tags/startup" >
         startup <span class="badge badge-light">1 </span>
-      </a>
-      
-      <a class="badge badge-pill badge-secondary" href="/tags/stem" >
-        stem <span class="badge badge-light">1 </span>
-      </a>
-      
-      <a class="badge badge-pill badge-secondary" href="/tags/swift" >
-        swift <span class="badge badge-light">1 </span>
       </a>
       
       <a class="badge badge-pill badge-secondary" href="/tags/terminal" >

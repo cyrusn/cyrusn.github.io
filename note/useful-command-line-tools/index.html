@@ -11,9 +11,9 @@
   <title>Useful Command Line Tools</title>
 
 
-  <meta name="description" content="TOC  Basic  Redirect operators Create multiple files or folders  Useful Commands  zsh tr copydir qlmanage airport pgrep and pkill shutdown textutil xargs Find files and delete them tmux ImageMagick (convert) ffmpeg http-server youtube-dl pt Pandoc http caddy jq top osx metadata   Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.">
-  <meta property="og:description" content="TOC  Basic  Redirect operators Create multiple files or folders  Useful Commands  zsh tr copydir qlmanage airport pgrep and pkill shutdown textutil xargs Find files and delete them tmux ImageMagick (convert) ffmpeg http-server youtube-dl pt Pandoc http caddy jq top osx metadata   Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.">
-  <meta name="twitter:description" content="TOC  Basic  Redirect operators Create multiple files or folders  Useful Commands  zsh tr copydir qlmanage airport pgrep and pkill shutdown textutil xargs Find files and delete them tmux ImageMagick …">
+  <meta name="description" content="Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.txt # redirect the standard output result to file (append) echo &quot;hello world&quot; &gt;&gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed &#39;s/ /_/g&#39; &lt; test.txt &gt; test_1.txt # line input cat &lt;&lt; end heredoc&gt; hello heredoc&gt; world heredoc&gt; end  Create multiple files or folders mkdir sa{1.">
+  <meta property="og:description" content="Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.txt # redirect the standard output result to file (append) echo &quot;hello world&quot; &gt;&gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed &#39;s/ /_/g&#39; &lt; test.txt &gt; test_1.txt # line input cat &lt;&lt; end heredoc&gt; hello heredoc&gt; world heredoc&gt; end  Create multiple files or folders mkdir sa{1.">
+  <meta name="twitter:description" content="Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.txt # redirect the standard …">
 
 
 <meta name="author" content="CyrusN"/>
@@ -43,10 +43,15 @@
 
 <script src='/js/keycodes.js'></script>
 <script src='/js/main.js'></script>
+
+
 <script src='/js/helper.js'></script>
 
 
 <script>
+
+
+
 const pageKind = "page"
 const navLinks = ['/']
 
@@ -74,8 +79,8 @@ var Paginator = {}
 
 </head>
   <body data-spy="scroll" data-target="#TableOfContents">
-  <div class="bg-light d-md-flex justify-content-center">
-  <nav class="navbar navbar-expand-md navbar-light">
+  <div class="bg-light d-sm-flex justify-content-center">
+  <nav class="navbar navbar-expand-sm navbar-light">
     <a class="navbar-brand text-center"
       href='https://cyrusn.github.io'>
       CyrusN
@@ -143,13 +148,10 @@ var Paginator = {}
         
         
       </ul>
-    </div>
-    <form class="form-inline">
-      <button type="button" class="mx-2 d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
-    </form>
-  </nav>
-</div>
-
+      
+<form class="form-inline">
+  <button type="button" class="mx-2 d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
+</form>
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -162,13 +164,13 @@ var Paginator = {}
       <div class="modal-body py-1">
         <p class="text-secondary">
           <ul class="list-unstyled">
-              <li><code>Q</code> to go home</li>
-              <li><code>Space</code> to search</li>
-              <li><code>Enter</code> to start navigate in results</li>
-              <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
-              <li><code>H / L</code> to navigate the page number</li>
-              <li><code>[ / ]</code> to navigate the navbar</li>
+              <li><kbd>q</kbd> to go home</li>
+              <li><kbd>Space</kbd> to search</li>
+              <li><kbd>Enter</kbd> to switch from search to list navigation</li>
+              <li><kbd>Enter</kbd> to go to selected page</li>
+              <li><kbd>j / k</kbd> to navigate the list</li>
+              <li><kbd>h / l</kbd> to navigate the pages in list</li>
+              <li><kbd>[ / ]</kbd> to navigate the navbar</li>
           </ul>
         </p>
       </div>
@@ -176,11 +178,13 @@ var Paginator = {}
   </div>
 </div>
 
+    </div>
+  </nav>
+</div>
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
 <div class="mx-auto row">
-
   
   <div class="col-xl-10 col-12">
   
@@ -215,6 +219,8 @@ var Paginator = {}
 
   <a class="badge badge-info" href="/tags/terminal">terminal</a>
 
+  <a class="badge badge-info" href="/tags/tmux">tmux</a>
+
   <a class="badge badge-info" href="/tags/top">top</a>
 
   <a class="badge badge-info" href="/tags/wild-card">wild card</a>
@@ -231,57 +237,17 @@ var Paginator = {}
 
       
       
-       <br>
-        <small>
-          <span class="badge badge-info">Created on 2015-05-24</span>
-          <span class="badge badge-info">Last Modified 2018-06-26</span>
-        </small>
+        <br>
+<small>
+  <span class="badge badge-success">Created on 2015-05-24</span>
+  <span class="badge badge-success">Last Modified 2018-07-23</span>
+</small>
+
       
     </p>
     <hr>
     <div class="mx-auto" id="content">
         
-
-<h1 id="toc">TOC</h1>
-
-<!-- MarkdownTOC -->
-
-<ul>
-<li>Basic
-
-<ul>
-<li>Redirect operators</li>
-<li>Create multiple files or folders</li>
-</ul></li>
-<li>Useful Commands
-
-<ul>
-<li>zsh</li>
-<li>tr</li>
-<li>copydir</li>
-<li>qlmanage</li>
-<li>airport</li>
-<li>pgrep and pkill</li>
-<li>shutdown</li>
-<li>textutil</li>
-<li>xargs</li>
-<li>Find files and delete them</li>
-<li>tmux</li>
-<li>ImageMagick (convert)</li>
-<li>ffmpeg</li>
-<li>http-server</li>
-<li>youtube-dl</li>
-<li>pt</li>
-<li>Pandoc</li>
-<li>http</li>
-<li>caddy</li>
-<li>jq</li>
-<li>top</li>
-<li>osx metadata</li>
-</ul></li>
-</ul>
-
-<!-- /MarkdownTOC -->
 
 <h1 id="basic">Basic</h1>
 
@@ -419,11 +385,30 @@ cat file | xargs -I@ echo @
 
 <blockquote>
 <p>tmux is a terminal multiplexer. It lets you switch easily between several programs in one terminal, detach them (they keep running in the background) and reattach them to a different terminal.</p>
+</blockquote>
+
+<pre><code class="language-sh"># list all session
+tmux ls
+
+# attach to session
+tmux attach -t sessionName
+
+# create new session
+tmux new -s sessionName
+
+# kill session
+tmux kill-session -t sessionName
+</code></pre>
+
+<h3 id="navigate-in-tmux">navigate in tmux</h3>
 
 <ul>
-<li><a href="https://cyrusn.github.io/note/tmux/" target="_blank">tmux notes</a></li>
+<li><code>Ctrl-b</code> then <code>[</code> then you can use your normal navigation keys to scroll around (eg. Up Arrow or PgDn).</li>
+
+<li><p>Press <code>q</code> to quit scroll mode.</p></li>
+
+<li><p>just quit terminal for exit the session</p></li>
 </ul>
-</blockquote>
 
 <h2 id="imagemagick-convert">ImageMagick (convert)</h2>
 
@@ -473,7 +458,7 @@ $ ffmpeg -i input.mp4 output.avi
 <p><a href="http://rg3.github.io/youtube-dl/" target="_blank">youtube-dl</a> is a small command-line program to download videos from YouTube.com and a few more sites.</p>
 
 <ul>
-<li><a href="https://cyrusn.github.io/post/download-youtube-in-batch/" target="_blank">Example | Download YouTube in batch</a></li>
+<li><a href="/post/download-youtube-in-batch">Example | Download YouTube in batch</a></li>
 </ul>
 </blockquote>
 
@@ -552,7 +537,6 @@ brew install httpie
   <div class="d-none col-xl-2 d-xl-block sticky-top h-100 py-2 border-left px-0">
       <nav id="TableOfContents">
 <ul>
-<li><a href="#toc">TOC</a></li>
 <li><a href="#basic">Basic</a>
 <ul>
 <li><a href="#redirect-operators">Redirect operators</a></li>
@@ -570,7 +554,10 @@ brew install httpie
 <li><a href="#textutil">textutil</a></li>
 <li><a href="#xargs">xargs</a></li>
 <li><a href="#find-files-and-delete-them">Find files and delete them</a></li>
-<li><a href="#tmux">tmux</a></li>
+<li><a href="#tmux">tmux</a>
+<ul>
+<li><a href="#navigate-in-tmux">navigate in tmux</a></li>
+</ul></li>
 <li><a href="#imagemagick-convert">ImageMagick (convert)</a></li>
 <li><a href="#ffmpeg">ffmpeg</a></li>
 <li><a href="#http-server">http-server</a></li>

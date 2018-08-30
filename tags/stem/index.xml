@@ -7,10 +7,100 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
     <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
-    <lastBuildDate>Tue, 19 Sep 2017 09:44:09 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 23 Aug 2018 14:11:49 +0800</lastBuildDate>
     
 	<atom:link href="https://cyrusn.github.io/tags/stem/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Raspberry Pi Zero OTG Mode</title>
+      <link>https://cyrusn.github.io/note/raspberry-pi-zero-otg-mode/</link>
+      <pubDate>Thu, 23 Aug 2018 14:11:49 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/raspberry-pi-zero-otg-mode/</guid>
+      <description>Setting for OTG mode for pi zero instruction  add the following text to /boot/config.txt
+# Enable OTG mode dtoverlay=dwc2  Save the config.txt file as plain text and then open up cmdline.txt After rootwait (the last word on the first line) add a space and then modules-load=dwc2,g_ether
+ Create an empty file named as ssh.txt in /boot
+ connect to your pi through ssh
+# default password is raspberry ssh pi@raspberrypi.</description>
+    </item>
+    
+    <item>
+      <title>Input and Output</title>
+      <link>https://cyrusn.github.io/note/input-and-output/</link>
+      <pubDate>Mon, 16 Jul 2018 21:08:06 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/input-and-output/</guid>
+      <description>ADC  Analog to Digital Conversion - learn.sparkfun.com  MCP3008  MCP3008 | Raspberry Pi Analog to Digital Converters | Adafruit Learning System 14. API - SPI Devices — Gpiozero 1.4.1 Documentation Raspberry Pi ADC: MCP3008 Analog to Digital Converter  I2C sensors  I2C - learn.sparkfun.com  MPU6050 (Gyroscope)  MCP3008 | Raspberry Pi Analog to Digital Converters | Adafruit Learning System GY-521 MPU6050模块 三维角度传感器6DOF 三轴加速度计电子陀螺仪-tmall.com天猫 GitHub - Tijndagamer/mpu6050: A Python module for accessing the MPU-6050 digital accelerometer and gyroscope on a Raspberry Pi.</description>
+    </item>
+    
+    <item>
+      <title>Stem for kids</title>
+      <link>https://cyrusn.github.io/note/stem_for_kids/</link>
+      <pubDate>Sun, 01 Jul 2018 17:21:08 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/stem_for_kids/</guid>
+      <description> References  Coding for Kids-A Guide for Teachers and Parents | Udemy  </description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi Setup</title>
+      <link>https://cyrusn.github.io/note/raspberry-pi-setup/</link>
+      <pubDate>Tue, 26 Jun 2018 21:10:39 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/raspberry-pi-setup/</guid>
+      <description>Setup for a new Pi Download the latest version of Raspbian Stretch and download Etcher app to flash the raspbian image to SD card. Plug the flashed SD card to your raspberry and power it on.
+Update and upgrade Open terminal app and run the following command to update and upgrade the packages and OS.
+sudo apt-get update sudo apt-get upgrade  Config the localisation options Run sudo raspi-config for changing the following settings.</description>
+    </item>
+    
+    <item>
+      <title>RetroPie</title>
+      <link>https://cyrusn.github.io/note/retropie/</link>
+      <pubDate>Thu, 10 May 2018 09:35:04 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/retropie/</guid>
+      <description> Introduction  How to Build a Raspberry Pi Retro Game Console First Installation - RetroPie Docs  ROM  SNES ROMs | Emuparadise Super Mario World (J) - SNES ROM | Complete ROMs  Setup 8bitdo controller  8Bitdo - RetroPie Docs !! READ THIS FIRST !! - RetroPie Forum 8Bitdo Zero How to Setup in Retropie 4.2 – RobbysWeb.com  </description>
+    </item>
+    
+    <item>
+      <title>Create Spy Camera With Raspberry Pi Zero W</title>
+      <link>https://cyrusn.github.io/post/create-spy-camera-with-raspberry-pi-zero-w/</link>
+      <pubDate>Tue, 13 Feb 2018 18:51:28 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/post/create-spy-camera-with-raspberry-pi-zero-w/</guid>
+      <description>Ingredient  Raspberry Pi Zero W Camera / NoIR Camera Raspberry Pi Zero Case SD Card (16G) USB Data Cable  Difference between Camera and NoIR Camera It is nearly the same but the IR filter, mean that NoIR can perform better in night but the image will look weired in day light. There are some camera can switch the IR filter on / off by providing voltage, like this.</description>
+    </item>
+    
+    <item>
+      <title>STEM Curriculum for Hong Kong</title>
+      <link>https://cyrusn.github.io/note/stem_curriculum/</link>
+      <pubDate>Fri, 17 Nov 2017 15:15:27 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/stem_curriculum/</guid>
+      <description>Model  TPACK SMAR SetoWS_CoE_20170221_public (for EDB Web)  Curriculum design  first year  learning tasks / experiment on suitable topics  second year  learning tasks / experiment on suitable topics maybe simple project  third year  learning (1st term) tasks / experiment on suitable topics final project (2nd term)   Content Which topic should be included in the curriculum for students whose age are 12 - 16?</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Raspberry Pi</title>
+      <link>https://cyrusn.github.io/slide/introduction-to-raspberry-pi/</link>
+      <pubDate>Fri, 03 Nov 2017 11:17:14 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/introduction-to-raspberry-pi/</guid>
+      <description>class: center middle bg-dark text-light
+Introduction to Raspberry-Pi  Agenda  Raspberry Pi What is Raspberry-Pi Raspberry-Pi vs Audrino vs Microbit What is GPIO? Setup Introduction to 16 common sensors e.g. Blinking LED e.g. Blinking LED cont... Similar code in Scratch2? Programming Learning Top 10 Raspberry Pi Projects for Beginners Reference Thanks   class: center
+Raspberry Pi    RASPBERRY PI 3 MODEL B RASPBERRY PI ZERO W         More Powerful Much Lighter     What is Raspberry-Pi .</description>
+    </item>
+    
+    <item>
+      <title>Blink Led</title>
+      <link>https://cyrusn.github.io/project/blink_led/</link>
+      <pubDate>Mon, 16 Oct 2017 16:05:23 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/project/blink_led/</guid>
+      <description>  Introduction Setting Python Code  Introduction Making Blinking LED is just like writing a hello world programme in engineering.
+Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GPIO.BCM) GPIO.set(LED, GPIO.OUT) GPIO.setwarnings(False) print(&amp;quot;Programme start.&amp;quot;) GPIO.output(LED, True) time.sleep(0.5) GPIO.output(LED, False) time.sleep(0.5) print(&amp;quot;Programme closed.&amp;quot;)  </description>
+    </item>
     
     <item>
       <title>Raspberry Pi</title>
@@ -18,10 +108,18 @@
       <pubDate>Tue, 19 Sep 2017 09:44:09 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/raspberry-pi/</guid>
-      <description>Basic setting  Setup guide for raspberry pi  Setting for OTG mode for pi zero instruction  add the following text to /boot/config.txt
-# Enable OTG mode dtoverlay=dwc2  Save the config.txt file as plain text and then open up cmdline.txt After rootwait (the last word on the first line) add a space and then modules-load=dwc2,g_ether
- Create an empty file named as ssh.txt in /boot
- connect to your pi through ssh</description>
+      <description>Basic setting  Setup guide for raspberry pi  Autostart Use sudo crontab -e to set autostart programme
+@reboot python /home/pi/MyScript.py &amp;amp;  This tells Cron that every boot (or reboot or start-up) we want to run Python with the script MyScript.py. The “&amp;amp;” at the end of the line means the command is run in the background and it won’t stop the system booting up as before.
+To kill the job</description>
+    </item>
+    
+    <item>
+      <title>STEM Idea on Education</title>
+      <link>https://cyrusn.github.io/note/stem-idea-on-education/</link>
+      <pubDate>Tue, 20 Jun 2017 19:05:48 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/stem-idea-on-education/</guid>
+      <description>STEM chanllege Innovative Ideas (Think by Discipline) Coding and Math Reference Statistic Engineering Some Idea from 青年會書院 Ideas Model on STEM Education Resource  STEM chanllege  making stuff  make a plane, it can fly as long as possible. make a bridge, it can weigh as heavy as possible. make a phone, it can talk as far as possible  Solve some puzzle  decode an encrypted message   Innovative Ideas (Think by Discipline)  Health  Elderly Care Smart Home Smoke Detector falling Detector Silent Detector Bionics Eyes  Climate Change Challenge / Envoirnment  typhoon disaster Sewage Handling Extreme Heat / Cold Bio Disel storm surges terrential rains Prevent 4D Jobs (Dull, Dirty, Dangerous)   Coding and Math Reference  Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine UC Davis Center for Integrated Computing and STEM Education Zebra Puzzle - Wikiwand The Micro:bit Foundation is a global non-profit organisation making invention with technology fun for everyone!</description>
     </item>
     
   </channel>

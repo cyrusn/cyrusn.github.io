@@ -46,10 +46,15 @@ Setting Python Code import RPi.GPIO as GPIO import time LED = 18 …">
 
 <script src='/js/keycodes.js'></script>
 <script src='/js/main.js'></script>
+
+
 <script src='/js/helper.js'></script>
 
 
 <script>
+
+
+
 const pageKind = "page"
 const navLinks = ['/']
 
@@ -77,8 +82,8 @@ var Paginator = {}
 
 </head>
   <body data-spy="scroll" data-target="#TableOfContents">
-  <div class="bg-light d-md-flex justify-content-center">
-  <nav class="navbar navbar-expand-md navbar-light">
+  <div class="bg-light d-sm-flex justify-content-center">
+  <nav class="navbar navbar-expand-sm navbar-light">
     <a class="navbar-brand text-center"
       href='https://cyrusn.github.io'>
       CyrusN
@@ -146,13 +151,10 @@ var Paginator = {}
         
         
       </ul>
-    </div>
-    <form class="form-inline">
-      <button type="button" class="mx-2 d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
-    </form>
-  </nav>
-</div>
-
+      
+<form class="form-inline">
+  <button type="button" class="mx-2 d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
+</form>
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -165,13 +167,13 @@ var Paginator = {}
       <div class="modal-body py-1">
         <p class="text-secondary">
           <ul class="list-unstyled">
-              <li><code>Q</code> to go home</li>
-              <li><code>Space</code> to search</li>
-              <li><code>Enter</code> to start navigate in results</li>
-              <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
-              <li><code>H / L</code> to navigate the page number</li>
-              <li><code>[ / ]</code> to navigate the navbar</li>
+              <li><kbd>q</kbd> to go home</li>
+              <li><kbd>Space</kbd> to search</li>
+              <li><kbd>Enter</kbd> to switch from search to list navigation</li>
+              <li><kbd>Enter</kbd> to go to selected page</li>
+              <li><kbd>j / k</kbd> to navigate the list</li>
+              <li><kbd>h / l</kbd> to navigate the pages in list</li>
+              <li><kbd>[ / ]</kbd> to navigate the navbar</li>
           </ul>
         </p>
       </div>
@@ -179,11 +181,13 @@ var Paginator = {}
   </div>
 </div>
 
+    </div>
+  </nav>
+</div>
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
 <div class="mx-auto row">
-
   
   <div class="col-xl-10 col-12">
   
@@ -210,17 +214,20 @@ var Paginator = {}
 
   <a class="badge badge-info" href="/tags/raspberrypi">raspberrypi</a>
 
+  <a class="badge badge-info" href="/tags/stem">stem</a>
+
 </small>
 
 
 
       
       
-       <br>
-        <small>
-          <span class="badge badge-info">Created on 2017-10-16</span>
-          <span class="badge badge-info">Last Modified 2018-02-23</span>
-        </small>
+        <br>
+<small>
+  <span class="badge badge-success">Created on 2017-10-16</span>
+  <span class="badge badge-success">Last Modified 2018-02-23</span>
+</small>
+
       
     </p>
     <hr>
@@ -230,9 +237,9 @@ var Paginator = {}
 <!-- MarkdownTOC -->
 
 <ul>
-<li><a href="#introduction">Introduction</a></li>
-<li><a href="#setting">Setting</a></li>
-<li><a href="#python-code">Python Code</a></li>
+<li>Introduction</li>
+<li>Setting</li>
+<li>Python Code</li>
 </ul>
 
 <!-- /MarkdownTOC -->

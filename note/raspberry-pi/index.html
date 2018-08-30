@@ -11,16 +11,14 @@
   <title>Raspberry Pi</title>
 
 
-  <meta name="description" content="Basic setting  Setup guide for raspberry pi  Setting for OTG mode for pi zero instruction  add the following text to /boot/config.txt
-# Enable OTG mode dtoverlay=dwc2  Save the config.txt file as plain text and then open up cmdline.txt After rootwait (the last word on the first line) add a space and then modules-load=dwc2,g_ether
- Create an empty file named as ssh.txt in /boot
- connect to your pi through ssh">
-  <meta property="og:description" content="Basic setting  Setup guide for raspberry pi  Setting for OTG mode for pi zero instruction  add the following text to /boot/config.txt
-# Enable OTG mode dtoverlay=dwc2  Save the config.txt file as plain text and then open up cmdline.txt After rootwait (the last word on the first line) add a space and then modules-load=dwc2,g_ether
- Create an empty file named as ssh.txt in /boot
- connect to your pi through ssh">
-  <meta name="twitter:description" content="Basic setting  Setup guide for raspberry pi  Setting for OTG mode for pi zero instruction  add the following text to /boot/config.txt
-# Enable OTG mode dtoverlay=dwc2  Save the config.txt file as …">
+  <meta name="description" content="Basic setting  Setup guide for raspberry pi  Autostart Use sudo crontab -e to set autostart programme
+@reboot python /home/pi/MyScript.py &amp;  This tells Cron that every boot (or reboot or start-up) we want to run Python with the script MyScript.py. The “&amp;” at the end of the line means the command is run in the background and it won’t stop the system booting up as before.
+To kill the job">
+  <meta property="og:description" content="Basic setting  Setup guide for raspberry pi  Autostart Use sudo crontab -e to set autostart programme
+@reboot python /home/pi/MyScript.py &amp;  This tells Cron that every boot (or reboot or start-up) we want to run Python with the script MyScript.py. The “&amp;” at the end of the line means the command is run in the background and it won’t stop the system booting up as before.
+To kill the job">
+  <meta name="twitter:description" content="Basic setting  Setup guide for raspberry pi  Autostart Use sudo crontab -e to set autostart programme
+@reboot python /home/pi/MyScript.py &amp;  This tells Cron that every boot (or reboot or start-up) …">
 
 
 <meta name="author" content="CyrusN"/>
@@ -50,10 +48,15 @@
 
 <script src='/js/keycodes.js'></script>
 <script src='/js/main.js'></script>
+
+
 <script src='/js/helper.js'></script>
 
 
 <script>
+
+
+
 const pageKind = "page"
 const navLinks = ['/']
 
@@ -81,8 +84,8 @@ var Paginator = {}
 
 </head>
   <body data-spy="scroll" data-target="#TableOfContents">
-  <div class="bg-light d-md-flex justify-content-center">
-  <nav class="navbar navbar-expand-md navbar-light">
+  <div class="bg-light d-sm-flex justify-content-center">
+  <nav class="navbar navbar-expand-sm navbar-light">
     <a class="navbar-brand text-center"
       href='https://cyrusn.github.io'>
       CyrusN
@@ -150,13 +153,10 @@ var Paginator = {}
         
         
       </ul>
-    </div>
-    <form class="form-inline">
-      <button type="button" class="mx-2 d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
-    </form>
-  </nav>
-</div>
-
+      
+<form class="form-inline">
+  <button type="button" class="mx-2 d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
+</form>
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -169,13 +169,13 @@ var Paginator = {}
       <div class="modal-body py-1">
         <p class="text-secondary">
           <ul class="list-unstyled">
-              <li><code>Q</code> to go home</li>
-              <li><code>Space</code> to search</li>
-              <li><code>Enter</code> to start navigate in results</li>
-              <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
-              <li><code>H / L</code> to navigate the page number</li>
-              <li><code>[ / ]</code> to navigate the navbar</li>
+              <li><kbd>q</kbd> to go home</li>
+              <li><kbd>Space</kbd> to search</li>
+              <li><kbd>Enter</kbd> to switch from search to list navigation</li>
+              <li><kbd>Enter</kbd> to go to selected page</li>
+              <li><kbd>j / k</kbd> to navigate the list</li>
+              <li><kbd>h / l</kbd> to navigate the pages in list</li>
+              <li><kbd>[ / ]</kbd> to navigate the navbar</li>
           </ul>
         </p>
       </div>
@@ -183,11 +183,13 @@ var Paginator = {}
   </div>
 </div>
 
+    </div>
+  </nav>
+</div>
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
 <div class="mx-auto row">
-
   
   <div class="col-xl-10 col-12">
   
@@ -224,11 +226,12 @@ var Paginator = {}
 
       
       
-       <br>
-        <small>
-          <span class="badge badge-info">Created on 2017-09-19</span>
-          <span class="badge badge-info">Last Modified 2018-06-26</span>
-        </small>
+        <br>
+<small>
+  <span class="badge badge-success">Created on 2017-09-19</span>
+  <span class="badge badge-success">Last Modified 2018-07-23</span>
+</small>
+
       
     </p>
     <hr>
@@ -239,76 +242,6 @@ var Paginator = {}
 
 <ul>
 <li><a href="/note/raspberry-pi-setup">Setup guide for raspberry pi</a></li>
-</ul>
-
-<h1 id="setting-for-otg-mode-for-pi-zero">Setting for OTG mode for pi zero</h1>
-
-<h2 id="instruction">instruction</h2>
-
-<ol>
-<li><p>add the following text to <code>/boot/config.txt</code></p>
-
-<pre><code class="language-sh"># Enable OTG mode
-dtoverlay=dwc2
-</code></pre></li>
-
-<li><p>Save the config.txt file as plain text and then open up cmdline.txt After <code>rootwait</code> (the last word on the first line) add a space and then <code>modules-load=dwc2,g_ether</code></p></li>
-
-<li><p>Create an empty file named as <code>ssh.txt</code> in <code>/boot</code></p></li>
-
-<li><p>connect to your pi through ssh</p>
-
-<pre><code class="language-sh"># default password is raspberrypi
-ssh pi@raspberrypi.local
-</code></pre></li>
-
-<li><p>Setup for locale, add following text in <code>/etc/default/locale</code></p>
-
-<pre><code class="language-sh">LC_CTYPE=en_US.UTF-8
-LC_ALL=en_US.UTF-8
-</code></pre></li>
-
-<li><p>Change password, Setup localization, interface option, network naming &hellip;</p>
-
-<ul>
-<li>using command <code>sudo raspi-config</code> to setup raspberry pi zero.</li>
-</ul></li>
-
-<li><p>Setup wifi sharing, copy the following code to <code>/etc/network/interfaces</code></p>
-
-<pre><code class="language-sh">auto lo usb0
-allow-hotplug usb0
-iface usb0 inet manual
-</code></pre>
-
-<ul>
-<li><a href="https://learn.adafruit.com/turning-your-raspberry-pi-zero-into-a-usb-gadget/ethernet-tweaks" target="_blank">Ethernet Tweaks | Turning your Raspberry PI Zero into a USB Gadget | Adafruit Learning System</a></li>
-</ul></li>
-
-<li><p>Connect wifi without using <code>sudo raspi-config</code> command
-Since the <code>/boot</code> partition is accessible by any computer with an SD card reader,
-wifi configuration is now much simpler.</p></li>
-</ol>
-
-<p>A typical wpa_supplicant.conf file is:</p>
-
-<pre><code class="language-sh">ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-update_config=1
-country=«your_ISO-3166-1_two-letter_country_code»
-
-network={
-    ssid=&quot;«your_SSID»&quot;
-    psk=&quot;«your_PSK»&quot;
-    key_mgmt=WPA-PSK
-}
-</code></pre>
-
-<h2 id="add-ssh-public-key">Add ssh public key</h2>
-
-<ul>
-<li><code>mkdir ~/.ssh &amp; cd ~/.ssh &amp; touch authorized_keys</code></li>
-<li>create <code>authorized_keys</code> file</li>
-<li>paste the ssh public key to <code>authorized_keys</code> (mostly the key store in <code>~/.ssh/id_rsa.pub</code> )</li>
 </ul>
 
 <h1 id="autostart">Autostart</h1>
@@ -330,6 +263,12 @@ The “&amp;” at the end of the line means the command is run in the backgroun
 
 <ul>
 <li><a href="https://www.raspberrypi-spy.co.uk/2013/07/running-a-python-script-at-boot-using-cron/" target="_blank">Running A Python Script At Boot Using Cron</a></li>
+</ul>
+
+<h1 id="python-library">Python library</h1>
+
+<ul>
+<li><a href="https://gpiozero.readthedocs.io/en/stable/" target="_blank">gpiozero — Gpiozero 1.4.1 Documentation</a></li>
 </ul>
 
 <h1 id="pin">Pin</h1>
@@ -380,6 +319,14 @@ The “&amp;” at the end of the line means the command is run in the backgroun
 <li><a href="https://circuitdigest.com/microcontroller-projects/raspberry-pi-line-follower-robot" target="_blank">Raspberry Pi Based Line Follower Robot with Python Code</a></li>
 <li><a href="/note/retropie">RetroPie</a></li>
 <li><a href="https://www.pyimagesearch.com/2018/04/30/a-fun-hands-on-deep-learning-project-for-beginners-students-and-hobbyists/" target="_blank">A fun, hands-on deep learning project for beginners, students, and hobbyists - PyImageSearch</a></li>
+<li><a href="https://opensourceforu.com/2017/06/top-ides-raspberry-pi/" target="_blank">Top 8 IDEs for Raspberry Pi - Open Source For You</a></li>
+<li><a href="https://hub.packtpub.com/build-actuator-application-with-raspberry-pi-3/" target="_blank">Build Actuator app for controlling Illumination with Raspberry Pi 3 | Packt Hub</a></li>
+<li><a href="https://www.youtube.com/watch?v=JW6yJvLF7Jk" target="_blank">piPrint: Raspberry Pi 3D Printer - YouTube</a></li>
+<li><a href="https://www.makeuseof.com/tag/classic-games-raspberry-pi-without-emulators/" target="_blank">10+ Classic Games You Can Run on Raspberry Pi Without Emulators</a></li>
+<li><a href="https://www.raspberrypi.org/forums/viewtopic.php?t=51794" target="_blank">STICKY: GAMES LIST: Games That Work On The Pi - Raspberry Pi Forums</a></li>
+<li>避開emulator, apt-get 到通常licence 都okay, 可以去project homepage 睇睇</li>
+<li>recommend Pydance, DOOM/Quake</li>
+<li><a href="https://www.youtube.com/watch?v=O6q7soSepeU" target="_blank">Raspberry Pi - Blynk - YouTube</a></li>
 </ul>
 
 <h1 id="some-thoughts">Some thoughts</h1>
@@ -456,12 +403,8 @@ while True:
       <nav id="TableOfContents">
 <ul>
 <li><a href="#basic-setting">Basic setting</a></li>
-<li><a href="#setting-for-otg-mode-for-pi-zero">Setting for OTG mode for pi zero</a>
-<ul>
-<li><a href="#instruction">instruction</a></li>
-<li><a href="#add-ssh-public-key">Add ssh public key</a></li>
-</ul></li>
 <li><a href="#autostart">Autostart</a></li>
+<li><a href="#python-library">Python library</a></li>
 <li><a href="#pin">Pin</a></li>
 <li><a href="#examples">Examples</a></li>
 <li><a href="#links">Links</a></li>

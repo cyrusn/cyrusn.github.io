@@ -18,7 +18,7 @@
       <pubDate>Sun, 24 May 2015 22:36:53 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/useful-command-line-tools/</guid>
-      <description>TOC  Basic  Redirect operators Create multiple files or folders  Useful Commands  zsh tr copydir qlmanage airport pgrep and pkill shutdown textutil xargs Find files and delete them tmux ImageMagick (convert) ffmpeg http-server youtube-dl pt Pandoc http caddy jq top osx metadata   Basic Redirect operators # pipe echo &amp;quot;hello world&amp;quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &amp;quot;hello world&amp;quot; &amp;gt; test.</description>
+      <description>Basic Redirect operators # pipe echo &amp;quot;hello world&amp;quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &amp;quot;hello world&amp;quot; &amp;gt; test.txt # redirect the standard output result to file (append) echo &amp;quot;hello world&amp;quot; &amp;gt;&amp;gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed &#39;s/ /_/g&#39; &amp;lt; test.txt &amp;gt; test_1.txt # line input cat &amp;lt;&amp;lt; end heredoc&amp;gt; hello heredoc&amp;gt; world heredoc&amp;gt; end  Create multiple files or folders mkdir sa{1.</description>
     </item>
     
   </channel>

@@ -43,10 +43,15 @@
 
 <script src='/js/keycodes.js'></script>
 <script src='/js/main.js'></script>
+
+
 <script src='/js/helper.js'></script>
 
 
 <script>
+
+
+
 const pageKind = "page"
 const navLinks = ['/']
 
@@ -74,8 +79,8 @@ var Paginator = {}
 
 </head>
   <body data-spy="scroll" data-target="#TableOfContents">
-  <div class="bg-light d-md-flex justify-content-center">
-  <nav class="navbar navbar-expand-md navbar-light">
+  <div class="bg-light d-sm-flex justify-content-center">
+  <nav class="navbar navbar-expand-sm navbar-light">
     <a class="navbar-brand text-center"
       href='https://cyrusn.github.io'>
       CyrusN
@@ -143,13 +148,10 @@ var Paginator = {}
         
         
       </ul>
-    </div>
-    <form class="form-inline">
-      <button type="button" class="mx-2 d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
-    </form>
-  </nav>
-</div>
-
+      
+<form class="form-inline">
+  <button type="button" class="mx-2 d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
+</form>
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -162,13 +164,13 @@ var Paginator = {}
       <div class="modal-body py-1">
         <p class="text-secondary">
           <ul class="list-unstyled">
-              <li><code>Q</code> to go home</li>
-              <li><code>Space</code> to search</li>
-              <li><code>Enter</code> to start navigate in results</li>
-              <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
-              <li><code>H / L</code> to navigate the page number</li>
-              <li><code>[ / ]</code> to navigate the navbar</li>
+              <li><kbd>q</kbd> to go home</li>
+              <li><kbd>Space</kbd> to search</li>
+              <li><kbd>Enter</kbd> to switch from search to list navigation</li>
+              <li><kbd>Enter</kbd> to go to selected page</li>
+              <li><kbd>j / k</kbd> to navigate the list</li>
+              <li><kbd>h / l</kbd> to navigate the pages in list</li>
+              <li><kbd>[ / ]</kbd> to navigate the navbar</li>
           </ul>
         </p>
       </div>
@@ -176,11 +178,13 @@ var Paginator = {}
   </div>
 </div>
 
+    </div>
+  </nav>
+</div>
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
 <div class="mx-auto row">
-
   
   <div class="col-xl-10 col-12">
   
@@ -205,6 +209,8 @@ var Paginator = {}
 
 <small>
 
+  <a class="badge badge-info" href="/tags/stem">stem</a>
+
   <a class="badge badge-info" href="/tags/raspberry-pi">raspberry pi</a>
 
   <a class="badge badge-info" href="/tags/linux">linux</a>
@@ -215,11 +221,12 @@ var Paginator = {}
 
       
       
-       <br>
-        <small>
-          <span class="badge badge-info">Created on 2018-06-26</span>
-          <span class="badge badge-info">Last Modified 2018-06-26</span>
-        </small>
+        <br>
+<small>
+  <span class="badge badge-success">Created on 2018-06-26</span>
+  <span class="badge badge-success">Last Modified 2018-07-23</span>
+</small>
+
       
     </p>
     <hr>
@@ -248,16 +255,20 @@ sudo apt-get upgrade
 
 <h1 id="change-username">Change username</h1>
 
-<ol>
-<li>set root password <code>sudo passwd root</code></li>
-<li>set boot option to <strong><em>console</em></strong> in <code>sudo raspi-config</code></li>
-<li>login with root user and password you just set in step 1</li>
-<li><code>usermod -l newname pi</code></li>
-<li><code>usermod -m -d /home/newname newname</code> &lt;- rename home folder</li>
-<li>set password for newname <code>sudo passwd newname</code></li>
-<li>set boot option to <em>Desktop (auto login)</em> in <code>sudo raspi-config</code></li>
-<li><code>reboot</code></li>
-</ol>
+<pre><code class="language-sh"># add user
+sudo adduser username
+
+# add user to sudo group
+sudo adduser username sudo
+
+# logout
+sudo reboot
+
+# ... login with new username
+
+# remove pi user and its home folder
+sudo deluser --remove-home pi
+</code></pre>
 
 <h1 id="installation-of-packages">Installation of packages</h1>
 
@@ -344,16 +355,22 @@ echo n &gt; /sys/class/backlight/rpi_backlight/brightness
 
 <h1 id="install-chinese-input-method">Install chinese input method</h1>
 
+<ul>
+<li><a href="http://www.robos.org/sections/chinese/cangjie.html#install" target="_blank">The Cangjie Input Method</a></li>
+</ul>
+
 <pre><code class="language-sh">sudo apt-get install scim scim-gtk2-immodule scim-tables-zh
 </code></pre>
 
 <p>Now you can run scim-setup and configure SCIM after reboot.</p>
 
-<h1 id="references">References</h1>
+<h1 id="install-the-text-editor">Install the text editor</h1>
 
 <ul>
-<li><a href="http://www.robos.org/sections/chinese/cangjie.html#install" target="_blank">The Cangjie Input Method</a></li>
+<li><a href="https://codewith.mu/en/howto/install_raspberry_pi" target="_blank">How to install Mu on a Raspberry Pi</a></li>
 </ul>
+
+<h1 id="references">References</h1>
 
 <!-- reference links -->
 
@@ -382,6 +399,7 @@ echo n &gt; /sys/class/backlight/rpi_backlight/brightness
 </ul></li>
 <li><a href="#using-openbox">Using openbox</a></li>
 <li><a href="#install-chinese-input-method">Install chinese input method</a></li>
+<li><a href="#install-the-text-editor">Install the text editor</a></li>
 <li><a href="#references">References</a></li>
 </ul>
 </nav>

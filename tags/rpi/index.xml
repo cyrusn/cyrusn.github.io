@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rpi on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/rpi/</link>
+    <description>Recent content in Rpi on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Tue, 13 Feb 2018 18:51:28 +0800</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/rpi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Create Spy Camera With Raspberry Pi Zero W</title>
+      <link>https://cyrusn.github.io/post/create-spy-camera-with-raspberry-pi-zero-w/</link>
+      <pubDate>Tue, 13 Feb 2018 18:51:28 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/post/create-spy-camera-with-raspberry-pi-zero-w/</guid>
+      <description>Ingredient  Raspberry Pi Zero W Camera / NoIR Camera Raspberry Pi Zero Case SD Card (16G) USB Data Cable  Difference between Camera and NoIR Camera It is nearly the same but the IR filter, mean that NoIR can perform better in night but the image will look weired in day light. There are some camera can switch the IR filter on / off by providing voltage, like this.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -30,17 +30,5 @@
       <description>Example  JXA-Cookbook Apple Release Notes JavaScript for OS X Automation by Example  Display Notification #! /usr/bin/osascript -l JavaScript app = Application.currentApplication(); app.includeStandardAdditions = true; app.displayNotification(&#39;Hello, world&#39;, {withtitle: &#39;Title&#39;})  example // alfred workflow // convert Google Chrome active tab to markdown link function run(argz) { var app = Application.currentApplication(); app.includeStandardAdditions = true; var Chrome = Application(&#39;Google Chrome&#39;); var activeTab = Chrome.windows[@0].activeTab; var result = &#39;[&#39; + activeTab.title() + &#39;](&#39; + activeTab.</description>
     </item>
     
-    <item>
-      <title>Swift Notes</title>
-      <link>https://cyrusn.github.io/note/swift/</link>
-      <pubDate>Sun, 10 May 2015 00:47:48 +0000</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/swift/</guid>
-      <description> Start Developing iOS / OSX Apps The Swift Programming Language (Swift 2.2): About Swift Start Developing iOS Apps (Swift): Jump Right In
-ICON for iOS Development 23,500 Icons - Free Download | Icons8
-Basic Keywords Control Flow  where (A switch case can use a where clause to check for additional conditions.)  Computed Properties  lazy get set willSet didSet  ## Instance Methods
- self static mutating  Subscript  subscript  Inheritance  override super  Initialization  init convenience required  Deinitialization  deinit unowned  Type Casting  is as  Extension  extension  Protocols  protocol  Generic  Where Clauses  Access Control  public internal private  Summary of the Grammar Using Swift with Cocoa and Objective-C  attribute import @objc @IBOutlet @IBAction @IBDesignable strong weak  </description>
-    </item>
-    
   </channel>
 </rss>

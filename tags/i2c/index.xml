@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>I2c on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/i2c/</link>
+    <description>Recent content in I2c on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Mon, 16 Jul 2018 21:08:06 +0800</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/i2c/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Input and Output</title>
+      <link>https://cyrusn.github.io/note/input-and-output/</link>
+      <pubDate>Mon, 16 Jul 2018 21:08:06 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/input-and-output/</guid>
+      <description>ADC  Analog to Digital Conversion - learn.sparkfun.com  MCP3008  MCP3008 | Raspberry Pi Analog to Digital Converters | Adafruit Learning System 14. API - SPI Devices — Gpiozero 1.4.1 Documentation Raspberry Pi ADC: MCP3008 Analog to Digital Converter  I2C sensors  I2C - learn.sparkfun.com  MPU6050 (Gyroscope)  MCP3008 | Raspberry Pi Analog to Digital Converters | Adafruit Learning System GY-521 MPU6050模块 三维角度传感器6DOF 三轴加速度计电子陀螺仪-tmall.com天猫 GitHub - Tijndagamer/mpu6050: A Python module for accessing the MPU-6050 digital accelerometer and gyroscope on a Raspberry Pi.</description>
+    </item>
+    
+  </channel>
+</rss>

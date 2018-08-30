@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <title>Input and Output</title>
+
+
+  <meta name="description" content="ADC  Analog to Digital Conversion - learn.sparkfun.com  MCP3008  MCP3008 | Raspberry Pi Analog to Digital Converters | Adafruit Learning System 14. API - SPI Devices — Gpiozero 1.4.1 Documentation Raspberry Pi ADC: MCP3008 Analog to Digital Converter  I2C sensors  I2C - learn.sparkfun.com  MPU6050 (Gyroscope)  MCP3008 | Raspberry Pi Analog to Digital Converters | Adafruit Learning System GY-521 MPU6050模块 三维角度传感器6DOF 三轴加速度计电子陀螺仪-tmall.com天猫 GitHub - Tijndagamer/mpu6050: A Python module for accessing the MPU-6050 digital accelerometer and gyroscope on a Raspberry Pi.">
+  <meta property="og:description" content="ADC  Analog to Digital Conversion - learn.sparkfun.com  MCP3008  MCP3008 | Raspberry Pi Analog to Digital Converters | Adafruit Learning System 14. API - SPI Devices — Gpiozero 1.4.1 Documentation Raspberry Pi ADC: MCP3008 Analog to Digital Converter  I2C sensors  I2C - learn.sparkfun.com  MPU6050 (Gyroscope)  MCP3008 | Raspberry Pi Analog to Digital Converters | Adafruit Learning System GY-521 MPU6050模块 三维角度传感器6DOF 三轴加速度计电子陀螺仪-tmall.com天猫 GitHub - Tijndagamer/mpu6050: A Python module for accessing the MPU-6050 digital accelerometer and gyroscope on a Raspberry Pi.">
+  <meta name="twitter:description" content="ADC  Analog to Digital Conversion - learn.sparkfun.com  MCP3008  MCP3008 | Raspberry Pi Analog to Digital Converters | Adafruit Learning System 14. API - SPI Devices — Gpiozero 1.4.1 Documentation …">
+
+
+<meta name="author" content="CyrusN"/>
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+<script src='/js/jquery.slim.min.js'></script>
+<script src='/js/bootstrap.bundle.min.js' ></script>
+
+
+
+<script>
+  FontAwesomeConfig = {
+    searchPseudoElements: true
+  }
+</script>
+<script defer src=' /js/fontawesome-all.min.js '></script>
+
+
+
+<script src=' /js/lunr.min.js '></script>
+
+
+<link rel="stylesheet" type="text/css" href='/css/style.css'>
+
+
+<script src='/js/keycodes.js'></script>
+<script src='/js/main.js'></script>
+
+
+<script src='/js/helper.js'></script>
+
+
+<script>
+
+
+
+const pageKind = "page"
+const navLinks = ['/']
+
+  navLinks.push("\/note\/")
+
+  navLinks.push("\/post\/")
+
+  navLinks.push("\/project\/")
+
+  navLinks.push("\/slide\/")
+
+  navLinks.push("\/tags\/")
+
+  navLinks.push("\/page\/about\/")
+
+
+var Paginator = {}
+</script>
+
+
+
+
+
+
+
+</head>
+  <body data-spy="scroll" data-target="#TableOfContents">
+  <div class="bg-light d-sm-flex justify-content-center">
+  <nav class="navbar navbar-expand-sm navbar-light">
+    <a class="navbar-brand text-center"
+      href='https://cyrusn.github.io'>
+      CyrusN
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Note" href="/note/">Note</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Post" href="/post/">Post</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Project" href="/project/">Project</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Slide" href="/slide/">Slide</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Tags" href="/tags/">Tags</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="About" href="/page/about/">About</a>
+        </li>
+        
+        
+      </ul>
+      
+<form class="form-inline">
+  <button type="button" class="mx-2 d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
+</form>
+<div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-info text-light">
+        <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body py-1">
+        <p class="text-secondary">
+          <ul class="list-unstyled">
+              <li><kbd>q</kbd> to go home</li>
+              <li><kbd>Space</kbd> to search</li>
+              <li><kbd>Enter</kbd> to switch from search to list navigation</li>
+              <li><kbd>Enter</kbd> to go to selected page</li>
+              <li><kbd>j / k</kbd> to navigate the list</li>
+              <li><kbd>h / l</kbd> to navigate the pages in list</li>
+              <li><kbd>[ / ]</kbd> to navigate the navbar</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </nav>
+</div>
+
+  <div class="container mt-2 mx-auto mb-4 text-dark">
+    
+<div class="mx-auto row">
+  
+  <div class="col-xl-10 col-12">
+  
+    
+    <h1 class="display-4">Input and Output</h1>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-info" href="/tags/stem">stem</a>
+
+  <a class="badge badge-info" href="/tags/sensor">sensor</a>
+
+  <a class="badge badge-info" href="/tags/i2c">i2c</a>
+
+  <a class="badge badge-info" href="/tags/bmp280">bmp280</a>
+
+  <a class="badge badge-info" href="/tags/mpu6050">mpu6050</a>
+
+</small>
+
+
+
+      
+      
+        <br>
+<small>
+  <span class="badge badge-success">Created on 2018-07-16</span>
+  <span class="badge badge-success">Last Modified 2018-07-16</span>
+</small>
+
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        
+
+<h1 id="adc">ADC</h1>
+
+<ul>
+<li><a href="https://learn.sparkfun.com/tutorials/analog-to-digital-conversion" target="_blank">Analog to Digital Conversion - learn.sparkfun.com</a></li>
+</ul>
+
+<h2 id="mcp3008">MCP3008</h2>
+
+<ul>
+<li><a href="https://learn.adafruit.com/raspberry-pi-analog-to-digital-converters/mcp3008" target="_blank">MCP3008 | Raspberry Pi Analog to Digital Converters | Adafruit Learning System</a></li>
+<li><a href="https://gpiozero.readthedocs.io/en/stable/api_spi.html" target="_blank">14. API - SPI Devices — Gpiozero 1.4.1 Documentation</a></li>
+<li><a href="https://pimylifeup.com/raspberry-pi-adc/" target="_blank">Raspberry Pi ADC: MCP3008 Analog to Digital Converter</a></li>
+</ul>
+
+<h1 id="i2c-sensors">I2C sensors</h1>
+
+<ul>
+<li><a href="https://learn.sparkfun.com/tutorials/i2c" target="_blank">I2C - learn.sparkfun.com</a></li>
+</ul>
+
+<h2 id="mpu6050-gyroscope">MPU6050 (Gyroscope)</h2>
+
+<ul>
+<li><a href="https://learn.adafruit.com/raspberry-pi-analog-to-digital-converters/mcp3008" target="_blank">MCP3008 | Raspberry Pi Analog to Digital Converters | Adafruit Learning System</a></li>
+<li><a href="https://detail.tmall.com/item.htm?spm=a1z10.3-b-s.w4011-16538328900.32.6e1c3d6ckNlXbG&amp;id=41337720621&amp;rn=ed13268584dfdfc4a99f55bd720c5083&amp;abbucket=19" target="_blank">GY-521 MPU6050模块 三维角度传感器6DOF 三轴加速度计电子陀螺仪-tmall.com天猫</a></li>
+<li><a href="https://github.com/Tijndagamer/mpu6050" target="_blank">GitHub - Tijndagamer/mpu6050: A Python module for accessing the MPU-6050 digital accelerometer and gyroscope on a Raspberry Pi.</a></li>
+</ul>
+
+<h2 id="bmp280-temperature-pressure-and-altitude">BMP280 (Temperature, Pressure and Altitude)</h2>
+
+<ul>
+<li><a href="https://detail.tmall.com/item.htm?spm=a1z10.3-b-s.w4011-16538328900.33.6e1c3d6cOy9p9v&amp;id=536632725681&amp;rn=19d390f543aaed82ccfdbfbc49aa836e&amp;abbucket=19" target="_blank">GY-BMP280-3.3 高精度大气压强传感器模块 高度计传感器-tmall.com天猫</a></li>
+<li><a href="https://github.com/adafruit/Adafruit_CircuitPython_BMP280" target="_blank">GitHub - adafruit/Adafruit_CircuitPython_BMP280: CircuitPython driver for the BMP280</a></li>
+</ul>
+
+<pre><code class="language-py"># Example
+import board
+import digitalio
+import busio
+import time
+from adafruit_bmp280 import adafruit_bmp280
+
+# Create library object using our Bus I2C port
+i2c = busio.I2C(board.SCL, board.SDA)
+bmp280 = adafruit_bmp280.Adafruit_BMP280_I2C(i2c, address=0x68)
+
+bmp280.seaLevelhPa = 1013.25
+
+while True:
+    print(&quot;\nTemperature: %0.1f C&quot; % bmp280.temperature)
+    print(&quot;Pressure: %0.1f hPa&quot; % bmp280.pressure)
+    print(&quot;Altitude = %0.2f meters&quot; % bmp280.altitude)
+    time.sleep(2)
+</code></pre>
+
+<h1 id="spi">SPI</h1>
+
+<ul>
+<li><a href="https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi" target="_blank">Serial Peripheral Interface (SPI) - learn.sparkfun.com</a></li>
+</ul>
+
+<h1 id="others">Others</h1>
+
+<ul>
+<li><a href="https://app.jupas.edu.hk/JUPAS4_SCHOOL/?x=*A1JOiUoxK0eTbbCyrJUTg" target="_blank">Joint University Programmes Admissions System</a></li>
+</ul>
+
+<!-- reference links -->
+
+    </div>
+  </div>
+
+  
+  <div class="d-none col-xl-2 d-xl-block sticky-top h-100 py-2 border-left px-0">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#adc">ADC</a>
+<ul>
+<li><a href="#mcp3008">MCP3008</a></li>
+</ul></li>
+<li><a href="#i2c-sensors">I2C sensors</a>
+<ul>
+<li><a href="#mpu6050-gyroscope">MPU6050 (Gyroscope)</a></li>
+<li><a href="#bmp280-temperature-pressure-and-altitude">BMP280 (Temperature, Pressure and Altitude)</a></li>
+</ul></li>
+<li><a href="#spi">SPI</a></li>
+<li><a href="#others">Others</a></li>
+</ul>
+</nav>
+  </div>
+  
+</div>
+
+<hr>
+<div class="disqus-comments mx-auto px-5">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cyrusngithubio" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+
+    
+<link rel="stylesheet" href='/css/highlightjs/solarized-dark.css'>
+<script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>

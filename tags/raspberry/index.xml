@@ -39,10 +39,9 @@ Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GP
       <pubDate>Tue, 19 Sep 2017 09:44:09 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/raspberry-pi/</guid>
-      <description>Basic setting  Setup guide for raspberry pi  Setting for OTG mode for pi zero instruction  add the following text to /boot/config.txt
-# Enable OTG mode dtoverlay=dwc2  Save the config.txt file as plain text and then open up cmdline.txt After rootwait (the last word on the first line) add a space and then modules-load=dwc2,g_ether
- Create an empty file named as ssh.txt in /boot
- connect to your pi through ssh</description>
+      <description>Basic setting  Setup guide for raspberry pi  Autostart Use sudo crontab -e to set autostart programme
+@reboot python /home/pi/MyScript.py &amp;amp;  This tells Cron that every boot (or reboot or start-up) we want to run Python with the script MyScript.py. The “&amp;amp;” at the end of the line means the command is run in the background and it won’t stop the system booting up as before.
+To kill the job</description>
     </item>
     
   </channel>

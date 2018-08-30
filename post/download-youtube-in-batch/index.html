@@ -11,9 +11,9 @@
   <title>Download YouTube in batch</title>
 
 
-  <meta name="description" content="Table of Content  youtube-dl Homebrew - The missing package manager for macOS How to navigate in terminal?  Example:  Using the youtube-dl command Conclusion TL;DR  Useful options   youtube-dl Sometime I have to download many YouTube videos or songs, if you are using mac or linux, youtube-dl would be a very handy and useful tool to get the job done. youtube-dl is a command-line interface application which the plain text environment may deter you to give a try, but once you can get used to it, you will find that using command-line application somehow are much easier than GUI (Graphical User Interface) application.">
-  <meta property="og:description" content="Table of Content  youtube-dl Homebrew - The missing package manager for macOS How to navigate in terminal?  Example:  Using the youtube-dl command Conclusion TL;DR  Useful options   youtube-dl Sometime I have to download many YouTube videos or songs, if you are using mac or linux, youtube-dl would be a very handy and useful tool to get the job done. youtube-dl is a command-line interface application which the plain text environment may deter you to give a try, but once you can get used to it, you will find that using command-line application somehow are much easier than GUI (Graphical User Interface) application.">
-  <meta name="twitter:description" content="Table of Content  youtube-dl Homebrew - The missing package manager for macOS How to navigate in terminal?  Example:  Using the youtube-dl command Conclusion TL;DR  Useful options   youtube-dl …">
+  <meta name="description" content="youtube-dl Sometime I have to download many YouTube videos or songs, if you are using mac or linux, youtube-dl would be a very handy and useful tool to get the job done. youtube-dl is a command-line interface application which the plain text environment may deter you to give a try, but once you can get used to it, you will find that using command-line application somehow are much easier than GUI (Graphical User Interface) application.">
+  <meta property="og:description" content="youtube-dl Sometime I have to download many YouTube videos or songs, if you are using mac or linux, youtube-dl would be a very handy and useful tool to get the job done. youtube-dl is a command-line interface application which the plain text environment may deter you to give a try, but once you can get used to it, you will find that using command-line application somehow are much easier than GUI (Graphical User Interface) application.">
+  <meta name="twitter:description" content="youtube-dl Sometime I have to download many YouTube videos or songs, if you are using mac or linux, youtube-dl would be a very handy and useful tool to get the job done. youtube-dl is a command-line …">
 
 
 <meta name="author" content="CyrusN"/>
@@ -43,10 +43,15 @@
 
 <script src='/js/keycodes.js'></script>
 <script src='/js/main.js'></script>
+
+
 <script src='/js/helper.js'></script>
 
 
 <script>
+
+
+
 const pageKind = "page"
 const navLinks = ['/']
 
@@ -74,8 +79,8 @@ var Paginator = {}
 
 </head>
   <body data-spy="scroll" data-target="#TableOfContents">
-  <div class="bg-light d-md-flex justify-content-center">
-  <nav class="navbar navbar-expand-md navbar-light">
+  <div class="bg-light d-sm-flex justify-content-center">
+  <nav class="navbar navbar-expand-sm navbar-light">
     <a class="navbar-brand text-center"
       href='https://cyrusn.github.io'>
       CyrusN
@@ -143,13 +148,10 @@ var Paginator = {}
         
         
       </ul>
-    </div>
-    <form class="form-inline">
-      <button type="button" class="mx-2 d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
-    </form>
-  </nav>
-</div>
-
+      
+<form class="form-inline">
+  <button type="button" class="mx-2 d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
+</form>
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -162,13 +164,13 @@ var Paginator = {}
       <div class="modal-body py-1">
         <p class="text-secondary">
           <ul class="list-unstyled">
-              <li><code>Q</code> to go home</li>
-              <li><code>Space</code> to search</li>
-              <li><code>Enter</code> to start navigate in results</li>
-              <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
-              <li><code>H / L</code> to navigate the page number</li>
-              <li><code>[ / ]</code> to navigate the navbar</li>
+              <li><kbd>q</kbd> to go home</li>
+              <li><kbd>Space</kbd> to search</li>
+              <li><kbd>Enter</kbd> to switch from search to list navigation</li>
+              <li><kbd>Enter</kbd> to go to selected page</li>
+              <li><kbd>j / k</kbd> to navigate the list</li>
+              <li><kbd>h / l</kbd> to navigate the pages in list</li>
+              <li><kbd>[ / ]</kbd> to navigate the navbar</li>
           </ul>
         </p>
       </div>
@@ -176,11 +178,13 @@ var Paginator = {}
   </div>
 </div>
 
+    </div>
+  </nav>
+</div>
 
   <div class="container mt-2 mx-auto mb-4 text-dark">
     
 <div class="mx-auto row">
-
   
   <div class="col-xl-10 col-12">
   
@@ -203,41 +207,19 @@ var Paginator = {}
 
       
       
-       <br>
-        <small>
-          <span class="badge badge-info">Created on 2017-04-27</span>
-          <span class="badge badge-info">Last Modified 2018-02-23</span>
-        </small>
+        <br>
+<small>
+  <span class="badge badge-success">Created on 2017-04-27</span>
+  <span class="badge badge-success">Last Modified 2018-07-23</span>
+</small>
+
       
     </p>
     <hr>
     <div class="mx-auto" id="content">
         
 
-<h1 id="table-of-content">Table of Content</h1>
-
-<!-- MarkdownTOC -->
-
-<ul>
-<li><a href="#youtube-dl"><code>youtube-dl</code></a></li>
-<li><a href="#homebrew">Homebrew - The missing package manager for macOS</a></li>
-<li><a href="#how-to-navigate-in-terminal">How to navigate in terminal?</a>
-
-<ul>
-<li><a href="#example">Example:</a></li>
-</ul></li>
-<li><a href="#using-the-youtube-dl-command">Using the <code>youtube-dl</code> command</a></li>
-<li><a href="#conclusion">Conclusion</a></li>
-<li><a href="#tldr">TL;DR</a>
-
-<ul>
-<li><a href="#useful-options">Useful options</a></li>
-</ul></li>
-</ul>
-
-<!-- /MarkdownTOC -->
-
-<h1 id="youtube-dl"><code>youtube-dl</code></h1>
+<h1 id="youtube-dl">youtube-dl</h1>
 
 <p>Sometime I have to download many YouTube videos or songs, if you are using mac or linux,
 <code>youtube-dl</code> would be a very handy and useful tool to get the job done. <code>youtube-dl</code>
@@ -360,8 +342,7 @@ EOF
   <div class="d-none col-xl-2 d-xl-block sticky-top h-100 py-2 border-left px-0">
       <nav id="TableOfContents">
 <ul>
-<li><a href="#table-of-content">Table of Content</a></li>
-<li><a href="#youtube-dl"><code>youtube-dl</code></a></li>
+<li><a href="#youtube-dl">youtube-dl</a></li>
 <li><a href="#homebrew"><a href="https://brew.sh/" target="_blank">Homebrew</a> <small>- The missing package manager for macOS</small></a></li>
 <li><a href="#how-to-navigate-in-terminal">How to navigate in terminal?</a>
 <ul>
