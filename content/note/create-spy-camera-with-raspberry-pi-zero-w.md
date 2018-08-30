@@ -2,12 +2,13 @@
 title: "Create Spy Camera With Raspberry Pi Zero W"
 subtitle: ""
 description:
-draft: true
 katex: false
 mermaid: false
 abcjs: false
 date: 2018-02-13T18:51:28+08:00
 tags:
+  - stem
+  - rpi
 ---
 
 # Ingredient

@@ -48,7 +48,7 @@ class: center middle bg-dark text-light
 # Begin with the End in Mind
 ## Final product
 
-.overflow.h-75[
+.scroll.h-75[
 
 ```js
 var form = FormApp.openByUrl("Paste_the_form_id_here")
@@ -250,7 +250,7 @@ class: row
 Now we start to create some interesting question. First we assume you have an
 excel file that stores student information like the table listed below
 
-.border.w-75.mx-auto.smaller.overflow.h-25[
+.border.w-75.mx-auto.smaller.scroll.h-25[
 | classcode | classno |   name   |
 |-----------|---------|----------|
 | 1A        |       1 | Apple    |

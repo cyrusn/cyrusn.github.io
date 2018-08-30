@@ -36,8 +36,8 @@ class: center middle bg-info text-light
 ---
 # 流程
 
-.overflow.h-75[
-[![workflow]][@3]
+.scroll.h-75[
+[![workflow][@3-img]][@3-url]
 ]
 
 ---
@@ -66,9 +66,13 @@ class: center middle bg-info text-light
 - `getting things done`
 ]]
 
+
+<!-- reference links -->
+
 [@1]: https://cirillocompany.de/pages/pomodoro-technique
 [@2]: http://gettingthingsdone.com/
-[@3]: https://dl.dropboxusercontent.com/s/hs9jspievysiptw/flow.svg
+[@3-img]: ./flow.svg
+[@3-url]: ./flow.svg
 [@4]: http://www.moosti.com/
 [@5]: https://en.wikipedia.org/wiki/Pomodoro_Technique
 [@6]: https://en.wikipedia.org/wiki/Getting_Things_Done

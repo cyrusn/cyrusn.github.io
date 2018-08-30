@@ -259,7 +259,7 @@ brew install httpie
 [@07]: https://www.ffmpeg.org/
 [@08]: https://www.npmjs.com/package/http-server
 [@09]: http://rg3.github.io/youtube-dl/
-[@10]: {{< ref "post/download-youtube-in-batch" >}}
+[@10]: /post/download-youtube-in-batch
 [@11]: https://github.com/monochromegane/the_platinum_searcher
 [@12]: http://johnmacfarlane.net/pandoc/index.html
 [@13]: http://johnmacfarlane.net/pandoc/demos.html

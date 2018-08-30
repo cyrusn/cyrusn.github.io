@@ -8,14 +8,17 @@ mermaid: false
 abcjs: false
 date: 2018-06-26T21:10:39+08:00
 tags:
+  - stem
   - raspberry pi
   - linux
 ---
 
 # Setup for a new Pi
+
 Download the latest version of [Raspbian Stretch][@1] and download [Etcher app][@2] to flash the raspbian image to SD card. Plug the flashed SD card to your raspberry and power it on.
 
 # Update and upgrade
+
 Open terminal app and run the following command to update and upgrade the packages and OS.
 
 ```sh
@@ -24,6 +27,7 @@ sudo apt-get upgrade
 ```
 
 # Config the localisation options
+
 Run `sudo raspi-config` for changing the following settings.
 - locale (zh-HK UTF, english UTF)
 - time zone
@@ -32,16 +36,24 @@ Run `sudo raspi-config` for changing the following settings.
 
 # Change username
 
-1. set root password `sudo passwd root`
-2. set boot option to ***console*** in `sudo raspi-config`
-3. login with root user and password you just set in step 1
-4. `usermod -l newname pi`
-5. `usermod -m -d /home/newname newname` <- rename home folder
-6. set password for newname `sudo passwd newname`
-7. set boot option to *Desktop (auto login)* in `sudo raspi-config`
-8. `reboot`
+``` sh
+# add user
+sudo adduser username
+
+# add user to sudo group
+sudo adduser username sudo
+
+# logout
+sudo reboot
+
+# ... login with new username
+
+# remove pi user and its home folder
+sudo deluser --remove-home pi
+```
 
 # Installation of packages
+
 Here is the list of useful packages suggested to install to your pi
 
 - vim
@@ -82,7 +94,9 @@ alias ls='ls --classify -ahNF --group-directories-first --color=auto --time-styl
 ```
 
 # Setting for Touch led
+
 ## Rotation
+
 ```sh
 # lcd_rotate=0 Normal 
 # lcd_rotate=1 90 degrees 
@@ -109,6 +123,7 @@ echo n > /sys/class/backlight/rpi_backlight/brightness
 ```
 
 # Using openbox
+
 Using openbox to maximise and undecorate the application window by default.
 
 Use text editor to open `~/.config/openbox/lxde-pi-rc.xml`. Scroll to bottom and add the following code within `<applications></applications>` tag.
@@ -125,17 +140,25 @@ Use text editor to open `~/.config/openbox/lxde-pi-rc.xml`. Scroll to bottom and
 ```
 
 # Install chinese input method
+
+- [The Cangjie Input Method][@3]
+
 ``` sh
 sudo apt-get install scim scim-gtk2-immodule scim-tables-zh
 ```
 
 Now you can run scim-setup and configure SCIM after reboot.
 
+# Install the text editor
+
+- [How to install Mu on a Raspberry Pi][@5]
+
 # References
-- [The Cangjie Input Method][@3]
 
 <!-- reference links -->
 
 [@1]: https://www.raspberrypi.org/downloads/raspbian/
 [@2]: https://etcher.io/?ref=etcher_update
 [@3]: http://www.robos.org/sections/chinese/cangjie.html#install
+[@4]: https://medium.com/@melzoghbi/install-visual-studio-code-on-raspbian-eedc566c616d
+[@5]: https://codewith.mu/en/howto/install_raspberry_pi

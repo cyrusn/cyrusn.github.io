@@ -2,7 +2,7 @@ baseurl = "https://cyrusn.github.io"
 DefaultContentLanguage = "en"
 title = "Notebook | CyrusN"
 theme = "notebook-searcher"
-metaDataFormat = "yaml"
+# metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
 paginate = 10
@@ -20,22 +20,11 @@ enableGitInfo = true
   logo = "img/avatar.png"
   favicon = "favicon.ico"
   dateFormat = "2006-01-02"
-  commit = false
-  rss = false
-  comments = true
-  search = true
-  showHint = true
-
-[Params.mermaidOption]
-  theme = 'neutral'
-
-[Params.RemarkOption]
-  highlight-lines = true
-  highlight-style = "atom-one-dark"
-  ratio = "4:3"
-  [Params.RemarkOption.navigation]
-      scroll = false
-      # click = true
+  # commit = false
+  # rss = false
+  # comments = true
+  # search = true
+  # showHint = true
 
 [Author]
   name = "CyrusN"
@@ -45,21 +34,15 @@ enableGitInfo = true
   twitter = "cyrusncy"
 
 [[menu.main]]
-    name = "Post"
-    identifier = "post"
-    url = "/post/"
-    weight = 2
-
-[[menu.main]]
     name = "Note"
     identifier = "note"
     url = "/note/"
-    weight = 3
+    weight = 2
 
 [[menu.main]]
-    name = "Project"
-    identifier = "project"
-    url = "/project/"
+    name = "Post"
+    identifier = "post"
+    url = "/post/"
     weight = 4
 
 [[menu.main]]

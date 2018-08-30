@@ -7,6 +7,7 @@ RemarkOption:
 tags:
     - raspberry
     - pi
+    - stem
 ---
 
 class: center middle bg-dark text-light
@@ -93,7 +94,7 @@ class: center
 
 # Introduction to 16 common sensors
 
-.w-50.mx-auto[
+.img-50[
 ![16sensors][@07]
 ]
 
@@ -101,7 +102,7 @@ class: center
 class: center middle
 # e.g. Blinking LED
 
-.img-50.mx-auto[
+.img-50[
   ![blink_led][@08]
 ]
 
@@ -133,7 +134,7 @@ print("Programme closed.")
 class: center
 # Similar code in Scratch2?
 
-.overflow.h-75[
+.scroll.h-75[
 ![scratch_example][@09]
 ]
 
@@ -166,13 +167,9 @@ class: center
 class: center middle
 # Top 10 Raspberry Pi Projects for Beginners
 
-.footnote[[Top 10 Raspberry Pi Projects for Beginners][@11]]
-
-
----
-# Reference
-
-
+.footnote[
+[Top 10 Raspberry Pi Projects for Beginners][@11]
+]
 
 ---
 class: center middle

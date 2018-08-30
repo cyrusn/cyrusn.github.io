@@ -33,7 +33,7 @@ Bar***ba***dos, and ***Guam***.
 ---
 
 ***Nor***way, and S***we***den, and ***Ice***land, and ***Fin***land and
-***Ger***many ***no***w ~ one ***piece***,
+***Ger***many ***no***w ~ want ***peace***,
 
 S***wit***zerland, ***Au***stria, ***Cze***ch, Slo***vak***ia
 ***It***aly, ***Tur***key, and ***Greece***.
@@ -71,7 +71,7 @@ Then ***Bor***neo, ***and*** Viet***nam***.
 Zim***ba***bwe, {{< tooltip "Dji***bou***ti" "/dʒəˈbuːti, dʒɪˈbuːti/" >}} , Bots***wa***na,
 
 ***Mo***zambique, ***Zam***bia, S***wa***ziland, ***Gam***bia
-***Gui***nea, Al***ge***ria, Gha***na***.
+{{< tooltip "***Gui***nea" "/gInI/">}}, Al***ge***ria, Gha***na***.
 
 ----
 

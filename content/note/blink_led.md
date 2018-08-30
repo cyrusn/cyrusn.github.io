@@ -6,16 +6,8 @@ tags:
   - raspberry
   - pi
   - raspberrypi
+  - stem
 ---
-
-
-<!-- MarkdownTOC -->
-
-- [Introduction](#introduction)
-- [Setting](#setting)
-- [Python Code](#python-code)
-
-<!-- /MarkdownTOC -->
 
 # Introduction
 Making Blinking LED is just like writing a hello world programme in engineering.
@@ -24,7 +16,6 @@ Making Blinking LED is just like writing a hello world programme in engineering.
 # Setting
 
 ![setting][@1]
-
 
 # Python Code
 

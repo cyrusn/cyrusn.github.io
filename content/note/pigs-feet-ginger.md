@@ -3,10 +3,6 @@ title: "豬腳薑烹調方法"
 subtitle: ""
 description:
 toc: true
-draft: false
-katex: false
-mermaid: false
-abcjs: false
 date: 2014-04-26T00:50:22+08:00
 tags:
   - recipe
