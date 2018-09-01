@@ -21,14 +21,5 @@
       <description>References  paulrosen/abcjs: javascript for rendering abc music notation ABC Music Notation  Example - Lyrics Score   Code     X: 1 T: Misirlou C: N.Roubanis 1934 O: Greece M: 4/4 L: 1/8 K: Gm % |: &#34;D&#34;D3 E ^F2 G2 | A3B ^c2BA | A8- | A8 | w: 1.~Mi-sir-lou mou i gli-kia sou ma-tia w: 2.~Mav-ro ma-ta Mi-sir-lou mou tre-lli | D3E ^F2G2 | A3B ^c2BA | A8- | A8 | w: Flo-ga m&#39;e-hi~i-na-psi mes tin kar-dia w: Ti zo-i m&#39;al-la-zo me-na fi-li      X: 1 T: Misirlou C: N.</description>
     </item>
     
-    <item>
-      <title>Backing Voice</title>
-      <link>https://cyrusn.github.io/note/backing-voice/</link>
-      <pubDate>Wed, 29 Nov 2017 11:29:10 +0800</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/backing-voice/</guid>
-      <description>黃金時代 Score   Code     T: 黃金時代 K: D M: 4/4 L: 1/8 V:1 name=&#34;Vocal&#34; V:2 name=&#34;Chorus&#34; % [V:1] &#34;D&#34;dA/2A/2 -Ad &#34;A&#34;cA/2A/2 z2 |&#34;G&#34;Bd/2d/2 -dG &#34;A&#34;F2 E2| w: 你 和 誰 - 結 伴 前 來 是 否 比 - 我 精 采 [V:2] fd/2d/2 -df ec/2c/2 z2 |z8|      T: 黃金時代 K: D M: 4/4 L: 1/8 V:1 name=&#34;Vocal&#34; V:2 name=&#34;</description>
-    </item>
-    
   </channel>
 </rss>

@@ -14,11 +14,11 @@
     
     <item>
       <title>Raspberry Pi Zero OTG Mode</title>
-      <link>https://cyrusn.github.io/note/raspberry-pi-zero-otg-mode/</link>
+      <link>https://cyrusn.github.io/post/raspberry-pi-zero-otg-mode/</link>
       <pubDate>Thu, 23 Aug 2018 14:11:49 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/raspberry-pi-zero-otg-mode/</guid>
-      <description>Setting for OTG mode for pi zero instruction  add the following text to /boot/config.txt
+      <guid>https://cyrusn.github.io/post/raspberry-pi-zero-otg-mode/</guid>
+      <description>Setting for OTG mode for pi zero Instruction  add the following text to /boot/config.txt
 # Enable OTG mode dtoverlay=dwc2  Save the config.txt file as plain text and then open up cmdline.txt After rootwait (the last word on the first line) add a space and then modules-load=dwc2,g_ether
  Create an empty file named as ssh.txt in /boot
  connect to your pi through ssh

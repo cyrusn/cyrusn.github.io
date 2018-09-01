@@ -106,7 +106,7 @@ function navigate (keyCode, event) {
         scrollActiveListToCenter()
       }
       break
-    case (keyCode === keycodes('i') && !onFocus):
+    case (keyCode === keycodes('/') && !onFocus):
       event.preventDefault()
       if (isDisabled && pageKind === 'home') {
         searchBox.prop('disabled', false)
@@ -119,7 +119,7 @@ function navigate (keyCode, event) {
         window.location.href = link
       }
       break
-    case (keyCode === keycodes('enter')):
+    case (keyCode === keycodes('enter') || keyCode === keycodes('esc')):
       event.preventDefault()
       if (!isDisabled) {
         searchBox.prop('disabled', true)

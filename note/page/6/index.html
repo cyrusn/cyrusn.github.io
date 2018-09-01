@@ -56,8 +56,6 @@ const navLinks = ['/']
 
   navLinks.push("\/post\/")
 
-  navLinks.push("\/project\/")
-
   navLinks.push("\/slide\/")
 
   navLinks.push("\/tags\/")
@@ -116,14 +114,6 @@ var Paginator = {}
         
         
         <li class="nav-item">
-          <a class="nav-link" title="Project" href="/project/">Project</a>
-        </li>
-        
-        
-
-        
-        
-        <li class="nav-item">
           <a class="nav-link" title="Slide" href="/slide/">Slide</a>
         </li>
         
@@ -162,8 +152,8 @@ var Paginator = {}
         <p class="text-secondary">
           <ul class="list-unstyled">
               <li><kbd>q</kbd> to go home</li>
-              <li><kbd>i</kbd> to search</li>
-              <li><kbd>Enter</kbd> to switch from search to list navigation</li>
+              <li><kbd>/</kbd> to search</li>
+              <li><kbd>Enter / ESC</kbd> to switch from search to list navigation</li>
               <li><kbd>Enter</kbd> to go to selected page</li>
               <li><kbd>j / k</kbd> to navigate the list</li>
               <li><kbd>h / l</kbd> to navigate the pages in list</li>
@@ -234,22 +224,15 @@ var Paginator = {}
       </li>
       
       
-      
-      
-      <li class="page-item ">
-        <a class="text-muted page-link" href="/note/page/7/">7</a>
-      </li>
-      
-      
 
-      <li class="page-item " aria-label="Next">
-        <a class="text-muted page-link" href="/note/page/7/">
+      <li class="page-item disabled" aria-label="Next">
+        <a class="text-muted page-link" href="">
           <span aria-hidden="true">&raquo;</span>
         </a>
       </li>
       
-      <li class="page-item ">
-        <a class="text-muted page-link" href="/note/page/7/" aria-label="Last" title="7">
+      <li class="page-item disabled">
+        <a class="text-muted page-link" href="/note/page/6/" aria-label="Last" title="6">
           <span aria-hidden="true">&raquo;&raquo;</span>
         </a>
       </li>
@@ -267,19 +250,29 @@ var Paginator = {}
       class="list-group-item list-group-item-light active">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
-          <a class="text-light" href="/note/hardware-architecture/">Hardware Architecture</a>
+          <a class="text-light" href="/note/mongoose.js-and-mongodb/">Mongoose.js and MongoDB</a>
         </h6>
         <small>2018-06-26</small>
       </div>
       <div class='d-flex mb-0 justify-content-between'>
         <small>
-          <a class="text-light" href="/note/hardware-architecture/">/note/hardware-architecture/</a>
+          <a class="text-light" href="/note/mongoose.js-and-mongodb/">/note/mongoose.js-and-mongodb/</a>
         </small>
       </div>
       <small>
   
   
   
+</small>
+
+<small>
+
+  <a class="badge badge-info" href="/tags/database">database</a>
+
+  <a class="badge badge-info" href="/tags/mongodb">MongoDB</a>
+
+  <a class="badge badge-info" href="/tags/mongoose">Mongoose</a>
+
 </small>
 
 
@@ -291,13 +284,13 @@ var Paginator = {}
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
-          <a class="text-muted" href="/note/google-app-script/">Google App Script</a>
+          <a class="text-muted" href="/note/golang/">Golang Notes</a>
         </h6>
         <small>2018-06-26</small>
       </div>
       <div class='d-flex mb-0 justify-content-between'>
         <small>
-          <a class="text-muted" href="/note/google-app-script/">/note/google-app-script/</a>
+          <a class="text-muted" href="/note/golang/">/note/golang/</a>
         </small>
       </div>
       <small>
@@ -308,7 +301,9 @@ var Paginator = {}
 
 <small>
 
-  <a class="badge badge-info" href="/tags/google-script">google script</a>
+  <a class="badge badge-info" href="/tags/golang">golang</a>
+
+  <a class="badge badge-info" href="/tags/websocket">websocket</a>
 
 </small>
 
@@ -321,13 +316,13 @@ var Paginator = {}
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
-          <a class="text-muted" href="/note/draw-more-work-less/">Draw More Work Less</a>
+          <a class="text-muted" href="/note/gitbook/">Gitbook Notes</a>
         </h6>
         <small>2018-06-26</small>
       </div>
       <div class='d-flex mb-0 justify-content-between'>
         <small>
-          <a class="text-muted" href="/note/draw-more-work-less/">/note/draw-more-work-less/</a>
+          <a class="text-muted" href="/note/gitbook/">/note/gitbook/</a>
         </small>
       </div>
       <small>
@@ -338,9 +333,7 @@ var Paginator = {}
 
 <small>
 
-  <a class="badge badge-info" href="/tags/plantuml">plantuml</a>
-
-  <a class="badge badge-info" href="/tags/uml">uml</a>
+  <a class="badge badge-info" href="/tags/gitbook">gitbook</a>
 
 </small>
 
@@ -383,37 +376,13 @@ var Paginator = {}
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
-          <a class="text-muted" href="/note/basic-cs-knowledge/">Basic CS Knowledge</a>
+          <a class="text-muted" href="/note/chao-mi-cha/">炒米茶</a>
         </h6>
         <small>2018-06-26</small>
       </div>
       <div class='d-flex mb-0 justify-content-between'>
         <small>
-          <a class="text-muted" href="/note/basic-cs-knowledge/">/note/basic-cs-knowledge/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-5'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/git/">Git Notes</a>
-        </h6>
-        <small>2018-06-26</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/note/git/">/note/git/</a>
+          <a class="text-muted" href="/note/chao-mi-cha/">/note/chao-mi-cha/</a>
         </small>
       </div>
       <small>
@@ -424,139 +393,7 @@ var Paginator = {}
 
 <small>
 
-  <a class="badge badge-info" href="/tags/git">git</a>
-
-  <a class="badge badge-info" href="/tags/github">github</a>
-
-  <a class="badge badge-info" href="/tags/slide">slide</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-6'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/mongoose.js-and-mongodb/">Mongoose.js and MongoDB</a>
-        </h6>
-        <small>2018-06-26</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/note/mongoose.js-and-mongodb/">/note/mongoose.js-and-mongodb/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/database">database</a>
-
-  <a class="badge badge-info" href="/tags/mongodb">MongoDB</a>
-
-  <a class="badge badge-info" href="/tags/mongoose">Mongoose</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-7'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/golang/">Golang Notes</a>
-        </h6>
-        <small>2018-06-26</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/note/golang/">/note/golang/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/golang">golang</a>
-
-  <a class="badge badge-info" href="/tags/websocket">websocket</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-8'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/gitbook/">Gitbook Notes</a>
-        </h6>
-        <small>2018-06-26</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/note/gitbook/">/note/gitbook/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/gitbook">gitbook</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-9'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/react/">React Notes</a>
-        </h6>
-        <small>2018-02-23</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/note/react/">/note/react/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/react">react</a>
-
-  <a class="badge badge-info" href="/tags/redux">redux</a>
+  <a class="badge badge-info" href="/tags/recipe">recipe</a>
 
 </small>
 
@@ -574,9 +411,9 @@ var Paginator = {}
   
   
   Paginator = {
-    hasNext:  true ,
+    hasNext:  false ,
     hasPrev:  true ,
-    nextPage: "\/note\/page\/7\/",
+    nextPage: null,
     prevPage: "\/note\/page\/5\/"
   }
   

@@ -56,8 +56,6 @@ const navLinks = ['/']
 
   navLinks.push("\/post\/")
 
-  navLinks.push("\/project\/")
-
   navLinks.push("\/slide\/")
 
   navLinks.push("\/tags\/")
@@ -116,14 +114,6 @@ var Paginator = {}
         
         
         <li class="nav-item">
-          <a class="nav-link" title="Project" href="/project/">Project</a>
-        </li>
-        
-        
-
-        
-        
-        <li class="nav-item">
           <a class="nav-link" title="Slide" href="/slide/">Slide</a>
         </li>
         
@@ -162,8 +152,8 @@ var Paginator = {}
         <p class="text-secondary">
           <ul class="list-unstyled">
               <li><kbd>q</kbd> to go home</li>
-              <li><kbd>i</kbd> to search</li>
-              <li><kbd>Enter</kbd> to switch from search to list navigation</li>
+              <li><kbd>/</kbd> to search</li>
+              <li><kbd>Enter / ESC</kbd> to switch from search to list navigation</li>
               <li><kbd>Enter</kbd> to go to selected page</li>
               <li><kbd>j / k</kbd> to navigate the list</li>
               <li><kbd>h / l</kbd> to navigate the pages in list</li>
@@ -234,9 +224,6 @@ var Paginator = {}
       
       
       
-      
-      
-      
 
       <li class="page-item " aria-label="Next">
         <a class="text-muted page-link" href="/note/page/2/">
@@ -245,7 +232,7 @@ var Paginator = {}
       </li>
       
       <li class="page-item ">
-        <a class="text-muted page-link" href="/note/page/7/" aria-label="Last" title="7">
+        <a class="text-muted page-link" href="/note/page/6/" aria-label="Last" title="6">
           <span aria-hidden="true">&raquo;&raquo;</span>
         </a>
       </li>
@@ -263,13 +250,13 @@ var Paginator = {}
       class="list-group-item list-group-item-light active">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
-          <a class="text-light" href="/note/tutorals-to-electronics/">Tutorals to Electronics</a>
+          <a class="text-light" href="/note/tutorials-to-electronics/">Tutorials to Electronics</a>
         </h6>
         <small>2018-09-01</small>
       </div>
       <div class='d-flex mb-0 justify-content-between'>
         <small>
-          <a class="text-light" href="/note/tutorals-to-electronics/">/note/tutorals-to-electronics/</a>
+          <a class="text-light" href="/note/tutorials-to-electronics/">/note/tutorials-to-electronics/</a>
         </small>
       </div>
       <small>
@@ -292,38 +279,6 @@ var Paginator = {}
     
       <div
       id='list-1'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/raspberry-pi-zero-otg-mode/">Raspberry Pi Zero OTG Mode</a>
-        </h6>
-        <small>2018-08-30</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/note/raspberry-pi-zero-otg-mode/">/note/raspberry-pi-zero-otg-mode/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/otg">otg</a>
-
-  <a class="badge badge-info" href="/tags/stem">stem</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-2'
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -361,7 +316,7 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-3'
+      id='list-2'
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -391,41 +346,7 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-4'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/raspberry-pi-setup/">Raspberry Pi Setup</a>
-        </h6>
-        <small>2018-08-30</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/note/raspberry-pi-setup/">/note/raspberry-pi-setup/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/stem">stem</a>
-
-  <a class="badge badge-info" href="/tags/raspberry-pi">raspberry pi</a>
-
-  <a class="badge badge-info" href="/tags/linux">linux</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-5'
+      id='list-3'
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -457,7 +378,7 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-6'
+      id='list-4'
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -491,7 +412,7 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-7'
+      id='list-5'
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -523,7 +444,7 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-8'
+      id='list-6'
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -553,7 +474,7 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-9'
+      id='list-7'
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -583,6 +504,64 @@ var Paginator = {}
   <a class="badge badge-info" href="/tags/score">score</a>
 
   <a class="badge badge-info" href="/tags/music">music</a>
+
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-8'
+      class="list-group-item list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/jazz/">Jazz</a>
+        </h6>
+        <small>2018-06-26</small>
+      </div>
+      <div class='d-flex mb-0 justify-content-between'>
+        <small>
+          <a class="text-muted" href="/note/jazz/">/note/jazz/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+    <span class="badge badge-warning">abcjs</span>
+  
+  
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-9'
+      class="list-group-item list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/create-spy-camera-with-raspberry-pi-zero-w/">Create Spy Camera With Raspberry Pi Zero W</a>
+        </h6>
+        <small>2018-02-13</small>
+      </div>
+      <div class='d-flex mb-0 justify-content-between'>
+        <small>
+          <a class="text-muted" href="/note/create-spy-camera-with-raspberry-pi-zero-w/">/note/create-spy-camera-with-raspberry-pi-zero-w/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-info" href="/tags/stem">stem</a>
+
+  <a class="badge badge-info" href="/tags/rpi">rpi</a>
 
 </small>
 

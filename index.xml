@@ -13,21 +13,21 @@
     
     
     <item>
-      <title>Tutorals to Electronics</title>
-      <link>https://cyrusn.github.io/note/tutorals-to-electronics/</link>
+      <title>Tutorials to Electronics</title>
+      <link>https://cyrusn.github.io/note/tutorials-to-electronics/</link>
       <pubDate>Sat, 01 Sep 2018 11:42:32 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/tutorals-to-electronics/</guid>
-      <description> Basic  What is Electricity? Voltage, Current, Resistance, and Ohm&amp;rsquo;s Law Polarity What is a Circuit? Series and Parallel Circuits Alternating Current (AC) vs. Direct Current (DC) How to Use a Breadboard How to Use a Multimeter  Intermediate  I2C Serial Peripheral Interface (SPI) Binary Shift Registers  Application </description>
+      <guid>https://cyrusn.github.io/note/tutorials-to-electronics/</guid>
+      <description>Basic  What is Electricity? Voltage, Current, Resistance, and Ohm&amp;rsquo;s Law What is a Circuit? Polarity Series and Parallel Circuits Alternating Current (AC) vs. Direct Current (DC) PCB Basics Connector Basics  How to  How to Read a Schematic How to Use a Breadboard How to Use a Multimeter How to Power a Project How to Solder: Through-Hole Soldering Working with Wire  Electronic Components  Voltage Dividers Resistors Diodes Capacitors Transistors  Intermediate  Analog vs.</description>
     </item>
     
     <item>
       <title>Raspberry Pi Zero OTG Mode</title>
-      <link>https://cyrusn.github.io/note/raspberry-pi-zero-otg-mode/</link>
+      <link>https://cyrusn.github.io/post/raspberry-pi-zero-otg-mode/</link>
       <pubDate>Thu, 23 Aug 2018 14:11:49 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/raspberry-pi-zero-otg-mode/</guid>
-      <description>Setting for OTG mode for pi zero instruction  add the following text to /boot/config.txt
+      <guid>https://cyrusn.github.io/post/raspberry-pi-zero-otg-mode/</guid>
+      <description>Setting for OTG mode for pi zero Instruction  add the following text to /boot/config.txt
 # Enable OTG mode dtoverlay=dwc2  Save the config.txt file as plain text and then open up cmdline.txt After rootwait (the last word on the first line) add a space and then modules-load=dwc2,g_ether
  Create an empty file named as ssh.txt in /boot
  connect to your pi through ssh
@@ -54,10 +54,10 @@
     
     <item>
       <title>Raspberry Pi Setup</title>
-      <link>https://cyrusn.github.io/note/raspberry-pi-setup/</link>
+      <link>https://cyrusn.github.io/post/raspberry-pi-setup/</link>
       <pubDate>Tue, 26 Jun 2018 21:10:39 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/raspberry-pi-setup/</guid>
+      <guid>https://cyrusn.github.io/post/raspberry-pi-setup/</guid>
       <description>Setup for a new Pi Download the latest version of Raspbian Stretch and download Etcher app to flash the raspbian image to SD card. Plug the flashed SD card to your raspberry and power it on.
 Update and upgrade Open terminal app and run the following command to update and upgrade the packages and OS.
 sudo apt-get update sudo apt-get upgrade  Config the localisation options Run sudo raspi-config for changing the following settings.</description>
@@ -84,10 +84,10 @@ RemarkJS - CSS Guide Hugo Theme | Notebook-Searcher Background  class: center mi
     
     <item>
       <title>Create Spy Camera With Raspberry Pi Zero W</title>
-      <link>https://cyrusn.github.io/post/create-spy-camera-with-raspberry-pi-zero-w/</link>
+      <link>https://cyrusn.github.io/note/create-spy-camera-with-raspberry-pi-zero-w/</link>
       <pubDate>Tue, 13 Feb 2018 18:51:28 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/post/create-spy-camera-with-raspberry-pi-zero-w/</guid>
+      <guid>https://cyrusn.github.io/note/create-spy-camera-with-raspberry-pi-zero-w/</guid>
       <description>Ingredient  Raspberry Pi Zero W Camera / NoIR Camera Raspberry Pi Zero Case SD Card (16G) USB Data Cable  Difference between Camera and NoIR Camera It is nearly the same but the IR filter, mean that NoIR can perform better in night but the image will look weired in day light. There are some camera can switch the IR filter on / off by providing voltage, like this.</description>
     </item>
     
@@ -162,15 +162,6 @@ In server side, using middelware for http.Handler function if the request are in
     </item>
     
     <item>
-      <title>Backing Voice</title>
-      <link>https://cyrusn.github.io/note/backing-voice/</link>
-      <pubDate>Wed, 29 Nov 2017 11:29:10 +0800</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/backing-voice/</guid>
-      <description>黃金時代 Score   Code     T: 黃金時代 K: D M: 4/4 L: 1/8 V:1 name=&#34;Vocal&#34; V:2 name=&#34;Chorus&#34; % [V:1] &#34;D&#34;dA/2A/2 -Ad &#34;A&#34;cA/2A/2 z2 |&#34;G&#34;Bd/2d/2 -dG &#34;A&#34;F2 E2| w: 你 和 誰 - 結 伴 前 來 是 否 比 - 我 精 采 [V:2] fd/2d/2 -df ec/2c/2 z2 |z8|      T: 黃金時代 K: D M: 4/4 L: 1/8 V:1 name=&#34;Vocal&#34; V:2 name=&#34;</description>
-    </item>
-    
-    <item>
       <title>Jazz</title>
       <link>https://cyrusn.github.io/note/jazz/</link>
       <pubDate>Tue, 28 Nov 2017 21:28:46 +0800</pubDate>
@@ -241,10 +232,10 @@ Reference  資源下載 - 超研教育｜中學數學補習社｜Band 1補習學
     
     <item>
       <title>Blink Led</title>
-      <link>https://cyrusn.github.io/project/blink_led/</link>
+      <link>https://cyrusn.github.io/note/blink_led/</link>
       <pubDate>Mon, 16 Oct 2017 16:05:23 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/project/blink_led/</guid>
+      <guid>https://cyrusn.github.io/note/blink_led/</guid>
       <description>  Introduction Setting Python Code  Introduction Making Blinking LED is just like writing a hello world programme in engineering.
 Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GPIO.BCM) GPIO.set(LED, GPIO.OUT) GPIO.setwarnings(False) print(&amp;quot;Programme start.&amp;quot;) GPIO.output(LED, True) time.sleep(0.5) GPIO.output(LED, False) time.sleep(0.5) print(&amp;quot;Programme closed.&amp;quot;)  </description>
     </item>
@@ -284,24 +275,6 @@ Costa Rica, Belize, Nicaragua, Bermuda Bahamas, Tobago, San Juan,
 Paraguay, Uruguay, Surinam And French Guiana Barbados, and Guam.
 Norway, and Sweden, and Iceland, and Finland and Germany now ~ want peace,
 Switzerland, Austria, Czech, Slovakia Italy, Turkey, and Greece.</description>
-    </item>
-    
-    <item>
-      <title>Education</title>
-      <link>https://cyrusn.github.io/note/education/</link>
-      <pubDate>Tue, 05 Sep 2017 10:58:58 +0800</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/education/</guid>
-      <description>  學校課程持續更新 STEM C&amp;amp;A  學校課程持續更新  學校課程持續更新  STEM  科學教育課程指引 (小一至中六) 數學教育課程指引 (小一至中六) 《推動STEM教育 — 發揮創意潛能》報告 科技教育課程指引 (小一至中六)  C&amp;amp;A  課程文件 專案名稱： read_attach.php  </description>
-    </item>
-    
-    <item>
-      <title>TSF</title>
-      <link>https://cyrusn.github.io/note/tsf/</link>
-      <pubDate>Mon, 04 Sep 2017 17:09:38 +0800</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/tsf/</guid>
-      <description>var students = [{ name: &#39;foo&#39;, clazz: &#39;4A&#39; }, { name: &#39;world&#39;, clazz: &#39;4B&#39; }, { name: &#39;bar&#39;, clazz: &#39;4B&#39; }, { name: &#39;hello&#39;, clazz: &#39;4C&#39; }] var clazzes = [&#39;4B&#39;, &#39;4C&#39;] clazzes.forEach(function (clazz) { students.filter(createFilterFunction(clazz)).forEach(logName) }) function createFilterFunction (clazz) { // return filterFunction return function (student) { return student.clazz === clazz } } function logName (student) { console.log(student.name) }  </description>
     </item>
     
     <item>
@@ -362,10 +335,10 @@ Tenses     Present Tenses in English Simple present tense  The simple present te
     
     <item>
       <title>Google calendar for LPSS colleagues</title>
-      <link>https://cyrusn.github.io/note/google-calendar/</link>
+      <link>https://cyrusn.github.io/post/google-calendar-lpss/</link>
       <pubDate>Fri, 19 May 2017 09:50:13 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/google-calendar/</guid>
+      <guid>https://cyrusn.github.io/post/google-calendar-lpss/</guid>
       <description>Add Calendar to mobile devices  Login your LiPing domain account in the web browser first  Go to www.google.com username: lpXXX@liping.edu.hk password: please ask ITAV team if you didn’t get the password  Go to calendar view or press this link https://calendar.google.com/calendar Go to Other Calendar section and paste the link below to the box “Add a colleague’s calendar”  liping.edu.hk_0jfuie399d0elvaac06k0hur8o@group.calendar.google.com   Then you will see the word “School Calendar” under the Other Calendar section.</description>
     </item>
     
@@ -378,15 +351,6 @@ Tenses     Present Tenses in English Simple present tense  The simple present te
       <description>class: center middle bg-info text-light
 提升生產力及專注力 GTD &amp;amp; 蕃茄工作法 Reference  The Pomodoro Technique® - proudly developed by Francesco Cirillo | Cirillo Company David Allen&amp;rsquo;s Getting Things Done® Methodology  工作時間  平日每天約4小時 假日每天約6小時 合共： 4hr x 5day + 6hr x 2day = 32 hrs 如何保持專注?  規劃  每科應用15分鐘回顧及整理當天所學 功課應盡早完成 每天用盡所有工作時間  流程 .overflow.h-75[ ![workflow] ]
 Why?  何時做 &amp;gt; 何時交 計時能令人集中  e.g. 考試、測驗   .row[ .</description>
-    </item>
-    
-    <item>
-      <title>臺灣升學 Notes</title>
-      <link>https://cyrusn.github.io/note/taiwan-study/</link>
-      <pubDate>Mon, 15 May 2017 23:13:25 +0800</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/taiwan-study/</guid>
-      <description>Useful Links  學士班適用簡章2017 Q&amp;amp;A 來台就學費用估算 入學暨來臺相關規定 赴臺升學小冊子(新版).pdf.pdf)  資格 「僑生」指海外出生連續居留迄今，或最近連續居留海外六年以上，並取得僑居地永久或長期居留證件回國就學之華裔學生。 但就讀大學醫學、牙醫及中醫學系者，其連續居留年限為八年以上。</description>
     </item>
     
     <item>
@@ -437,15 +401,6 @@ update-rc.d myscript defaults  </description>
       <guid>https://cyrusn.github.io/note/update-digital-ocean-kernel/</guid>
       <description>Check Which Kernel is Currently in Use
 To display both the kernel version and your system&amp;rsquo;s architecture (32-bit or 64-bit), type: uname -ir  Upgrading All Packages and Using the Newest Kernel sudo apt-get update sudo apt-get dist-upgrade sudo reboot sudo apt-get install update-manager-core sudo do-release-upgrade  Reference How To Upgrade to Ubuntu 16.04 LTS | DigitalOcean How To Update a DigitalOcean Server&amp;rsquo;s Kernel | DigitalOcean</description>
-    </item>
-    
-    <item>
-      <title>Caddy Notes</title>
-      <link>https://cyrusn.github.io/note/caddy/</link>
-      <pubDate>Sun, 09 Oct 2016 07:41:27 +0000</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/caddy/</guid>
-      <description> Installation # install caddy in linux commandline curl -fsSL https://getcaddy.com | bash -s search  Settng of Caddyfile for microservice TODO Make Caddy to serve https  </description>
     </item>
     
     <item>
@@ -556,7 +511,7 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
     </item>
     
     <item>
-      <title>Google Chrome App</title>
+      <title>Google Chrome Apps</title>
       <link>https://cyrusn.github.io/note/google-chrome-app/</link>
       <pubDate>Mon, 29 Jun 2015 07:58:25 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
