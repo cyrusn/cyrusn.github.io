@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sparkfun on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/tags/sparkfun/</link>
+    <description>Recent content in Sparkfun on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Sat, 01 Sep 2018 11:42:32 +0800</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/tags/sparkfun/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tutorals to Electronics</title>
+      <link>https://cyrusn.github.io/note/tutorals-to-electronics/</link>
+      <pubDate>Sat, 01 Sep 2018 11:42:32 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/tutorals-to-electronics/</guid>
+      <description> Basic  What is Electricity? Voltage, Current, Resistance, and Ohm&amp;rsquo;s Law Polarity What is a Circuit? Series and Parallel Circuits Alternating Current (AC) vs. Direct Current (DC) How to Use a Breadboard How to Use a Multimeter  Intermediate  I2C Serial Peripheral Interface (SPI) Binary Shift Registers  Application </description>
+    </item>
+    
+  </channel>
+</rss>

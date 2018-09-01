@@ -18,9 +18,17 @@
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
-<script src='/js/jquery-3.2.1.slim.min.js'></script>
-<script src='/js/popper.min.js'></script>
-<script src='/js/bootstrap.min.js' ></script>
+<script src='/js/jquery.slim.min.js'></script>
+<script src='/js/bootstrap.bundle.min.js' ></script>
+
+
+
+<script>
+  FontAwesomeConfig = {
+    searchPseudoElements: true
+  }
+</script>
+<script defer src=' /js/fontawesome-all.min.js '></script>
 
 
 
@@ -30,15 +38,23 @@
 <link rel="stylesheet" type="text/css" href='/css/style.css'>
 
 
+<script src='/js/keycodes.js'></script>
 <script src='/js/main.js'></script>
+
+
 <script src='/js/helper.js'></script>
 
 
 <script>
+
+
+
 const pageKind = "section"
 const navLinks = ['/']
 
   navLinks.push("\/note\/")
+
+  navLinks.push("\/post\/")
 
   navLinks.push("\/project\/")
 
@@ -59,9 +75,9 @@ var Paginator = {}
 
 
 </head>
-<body>
-  <div class="bg-light d-md-flex justify-content-center">
-  <nav class="navbar navbar-expand-md navbar-light">
+  <body data-spy="scroll" data-target="#TableOfContents">
+  <div class="bg-light d-sm-flex justify-content-center">
+  <nav class="navbar navbar-expand-sm navbar-light">
     <a class="navbar-brand text-center"
       href='https://cyrusn.github.io'>
       CyrusN
@@ -85,6 +101,14 @@ var Paginator = {}
         
         <li class="nav-item">
           <a class="nav-link" title="Note" href="/note/">Note</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Post" href="/post/">Post</a>
         </li>
         
         
@@ -121,11 +145,10 @@ var Paginator = {}
         
         
       </ul>
-    </div>
-    <button type="button" class="d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
-  </nav>
-</div>
-
+      
+<form class="form-inline">
+  <button type="button" class="mx-2 d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
+</form>
 <div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -138,13 +161,13 @@ var Paginator = {}
       <div class="modal-body py-1">
         <p class="text-secondary">
           <ul class="list-unstyled">
-              <li><code>Q</code> to go home</li>
-              <li><code>Space</code> to search</li>
-              <li><code>Enter</code> to start navigate in results</li>
-              <li><code>Enter again</code> to go to selected page</li>
-              <li><code>J / K</code> to navigate the list or scroll up and down in page</li>
-              <li><code>H / L</code> to navigate the page number</li>
-              <li><code>[ / ]</code> to navigate the navbar</li>
+              <li><kbd>q</kbd> to go home</li>
+              <li><kbd>i</kbd> to search</li>
+              <li><kbd>Enter</kbd> to switch from search to list navigation</li>
+              <li><kbd>Enter</kbd> to go to selected page</li>
+              <li><kbd>j / k</kbd> to navigate the list</li>
+              <li><kbd>h / l</kbd> to navigate the pages in list</li>
+              <li><kbd>[ / ]</kbd> to navigate the navbar</li>
           </ul>
         </p>
       </div>
@@ -152,13 +175,15 @@ var Paginator = {}
   </div>
 </div>
 
+    </div>
+  </nav>
+</div>
 
-  <div class="container mt-2 mx-auto mb-4">
+  <div class="container mt-2 mx-auto mb-4 text-dark">
     
 <h1 class="text-center display-4">Notes</h1>
 <hr>
 <div class="mx-md-5 px-md-5">
-  <div>
     
 
 
@@ -212,22 +237,15 @@ var Paginator = {}
       </li>
       
       
-      
-      
-      <li class="page-item ">
-        <a class="text-muted page-link" href="/note/page/8/">8</a>
-      </li>
-      
-      
 
-      <li class="page-item " aria-label="Next">
-        <a class="text-muted page-link" href="/note/page/8/">
+      <li class="page-item disabled" aria-label="Next">
+        <a class="text-muted page-link" href="">
           <span aria-hidden="true">&raquo;</span>
         </a>
       </li>
       
-      <li class="page-item ">
-        <a class="text-muted page-link" href="/note/page/8/" aria-label="Last" title="8">
+      <li class="page-item disabled">
+        <a class="text-muted page-link" href="/note/page/7/" aria-label="Last" title="7">
           <span aria-hidden="true">&raquo;&raquo;</span>
         </a>
       </li>
@@ -237,44 +255,21 @@ var Paginator = {}
 </div>
 
 
-    <div class="list-group">
+  <div>
+    <div class="list-style list-group mx-auto w-75">
       
       <div
       id='list-0'
-      class="list-group-item list-group-item-action list-group-item-light active">
+      class="list-group-item list-group-item-light active">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
-          <a class="text-light" href="/note/basic-cs-knowledge/">Basic CS Knowledge</a>
+          <a class="text-light" href="/note/chao-mi-cha/">炒米茶</a>
         </h6>
-        <small>2015-05-10</small>
+        <small>2018-06-26</small>
       </div>
-      <div class='mb-0'>
+      <div class='d-flex mb-0 justify-content-between'>
         <small>
-          <a class="text-light" href="/note/basic-cs-knowledge/">/note/basic-cs-knowledge/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-1'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/hapijs/">HapiJS</a>
-        </h6>
-        <small>2015-05-10</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/hapijs/">/note/hapijs/</a>
+          <a class="text-light" href="/note/chao-mi-cha/">/note/chao-mi-cha/</a>
         </small>
       </div>
       <small>
@@ -285,247 +280,7 @@ var Paginator = {}
 
 <small>
 
-  <a class="badge badge-secondary" href="/tags/hapijs">hapijs</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-2'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/git/">Git Notes</a>
-        </h6>
-        <small>2015-05-10</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/git/">/note/git/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-secondary" href="/tags/git">git</a>
-
-  <a class="badge badge-secondary" href="/tags/github">github</a>
-
-  <a class="badge badge-secondary" href="/tags/slide">slide</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-3'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/using-timeline-js-in-history-lesson/">Using Timeline JS in History Lesson</a>
-        </h6>
-        <small>2015-05-10</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/using-timeline-js-in-history-lesson/">/note/using-timeline-js-in-history-lesson/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-secondary" href="/tags/timelinejs">timelinejs</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-4'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/swift/">Swift Notes</a>
-        </h6>
-        <small>2015-05-10</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/swift/">/note/swift/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-secondary" href="/tags/macos">macos</a>
-
-  <a class="badge badge-secondary" href="/tags/swift">swift</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-5'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/slidedownhtml-presentation/">Slidedown HTML presentation</a>
-        </h6>
-        <small>2015-05-10</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/slidedownhtml-presentation/">/note/slidedownhtml-presentation/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-secondary" href="/tags/slidedown">slidedown</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-6'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/project-and-todo/">Project and TODO</a>
-        </h6>
-        <small>2015-05-10</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/project-and-todo/">/note/project-and-todo/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-7'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/alumni-webpage/">Alumni Webpage Notes</a>
-        </h6>
-        <small>2015-05-10</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/alumni-webpage/">/note/alumni-webpage/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-secondary" href="/tags/angularjs">angularjs</a>
-
-  <a class="badge badge-secondary" href="/tags/bootstrap">bootstrap</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-8'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/monokai-color-code/">Monokai Color Code</a>
-        </h6>
-        <small>2015-05-10</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/monokai-color-code/">/note/monokai-color-code/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-9'
-      class="list-group-item list-group-item-action list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/mongoose.js-and-mongodb/">Mongoose.js and MongoDB</a>
-        </h6>
-        <small>2015-05-10</small>
-      </div>
-      <div class='mb-0'>
-        <small>
-          <a class="text-muted" href="/note/mongoose.js-and-mongodb/">/note/mongoose.js-and-mongodb/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-secondary" href="/tags/database">database</a>
-
-  <a class="badge badge-secondary" href="/tags/mongodb">MongoDB</a>
-
-  <a class="badge badge-secondary" href="/tags/mongoose">Mongoose</a>
+  <a class="badge badge-info" href="/tags/recipe">recipe</a>
 
 </small>
 
@@ -538,13 +293,14 @@ var Paginator = {}
 <script type="text/javascript">
    
   
-  $('#list-0').find('.badge-secondary').toggleClass('badge-light badge-secondary')
+  $('#list-0').find('.badge-info').toggleClass('badge-light badge-info')
 
   
+  
   Paginator = {
-    hasNext:  true ,
+    hasNext:  false ,
     hasPrev:  true ,
-    nextPage: "\/note\/page\/8\/",
+    nextPage: null,
     prevPage: "\/note\/page\/6\/"
   }
   
@@ -552,7 +308,7 @@ var Paginator = {}
 
 
     
-<link rel="stylesheet" href='/css/atom-one-dark.css'>
+<link rel="stylesheet" href='/css/highlightjs/solarized-dark.css'>
 <script src='/js/highlight.pack.js'></script>
 <script>
    
