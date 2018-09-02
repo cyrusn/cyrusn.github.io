@@ -15,13 +15,13 @@
   <meta property="og:description" content=" connect to console # prepare ssh keys first # login droplet ssh root@ip.of.the.droplet # to copy a file from B to A while logged into B scp /path/to/file username@a:/path/to/destination # to copy a file from B to A while logged into A scp username@b:/path/to/file /path/to/destination  perpare ssh key  How To Use SSH Keys with DigitalOcean Droplets | DigitalOcean  achieve  Save a snapshot and delete droplet restore droplet by the snapshot  Update Server&rsquo;s Kernel  How To Update a DigitalOcean Server&rsquo;s Kernel | DigitalOcean  ">
   <meta name="twitter:description" content=" connect to console # prepare ssh keys first # login droplet ssh root@ip.of.the.droplet # to copy a file from B to A while logged into B scp /path/to/file username@a:/path/to/destination # to copy a …">
 
+  
+  <meta name="author" content="CyrusN"/>
 
-<meta name="author" content="CyrusN"/>
 
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/><script src='/js/jquery.slim.min.js'></script>
 
-  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
-<script src='/js/jquery.slim.min.js'></script>
 <script src='/js/bootstrap.bundle.min.js' ></script>
 
 
@@ -52,18 +52,19 @@
 
 
 
-const pageKind = "page"
-const navLinks = ['/']
+const pageKind = 'page'
+const baseURL = 'https:\/\/cyrusn.github.io'
+const navLinks = ['\/']
 
-  navLinks.push("\/note\/")
+  navLinks.push('\/note\/')
 
-  navLinks.push("\/post\/")
+  navLinks.push('\/post\/')
 
-  navLinks.push("\/slide\/")
+  navLinks.push('\/slide\/')
 
-  navLinks.push("\/tags\/")
+  navLinks.push('\/tags\/')
 
-  navLinks.push("\/page\/about\/")
+  navLinks.push('\/page\/about\/')
 
 
 var Paginator = {}

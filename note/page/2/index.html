@@ -12,13 +12,13 @@
 
 
 
+  
+  <meta name="author" content="CyrusN"/>
 
-<meta name="author" content="CyrusN"/>
 
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/><script src='/js/jquery.slim.min.js'></script>
 
-  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
-<script src='/js/jquery.slim.min.js'></script>
 <script src='/js/bootstrap.bundle.min.js' ></script>
 
 
@@ -49,18 +49,19 @@
 
 
 
-const pageKind = "section"
-const navLinks = ['/']
+const pageKind = 'section'
+const baseURL = 'https:\/\/cyrusn.github.io'
+const navLinks = ['\/']
 
-  navLinks.push("\/note\/")
+  navLinks.push('\/note\/')
 
-  navLinks.push("\/post\/")
+  navLinks.push('\/post\/')
 
-  navLinks.push("\/slide\/")
+  navLinks.push('\/slide\/')
 
-  navLinks.push("\/tags\/")
+  navLinks.push('\/tags\/')
 
-  navLinks.push("\/page\/about\/")
+  navLinks.push('\/page\/about\/')
 
 
 var Paginator = {}
@@ -225,9 +226,6 @@ var Paginator = {}
       
       
       
-      
-      
-      
 
       <li class="page-item " aria-label="Next">
         <a class="text-muted page-link" href="/note/page/3/">
@@ -236,7 +234,7 @@ var Paginator = {}
       </li>
       
       <li class="page-item ">
-        <a class="text-muted page-link" href="/note/page/6/" aria-label="Last" title="6">
+        <a class="text-muted page-link" href="/note/page/5/" aria-label="Last" title="5">
           <span aria-hidden="true">&raquo;&raquo;</span>
         </a>
       </li>
@@ -320,6 +318,42 @@ var Paginator = {}
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
+          <a class="text-muted" href="/note/blink_led/">Blink Led</a>
+        </h6>
+        <small>2018-08-30</small>
+      </div>
+      <div class='d-flex mb-0 justify-content-between'>
+        <small>
+          <a class="text-muted" href="/note/blink_led/">/note/blink_led/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-info" href="/tags/raspberry">raspberry</a>
+
+  <a class="badge badge-info" href="/tags/pi">pi</a>
+
+  <a class="badge badge-info" href="/tags/raspberrypi">raspberrypi</a>
+
+  <a class="badge badge-info" href="/tags/stem">stem</a>
+
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-3'
+      class="list-group-item list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
           <a class="text-muted" href="/note/raspberry-pi/">Raspberry Pi</a>
         </h6>
         <small>2018-08-30</small>
@@ -354,7 +388,7 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-3'
+      id='list-4'
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -378,7 +412,7 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-4'
+      id='list-5'
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -410,7 +444,7 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-5'
+      id='list-6'
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -434,36 +468,6 @@ var Paginator = {}
 <small>
 
   <a class="badge badge-info" href="/tags/past-paper">past paper</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-6'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/graphql/">GraphQL</a>
-        </h6>
-        <small>2018-06-26</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/note/graphql/">/note/graphql/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/graphql">GraphQL</a>
 
 </small>
 
@@ -538,13 +542,13 @@ var Paginator = {}
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
-          <a class="text-muted" href="/note/blink_led/">Blink Led</a>
+          <a class="text-muted" href="/note/swimming/">swimming</a>
         </h6>
-        <small>2017-10-16</small>
+        <small>2018-02-23</small>
       </div>
       <div class='d-flex mb-0 justify-content-between'>
         <small>
-          <a class="text-muted" href="/note/blink_led/">/note/blink_led/</a>
+          <a class="text-muted" href="/note/swimming/">/note/swimming/</a>
         </small>
       </div>
       <small>
@@ -555,13 +559,7 @@ var Paginator = {}
 
 <small>
 
-  <a class="badge badge-info" href="/tags/raspberry">raspberry</a>
-
-  <a class="badge badge-info" href="/tags/pi">pi</a>
-
-  <a class="badge badge-info" href="/tags/raspberrypi">raspberrypi</a>
-
-  <a class="badge badge-info" href="/tags/stem">stem</a>
+  <a class="badge badge-info" href="/tags/freestyle">freestyle</a>
 
 </small>
 

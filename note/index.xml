@@ -18,7 +18,7 @@
       <pubDate>Sat, 01 Sep 2018 11:42:32 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/tutorials-to-electronics/</guid>
-      <description>Basic  What is Electricity? Voltage, Current, Resistance, and Ohm&amp;rsquo;s Law What is a Circuit? Polarity Series and Parallel Circuits Alternating Current (AC) vs. Direct Current (DC) PCB Basics Connector Basics  How to  How to Read a Schematic How to Use a Breadboard How to Use a Multimeter How to Power a Project How to Solder: Through-Hole Soldering Working with Wire  Electronic Components  Voltage Dividers Resistors Diodes Capacitors Transistors  Intermediate  Analog vs.</description>
+      <description>Basic  What is Electricity? Voltage, Current, Resistance, and Ohm&amp;rsquo;s Law What is a Circuit? Polarity Series and Parallel Circuits Alternating Current (AC) vs. Direct Current (DC) PCB Basics Connector Basics  How to  How to Read a Schematic How to Use a Breadboard How to Use a Multimeter How to Power a Project How to Solder: Through-Hole Soldering Working with Wire  Electronic Components  Resistors Voltage Dividers Diodes Capacitors Transistors  Intermediate  Analog vs.</description>
     </item>
     
     <item>
@@ -28,15 +28,6 @@
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/input-and-output/</guid>
       <description>ADC  Analog to Digital Conversion - learn.sparkfun.com  MCP3008  MCP3008 | Raspberry Pi Analog to Digital Converters | Adafruit Learning System 14. API - SPI Devices — Gpiozero 1.4.1 Documentation Raspberry Pi ADC: MCP3008 Analog to Digital Converter  I2C sensors  I2C - learn.sparkfun.com  MPU6050 (Gyroscope)  MCP3008 | Raspberry Pi Analog to Digital Converters | Adafruit Learning System GY-521 MPU6050模块 三维角度传感器6DOF 三轴加速度计电子陀螺仪-tmall.com天猫 GitHub - Tijndagamer/mpu6050: A Python module for accessing the MPU-6050 digital accelerometer and gyroscope on a Raspberry Pi.</description>
-    </item>
-    
-    <item>
-      <title>Stem for kids</title>
-      <link>https://cyrusn.github.io/note/stem_for_kids/</link>
-      <pubDate>Sun, 01 Jul 2018 17:21:08 +0800</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/stem_for_kids/</guid>
-      <description> References  Coding for Kids-A Guide for Teachers and Parents | Udemy  </description>
     </item>
     
     <item>
@@ -161,7 +152,7 @@ Reference  資源下載 - 超研教育｜中學數學補習社｜Band 1補習學
       <pubDate>Mon, 16 Oct 2017 16:05:23 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/blink_led/</guid>
-      <description>  Introduction Setting Python Code  Introduction Making Blinking LED is just like writing a hello world programme in engineering.
+      <description> Introduction Making Blinking LED is just like writing a hello world programme in engineering.
 Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GPIO.BCM) GPIO.set(LED, GPIO.OUT) GPIO.setwarnings(False) print(&amp;quot;Programme start.&amp;quot;) GPIO.output(LED, True) time.sleep(0.5) GPIO.output(LED, False) time.sleep(0.5) print(&amp;quot;Programme closed.&amp;quot;)  </description>
     </item>
     
@@ -222,30 +213,12 @@ Tenses     Present Tenses in English Simple present tense  The simple present te
     </item>
     
     <item>
-      <title>sql</title>
-      <link>https://cyrusn.github.io/note/sql/</link>
-      <pubDate>Sun, 09 Jul 2017 20:56:56 +0800</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/sql/</guid>
-      <description>Some of The Most Important SQL Commands  SELECT - extracts data from a database UPDATE - updates data in a database DELETE - deletes data from a database INSERT INTO - inserts new data into a database CREATE DATABASE - creates a new database ALTER DATABASE - modifies a database CREATE TABLE - creates a new table ALTER TABLE - modifies a table DROP TABLE - deletes a table CREATE INDEX - creates an index (search key) DROP INDEX - deletes an index  SQL PRIMARY KEY Constraint The PRIMARY KEY constraint uniquely identifies each record in a database table.</description>
-    </item>
-    
-    <item>
       <title>Dyson Washing</title>
       <link>https://cyrusn.github.io/note/dyson/</link>
       <pubDate>Sun, 09 Jul 2017 14:55:02 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/dyson/</guid>
       <description> How to clean the Dyson V6 / DC59 Cordless Vacuum Cleaner - YouTube Dyson V6 Absolute and V6 Mattress - Washing the filters (Official Dyson video) - YouTube  </description>
-    </item>
-    
-    <item>
-      <title>STEM Idea on Education</title>
-      <link>https://cyrusn.github.io/note/stem-idea-on-education/</link>
-      <pubDate>Tue, 20 Jun 2017 19:05:48 +0800</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/stem-idea-on-education/</guid>
-      <description>STEM chanllege Innovative Ideas (Think by Discipline) Coding and Math Reference Statistic Engineering Some Idea from 青年會書院 Ideas Model on STEM Education Resource  STEM chanllege  making stuff  make a plane, it can fly as long as possible. make a bridge, it can weigh as heavy as possible. make a phone, it can talk as far as possible  Solve some puzzle  decode an encrypted message   Innovative Ideas (Think by Discipline)  Health  Elderly Care Smart Home Smoke Detector falling Detector Silent Detector Bionics Eyes  Climate Change Challenge / Envoirnment  typhoon disaster Sewage Handling Extreme Heat / Cold Bio Disel storm surges terrential rains Prevent 4D Jobs (Dull, Dirty, Dangerous)   Coding and Math Reference  Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine UC Davis Center for Integrated Computing and STEM Education Zebra Puzzle - Wikiwand The Micro:bit Foundation is a global non-profit organisation making invention with technology fun for everyone!</description>
     </item>
     
     <item>
@@ -398,15 +371,6 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
     </item>
     
     <item>
-      <title>Alfred Notes</title>
-      <link>https://cyrusn.github.io/note/alfred/</link>
-      <pubDate>Fri, 24 Jul 2015 23:02:19 +0000</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/alfred/</guid>
-      <description> How to use node on alfred workflow node&amp;lt;&amp;lt;-&amp;quot;code&amp;quot; // your code here // e.g. console.log(&amp;quot;hello world&amp;quot;); code  iTerm2 Integration curl --silent &#39;https://raw.githubusercontent.com/stuartcryan/custom-iterm-applescripts-for-alfred/master/custom_iterm_script_iterm_2.9.applescript&#39; | pbcopy   stuartcryan/custom-iterm-applescripts-for-alfred: Custom iTerm Applescripts for Alfred  </description>
-    </item>
-    
-    <item>
       <title>Google Chrome Apps</title>
       <link>https://cyrusn.github.io/note/google-chrome-app/</link>
       <pubDate>Mon, 29 Jun 2015 07:58:25 +0000</pubDate>
@@ -521,15 +485,6 @@ Text based tools I used to use the GUI tool Dia.</description>
       <guid>https://cyrusn.github.io/note/golang/</guid>
       <description>Useful commands  update all packages go get -u all  Feautre  Embedding  Understanding Goroutine  Is golang goroutine a coroutine? Coroutine vs Continuation vs Generator Comparison with generators  MongoDB  mgo Painless Data Storage with MongoDB and Go Connecting to MongoDB with mgo and golang  Router  mux - Gorilla, the golang web toolkit  # Middleware
  justinas/alice: Painless middleware chaining for Go  Database Model Architecture  Go database/sql tutorial Practical Persistence in Go: Organising Database Access Practical Persistence in Go: SQL Databases How to use databases with Golang – Hacker Noon Architecture for a Golang Web App - Larry Price Trying Clean Architecture on Golang – Hacker Noon Applying The Clean Architecture to Go applications » The Log Book of Manuel Kiessling  Authentication  dgrijalva/jwt-go: Golang implementation of JSON Web Tokens (JWT) Golang Authentication Using JSON Web Tokens  Useful Package  PuerkitoBio/goquery: A little like that j-thing, only in Go.</description>
-    </item>
-    
-    <item>
-      <title>Gitbook Notes</title>
-      <link>https://cyrusn.github.io/note/gitbook/</link>
-      <pubDate>Sun, 10 May 2015 00:46:36 +0000</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/gitbook/</guid>
-      <description>  Gitbook Modern book format and toolchain using Git and Markdown  Useful Plugins  katex sectionx responsive-iframes  </description>
     </item>
     
     <item>

@@ -23,13 +23,13 @@ Setting Apache2  in file /etc/hosts
 Setting Apache2  in file /etc/hosts
  change 127.0.0.1 localhost to 127.0.1.1 localhost WordPress-CaLP-LPSS  change …">
 
+  
+  <meta name="author" content="CyrusN"/>
 
-<meta name="author" content="CyrusN"/>
 
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/><script src='/js/jquery.slim.min.js'></script>
 
-  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
-<script src='/js/jquery.slim.min.js'></script>
 <script src='/js/bootstrap.bundle.min.js' ></script>
 
 
@@ -60,18 +60,19 @@ Setting Apache2  in file /etc/hosts
 
 
 
-const pageKind = "page"
-const navLinks = ['/']
+const pageKind = 'page'
+const baseURL = 'https:\/\/cyrusn.github.io'
+const navLinks = ['\/']
 
-  navLinks.push("\/note\/")
+  navLinks.push('\/note\/')
 
-  navLinks.push("\/post\/")
+  navLinks.push('\/post\/')
 
-  navLinks.push("\/slide\/")
+  navLinks.push('\/slide\/')
 
-  navLinks.push("\/tags\/")
+  navLinks.push('\/tags\/')
 
-  navLinks.push("\/page\/about\/")
+  navLinks.push('\/page\/about\/')
 
 
 var Paginator = {}

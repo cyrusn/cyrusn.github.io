@@ -29,7 +29,7 @@ Raspberry Pi    RASPBERRY PI 3 MODEL B RASPBERRY PI ZERO W         More Powerful
       <pubDate>Mon, 16 Oct 2017 16:05:23 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/blink_led/</guid>
-      <description>  Introduction Setting Python Code  Introduction Making Blinking LED is just like writing a hello world programme in engineering.
+      <description> Introduction Making Blinking LED is just like writing a hello world programme in engineering.
 Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GPIO.BCM) GPIO.set(LED, GPIO.OUT) GPIO.setwarnings(False) print(&amp;quot;Programme start.&amp;quot;) GPIO.output(LED, True) time.sleep(0.5) GPIO.output(LED, False) time.sleep(0.5) print(&amp;quot;Programme closed.&amp;quot;)  </description>
     </item>
     

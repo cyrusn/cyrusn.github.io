@@ -18,13 +18,13 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
   <meta name="twitter:description" content="Transport Layer Security (TLS) and its predecessor, Secure Sockets Layer (SSL), are cryptographic protocols designed to provide communications security over a computer network.
 The authentication …">
 
+  
+  <meta name="author" content="CyrusN"/>
 
-<meta name="author" content="CyrusN"/>
 
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/><script src='/js/jquery.slim.min.js'></script>
 
-  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
-<script src='/js/jquery.slim.min.js'></script>
 <script src='/js/bootstrap.bundle.min.js' ></script>
 
 
@@ -55,18 +55,19 @@ The authentication …">
 
 
 
-const pageKind = "page"
-const navLinks = ['/']
+const pageKind = 'page'
+const baseURL = 'https:\/\/cyrusn.github.io'
+const navLinks = ['\/']
 
-  navLinks.push("\/note\/")
+  navLinks.push('\/note\/')
 
-  navLinks.push("\/post\/")
+  navLinks.push('\/post\/')
 
-  navLinks.push("\/slide\/")
+  navLinks.push('\/slide\/')
 
-  navLinks.push("\/tags\/")
+  navLinks.push('\/tags\/')
 
-  navLinks.push("\/page\/about\/")
+  navLinks.push('\/page\/about\/')
 
 
 var Paginator = {}

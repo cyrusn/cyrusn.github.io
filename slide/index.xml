@@ -13,13 +13,17 @@
     
     
     <item>
-      <title>My RemarkJS CSS</title>
+      <title>Notebook-Searcher RemarkJS CSS</title>
       <link>https://cyrusn.github.io/slide/remarkjs/</link>
       <pubDate>Thu, 24 May 2018 19:59:24 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/remarkjs/</guid>
-      <description>Agenda  Background Center list Example This is normal image img-100 class to set max width to 100% img-75 class to set max width to 75% Also available on &amp;hellip; overflow can make the image overflow Blockquote Syntax Two Column Syntax for two column Footnote  class: center middle bg-primary text-light
-RemarkJS - CSS Guide Hugo Theme | Notebook-Searcher Background  class: center middle bg-primary text-light  Center list .</description>
+      <description>class: center middle bg-primary text-light
+RemarkJS - CSS Guide Hugo Theme | Notebook-Searcher Features  Bootstrap + Font Awesome Centered List Scaled Image Scrolling Blockquote Columnar Layout Footnote  Bootstrap + Font Awesome Bootstrap 4 and Font Awesome 5 are available in slides.
+Bootstrap Button  
+Centered List .blockquote-info[ &amp;gt; ### Guide &amp;gt; Use .fit-content.mx-auto to create a centered list ]
+.center[
+Example .fit-content.mx-auto[ - apple - orange - pear ] ]</description>
     </item>
     
     <item>
@@ -29,7 +33,8 @@ RemarkJS - CSS Guide Hugo Theme | Notebook-Searcher Background  class: center mi
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/periscope-teaching-plan/</guid>
       <description>class: middle center text-light bg-info
-Teaching Plan of Periscpe CyrusN Background  55 mins Target: F3 No of students: 26  Objective  鏡像反射定律 加強學生利用平面圖展示立體圖形  例如可用開展讓學生更能了解  了解直角等腰三角形的.text-danger[斜邊與高]的比例 $\sqrt{2}:1$  有助學生了解三角的特別角  增潤知識  A 系紙的長闊比為 $\sqrt{2}:1$   $\sqrt{2}:1$ （白銀比例）的應用  A4 紙的長闊比 白銀比例 - Wikipedia  A4 紙的長闊比  長：297mm 濶：210mm Ratio:  $\displaystyle \frac{297}{210}=1.41 (3 sig. fig.)$   Making of .overflow[ ]</description>
+Teaching Plan of Periscpe CyrusN Background  55 mins Target: F3 No of students: 26  Objective  鏡像反射定律 加強學生利用平面圖展示立體圖形  例如可用開展讓學生更能了解  了解直角等腰三角形的.text-danger[斜邊與高]的比例 $\sqrt{2}:1$  有助學生了解三角的特別角  增潤知識  A 系紙的長闊比為 $\sqrt{2}:1$   白銀比例的應用 $\sqrt{2}:1$ - A4 紙的長闊比 - 白銀比例 - Wikipedia
+A4 紙的長闊比  長：297mm 濶：210mm Ratio:  $\displaystyle \frac{297}{210}=1.41 (3 sig. fig.)$   Making of .img-50.center[ ]</description>
     </item>
     
     <item>
@@ -70,7 +75,7 @@ Raspberry Pi    RASPBERRY PI 3 MODEL B RASPBERRY PI ZERO W         More Powerful
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/pomodoro/</guid>
       <description>class: center middle bg-info text-light
-提升生產力及專注力 GTD &amp;amp; 蕃茄工作法 Reference  The Pomodoro Technique® - proudly developed by Francesco Cirillo | Cirillo Company David Allen&amp;rsquo;s Getting Things Done® Methodology  工作時間  平日每天約4小時 假日每天約6小時 合共： 4hr x 5day + 6hr x 2day = 32 hrs 如何保持專注?  規劃  每科應用15分鐘回顧及整理當天所學 功課應盡早完成 每天用盡所有工作時間  流程 .overflow.h-75[ ![workflow] ]
+提升生產力及專注力 GTD &amp;amp; 蕃茄工作法 Reference  The Pomodoro Technique® - proudly developed by Francesco Cirillo | Cirillo Company David Allen&amp;rsquo;s Getting Things Done® Methodology  工作時間  平日每天約4小時 假日每天約6小時 合共： 4hr x 5day + 6hr x 2day = 32 hrs 如何保持專注?  規劃  每科應用15分鐘回顧及整理當天所學 功課應盡早完成 每天用盡所有工作時間  流程 .scroll.h-75[  ]
 Why?  何時做 &amp;gt; 何時交 計時能令人集中  e.g. 考試、測驗   .row[ .</description>
     </item>
     

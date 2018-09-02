@@ -15,13 +15,13 @@
   <meta property="og:description" content="Links  Apps Script | Google Developers  Using html request to send form response  open inspecter in google form (view version, not editable one) find the input Tag of the question and copy it&rsquo;s name. The name look like entry.933828429 replace the word view in the link to formResponse  https://docs.google.com/forms/d/e/1FAIpQLSdC2RD1aD4W4duLGDjxsVFDGvJW6IUhhxsBGWiQlV7TU_w5LA/formResponse  add the query to the end of the link look like above  ?entry.933828429=Hello%20World where %20 mean space  if you need another question&rsquo;s response, use &amp; as seperator, like below.">
   <meta name="twitter:description" content="Links  Apps Script | Google Developers  Using html request to send form response  open inspecter in google form (view version, not editable one) find the input Tag of the question and copy it&rsquo;s …">
 
+  
+  <meta name="author" content="CyrusN"/>
 
-<meta name="author" content="CyrusN"/>
 
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/><script src='/js/jquery.slim.min.js'></script>
 
-  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
-<script src='/js/jquery.slim.min.js'></script>
 <script src='/js/bootstrap.bundle.min.js' ></script>
 
 
@@ -52,18 +52,19 @@
 
 
 
-const pageKind = "page"
-const navLinks = ['/']
+const pageKind = 'page'
+const baseURL = 'https:\/\/cyrusn.github.io'
+const navLinks = ['\/']
 
-  navLinks.push("\/note\/")
+  navLinks.push('\/note\/')
 
-  navLinks.push("\/post\/")
+  navLinks.push('\/post\/')
 
-  navLinks.push("\/slide\/")
+  navLinks.push('\/slide\/')
 
-  navLinks.push("\/tags\/")
+  navLinks.push('\/tags\/')
 
-  navLinks.push("\/page\/about\/")
+  navLinks.push('\/page\/about\/')
 
 
 var Paginator = {}

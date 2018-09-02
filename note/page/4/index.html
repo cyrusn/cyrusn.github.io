@@ -12,13 +12,13 @@
 
 
 
+  
+  <meta name="author" content="CyrusN"/>
 
-<meta name="author" content="CyrusN"/>
 
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/><script src='/js/jquery.slim.min.js'></script>
 
-  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
-<script src='/js/jquery.slim.min.js'></script>
 <script src='/js/bootstrap.bundle.min.js' ></script>
 
 
@@ -49,18 +49,19 @@
 
 
 
-const pageKind = "section"
-const navLinks = ['/']
+const pageKind = 'section'
+const baseURL = 'https:\/\/cyrusn.github.io'
+const navLinks = ['\/']
 
-  navLinks.push("\/note\/")
+  navLinks.push('\/note\/')
 
-  navLinks.push("\/post\/")
+  navLinks.push('\/post\/')
 
-  navLinks.push("\/slide\/")
+  navLinks.push('\/slide\/')
 
-  navLinks.push("\/tags\/")
+  navLinks.push('\/tags\/')
 
-  navLinks.push("\/page\/about\/")
+  navLinks.push('\/page\/about\/')
 
 
 var Paginator = {}
@@ -225,13 +226,6 @@ var Paginator = {}
       </li>
       
       
-      
-      
-      <li class="page-item ">
-        <a class="text-muted page-link" href="/note/page/6/">6</a>
-      </li>
-      
-      
 
       <li class="page-item " aria-label="Next">
         <a class="text-muted page-link" href="/note/page/5/">
@@ -240,7 +234,7 @@ var Paginator = {}
       </li>
       
       <li class="page-item ">
-        <a class="text-muted page-link" href="/note/page/6/" aria-label="Last" title="6">
+        <a class="text-muted page-link" href="/note/page/5/" aria-label="Last" title="5">
           <span aria-hidden="true">&raquo;&raquo;</span>
         </a>
       </li>
@@ -258,13 +252,101 @@ var Paginator = {}
       class="list-group-item list-group-item-light active">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
-          <a class="text-light" href="/note/config-digtal-ocean-droplet-as-microservice/">Config Digital Ocean Droplet as Microservice</a>
+          <a class="text-light" href="/note/google-chrome-app/">Google Chrome Apps</a>
+        </h6>
+        <small>2018-08-30</small>
+      </div>
+      <div class='d-flex mb-0 justify-content-between'>
+        <small>
+          <a class="text-light" href="/note/google-chrome-app/">/note/google-chrome-app/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-info" href="/tags/google">google</a>
+
+  <a class="badge badge-info" href="/tags/chrome">chrome</a>
+
+  <a class="badge badge-info" href="/tags/app">app</a>
+
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-1'
+      class="list-group-item list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/useful-command-line-tools/">Useful Command Line Tools</a>
+        </h6>
+        <small>2018-08-30</small>
+      </div>
+      <div class='d-flex mb-0 justify-content-between'>
+        <small>
+          <a class="text-muted" href="/note/useful-command-line-tools/">/note/useful-command-line-tools/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-info" href="/tags/commandline">commandline</a>
+
+  <a class="badge badge-info" href="/tags/httpie">httpie</a>
+
+  <a class="badge badge-info" href="/tags/jq">jq</a>
+
+  <a class="badge badge-info" href="/tags/kill">kill</a>
+
+  <a class="badge badge-info" href="/tags/pt">pt</a>
+
+  <a class="badge badge-info" href="/tags/redirect">redirect</a>
+
+  <a class="badge badge-info" href="/tags/terminal">terminal</a>
+
+  <a class="badge badge-info" href="/tags/tmux">tmux</a>
+
+  <a class="badge badge-info" href="/tags/top">top</a>
+
+  <a class="badge badge-info" href="/tags/wild-card">wild card</a>
+
+  <a class="badge badge-info" href="/tags/xargs">xargs</a>
+
+  <a class="badge badge-info" href="/tags/youtube-dl">youtube-dl</a>
+
+  <a class="badge badge-info" href="/tags/zsh">zsh</a>
+
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-2'
+      class="list-group-item list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/config-digtal-ocean-droplet-as-microservice/">Config Digital Ocean Droplet as Microservice</a>
         </h6>
         <small>2018-07-23</small>
       </div>
       <div class='d-flex mb-0 justify-content-between'>
         <small>
-          <a class="text-light" href="/note/config-digtal-ocean-droplet-as-microservice/">/note/config-digtal-ocean-droplet-as-microservice/</a>
+          <a class="text-muted" href="/note/config-digtal-ocean-droplet-as-microservice/">/note/config-digtal-ocean-droplet-as-microservice/</a>
         </small>
       </div>
       <small>
@@ -290,105 +372,7 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-1'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/web-authentication/">Web Authentication</a>
-        </h6>
-        <small>2018-06-26</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/note/web-authentication/">/note/web-authentication/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/authentication">authentication</a>
-
-  <a class="badge badge-info" href="/tags/jwt">jwt</a>
-
-  <a class="badge badge-info" href="/tags/security">security</a>
-
-  <a class="badge badge-info" href="/tags/web-token">web-token</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-2'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/digital-ocean/">Digital Ocean Notes</a>
-        </h6>
-        <small>2018-06-26</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/note/digital-ocean/">/note/digital-ocean/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/do">do</a>
-
-  <a class="badge badge-info" href="/tags/scp">scp</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
       id='list-3'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/docker/">Docker</a>
-        </h6>
-        <small>2018-06-26</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/note/docker/">/note/docker/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/docker">docker</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-4'
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -424,7 +408,71 @@ var Paginator = {}
     </div>
     
       <div
+      id='list-4'
+      class="list-group-item list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/javascript-on-osascript/">JavaScript on OSAScript</a>
+        </h6>
+        <small>2018-06-26</small>
+      </div>
+      <div class='d-flex mb-0 justify-content-between'>
+        <small>
+          <a class="text-muted" href="/note/javascript-on-osascript/">/note/javascript-on-osascript/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-info" href="/tags/macos">macos</a>
+
+  <a class="badge badge-info" href="/tags/osascript">osascript</a>
+
+</small>
+
+
+
+    </div>
+    
+      <div
       id='list-5'
+      class="list-group-item list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/digital-ocean/">Digital Ocean Notes</a>
+        </h6>
+        <small>2018-06-26</small>
+      </div>
+      <div class='d-flex mb-0 justify-content-between'>
+        <small>
+          <a class="text-muted" href="/note/digital-ocean/">/note/digital-ocean/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-info" href="/tags/do">do</a>
+
+  <a class="badge badge-info" href="/tags/scp">scp</a>
+
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-6'
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -456,17 +504,17 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-6'
+      id='list-7'
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
-          <a class="text-muted" href="/note/alfred/">Alfred Notes</a>
+          <a class="text-muted" href="/note/programming-concept/">Programming Concept</a>
         </h6>
         <small>2018-06-26</small>
       </div>
       <div class='d-flex mb-0 justify-content-between'>
         <small>
-          <a class="text-muted" href="/note/alfred/">/note/alfred/</a>
+          <a class="text-muted" href="/note/programming-concept/">/note/programming-concept/</a>
         </small>
       </div>
       <small>
@@ -479,8 +527,6 @@ var Paginator = {}
 
   <a class="badge badge-info" href="/tags/productivity">productivity</a>
 
-  <a class="badge badge-info" href="/tags/alfred">alfred</a>
-
 </small>
 
 
@@ -488,7 +534,7 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-7'
+      id='list-8'
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -512,7 +558,7 @@ var Paginator = {}
     </div>
     
       <div
-      id='list-8'
+      id='list-9'
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -538,38 +584,6 @@ var Paginator = {}
   <a class="badge badge-info" href="/tags/ssl">SSL</a>
 
   <a class="badge badge-info" href="/tags/tls">TLS</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-9'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/vim/">VIM Notes</a>
-        </h6>
-        <small>2016-10-04</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/note/vim/">/note/vim/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/editor">editor</a>
-
-  <a class="badge badge-info" href="/tags/vim">vim</a>
 
 </small>
 

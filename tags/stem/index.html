@@ -12,13 +12,13 @@
 
 
 
+  
+  <meta name="author" content="CyrusN"/>
 
-<meta name="author" content="CyrusN"/>
 
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/><script src='/js/jquery.slim.min.js'></script>
 
-  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
-<script src='/js/jquery.slim.min.js'></script>
 <script src='/js/bootstrap.bundle.min.js' ></script>
 
 
@@ -49,18 +49,19 @@
 
 
 
-const pageKind = "taxonomy"
-const navLinks = ['/']
+const pageKind = 'taxonomy'
+const baseURL = 'https:\/\/cyrusn.github.io'
+const navLinks = ['\/']
 
-  navLinks.push("\/note\/")
+  navLinks.push('\/note\/')
 
-  navLinks.push("\/post\/")
+  navLinks.push('\/post\/')
 
-  navLinks.push("\/slide\/")
+  navLinks.push('\/slide\/')
 
-  navLinks.push("\/tags\/")
+  navLinks.push('\/tags\/')
 
-  navLinks.push("\/page\/about\/")
+  navLinks.push('\/page\/about\/')
 
 
 var Paginator = {}
@@ -177,54 +178,6 @@ var Paginator = {}
     
 
 
-<div class="d-flex justify-content-center">
-  <nav aria-label="Page navigation example">
-    <ul class="pagination justify-content-center pagination-sm ">
-      
-      <li class="page-item disabled">
-        <a class="text-muted page-link" href="/tags/stem/" aria-label="First">
-          <span aria-hidden="true">&laquo;&laquo;</span>
-        </a>
-      </li>
-      
-      <li class="page-item disabled">
-        <a class="text-muted page-link" href="" aria-label="Previous">
-          <span aria-hidden="true">&laquo;</span>
-        </a>
-      </li>
-
-      
-      
-      
-      <li class="page-item active">
-        <a class=" page-link" href="/tags/stem/">1</a>
-      </li>
-      
-      
-      
-      
-      <li class="page-item ">
-        <a class="text-muted page-link" href="/tags/stem/page/2/">2</a>
-      </li>
-      
-      
-
-      <li class="page-item " aria-label="Next">
-        <a class="text-muted page-link" href="/tags/stem/page/2/">
-          <span aria-hidden="true">&raquo;</span>
-        </a>
-      </li>
-      
-      <li class="page-item ">
-        <a class="text-muted page-link" href="/tags/stem/page/2/" aria-label="Last" title="2">
-          <span aria-hidden="true">&raquo;&raquo;</span>
-        </a>
-      </li>
-      
-    </ul>
-  </nav>
-</div>
-
 
   <div>
     <div class="list-style list-group mx-auto w-75">
@@ -234,13 +187,13 @@ var Paginator = {}
       class="list-group-item list-group-item-light active">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
-          <a class="text-light" href="/note/stem_curriculum/">STEM Curriculum for Hong Kong</a>
+          <a class="text-light" href="/post/raspberry-pi-zero-otg-mode/">Raspberry Pi Zero OTG Mode</a>
         </h6>
         <small>2018-08-30</small>
       </div>
       <div class='d-flex mb-0 justify-content-between'>
         <small>
-          <a class="text-light" href="/note/stem_curriculum/">/note/stem_curriculum/</a>
+          <a class="text-light" href="/post/raspberry-pi-zero-otg-mode/">/post/raspberry-pi-zero-otg-mode/</a>
         </small>
       </div>
       <small>
@@ -251,11 +204,9 @@ var Paginator = {}
 
 <small>
 
-  <a class="badge badge-info" href="/tags/stem">STEM</a>
+  <a class="badge badge-info" href="/tags/otg">otg</a>
 
-  <a class="badge badge-info" href="/tags/curriculum">curriculum</a>
-
-  <a class="badge badge-info" href="/tags/iot">IOT</a>
+  <a class="badge badge-info" href="/tags/stem">stem</a>
 
 </small>
 
@@ -306,13 +257,13 @@ var Paginator = {}
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
-          <a class="text-muted" href="/note/stem_for_kids/">Stem for kids</a>
+          <a class="text-muted" href="/post/raspberry-pi-setup/">Raspberry Pi Setup</a>
         </h6>
         <small>2018-08-30</small>
       </div>
       <div class='d-flex mb-0 justify-content-between'>
         <small>
-          <a class="text-muted" href="/note/stem_for_kids/">/note/stem_for_kids/</a>
+          <a class="text-muted" href="/post/raspberry-pi-setup/">/post/raspberry-pi-setup/</a>
         </small>
       </div>
       <small>
@@ -325,6 +276,10 @@ var Paginator = {}
 
   <a class="badge badge-info" href="/tags/stem">stem</a>
 
+  <a class="badge badge-info" href="/tags/raspberry-pi">raspberry pi</a>
+
+  <a class="badge badge-info" href="/tags/linux">linux</a>
+
 </small>
 
 
@@ -333,6 +288,174 @@ var Paginator = {}
     
       <div
       id='list-3'
+      class="list-group-item list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/retropie/">RetroPie</a>
+        </h6>
+        <small>2018-08-30</small>
+      </div>
+      <div class='d-flex mb-0 justify-content-between'>
+        <small>
+          <a class="text-muted" href="/note/retropie/">/note/retropie/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-info" href="/tags/8bitdo">8bitdo</a>
+
+  <a class="badge badge-info" href="/tags/stem">stem</a>
+
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-4'
+      class="list-group-item list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/create-spy-camera-with-raspberry-pi-zero-w/">Create Spy Camera With Raspberry Pi Zero W</a>
+        </h6>
+        <small>2018-08-30</small>
+      </div>
+      <div class='d-flex mb-0 justify-content-between'>
+        <small>
+          <a class="text-muted" href="/note/create-spy-camera-with-raspberry-pi-zero-w/">/note/create-spy-camera-with-raspberry-pi-zero-w/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-info" href="/tags/stem">stem</a>
+
+  <a class="badge badge-info" href="/tags/rpi">rpi</a>
+
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-5'
+      class="list-group-item list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/stem_curriculum/">STEM Curriculum for Hong Kong</a>
+        </h6>
+        <small>2018-08-30</small>
+      </div>
+      <div class='d-flex mb-0 justify-content-between'>
+        <small>
+          <a class="text-muted" href="/note/stem_curriculum/">/note/stem_curriculum/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-info" href="/tags/stem">STEM</a>
+
+  <a class="badge badge-info" href="/tags/curriculum">curriculum</a>
+
+  <a class="badge badge-info" href="/tags/iot">IOT</a>
+
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-6'
+      class="list-group-item list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/slide/introduction-to-raspberry-pi/">Introduction to Raspberry Pi</a>
+        </h6>
+        <small>2018-08-30</small>
+      </div>
+      <div class='d-flex mb-0 justify-content-between'>
+        <small>
+          <a class="text-muted" href="/slide/introduction-to-raspberry-pi/">/slide/introduction-to-raspberry-pi/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-info" href="/tags/raspberry">raspberry</a>
+
+  <a class="badge badge-info" href="/tags/pi">pi</a>
+
+  <a class="badge badge-info" href="/tags/stem">stem</a>
+
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-7'
+      class="list-group-item list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
+          <a class="text-muted" href="/note/blink_led/">Blink Led</a>
+        </h6>
+        <small>2018-08-30</small>
+      </div>
+      <div class='d-flex mb-0 justify-content-between'>
+        <small>
+          <a class="text-muted" href="/note/blink_led/">/note/blink_led/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-info" href="/tags/raspberry">raspberry</a>
+
+  <a class="badge badge-info" href="/tags/pi">pi</a>
+
+  <a class="badge badge-info" href="/tags/raspberrypi">raspberrypi</a>
+
+  <a class="badge badge-info" href="/tags/stem">stem</a>
+
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-8'
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
@@ -369,206 +492,6 @@ var Paginator = {}
 
     </div>
     
-      <div
-      id='list-4'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/retropie/">RetroPie</a>
-        </h6>
-        <small>2018-08-30</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/note/retropie/">/note/retropie/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/8bitdo">8bitdo</a>
-
-  <a class="badge badge-info" href="/tags/stem">stem</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-5'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/slide/introduction-to-raspberry-pi/">Introduction to Raspberry Pi</a>
-        </h6>
-        <small>2018-08-30</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/slide/introduction-to-raspberry-pi/">/slide/introduction-to-raspberry-pi/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/raspberry">raspberry</a>
-
-  <a class="badge badge-info" href="/tags/pi">pi</a>
-
-  <a class="badge badge-info" href="/tags/stem">stem</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-6'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/post/raspberry-pi-zero-otg-mode/">Raspberry Pi Zero OTG Mode</a>
-        </h6>
-        <small>2018-08-23</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/post/raspberry-pi-zero-otg-mode/">/post/raspberry-pi-zero-otg-mode/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/otg">otg</a>
-
-  <a class="badge badge-info" href="/tags/stem">stem</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-7'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/post/raspberry-pi-setup/">Raspberry Pi Setup</a>
-        </h6>
-        <small>2018-06-26</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/post/raspberry-pi-setup/">/post/raspberry-pi-setup/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/stem">stem</a>
-
-  <a class="badge badge-info" href="/tags/raspberry-pi">raspberry pi</a>
-
-  <a class="badge badge-info" href="/tags/linux">linux</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-8'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/create-spy-camera-with-raspberry-pi-zero-w/">Create Spy Camera With Raspberry Pi Zero W</a>
-        </h6>
-        <small>2018-02-13</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/note/create-spy-camera-with-raspberry-pi-zero-w/">/note/create-spy-camera-with-raspberry-pi-zero-w/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/stem">stem</a>
-
-  <a class="badge badge-info" href="/tags/rpi">rpi</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-9'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/blink_led/">Blink Led</a>
-        </h6>
-        <small>2017-10-16</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/note/blink_led/">/note/blink_led/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/raspberry">raspberry</a>
-
-  <a class="badge badge-info" href="/tags/pi">pi</a>
-
-  <a class="badge badge-info" href="/tags/raspberrypi">raspberrypi</a>
-
-  <a class="badge badge-info" href="/tags/stem">stem</a>
-
-</small>
-
-
-
-    </div>
-    
   </div>
 </div>
 <script type="text/javascript">
@@ -579,9 +502,9 @@ var Paginator = {}
   
   
   Paginator = {
-    hasNext:  true ,
+    hasNext:  false ,
     hasPrev:  false ,
-    nextPage: "\/tags\/stem\/page\/2\/",
+    nextPage: null,
     prevPage: null
   }
   

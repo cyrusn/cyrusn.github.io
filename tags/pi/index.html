@@ -12,13 +12,13 @@
 
 
 
+  
+  <meta name="author" content="CyrusN"/>
 
-<meta name="author" content="CyrusN"/>
 
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/><script src='/js/jquery.slim.min.js'></script>
 
-  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
-<script src='/js/jquery.slim.min.js'></script>
 <script src='/js/bootstrap.bundle.min.js' ></script>
 
 
@@ -49,18 +49,19 @@
 
 
 
-const pageKind = "taxonomy"
-const navLinks = ['/']
+const pageKind = 'taxonomy'
+const baseURL = 'https:\/\/cyrusn.github.io'
+const navLinks = ['\/']
 
-  navLinks.push("\/note\/")
+  navLinks.push('\/note\/')
 
-  navLinks.push("\/post\/")
+  navLinks.push('\/post\/')
 
-  navLinks.push("\/slide\/")
+  navLinks.push('\/slide\/')
 
-  navLinks.push("\/tags\/")
+  navLinks.push('\/tags\/')
 
-  navLinks.push("\/page\/about\/")
+  navLinks.push('\/page\/about\/')
 
 
 var Paginator = {}
@@ -220,6 +221,42 @@ var Paginator = {}
       class="list-group-item list-group-item-light ">
       <div class="d-flex w-100 justify-content-between">
         <h6 class="mb-1">
+          <a class="text-muted" href="/note/blink_led/">Blink Led</a>
+        </h6>
+        <small>2018-08-30</small>
+      </div>
+      <div class='d-flex mb-0 justify-content-between'>
+        <small>
+          <a class="text-muted" href="/note/blink_led/">/note/blink_led/</a>
+        </small>
+      </div>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-info" href="/tags/raspberry">raspberry</a>
+
+  <a class="badge badge-info" href="/tags/pi">pi</a>
+
+  <a class="badge badge-info" href="/tags/raspberrypi">raspberrypi</a>
+
+  <a class="badge badge-info" href="/tags/stem">stem</a>
+
+</small>
+
+
+
+    </div>
+    
+      <div
+      id='list-2'
+      class="list-group-item list-group-item-light ">
+      <div class="d-flex w-100 justify-content-between">
+        <h6 class="mb-1">
           <a class="text-muted" href="/note/raspberry-pi/">Raspberry Pi</a>
         </h6>
         <small>2018-08-30</small>
@@ -246,42 +283,6 @@ var Paginator = {}
   <a class="badge badge-info" href="/tags/raspberry">raspberry</a>
 
   <a class="badge badge-info" href="/tags/pi">pi</a>
-
-</small>
-
-
-
-    </div>
-    
-      <div
-      id='list-2'
-      class="list-group-item list-group-item-light ">
-      <div class="d-flex w-100 justify-content-between">
-        <h6 class="mb-1">
-          <a class="text-muted" href="/note/blink_led/">Blink Led</a>
-        </h6>
-        <small>2017-10-16</small>
-      </div>
-      <div class='d-flex mb-0 justify-content-between'>
-        <small>
-          <a class="text-muted" href="/note/blink_led/">/note/blink_led/</a>
-        </small>
-      </div>
-      <small>
-  
-  
-  
-</small>
-
-<small>
-
-  <a class="badge badge-info" href="/tags/raspberry">raspberry</a>
-
-  <a class="badge badge-info" href="/tags/pi">pi</a>
-
-  <a class="badge badge-info" href="/tags/raspberrypi">raspberrypi</a>
-
-  <a class="badge badge-info" href="/tags/stem">stem</a>
 
 </small>
 

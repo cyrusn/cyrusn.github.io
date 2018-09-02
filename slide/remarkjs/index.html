@@ -3,13 +3,16 @@
 <head>
   <meta charset="utf-8">
   
-  <link rel="stylesheet" type="text/css" href='/css/remark.css'>
-  <script src='/js/remark-latest.min.js'></script>
+  <script src='/js/jquery.slim.min.js'></script>
+
   
-  <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
-<script src='/js/jquery.slim.min.js'></script>
+    <link rel="stylesheet" type="text/css" href='/css/remark.css'>
+      
+      <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
 <script src='/js/bootstrap.bundle.min.js' ></script>
 
+  
+  <script src='/js/remark-latest.min.js'></script>
 
   <script src='/js/helper.js'></script>
   
@@ -25,36 +28,37 @@
 
 <body class="text-dark">
 <div id="source">
-# Agenda
+class: center middle bg-primary text-light
 
-- Background
-- Center list
-- Example
-- This is normal image
-- `img-100` class to set max width to 100%
-- `img-75` class to set max width to 75%
-- Also available on ...
-- `overflow` can make the image overflow
+# RemarkJS - CSS Guide
+&lt;hr class=&#34;bg-light&#34;&gt;
+## [Hugo Theme | Notebook-Searcher][@1]
+
+---
+
+# Features
+
+- Bootstrap &#43; Font Awesome
+- Centered List
+- Scaled Image
+- Scrolling
 - Blockquote
-- Syntax
-- Two Column
-- Syntax for two column
+- Columnar Layout
 - Footnote
 
 ---
 
-class: center middle bg-primary text-light
-# RemarkJS - CSS Guide
-&lt;hr class=&#34;bg-light&#34;&gt;
-## [Hugo Theme | Notebook-Searcher](https://github.com/cyrusn/notebook-searcher)
+# Bootstrap &#43; Font Awesome
+
+Bootstrap 4 and Font Awesome 5 are available in slides.  
+
+&lt;button type=&#34;button&#34; class=&#34;btn btn-primary&#34;&gt;Bootstrap Button&lt;/button&gt;
+&lt;i class=&#34;fab fa-font-awesome-flag&#34;&gt;&lt;/i&gt; &lt;i class=&#34;far fa-kiss-wink-heart&#34;&gt;&lt;/i&gt;
 
 ---
-# Background
 
-- `class: center middle bg-primary text-light` 
+# Centered List
 
----
-# Center list
 .blockquote-info[
 &gt; ### Guide
 &gt; Use `.fit-content.mx-auto` to create a centered list
@@ -69,42 +73,52 @@ class: center middle bg-primary text-light
 ]
 ]
 
-
 ---
+
 class: center
-# This is normal image
+
+# This is a normal image
+
 But the image is too .text-danger[**big**]
-![image][@1]
+![image][@2]
 
 ---
+
 class: center
 
 # `img-100` class to set max width to 100%
-.img-100[![image][@1]]
+
+.img-100[![image][@2]]
 
 ---
+
 class: center
 
 # `img-75` class to set max width to 75%
-.img-75[![image][@1]]
+
+.img-75[![image][@2]]
 
 ---
-# Also available on ...
+
+# Also available ...
+
 - `img-50`
 - `img-25`
 
 ---
+
 class: center
 
-# `overflow` can make the image overflow
+# `scroll` to enable scrolling for long content
 
-Use together with `.img-100` and `h-75` can produce a nice overflowed image
+Use together with `.img-100` and `h-75` to produce a nice overflowed image
 
-.img-100.overflow.h-75[
-![image][@1]
+.img-100.h-75.scroll[
+![image][@2]
 ]
 
 ---
+
 # Blockquote
 
 .blockquote-primary[
@@ -112,18 +126,24 @@ Use together with `.img-100` and `h-75` can produce a nice overflowed image
 &gt; This is primary blockquote&#39;s content.
 ]
 
-# Syntax
-``` md
+## Syntax
+
+```md
 .blockquote-primary[
 &gt; #### blockquote
 &gt; This is primary blockquote&#39;s content.
 ]
 ```
 
-Other available color: `primary`, `secondary`, `success`, `info`, `warning`, `danger`, `light`, `dark`
+Available styles:  
+`primary`, `secondary`, `success`, `info`, `warning`, `danger`, `light`, `dark`
 
 ---
-# Two Column
+
+# Two Columns Layout
+
+Use Bootstrap&#39;s `.row`, `.col` to create columnar layout
+
 .row[
 .col-6[
 - This is column 1
@@ -135,12 +155,15 @@ Other available color: `primary`, `secondary`, `success`, `info`, `warning`, `da
 - This is column 2
   &#43; alpha
   &#43; beta
-  &#43; see syntax on next page
+  &#43; see syntax on next slide
 ]
 ]
+
 ---
-# Syntax for two column
-``` md
+
+# Syntax
+
+```md
 .row[
 .col-6[
 - This is column 1
@@ -155,19 +178,52 @@ Other available color: `primary`, `secondary`, `success`, `info`, `warning`, `da
 ]
 ]
 ```
-
 ---
+
 class: row
 
 .col-3.bg-light.sidebar[
 ### Sidebar
 - alpha
 - beta
-- gammer
 ]
 
 .col-9[
-## Syntax 
+## Slide with sidebar 1
+
+Note the last sidebar item will be ***bold italic***
+]
+
+---
+
+class: row
+
+.col-3.bg-light.sidebar[
+### Sidebar
+- alpha
+- beta
+- gamma
+]
+
+.col-9[
+## Slide with sidebar 2
+
+See syntax on next slide
+]
+
+---
+
+class: row
+
+.col-3.bg-light.sidebar[
+### Sidebar
+- alpha
+- beta
+- gamma
+]
+
+.col-9[
+## Syntax
 
 ```md
 class: row
@@ -176,32 +232,33 @@ class: row
 ### Sidebar
 - alpha
 - beta
-- gammer
+- gamma
 ]
 
 .col-9[
-This is the syntax 
+// This syntax block
 ...
 ]
 ```
 ]
 
 ---
+
 # Footnote
 
-This is example.sup[1] of footnote.sup[2], here is google.com.sup[3]
+This is an example.sup[1] of footnotes.sup[2], link to Google.sup[3]
 .footnote[
 1. Hello! World.
-2. see syntax on next page
+2. Footnoting is fun
 3. https://google.com
 ]
 
 ## Syntax
 ``` md
-This is example.sup[1] of footnote.sup[2], here is google.com.sup[3]
+This is an example.sup[1] of footnotes.sup[2], link to Google.sup[3]
 .footnote[
 1. Hello! World.
-2. see syntax on next page
+2. Footnoting is fun
 3. https://google.com
 ]
 ```
@@ -213,7 +270,11 @@ class: center middle bg-info text-light
 
 &lt;!-- reference links --&gt;
 
-[@1]: https://www.globallandscapesforum.org/wp-content/uploads/2017/11/situgunung-flipped-1600.jpg
+[@1]: https://github.com/cyrusn/notebook-searcher
+[@2]: ./1600x1000.jpg
+[@3]: ./1600x1000.jpg
+[@4]: ./1600x1000.jpg
+[@5]: ./1600x1000.jpg
 
 </div>
 

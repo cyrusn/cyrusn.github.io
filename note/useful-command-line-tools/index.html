@@ -15,13 +15,13 @@
   <meta property="og:description" content="Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.txt # redirect the standard output result to file (append) echo &quot;hello world&quot; &gt;&gt; test.txt # redirect file to standard input # e.g. replace all space to _ in text.txt and save to a new file sed &#39;s/ /_/g&#39; &lt; test.txt &gt; test_1.txt # line input cat &lt;&lt; end heredoc&gt; hello heredoc&gt; world heredoc&gt; end  Create multiple files or folders mkdir sa{1.">
   <meta name="twitter:description" content="Basic Redirect operators # pipe echo &quot;hello world&quot; | sed &#39;s/ /_/&#39; # redirect the standard output result to file (replace) echo &quot;hello world&quot; &gt; test.txt # redirect the standard …">
 
+  
+  <meta name="author" content="CyrusN"/>
 
-<meta name="author" content="CyrusN"/>
 
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/><script src='/js/jquery.slim.min.js'></script>
 
-  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
-<script src='/js/jquery.slim.min.js'></script>
 <script src='/js/bootstrap.bundle.min.js' ></script>
 
 
@@ -52,18 +52,19 @@
 
 
 
-const pageKind = "page"
-const navLinks = ['/']
+const pageKind = 'page'
+const baseURL = 'https:\/\/cyrusn.github.io'
+const navLinks = ['\/']
 
-  navLinks.push("\/note\/")
+  navLinks.push('\/note\/')
 
-  navLinks.push("\/post\/")
+  navLinks.push('\/post\/')
 
-  navLinks.push("\/slide\/")
+  navLinks.push('\/slide\/')
 
-  navLinks.push("\/tags\/")
+  navLinks.push('\/tags\/')
 
-  navLinks.push("\/page\/about\/")
+  navLinks.push('\/page\/about\/')
 
 
 var Paginator = {}

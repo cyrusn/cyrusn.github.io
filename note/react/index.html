@@ -15,13 +15,13 @@
   <meta property="og:description" content="API notes and example  Top-Level API Component API Component Specs and ifecycle Tags and Attributes Event System  Ref Links Concept  React | A JavaScript library for building user interfaces Reactive MVC and the Virtual DOM &ndash; Futurice ReactJS For Stupid People Component Interop With React And Custom Elements Josh Haberman: React Demystified Intro to the React Framework | Nettuts&#43; Integrating React and Flux with Angular  Tutorial  Learning React.">
   <meta name="twitter:description" content="API notes and example  Top-Level API Component API Component Specs and ifecycle Tags and Attributes Event System  Ref Links Concept  React | A JavaScript library for building user interfaces Reactive …">
 
+  
+  <meta name="author" content="CyrusN"/>
 
-<meta name="author" content="CyrusN"/>
 
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/><script src='/js/jquery.slim.min.js'></script>
 
-  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
-<script src='/js/jquery.slim.min.js'></script>
 <script src='/js/bootstrap.bundle.min.js' ></script>
 
 
@@ -52,18 +52,19 @@
 
 
 
-const pageKind = "page"
-const navLinks = ['/']
+const pageKind = 'page'
+const baseURL = 'https:\/\/cyrusn.github.io'
+const navLinks = ['\/']
 
-  navLinks.push("\/note\/")
+  navLinks.push('\/note\/')
 
-  navLinks.push("\/post\/")
+  navLinks.push('\/post\/')
 
-  navLinks.push("\/slide\/")
+  navLinks.push('\/slide\/')
 
-  navLinks.push("\/tags\/")
+  navLinks.push('\/tags\/')
 
-  navLinks.push("\/page\/about\/")
+  navLinks.push('\/page\/about\/')
 
 
 var Paginator = {}

@@ -35,15 +35,6 @@
     </item>
     
     <item>
-      <title>Stem for kids</title>
-      <link>https://cyrusn.github.io/note/stem_for_kids/</link>
-      <pubDate>Sun, 01 Jul 2018 17:21:08 +0800</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/stem_for_kids/</guid>
-      <description> References  Coding for Kids-A Guide for Teachers and Parents | Udemy  </description>
-    </item>
-    
-    <item>
       <title>Raspberry Pi Setup</title>
       <link>https://cyrusn.github.io/post/raspberry-pi-setup/</link>
       <pubDate>Tue, 26 Jun 2018 21:10:39 +0800</pubDate>
@@ -98,7 +89,7 @@ Raspberry Pi    RASPBERRY PI 3 MODEL B RASPBERRY PI ZERO W         More Powerful
       <pubDate>Mon, 16 Oct 2017 16:05:23 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/blink_led/</guid>
-      <description>  Introduction Setting Python Code  Introduction Making Blinking LED is just like writing a hello world programme in engineering.
+      <description> Introduction Making Blinking LED is just like writing a hello world programme in engineering.
 Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GPIO.BCM) GPIO.set(LED, GPIO.OUT) GPIO.setwarnings(False) print(&amp;quot;Programme start.&amp;quot;) GPIO.output(LED, True) time.sleep(0.5) GPIO.output(LED, False) time.sleep(0.5) print(&amp;quot;Programme closed.&amp;quot;)  </description>
     </item>
     
@@ -111,15 +102,6 @@ Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GP
       <description>Basic setting  Setup guide for raspberry pi  Autostart Use sudo crontab -e to set autostart programme
 @reboot python /home/pi/MyScript.py &amp;amp;  This tells Cron that every boot (or reboot or start-up) we want to run Python with the script MyScript.py. The “&amp;amp;” at the end of the line means the command is run in the background and it won’t stop the system booting up as before.
 To kill the job</description>
-    </item>
-    
-    <item>
-      <title>STEM Idea on Education</title>
-      <link>https://cyrusn.github.io/note/stem-idea-on-education/</link>
-      <pubDate>Tue, 20 Jun 2017 19:05:48 +0800</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/note/stem-idea-on-education/</guid>
-      <description>STEM chanllege Innovative Ideas (Think by Discipline) Coding and Math Reference Statistic Engineering Some Idea from 青年會書院 Ideas Model on STEM Education Resource  STEM chanllege  making stuff  make a plane, it can fly as long as possible. make a bridge, it can weigh as heavy as possible. make a phone, it can talk as far as possible  Solve some puzzle  decode an encrypted message   Innovative Ideas (Think by Discipline)  Health  Elderly Care Smart Home Smoke Detector falling Detector Silent Detector Bionics Eyes  Climate Change Challenge / Envoirnment  typhoon disaster Sewage Handling Extreme Heat / Cold Bio Disel storm surges terrential rains Prevent 4D Jobs (Dull, Dirty, Dangerous)   Coding and Math Reference  Computer Science (Not Just Coding) Needs a Bigger Role in STEM Education | EdTech Magazine UC Davis Center for Integrated Computing and STEM Education Zebra Puzzle - Wikiwand The Micro:bit Foundation is a global non-profit organisation making invention with technology fun for everyone!</description>
     </item>
     
   </channel>

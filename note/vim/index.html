@@ -17,13 +17,13 @@ Insert across multi-lines Select the lines you want to modify using Ctrl-v. Pres
 Insert across multi-lines Select the lines you want to modify using Ctrl-v. Press: I: Insert before what&rsquo;s selected. A: Append after what&rsquo;s selected. c: Replace what&rsquo;s selected. Type the new text. Press Esc to apply the changes to all selected lines.">
   <meta name="twitter:description" content="VIM Basic  amix/vimrc: The ultimate Vim configuration: vimrc Vim Cheat Sheet - English VimGenius vimgifs  Some useful skills Update VIM Pathogen Plugin for i in ~/.vim/bundle/*; do git -C $i pull; …">
 
+  
+  <meta name="author" content="CyrusN"/>
 
-<meta name="author" content="CyrusN"/>
 
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/><script src='/js/jquery.slim.min.js'></script>
 
-  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
-<script src='/js/jquery.slim.min.js'></script>
 <script src='/js/bootstrap.bundle.min.js' ></script>
 
 
@@ -54,18 +54,19 @@ Insert across multi-lines Select the lines you want to modify using Ctrl-v. Pres
 
 
 
-const pageKind = "page"
-const navLinks = ['/']
+const pageKind = 'page'
+const baseURL = 'https:\/\/cyrusn.github.io'
+const navLinks = ['\/']
 
-  navLinks.push("\/note\/")
+  navLinks.push('\/note\/')
 
-  navLinks.push("\/post\/")
+  navLinks.push('\/post\/')
 
-  navLinks.push("\/slide\/")
+  navLinks.push('\/slide\/')
 
-  navLinks.push("\/tags\/")
+  navLinks.push('\/tags\/')
 
-  navLinks.push("\/page\/about\/")
+  navLinks.push('\/page\/about\/')
 
 
 var Paginator = {}

@@ -13,13 +13,17 @@
     
     
     <item>
-      <title>My RemarkJS CSS</title>
+      <title>Notebook-Searcher RemarkJS CSS</title>
       <link>https://cyrusn.github.io/slide/remarkjs/</link>
       <pubDate>Thu, 24 May 2018 19:59:24 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/remarkjs/</guid>
-      <description>Agenda  Background Center list Example This is normal image img-100 class to set max width to 100% img-75 class to set max width to 75% Also available on &amp;hellip; overflow can make the image overflow Blockquote Syntax Two Column Syntax for two column Footnote  class: center middle bg-primary text-light
-RemarkJS - CSS Guide Hugo Theme | Notebook-Searcher Background  class: center middle bg-primary text-light  Center list .</description>
+      <description>class: center middle bg-primary text-light
+RemarkJS - CSS Guide Hugo Theme | Notebook-Searcher Features  Bootstrap + Font Awesome Centered List Scaled Image Scrolling Blockquote Columnar Layout Footnote  Bootstrap + Font Awesome Bootstrap 4 and Font Awesome 5 are available in slides.
+Bootstrap Button  
+Centered List .blockquote-info[ &amp;gt; ### Guide &amp;gt; Use .fit-content.mx-auto to create a centered list ]
+.center[
+Example .fit-content.mx-auto[ - apple - orange - pear ] ]</description>
     </item>
     
   </channel>
