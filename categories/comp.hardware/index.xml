@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Comp.hardware on Notebook | CyrusN</title>
+    <link>https://cyrusn.github.io/categories/comp.hardware/</link>
+    <description>Recent content in Comp.hardware on Notebook | CyrusN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
+    <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
+    <lastBuildDate>Fri, 12 Jun 2015 13:35:14 +0000</lastBuildDate>
+    
+	<atom:link href="https://cyrusn.github.io/categories/comp.hardware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Internet of things</title>
+      <link>https://cyrusn.github.io/note/iot/</link>
+      <pubDate>Fri, 12 Jun 2015 13:35:14 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/iot/</guid>
+      <description>Internet of things - Wikiwand Embedded system - Wikiwand Microcontroller - Wikiwand Maker Pro | Electronics Projects, From Concept to Creation
+NodeUp #73 #177: Cylon.js, Gobot, Artoo, and IoT with Ron Evans from The Hybrid Group - Changelog
+Mesh networking extends IoT reach - O&amp;rsquo;Reilly Radar Extracting value from the IoT - O&amp;rsquo;Reilly Radar
+电路城—专为中国工程师量身打造的电路图、库、源代码交易平台
+Nitrogen: A platform for connecting devices and applications. authority framework nitrogenjs nitrogen
+NodeBots - The Rise of JS Robotics Node-RED A visual tool for wiring the Internet of Things Node-Red 簡介與快速安裝</description>
+    </item>
+    
+  </channel>
+</rss>

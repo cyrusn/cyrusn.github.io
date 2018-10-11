@@ -7,10 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
     <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
-    <lastBuildDate>Sat, 01 Sep 2018 11:42:32 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 10 Oct 2018 10:55:10 +0800</lastBuildDate>
     
 	<atom:link href="https://cyrusn.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>F1 Mathematics notes</title>
+      <link>https://cyrusn.github.io/slide/f1a-1819/</link>
+      <pubDate>Wed, 10 Oct 2018 10:55:10 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/f1a-1819/</guid>
+      <description> class: center middle bg-info text-light
+Mathematics F1A class: row
+.col-3.bg-light[
+9 Oct 2018 化簡代數式 - 如何分項？ - 何謂 + 常數項？ + 同類項？ + 異類項？ - 同類項有何特別呢？ ] .col-9[ .img-100.h-50.scroll[  ]]
+class: row
+.col-3.bg-light[
+13 Sept 2018 有向數的加法和減法 - 有向數的加減法則是甚麼？ ]
+.col-9[ .img-100.h-50.scroll[  ] ]
+class: row .col-3.bg-light[
+11 Sept 2018 有向數的基本概念 - 質性符號 - 如何比較有向數的大小 ]
+.col-9[ .img-100.h-50.scroll[  ] ]
+class: middle center bg-info text-light
+End </description>
+    </item>
     
     <item>
       <title>Tutorials to Electronics</title>
@@ -486,6 +507,20 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/google-chrome-app/</guid>
       <description> Links  Adblock Plus - Chrome Web Store Tampermonkey - Chrome Web Store Wikiwand: Wikipedia Modernized - Chrome Web Store Markdown Preview Plus - Chrome Web Store Postman - REST Client - Chrome Web Store  </description>
+    </item>
+    
+    <item>
+      <title>Internet of things</title>
+      <link>https://cyrusn.github.io/note/iot/</link>
+      <pubDate>Fri, 12 Jun 2015 13:35:14 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/iot/</guid>
+      <description>Internet of things - Wikiwand Embedded system - Wikiwand Microcontroller - Wikiwand Maker Pro | Electronics Projects, From Concept to Creation
+NodeUp #73 #177: Cylon.js, Gobot, Artoo, and IoT with Ron Evans from The Hybrid Group - Changelog
+Mesh networking extends IoT reach - O&amp;rsquo;Reilly Radar Extracting value from the IoT - O&amp;rsquo;Reilly Radar
+电路城—专为中国工程师量身打造的电路图、库、源代码交易平台
+Nitrogen: A platform for connecting devices and applications. authority framework nitrogenjs nitrogen
+NodeBots - The Rise of JS Robotics Node-RED A visual tool for wiring the Internet of Things Node-Red 簡介與快速安裝</description>
     </item>
     
     <item>

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cyrusn.github.io/slide/f1a-1819/</loc>
+    <lastmod>2018-10-11T10:53:22+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cyrusn.github.io/note/tutorials-to-electronics/</loc>
     <lastmod>2018-08-30T10:31:58+08:00</lastmod>
   </url>
@@ -238,6 +243,11 @@
   </url>
   
   <url>
+    <loc>https://cyrusn.github.io/note/iot/</loc>
+    <lastmod>2018-10-11T10:53:22+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cyrusn.github.io/note/programming-concept/</loc>
     <lastmod>2018-06-26T23:44:07+08:00</lastmod>
   </url>
@@ -399,6 +409,12 @@
   <url>
     <loc>https://cyrusn.github.io/tags/commandline/</loc>
     <lastmod>2018-08-30T10:31:58+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cyrusn.github.io/categories/comp.hardware/</loc>
+    <lastmod>2018-10-11T10:53:22+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -680,7 +696,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/</loc>
-    <lastmod>2018-08-30T10:31:58+08:00</lastmod>
+    <lastmod>2018-10-11T10:53:22+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -854,7 +870,7 @@
   
   <url>
     <loc>https://cyrusn.github.io/slide/</loc>
-    <lastmod>2018-08-30T10:31:58+08:00</lastmod>
+    <lastmod>2018-10-11T10:53:22+08:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -380,6 +380,20 @@ The authentication relied on Certificate Authorities (CA) and a public key infra
     </item>
     
     <item>
+      <title>Internet of things</title>
+      <link>https://cyrusn.github.io/note/iot/</link>
+      <pubDate>Fri, 12 Jun 2015 13:35:14 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/note/iot/</guid>
+      <description>Internet of things - Wikiwand Embedded system - Wikiwand Microcontroller - Wikiwand Maker Pro | Electronics Projects, From Concept to Creation
+NodeUp #73 #177: Cylon.js, Gobot, Artoo, and IoT with Ron Evans from The Hybrid Group - Changelog
+Mesh networking extends IoT reach - O&amp;rsquo;Reilly Radar Extracting value from the IoT - O&amp;rsquo;Reilly Radar
+电路城—专为中国工程师量身打造的电路图、库、源代码交易平台
+Nitrogen: A platform for connecting devices and applications. authority framework nitrogenjs nitrogen
+NodeBots - The Rise of JS Robotics Node-RED A visual tool for wiring the Internet of Things Node-Red 簡介與快速安裝</description>
+    </item>
+    
+    <item>
       <title>Programming Concept</title>
       <link>https://cyrusn.github.io/note/programming-concept/</link>
       <pubDate>Fri, 05 Jun 2015 08:53:37 +0000</pubDate>

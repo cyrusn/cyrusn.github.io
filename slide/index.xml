@@ -7,10 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
     <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
-    <lastBuildDate>Thu, 24 May 2018 19:59:24 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 10 Oct 2018 10:55:10 +0800</lastBuildDate>
     
 	<atom:link href="https://cyrusn.github.io/slide/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>F1 Mathematics notes</title>
+      <link>https://cyrusn.github.io/slide/f1a-1819/</link>
+      <pubDate>Wed, 10 Oct 2018 10:55:10 +0800</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/f1a-1819/</guid>
+      <description> class: center middle bg-info text-light
+Mathematics F1A class: row
+.col-3.bg-light[
+9 Oct 2018 化簡代數式 - 如何分項？ - 何謂 + 常數項？ + 同類項？ + 異類項？ - 同類項有何特別呢？ ] .col-9[ .img-100.h-50.scroll[  ]]
+class: row
+.col-3.bg-light[
+13 Sept 2018 有向數的加法和減法 - 有向數的加減法則是甚麼？ ]
+.col-9[ .img-100.h-50.scroll[  ] ]
+class: row .col-3.bg-light[
+11 Sept 2018 有向數的基本概念 - 質性符號 - 如何比較有向數的大小 ]
+.col-9[ .img-100.h-50.scroll[  ] ]
+class: middle center bg-info text-light
+End </description>
+    </item>
     
     <item>
       <title>Notebook-Searcher RemarkJS CSS</title>

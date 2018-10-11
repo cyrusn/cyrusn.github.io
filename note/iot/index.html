@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <title>Internet of things</title>
+
+
+  <meta name="description" content="Internet of things - Wikiwand Embedded system - Wikiwand Microcontroller - Wikiwand Maker Pro | Electronics Projects, From Concept to Creation
+NodeUp #73 #177: Cylon.js, Gobot, Artoo, and IoT with Ron Evans from The Hybrid Group - Changelog
+Mesh networking extends IoT reach - O&rsquo;Reilly Radar Extracting value from the IoT - O&rsquo;Reilly Radar
+电路城—专为中国工程师量身打造的电路图、库、源代码交易平台
+Nitrogen: A platform for connecting devices and applications. authority framework nitrogenjs nitrogen
+NodeBots - The Rise of JS Robotics Node-RED A visual tool for wiring the Internet of Things Node-Red 簡介與快速安裝">
+  <meta property="og:description" content="Internet of things - Wikiwand Embedded system - Wikiwand Microcontroller - Wikiwand Maker Pro | Electronics Projects, From Concept to Creation
+NodeUp #73 #177: Cylon.js, Gobot, Artoo, and IoT with Ron Evans from The Hybrid Group - Changelog
+Mesh networking extends IoT reach - O&rsquo;Reilly Radar Extracting value from the IoT - O&rsquo;Reilly Radar
+电路城—专为中国工程师量身打造的电路图、库、源代码交易平台
+Nitrogen: A platform for connecting devices and applications. authority framework nitrogenjs nitrogen
+NodeBots - The Rise of JS Robotics Node-RED A visual tool for wiring the Internet of Things Node-Red 簡介與快速安裝">
+  <meta name="twitter:description" content="Internet of things - Wikiwand Embedded system - Wikiwand Microcontroller - Wikiwand Maker Pro | Electronics Projects, From Concept to Creation
+NodeUp #73 #177: Cylon.js, Gobot, Artoo, and IoT with Ron …">
+
+  
+  <meta name="author" content="CyrusN"/>
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/><script src='/js/jquery.slim.min.js'></script>
+
+<link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+<script src='/js/bootstrap.bundle.min.js' ></script>
+
+
+
+<script>
+  FontAwesomeConfig = {
+    searchPseudoElements: true
+  }
+</script>
+<script defer src=' /js/fontawesome-all.min.js '></script>
+
+
+
+<script src=' /js/lunr.min.js '></script>
+
+
+<link rel="stylesheet" type="text/css" href='/css/style.css'>
+
+
+<script src='/js/keycodes.js'></script>
+<script src='/js/main.js'></script>
+
+
+<script src='/js/helper.js'></script>
+
+
+<script>
+
+
+
+const pageKind = 'page'
+const baseURL = 'https:\/\/cyrusn.github.io'
+const navLinks = ['\/']
+
+  navLinks.push('\/note\/')
+
+  navLinks.push('\/post\/')
+
+  navLinks.push('\/slide\/')
+
+  navLinks.push('\/tags\/')
+
+  navLinks.push('\/page\/about\/')
+
+
+var Paginator = {}
+</script>
+
+
+
+
+
+
+
+</head>
+  <body data-spy="scroll" data-target="#TableOfContents">
+  <div class="bg-light d-sm-flex justify-content-center">
+  <nav class="navbar navbar-expand-sm navbar-light">
+    <a class="navbar-brand text-center"
+      href='https://cyrusn.github.io'>
+      CyrusN
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Note" href="/note/">Note</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Post" href="/post/">Post</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Slide" href="/slide/">Slide</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="Tags" href="/tags/">Tags</a>
+        </li>
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" title="About" href="/page/about/">About</a>
+        </li>
+        
+        
+      </ul>
+      
+<form class="form-inline">
+  <button type="button" class="mx-2 d-none d-md-block d-lg-block btn btn-sm align-middle btn-outline-info" data-toggle="modal" data-target="#tipsModal">tips</button>
+</form>
+<div class="modal fade" id="tipsModal" tabindex="-1" role="dialog" aria-labelledby="tipsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-info text-light">
+        <h5 class="modal-title" id="tipsModalLabel">Tips</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body py-1">
+        <p class="text-secondary">
+          <ul class="list-unstyled">
+              <li><kbd>q</kbd> to go home</li>
+              <li><kbd>/</kbd> to search</li>
+              <li><kbd>Enter / ESC</kbd> to switch from search to list navigation</li>
+              <li><kbd>Enter</kbd> to go to selected page</li>
+              <li><kbd>j / k</kbd> to navigate the list</li>
+              <li><kbd>h / l</kbd> to navigate the pages in list</li>
+              <li><kbd>[ / ]</kbd> to navigate the navbar</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </nav>
+</div>
+
+  <div class="container mt-2 mx-auto mb-4 text-dark">
+    
+<div class="mx-auto row">
+  
+  <div class="col-xl-10 col-12">
+  
+    
+    <h1 class="display-4">Internet of things</h1>
+    
+
+    
+    
+
+    
+    <p>
+      <small>
+  
+  
+  
+</small>
+
+<small>
+
+  <a class="badge badge-info" href="/tags/iot">iot</a>
+
+</small>
+
+
+
+      
+      
+        <br>
+<small>
+  <span class="badge badge-success">Created on 2015-06-12</span>
+  <span class="badge badge-success">Last Modified 2018-10-11</span>
+</small>
+
+      
+    </p>
+    <hr>
+    <div class="mx-auto" id="content">
+        
+
+<p><a href="http://www.wikiwand.com/en/Internet_of_things" target="_blank">Internet of things - Wikiwand</a>
+<a href="http://www.wikiwand.com/en/Embedded_system" target="_blank">Embedded system - Wikiwand</a>
+<a href="http://www.wikiwand.com/en/Microcontroller" target="_blank">Microcontroller - Wikiwand</a>
+<a href="https://maker.pro/" target="_blank">Maker Pro | Electronics Projects, From Concept to Creation</a></p>
+
+<p><a href="http://nodeup.com/seventythree" target="_blank">NodeUp #73</a>
+<a href="https://changelog.com/177/" target="_blank">#177: Cylon.js, Gobot, Artoo, and IoT with Ron Evans from The Hybrid Group - Changelog</a></p>
+
+<p><a href="http://radar.oreilly.com/2014/07/mesh-networking-extends-iot-reach.html" target="_blank">Mesh networking extends IoT reach - O&rsquo;Reilly Radar</a>
+<a href="http://radar.oreilly.com/2014/06/extracting-value-from-the-iot.html" target="_blank">Extracting value from the IoT - O&rsquo;Reilly Radar</a></p>
+
+<p><a href="http://www.cirmall.com/" target="_blank">电路城—专为中国工程师量身打造的电路图、库、源代码交易平台</a></p>
+
+<p><a href="http://nitrogen.io/index.html" target="_blank">Nitrogen: A platform for connecting devices and applications.</a> authority framework
+<a href="https://github.com/nitrogenjs" target="_blank">nitrogenjs</a>
+<a href="https://www.npmjs.com/package/nitrogen" target="_blank">nitrogen</a></p>
+
+<p><a href="http://nodebots.io/" target="_blank">NodeBots - The Rise of JS Robotics</a>
+<a href="http://nodered.org/" target="_blank">Node-RED</a> A visual tool for wiring the Internet of Things
+<a href="https://www.arthurtoday.com/2016/10/node-red-introduction-and-installation.html" target="_blank">Node-Red 簡介與快速安裝</a></p>
+
+<p><a href="https://cylonjs.com/" target="_blank">Cylon.js - JavaScript framework for robotics, physical computing, and the Internet of Things using Node.js</a>
+<a href="https://gobot.io/" target="_blank">Gobot - Golang framework for robotics, physical computing, and the Internet of Things (IoT)</a>
+<a href="http://artoo.io/" target="_blank">Artoo - Ruby framework for robotics, physical computing, and the Internet of Things</a>
+<a href="http://johnny-five.io/platform-support/" target="_blank">JavaScript Robotics Platform Support (Johnny-Five)</a> execute JS on host for some board</p>
+
+<h2 id="ide">IDE</h2>
+
+<h3 id="arduino-ide">Arduino IDE</h3>
+
+<p>Arduino IDE can be used for Arduino-compatible boards. It provides a compile toolchain, editor, standard libraries and libraries convention for embedded system programming.</p>
+
+<p><a href="https://github.com/arduino/Arduino/wiki/Unofficial-list-of-3rd-party-boards-support-urls" target="_blank">Unofficial list of 3rd party boards support urls · arduino/Arduino Wiki</a>
+<a href="https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification" target="_blank">Arduino IDE 1.5 3rd party Hardware specification · arduino/Arduino Wiki</a></p>
+
+<p><a href="https://create.arduino.cc/editor/" target="_blank">Arduino Editor</a> Web version, account required
+<a href="https://create.arduino.cc/projecthub/Arduino_Genuino/getting-started-with-arduino-web-editor-on-various-platforms-4b3e4a" target="_blank">Getting Started with Arduino Web Editor on Various Platforms - Arduino Project Hub</a></p>
+
+<p><a href="https://www.arduino.cc/en/Hacking/HomePage" target="_blank">Arduino - Hacking</a>
+<a href="https://github.com/arduino/Arduino/wiki/Build-Process" target="_blank">Build Process · arduino/Arduino Wiki</a></p>
+
+<p><a href="https://blog.arduino.cc/2018/08/24/announcing-the-arduino-command-line-interface-cli/" target="_blank">Arduino Blog » Announcing the Arduino Command Line Interface (CLI)</a>
+<a href="https://github.com/arduino/arduino-cli" target="_blank">arduino/arduino-cli: Arduino command line interface</a>
+<a href="https://blog.hackster.io/announcing-the-new-arduino-command-line-interface-cfc4c49e103b" target="_blank">Announcing the New Arduino Command Line Interface – Hackster Blog</a></p>
+
+<p><a href="https://hackaday.com/2017/03/30/the-2-32-bit-arduino-with-debugging/" target="_blank">The $2 32-Bit Arduino (with Debugging) | Hackaday</a></p>
+
+<h4 id="libraries">Libraries</h4>
+
+<p><a href="https://www.arduinolibraries.info/libraries" target="_blank">All Libraries - Arduino Libraries</a>
+<a href="https://learn.adafruit.com/adafruit-all-about-arduino-libraries-install-use" target="_blank">Arduino Libraries | All About Arduino Libraries | Adafruit Learning System</a></p>
+
+<p><a href="https://github.com/adafruit" target="_blank">Adafruit Industries</a> many libraries for Adafruit board/components, use for reference
+<a href="https://github.com/knolleary/pubsubclient" target="_blank">knolleary/pubsubclient: A client library for the Arduino Ethernet Shield that provides support for MQTT.</a></p>
+
+<h4 id="writing-library">Writing Library</h4>
+
+<p><a href="https://www.arduino.cc/en/Hacking/LibraryTutorial" target="_blank">Arduino - LibraryTutorial</a></p>
+
+<p><a href="http://www.misterngan.com/2883/write-your-own-mblock-extension/" target="_blank">自己寫個 mBlock extension (一) TM1637 4-digit-display | Mister Ngan</a>
+<a href="http://www.misterngan.com/2953/write-your-own-mblock-extension-2/" target="_blank">自己寫個 mBlock extension (二) 1602 I2C LCD Module | Mister Ngan</a>
+<a href="http://www.misterngan.com/2972/write-your-own-mblock-extension-3/" target="_blank">自己寫個 mBlock extension (三) 2-digit-display using 74HC595 | Mister Ngan</a></p>
+
+<h3 id="platform-io">Platform.io</h3>
+
+<p><a href="https://platformio.org/" target="_blank">An open source ecosystem for IoT development · PlatformIO</a>
+<a href="http://docs.platformio.org/en/latest/" target="_blank">PlatformIO is an open source ecosystem for IoT development — PlatformIO documentation</a></p>
+
+<p><a href="https://platformio.org/platformio-ide" target="_blank">PlatformIO IDE: The next-generation integrated development environment for IoT · PlatformIO</a>
+<a href="https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide" target="_blank">PlatformIO IDE - Visual Studio Marketplace</a>
+<a href="https://docs.platformio.org/en/latest/ide/vscode.html#quick-start" target="_blank">PlatformIO IDE for VSCode — PlatformIO documentation</a></p>
+
+<p><a href="https://platformio.org/boards" target="_blank">Embedded Boards · PlatformIO</a></p>
+
+<h3 id="partition-size">Partition Size</h3>
+
+<p><a href="https://github.com/espressif/arduino-esp32/pull/1144" target="_blank">Add BluetoothSerial library by copercini · Pull Request #1144 · espressif/arduino-esp32</a></p>
+
+<h2 id="os">OS</h2>
+
+<p><a href="https://www.armbian.com/" target="_blank">Armbian – Linux for ARM development boards</a>
+<a href="https://www.wikiwand.com/en/OpenELEC" target="_blank">OpenELEC - Wikiwand</a></p>
+
+<h3 id="simba">Simba</h3>
+
+<p><a href="https://simba-os.readthedocs.io/en/latest/index.html" target="_blank">Welcome to Simba’s documentation! — Simba master documentation</a></p>
+
+<h2 id="python-on-soc">Python on SoC</h2>
+
+<p><a href="https://www.youtube.com/watch?v=nzCvomTixzU" target="_blank">Ah! I see you have the machine that goes &ldquo;BING&rdquo;! - Dr. Graeme Cross - YouTube</a></p>
+
+<p><a href="https://wiki.python.org/moin/PyMite" target="_blank">PyMite - Python Wiki</a>
+<a href="https://micropython.org/" target="_blank">MicroPython - Python for microcontrollers</a>
+<a href="http://www.sparkslabs.com/pyxie/index.html" target="_blank">Pyxie &ndash; A Little Python to C++ Compiler</a></p>
+
+<p><a href="https://micropython-on-wemos-d1-mini.readthedocs.io/en/latest/" target="_blank">Welcome to Micropython on ESP8266 Workshop’s documentation! — Micropython on ESP8266 Workshop 1.0 documentation</a>
+<a href="https://arduino.stackexchange.com/questions/105/programming-an-arduino-using-python-rather-than-c-c" target="_blank">Programming an Arduino using Python, rather than C/C++ - Arduino Stack Exchange</a></p>
+
+<p><a href="https://pumbaa.readthedocs.io/en/latest/user-guide.html" target="_blank">User Guide — Pumbaa documentation</a> MicroPython on Simba</p>
+
+<h2 id="electronics-fundamentals">Electronics Fundamentals</h2>
+
+<p><a href="https://learn.stemtera.com/en/begin/onepage" target="_blank">STEMTera™ Breadboard Beginner&rsquo;s Guide</a> !important
+<a href="http://www.pyroelectro.com/" target="_blank">PyroElectro News, Projects &amp; Tutorials</a>
+<a href="https://www.sparkfun.com/tutorials/category/1" target="_blank">Beginning Embedded Electronics - SparkFun Electronics</a>
+<a href="https://www.electronics-tutorials.ws/" target="_blank">Basic Electronics Tutorials and Revision</a>
+<a href="https://www.circuitlab.com/textbook/" target="_blank">&ldquo;Ultimate Electronics&rdquo; Book - CircuitLab</a>
+<a href="https://www.allaboutcircuits.com/textbook/" target="_blank">Textbook for Electrical Engineering &amp; Electronics</a>
+<a href="https://www.electrical4u.com/" target="_blank">Electrical Engineering and Technology</a>
+<a href="https://www.elprocus.com/" target="_blank">ElProCus - Electronic Projects for Engineering Students - ElProCus is an educational website on electronic projects for ECE and EEE students.</a></p>
+
+<p><a href="https://learn.sparkfun.com/tutorials/tags/concepts?page=all" target="_blank">Concepts | Tutorials - learn.sparkfun.com</a>
+<a href="https://learn.sparkfun.com/tutorials/series-and-parallel-circuits" target="_blank">Series and Parallel Circuits - learn.sparkfun.com</a>
+<a href="https://learn.sparkfun.com/tutorials/switch-basics" target="_blank">Switch Basics - learn.sparkfun.com</a>
+<a href="https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard" target="_blank">How to Use a Breadboard - learn.sparkfun.com</a>
+<a href="https://learn.sparkfun.com/tutorials/analog-vs-digital" target="_blank">Analog vs. Digital - learn.sparkfun.com</a>
+<a href="https://learn.sparkfun.com/tutorials/analog-to-digital-conversion" target="_blank">Analog to Digital Conversion - learn.sparkfun.com</a>
+<a href="https://learn.sparkfun.com/tutorials/voltage-dividers" target="_blank">Voltage Dividers - learn.sparkfun.com</a></p>
+
+<p><a href="https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter" target="_blank">How to Use a Multimeter - learn.sparkfun.com</a>
+<a href="https://learn.sparkfun.com/tutorials/how-to-use-an-oscilloscope" target="_blank">How to Use an Oscilloscope - learn.sparkfun.com</a>
+<a href="https://learn.sparkfun.com/tutorials/ina169-breakout-board-hookup-guide" target="_blank">INA169 Breakout Board Hookup Guide - learn.sparkfun.com</a> measuring current
+<a href="https://learn.sparkfun.com/tutorials/multiplexer-breakout-hookup-guide" target="_blank">Multiplexer Breakout Hookup Guide - learn.sparkfun.com</a></p>
+
+<p><a href="http://addohms.com/" target="_blank">AddOhms Video Tutorials</a>
+<a href="https://www.youtube.com/playlist?list=PLRIGIzu0Z7KlBkiI9nNfMmRy4ZTzGr0RN" target="_blank">All AddOhms Tutorials - YouTube</a>
+<a href="https://www.baldengineer.com/" target="_blank">Bald Engineer - Electronics Tutorials for Enginerds</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=WytU5uj78-4" target="_blank">Why electrolytic capacitors are actually kinda shitty 💩 - YouTube</a></p>
+
+<p><a href="https://www.youtube.com/playlist?list=PLAROrg3NQn7cyu01HpOv5BWo217XWBZu0" target="_blank">Electronic Basics - YouTube</a>
+<a href="https://www.youtube.com/channel/UCosnWgi3eorc1klEQ8pIgJQ" target="_blank">Afrotechmods - YouTube</a>
+<a href="https://www.youtube.com/playlist?list=PLqyw60j6c9OsgLwbklRYIIYL3dgmd6Fyw" target="_blank">Electronics Tutorials - YouTube</a></p>
+
+<h3 id="current">Current</h3>
+
+<p><a href="https://www.baldengineer.com/current-flow-myths.html" target="_blank">Four Current Flow Myths Addressed - Bald Engineer</a>
+<a href="http://amasci.com/amateur/elecdir.html" target="_blank">Which way does Electricity REALLY flow?</a>
+<a href="https://learn.sparkfun.com/tutorials/alternating-current-ac-vs-direct-current-dc" target="_blank">Alternating Current (AC) vs. Direct Current (DC) - learn.sparkfun.com</a></p>
+
+<p>&ldquo;War of the currents&rdquo;
+<a href="https://www.youtube.com/watch?v=S7C5sSde9e4" target="_blank">Why Use AC Instead of DC at Home?? - YouTube</a>
+<a href="https://www.youtube.com/watch?v=quABfe4Ev3s" target="_blank">Why 3 Phase AC instead of Single Phase??? - YouTube</a></p>
+
+<h3 id="cables-and-connectors">Cables and Connectors</h3>
+
+<p><a href="https://learn.sparkfun.com/tutorials/working-with-wire" target="_blank">Working with Wire - learn.sparkfun.com</a></p>
+
+<p><a href="https://www.12voltplanet.co.uk/cable-sizing-selection.html" target="_blank">Cable sizing and selection | 12 volt planet</a>
+<a href="https://www.youtube.com/watch?v=matqU6An46Q" target="_blank">What cable do I need? | 12 Volt Planet - YouTube</a>
+- calculate current draw of load
+- calculate the voltage drop for the required cable length</p>
+
+<p>JST connector: 2-4 pins
+2 pin ones are used for Lithium batteries</p>
+
+<p><a href="https://learn.sparkfun.com/tutorials/connector-basics" target="_blank">Connector Basics - learn.sparkfun.com</a>
+Dupont connector</p>
+
+<p><a href="https://item.taobao.com/item.htm?spm=a1z0k.7386009.0.0.372c40a8lMdKSI&amp;id=565849381748&amp;_u=t2dmg8j26111" target="_blank">电子线MX1.25 2p至6p现货1571#28公母对接线对插线公母延长线-淘宝网</a></p>
+
+<h3 id="pcb">PCB</h3>
+
+<p><a href="https://learn.sparkfun.com/tutorials/pcb-basics" target="_blank">PCB Basics - learn.sparkfun.com</a>
+<a href="https://learn.sparkfun.com/tutorials/how-to-read-a-schematic" target="_blank">How to Read a Schematic - learn.sparkfun.com</a></p>
+
+<blockquote>
+<p>Ferric Chloride used for etching is highly toxic</p>
+</blockquote>
+
+<p><a href="https://hackaday.com/2016/09/12/take-your-pcbs-from-good-to-great-toner-transfer/" target="_blank">Take Your PCBs from Good to Great: Toner Transfer | Hackaday</a>
+<a href="https://www.dr-lex.be/hardware/tonertransfer.html" target="_blank">Creating PCBs with the toner transfer method</a>
+<a href="https://www.instructables.com/id/Heatless-cold-Toner-Transfer-for-PCB-Making/" target="_blank">Heatless (cold) Toner Transfer for PCB Making: 10 Steps (with Pictures)</a></p>
+
+<p>Heat transfer
+<a href="https://www.youtube.com/watch?v=56kUwYhsQII" target="_blank">PCB Etching using Toner transfer method - YouTube</a></p>
+
+<p><a href="https://s.taobao.com/search?q=pcb热转印纸" target="_blank">pcb热转印纸_淘宝搜索</a>
+<a href="https://s.taobao.com/search?q=PCB打板" target="_blank">PCB打板_淘宝搜索</a></p>
+
+<h3 id="soldering">Soldering</h3>
+
+<p>[Flux (metallurgy) - Wikiwand](<a href="https://www.wikiwand.com/en/Flux_(metallurgy%29" target="_blank">https://www.wikiwand.com/en/Flux_(metallurgy%29</a>)</p>
+
+<p><a href="https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering" target="_blank">How to Solder: Through-Hole Soldering - learn.sparkfun.com</a>
+<a href="https://learn.sparkfun.com/tutorials/how-to-solder---castellated-mounting-holes" target="_blank">How to Solder - Castellated Mounting Holes - learn.sparkfun.com</a>
+<a href="https://www.youtube.com/watch?v=VxMV6wGS3NY" target="_blank">How to Solder properly || Through-hole (THT) &amp; Surface-mount (SMD) - YouTube</a>
+<a href="https://www.youtube.com/watch?v=5uiroWBkdFY" target="_blank">Professional SMT Soldering: Hand Soldering Techniques - Surface Mount - YouTube</a></p>
+
+<p><a href="http://store.curiousinventor.com/guides/How_to_Solder" target="_blank">How to Solder : CuriousInventor Guides</a>
+<a href="http://store.curiousinventor.com/guides/Surface_Mount_Soldering" target="_blank">Surface Mount Soldering : CuriousInventor Guides</a></p>
+
+<p><a href="https://mad-science.wonderhowto.com/how-to/diy-lab-equipment-etch-your-own-circuit-boards-using-laser-printer-0134931/" target="_blank">DIY Lab Equipment: How to Etch Your Own Circuit Boards Using a Laser Printer « Mad Science :: WonderHowTo</a></p>
+
+<h3 id="transistors">Transistors</h3>
+
+<p><a href="http://www.wikiwand.com/en/Transistor" target="_blank">Transistor - Wikiwand</a>
+<a href="https://learn.sparkfun.com/tutorials/transistors" target="_blank">Transistors - learn.sparkfun.com</a>
+<a href="https://www.youtube.com/watch?v=OwS9aTE2Go4" target="_blank">Transistors - The Invention That Changed The World - YouTube</a></p>
+
+<p>Transistor are switches driven by current, such that a smaller voltage can be used to drive circuit of larger voltage. They comes in BJTs and MOSFETs varieties, MOSFETs are more efficient and handle higher current.</p>
+
+<p><a href="https://www.youtube.com/watch?v=sRVvUkK0U80" target="_blank">BJTs as Transistor Switches | AddOhms #10 - YouTube</a>
+<a href="https://www.youtube.com/watch?v=GrvvkYTW_0k" target="_blank">MOSFETs and How to Use Them | AddOhms #11 - YouTube</a></p>
+
+<h3 id="regulators">Regulators</h3>
+
+<p><a href="https://www.wikiwand.com/en/Voltage_regulator" target="_blank">Voltage regulator - Wikiwand</a>
+<a href="https://www.wikiwand.com/en/Low-dropout_regulator" target="_blank">Low-dropout regulator - Wikiwand</a>
+<a href="https://www.design-reuse.com/articles/42191/low-dropout-ldo-linear-voltage-regulators.html" target="_blank">Introduction to Low Dropout (LDO) Linear Voltage Regulators</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=OAoEWaGtQjs" target="_blank">Linear Voltage Regulators (LM7805) | AO #17 - YouTube</a>
+<a href="https://www.youtube.com/watch?v=CPvA-uS0dNY" target="_blank">Switching Voltage Regulator (Buck, Boost) Introduction | AO #18 - YouTube</a></p>
+
+<h3 id="packaging">Packaging</h3>
+
+<p><a href="https://slideplayer.com/slide/6340034/" target="_blank">Electronics Manufacturing By Ed Red - ppt video online download</a></p>
+
+<h3 id="power">Power</h3>
+
+<p><a href="https://learn.sparkfun.com/tutorials/how-to-power-a-project" target="_blank">How to Power a Project - learn.sparkfun.com</a>
+<a href="https://www.sparkfun.com/news/2713" target="_blank">Power Solutions for Wearables and Cosplay - News - SparkFun Electronics</a></p>
+
+<h3 id="eda-tools">EDA tools</h3>
+
+<p>EDA: electronic design automation</p>
+
+<p><a href="http://fritzing.org/home/" target="_blank">Fritzing Fritzing</a>
+<a href="http://forum.fritzing.org/c/parts-submit" target="_blank">Latest parts submit topics - fritzing forum</a>
+<a href="https://learn.sparkfun.com/tutorials/make-your-own-fritzing-parts" target="_blank">Make Your Own Fritzing Parts - learn.sparkfun.com</a></p>
+
+<p><a href="http://kicad-pcb.org/" target="_blank">KiCad EDA</a>
+<a href="http://store.curiousinventor.com/guides/kicad" target="_blank">KiCad Tutorial - CuriousInventor Guides</a></p>
+
+<p><a href="https://easyeda.com/" target="_blank">EasyEDA - Online PCB design &amp; circuit simulator</a>
+<a href="https://www.circuitlab.com/" target="_blank">CircuitLab - online schematic editor &amp; circuit simulator</a>
+<a href="https://www.circuitlab.com/editor/#?id=7pq5wm" target="_blank">CircuitLab Editor</a></p>
+
+<p><a href="http://www.falstad.com/circuit/" target="_blank">Circuit Simulator Applet</a> real time simulation</p>
+
+<p><a href="https://upverter.com/" target="_blank">Realization. Not CAD. - Upverter</a>
+<a href="https://www.autodesk.com/products/eagle/free-download" target="_blank">Download EAGLE | Free Download | Autodesk</a></p>
+
+<p><a href="https://www.youtube.com/playlist?list=PLB83D613334919AE6" target="_blank">Circuit simulation in LTSpice - YouTube</a></p>
+
+<p><a href="http://icircuitapp.com/" target="_blank">About - iCircuit - The Realtime Circuit Simulator and Editor</a> paid app, real time simulation, Arduino support</p>
+
+<h3 id="pwm">PWM</h3>
+
+<p><a href="https://www.wikiwand.com/en/Pulse-width_modulation" target="_blank">Pulse-width modulation - Wikiwand</a>
+<a href="https://learn.sparkfun.com/tutorials/pulse-width-modulation" target="_blank">Pulse Width Modulation - learn.sparkfun.com</a></p>
+
+<p><a href="https://sites.google.com/site/qeewiki/books/avr-guide/pwm-on-the-atmega328" target="_blank">PWM On The ATmega328 - QEEWiki</a>
+<a href="https://protostack.com.au/2011/06/atmega168a-pulse-width-modulation-pwm/" target="_blank">ATmega168A Pulse Width Modulation - PWM - Protostack</a></p>
+
+<p>Arduino&rsquo;s PWM (<code>analogWrite()</code>) frequency is about 500Hz.</p>
+
+<h2 id="connectivity">Connectivity</h2>
+
+<p><a href="http://wsnblog.com/tag/dash7/" target="_blank">http://wsnblog.com/tag/dash7/</a></p>
+
+<p><a href="http://en.wikipedia.org/wiki/DASH7" target="_blank">http://en.wikipedia.org/wiki/DASH7</a>
+<a href="http://en.wikipedia.org/wiki/ZigBee" target="_blank">http://en.wikipedia.org/wiki/ZigBee</a>
+<a href="http://en.wikipedia.org/wiki/Z-Wave" target="_blank">http://en.wikipedia.org/wiki/Z-Wave</a>
+<a href="http://en.wikipedia.org/wiki/Bluetooth" target="_blank">http://en.wikipedia.org/wiki/Bluetooth</a>
+<a href="https://learn.sparkfun.com/tutorials/bluetooth-basics" target="_blank">Bluetooth Basics - learn.sparkfun.com</a>
+<a href="https://learn.adafruit.com/introduction-to-bluetooth-low-energy?view=all" target="_blank">Introduction | Introduction to Bluetooth Low Energy | Adafruit Learning System</a>
+<a href="http://en.wikipedia.org/wiki/Wi-Fi" target="_blank">http://en.wikipedia.org/wiki/Wi-Fi</a>
+<a href="http://en.wikipedia.org/wiki/FM-UWB" target="_blank">http://en.wikipedia.org/wiki/FM-UWB</a></p>
+
+<p>Arduino requires an external BT module.
+HC-05/HC-06/HC-10 are common Wifi modules using ESP8266
+<a href="https://www.arduino.cc/en/Main/ArduinoBoardBT" target="_blank">Arduino - ArduinoBoardBT</a></p>
+
+<p><a href="https://www.instructables.com/id/Connect-Arduino-Uno-to-Android-via-Bluetooth/" target="_blank">Connect Arduino Uno to Android Via Bluetooth: 6 Steps</a>
+<a href="https://maker.pro/arduino/tutorial/bluetooth-basics-how-to-control-led-using-smartphone-arduino" target="_blank">Bluetooth Basics: How to Control an LED Using a Smartphone and Arduino  | Arduino | Maker Pro</a>
+<a href="https://www.allaboutcircuits.com/projects/communicate-with-your-arduino-through-android/" target="_blank">Communicate with Your Arduino Through Android</a></p>
+
+<p>Rasberry Pi Zero W has Wifi and Bluetooth built-in.
+<a href="https://www.youtube.com/watch?v=bNOlimnWZJE" target="_blank">L298N Dual H-Bridge Motor Controller (Raspberry Pi) - YouTube</a></p>
+
+<p>ESP8266 is a common Wifi chipset. ESP32 is the next generation with Bluetooth and Wifi builtin.</p>
+
+<h3 id="wifi">Wifi</h3>
+
+<p>ESP8266
+ESP32 (Bluetooth + Wifi)</p>
+
+<h3 id="bluetooth">Bluetooth</h3>
+
+<p>ESP32 (Bluetooth + Wifi)</p>
+
+<p><a href="http://www.trustedreviews.com/opinions/what-is-bluetooth-4-2" target="_blank">How Bluetooth 4.2 will make your home smarter</a></p>
+
+<p><a href="https://www.bluetooth.com/specifications/gatt/services" target="_blank">GATT Services | Bluetooth Technology Website</a> BLE services</p>
+
+<p><a href="https://google.github.io/physical-web/" target="_blank">The Physical Web</a> by Google
+<a href="https://github.com/google/eddystone" target="_blank">google/eddystone</a></p>
+
+<h3 id="lpwan-lora-6lowpan">LPWAN/LoRA/6LoWPAN</h3>
+
+<p><a href="https://www.wikiwand.com/en/LPWAN" target="_blank">LPWAN</a>: Low Power Wide Area Network
+<a href="https://www.wikiwand.com/en/LoRa" target="_blank">LoRa</a>: Long Range
+<a href="https://www.wikiwand.com/en/6LoWPAN" target="_blank">6LoWPAN</a>: IPv6 over Low-Power Wireless Personal Area Networks</p>
+
+<p><a href="http://www.microchip.com/pagehandler/en-us/technology/personalareanetworks/technology/lora.html" target="_blank">Low Power Wide Area Network Personal Area Networks | Microchip Technology Inc. | Microchip Technology Inc.</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=hMOwbNUpDQA" target="_blank">#112 LoRa / LoRaWAN De-Mystified / Tutorial - YouTube</a></p>
+
+<p><a href="https://developer.nordicsemi.com/nRF5_IoT_SDK/doc/0.9.0/html/a00011.html" target="_blank">nRF5 IoT SDK: 6LoWPAN over BLE</a>
+<a href="https://visualgdb.com/tutorials/arm/nrf51/6lowpan/" target="_blank">Connecting the Nordic nRF52 chip to IPv6 networks via 6LoWPAN | VisualGDB Tutorials</a></p>
+
+<h3 id="csr">CSR</h3>
+
+<p><a href="http://www.csr.com/" target="_blank">Wireless Technology Solutions for the Consumer Electronics Market</a>
+<a href="https://wiki.csr.com/wiki/CSRmesh" target="_blank">CSRmesh - csr</a>
+<a href="https://www.youtube.com/watch?v=XRL0jH4v3zE" target="_blank">CSRmesh Advantages and Applications - YouTube</a></p>
+
+<h2 id="magicmirror">MagicMirror</h2>
+
+<p><a href="http://michaelteeuw.nl/tagged/magicmirror" target="_blank">Xonay Labs | Michael Teeuw</a>
+<a href="https://github.com/MichMich/MagicMirror" target="_blank">MichMich/MagicMirror: MagicMirror² is an open source modular smart mirror platform. With a growing list of installable modules, the MagicMirror² allows you to convert your hallway or bathroom mirror into your personal assistant.</a></p>
+
+<hr />
+
+<p><a href="https://www.wikiwand.com/en/System_on_a_chip" target="_blank">System on a chip - Wikiwand</a>
+<a href="https://www.wikiwand.com/en/Microprocessor" target="_blank">Microprocessor - Wikiwand</a>
+<a href="https://www.wikiwand.com/en/Microcontroller" target="_blank">Microcontroller - Wikiwand</a></p>
+
+<p>There are SBC (single board computer) and MCU (micro controller unit). MCU also acts as co-processor of other system.</p>
+
+<p><a href="https://www.youtube.com/watch?v=Rai8dAkcDLk" target="_blank">When to Use Micro Processors vs. Micro Controllers - YouTube</a></p>
+
+<p><a href="https://leanpub.com/u/kolban" target="_blank">Neil Kolban</a></p>
+
+<hr />
+
+<h2 id="micro-controllers">Micro Controllers</h2>
+
+<h3 id="attiny85">ATtiny85</h3>
+
+<p><a href="https://www.microchip.com/wwwproducts/en/ATtiny85" target="_blank">ATtiny85 - 8-bit AVR Microcontrollers - Microcontrollers and Processors</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=vPRpT_7rQNo" target="_blank">ATtiny85 Board First Look and Review | Install Drivers &amp; Use with Arduino IDE - YouTube</a></p>
+
+<h2 id="electronic-components">Electronic Components</h2>
+
+<p><a href="http://www.cirmall.com/circuits/category/circuit" target="_blank">电路城—基础电路电路图,原理图,电路设计</a></p>
+
+<p><a href="https://www.youtube.com/channel/UCzml9bXoEM0itbcE96CB03w" target="_blank">DroneBot Workshop - YouTube</a>
+<a href="https://www.slideshare.net/raspberrypi-tw/gpio-gameconsolestarterkit" target="_blank">用Raspberry Pi學GPIO - 自己做遊戲機</a> concepts and many components</p>
+
+<h3 id="interfaces">Interfaces</h3>
+
+<p><a href="https://www.youtube.com/watch?v=nMZJwspSkAc" target="_blank">Introduction to Interfaces - YouTube</a></p>
+
+<p><a href="https://learn.sparkfun.com/tutorials/serial-communication" target="_blank">Serial Communication - learn.sparkfun.com</a> UARTs
+RX, TX without clock</p>
+
+<p><a href="https://www.wikiwand.com/en/I²C" target="_blank">I²C - Wikiwand</a>
+<a href="https://learn.sparkfun.com/tutorials/i2c" target="_blank">I2C - learn.sparkfun.com</a>
+<a href="https://www.youtube.com/watch?v=_fgWQ3TIhyE" target="_blank">Electronic Basics #19: I2C and how to use it - YouTube</a>
+<a href="https://www.youtube.com/playlist?list=PLB1BE22BA36431CFD" target="_blank">I2C-bus by NXP Semiconductors - YouTube</a>
+SCK: serial clock
+SDA: serial data</p>
+
+<p><a href="https://www.wikiwand.com/en/Serial_Peripheral_Interface" target="_blank">Serial Peripheral Interface - Wikiwand</a>
+<a href="https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi" target="_blank">Serial Peripheral Interface (SPI) - learn.sparkfun.com</a>
+<a href="https://www.arduino.cc/en/Reference/SPI" target="_blank">Arduino - SPI</a>
+MOSI: master out/slave in
+MISO: master in/slave out
+SCLK: serial clock
+CS<N>: chip select (1 pin for each device on the bus)</p>
+
+<p><a href="https://www.wikiwand.com/en/I²S" target="_blank">I²S - Wikiwand</a> Inter-IC Sound
+<a href="https://www.arduino.cc/en/Reference/I2S" target="_blank">Arduino - I2S</a></p>
+
+<p><a href="https://www.wikiwand.com/en/General-purpose_input/output" target="_blank">General-purpose input/output - Wikiwand</a>
+<a href="https://www.circuitcellar.com.tw/?p=650" target="_blank">GPIO接腳基本認知 – circuitcellar</a></p>
+
+<p><a href="https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial" target="_blank">Raspberry Pi SPI and I2C Tutorial - learn.sparkfun.com</a></p>
+
+<h3 id="adc">ADC</h3>
+
+<p><a href="https://learn.adafruit.com/adafruit-4-channel-adc-breakouts" target="_blank">Overview | Adafruit 4-Channel ADC Breakouts | Adafruit Learning System</a> ADS1115/ADS1015</p>
+
+<p><a href="https://www.microchip.com/wwwproducts/en/MCP3008" target="_blank">MCP3008 - Mixed Signal - Successive Approximation Register (SAR) A/D Converters - Microcontrollers and Processors</a> the DIP16 packaging is too large
+<a href="https://learn.adafruit.com/raspberry-pi-analog-to-digital-converters/mcp3008" target="_blank">MCP3008 | Raspberry Pi Analog to Digital Converters | Adafruit Learning System</a></p>
+
+<h3 id="voltage-level-shifter">Voltage-Level Shifter</h3>
+
+<p><a href="https://learn.sparkfun.com/tutorials/logic-levels" target="_blank">Logic Levels - learn.sparkfun.com</a></p>
+
+<p><a href="https://www.maximintegrated.com/cn/app-notes/index.mvp/id/3007" target="_blank">逻辑电平转换 - 应用笔记 - Maxim</a></p>
+
+<p><a href="http://www.ti.com/product/TXB0108" target="_blank">TXB0108 8-Bit Bidirectional Voltage-Level Shifter with Auto Direction Sensing and +/-15-kV ESD Protect | TI.com</a>
+<a href="http://www.cirmall.com/circuit/7421/TXB0108-8通道双向逻辑电平转换器原理图%2FPCB等分享 #/details" target="_blank">TXB0108-8通道双向逻辑电平转换器原理图/PCB等分享 - 基础电路 - 电路城</a></p>
+
+<h3 id="audio-output">Audio output</h3>
+
+<p><a href="https://www.arduino.cc/en/Tutorial/toneMelody" target="_blank">Arduino - ToneMelody</a>
+<a href="http://www.misterngan.com/2390/stem-project-09/" target="_blank">我的 Stem Project (九) 用 Arduino 控制 Buzzer 唱歌 | Mister Ngan</a></p>
+
+<p><a href="https://learn.adafruit.com/trinket-audio-player?view=all" target="_blank">Overview | Trinket Audio Player | Adafruit Learning System</a>
+High frequency PWM for output of PCM stored in flash</p>
+
+<h3 id="7-segment-display">7 Segment Display</h3>
+
+<p><a href="http://www.misterngan.com/2256/stem-project-06/" target="_blank">我的 Stem Project (六) 用 Arduino 控制 7 segment display (基礎篇) | Mister Ngan</a>
+<a href="https://protostack.com.au/2009/09/driving-a-7-segment-display-with-a-4511-bcd-to-7-segment-driver/" target="_blank">Driving a 7 segment display with a 4511 BCD to 7 Segment Driver - Protostack</a></p>
+
+<h3 id="lcd">LCD</h3>
+
+<p>If the LCD has 2 rows of 16 characters (1602) and 16 pins, its probably Hitachi HD44780 or compatible.
+<a href="https://protostack.com.au/2010/03/character-lcd-displays-part-1/" target="_blank">HD44780 Character LCD Displays - Part 1 - Protostack</a>
+<a href="https://protostack.com.au/2010/04/character-lcd-displays-part-2/" target="_blank">hd44780 Character LCD Displays - Part 2 - Protostack</a>
+<a href="https://www.youtube.com/watch?v=wEbGhYjn4QI" target="_blank">Using LCD Displays with Arduino - YouTube</a></p>
+
+<p><a href="https://maker.pro/arduino/projects/oled-i2c-display-arduinonodemcu-tutorial" target="_blank">OLED I2C DISPLAY ARDUINO/NODEMCU TUTORIAL | Arduino | Maker Pro</a>
+TCA9548A demux multiple data streams on i2c and send them to component separately.</p>
+
+<h3 id="ultrasound-sensor">Ultrasound sensor</h3>
+
+<p>HC-SR04
+US-020 long range
+US-100 temperature compensation</p>
+
+<h3 id="led">LED</h3>
+
+<p><a href="https://blog.arduino.cc/2018/08/21/blow-out-this-arduino-led-candle/" target="_blank">Arduino Blog » Blow out this Arduino LED candle!</a> 0402 SMD LED</p>
+
+<h3 id="uv-sensor">UV sensor</h3>
+
+<p><a href="http://www.cirmall.com/circuit/9766/紫外线（UV）辐射强度检测模块硬件设计及入门指导#/details" target="_blank">紫外线（UV）辐射强度检测模块硬件设计及入门指导 - 基础电路 - 电路城</a></p>
+
+<h3 id="motor-control">Motor Control</h3>
+
+<blockquote>
+<p>see <code>robotics.md#motors</code></p>
+</blockquote>
+
+<p><a href="https://www.youtube.com/watch?v=I7IFsQ4tQU8" target="_blank">Arduino DC Motor Control Tutorial - L298N | H-Bridge | PWM | Robot Car - YouTube</a>
+<a href="https://learn.adafruit.com/adafruit-motor-shield" target="_blank">Overview | Adafruit Motor Shield | Adafruit Learning System</a></p>
+
+<p><a href="https://www.arduino.cc/en/Reference/Servo" target="_blank">Arduino - Servo</a>
+<a href="https://www.arduino.cc/en/Reference/Stepper" target="_blank">Arduino - Stepper</a></p>
+
+<p>To drive a motor with reverse motion, a circuit with 5 transistors, so called H Bridge. The H-bridge module om market usually support 2 outputs. The logical voltage is usually 3.3V/5V.</p>
+
+<blockquote>
+<p>Do use a suppression diode to cross the load to protect the transistor from voltage spike.
+<a href="https://www.youtube.com/watch?v=IrB-FPcv1Dc" target="_blank">How to protect circuits from reversed voltage polarity! - YouTube</a></p>
+</blockquote>
+
+<p><a href="https://odriverobotics.com/" target="_blank">ODrive</a></p>
+
+<p><a href="https://www.pololu.com/product/2130" target="_blank">Pololu - DRV8833 Dual Motor Driver Carrier</a> 10V 1.5A, used by LEGO IR receiver v2
+<a href="https://www.pololu.com/product/2135" target="_blank">Pololu - DRV8835 Dual Motor Driver Carrier</a>
+<a href="https://www.pololu.com/product/713" target="_blank">Pololu - TB6612FNG Dual Motor Driver Carrier</a> 15V 1.2A
+<a href="https://www.st.com/content/st_com/en/products/motor-drivers/brushed-dc-motor-drivers/l293d.html" target="_blank">STM L293D</a> 0.6A, with diode
+<a href="https://www.st.com/en/motor-drivers/l298.html" target="_blank">STM L298</a> 12V 2A, not efficient</p>
+
+<p><a href="https://maker.pro/custom/projects/all-you-need-to-know-about-l293d" target="_blank">All You Need to Know About L293D | Custom | Maker Pro</a>
+<a href="https://www.adafruit.com/product/1438" target="_blank">Adafruit Motor/Stepper/Servo Shield for Arduino v2 Kit [v2.3] ID: 1438 - $19.95 : Adafruit Industries, Unique &amp; fun DIY electronics and kits</a> TB6612
+<a href="https://learn.sparkfun.com/tutorials/ardumoto-shield-hookup-guide" target="_blank">Ardumoto Shield Hookup Guide - learn.sparkfun.com</a> L298P</p>
+
+<h3 id="rfid">RFID</h3>
+
+<p><a href="https://www.youtube.com/watch?v=nn-nuhAByRk" target="_blank">First Look: RC522 RFID Reader/Writer ($4 on eBay) - YouTube</a></p>
+
+<p><a href="https://www.nxp.com/docs/en/data-sheet/MFRC522.pdf" target="_blank">MFRC522 Standard performance MIFARE and NTAG frontend</a>
+<a href="https://randomnerdtutorials.com/security-access-using-mfrc522-rfid-reader-with-arduino/" target="_blank">MFRC522 RFID Reader with Arduino Tutorial | Random Nerd Tutorials</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=Tcr0Wen0t6U" target="_blank">Arduino RFID in a box - NTAG 210/212/213/215/216 - Part1 - YouTube</a>
+<a href="https://www.youtube.com/watch?v=cyLWHU3EGsc" target="_blank">Arduino RFID in a box - NTAG 210/212/213/215/216 - Part2 - YouTube</a>
+<a href="https://www.youtube.com/watch?v=nVtnrAlvCN0" target="_blank">Arduino RFID in a box - NTAG 210/212/213/215/216 - Part3 - YouTube</a></p>
+
+<p><a href="https://github.com/miguelbalboa/rfid" target="_blank">miguelbalboa/rfid: Arduino RFID Library for MFRC522</a></p>
+
+<p><a href="https://github.com/AcK77/AmiiBomb-uino" target="_blank">AcK77/AmiiBomb-uino: Amiibo Cloning with Arduino</a>
+<a href="https://www.nxp.com/docs/en/data-sheet/NTAG213_215_216.pdf" target="_blank">NTAG213/215/216 NFC Forum Type 2 Tag compliant IC with 144/504/888 bytes user memory</a>
+<a href="https://games.kel.mn/en/companion-script-to-simplify-amiibo-cloning-with-arduino/" target="_blank">Companion script to simplify amiibo cloning with arduino – Kostia Plays</a>
+<a href="https://games.kel.mn/en/create-amiibo-clones-with-arduino/" target="_blank">Create amiibo clones with Arduino – Kostia Plays</a></p>
+
+<h3 id="i2c">I2C</h3>
+
+<p>LCD1602: I2C bus to drive 8 devices</p>
+
+<h3 id="speech">Speech</h3>
+
+<h3 id="barometer">Barometer</h3>
+
+<p><a href="https://www.bosch-sensortec.com/bst/products/all_products/bmp280" target="_blank">BMP280</a> also return temperature</p>
+
+<p><a href="https://github.com/adafruit/Adafruit_CircuitPython_BMP280" target="_blank">adafruit/Adafruit_CircuitPython_BMP280: CircuitPython driver for the BMP280</a>
+<a href="https://detail.tmall.com/item.htm?id=536632725681" target="_blank">?GY-BMP280-3.3 高精度大气压强传感器模块 高度计传感器-tmall.com天猫</a></p>
+
+<p><a href="https://www.adafruit.com/product/992" target="_blank">MPL115A2 - I2C Barometric Pressure/Temperature Sensor ID: 992 - $7.95 : Adafruit Industries, Unique &amp; fun DIY electronics and kits</a> less precise</p>
+
+<h3 id="gyroscope-accelerometer">Gyroscope/Accelerometer</h3>
+
+<p><a href="https://www.invensense.com/products/motion-tracking/6-axis/mpu-6050/" target="_blank">MPU-6050 | TDK</a>
+<a href="https://maker.pro/arduino/tutorial/how-to-interface-arduino-and-the-mpu-6050-sensor" target="_blank">How to Interface Arduino and the MPU 6050 Sensor | Arduino | Maker Pro</a>
+<a href="https://playground.arduino.cc/Main/MPU-6050" target="_blank">Arduino Playground - MPU-6050</a></p>
+
+<p><a href="https://www.sparkfun.com/pages/accel_gyro_guide" target="_blank">Accelerometer, Gyro and IMU Buying Guide - SparkFun Electronics</a>
+<a href="https://detail.tmall.com/item.htm?spm=a1z10.3-b-s.w4011-16538328900.32.6e1c3d6ckNlXbG&amp;id=41337720621&amp;rn=ed13268584dfdfc4a99f55bd720c5083&amp;abbucket=19" target="_blank">?GY-521 MPU6050模块三维角度传感器6DOF三轴加速度计电子陀螺仪-tmall.com天猫</a></p>
+
+<h3 id="magnetometer-compass">Magnetometer (compass)</h3>
+
+<p><a href="https://www.invensense.com/products/motion-tracking/9-axis/mpu-9150/" target="_blank">MPU-9150 | TDK</a>
+<a href="https://playground.arduino.cc/Main/MPU-9150" target="_blank">Arduino Playground - MPU-9150</a> MPU-6050 + magnetometer</p>
+
+<h3 id="reading-input-signal">Reading Input Signal</h3>
+
+<p>Without pull-up (default high) or pull-down (default low), the signal will be affecting by the environment and become noisy.</p>
+
+<p><a href="https://www.wikiwand.com/en/Open_collector" target="_blank">Open collector - Wikiwand</a></p>
+
+<p><a href="https://www.baldengineer.com/arduino-internal-pull-up-resistor-tutorial.html" target="_blank">Arduino Internal Pull-Up Resistor Tutorial - Bald Engineer</a>
+<a href="https://www.youtube.com/watch?v=wxjerCHCEMg" target="_blank">Pull Up Resistor Tutorial | AddOhms #15 - YouTube</a>
+<a href="https://www.youtube.com/watch?v=u3Xiy2DVnI4" target="_blank">Picking Pull-Up Resistor Values | AO #25 - YouTube</a></p>
+
+<p><a href="https://learn.sparkfun.com/tutorials/pull-up-resistors" target="_blank">Pull-up Resistors - learn.sparkfun.com</a></p>
+
+<p><a href="http://www.misterngan.com/2131/stem-project-03/" target="_blank">我的 Stem Project (三) 使用 Push Button 來做 Input | Mister Ngan</a>
+<a href="http://www.misterngan.com/2151/stem-project-04/" target="_blank">我的 Stem Project (四) Push Button 進階一點的用法 | Mister Ngan</a>
+<a href="http://www.misterngan.com/2218/stem-project-05/" target="_blank">我的 Stem Project (五) 考反應小遊戲 | Mister Ngan</a></p>
+
+<p>Pull-up and Pull-down resistors:<br />
+If you have a digital input, it can have two physical states (that may or may not be the same as the logical states, but that’s a separate issue). If the voltage is anywhere in between, undesirable things can happen. So there are two ways to get it into one of the desired states: You can wire it to the pole of a double-throw switch so that it connects directly to one voltage or the other, or you can wire it to a single-throw switch and ‘pull’ the input into the other state when the switch is open. So if you wire the switch between input and ground, so the switch pulls the input to 0 V when it’s closed, you need a “pull-up” resistor to pull the input up to 3.3 V or 5 V when the switch is open. And vice versa.</p>
+
+<h3 id="usb-serial">USB-Serial</h3>
+
+<p><a href="http://wch.cn/products/category/1.html" target="_blank">USB系列芯片 - 江苏沁恒股份有限公司</a></p>
+
+<h3 id="shift-registers">Shift Registers</h3>
+
+<p><a href="https://learn.sparkfun.com/tutorials/shift-registers" target="_blank">Shift Registers - learn.sparkfun.com</a></p>
+
+<p><a href="https://protostack.com.au/2010/05/introduction-to-74hc595-shift-register-controlling-16-leds/" target="_blank">Introduction to 74HC595 shift register - Controlling 16 LEDs - Protostack</a>
+<a href="http://www.misterngan.com/2490/stem-project-12/" target="_blank">我的 Stem Project (十二) Arduino Music Light Show | Mister Ngan</a></p>
+
+<p>8 bit serial in, parallel-out shift register with 3 states
+split a byte (1 input pin) to 8 bits (8 output pins)</p>
+
+<h3 id="gamepad">Gamepad</h3>
+
+<p>Taobao has cheap wireless controller for PS2 (<a href="https://s.taobao.com/search?q=ps2+%E6%89%8B%E6%9F%84+%E7%84%A1%E7%B7%9A&amp;ie=utf8" target="_blank">PS2 无线手柄</a>), with the spec available, we can use it for controlling.
+<a href="http://store.curiousinventor.com/guides/PS2" target="_blank">Interfacing a PS2 (PlayStation 2) Controller - CuriousInventor Tutorials</a>
+<a href="http://www.billporter.info/2010/06/05/playstation-2-controller-arduino-library-v1-0/" target="_blank">PlayStation 2 Controller Arduino Library v1.0 « The Mind of Bill Porter</a>
+<a href="https://github.com/madsci1016/Arduino-PS2X/" target="_blank">madsci1016/Arduino-PS2X: Read a Playstation 2 Gamepad or Guitar Hero Controller using an Arduino</a></p>
+
+<p><a href="http://www.rhydolabz.com/wiki/?p=12663" target="_blank">Interfacing PS2 Wireless Controller With Arduino</a>
+<a href="http://www.techmonkeybusiness.com/using-a-playstation-2-controller-with-your-arduino-project.html" target="_blank">Using A Playstation 2 Controller with your Arduino Project</a>
+<a href="https://www.instructables.com/id/Control-anything-with-ps2-controller-and-Arduino-/" target="_blank">Control Anything With Ps2 Controller and Arduino (wirelessly): 6 Steps</a></p>
+
+<p><a href="https://www.google.com.hk/search?q=nintendo+switch+pro+controller+bluetooth" target="_blank">nintendo switch pro controller bluetooth - Google Search</a></p>
+
+<p>PS3/PS4 controller is a slave device in Bluetooth Classic. None of the embedded SOC supports Bluetooth Classic master mode at the moment. We need to use an USB host shield and USB dongle.
+<a href="http://wiki.ps2dev.org/ps3:hardware:sixaxis" target="_blank">http://wiki.ps2dev.org/ps3:hardware:sixaxis</a>
+<a href="http://blog.tkjelectronics.dk/2014/01/ps4-controller-now-supported-by-the-usb-host-library/" target="_blank">TKJ Electronics » PS4 controller now supported by the USB Host library</a></p>
+
+<hr />
+
+<h1 id="hardware-platform">Hardware Platform</h1>
+
+<h2 id="hardware-stores">Hardware stores</h2>
+
+<p><a href="http://hk.element14.com/" target="_blank">e絡盟 Hong Kong | Formally Premier Electronics | Electronic Components Distributor</a>
+<a href="https://libre.computer/" target="_blank">Libre Computer – Open Computing Realized</a></p>
+
+<p><a href="https://xdguo.taobao.com/" target="_blank">首页-信德电子 各种电子元件 单片机 学习板 模块 电子 五金工具-淘宝网</a>
+<a href="https://shop166042192.taobao.com/" target="_blank">首页-嘉麒盛电子模块批发-淘宝网</a>
+<a href="https://shenhaidz.taobao.com/" target="_blank">首页-深海电子科技-淘宝网</a>
+<a href="https://shop111496966.taobao.com/" target="_blank">首页-都会明武电子-淘宝网</a>
+<a href="https://icwang.taobao.com/" target="_blank">首页-深名扬电子模块批发保护板温度计数显表-淘宝网</a>
+<a href="https://shop154977244.taobao.com/" target="_blank">首页-德晟泰科技-淘宝网</a></p>
+
+<h2 id="parts">Parts</h2>
+
+<p>LuaNode/Doit ESP32 30pins 28.33x51mm.45 $20.75
+WEMOS LoLin32 ESP32+OLED ~$55
+Goouuu ESP32 38pins 23.9mmx54.9mm $26.8
+Goouuu ESP32+Speaker 63mmx69mm $68
+Goouuu ESP32+Speaker+OLED 63mmx69mm $68
+40P 10cm M2M cable ~$1.7
+SYB-170 mini breadboard 35*47mm $0.45
+SYB-46 mini breadboard 90*54MM $1.9
+300 holes breadboard $6
+9V battery adapter $0.15
+3-6V DC motor $1.7
+TB6612 16pins 24.7*21.5mm $3.8
+DRV8833 12pins 18.4x16mm $2-4.5</p>
+
+<p>37 mems sensors $46
+TCS34725 RFB sensor $15</p>
+
+<h2 id="raspberry-pi">Raspberry Pi</h2>
+
+<p><a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi - Teach, Learn, and Make with Raspberry Pi</a>
+<a href="https://www.raspberrypi.org/blog/introducing-raspberry-pi-hats/" target="_blank">Introducing Raspberry Pi HATs - Raspberry Pi</a></p>
+
+<p><a href="https://github.com/thibmaek/awesome-raspberry-pi" target="_blank">thibmaek/awesome-raspberry-pi: 📝 A curated list of awesome Raspberry Pi tools, projects, images and resources</a>
+<a href="https://www.techradar.com/news/best-raspberry-pi-distro" target="_blank">The best Raspberry Pi distros in 2018 | TechRadar</a></p>
+
+<p><a href="https://raspi.tv/" target="_blank">RasPi.TV – Raspberry Pi, Electronics &amp; Making</a>
+<a href="https://raspi.tv/tag/ben-croston" target="_blank">Ben Croston – RasPi.TV</a> GPIO series
+<a href="https://raspi.tv/how-to-set-up-i2c-in-raspbian-on-the-raspberry-pi" target="_blank">How to set up i²c in Raspbian on the Raspberry Pi – RasPi.TV</a> SPI and I2C disabled by default</p>
+
+<p><a href="https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial" target="_blank">Raspberry Pi SPI and I2C Tutorial - learn.sparkfun.com</a>
+<a href="https://learn.sparkfun.com/tutorials/raspberry-gpio" target="_blank">Raspberry gPIo - learn.sparkfun.com</a></p>
+
+<p><a href="https://pimylifeup.com/" target="_blank">Pi My Life Up - 101+ DIY Raspberry Pi Projects &amp; Guides</a></p>
+
+<p><a href="https://www.hackster.io/awshome/awshome-home-automation-using-rpi-alexa-iot-a3d3dc" target="_blank">AWShome - Home automation using RPi + Alexa + IoT - Hackster.io</a>
+<a href="http://www.stinebaugh.info/ansible-playbook-to-create-a-minimal-headless-raspberry-pi/" target="_blank">Ansible Playbook to create a minimal headless raspberry pi – Stineblog</a></p>
+
+<p><a href="https://www.dexterindustries.com/shop/gopigo-beginner-starter-kit/" target="_blank">GoPiGo Beginner Starter Kit: the Raspberry Pi Robot Car</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=tQEmtbaO2GY" target="_blank">Can a Raspberry Pi be used as an Arduino? || RPi GPIO Programming Guide 101 - YouTube</a>
+<a href="https://www.youtube.com/watch?v=nL34zDTPkcs" target="_blank">https://www.youtube.com/watch?v=nL34zDTPkcs</a></p>
+
+<p><a href="https://www.makeuseof.com/tag/best-raspberry-pi-programming-resources/" target="_blank">9 Best Pi Programming Resources to Put Your Raspberry Pi to Use</a>
+<a href="https://www.makeuseof.com/tag/use-your-raspberry-pi-like-a-desktop-pc/" target="_blank">Use Your Raspberry Pi Like a Desktop PC</a>
+<a href="https://www.makeuseof.com/tag/7-operating-systems-you-can-run-with-raspberry-pi/" target="_blank">10 Operating Systems You Can Run With Raspberry Pi</a></p>
+
+<p><a href="https://leanpub.com/pi" target="_blank">Kolban&rsquo;s Book on the Raspberry… by Neil Kolban [PDF/iPad/Kindle]</a>
+<a href="https://hackaday.com/2018/07/13/behind-the-pin-how-the-raspberry-pi-gets-its-audio/" target="_blank">Behind The Pin: How The Raspberry Pi Gets Its Audio | Hackaday</a></p>
+
+<p><a href="https://www.studica.com/blog/raspberry-pi-timer-embedded-environments" target="_blank">Using the Raspberry Pi Timer for Embedded Environments | Studica Blog</a>
+<a href="https://raspberrypi.stackexchange.com/questions/53854/driving-pwm-output-frequency" target="_blank">gpio - Driving PWM output frequency - Raspberry Pi Stack Exchange</a>
+<a href="https://bennuttall.com/gpio-zero-developing-a-new-friendly-python-api-for-physical-computing/" target="_blank">GPIO Zero: Developing a new friendly Python API for Physical Computing - Ben Nuttall</a></p>
+
+<p>ExplainingComputers:
+<a href="https://www.youtube.com/playlist?list=PL2m2YvnrOYxKWlCkoSZXfkLtgDAMev9oN" target="_blank">Raspberry Pi 3 - YouTube</a>
+<a href="https://www.youtube.com/playlist?list=PL2m2YvnrOYxIABPXD2YY-ilcy_quyyEbT" target="_blank">Raspberry Pi 3 Model B+ - YouTube</a>
+<a href="https://www.youtube.com/playlist?list=PL2m2YvnrOYxLOZG0TGQgm9LAEYuvaglzY" target="_blank">Raspberry Pi Robotics - YouTube</a></p>
+
+<p><a href="https://www.youtube.com/user/sentdex/playlists?sort=dd&amp;view=50&amp;shelf_id=20" target="_blank">Robotics and the Raspberry Pi - sentdex - YouTube</a>
+<a href="https://www.youtube.com/playlist?list=PLQVvvaa0QuDdnpgDr1YZF9dI_4G334od6" target="_blank">Raspberry Pi GPIO basics - YouTube</a>
+<a href="https://www.youtube.com/playlist?list=PLQVvvaa0QuDcG4wbhhCv_XTnexvWfjlBy" target="_blank">Robotics with Python Raspberry Pi and GoPiGo - YouTube</a></p>
+
+<h3 id="blue-dot">Blue Dot</h3>
+
+<p><a href="https://bluedot.readthedocs.io/en/latest/#" target="_blank">Blue Dot — bluedot Documentation</a></p>
+
+<p><a href="https://play.google.com/store/apps/details?id=com.stuffaboutcode.bluedot" target="_blank">Blue Dot - Apps on Google Play</a>
+<a href="https://bluedot.readthedocs.io/en/latest/bluedotpythonapp.html" target="_blank">Blue Dot Python App — bluedot 1 Documentation</a></p>
+
+<h3 id="gaming">Gaming</h3>
+
+<p><a href="https://www.makeuseof.com/tag/classic-games-raspberry-pi-without-emulators/" target="_blank">10+ Classic Games You Can Run on Raspberry Pi Without Emulators</a>
+<a href="https://www.raspberrypi.org/forums/viewtopic.php?t=51794" target="_blank">STICKY: GAMES LIST: Games That Work On The Pi - Raspberry Pi Forums</a></p>
+
+<p><a href="https://www.makeuseof.com/tag/run-doom-raspberry-pi/" target="_blank">How to Run Doom on Your Raspberry Pi Without an Emulator</a>
+<a href="https://www.makeuseof.com/tag/recalbox-raspberry-pi/" target="_blank">Retro Gaming in Style With RecalBox for the Raspberry Pi</a>
+<a href="https://www.makeuseof.com/tag/retro-gaming-on-the-raspberry-pi-everything-you-need-to-know-si/" target="_blank">Retro Gaming on the Raspberry Pi: Everything You Need to Know</a></p>
+
+<h3 id="docker">Docker</h3>
+
+<p><a href="https://blog.alexellis.io/tag/raspberry-pi/" target="_blank">Raspberry PI - Page 1 - alex ellis&rsquo; blog</a>
+<a href="http://blog.hypriot.com/post/let-docker-swarm-all-over-your-raspberry-pi-cluster/" target="_blank">Let Docker Swarm all over your Raspberry Pi Cluster · Docker Pirates ARMed with explosive stuff</a>
+<a href="http://blog.hypriot.com/post/docker-compose-nodejs-haproxy/" target="_blank">How to use Docker Compose to run complex multi container apps on your Raspberry Pi · Docker Pirates ARMed with explosive stuff</a></p>
+
+<p><a href="http://containerized.me/arming-kubernetes-with-openebs-1/" target="_blank">ARMing Kubernetes with OpenEBS #1 | Containerized Me</a></p>
+
+<h2 id="banana-pi">Banana Pi</h2>
+
+<p><a href="http://www.banana-pi.org/" target="_blank">Banana Pi - BPI Single Board Computers Official Website</a></p>
+
+<h2 id="orange-pi">Orange Pi</h2>
+
+<h2 id="asus-tinker-board">Asus Tinker Board</h2>
+
+<p><a href="https://www.asus.com/uk/Single-board-Computer/TINKER-BOARD/" target="_blank">Tinker Board | Single-board Computer | ASUS United Kingdom</a>
+<a href="https://www.youtube.com/watch?v=CS66_BbalG8" target="_blank">Asus Tinker Board - YouTube</a></p>
+
+<p>Tinker Board S has built-in 16G eMMC flash</p>
+
+<h2 id="esp32">ESP32</h2>
+
+<p><a href="https://www.espressif.com/en/products/hardware/esp32/overview" target="_blank">ESP32 Overview | Espressif Systems</a>
+<a href="https://www.wikiwand.com/en/ESP32" target="_blank">ESP32 - Wikiwand</a></p>
+
+<p>160/240Mhz
+Bluetooth 4.2, BLE, 802.11bgn
+16 LED PWN, 18 ADC, 2 12C, 4 SPI (shares pin with GPIO)
+D0WDQ6 is the standard package, D0WD is smaller
+10.8x25.5mm, requires CP2102 USB to Serial
+28.3x51.4mm, embedded mini-usb</p>
+
+<blockquote>
+<p>To use the Bluetooth or BLE functionality of the ESP32, you will need to use the Espressif IDF not the Arduino IDE. ?</p>
+</blockquote>
+
+<p><a href="https://makeradvisor.com/esp32-vs-esp8266/" target="_blank">ESP32 vs ESP8266 - Pros and Cons - Maker Advisor</a>
+<a href="https://www.youtube.com/watch?v=nyWMaAF4dRQ&amp;t=0s&amp;list=PL3XBzmAj53RnZPeWe799F-uoXERBldhn9&amp;index=23" target="_blank">#179 Was it worth waiting for Bluetooth? How Much Current Needs the ESP32 Bluetooth in BLE? - YouTube</a>
+<a href="https://www.youtube.com/watch?v=3O_vrKAmshA" target="_blank">#159 Big ESP32 Boards Review and Test - YouTube</a>
+<a href="https://docs.google.com/spreadsheets/d/1Mu-bNwpnkiNUiM7f2dx8-gPnIAFMibsC2hMlWhIHbPQ/edit#gid=0" target="_blank">ESP32 Boards Comparison - Google Sheets</a></p>
+
+<p><a href="https://pan.baidu.com/s/1ycfadOAvoBZxL1R_L1MY-A" target="_blank">https://pan.baidu.com/s/1ycfadOAvoBZxL1R_L1MY-A</a> 密码 bwle</p>
+
+<p><a href="https://www.dfrobot.com/blog-964.html" target="_blank">esp32, esp32 tutorial,ESP32 Arduino Tutorial Overview</a>
+<a href="https://www.dfrobot.com/blog-699.html" target="_blank">esp32 projects, esp32, esp32 review,The Best 14 ESP32 Projects Overview</a></p>
+
+<p><a href="https://esp-idf.readthedocs.io/en/latest/hw-reference/" target="_blank">ESP32 Hardware Reference — ESP-IDF Programming Guide documentation</a>
+<a href="http://esp32.net/" target="_blank">The Internet of Things with ESP32</a>
+<a href="https://learn.sparkfun.com/tutorials/esp32-thing-hookup-guide" target="_blank">ESP32 Thing Hookup Guide - learn.sparkfun.com</a>
+<a href="http://bbs.esp32.com/viewtopic.php?t=3416" target="_blank">How to power up ESP32-DevKitC without USB port? - ESP32 Forum</a> 5V input via AMS1117-3.3 LDO</p>
+
+<p><a href="https://randomnerdtutorials.com/esp32-web-server-arduino-ide/" target="_blank">ESP32 Web Server - Arduino IDE | Random Nerd Tutorials</a>
+<a href="https://randomnerdtutorials.com/esp32-access-point-ap-web-server/" target="_blank">ESP32 Access Point (AP) for Web Server | Random Nerd Tutorials</a>
+<a href="https://randomnerdtutorials.com/esp32-troubleshooting-guide/" target="_blank">ESP32 Troubleshooting Guide | Random Nerd Tutorials</a>
+<a href="https://randomnerdtutorials.com/esp32-bluetooth-low-energy-ble-arduino-ide/" target="_blank">ESP32 Bluetooth Low Energy (BLE) on Arduino IDE | Random Nerd Tutorials</a>
+<a href="https://randomnerdtutorials.com/esp32-dc-motor-l298n-motor-driver-control-speed-direction/" target="_blank">ESP32 with DC Motor - Control Speed and Direction | Random Nerd Tutorials</a> 30K PWN
+<a href="https://www.youtube.com/watch?v=SBG7ccW5gpA" target="_blank">#147 Introduction into ESP32 with first tests: PWM, Servo, Web, Touch Sensors (Tutorial) - YouTube</a>
+<a href="https://github.com/espressif/esp-iot-solution" target="_blank">espressif/esp-iot-soluion: Espressif IoT Library. IoT Device Drivers, Documentations And Solutions.</a></p>
+
+<p><a href="https://esp8266.ru/esplorer/" target="_blank">ESPlorer – esp8266</a>
+<a href="https://github.com/espressif/arduino-esp32" target="_blank">espressif/arduino-esp32: Arduino core for the ESP32</a>
+<a href="https://github.com/Nicholas3388/LuaNode" target="_blank">Nicholas3388/LuaNode: Esp32/esp8266 lua sdk</a>
+<a href="https://github.com/nkolban/ESP32_BLE_Arduino" target="_blank">nkolban/ESP32_BLE_Arduino: The library source for the ESP32 BLE support for Arduino.</a></p>
+
+<p><a href="https://github.com/espressif/esp-idf/issues/2255" target="_blank">problem with MCPWM below 15 Hz frequency · Issue #2255 · espressif/esp-idf</a></p>
+
+<p><a href="https://forum.micropython.org/viewtopic.php?f=18&amp;t=5085" target="_blank">Step by Step Install - MicroPython Forum</a>
+<a href="https://www.youtube.com/playlist?list=PL3XBzmAj53RnZPeWe799F-uoXERBldhn9" target="_blank">ESP32 - YouTube</a></p>
+
+<h2 id="esp8266">ESP8266</h2>
+
+<p><a href="http://www.nodemcu.com/index_en.html" target="_blank">NodeMcu &ndash; An open-source firmware based on ESP8266 wifi-soc.</a></p>
+
+<h2 id="nrf52">nRF52</h2>
+
+<p><a href="https://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF52832" target="_blank">nRF52832 / Bluetooth Low Energy / Products / Home - Ultra Low Power Wireless Solutions from NORDIC SEMICONDUCTOR</a>
+<a href="https://learn.sparkfun.com/tutorials/nrf52832-breakout-board-hookup-guide" target="_blank">nRF52832 Breakout Board Hookup Guide - learn.sparkfun.com</a>
+<a href="https://primalcortex.wordpress.com/2017/11/06/starting-up-with-the-nordic-nrf52-ble-chip/" target="_blank">Starting up with the Nordic NRF52 BLE chip | Primal Cortex&rsquo;s Weblog</a></p>
+
+<p><a href="https://github.com/sandeepmistry/arduino-nRF5" target="_blank">sandeepmistry/arduino-nRF5: Arduino Core for Nordic Semiconductor nRF5 based boards</a></p>
+
+<h2 id="arduino">Arduino</h2>
+
+<p><a href="https://www.youtube.com/watch?v=nL34zDTPkcs" target="_blank">You can learn Arduino in 15 minutes. - YouTube</a> Arduino is the board and the IDE/Platform, which supports many MCUs</p>
+
+<p><a href="http://www.wikiwand.com/en/Arduino" target="_blank">Arduino - Wikiwand</a>
+<a href="https://www.arduino.cc/en/Tutorial/Foundations" target="_blank">Arduino - Foundations</a>
+<a href="https://www.arduino.cc/reference/en/" target="_blank">Arduino Reference</a></p>
+
+<p><a href="https://maker.pro/arduino/tutorial/is-the-arduino-right-for-your-project" target="_blank">Is the Arduino Right for Your Project? | Arduino | Maker Pro</a>
+<a href="https://www.youtube.com/watch?v=BtLwoNJ6klE" target="_blank">Arduino Basics 101: Hardware Overview, Fundamental Code Commands - YouTube</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=zJJkNJWWcIU" target="_blank">Arduino Buying Guide 2017: Shawn&rsquo;s Picks - YouTube</a>
+<a href="https://learn.sparkfun.com/tutorials/choosing-an-arduino-for-your-project" target="_blank">Choosing an Arduino for Your Project - learn.sparkfun.com</a>
+<a href="https://www.sparkfun.com/standard_arduino_comparison_guide" target="_blank">Standard Arduino Comparison Guide - SparkFun Electronics</a>
+<a href="https://www.arduino.cc/en/Main/Products" target="_blank">Arduino - Products</a>
+<a href="http://www.misterngan.com/2171/where-to-buy-arduino-for-stem/" target="_blank">如何購買 Arduino ？( STEM project ) | Mister Ngan</a></p>
+
+<p><a href="https://store.arduino.cc/usa/arduino-uno-rev3" target="_blank">Arduino Uno Rev3</a>
+ATMega328P, 53.4x68.6mm
+14 GPIO (6 PWN output, 6 ADC input, 1 12C, 1 SPI)
+<a href="https://store.arduino.cc/usa/arduino-micro" target="_blank">Arduino Micro</a>
+ATmega32U4, 18x48mmmm, built-in USB support, HID
+20 GPIO (7 PWN output, 12 ADC input, 1 12C, 1 SPI)
+<a href="https://store.arduino.cc/usa/arduino-nano" target="_blank">Arduino Nano</a>
+ATMega328P, 18x45mm
+22 GPIO (6 PWN output, 8 ADC input, 1 12C, 1 SPI)</p>
+
+<p><a href="https://www.arduino.cc/en/Guide/HomePage" target="_blank">Arduino - Getting Started</a>
+<a href="https://www.arduino.cc/en/Tutorial/HomePage" target="_blank">Arduino - Tutorials</a>
+<a href="https://maker.pro/arduino/tutorial" target="_blank">Arduino Tutorials | Maker Pro</a>
+<a href="https://learn.adafruit.com/series/learn-arduino" target="_blank">Adafruit Learning System</a>
+<a href="https://www.instructables.com/class/Arduino-Class/" target="_blank">Free Online Arduino Class</a>
+<a href="http://www.linux-magazine.com/Online/Features/Arduino-101" target="_blank">Arduino 101 » Linux Magazine</a></p>
+
+<p><a href="http://robodino.org/resources/arduino" target="_blank">Arduino Resources</a>
+<a href="https://www.youtube.com/user/OSHJunkies" target="_blank">Programming Electronics Academy - YouTube</a> !important, systematic courses
+<a href="http://www.hackvandedam.nl/blog/?p=762" target="_blank">Why Arduino is not the right educational tool | Hack van de dam</a>
+<a href="https://www.youtube.com/playlist?list=PLBcrWxTa5CS0u-rQNkGtLMg1yA7h56r6_" target="_blank">Adventures in Science! - YouTube</a></p>
+
+<p><a href="https://www.youtube.com/channel/UCAH7OfjndkAgtjkmJ6IQvEw" target="_blank">Mert Arduino - YouTube</a></p>
+
+<p><a href="https://www.baldengineer.com/5-arduino-myths.html" target="_blank">5 Myths Everyone Believes about Arduino (that aren&rsquo;t true) - Bald Engineer</a></p>
+
+<p><a href="https://github.com/tableflip/nodebot-workshop" target="_blank">tableflip/nodebot-workshop: A nodeschool workshop on how to get your ardunio alive with johnny-five</a></p>
+
+<p><a href="https://stemtera.com/" target="_blank">STEMTera™ Breadboard</a>
+<a href="http://www.plumgeek.com/" target="_blank">Plum Geek Robotics - Arduino Based STEM Robotics</a></p>
+
+<p><a href="https://blog.arduino.cc/2018/08/17/build-a-4-button-arcade-game-out-of-lego/" target="_blank">Arduino Blog » Build a 4-button arcade game out of LEGO</a>
+<a href="https://create.arduino.cc/projecthub/LenkaDesign/arduino-arcade-lego-games-box-c05299" target="_blank">Arduino Arcade LEGO Games Box - Arduino Project Hub</a></p>
+
+<h3 id="interrupts">Interrupts</h3>
+
+<p><a href="https://www.youtube.com/watch?v=2kr5A350H7E" target="_blank">Level Up Your Arduino Code: Timer Interrupts - YouTube</a>
+<a href="https://www.youtube.com/watch?v=J61_PKyWjxU" target="_blank">Level Up Your Arduino Code: External Interrupts - YouTube</a></p>
+
+<h3 id="low-power">Low Power</h3>
+
+<p><a href="http://playground.arduino.cc/Learning/arduinoSleepCode" target="_blank">Arduino Playground - ArduinoSleepCode</a></p>
+
+<p><a href="http://www.home-automation-community.com/arduino-low-power-how-to-run-atmega328p-for-a-year-on-coin-cell-battery/" target="_blank">Arduino Low Power - How To Run ATmega328P For a Year On Coin Cell Battery</a> Pro Mini
+<a href="https://github.com/rocketscream/Low-Power" target="_blank">rocketscream/Low-Power: Low Power Library for Arduino</a>
+<a href="https://github.com/arduino-libraries/ArduinoLowPower" target="_blank">arduino-libraries/ArduinoLowPower: Powersave features for SAMD boards</a></p>
+
+<p><a href="http://www.gammon.com.au/power" target="_blank">Gammon Forum : Electronics : Microprocessors : Power saving techniques for microprocessors</a>
+<a href="https://jeelabs.org/2013/05/16/measuring-the-battery-without-draining-it/" target="_blank">» Measuring the battery without draining it » JeeLabs</a>
+<a href="https://lowpowerlab.com/2013/08/27/mailbox-notifier-project-upgrade/" target="_blank">Mailbox notifier project upgrade | LowPowerLab</a></p>
+
+<h2 id="stm32">STM32</h2>
+
+<p><a href="https://www.youtube.com/watch?v=EaZuKRSvwdo" target="_blank">Easy &amp; Powerful Arduino Alternative? STM32 Beginner&rsquo;s Guide - YouTube</a></p>
+
+<h3 id="beaglebone">Beaglebone</h3>
+
+<p><a href="http://fatcatlab.com/product/evb/" target="_blank">FATCATLAB</a></p>
+
+<h2 id="tessel">Tessel</h2>
+
+<p><a href="https://tessel.io/" target="_blank">Tessel 2</a> development platform with Node ecosystem
+<a href="https://www.seeedstudio.com/depot/Tessel-2-p-2622.html?ref=tessel.io" target="_blank">Tessel 2 - Tessel - Seeed Studio</a></p>
+
+<h2 id="ev3-nxt-and-the-likes">EV3/NXT and the likes</h2>
+
+<p><a href="https://www.wikiwand.com/en/Lego_Mindstorms_NXT" target="_blank">Lego Mindstorms NXT - Wikiwand</a>
+<a href="http://www.legoengineering.com/alternative-programming-languages/" target="_blank">Nine alternative programming languages for LEGO MINDSTORMS – LEGO Engineering</a></p>
+
+<p><a href="http://www.mindstormsrobots.com/lego-mindstorms/" target="_blank">LEGO Mindstorms | Mindstorms Robots</a>
+<a href="https://www.lego.com/en-us/mindstorms" target="_blank">Home - Mindstorms LEGO.com</a>
+<a href="http://www.philohome.com/nxt.htm" target="_blank">LEGO EV3 &amp; NXT hacks and robots</a>
+<a href="http://www.thenxtstep.com/" target="_blank">The NXT STEP is EV3 - LEGO® MINDSTORMS® Blog</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=p1rhdOg9sVc" target="_blank">LEGO Mindstorms NXT / EV3 Cable &amp; Crimping Tool DIY - YouTube</a> file your crimping tool
+<a href="https://www.youtube.com/watch?v=wLupj65qJHg" target="_blank">Lego Mindstorms EV3 Review - A lack of enthusiasm - YouTube</a> RCX (1998) -&gt; NXT (2006) -&gt; RV3 (2013)</p>
+
+<p><a href="https://github.com/mindboards/ev3sources" target="_blank">mindboards/ev3sources: LEGO MINDSTORMS EV3 source code</a>
+<a href="https://github.com/NXT/LEGO-MINDSTORMS-MINDdroid" target="_blank">NXT/LEGO-MINDSTORMS-MINDdroid: LEGO MINDSTORMS Android Apps</a></p>
+
+<p><a href="http://www.technicbricks.com/2016/01/wedo-20-future-of-pf.html" target="_blank">TechnicBRICKs: WeDo 2.0 - The future of PF</a>
+<a href="http://www.technicbricks.com/2016/01/wedo-20-new-parts.html" target="_blank">TechnicBRICKs: WeDo 2.0 - the new parts</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=lLzTM2w1SM4" target="_blank">Top 5 LEGO Compatible Electronics - YouTube</a></p>
+
+<h3 id="soc">SoC</h3>
+
+<p><a href="https://github.com/robo8080/ESP32_LegoMotor_RCWC" target="_blank">robo8080/ESP32_LegoMotor_RCWC: ESP32 + TB6612モータードライバー + RCWController で、LEGO Power Functions Motor と Servo Motor を制御します。</a> ESP32 + TB6612, !important</p>
+
+<p><a href="https://www.ev3dev.org/" target="_blank">ev3dev Home</a>
+<a href="https://raspberrypi.stackexchange.com/questions/682/how-can-i-control-lego-motors" target="_blank">gpio - How can I control Lego motors? - Raspberry Pi Stack Exchange</a>
+<a href="http://trivox.tripod.com/lego-nxt-motor-input-output.html" target="_blank">Motor Lego NXT nxt output input wiring tacho signal</a></p>
+
+<p><a href="https://arduino.stackexchange.com/questions/16904/lego-technic-servo-motor-9v-pwm" target="_blank">Lego Technic Servo Motor - 9V PWM - Arduino Stack Exchange</a>
+<a href="https://bricks.stackexchange.com/questions/6620/at-what-voltage-do-the-c1-and-c2-lines-run-at-when-controlling-a-lego-servo-moto" target="_blank">piece information - At what voltage do the c1 and c2 lines run at when controlling a lego servo motor? - Bricks</a></p>
+
+<p><strong>Arduino</strong></p>
+
+<p><a href="http://playground.arduino.cc/Code/PwmFrequency" target="_blank">Arduino Playground - PwmFrequency</a></p>
+
+<pre><code>The base frequency for pins 3, 9, 10, and 11 is 31250 Hz.
+The base frequency for pins 5 and 6 is 62500 Hz.
+Divisors:
+The divisors available on pins 5, 6, 9 and 10 are: 1, 8, 64, 256, and 1024.
+The divisors available on pins 3 and 11 are: 1, 8, 32, 64, 128, 256, and 1024.
+</code></pre>
+
+<p><a href="https://create.arduino.cc/projecthub/Notthemarsian/take-control-over-lego-power-functions-ee0bfa" target="_blank">Take Control Over Lego Power Functions - Arduino Project Hub</a>
+<a href="https://github.com/Notthemarsian/Lego-car-Arduino" target="_blank">Notthemarsian/Lego-car-Arduino: arduino Lego car model bluetooth controlled with android app developed with MIT app inventor</a></p>
+
+<p><a href="https://scuttlebots.com/lego-hacking/" target="_blank">Lego Hacking | Scuttlebots</a></p>
+
+<p><a href="https://forums.adafruit.com/viewtopic.php?f=31&amp;t=62325" target="_blank">Adafruit customer service forums • View topic - How to use Adafruit Motor Shield V2 with Lego Servo Motor?</a></p>
+
+<p><a href="https://www.hackster.io/Satyavrat/iot-dune-buggy-control-it-from-anywhere-84b921" target="_blank">IoT Dune Buggy - Control it from Anywhere! - Hackster.io</a></p>
+
+<p><a href="https://tieba.baidu.com/p/4981594749" target="_blank">【图片】「乐高(pin)遇上arduino」之荒神小钢炮moc【国产积木吧】_百度贴吧</a>
+<a href="https://microduinoinc.com/" target="_blank">Front Page - Microduino</a> mCookies are modules with magnets
+<a href="https://github.com/d4rks70rm/ArduinoLegoTrain" target="_blank">d4rks70rm/ArduinoLegoTrain: Control a Lego Train with Arduino</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=ArEt9RWPbhE" target="_blank">Arduino Controlling LEGO Power Functions Motor Part 1: Wired Control - YouTube</a> !important, PWM frequencies
+<a href="https://www.youtube.com/watch?v=D7kQCJIeM6c" target="_blank">Arduino Controlling LEGO Power Functions Motor Part 2: IR Remote Control - YouTube</a></p>
+
+<p><strong>Raspberry Pi</strong></p>
+
+<p><a href="https://www.dexterindustries.com/brickpi/" target="_blank">BrickPi - Dexter Industries</a>
+<a href="https://www.dexterindustries.com/brickpi3-tutorials-documentation/" target="_blank">BrickPi3 Tutorials and Documentation: Get Started with the BrickPi3 and the Raspberry Pi</a>
+<a href="https://github.com/DexterInd/BrickPi" target="_blank">DexterInd/BrickPi: The BrickPi Project Combining the Raspberry Pi and LEGO MINDSTORMS</a>
+<a href="https://www.youtube.com/playlist?list=PLGXEJ4Ye1qCOIk6PdUMxePiYP6Y34hOux" target="_blank">BrickPi - YouTube</a>
+<a href="https://www.dexterindustries.com/howto/lego-mindstorms-motors-with-raspberry-pi-brickpi-0-1/" target="_blank">LEGO MINDSTORMS Motors with Raspberry Pi (BrickPi 0.1) - Dexter Industries</a>
+<a href="http://www.mindstormsrobots.com/lego-mindstorms/controlling-mindstorms-ev3-with-a-raspberry-pi/" target="_blank">Controlling a LEGO Mindstorms EV3 Robot with a Raspberry Pi GPIO Pin</a></p>
+
+<p><a href="https://www.raspberrypi.org/forums/viewtopic.php?t=31421" target="_blank">LEGO Power Functions 8293 Motor Set - Raspberry Pi Forums</a>
+<a href="http://pdwhomeautomation.blogspot.com/2012/11/raspberry-pi-powered-lego-car.html" target="_blank">Paul&rsquo;s Geek Dad Blog: Raspberry Pi Powered Lego Car</a>
+<a href="http://pdwhomeautomation.blogspot.com/2013/11/raspberry-pi-powered-lego-car-20.html" target="_blank">Paul&rsquo;s Geek Dad Blog: Raspberry Pi Powered Lego Car 2.0</a></p>
+
+<p><strong>SoC + Infrared</strong></p>
+
+<p><a href="https://github.com/jurriaan/Arduino-PowerFunctions" target="_blank">jurriaan/Arduino-PowerFunctions: Lego Power Functions Infrared Control for Arduino</a>
+<a href="https://github.com/iConor/lego-pf-arduino" target="_blank">iConor/lego-pf-arduino: Control LEGO Power Functions with an Arduino and an IR LED.</a>
+<a href="https://github.com/iConor/lego-lirc" target="_blank">iConor/lego-lirc: Control LEGO Power Functions with a Raspberry Pi and an IR LED, using LIRC (Linux Infrared Remote Control).</a>
+<a href="https://github.com/quantenProjects/LegoPowerFunctionsIR" target="_blank">quantenProjects/LegoPowerFunctionsIR: A Python libeary and C programm to control Lego Powerfunctions via IR on a Raspberry Pi</a>
+<a href="https://github.com/Zchander/RPi-PowerFunctions" target="_blank">Zchander/RPi-PowerFunctions: A project to send commands over IR to a LEGO PowerFunctions receiver using an Raspberry Pi, I2C and an ATtiny2313</a>
+<a href="https://github.com/dspinellis/lego-power-scratch" target="_blank">dspinellis/lego-power-scratch: Control Lego power functions from Scratch</a></p>
+
+<p><a href="https://spectrum.ieee.org/geek-life/hands-on/replace-legos-190-intelligent-brick-with-mits-scratch-and-a-40-raspberry-pi" target="_blank">Replace Lego’s $190 Intelligent Brick with MIT’s Scratch and a $40 Raspberry Pi - IEEE Spectrum</a>
+<a href="https://www.freetronics.com.au/blogs/news/17338609-controlling-lego-power-function-trains-and-models-with-raspberry-pi" target="_blank">Controlling LEGO Power Function trains and models with Raspberry Pi | Freetronics</a>
+<a href="https://www.youtube.com/watch?v=v7NJNDcBFE4" target="_blank">Wii Nunchuk Analog Stick Controlling LEGO Power Functions Tank by Arduino - YouTube</a>
+<a href="https://www.youtube.com/watch?v=nZHOclcOB2k" target="_blank">Raspberry Pi Lego Robot - Computerphile - YouTube</a></p>
+
+<h2 id="micro-bit">Micro:bit</h2>
+
+<p><a href="https://microbit.org/" target="_blank">Micro:bit Educational Foundation | micro:bit</a>
+<a href="http://www.wikiwand.com/en/Micro_Bit" target="_blank">Micro Bit - Wikiwand</a></p>
+
+<p>43x52mm, with builtin:
+- 5x5 dot matrix
+- bluetooth
+- accelerometer
+- magnetometer
+- thermometer
+- light sensor
+- compass
+- 2 buttons</p>
+
+<p><a href="https://kittenbot.taobao.com/?spm=2013.1.0.0.64ef2330FB0jGh" target="_blank">首页-KittenBot-淘宝网</a>
+<a href="http://kittenbot.cn/#/home" target="_blank">Kittenbot Home</a>
+<a href="http://www.kittenbot.cc/" target="_blank">Kittenbot</a>
+<a href="http://learn.kittenbot.cn/zh_CN/latest/" target="_blank">2. Robotbit V2.0详解 — kittenbot docs 文档</a>
+<a href="https://item.taobao.com/item.htm?id=572085241353" target="_blank">micro:bit Robotbit LEGO 乐高 伺服电机 舵机 makecode编程 四个-淘宝网</a></p>
+
+<p><a href="https://item.taobao.com/item.htm?id=570576057974" target="_blank">Microbit机器人套件/扩展板机械臂小车Armbit/小R科技创客教育-淘宝网</a>
+<a href="https://www.etchkshop.com/collections/bbc-micro-bit" target="_blank">The BBC micro:bit , lesson packs and accessories – ETC Educational Technology Connection (HK) Ltd</a></p>
+
+<p><a href="https://www.kitronik.co.uk/microbit.html" target="_blank">microbit &amp; accessories from Kitronik</a>
+<a href="https://www.circuitcellar.com.tw/?p=3882" target="_blank">Micro:bit技術發展歷程觀察 – circuitcellar</a></p>
+
+<p><a href="https://www.youtube.com/playlist?list=PLBcrWxTa5CS0mWJrytvii8aG5KUqMXvSk" target="_blank">Getting Started with micro:bit - YouTube</a>
+<a href="https://www.youtube.com/playlist?list=PL3bNyZYHcRSUl7Z5ruCPurJIx4fCtZ35D" target="_blank">micro:bit Tutorial Series - YouTube</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=Zw0ON6jjoLA" target="_blank">IchigonQuest for micro:bit - YouTube</a></p>
+
+<h2 id="ubtech">UBTECH</h2>
+
+<p>Pieces are little bit smaller than LEGO pieces, so <em>not compatible</em></p>
+
+<p><a href="https://ubtrobot.com/" target="_blank">UBTECH Robotics - Humanoid intelligent &amp; programmed robots for family</a>
+<a href="https://item.jd.com/7398404.html" target="_blank">【优必选变形工程车（卡卡&amp;卡力）】优必选（UBTECH）智能机器人stem教育编程早教益智儿童积木遥控拼装玩具礼物变形工程车 卡卡卡力【行情 报价 价格 评测】-京东</a></p>
+
+<h2 id="coco-robot">Coco Robot</h2>
+
+<p>[Coco (robot) - Wikiwand](<a href="https://www.wikiwand.com/en/Coco_(robot%29" target="_blank">https://www.wikiwand.com/en/Coco_(robot%29</a>)</p>
+
+<h2 id="makeblock">Makeblock</h2>
+
+<p><a href="https://www.makeblock.com/steam-kits" target="_blank">STEAM Kits | Makeblock – Let Creation Be a Way of Life</a></p>
+
+<p><a href="http://makeblock.hk/" target="_blank">Makeblock HK | STEM Education Robotics Platform</a>
+<a href="http://makeblock.hk/stu_elearn/" target="_blank">Student E-learn | Makeblock HK</a></p>
+
+<p><a href="https://www.allaboutcircuits.com/technical-articles/an-overview-of-using-makeblock-in-arduino-programming/" target="_blank">An Overview of Using Makeblock in Arduino Programming</a></p>
+
+<p><a href="https://www.makeblock.com/cn" target="_blank">Makeblock官网-全球STEAM教育解决方案领导者</a>
+<a href="https://www.makeblock.com/cn/info/codey" target="_blank">程小奔机器人介绍_程小奔机器人拆解评测_入门编程使用指南-Makeblock</a> Codey Rocky
+<a href="https://www.makeblock.com/cn/codey/207165.html" target="_blank">编程机器人程小奔有什么新功能？程小奔可编程益智机器人评测 - makeblock</a></p>
+
+<p><a href="https://kakachuangke.taobao.com/?spm=a1z10.3-c.0.0.73e27246bnkorD" target="_blank">首页-咖咖创客官方店-淘宝网</a> makeblock</p>
+
+<p><a href="https://www.makeblock.com/software/mblock5" target="_blank">mBlock 5 | Makeblock – Let Creation Be a Way of Life</a> Scratch IDE</p>
+
+<h3 id="witcat">Witcat</h3>
+
+<p><a href="https://shop150832632.taobao.com/index.htm" target="_blank">首页-机智猫少儿创客机器人-淘宝网</a></p>
+
+<h3 id="mitu">Mitu</h3>
+
+<p><a href="https://www.mi.com/toyblock/" target="_blank">米兔积木机器人 - 小米商城</a>
+<a href="http://bbs.xiaomi.cn/f-479" target="_blank">米兔积木机器人 - 小米社区官方论坛</a></p>
+
+<p><a href="https://kknews.cc/zh-hk/tech/2aqk5ke.html" target="_blank">499元小米積木機械人與樂高機械人有何區別？ - 每日頭條</a>
+<a href="https://www.zhihu.com/question/52239880/answer/131735620" target="_blank">如何评价小米新出的「米兔积木机器人」？ - 知乎</a> Hardware review</p>
+
+<p><a href="https://www.youtube.com/watch?v=POHChVGh4LQ" target="_blank">米兔积木机器人履带机甲视频大测评 - YouTube</a></p>
+
+<p><a href="http://bbs.xiaomi.cn/t-13253395" target="_blank">米兔积木机器人简单自平衡测试教程 - 小米社区官方论坛</a></p>
+
+    </div>
+  </div>
+
+  
+  <div class="d-none col-xl-2 d-xl-block sticky-top h-100 py-2 border-left px-0">
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#ide">IDE</a>
+<ul>
+<li><a href="#arduino-ide">Arduino IDE</a>
+<ul>
+<li><a href="#libraries">Libraries</a></li>
+<li><a href="#writing-library">Writing Library</a></li>
+</ul></li>
+<li><a href="#platform-io">Platform.io</a></li>
+<li><a href="#partition-size">Partition Size</a></li>
+</ul></li>
+<li><a href="#os">OS</a>
+<ul>
+<li><a href="#simba">Simba</a></li>
+</ul></li>
+<li><a href="#python-on-soc">Python on SoC</a></li>
+<li><a href="#electronics-fundamentals">Electronics Fundamentals</a>
+<ul>
+<li><a href="#current">Current</a></li>
+<li><a href="#cables-and-connectors">Cables and Connectors</a></li>
+<li><a href="#pcb">PCB</a></li>
+<li><a href="#soldering">Soldering</a></li>
+<li><a href="#transistors">Transistors</a></li>
+<li><a href="#regulators">Regulators</a></li>
+<li><a href="#packaging">Packaging</a></li>
+<li><a href="#power">Power</a></li>
+<li><a href="#eda-tools">EDA tools</a></li>
+<li><a href="#pwm">PWM</a></li>
+</ul></li>
+<li><a href="#connectivity">Connectivity</a>
+<ul>
+<li><a href="#wifi">Wifi</a></li>
+<li><a href="#bluetooth">Bluetooth</a></li>
+<li><a href="#lpwan-lora-6lowpan">LPWAN/LoRA/6LoWPAN</a></li>
+<li><a href="#csr">CSR</a></li>
+</ul></li>
+<li><a href="#magicmirror">MagicMirror</a></li>
+<li><a href="#micro-controllers">Micro Controllers</a>
+<ul>
+<li><a href="#attiny85">ATtiny85</a></li>
+</ul></li>
+<li><a href="#electronic-components">Electronic Components</a>
+<ul>
+<li><a href="#interfaces">Interfaces</a></li>
+<li><a href="#adc">ADC</a></li>
+<li><a href="#voltage-level-shifter">Voltage-Level Shifter</a></li>
+<li><a href="#audio-output">Audio output</a></li>
+<li><a href="#7-segment-display">7 Segment Display</a></li>
+<li><a href="#lcd">LCD</a></li>
+<li><a href="#ultrasound-sensor">Ultrasound sensor</a></li>
+<li><a href="#led">LED</a></li>
+<li><a href="#uv-sensor">UV sensor</a></li>
+<li><a href="#motor-control">Motor Control</a></li>
+<li><a href="#rfid">RFID</a></li>
+<li><a href="#i2c">I2C</a></li>
+<li><a href="#speech">Speech</a></li>
+<li><a href="#barometer">Barometer</a></li>
+<li><a href="#gyroscope-accelerometer">Gyroscope/Accelerometer</a></li>
+<li><a href="#magnetometer-compass">Magnetometer (compass)</a></li>
+<li><a href="#reading-input-signal">Reading Input Signal</a></li>
+<li><a href="#usb-serial">USB-Serial</a></li>
+<li><a href="#shift-registers">Shift Registers</a></li>
+<li><a href="#gamepad">Gamepad</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#hardware-platform">Hardware Platform</a>
+<ul>
+<li><a href="#hardware-stores">Hardware stores</a></li>
+<li><a href="#parts">Parts</a></li>
+<li><a href="#raspberry-pi">Raspberry Pi</a>
+<ul>
+<li><a href="#blue-dot">Blue Dot</a></li>
+<li><a href="#gaming">Gaming</a></li>
+<li><a href="#docker">Docker</a></li>
+</ul></li>
+<li><a href="#banana-pi">Banana Pi</a></li>
+<li><a href="#orange-pi">Orange Pi</a></li>
+<li><a href="#asus-tinker-board">Asus Tinker Board</a></li>
+<li><a href="#esp32">ESP32</a></li>
+<li><a href="#esp8266">ESP8266</a></li>
+<li><a href="#nrf52">nRF52</a></li>
+<li><a href="#arduino">Arduino</a>
+<ul>
+<li><a href="#interrupts">Interrupts</a></li>
+<li><a href="#low-power">Low Power</a></li>
+</ul></li>
+<li><a href="#stm32">STM32</a>
+<ul>
+<li><a href="#beaglebone">Beaglebone</a></li>
+</ul></li>
+<li><a href="#tessel">Tessel</a></li>
+<li><a href="#ev3-nxt-and-the-likes">EV3/NXT and the likes</a>
+<ul>
+<li><a href="#soc">SoC</a></li>
+</ul></li>
+<li><a href="#micro-bit">Micro:bit</a></li>
+<li><a href="#ubtech">UBTECH</a></li>
+<li><a href="#coco-robot">Coco Robot</a></li>
+<li><a href="#makeblock">Makeblock</a>
+<ul>
+<li><a href="#witcat">Witcat</a></li>
+<li><a href="#mitu">Mitu</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+  
+</div>
+
+<hr>
+<div class="disqus-comments mx-auto px-5">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "cyrusngithubio" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+
+    
+<link rel="stylesheet" href='/css/highlightjs/solarized-dark.css'>
+<script src='/js/highlight.pack.js'></script>
+<script>
+   
+  hljs.configure({
+    tabReplace: '  '
+  })
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <script src='/js/jquery.slim.min.js'></script>
+
+  
+    <link rel="stylesheet" type="text/css" href='/css/remark.css'>
+      
+      <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+<script src='/js/bootstrap.bundle.min.js' ></script>
+
+  
+  <script src='/js/remark-latest.min.js'></script>
+
+  <script src='/js/helper.js'></script>
+  
+  <script>
+  FontAwesomeConfig = {
+    searchPseudoElements: true
+  }
+</script>
+<script defer src=' /js/fontawesome-all.min.js '></script>
+
+
+</head>
+
+<body class="text-dark">
+<div id="source">
+class: center middle bg-info text-light
+
+# Mathematics
+&lt;hr class=&#34;bg-light&#34;&gt;
+## F1A
+---
+class: row
+
+.col-3.bg-light[
+## 9 Oct 2018
+化簡代數式
+- 如何分項？
+- 何謂
+  &#43; 常數項？
+  &#43; 同類項？
+  &#43; 異類項？
+- 同類項有何特別呢？ 
+]
+.col-9[
+.img-100.h-50.scroll[
+[![2018_10_11_10_42_00][@1-img]][@1-url]
+]]
+
+---
+class: row
+
+.col-3.bg-light[
+## 13 Sept 2018
+有向數的加法和減法
+- 有向數的加減法則是甚麼？
+]
+
+.col-9[
+.img-100.h-50.scroll[
+[![2018_09_13_08_31_00][@2-img]][@2-url]
+]
+]
+
+
+---
+class: row
+.col-3.bg-light[
+## 11 Sept 2018
+有向數的基本概念
+- 質性符號
+- 如何比較有向數的大小
+]
+
+.col-9[
+.img-100.h-50.scroll[
+[![2018_09_11_08_31_00][@3-img]][@3-url]
+]
+]
+
+
+---
+class: middle center bg-info text-light
+# End
+
+&lt;!-- reference links --&gt;
+
+[@1-img]: 2018_10_11_10_42_00.jpg
+[@1-url]: 2018_10_11_10_42_00.jpg
+[@2-img]: ./2018_09_13_08_31_01.jpg
+[@2-url]: ./2018_09_13_08_31_01.jpg
+[@3-img]: ./2018_09_11_08_31_00.jpg
+[@3-url]: ./2018_09_11_08_31_00.jpg
+
+</div>
+
+
+
+
+<script src='/js/katex.min.js'></script>
+<link rel="stylesheet" href='/css/katex.min.css'>
+<script src='/js/auto-render.min.js'></script>
+<script type="text/javascript">
+   
+
+  function renderMath () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\[', right: '\\]', display: true},
+        {left: '\\(', right: '\\)', display: false}
+      ],
+      ignoredTags: ['br']
+    })
+  }
+  renderMath()
+</script>
+
+
+
+
+<script>
+  
+  
+  
+  const option = {}
+  const remarkOption = Object.assign({}, {"highlight-lines":true,"highlight-style":"atom-one-dark","navigation":{"scroll":false},"ratio":"4:3"}, {"navigation":{"click":false,"scroll":false},"ratio":"16:9"})
+
+  for (const key in remarkOption) {
+    option[dashToCamelCase(key)] = remarkOption[key]
+  }
+
+  
+  const slideshow = remark.create(option, renderMath)
+  
+</script>
+
+
+
+
+
+
+
+<script>
+  document.onkeypress = ({which, keyCode} = window.event) => {
+    const charCode = (typeof which === 'number') ? which : keyCode
+    if (charCode === 113) {
+      window.location.href = '/'
+    }
+  }
+
+  document.getElementsByTagName('a').map(a => a.setAttribute('target', '_blank'))
+
+  $('a:not(a:has(img))').prepend(
+    '<i class="fas fa-link fa-xs"></i><span>&nbsp;</span>'
+  )
+</script>
+
+</body>
+
+</html>
