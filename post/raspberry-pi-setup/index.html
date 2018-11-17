@@ -342,6 +342,10 @@ echo n &gt; /sys/class/backlight/rpi_backlight/brightness
   &lt;decor&gt;no&lt;/decor&gt;
   &lt;maximized&gt;yes&lt;/maximized&gt;
 &lt;/application&gt;
+&lt;application name='chromium-browser'&gt;
+  &lt;decor&gt;no&lt;/decor&gt;
+  &lt;maximized&gt;yes&lt;/maximized&gt;
+&lt;/application&gt;
 </code></pre>
 
 <h1 id="install-chinese-input-method">Install chinese input method</h1>
@@ -360,6 +364,26 @@ echo n &gt; /sys/class/backlight/rpi_backlight/brightness
 <ul>
 <li><a href="https://codewith.mu/en/howto/install_raspberry_pi" target="_blank">How to install Mu on a Raspberry Pi</a></li>
 </ul>
+
+<h1 id="connect-to-bluetooth">Connect to bluetooth</h1>
+
+<p>Restart your bluetooth devices before connecting to Raspberry Pi.</p>
+
+<pre><code class="language-sh">$ sudo bluetoothctl
+[bluetooth]# power on
+[bluetooth]# agent on
+Agent registered
+[bluetooth]# default-agent
+Default agent request successful
+[bluetooth]# scan on
+[bluetooth]# pair MAC_ADDRESS
+[bluetooth]# quit
+</code></pre>
+
+<p>Sometime bluetooth daemon stopped. You may use the script below to start the bluetooth daemon.</p>
+
+<pre><code class="language-sh">sudo /etc/init.d/bluetooth start
+</code></pre>
 
 <h1 id="references">References</h1>
 
@@ -391,6 +415,7 @@ echo n &gt; /sys/class/backlight/rpi_backlight/brightness
 <li><a href="#using-openbox">Using openbox</a></li>
 <li><a href="#install-chinese-input-method">Install chinese input method</a></li>
 <li><a href="#install-the-text-editor">Install the text editor</a></li>
+<li><a href="#connect-to-bluetooth">Connect to bluetooth</a></li>
 <li><a href="#references">References</a></li>
 </ul>
 </nav>
@@ -401,7 +426,7 @@ echo n &gt; /sys/class/backlight/rpi_backlight/brightness
 <hr>
 <div class="disqus-comments mx-auto px-5">
   <div id="disqus_thread"></div>
-<script>
+<script type="application/javascript">
     var disqus_config = function () {
     
     
