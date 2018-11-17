@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <script src='/js/jquery.slim.min.js'></script>
+
+  
+    <link rel="stylesheet" type="text/css" href='/css/remark.css'>
+      
+      <link rel="stylesheet" type="text/css" href='/css/bootstrap.min.css'>
+<script src='/js/bootstrap.bundle.min.js' ></script>
+
+  
+  <script src='/js/remark-latest.min.js'></script>
+
+  <script src='/js/helper.js'></script>
+  
+  <script>
+  FontAwesomeConfig = {
+    searchPseudoElements: true
+  }
+</script>
+<script defer src=' /js/fontawesome-all.min.js '></script>
+
+
+</head>
+
+<body class="text-dark">
+<div id="source">
+
+class: center middle
+# How to use pi camera with buttons and LED
+&lt;hr/&gt;
+## CyrusN
+---
+# Reference
+- [gpiozero — Gpiozero 1.4.1 Documentation](https://gpiozero.readthedocs.io/en/stable/)
+- [picamera — Picamera 1.13 Documentation](https://picamera.readthedocs.io/en/release-1.13/)
+
+---
+class: center
+.img-100.scroll[
+![pin-layout](./pin_layout.svg)
+]
+
+---
+class: center middle 
+
+# Task 1: Connect a button
+
+---
+# Connect a button
+
+.center[![button](./button.png)]
+
+---
+# Look inside a Button
+.center.img-100[
+![button-inside](./learn_arduino_sw.png)
+]
+
+---
+# Connect a button
+
+``` py
+# import gpiozero and signal library
+from gpiozero import Button
+from signal import pause
+
+# define a function call say_hello(), it simply prints the word &#34;hello&#34;
+def say_hello():
+    print(&#34;Hello!&#34;)
+
+button = Button(2)
+
+# when button pressed, it invokes function say_hello()
+button.when_pressed = say_hello
+
+print(&#34;programming is running&#34;)
+pause()
+```
+---
+class: center middle
+# Copy the code
+## Press F5 to run
+
+---
+class: center middle
+# Control a LED with button
+---
+class: center middle img-100
+# Control a LED with button
+![led-button](./led_button_bb.svg)
+
+---
+# Control a LED with button
+``` py
+from gpiozero import LED, Button
+from signal import pause
+
+led = LED(17)
+button = Button(2)
+
+button.when_pressed = led.on
+button.when_released = led.off
+
+print(&#34;programming is running&#34;)
+pause()
+```
+---
+class: center middle
+# Copy the code
+## Press F5 to run
+
+---
+class: center middle
+# How to toggle the LED with button?
+---
+
+# How to toggle the LED with button?
+
+``` py
+from gpiozero import LED, Button
+from signal import pause
+
+led = LED(17)
+button = Button(2)
+
+button.when_pressed = led.toggle
+
+print(&#34;programming is running&#34;)
+pause()
+```
+---
+class: center middle
+# Copy the code
+## Press F5 to run
+
+---
+class: center middle
+# Connect to Pi camera
+
+---
+class: center middle img-75
+
+# Setup
+![good-connection](./good_connection.jpg)
+
+---
+# Raspberry Pi Configuration
+- Start the Raspberry Pi Configuration utility and enable the camera module:
+
+---
+# Button control camera
+
+```py
+from gpiozero import Button
+from picamera import PiCamera
+from signal import pause
+
+button = Button(2)
+camera = PiCamera()
+
+button.when_pressed = camera.start_preview
+button.when_released = camera.stop_preview
+
+print(&#34;programming is running&#34;)
+pause()
+```
+---
+# Button to toggle preview
+
+``` py
+from gpiozero import Button
+from picamera import PiCamera
+from signal import pause
+
+button = Button(2)
+led = LED(17)
+camera = PiCamera()
+
+def toggle_preview():
+  if camera.preview is None:
+    led.on()
+    camera.start_preview()
+  else
+    led.off()
+    camera.stop_preview()
+
+print(&#34;programming is running&#34;)
+button.when_pressed = camera.toggle_preview
+
+pause()
+```
+---
+class: center middle
+# Copy the code
+## Press F5 to run
+
+---
+class: center middle
+# Capture image with button
+
+---
+# Capture image with button
+
+```py
+from gpiozero import Button
+from picamera import PiCamera
+from datetime import datetime
+from os import path
+from signal import pause
+
+button = Button(2)
+camera = PiCamera()
+CAPTURE_DIR = &#34;/home/pi/Desktop&#34;
+
+def capture():
+  now = datetime.now().isoformat()
+  file = path.join(CAPTURE_DIR, now, &#34;.jpg&#34;)
+  print(&#34;Image Captured: &#34;, path)
+  camera.capture(file)
+
+button.when_pressed = capture
+
+print(&#34;programming is running&#34;)
+pause()
+```
+---
+class: center middle
+# Connect 1 more button on pin 3
+
+---
+# Bring all together
+- set pin 2 as left button
+  - use left button to toggle preview
+  - LED is only on when previewing, 
+- set pin 3 as right button
+  - use right button to capture image
+  - image can only be captured while previewing
+
+---
+# Bring all together
+
+.scroll.h-75.img-100[
+
+``` py
+from gpiozero import Button
+from picamera import PiCamera
+from datetime import datetime
+from os import path
+from signal import pause
+
+left_button = Button(2)
+right_button = Button(3)
+led = LED(17)
+camera = PiCamera()
+CAPTURE_DIR = &#34;/home/pi/Desktop&#34;
+
+def capture():
+  if camera.preview is not None:
+    now = datetime.now().isoformat()
+    file = path.join(CAPTURE_DIR, now, &#34;.jpg&#34;)
+    print(&#34;Image Captured: &#34;, path)
+    camera.capture(file)
+
+def toggle_preview():
+  if camera.preview is None:
+    led.on()
+    camera.start_preview()
+  else
+    led.off()
+    camera.stop_preview()
+
+left_button.when_pressed = camera.toggle_preview
+right_button.when_pressed = capture
+
+print(&#34;programming is running&#34;)
+pause()
+```
+]
+---
+class: center middle
+# Copy the code
+## Press F5 to run
+
+---
+class: center middle
+# .text-danger[♥] Thank you .text-danger[♥]
+</div>
+
+
+
+<script>
+  
+  
+  
+  const option = {}
+  const remarkOption = Object.assign({}, {"highlight-lines":true,"highlight-style":"atom-one-dark","navigation":{"scroll":false},"ratio":"4:3"}, {"ratio":"16:9","scroll":false})
+
+  for (const key in remarkOption) {
+    option[dashToCamelCase(key)] = remarkOption[key]
+  }
+
+  
+  const slideshow = remark.create(option)
+  
+</script>
+
+
+
+
+
+
+
+<script>
+  document.onkeypress = ({which, keyCode} = window.event) => {
+    const charCode = (typeof which === 'number') ? which : keyCode
+    if (charCode === 113) {
+      window.location.href = '/'
+    }
+  }
+
+  document.getElementsByTagName('a').map(a => a.setAttribute('target', '_blank'))
+
+  $('a:not(a:has(img))').prepend(
+    '<i class="fas fa-link fa-xs"></i><span>&nbsp;</span>'
+  )
+</script>
+
+</body>
+
+</html>
