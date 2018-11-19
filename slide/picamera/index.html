@@ -34,9 +34,22 @@ class: center middle
 &lt;hr/&gt;
 ## CyrusN
 ---
+# Recipe
+- Raspberry Pi
+- Keyboard and mouse
+- Ethernet cable
+- Pi Camera
+- Mini Breadboard
+- LED light bulb
+- 330 ohms resistor x 1
+- Male to female dupont wires x 6
+- Male to male dupont wires x 2
+
+---
 # Reference
 - [gpiozero — Gpiozero 1.4.1 Documentation](https://gpiozero.readthedocs.io/en/stable/)
 - [picamera — Picamera 1.13 Documentation](https://picamera.readthedocs.io/en/release-1.13/)
+
 
 ---
 class: center
@@ -97,30 +110,6 @@ class: center middle img-75
 
 ---
 # Control a LED with button
-``` py
-from gpiozero import LED, Button
-from signal import pause
-
-led = LED(17)
-button = Button(2)
-
-button.when_pressed = led.on
-button.when_released = led.off
-
-print(&#34;programming is running&#34;)
-pause()
-```
----
-class: center middle
-# Copy the code
-## Press F5 to run
-
----
-class: center middle
-# How to toggle the LED with button?
----
-
-# How to toggle the LED with button?
 
 ``` py
 from gpiozero import LED, Button
@@ -171,10 +160,10 @@ print(&#34;programming is running&#34;)
 pause()
 ```
 ---
-# Button to toggle preview
+# Button to toggle preview and LED
 
 ``` py
-from gpiozero import Button
+from gpiozero import Button, LED
 from picamera import PiCamera
 from signal import pause
 
@@ -183,15 +172,18 @@ led = LED(17)
 camera = PiCamera()
 
 def toggle_preview():
+  # toggle LED first
+  led.toggle()
+
+  # toggle preview, &#34;camera.preview is None&#34; means camera is not previewing.
+  # ref: https://picamera.readthedocs.io/en/release-1.13/api_camera.html#picamera.PiCamera.previewing
   if camera.preview is None:
-    led.on()
     camera.start_preview()
-  else
-    led.off()
+  else:
     camera.stop_preview()
 
 print(&#34;programming is running&#34;)
-button.when_pressed = camera.toggle_preview
+button.when_pressed = toggle_preview
 
 pause()
 ```
@@ -220,9 +212,10 @@ CAPTURE_DIR = &#34;/home/pi/Desktop&#34;
 
 def capture():
   now = datetime.now().isoformat()
-  file = path.join(CAPTURE_DIR, now, &#34;.jpg&#34;)
-  print(&#34;Image Captured: &#34;, path)
-  camera.capture(file)
+  filename = path.join(CAPTURE_DIR, now &#43; &#34;.jpg&#34;
+
+  camera.capture(filename)
+  print(&#34;Image Captured: &#34;, filename)
 
 button.when_pressed = capture
 
@@ -255,7 +248,7 @@ class: center middle
 .scroll.h-75.img-100[
 
 ``` py
-from gpiozero import Button
+from gpiozero import Button, LED
 from picamera import PiCamera
 from datetime import datetime
 from os import path
@@ -270,19 +263,19 @@ CAPTURE_DIR = &#34;/home/pi/Desktop&#34;
 def capture():
   if camera.preview is not None:
     now = datetime.now().isoformat()
-    file = path.join(CAPTURE_DIR, now, &#34;.jpg&#34;)
-    print(&#34;Image Captured: &#34;, path)
+    file = path.join(CAPTURE_DIR, now &#43; &#34;.jpg&#34;)
     camera.capture(file)
+    print(&#34;Image Captured: &#34;, file)
 
 def toggle_preview():
   if camera.preview is None:
     led.on()
     camera.start_preview()
-  else
+  else:
     led.off()
     camera.stop_preview()
 
-left_button.when_pressed = camera.toggle_preview
+left_button.when_pressed = toggle_preview
 right_button.when_pressed = capture
 
 print(&#34;programming is running&#34;)
@@ -297,6 +290,7 @@ class: center middle
 ---
 class: center middle
 # .text-danger[♥] Thank you .text-danger[♥]
+
 </div>
 
 

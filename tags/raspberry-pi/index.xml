@@ -19,11 +19,8 @@
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/picamera/</guid>
       <description>class: center middle
-How to use pi camera with buttons and LED  CyrusN Reference  gpiozero — Gpiozero 1.4.1 Documentation picamera — Picamera 1.13 Documentation  class: center .img-100.scroll[ ]
-class: center middle
-Task 1: Connect a button Connect a button .center.img-75[ ]
-Look inside a Button .center.img-100[ ]
-Connect a button # import gpiozero and signal library from gpiozero import Button from signal import pause # define a function call say_hello(), it simply prints the word &amp;quot;hello&amp;quot; def say_hello(): print(&amp;quot;Hello!</description>
+How to use pi camera with buttons and LED  CyrusN Recipe  Raspberry Pi Keyboard and mouse Ethernet cable Pi Camera Mini Breadboard LED light bulb 330 ohms resistor x 1 Male to female dupont wires x 6 Male to male dupont wires x 2  Reference  gpiozero — Gpiozero 1.4.1 Documentation picamera — Picamera 1.13 Documentation  class: center .img-100.scroll[ ]
+class: center middle</description>
     </item>
     
     <item>
