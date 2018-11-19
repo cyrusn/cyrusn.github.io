@@ -79,17 +79,19 @@ class: center middle
 
 ---
 # Connect a button
+- [`gpiozero.Button.when_pressed`](https://gpiozero.readthedocs.io/en/stable/api_input.html#gpiozero.Button.when_pressed)
+- [How can I keep my script running](https://gpiozero.readthedocs.io/en/stable/faq.html#keep-your-script-running)
 
 ``` py
 # import gpiozero and signal library
 from gpiozero import Button
 from signal import pause
 
+button = Button(2)
+
 # define a function call say_hello(), it simply prints the word &#34;hello&#34;
 def say_hello():
     print(&#34;Hello!&#34;)
-
-button = Button(2)
 
 # when button pressed, it invokes function say_hello()
 button.when_pressed = say_hello
@@ -112,6 +114,8 @@ class: center middle img-75
 
 ---
 # Control a LED with button
+
+[`gpiozero.LED.toggle`](https://gpiozero.readthedocs.io/en/stable/api_output.html#gpiozero.LED.toggle)
 
 ``` py
 from gpiozero import LED, Button
@@ -142,10 +146,16 @@ class: center middle img-75
 
 ---
 # Raspberry Pi Configuration
-- Start the Raspberry Pi Configuration utility and enable the camera module:
+- Start the Raspberry Pi Configuration utility
+- Enable the camera module
 
 ---
 # Button control camera
+
+- [`gpiozero.Button.when_released`](https://gpiozero.readthedocs.io/en/stable/api_input.html#gpiozero.Button.when_released)
+- [`picamera.PiCamera.start_preview`](https://picamera.readthedocs.io/en/release-1.13/api_camera.html#picamera.PiCamera.start_preview)
+- [`picamera.PiCamera.stop_preview`](https://picamera.readthedocs.io/en/release-1.13/api_camera.html#picamera.PiCamera.stop_preview)
+
 
 ```py
 from gpiozero import Button
@@ -164,6 +174,10 @@ pause()
 ---
 # Button to toggle preview and LED
 
+- [picamera.PiCamera.previewing ](https://picamera.readthedocs.io/en/release-1.13/api_camera.html#picamera.PiCamera.previewing)
+
+.scroll.img-100.h-75[
+
 ``` py
 from gpiozero import Button, LED
 from picamera import PiCamera
@@ -178,7 +192,6 @@ def toggle_preview():
   led.toggle()
 
   # toggle preview, &#34;camera.preview is None&#34; means camera is not previewing.
-  # ref: https://picamera.readthedocs.io/en/release-1.13/api_camera.html#picamera.PiCamera.previewing
   if camera.preview is None:
     camera.start_preview()
   else:
@@ -189,6 +202,7 @@ button.when_pressed = toggle_preview
 
 pause()
 ```
+]
 ---
 class: center middle
 # Copy the code
@@ -197,6 +211,14 @@ class: center middle
 ---
 class: center middle
 # Capture image with button
+
+---
+# Capture image with button
+
+- [`datetime.now`](https://docs.python.org/3.7/library/datetime.html#datetime.datetime.now)
+- [`datetime.isoformat`](https://docs.python.org/3.7/library/datetime.html#datetime.datetime.isoformat)
+- [`os.path.join`](https://docs.python.org/3.7/library/os.path.html#os.path.join)
+- [`PiCamera.capture`](https://picamera.readthedocs.io/en/release-1.13/api_camera.html#picamera.PiCamera.capture)
 
 ---
 # Capture image with button
@@ -214,7 +236,7 @@ CAPTURE_DIR = &#34;/home/pi/Desktop&#34;
 
 def capture():
   now = datetime.now().isoformat()
-  filename = path.join(CAPTURE_DIR, now &#43; &#34;.jpg&#34;
+  filename = path.join(CAPTURE_DIR, now &#43; &#34;.jpg&#34;)
 
   camera.capture(filename)
   print(&#34;Image Captured: &#34;, filename)
@@ -270,11 +292,10 @@ def capture():
     print(&#34;Image Captured: &#34;, file)
 
 def toggle_preview():
+  led.toggle()
   if camera.preview is None:
-    led.on()
     camera.start_preview()
   else:
-    led.off()
     camera.stop_preview()
 
 left_button.when_pressed = toggle_preview
