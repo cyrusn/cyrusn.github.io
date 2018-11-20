@@ -96,7 +96,7 @@ def say_hello():
 # when button pressed, it invokes function say_hello()
 button.when_pressed = say_hello
 
-print(&#34;programming is running&#34;)
+print(&#34;The Program is running&#34;)
 pause()
 ```
 ---
@@ -126,7 +126,7 @@ button = Button(2)
 
 button.when_pressed = led.toggle
 
-print(&#34;programming is running&#34;)
+print(&#34;The Program is running&#34;)
 pause()
 ```
 ---
@@ -168,7 +168,7 @@ camera = PiCamera()
 button.when_pressed = camera.start_preview
 button.when_released = camera.stop_preview
 
-print(&#34;programming is running&#34;)
+print(&#34;The Program is running&#34;)
 pause()
 ```
 ---
@@ -197,7 +197,7 @@ def toggle_preview():
   else:
     camera.stop_preview()
 
-print(&#34;programming is running&#34;)
+print(&#34;The Program is running&#34;)
 button.when_pressed = toggle_preview
 
 pause()
@@ -243,7 +243,7 @@ def capture():
 
 button.when_pressed = capture
 
-print(&#34;programming is running&#34;)
+print(&#34;The Program is running&#34;)
 pause()
 ```
 ---
@@ -301,7 +301,7 @@ def toggle_preview():
 left_button.when_pressed = toggle_preview
 right_button.when_pressed = capture
 
-print(&#34;programming is running&#34;)
+print(&#34;The Program is running&#34;)
 pause()
 ```
 ]
