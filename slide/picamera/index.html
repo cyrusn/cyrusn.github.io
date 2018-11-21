@@ -48,6 +48,17 @@ class: center middle
 - Male to male dupont wires x 2
 
 ---
+# Update and upgrade
+
+Open Terminal app and enter the following commands
+
+``` sh
+sudo apt-get update
+sudo apt-get upgrade
+# Type yes if necessary
+```
+
+---
 # Reference
 - [gpiozero — Gpiozero 1.4.1 Documentation](https://gpiozero.readthedocs.io/en/stable/)
 - [picamera — Picamera 1.13 Documentation](https://picamera.readthedocs.io/en/release-1.13/)
@@ -287,9 +298,9 @@ CAPTURE_DIR = &#34;/home/pi/Desktop&#34;
 def capture():
   if camera.preview is not None:
     now = datetime.now().isoformat()
-    file = path.join(CAPTURE_DIR, now &#43; &#34;.jpg&#34;)
-    camera.capture(file)
-    print(&#34;Image Captured: &#34;, file)
+    filename = path.join(CAPTURE_DIR, now &#43; &#34;.jpg&#34;)
+    camera.capture(filename)
+    print(&#34;Image Captured: &#34;, filename)
 
 def toggle_preview():
   led.toggle()
@@ -309,7 +320,6 @@ pause()
 class: center middle
 # Copy the code
 ## Press F5 to run
-
 ---
 class: center middle
 # .text-danger[♥] Thank you .text-danger[♥]

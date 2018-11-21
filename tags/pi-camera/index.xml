@@ -19,7 +19,8 @@
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/picamera/</guid>
       <description>class: center middle
-How to use pi camera with buttons and LED  CyrusN Recipe  Raspberry Pi Keyboard and mouse Power cable HDMI cable Ethernet cable Pi Camera Mini Breadboard LED light bulb 330 ohms resistor x 1 Male to female dupont wires x 6 Male to male dupont wires x 2  Reference  gpiozero — Gpiozero 1.4.1 Documentation picamera — Picamera 1.13 Documentation  class: center .</description>
+How to use pi camera with buttons and LED  CyrusN Recipe  Raspberry Pi Keyboard and mouse Power cable HDMI cable Ethernet cable Pi Camera Mini Breadboard LED light bulb 330 ohms resistor x 1 Male to female dupont wires x 6 Male to male dupont wires x 2  Update and upgrade Open Terminal app and enter the following commands
+sudo apt-get update sudo apt-get upgrade # Type yes if necessary  Reference  gpiozero — Gpiozero 1.</description>
     </item>
     
   </channel>
