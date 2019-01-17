@@ -7,10 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
     <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
-    <lastBuildDate>Sun, 18 Nov 2018 02:45:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 14 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cyrusn.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Applying Web-based Resources</title>
+      <link>https://cyrusn.github.io/slide/applying_web_based_resources/</link>
+      <pubDate>Mon, 14 Jan 2019 00:00:00 +0000</pubDate>
+      <author>cyrusncy@gmail.com (CyrusN)</author>
+      <guid>https://cyrusn.github.io/slide/applying_web_based_resources/</guid>
+      <description>class: center, middle, bg-info, text-light
+Applying Web-based Resource Cyrus Ngan @ LPSS cyrusn.github.io Agenda  About Me Tasks in Career and Life Planning Committee How Web-based Resource Help First Project
+ Careers Homepages  Google Services
+ 在學證明書 (Testimonial) 申報活動 School / Careers Calendar 模擬升學出路選填  Programming
+ Subject Selection System Online Vocabulary Test Line up system  TL;DR
+ Free resources Other useful application   About Me  Cyrus Ngan  .</description>
+    </item>
     
     <item>
       <title>Picamera</title>
@@ -46,7 +60,7 @@ Mathematics F1A 2018 - 19 2018-11-05 References  量角器的使用方法 - YouT
     <item>
       <title>Tutorials to Electronics</title>
       <link>https://cyrusn.github.io/note/tutorials-to-electronics/</link>
-      <pubDate>Sat, 01 Sep 2018 11:42:32 +0800</pubDate>
+      <pubDate>Sat, 01 Sep 2018 03:42:32 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/tutorials-to-electronics/</guid>
       <description>Basic  What is Electricity? Voltage, Current, Resistance, and Ohm&amp;rsquo;s Law What is a Circuit? Polarity Series and Parallel Circuits Alternating Current (AC) vs. Direct Current (DC) PCB Basics Connector Basics  How to  How to Read a Schematic How to Use a Breadboard How to Use a Multimeter How to Power a Project How to Solder: Through-Hole Soldering Working with Wire  Electronic Components  Resistors Voltage Dividers Diodes Capacitors Transistors  Intermediate  Analog vs.</description>
@@ -129,33 +143,30 @@ A4 紙的長闊比  長：297mm 濶：210mm Ratio:  $\displaystyle \frac{297}{21
     </item>
     
     <item>
-      <title>Applying Web-based Resources</title>
-      <link>https://cyrusn.github.io/slide/applying_web_based_resources/</link>
-      <pubDate>Fri, 26 Jan 2018 10:55:10 +0800</pubDate>
-      <author>cyrusncy@gmail.com (CyrusN)</author>
-      <guid>https://cyrusn.github.io/slide/applying_web_based_resources/</guid>
-      <description>class: center, middle, bg-info, text-light
-Applying Web-based Resource Cyrus Ngan @ LPSS cyrusn.github.io Agenda  About Me Career and Life Planning Committee Um &amp;hellip; IT Support .badge.badge-warning[vs] Problem solver 命運係掌握係自己手 CaLP Homepage Sharing experiences on using Google services Google Form Examples 在學證明書 (Testimonial) 申報活動 Google Services 模擬升學出路選填 How Google Services help? Google Calendar Other projects TL;DR Free resources Other useful application  About Me  Cyrus Ngan  .badge.badge-info[@LPSS]  Careers Master Math Teacher Exco of HKACMGM  Math Major My best friend is a .</description>
-    </item>
-    
-    <item>
       <title>Tutorial on Google Script</title>
       <link>https://cyrusn.github.io/slide/tutorial-on-google-script/</link>
       <pubDate>Thu, 25 Jan 2018 17:53:47 +0800</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/tutorial-on-google-script/</guid>
       <description>class: center, middle, bg-info, text-light
-Tutorial on Google Script Cyrus Ngan Objectives - Mock Interview Workshop  Create a google form Application for Mock Interview Workshop  User can choose his / her name in a list  User can apply at most .mark[5 courses] for the mock interview  User should enter Course ID in JUPAS User should enter link of the course information  10 pages slide to complete the simple tutorial  class: center middle bg-dark text-light</description>
+Tutorial on Google Script Cyrus Ngan Objectives - Mock Interview Workshop  Create a google form Application for Mock Interview Workshop
+ User can choose his / her name in a list  User can apply at most .mark[5 courses] for the mock interview
+ User should enter Course ID in JUPAS User should enter link of the course information  10 pages slide to complete the simple tutorial</description>
     </item>
     
     <item>
       <title>Auth in Golang</title>
       <link>https://cyrusn.github.io/note/auth-in-golang/</link>
-      <pubDate>Tue, 12 Dec 2017 11:51:54 +0800</pubDate>
+      <pubDate>Tue, 12 Dec 2017 03:51:54 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/auth-in-golang/</guid>
-      <description>Concept Example  Example of using middleware  Reference  Concept JWT have 3 session, header, payload and signature. Information are stored in payload session which can be read without authentication, therefore no secret information should be stored there. Server parses JWT token stored in header in every http request for authenticated.
-In server side, using middelware for http.Handler function if the request are involved with authentication. System can also store user information like username and scope in JWT payload session further usage.</description>
+      <description>Concept
+ Example
+ Example of using middleware
+  Reference
+  # Concept
+JWT have 3 session, header, payload and signature. Information are stored in payload session which can be read without authentication, therefore no secret information should be stored there. Server parses JWT token stored in header in every http request for authenticated.
+In server side, using middelware for http.Handler function if the request are involved with authentication.</description>
     </item>
     
     <item>
@@ -210,10 +221,13 @@ References  Jazz harmony - Wikiwand  </description>
     <item>
       <title>STEM Curriculum for Hong Kong</title>
       <link>https://cyrusn.github.io/note/stem_curriculum/</link>
-      <pubDate>Fri, 17 Nov 2017 15:15:27 +0800</pubDate>
+      <pubDate>Fri, 17 Nov 2017 07:15:27 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/stem_curriculum/</guid>
-      <description>Model  TPACK SMAR SetoWS_CoE_20170221_public (for EDB Web)  Curriculum design  first year  learning tasks / experiment on suitable topics  second year  learning tasks / experiment on suitable topics maybe simple project  third year  learning (1st term) tasks / experiment on suitable topics final project (2nd term)   Content Which topic should be included in the curriculum for students whose age are 12 - 16?</description>
+      <description>Model  TPACK SMAR SetoWS_CoE_20170221_public (for EDB Web)  Curriculum design  first year
+ learning tasks / experiment on suitable topics  second year
+ learning tasks / experiment on suitable topics maybe simple project  third year
+ learning (1st term) tasks / experiment on suitable topics final project (2nd term)   Content Which topic should be included in the curriculum for students whose age are 12 - 16?</description>
     </item>
     
     <item>
@@ -280,11 +294,11 @@ Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GP
     <item>
       <title>Raspberry Pi</title>
       <link>https://cyrusn.github.io/note/raspberry-pi/</link>
-      <pubDate>Tue, 19 Sep 2017 09:44:09 +0800</pubDate>
+      <pubDate>Tue, 19 Sep 2017 01:44:09 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/raspberry-pi/</guid>
-      <description>Basic setting  Setup guide for raspberry pi  Autostart Use sudo crontab -e to set autostart programme
-@reboot python /home/pi/MyScript.py &amp;amp;  This tells Cron that every boot (or reboot or start-up) we want to run Python with the script MyScript.py. The “&amp;amp;” at the end of the line means the command is run in the background and it won’t stop the system booting up as before.
+      <description>Basic setting  Setup guide for raspberry pi  Auto-start Use sudo crontab -e to set autostart programme
+@reboot python /home/pi/MyScript.py &amp;amp;  This tells Cron that every boot (or reboot or start-up) we want to run Python with the script MyScript.py. The &amp;ldquo;&amp;amp;&amp;rdquo; at the end of the line means the command is run in the background and it won&amp;rsquo;t stop the system booting up as before.
 To kill the job</description>
     </item>
     
@@ -374,10 +388,10 @@ Why?  何時做 &amp;gt; 何時交 計時能令人集中  e.g. 考試、測驗  
     <item>
       <title>Career Theory</title>
       <link>https://cyrusn.github.io/note/career-theory/</link>
-      <pubDate>Mon, 15 May 2017 14:21:39 +0800</pubDate>
+      <pubDate>Mon, 15 May 2017 06:21:39 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/career-theory/</guid>
-      <description> Donal Super Theory  Super&amp;rsquo;s Career Development Theory - IResearchNet career-theory-model-super.pdf The Life Career Rainbow - Get a better work/life balance - Career Development from MindTools.com  Reference  LifeDesign.pdf Holland’s Theory of Career Choice | Career Key The Big Five Career Theories The Serious Leisure Perspective (SLP) - Welcome Careers and Career Information - CareerOneStop Free Personality Test | 16Personalities    </description>
+      <description> Donal Super Theory  Super&amp;rsquo;s Career Development Theory - IResearchNet career-theory-model-super.pdf The Life Career Rainbow - Get a better work/life balance - Career Development from MindTools.com  Reference  LifeDesign.pdf Holland&amp;rsquo;s Theory of Career Choice | Career Key The Big Five Career Theories The Serious Leisure Perspective (SLP) - Welcome Careers and Career Information - CareerOneStop Free Personality Test | 16Personalities    </description>
     </item>
     
     <item>

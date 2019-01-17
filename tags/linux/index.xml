@@ -26,11 +26,11 @@ sudo apt-get update sudo apt-get upgrade  Config the localisation options Run su
     <item>
       <title>Raspberry Pi</title>
       <link>https://cyrusn.github.io/note/raspberry-pi/</link>
-      <pubDate>Tue, 19 Sep 2017 09:44:09 +0800</pubDate>
+      <pubDate>Tue, 19 Sep 2017 01:44:09 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/raspberry-pi/</guid>
-      <description>Basic setting  Setup guide for raspberry pi  Autostart Use sudo crontab -e to set autostart programme
-@reboot python /home/pi/MyScript.py &amp;amp;  This tells Cron that every boot (or reboot or start-up) we want to run Python with the script MyScript.py. The “&amp;amp;” at the end of the line means the command is run in the background and it won’t stop the system booting up as before.
+      <description>Basic setting  Setup guide for raspberry pi  Auto-start Use sudo crontab -e to set autostart programme
+@reboot python /home/pi/MyScript.py &amp;amp;  This tells Cron that every boot (or reboot or start-up) we want to run Python with the script MyScript.py. The &amp;ldquo;&amp;amp;&amp;rdquo; at the end of the line means the command is run in the background and it won&amp;rsquo;t stop the system booting up as before.
 To kill the job</description>
     </item>
     

@@ -19,7 +19,9 @@
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/slide/tutorial-on-google-script/</guid>
       <description>class: center, middle, bg-info, text-light
-Tutorial on Google Script Cyrus Ngan Objectives - Mock Interview Workshop  Create a google form Application for Mock Interview Workshop  User can choose his / her name in a list  User can apply at most .mark[5 courses] for the mock interview  User should enter Course ID in JUPAS User should enter link of the course information  10 pages slide to complete the simple tutorial  class: center middle bg-dark text-light</description>
+Tutorial on Google Script Cyrus Ngan Objectives - Mock Interview Workshop  Create a google form Application for Mock Interview Workshop
+ User can choose his / her name in a list  User can apply at most .mark[5 courses] for the mock interview
+ User should enter Course ID in JUPAS User should enter link of the course information  10 pages slide to complete the simple tutorial</description>
     </item>
     
   </channel>

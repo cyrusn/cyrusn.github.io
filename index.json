@@ -3,6 +3,18 @@
   "index": 0,
   "kind": "page",
   "type": "slide",
+  "uri": "https://cyrusn.github.io/slide/applying_web_based_resources/",
+  "filename": "applying_web_based_resources",
+  "draft": false,
+  "date": "2019-01-14",
+  "lastmod": "2018-06-26",
+  "title": "Applying Web-based Resources",
+  "tags": ["100hr", "scope", "career", "hkacmgm"]
+},
+{
+  "index": 1,
+  "kind": "page",
+  "type": "slide",
   "uri": "https://cyrusn.github.io/slide/picamera/",
   "filename": "picamera",
   "draft": false,
@@ -12,7 +24,7 @@
   "tags": ["pi camera", "raspberry pi"]
 },
 {
-  "index": 1,
+  "index": 2,
   "kind": "page",
   "type": "slide",
   "uri": "https://cyrusn.github.io/slide/f1a-1819/",
@@ -24,7 +36,7 @@
   "tags": []
 },
 {
-  "index": 2,
+  "index": 3,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/tutorials-to-electronics/",
@@ -36,7 +48,7 @@
   "tags": ["sparkfun", "tutorial"]
 },
 {
-  "index": 3,
+  "index": 4,
   "kind": "page",
   "type": "post",
   "uri": "https://cyrusn.github.io/post/raspberry-pi-zero-otg-mode/",
@@ -48,7 +60,7 @@
   "tags": ["otg", "stem"]
 },
 {
-  "index": 4,
+  "index": 5,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/input-and-output/",
@@ -60,7 +72,7 @@
   "tags": ["stem", "sensor", "i2c", "bmp280", "mpu6050"]
 },
 {
-  "index": 5,
+  "index": 6,
   "kind": "page",
   "type": "post",
   "uri": "https://cyrusn.github.io/post/raspberry-pi-setup/",
@@ -72,7 +84,7 @@
   "tags": ["stem", "raspberry pi", "linux"]
 },
 {
-  "index": 6,
+  "index": 7,
   "kind": "page",
   "type": "slide",
   "uri": "https://cyrusn.github.io/slide/remarkjs/",
@@ -84,7 +96,7 @@
   "tags": ["remark"]
 },
 {
-  "index": 7,
+  "index": 8,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/retropie/",
@@ -96,7 +108,7 @@
   "tags": ["8bitdo", "stem"]
 },
 {
-  "index": 8,
+  "index": 9,
   "kind": "page",
   "type": "note",
   "uri": "https://cyrusn.github.io/note/create-spy-camera-with-raspberry-pi-zero-w/",
@@ -108,7 +120,7 @@
   "tags": ["stem", "rpi"]
 },
 {
-  "index": 9,
+  "index": 10,
   "kind": "page",
   "type": "slide",
   "uri": "https://cyrusn.github.io/slide/periscope-teaching-plan/",
@@ -118,18 +130,6 @@
   "lastmod": "2018-08-30",
   "title": "Teaching Plan of Periscope",
   "tags": []
-},
-{
-  "index": 10,
-  "kind": "page",
-  "type": "slide",
-  "uri": "https://cyrusn.github.io/slide/applying_web_based_resources/",
-  "filename": "applying_web_based_resources",
-  "draft": false,
-  "date": "2018-01-26",
-  "lastmod": "2018-06-26",
-  "title": "Applying Web-based Resources",
-  "tags": ["100hr", "scope", "career", "hkacmgm"]
 },
 {
   "index": 11,
@@ -762,7 +762,7 @@
   "uri": "https://cyrusn.github.io/tags/100hr/",
   "filename": "",
   "draft": false,
-  "date": "2018-01-26",
+  "date": "2019-01-14",
   "lastmod": "2018-06-26",
   "title": "100hr",
   "tags": []
@@ -906,7 +906,7 @@
   "uri": "https://cyrusn.github.io/tags/career/",
   "filename": "",
   "draft": false,
-  "date": "2018-01-26",
+  "date": "2019-01-14",
   "lastmod": "2018-06-26",
   "title": "Career",
   "tags": []
@@ -1266,7 +1266,7 @@
   "uri": "https://cyrusn.github.io/tags/hkacmgm/",
   "filename": "",
   "draft": false,
-  "date": "2018-01-26",
+  "date": "2019-01-14",
   "lastmod": "2018-06-26",
   "title": "Hkacmgm",
   "tags": []
@@ -1530,8 +1530,8 @@
   "uri": "https://cyrusn.github.io/",
   "filename": "",
   "draft": false,
-  "date": "2018-11-18",
-  "lastmod": "2018-11-18",
+  "date": "2019-01-14",
+  "lastmod": "2018-06-26",
   "title": "Notebook | CyrusN",
   "tags": []
 },
@@ -1806,7 +1806,7 @@
   "uri": "https://cyrusn.github.io/tags/scope/",
   "filename": "",
   "draft": false,
-  "date": "2018-01-26",
+  "date": "2019-01-14",
   "lastmod": "2018-06-26",
   "title": "Scope",
   "tags": []
@@ -1890,8 +1890,8 @@
   "uri": "https://cyrusn.github.io/slide/",
   "filename": "",
   "draft": false,
-  "date": "2018-11-18",
-  "lastmod": "2018-11-18",
+  "date": "2019-01-14",
+  "lastmod": "2018-06-26",
   "title": "Slides",
   "tags": []
 },
@@ -1950,7 +1950,7 @@
   "uri": "https://cyrusn.github.io/tags/",
   "filename": "",
   "draft": false,
-  "date": "2018-01-26",
+  "date": "2019-01-14",
   "lastmod": "2018-06-26",
   "title": "Tags",
   "tags": []

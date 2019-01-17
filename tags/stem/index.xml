@@ -66,10 +66,13 @@ sudo apt-get update sudo apt-get upgrade  Config the localisation options Run su
     <item>
       <title>STEM Curriculum for Hong Kong</title>
       <link>https://cyrusn.github.io/note/stem_curriculum/</link>
-      <pubDate>Fri, 17 Nov 2017 15:15:27 +0800</pubDate>
+      <pubDate>Fri, 17 Nov 2017 07:15:27 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/stem_curriculum/</guid>
-      <description>Model  TPACK SMAR SetoWS_CoE_20170221_public (for EDB Web)  Curriculum design  first year  learning tasks / experiment on suitable topics  second year  learning tasks / experiment on suitable topics maybe simple project  third year  learning (1st term) tasks / experiment on suitable topics final project (2nd term)   Content Which topic should be included in the curriculum for students whose age are 12 - 16?</description>
+      <description>Model  TPACK SMAR SetoWS_CoE_20170221_public (for EDB Web)  Curriculum design  first year
+ learning tasks / experiment on suitable topics  second year
+ learning tasks / experiment on suitable topics maybe simple project  third year
+ learning (1st term) tasks / experiment on suitable topics final project (2nd term)   Content Which topic should be included in the curriculum for students whose age are 12 - 16?</description>
     </item>
     
     <item>
@@ -96,11 +99,11 @@ Setting Python Code import RPi.GPIO as GPIO import time LED = 18 GPIO.setmode(GP
     <item>
       <title>Raspberry Pi</title>
       <link>https://cyrusn.github.io/note/raspberry-pi/</link>
-      <pubDate>Tue, 19 Sep 2017 09:44:09 +0800</pubDate>
+      <pubDate>Tue, 19 Sep 2017 01:44:09 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/raspberry-pi/</guid>
-      <description>Basic setting  Setup guide for raspberry pi  Autostart Use sudo crontab -e to set autostart programme
-@reboot python /home/pi/MyScript.py &amp;amp;  This tells Cron that every boot (or reboot or start-up) we want to run Python with the script MyScript.py. The “&amp;amp;” at the end of the line means the command is run in the background and it won’t stop the system booting up as before.
+      <description>Basic setting  Setup guide for raspberry pi  Auto-start Use sudo crontab -e to set autostart programme
+@reboot python /home/pi/MyScript.py &amp;amp;  This tells Cron that every boot (or reboot or start-up) we want to run Python with the script MyScript.py. The &amp;ldquo;&amp;amp;&amp;rdquo; at the end of the line means the command is run in the background and it won&amp;rsquo;t stop the system booting up as before.
 To kill the job</description>
     </item>
     

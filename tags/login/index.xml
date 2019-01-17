@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>cyrusncy@gmail.com (CyrusN)</managingEditor>
     <webMaster>cyrusncy@gmail.com (CyrusN)</webMaster>
-    <lastBuildDate>Tue, 12 Dec 2017 11:51:54 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 12 Dec 2017 03:51:54 +0000</lastBuildDate>
     
 	<atom:link href="https://cyrusn.github.io/tags/login/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,11 +15,16 @@
     <item>
       <title>Auth in Golang</title>
       <link>https://cyrusn.github.io/note/auth-in-golang/</link>
-      <pubDate>Tue, 12 Dec 2017 11:51:54 +0800</pubDate>
+      <pubDate>Tue, 12 Dec 2017 03:51:54 +0000</pubDate>
       <author>cyrusncy@gmail.com (CyrusN)</author>
       <guid>https://cyrusn.github.io/note/auth-in-golang/</guid>
-      <description>Concept Example  Example of using middleware  Reference  Concept JWT have 3 session, header, payload and signature. Information are stored in payload session which can be read without authentication, therefore no secret information should be stored there. Server parses JWT token stored in header in every http request for authenticated.
-In server side, using middelware for http.Handler function if the request are involved with authentication. System can also store user information like username and scope in JWT payload session further usage.</description>
+      <description>Concept
+ Example
+ Example of using middleware
+  Reference
+  # Concept
+JWT have 3 session, header, payload and signature. Information are stored in payload session which can be read without authentication, therefore no secret information should be stored there. Server parses JWT token stored in header in every http request for authenticated.
+In server side, using middelware for http.Handler function if the request are involved with authentication.</description>
     </item>
     
   </channel>

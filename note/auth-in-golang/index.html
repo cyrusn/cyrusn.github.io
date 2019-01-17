@@ -227,28 +227,26 @@ var Paginator = {}
 <!-- MarkdownTOC -->
 
 <ul>
-<li>Concept</li>
-<li>Example
+<li><p>Concept</p>
 
 <ul>
-<li>Example of using middleware</li>
+<li><p>Example</p></li>
+
+<li><p>Example of using middleware</p></li>
 </ul></li>
-<li>Reference</li>
+
+<li><p>Reference</p></li>
 </ul>
 
 <!-- /MarkdownTOC -->
 
-<h1 id="concept">Concept</h1>
+<p># Concept</p>
 
-<p>JWT have 3 session, <code>header</code>, <code>payload</code> and <code>signature</code>. Information are stored in payload session which can be read
-without authentication, therefore no secret information should be stored there. Server parses JWT token stored in header in every
-http request for authenticated.</p>
+<p>JWT have 3 session, <code>header</code>, <code>payload</code> and <code>signature</code>. Information are stored in payload session which can be read without authentication, therefore no secret information should be stored there. Server parses JWT token stored in header in every http request for authenticated.</p>
 
-<p>In server side, using middelware for <code>http.Handler</code> function if the request are involved with authentication. System can also store
-user information like username and scope in JWT payload session further usage.</p>
+<p>In server side, using middelware for <code>http.Handler</code> function if the request are involved with authentication. System can also store user information like username and scope in JWT payload session further usage.</p>
 
-<p>Client should store the given JWT token (return by login or auth request from server side) in header, so that server can validate
-JWT token in header for authentication.</p>
+<p>Client should store the given JWT token (return by login or auth request from server side) in header, so that server can validate JWT token in header for authentication.</p>
 
 <h1 id="example">Example</h1>
 
@@ -320,7 +318,6 @@ func SomeHandler(w http.ResponseWriter, r *http.Request) {
   <div class="d-none col-xl-2 d-xl-block sticky-top h-100 py-2 border-left px-0">
       <nav id="TableOfContents">
 <ul>
-<li><a href="#concept">Concept</a></li>
 <li><a href="#example">Example</a>
 <ul>
 <li><a href="#example-of-using-middleware">Example of using middleware</a></li>
